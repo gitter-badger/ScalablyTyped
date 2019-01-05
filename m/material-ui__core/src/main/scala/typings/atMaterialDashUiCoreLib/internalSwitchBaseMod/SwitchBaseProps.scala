@@ -5,8 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveDifficultInheritance: 
-- Lifted 3 members from Set(std.Pick<@material-ui/core.@material-ui/core/IconButton.IconButtonProps, std.Exclude<keyof @material-ui/core.@material-ui/core/IconButton.IconButtonProps, 'classes' | 'onChange' | 'value'>>, @material-ui/core.@material-ui/core.StandardProps<@material-ui/core.@material-ui/core/IconButton.IconButtonProps, @material-ui/core.@material-ui/core/internal/SwitchBase.SwitchBaseClassKey, 'onChange' | 'value'>) */ trait SwitchBaseProps
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
+- Dropped {[ P in std.Exclude<keyof @material-ui/core.@material-ui/core/IconButton.IconButtonProps, 'classes' | 'onChange' | 'value'> ]: @material-ui/core.@material-ui/core/IconButton.IconButtonProps[P]}
+- Lifted 2 members from Set(@material-ui/core.@material-ui/core.StandardProps<@material-ui/core.@material-ui/core/IconButton.IconButtonProps, @material-ui/core.@material-ui/core/internal/SwitchBase.SwitchBaseClassKey, 'onChange' | 'value'>) */ trait SwitchBaseProps
   extends atMaterialDashUiCoreLib.stylesWithStylesMod.StyledComponentProps[SwitchBaseClassKey] {
   var autoFocus: js.UndefOr[scala.Boolean] = js.undefined
   var checked: js.UndefOr[scala.Boolean | java.lang.String] = js.undefined
@@ -16,12 +17,14 @@ import scala.scalajs.js.annotation._
   var disableRipple: js.UndefOr[scala.Boolean] = js.undefined
   var disabled: js.UndefOr[scala.Boolean] = js.undefined
   var icon: reactLib.reactMod.ReactNs.ReactNode
-  var inputProps: js.UndefOr[reactLib.reactMod.ReactNs.InputHTMLAttributes[reactLib.HTMLInputElement]] = js.undefined
+  var inputProps: js.UndefOr[
+    reactLib.reactMod.ReactNs.InputHTMLAttributes[reactLib.HTMLInputElement with stdLib.HTMLInputElement]
+  ] = js.undefined
   var inputRef: js.UndefOr[reactLib.reactMod.ReactNs.Ref[_]] = js.undefined
   var name: js.UndefOr[java.lang.String] = js.undefined
   var onChange: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.ChangeEvent[reactLib.HTMLInputElement], 
+      /* event */ reactLib.reactMod.ReactNs.ChangeEvent[reactLib.HTMLInputElement with stdLib.HTMLInputElement], 
       /* checked */ scala.Boolean, 
       scala.Unit
     ]

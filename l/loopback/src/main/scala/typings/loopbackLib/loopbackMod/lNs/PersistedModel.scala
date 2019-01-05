@@ -101,7 +101,7 @@ trait PersistedModel extends Model {
     * @param {any} instance Model instance saved or created
     */
   def save[T](callback: CallbackWithResult[T]): scala.Unit = js.native
-  def save[T](options: loopbackLib.Anon_Throws): js.Promise[T] = js.native
+  def save[T](options: loopbackLib.Anon_ValidateThrows): js.Promise[T] = js.native
   /**
     * Save model instance. If the instance doesn't have an ID, then calls [create](#persistedmodelcreatedata-cb) instead.
     * Triggers: validate, save, update, or create.
@@ -113,7 +113,7 @@ trait PersistedModel extends Model {
     * @param {Error} err Error object; see [Error object](docs.strongloop.com/display/LB/Error+object).
     * @param {any} instance Model instance saved or created
     */
-  def save[T](options: loopbackLib.Anon_Throws, callback: CallbackWithResult[T]): scala.Unit = js.native
+  def save[T](options: loopbackLib.Anon_ValidateThrows, callback: CallbackWithResult[T]): scala.Unit = js.native
   /**
     * Set the correct `id` property for the `PersistedModel`. Uses the `setId` method if the model is attached to
     * connector that defines it.  Otherwise, uses the default lookup.

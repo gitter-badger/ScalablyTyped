@@ -100,7 +100,7 @@ class DoCmd protected () extends js.Object {
   def Echo(EchoOn: scala.Boolean, StatusBarText: java.lang.String): scala.Unit = js.native
   def FindNext(): scala.Unit = js.native
   def FindRecord(
-    FindWhat: activexDashInteropLib.VarDate,
+    FindWhat: activexDashInteropLib.VarDate with stdLib.VarDate,
     Match: js.UndefOr[AcFindMatch],
     MatchCase: js.UndefOr[scala.Boolean],
     Search: js.UndefOr[AcSearchDirection],

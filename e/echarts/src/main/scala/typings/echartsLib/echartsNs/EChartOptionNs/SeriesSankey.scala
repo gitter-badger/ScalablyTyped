@@ -212,7 +212,7 @@ trait SeriesSankey extends js.Object {
   /**
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sankey.emphasis
     */
-  var emphasis: js.UndefOr[echartsLib.Anon_ItemStyleLineStyleLabel] = js.undefined
+  var emphasis: js.UndefOr[echartsLib.Anon_LabelItemStyleLineStyleAnonShowPosition] = js.undefined
   /**
     * Support when mouse hovering over a node or an edge, the adjacent
     * nodes and edges are also highlighted.
@@ -259,16 +259,14 @@ trait SeriesSankey extends js.Object {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sankey.itemStyle
     */
-  var itemStyle: js.UndefOr[echartsLib.Anon_ShadowOffsetXBorderTypeShadowBlurBorderWidth] = js.undefined
+  var itemStyle: js.UndefOr[echartsLib.Anon_ColorBorderColorBorderWidthBorderType] = js.undefined
   /**
     * `label` describes the text label style in each rectangular node.
     *
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sankey.label
     */
-  var label: js.UndefOr[
-    echartsLib.Anon_ShadowOffsetXBackgroundColorShowAlignTextBorderWidthVerticalAlign
-  ] = js.undefined
+  var label: js.UndefOr[echartsLib.Anon_ShowPositionDistanceRotateOffsetFormatter] = js.undefined
   /**
     * The iterations of layout, which is used to continuously optimize
     * the positions of nodes in graph, decreasing the overlapping between
@@ -311,9 +309,7 @@ trait SeriesSankey extends js.Object {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sankey.lineStyle
     */
-  var lineStyle: js.UndefOr[
-    echartsLib.Anon_ShadowOffsetXShadowBlurColorShadowColorOpacityShadowOffsetYCurvenessNumber
-  ] = js.undefined
+  var lineStyle: js.UndefOr[echartsLib.Anon_ColorOpacity] = js.undefined
   /**
     * The links between nodes.
     * **Notes: The Sankey diagram theoretically only supports Directed
@@ -325,7 +321,7 @@ trait SeriesSankey extends js.Object {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sankey.links
     */
-  var links: js.UndefOr[echartsLib.Anon_Source] = js.undefined
+  var links: js.UndefOr[echartsLib.Anon_SourceTarget] = js.undefined
   /**
     * The gap between any two rectangles in each column from the graph.
     *
@@ -391,7 +387,7 @@ trait SeriesSankey extends js.Object {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sankey.tooltip
     */
-  var tooltip: js.UndefOr[echartsLib.Anon_BackgroundColor] = js.undefined
+  var tooltip: js.UndefOr[echartsLib.Anon_Position] = js.undefined
   /**
     * Distance between sankey component and the top side of the container.
     *

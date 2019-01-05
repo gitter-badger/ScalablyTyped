@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
   * @see Options
   */
 trait ReplicationOptions extends js.Object {
-  var read: js.UndefOr[js.Array[sequelizeLib.Anon_Database]] = js.undefined
-  var write: js.UndefOr[sequelizeLib.Anon_Database] = js.undefined
+  var read: js.UndefOr[js.Array[sequelizeLib.Anon_Host]] = js.undefined
+  var write: js.UndefOr[sequelizeLib.Anon_Host] = js.undefined
 }
 

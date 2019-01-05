@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object firebaseModMembers extends js.Object {
   var SDK_VERSION: java.lang.String = js.native
-  var apps: coreDashJsLib.Array[firebaseLib.firebaseMod.firebaseNs.appNs.App] = js.native
+  var apps: coreDashJsLib.Array[firebaseLib.firebaseMod.firebaseNs.appNs.App] with js.Array[firebaseLib.firebaseMod.firebaseNs.appNs.App] = js.native
   def app(): firebaseLib.firebaseMod.firebaseNs.appNs.App = js.native
   def app(name: java.lang.String): firebaseLib.firebaseMod.firebaseNs.appNs.App = js.native
   def auth(): firebaseLib.firebaseMod.firebaseNs.authNs.Auth = js.native
@@ -20,8 +20,8 @@ object firebaseModMembers extends js.Object {
   def firestore(app: firebaseLib.firebaseMod.firebaseNs.appNs.App): firebaseLib.firebaseMod.firebaseNs.firestoreNs.Firestore = js.native
   def functions(): firebaseLib.firebaseMod.firebaseNs.functionsNs.Functions = js.native
   def functions(app: firebaseLib.firebaseMod.firebaseNs.appNs.App): firebaseLib.firebaseMod.firebaseNs.functionsNs.Functions = js.native
-  def initializeApp(options: coreDashJsLib.Object): firebaseLib.firebaseMod.firebaseNs.appNs.App = js.native
-  def initializeApp(options: coreDashJsLib.Object, name: java.lang.String): firebaseLib.firebaseMod.firebaseNs.appNs.App = js.native
+  def initializeApp(options: coreDashJsLib.Object with js.Object): firebaseLib.firebaseMod.firebaseNs.appNs.App = js.native
+  def initializeApp(options: coreDashJsLib.Object with js.Object, name: java.lang.String): firebaseLib.firebaseMod.firebaseNs.appNs.App = js.native
   def messaging(): firebaseLib.firebaseMod.firebaseNs.messagingNs.Messaging = js.native
   def messaging(app: firebaseLib.firebaseMod.firebaseNs.appNs.App): firebaseLib.firebaseMod.firebaseNs.messagingNs.Messaging = js.native
   def storage(): firebaseLib.firebaseMod.firebaseNs.storageNs.Storage = js.native

@@ -26,10 +26,10 @@ trait Chunk extends js.Object {
   def canBeIntegrated(otherChunk: js.Any): scala.Boolean
   def compareTo(otherChunk: js.Any): webpackLib.webpackLibNumbers.`-1` | webpackLib.webpackLibNumbers.`0` | webpackLib.webpackLibNumbers.`1`
   def containsModule(module: js.Any): scala.Boolean
-  def getAllAsyncChunks(): nodeLib.Set[_]
+  def getAllAsyncChunks(): nodeLib.Set[_] with stdLib.Set[_]
   def getChunkMaps(realHash: js.Any): webpackLib.Anon_Hash
   // tslint:disable-next-line:ban-types
-  def getChunkModuleMaps(filterFn: js.Function): webpackLib.Anon_HashId
+  def getChunkModuleMaps(filterFn: js.Function): webpackLib.Anon_Id
   def getModules(): js.Array[_]
   def getModulesIdent(): js.Array[_]
   def getNumberOfGroups(): scala.Double

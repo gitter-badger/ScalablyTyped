@@ -20,6 +20,28 @@ class ec protected () extends js.Object {
   def genKeyPair(): ellipticLib.ellipticMod.ecNs.KeyPair = js.native
   def genKeyPair(options: ellipticLib.ellipticMod.ecNs.GenKeyPairOptions): ellipticLib.ellipticMod.ecNs.KeyPair = js.native
   def getKeyRecoveryParam(
+    e: nodeLib.Error with stdLib.Error,
+    signature: ellipticLib.ellipticMod.ecNs.SignatureOptions,
+    Q: /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify BN */ js.Any
+  ): scala.Double = js.native
+  def getKeyRecoveryParam(
+    e: nodeLib.Error with stdLib.Error,
+    signature: ellipticLib.ellipticMod.ecNs.SignatureOptions,
+    Q: /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify BN */ js.Any,
+    enc: java.lang.String
+  ): scala.Double = js.native
+  def getKeyRecoveryParam(
+    e: nodeLib.Error with stdLib.Error,
+    signature: ellipticLib.ellipticMod.ecNs.Signature,
+    Q: /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify BN */ js.Any
+  ): scala.Double = js.native
+  def getKeyRecoveryParam(
+    e: nodeLib.Error with stdLib.Error,
+    signature: ellipticLib.ellipticMod.ecNs.Signature,
+    Q: /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify BN */ js.Any,
+    enc: java.lang.String
+  ): scala.Double = js.native
+  def getKeyRecoveryParam(
     e: js.UndefOr[scala.Nothing],
     signature: ellipticLib.ellipticMod.ecNs.SignatureOptions,
     Q: /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify BN */ js.Any
@@ -37,28 +59,6 @@ class ec protected () extends js.Object {
   ): scala.Double = js.native
   def getKeyRecoveryParam(
     e: js.UndefOr[scala.Nothing],
-    signature: ellipticLib.ellipticMod.ecNs.Signature,
-    Q: /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify BN */ js.Any,
-    enc: java.lang.String
-  ): scala.Double = js.native
-  def getKeyRecoveryParam(
-    e: nodeLib.Error,
-    signature: ellipticLib.ellipticMod.ecNs.SignatureOptions,
-    Q: /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify BN */ js.Any
-  ): scala.Double = js.native
-  def getKeyRecoveryParam(
-    e: nodeLib.Error,
-    signature: ellipticLib.ellipticMod.ecNs.SignatureOptions,
-    Q: /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify BN */ js.Any,
-    enc: java.lang.String
-  ): scala.Double = js.native
-  def getKeyRecoveryParam(
-    e: nodeLib.Error,
-    signature: ellipticLib.ellipticMod.ecNs.Signature,
-    Q: /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify BN */ js.Any
-  ): scala.Double = js.native
-  def getKeyRecoveryParam(
-    e: nodeLib.Error,
     signature: ellipticLib.ellipticMod.ecNs.Signature,
     Q: /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify BN */ js.Any,
     enc: java.lang.String

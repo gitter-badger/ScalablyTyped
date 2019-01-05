@@ -79,7 +79,9 @@ trait FlipMoveProps extends js.Object {
     * For normal usage of FlipMove you won't need this. An example of usage is when FlipMove is used in a container
     * that is scaled using CSS. You can correct the values from getBoundingClientRect by using this prop.
     */
-  var getPosition: js.UndefOr[js.Function1[/* node */ reactLib.HTMLElement, stdLib.ClientRect]] = js.undefined
+  var getPosition: js.UndefOr[
+    js.Function1[/* node */ reactLib.HTMLElement with stdLib.HTMLElement, stdLib.ClientRect]
+  ] = js.undefined
   /**
     * Control the onLeave animation that runs when new items are removed from the DOM.
     *
@@ -109,7 +111,7 @@ trait FlipMoveProps extends js.Object {
   var onFinish: js.UndefOr[
     js.Function2[
       /* childElement */ reactLib.reactMod.ReactNs.ReactElement[_], 
-      /* domNode */ reactLib.HTMLElement, 
+      /* domNode */ reactLib.HTMLElement with stdLib.HTMLElement, 
       scala.Unit
     ]
   ] = js.undefined
@@ -129,7 +131,7 @@ trait FlipMoveProps extends js.Object {
   var onFinishAll: js.UndefOr[
     js.Function2[
       /* childElements */ js.Array[reactLib.reactMod.ReactNs.ReactElement[_]], 
-      /* domNodes */ js.Array[reactLib.HTMLElement], 
+      /* domNodes */ js.Array[reactLib.HTMLElement with stdLib.HTMLElement], 
       scala.Unit
     ]
   ] = js.undefined
@@ -145,7 +147,7 @@ trait FlipMoveProps extends js.Object {
   var onStart: js.UndefOr[
     js.Function2[
       /* childElement */ reactLib.reactMod.ReactNs.ReactElement[_], 
-      /* domNode */ reactLib.HTMLElement, 
+      /* domNode */ reactLib.HTMLElement with stdLib.HTMLElement, 
       scala.Unit
     ]
   ] = js.undefined
@@ -166,7 +168,7 @@ trait FlipMoveProps extends js.Object {
   var onStartAll: js.UndefOr[
     js.Function2[
       /* childElements */ js.Array[reactLib.reactMod.ReactNs.ReactElement[_]], 
-      /* domNodes */ js.Array[reactLib.HTMLElement], 
+      /* domNodes */ js.Array[reactLib.HTMLElement with stdLib.HTMLElement], 
       scala.Unit
     ]
   ] = js.undefined

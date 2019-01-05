@@ -12,7 +12,11 @@ class TreeviewControl protected () extends js.Object {
   val Creator: XlCreator = js.native
   var Drilled: js.Any = js.native
   var `Excel.TreeviewControl_typekey`: TreeviewControl = js.native
-  var Hidden: activexDashInteropLib.SafeArray[activexDashInteropLib.SafeArray[java.lang.String]] = js.native
+  var Hidden: (activexDashInteropLib.SafeArray[
+    activexDashInteropLib.SafeArray[java.lang.String] with stdLib.SafeArray[java.lang.String]
+  ]) with (stdLib.SafeArray[
+    activexDashInteropLib.SafeArray[java.lang.String] with stdLib.SafeArray[java.lang.String]
+  ]) = js.native
   val Parent: js.Any = js.native
 }
 

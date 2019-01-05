@@ -8,7 +8,9 @@ import scala.scalajs.js.annotation._
 trait Anon_PrefixClsPlacement extends js.Object {
   var mouseEnterDelay: scala.Double
   var mouseLeaveDelay: scala.Double
-  var placement: antdLib.antdLibStrings.bottomLeft | antdLib.antdLibStrings.bottomRight | antdLib.antdLibStrings.topLeft | antdLib.antdLibStrings.topCenter | antdLib.antdLibStrings.topRight | antdLib.antdLibStrings.bottomCenter
+  var placement: antdLib.libTooltipMod.TooltipPlacement
   var prefixCls: java.lang.String
+  var transitionName: java.lang.String
+  var trigger: antdLib.libTooltipMod.TooltipTrigger
 }
 

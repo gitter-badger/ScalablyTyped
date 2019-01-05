@@ -15,7 +15,7 @@ class Axis protected () extends js.Object {
   var BaseUnit: XlTimeUnit = js.native
   var BaseUnitIsAuto: scala.Boolean = js.native
   val Border: Border = js.native
-  var CategoryNames: activexDashInteropLib.SafeArray[java.lang.String] | Range = js.native
+  var CategoryNames: (activexDashInteropLib.SafeArray[java.lang.String] with stdLib.SafeArray[java.lang.String]) | Range = js.native
   var CategoryType: XlCategoryType = js.native
   val Creator: XlCreator = js.native
   var Crosses: XlAxisCrosses = js.native

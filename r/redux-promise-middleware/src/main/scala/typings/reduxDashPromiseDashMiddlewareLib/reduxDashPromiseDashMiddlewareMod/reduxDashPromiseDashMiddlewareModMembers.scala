@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object reduxDashPromiseDashMiddlewareModMembers extends js.Object {
   def default(): reduxLib.reduxMod.Middleware[js.Object, _, reduxLib.reduxMod.Dispatch[reduxLib.reduxMod.AnyAction]] = js.native
-  def default(config: reduxDashPromiseDashMiddlewareLib.Anon_PromiseTypeDelimiter): reduxLib.reduxMod.Middleware[js.Object, _, reduxLib.reduxMod.Dispatch[reduxLib.reduxMod.AnyAction]] = js.native
+  def default(config: reduxDashPromiseDashMiddlewareLib.Anon_PromiseTypeSuffixes): reduxLib.reduxMod.Middleware[js.Object, _, reduxLib.reduxMod.Dispatch[reduxLib.reduxMod.AnyAction]] = js.native
 }
 

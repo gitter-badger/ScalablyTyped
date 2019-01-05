@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class ObjectId ()
   extends adoneLib.adoneNs.dataNs.bsonNs.INs.Type {
-  def this(id: adoneLib.Anon_ToHexStringId) = this()
+  def this(id: adoneLib.Anon_ToHexString) = this()
   def this(id: ObjectId) = this()
   def this(id: java.lang.String) = this()
   def this(id: nodeLib.Buffer) = this()
@@ -21,7 +21,7 @@ class ObjectId ()
   @JSName("_bsontype")
   var _bsontype_ObjectId: adoneLib.adoneLibStrings.ObjectId = js.native
   var generationTime: scala.Double = js.native
-  def equals(other: adoneLib.Anon_ToHexString): scala.Boolean = js.native
+  def equals(other: adoneLib.Anon_ToHexStringString): scala.Boolean = js.native
   def equals(other: ObjectId): scala.Boolean = js.native
   /**
     * Compares the equality of this ObjectID with otherID

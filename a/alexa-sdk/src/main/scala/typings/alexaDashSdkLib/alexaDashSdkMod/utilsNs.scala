@@ -64,7 +64,7 @@ object utilsNs extends js.Object {
       * @param description text used to describe the image in a screen reader
       * @returns Image
       */
-    def makeImages(imgArr: js.Array[alexaDashSdkLib.Anon_HeightPixels], description: java.lang.String): alexaDashSdkLib.alexaDashSdkMod.Image = js.native
+    def makeImages(imgArr: js.Array[alexaDashSdkLib.Anon_Url], description: java.lang.String): alexaDashSdkLib.alexaDashSdkMod.Image = js.native
   }
   
   /**
@@ -93,9 +93,9 @@ object utilsNs extends js.Object {
       * @returns TextContent
       */
     def makeTextContent(
-      primaryText: alexaDashSdkLib.Anon_Text,
-      secondaryText: alexaDashSdkLib.Anon_Text,
-      tertiaryText: alexaDashSdkLib.Anon_Text
+      primaryText: alexaDashSdkLib.Anon_TypeText,
+      secondaryText: alexaDashSdkLib.Anon_TypeText,
+      tertiaryText: alexaDashSdkLib.Anon_TypeText
     ): alexaDashSdkLib.alexaDashSdkMod.TextContent = js.native
   }
   

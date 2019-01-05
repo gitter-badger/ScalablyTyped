@@ -125,7 +125,7 @@ package object tsNs {
   type ObjectLiteralElementLike = PropertyAssignment | ShorthandPropertyAssignment | SpreadAssignment | MethodDeclaration | AccessorDeclaration
   type ObjectTypeDeclaration = ClassLikeDeclaration | InterfaceDeclaration | TypeLiteralNode
   type OrganizeImportsScope = CombinedCodeFixScope
-  type ParameterPropertyDeclaration = ParameterDeclaration with typescriptLib.Anon_Name
+  type ParameterPropertyDeclaration = ParameterDeclaration with typescriptLib.Anon_Parent
   type Path = java.lang.String with typescriptLib.Anon_PathBrand
   type PlusToken = Token[SyntaxKind]
   type PostfixUnaryOperator = SyntaxKind

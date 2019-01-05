@@ -35,9 +35,6 @@ trait Chainer[Subject] extends js.Object {
     * @see https://on.cypress.io/assertions
     */
   def apply(chainer: cypressLib.cypressLibStrings.`throw`): Chainable[Subject] = js.native
-  def apply(chainer: cypressLib.cypressLibStrings.`throw`, error: js.Function): Chainable[Subject] = js.native
-  def apply(chainer: cypressLib.cypressLibStrings.`throw`, error: js.Function, expected: java.lang.String): Chainable[Subject] = js.native
-  def apply(chainer: cypressLib.cypressLibStrings.`throw`, error: js.Function, expected: stdLib.RegExp): Chainable[Subject] = js.native
   /**
     * When no arguments are provided, `.throw` invokes the target function and asserts that an error is thrown.
     * When one argument is provided, and it’s a string, `.throw` invokes the target function and asserts that an error is thrown with a message that contains that string.
@@ -50,9 +47,20 @@ trait Chainer[Subject] extends js.Object {
     * @see https://on.cypress.io/assertions
     */
   // tslint:disable-next-line ban-types
-  def apply(chainer: cypressLib.cypressLibStrings.`throw`, error: nodeLib.Error): Chainable[Subject] = js.native
-  def apply(chainer: cypressLib.cypressLibStrings.`throw`, error: nodeLib.Error, expected: java.lang.String): Chainable[Subject] = js.native
-  def apply(chainer: cypressLib.cypressLibStrings.`throw`, error: nodeLib.Error, expected: stdLib.RegExp): Chainable[Subject] = js.native
+  def apply(chainer: cypressLib.cypressLibStrings.`throw`, error: nodeLib.Error with stdLib.Error): Chainable[Subject] = js.native
+  def apply(
+    chainer: cypressLib.cypressLibStrings.`throw`,
+    error: nodeLib.Error with stdLib.Error,
+    expected: java.lang.String
+  ): Chainable[Subject] = js.native
+  def apply(
+    chainer: cypressLib.cypressLibStrings.`throw`,
+    error: nodeLib.Error with stdLib.Error,
+    expected: stdLib.RegExp
+  ): Chainable[Subject] = js.native
+  def apply(chainer: cypressLib.cypressLibStrings.`throw`, error: js.Function): Chainable[Subject] = js.native
+  def apply(chainer: cypressLib.cypressLibStrings.`throw`, error: js.Function, expected: java.lang.String): Chainable[Subject] = js.native
+  def apply(chainer: cypressLib.cypressLibStrings.`throw`, error: js.Function, expected: stdLib.RegExp): Chainable[Subject] = js.native
   def apply(chainer: cypressLib.cypressLibStrings.`throw`, value: java.lang.String): Chainable[Subject] = js.native
   def apply(chainer: cypressLib.cypressLibStrings.`throw`, value: stdLib.RegExp): Chainable[Subject] = js.native
   /**
@@ -497,8 +505,11 @@ trait Chainer[Subject] extends js.Object {
     * @see https://on.cypress.io/assertions
     */
   def apply(chainer: cypressLib.cypressLibStrings.haveDOTalwaysDOTthrown): Chainable[Subject] = js.native
+  def apply(
+    chainer: cypressLib.cypressLibStrings.haveDOTalwaysDOTthrown,
+    value: nodeLib.Error with stdLib.Error
+  ): Chainable[Subject] = js.native
   def apply(chainer: cypressLib.cypressLibStrings.haveDOTalwaysDOTthrown, value: java.lang.String): Chainable[Subject] = js.native
-  def apply(chainer: cypressLib.cypressLibStrings.haveDOTalwaysDOTthrown, value: nodeLib.Error): Chainable[Subject] = js.native
   def apply(chainer: cypressLib.cypressLibStrings.haveDOTalwaysDOTthrown, value: stdLib.ErrorConstructor): Chainable[Subject] = js.native
   /**
     * Causes all `.keys` assertions that follow in the chain to only require that the target have at least one of the given keys. This is the opposite of `.all`, which requires that the target have all of the given keys.
@@ -735,8 +746,8 @@ trait Chainer[Subject] extends js.Object {
     * @see https://on.cypress.io/assertions
     */
   def apply(chainer: cypressLib.cypressLibStrings.haveDOTthrown): Chainable[Subject] = js.native
+  def apply(chainer: cypressLib.cypressLibStrings.haveDOTthrown, value: nodeLib.Error with stdLib.Error): Chainable[Subject] = js.native
   def apply(chainer: cypressLib.cypressLibStrings.haveDOTthrown, value: java.lang.String): Chainable[Subject] = js.native
-  def apply(chainer: cypressLib.cypressLibStrings.haveDOTthrown, value: nodeLib.Error): Chainable[Subject] = js.native
   def apply(chainer: cypressLib.cypressLibStrings.haveDOTthrown, value: stdLib.ErrorConstructor): Chainable[Subject] = js.native
   /**
     * Assert that the first element of the selection has the given value, using `.val()`.
@@ -1227,8 +1238,11 @@ trait Chainer[Subject] extends js.Object {
     * @see https://on.cypress.io/assertions
     */
   def apply(chainer: cypressLib.cypressLibStrings.notDOThaveDOTalwaysDOTthrown): Chainable[Subject] = js.native
+  def apply(
+    chainer: cypressLib.cypressLibStrings.notDOThaveDOTalwaysDOTthrown,
+    value: nodeLib.Error with stdLib.Error
+  ): Chainable[Subject] = js.native
   def apply(chainer: cypressLib.cypressLibStrings.notDOThaveDOTalwaysDOTthrown, value: java.lang.String): Chainable[Subject] = js.native
-  def apply(chainer: cypressLib.cypressLibStrings.notDOThaveDOTalwaysDOTthrown, value: nodeLib.Error): Chainable[Subject] = js.native
   def apply(chainer: cypressLib.cypressLibStrings.notDOThaveDOTalwaysDOTthrown, value: stdLib.ErrorConstructor): Chainable[Subject] = js.native
   /**
     * Causes all `.keys` assertions that follow in the chain to only require that the target not have at least one of the given keys. This is the opposite of `.all`, which requires that the target have all of the given keys.
@@ -1460,8 +1474,8 @@ trait Chainer[Subject] extends js.Object {
     * @see https://on.cypress.io/assertions
     */
   def apply(chainer: cypressLib.cypressLibStrings.notDOThaveDOTthrown): Chainable[Subject] = js.native
+  def apply(chainer: cypressLib.cypressLibStrings.notDOThaveDOTthrown, value: nodeLib.Error with stdLib.Error): Chainable[Subject] = js.native
   def apply(chainer: cypressLib.cypressLibStrings.notDOThaveDOTthrown, value: java.lang.String): Chainable[Subject] = js.native
-  def apply(chainer: cypressLib.cypressLibStrings.notDOThaveDOTthrown, value: nodeLib.Error): Chainable[Subject] = js.native
   def apply(chainer: cypressLib.cypressLibStrings.notDOThaveDOTthrown, value: stdLib.ErrorConstructor): Chainable[Subject] = js.native
   /**
     * Assert that the first element of the selection does not have the given value, using `.val()`.

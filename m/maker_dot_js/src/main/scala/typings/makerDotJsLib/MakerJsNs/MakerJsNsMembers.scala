@@ -15,7 +15,7 @@ object MakerJsNsMembers extends js.Object {
   /**
     * Enumeration of environment types.
     */
-  var environmentTypes: makerDotJsLib.Anon_NodeJs = js.native
+  var environmentTypes: makerDotJsLib.Anon_BrowserUI = js.native
   /**
     * String-based enumeration of all paths types.
     *
@@ -25,14 +25,14 @@ object MakerJsNsMembers extends js.Object {
     * var circle = { type: pathType.Circle, origin: [0, 0], radius: 7 };   //javascript
     * ```
     */
-  var pathType: makerDotJsLib.Anon_Arc = js.native
+  var pathType: makerDotJsLib.Anon_Line = js.native
   /**
     * String-based enumeration of unit types: imperial, metric or otherwise.
     * A model may specify the unit system it is using, if any. When importing a model, it may have different units.
     * Unit conversion function is makerjs.units.conversionScale().
     * Important: If you add to this, you must also add a corresponding conversion ratio in the unit.ts file!
     */
-  var unitType: makerDotJsLib.Anon_Inch = js.native
+  var unitType: makerDotJsLib.Anon_Centimeter = js.native
   /**
     * Version info
     */
@@ -151,7 +151,7 @@ object MakerJsNsMembers extends js.Object {
     * @param routeKeyOrRoute String of a flattened route, or a string array of route segments.
     * @returns Model or Path object within the modelContext tree.
     */
-  def travel(modelContext: IModel, routeKeyOrRoute: java.lang.String): makerDotJsLib.Anon_Offset = js.native
-  def travel(modelContext: IModel, routeKeyOrRoute: js.Array[java.lang.String]): makerDotJsLib.Anon_Offset = js.native
+  def travel(modelContext: IModel, routeKeyOrRoute: java.lang.String): makerDotJsLib.Anon_Path = js.native
+  def travel(modelContext: IModel, routeKeyOrRoute: js.Array[java.lang.String]): makerDotJsLib.Anon_Path = js.native
 }
 

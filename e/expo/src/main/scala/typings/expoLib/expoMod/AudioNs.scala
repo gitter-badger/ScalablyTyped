@@ -81,8 +81,8 @@ object AudioNs extends js.Object {
   }
   
   trait RecordingOptions extends js.Object {
-    var android: expoLib.Anon_BitRateSampleRate
-    var ios: expoLib.Anon_BitRate
+    var android: expoLib.Anon_Extension
+    var ios: expoLib.Anon_ExtensionOutputFormat
   }
   
   /** This class represents a sound corresponding to an Asset or URL. */

@@ -6,6 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_Ctrl extends js.Object {
-  val Ctrl: activexDashOfficeLib.OfficeNs.CommandBarComboBox
+  var CancelDefault: scala.Boolean
+  val Ctrl: activexDashOfficeLib.OfficeNs.CommandBarButton
 }
 

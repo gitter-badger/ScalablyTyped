@@ -14,24 +14,28 @@ trait Scenarios extends js.Object {
   def apply(Index: java.lang.String): Scenario = js.native
   def apply(Index: scala.Double): Scenario = js.native
   def Add(Name: java.lang.String, ChangingCells: Range): Scenario = js.native
-  def Add(Name: java.lang.String, ChangingCells: Range, Values: activexDashInteropLib.SafeArray[_]): Scenario = js.native
   def Add(
     Name: java.lang.String,
     ChangingCells: Range,
-    Values: activexDashInteropLib.SafeArray[_],
+    Values: activexDashInteropLib.SafeArray[_] with stdLib.SafeArray[_]
+  ): Scenario = js.native
+  def Add(
+    Name: java.lang.String,
+    ChangingCells: Range,
+    Values: activexDashInteropLib.SafeArray[_] with stdLib.SafeArray[_],
     Comment: java.lang.String
   ): Scenario = js.native
   def Add(
     Name: java.lang.String,
     ChangingCells: Range,
-    Values: activexDashInteropLib.SafeArray[_],
+    Values: activexDashInteropLib.SafeArray[_] with stdLib.SafeArray[_],
     Comment: java.lang.String,
     Locked: scala.Boolean
   ): Scenario = js.native
   def Add(
     Name: java.lang.String,
     ChangingCells: Range,
-    Values: activexDashInteropLib.SafeArray[_],
+    Values: activexDashInteropLib.SafeArray[_] with stdLib.SafeArray[_],
     Comment: java.lang.String,
     Locked: scala.Boolean,
     Hidden: scala.Boolean

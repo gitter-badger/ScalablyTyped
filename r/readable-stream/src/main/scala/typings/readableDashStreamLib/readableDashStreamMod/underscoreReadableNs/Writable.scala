@@ -14,8 +14,8 @@ trait Writable
   var destroyed: scala.Boolean = js.native
   def _undestroy(): scala.Unit = js.native
   def destroy(
-    error: nodeLib.Error,
-    callback: js.Function1[/* error */ js.UndefOr[nodeLib.Error | scala.Null], scala.Unit]
+    error: nodeLib.Error with stdLib.Error,
+    callback: js.Function1[/* error */ js.UndefOr[(nodeLib.Error with stdLib.Error) | scala.Null], scala.Unit]
   ): this.type = js.native
 }
 

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 object reactDashSketchappLibStrings {
   @js.native
-  sealed trait Anon_Flatten extends js.Object
+  sealed trait Anon_HairlineWidth extends js.Object
   
   @js.native
   sealed trait absolute extends js.Object
@@ -117,7 +117,7 @@ object reactDashSketchappLibStrings {
   @js.native
   sealed trait wrap extends js.Object
   
-  def Anon_Flatten: Anon_Flatten = "Anon_Flatten".asInstanceOf[Anon_Flatten]
+  def Anon_HairlineWidth: Anon_HairlineWidth = "Anon_HairlineWidth".asInstanceOf[Anon_HairlineWidth]
   def absolute: absolute = "absolute".asInstanceOf[absolute]
   def auto: auto = "auto".asInstanceOf[auto]
   def center: center = "center".asInstanceOf[center]

@@ -15,7 +15,7 @@ trait PaginationProps extends js.Object {
     js.Function3[
       /* page */ scala.Double, 
       /* type */ antdLib.antdLibStrings.page | antdLib.antdLibStrings.prev | antdLib.antdLibStrings.next | antdLib.antdLibStrings.`jump-prev` | antdLib.antdLibStrings.`jump-next`, 
-      /* originalElement */ reactLib.HTMLElement, 
+      /* originalElement */ reactLib.HTMLElement with stdLib.HTMLElement, 
       reactLib.reactMod.ReactNs.ReactNode
     ]
   ] = js.undefined

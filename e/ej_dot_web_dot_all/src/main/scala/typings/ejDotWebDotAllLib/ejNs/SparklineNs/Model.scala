@@ -117,7 +117,9 @@ trait Model extends js.Object {
   /** Specifies the theme for Sparkline.
     * @Default {Flatlight. See Theme}
     */
-  var theme: js.UndefOr[ejDotWebDotAllLib.ejNs.datavisualizationNs.SparklineNs.Theme | java.lang.String] = js.undefined
+  var theme: js.UndefOr[
+    (ejDotWebDotAllLib.ejNs.datavisualizationNs.SparklineNs.Theme with Theme) | java.lang.String
+  ] = js.undefined
   /** Options to customize the tooltip.
     */
   var tooltip: js.UndefOr[Tooltip] = js.undefined
@@ -127,7 +129,9 @@ trait Model extends js.Object {
   /** Specifies the type of the series to render in sparkline.
     * @Default {line. See Type}
     */
-  var `type`: js.UndefOr[ejDotWebDotAllLib.ejNs.datavisualizationNs.SparklineNs.Type | java.lang.String] = js.undefined
+  var `type`: js.UndefOr[
+    (ejDotWebDotAllLib.ejNs.datavisualizationNs.SparklineNs.Type with Type) | java.lang.String
+  ] = js.undefined
   /** Border width of the series.
     * @Default {1}
     */

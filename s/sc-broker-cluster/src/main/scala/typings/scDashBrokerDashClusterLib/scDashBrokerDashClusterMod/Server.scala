@@ -26,7 +26,11 @@ class Server protected ()
     listener: js.Function3[
       /* brokerId */ java.lang.String, 
       /* data */ js.Any, 
-      /* callback */ js.Function2[/* err */ nodeLib.Error | scala.Null, /* data */ js.Any, scala.Unit], 
+      /* callback */ js.Function2[
+        /* err */ (nodeLib.Error with stdLib.Error) | scala.Null, 
+        /* data */ js.Any, 
+        scala.Unit
+      ], 
       scala.Unit
     ]
   ): this.type = js.native
@@ -41,7 +45,7 @@ class Server protected ()
   @JSName("on")
   def on_error(
     event: scDashBrokerDashClusterLib.scDashBrokerDashClusterLibStrings.error,
-    listener: js.Function1[/* err */ js.UndefOr[nodeLib.Error], scala.Unit]
+    listener: js.Function1[/* err */ js.UndefOr[nodeLib.Error with stdLib.Error], scala.Unit]
   ): this.type = js.native
   @JSName("on")
   def on_ready(
@@ -52,7 +56,11 @@ class Server protected ()
   def sendToBroker(
     brokerId: java.lang.String,
     data: js.Any,
-    callback: js.Function2[/* err */ nodeLib.Error | scala.Null, /* data */ js.Any, scala.Unit]
+    callback: js.Function2[
+      /* err */ (nodeLib.Error with stdLib.Error) | scala.Null, 
+      /* data */ js.Any, 
+      scala.Unit
+    ]
   ): scala.Unit = js.native
 }
 

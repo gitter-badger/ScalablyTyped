@@ -5,8 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Anon_Options extends js.Object {
-  var options: adoneLib.adoneNs.netNs.httpNs.clientNs.INs.FormValueOptions
-  var value: java.lang.String | nodeLib.Buffer | nodeLib.streamMod.Readable
+@js.native
+trait Anon_Options
+  extends org.scalablytyped.runtime.Instantiable0[adoneLib.benchmarkMod.BenchmarkNs.Suite] {
+  var options: benchmarkLib.Anon_Name = js.native
 }
 

@@ -10,13 +10,13 @@ trait Anon_ArrLimitIterator extends js.Object {
   def apply[T, E](
     arr: asyncLib.asyncMod.IterableCollection[T],
     limit: scala.Double,
-    iterator: asyncLib.asyncMod.AsyncIterator[T, E]
+    iterator: asyncLib.asyncMod.AsyncBooleanIterator[T, E]
   ): scala.Unit = js.native
   def apply[T, E](
     arr: asyncLib.asyncMod.IterableCollection[T],
     limit: scala.Double,
-    iterator: asyncLib.asyncMod.AsyncIterator[T, E],
-    callback: asyncLib.asyncMod.ErrorCallback[E]
+    iterator: asyncLib.asyncMod.AsyncBooleanIterator[T, E],
+    callback: asyncLib.asyncMod.AsyncResultArrayCallback[T, E]
   ): scala.Unit = js.native
 }
 

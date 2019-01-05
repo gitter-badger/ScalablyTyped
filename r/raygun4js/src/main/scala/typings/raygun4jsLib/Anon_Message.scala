@@ -6,8 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_Message extends js.Object {
-  var ClassName: java.lang.String
-  var Message: java.lang.String
-  var StackTrace: js.Array[raygun4jsLib.raygun4jsMod.RaygunStackTrace]
+  var level: BreadcrumbLevel
+  var location: java.lang.String
+  var message: java.lang.String
+  var metadata: js.Any
 }
 

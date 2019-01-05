@@ -165,7 +165,7 @@ object Stream extends js.Object {
     streams: js.Array[
       (adoneLib.adoneNs.streamNs.coreNs.Stream[_, _]) | nodeLib.streamMod.Transform | nodeLib.streamMod.Readable | nodeLib.streamMod.Duplex
     ],
-    options: adoneLib.Anon_SourceOptions[S, T]
+    options: adoneLib.Anon_EndSourceOptions[S, T]
   ): adoneLib.adoneNs.streamNs.coreNs.Stream[S, T] = js.native
 }
 

@@ -21,6 +21,6 @@ class Fetcher protected () extends js.Object {
 @js.native
 object Fetcher extends js.Object {
   var CONTENT_TYPE_BY_EXT: org.scalablytyped.runtime.StringDictionary[java.lang.String] = js.native
-  var HANDLERS: rdflibLib.Anon_HTMLHandler = js.native
+  var HANDLERS: rdflibLib.Anon_RDFXMLHandler = js.native
 }
 

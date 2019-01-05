@@ -7,12 +7,14 @@ import scala.scalajs.js.annotation._
 
 trait SyntaxHighlighterProps
   extends /* spread */ org.scalablytyped.runtime.StringDictionary[js.Any] {
-  var codeTagProps: js.UndefOr[reactLib.reactMod.ReactNs.DOMAttributes[reactLib.HTMLElement]] = js.undefined
+  var codeTagProps: js.UndefOr[
+    reactLib.reactMod.ReactNs.DOMAttributes[reactLib.HTMLElement with stdLib.HTMLElement]
+  ] = js.undefined
   var customStyle: js.UndefOr[js.Any] = js.undefined
   var language: js.UndefOr[java.lang.String] = js.undefined
   var lineNumberStyle: js.UndefOr[js.Any] = js.undefined
   var lineProps: js.UndefOr[
-    lineTagPropsFunction | reactLib.reactMod.ReactNs.DOMAttributes[reactLib.HTMLElement]
+    lineTagPropsFunction | (reactLib.reactMod.ReactNs.DOMAttributes[reactLib.HTMLElement with stdLib.HTMLElement])
   ] = js.undefined
   var showLineNumbers: js.UndefOr[scala.Boolean] = js.undefined
   var startingLineNumber: js.UndefOr[scala.Double] = js.undefined

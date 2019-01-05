@@ -6,11 +6,16 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait TextareaAutosizeProps
-  extends reactLib.reactMod.ReactNs.HTMLProps[reactLib.HTMLTextAreaElement] {
+  extends reactLib.reactMod.ReactNs.HTMLProps[reactLib.HTMLTextAreaElement with stdLib.HTMLTextAreaElement] {
   /**
     * Allows an owner to retrieve the DOM node.
     */
-  var inputRef: js.UndefOr[js.Function1[/* node */ reactLib.HTMLTextAreaElement, scala.Unit]] = js.undefined
+  var inputRef: js.UndefOr[
+    js.Function1[
+      /* node */ reactLib.HTMLTextAreaElement with stdLib.HTMLTextAreaElement, 
+      scala.Unit
+    ]
+  ] = js.undefined
   /**
     * Maximum number of rows to show.
     */
@@ -26,7 +31,7 @@ trait TextareaAutosizeProps
   @JSName("onChange")
   var onChange_TextareaAutosizeProps: js.UndefOr[
     js.Function1[
-      /* event */ reactLib.reactMod.ReactNs.ChangeEvent[reactLib.HTMLTextAreaElement], 
+      /* event */ reactLib.reactMod.ReactNs.ChangeEvent[reactLib.HTMLTextAreaElement with stdLib.HTMLTextAreaElement], 
       scala.Unit
     ]
   ] = js.undefined

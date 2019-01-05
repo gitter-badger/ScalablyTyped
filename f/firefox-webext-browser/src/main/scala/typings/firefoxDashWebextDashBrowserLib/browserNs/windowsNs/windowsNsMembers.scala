@@ -33,7 +33,7 @@ object windowsNsMembers extends js.Object {
   val onRemoved: firefoxDashWebextDashBrowserLib.WebExtEvent[js.Function1[/* windowId */ scala.Double, scala.Unit]] = js.native
   /** Creates (opens) a new browser with any optional sizing, position or default URL provided. */
   def create(): js.Promise[js.UndefOr[Window]] = js.native
-  def create(createData: firefoxDashWebextDashBrowserLib.Anon_AllowScriptsToClose): js.Promise[js.UndefOr[Window]] = js.native
+  def create(createData: firefoxDashWebextDashBrowserLib.Anon_UrlTabId): js.Promise[js.UndefOr[Window]] = js.native
   /* windows functions */
   /** Gets details about a window. */
   def get(windowId: scala.Double): js.Promise[Window] = js.native
@@ -44,7 +44,7 @@ object windowsNsMembers extends js.Object {
     *     should contain a list of the `tabs.Tab` objects.
     */
   def getAll(): js.Promise[js.Array[Window]] = js.native
-  def getAll(getInfo: firefoxDashWebextDashBrowserLib.Anon_Populate): js.Promise[js.Array[Window]] = js.native
+  def getAll(getInfo: firefoxDashWebextDashBrowserLib.Anon_WindowTypes): js.Promise[js.Array[Window]] = js.native
   /** Gets the current window. */
   def getCurrent(): js.Promise[Window] = js.native
   def getCurrent(getInfo: GetInfo): js.Promise[Window] = js.native
@@ -57,6 +57,6 @@ object windowsNsMembers extends js.Object {
     * Updates the properties of a window. Specify only the properties that you want to change; unspecified properties
     * will be left unchanged.
     */
-  def update(windowId: scala.Double, updateInfo: firefoxDashWebextDashBrowserLib.Anon_State): js.Promise[js.UndefOr[Window]] = js.native
+  def update(windowId: scala.Double, updateInfo: firefoxDashWebextDashBrowserLib.Anon_Left): js.Promise[js.UndefOr[Window]] = js.native
 }
 

@@ -11,7 +11,7 @@ object graphlibNs extends js.Object {
   @js.native
   class Graph ()
     extends dagreLib.dagreMod.graphlibNs.Graph {
-    def this(opt: dagreLib.Anon_Compound) = this()
+    def this(opt: dagreLib.Anon_Directed) = this()
   }
   
   @JSName("alg")

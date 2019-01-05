@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait Anon_ResourceIdAnonKindVideoIdChannelId extends js.Object {
   /**
-    * The resourceId object contains information that identifies the resource associated with the comment.
+    * The resourceId object contains information that identifies the resource associated with a bulletin post.
     */
   var resourceId: Anon_KindVideoIdChannelId
 }

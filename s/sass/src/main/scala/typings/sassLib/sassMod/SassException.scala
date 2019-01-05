@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait SassException
-  extends nodeLib.Error {
+  extends stdLib.Error {
   /**
     * The column number of error.
     */
@@ -25,10 +25,6 @@ trait SassException
     * The line number of error.
     */
   var line: scala.Double
-  /**
-    * The error message.
-    */
-  var message: java.lang.String
   /**
     * The status code.
     */

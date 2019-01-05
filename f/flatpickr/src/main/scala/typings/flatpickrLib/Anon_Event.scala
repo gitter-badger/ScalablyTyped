@@ -5,10 +5,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Anon_Event extends js.Object {
-  var element: stdLib.Element
-  var event: java.lang.String
-  var handler: js.Function1[/* e */ js.UndefOr[stdLib.Event], scala.Unit]
-  var options: js.UndefOr[Anon_Capture] = js.undefined
+  var element: stdLib.Element = js.native
+  var event: java.lang.String = js.native
+  var options: js.UndefOr[Anon_Capture] = js.native
+  def handler(): scala.Unit = js.native
+  def handler(e: stdLib.Event): scala.Unit = js.native
 }
 

@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation._
 @js.native
 class GmeConfig () extends js.Object {
   /**  Add-on related settings. */
-  var addOns: webgmeLib.Anon_MonitorTimeout = js.native
+  var addOns: webgmeLib.Anon_EnableMonitorTimeout = js.native
   /**  Authentication related settings. */
-  var authentication: webgmeLib.Anon_Enable = js.native
+  var authentication: webgmeLib.Anon_EnableAllowGuests = js.native
   /** Bin script related settings. */
   var bin: webgmeLib.Anon_Log = js.native
   /** Blob related settings. */
@@ -30,7 +30,7 @@ class GmeConfig () extends js.Object {
   /** Mongo database related settings. */
   var mongo: webgmeLib.Anon_Uri = js.native
   /** Plugin related settings. */
-  var plugin: webgmeLib.Anon_AllowServerExecution = js.native
+  var plugin: webgmeLib.Anon_AllowBrowserExecution = js.native
   /** Additional paths to for requirejs. 
     * Custom paths that will be added to the 
     * paths of requirejs configuration. 
@@ -42,16 +42,16 @@ class GmeConfig () extends js.Object {
   /** REST related settings. */
   var rest: webgmeLib.Anon_Components = js.native
   /** Seed related settings. */
-  var seedProjects: webgmeLib.Anon_DefaultProject = js.native
+  var seedProjects: webgmeLib.Anon_EnableAllowDuplication = js.native
   /** Server related settings. */
-  var server: webgmeLib.Anon_MaxWorkers = js.native
+  var server: webgmeLib.Anon_Port = js.native
   /** Socket IO related settings. */
   var socketIO: webgmeLib.Anon_ClientOptions = js.native
   /** Storage related settings. */
-  var storage: webgmeLib.Anon_Database = js.native
+  var storage: webgmeLib.Anon_Cache = js.native
   /** Visualization related settings. */
-  var visualization: webgmeLib.Anon_ExtraCss = js.native
-  var webhooks: webgmeLib.Anon_Manager = js.native
+  var visualization: webgmeLib.Anon_DecoratorPaths = js.native
+  var webhooks: webgmeLib.Anon_EnableManager = js.native
   /**
     *  Serialize the configuration.
     * @returns {*} 

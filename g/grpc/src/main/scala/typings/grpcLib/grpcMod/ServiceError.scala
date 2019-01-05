@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ServiceError
-  extends nodeLib.Error {
+  extends stdLib.Error {
   /**
     * The error code, a key of {@link grpc.status} that is not `grpc.status.OK`
     */

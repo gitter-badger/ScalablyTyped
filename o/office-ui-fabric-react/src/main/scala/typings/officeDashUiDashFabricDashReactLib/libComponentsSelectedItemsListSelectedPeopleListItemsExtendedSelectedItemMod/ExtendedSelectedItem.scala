@@ -13,7 +13,7 @@ class ExtendedSelectedItem protected ()
       IPeoplePickerItemState
     ] {
   def this(props: officeDashUiDashFabricDashReactLib.libComponentsSelectedItemsListSelectedPeopleListSelectedPeopleListMod.ISelectedPeopleItemProps) = this()
-  var persona: reactLib.reactMod.ReactNs.RefObject[reactLib.HTMLDivElement] = js.native
+  var persona: reactLib.reactMod.ReactNs.RefObject[reactLib.HTMLDivElement with stdLib.HTMLDivElement] = js.native
   /* private */ def _onClickIconButton(action: js.Any): js.Any = js.native
 }
 

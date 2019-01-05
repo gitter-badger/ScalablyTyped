@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait MenuItemProps[T /* <: reactLib.HTMLElement */]
+trait MenuItemProps[T /* <: reactLib.HTMLElement with stdLib.HTMLElement */]
   extends reactLib.reactMod.ReactNs.HTMLAttributes[T] {
   /**
   	 * The HTML tag for this element. Default: 'span'.

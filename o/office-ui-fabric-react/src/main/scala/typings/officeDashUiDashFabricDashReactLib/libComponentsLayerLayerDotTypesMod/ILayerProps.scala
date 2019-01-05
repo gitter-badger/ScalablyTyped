@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait ILayerProps
   extends reactLib.reactMod.ReactNs.HTMLAttributes[
-      reactLib.HTMLDivElement | officeDashUiDashFabricDashReactLib.libComponentsLayerLayerDotBaseMod.LayerBase
+      (reactLib.HTMLDivElement with stdLib.HTMLDivElement) | officeDashUiDashFabricDashReactLib.libComponentsLayerLayerDotBaseMod.LayerBase
     ] {
   /**
     * Optional callback to access the ILayer interface. Use this instead of ref for accessing

@@ -23,7 +23,7 @@ object rxjsDashCompatModMembers extends js.Object {
     * @property {Scheduler} animationFrame Schedules work with `requestAnimationFrame`.
     * Use this for synchronizing with the platform's painting
     */
-  var Scheduler: rxjsDashCompatLib.Anon_AnimationFrame = js.native
+  var Scheduler: rxjsDashCompatLib.Anon_Asap = js.native
   val TimeoutError: rxjsLib.internalUtilTimeoutErrorMod.TimeoutErrorCtor = js.native
   val UnsubscriptionError: rxjsLib.internalUtilUnsubscriptionErrorMod.UnsubscriptionErrorCtor = js.native
   val operators: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof _operators */ js.Any = js.native

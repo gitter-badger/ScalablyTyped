@@ -13,7 +13,7 @@ trait Anon_Options extends js.Object {
     * @return void
     */
   def apply(): js.Any = js.native
-  def apply(options: Anon_CallbackArgs): js.Any = js.native
+  def apply(options: Anon_Dynamic): js.Any = js.native
   /**
     * Populates a slideout menu.
     *

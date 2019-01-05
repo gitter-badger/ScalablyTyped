@@ -13,7 +13,7 @@ trait Anon_Duration extends js.Object {
   /**
     * Specifies the ratings that the video received under various rating schemes.
     */
-  var contentRating: Anon_KmrbRating
+  var contentRating: Anon_MpaaRating
   /**
     * Indicates whether the video is available in high definition (HD) or only in standard definition.
     */
@@ -33,6 +33,6 @@ trait Anon_Duration extends js.Object {
   /**
     * The regionRestriction object contains information about the countries where a video is (or is not) viewable. The object will contain either the contentDetails.regionRestriction.allowed property or the contentDetails.regionRestriction.blocked property.
     */
-  var regionRestriction: Anon_Blocked
+  var regionRestriction: Anon_Allowed
 }
 

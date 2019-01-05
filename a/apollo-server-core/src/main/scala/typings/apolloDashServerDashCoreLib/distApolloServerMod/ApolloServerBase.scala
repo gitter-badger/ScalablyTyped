@@ -18,9 +18,13 @@ class ApolloServerBase protected () extends js.Object {
   var playgroundOptions: js.UndefOr[
     atApollographqlGraphqlDashPlaygroundDashHtmlLib.distRenderDashPlaygroundDashPageMod.RenderPageOptions
   ] = js.native
-  var plugins: apolloDashEnvLib.libPolyfillsArrayMod.Global.Array[
+  var plugins: (apolloDashEnvLib.libPolyfillsArrayMod.Global.Array[
     apolloDashServerDashPluginDashBaseLib.apolloDashServerDashPluginDashBaseMod.ApolloServerPlugin
-  ] = js.native
+  ]) with (coreDashJsLib.Array[
+    apolloDashServerDashPluginDashBaseLib.apolloDashServerDashPluginDashBaseMod.ApolloServerPlugin
+  ]) with (js.Array[
+    apolloDashServerDashPluginDashBaseLib.apolloDashServerDashPluginDashBaseMod.ApolloServerPlugin
+  ]) = js.native
   var requestOptions: stdLib.Partial[apolloDashServerDashCoreLib.distGraphqlOptionsMod.GraphQLServerOptions[_, _]] = js.native
   var schema: graphqlLib.graphqlMod.GraphQLSchema = js.native
   var schemaHash: js.Any = js.native

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait IListProps
   extends reactLib.reactMod.ReactNs.HTMLAttributes[
-      officeDashUiDashFabricDashReactLib.libComponentsListListMod.List | reactLib.HTMLDivElement
+      officeDashUiDashFabricDashReactLib.libComponentsListListMod.List | (reactLib.HTMLDivElement with stdLib.HTMLDivElement)
     ] {
   /**
     * Optional callback to access the IList interface. Use this instead of ref for accessing

@@ -53,7 +53,7 @@ object AnimatedNs extends js.Object {
   @js.native
   class ValueXY ()
     extends reactDashNativeLib.reactDashNativeMod.AnimatedNs.ValueXY {
-    def this(valueIn: reactDashNativeLib.Anon_YXNumber) = this()
+    def this(valueIn: reactDashNativeLib.Anon_XYNumber) = this()
   }
   
   val Image: js.Any = js.native

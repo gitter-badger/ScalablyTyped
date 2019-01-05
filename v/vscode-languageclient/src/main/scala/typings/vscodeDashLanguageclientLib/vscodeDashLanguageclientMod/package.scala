@@ -10,7 +10,7 @@ package object vscodeDashLanguageclientMod {
   type ErrorAction = vscodeDashLanguageclientLib.libClientMod.ErrorAction
   type FoldingRangeKind = vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.FoldingRangeKind
   type RevealOutputChannelOn = vscodeDashLanguageclientLib.libClientMod.RevealOutputChannelOn
-  type ServerOptions = Executable | vscodeDashLanguageclientLib.Anon_Debug | vscodeDashLanguageclientLib.Anon_DebugRun | NodeModule | (js.Function0[
+  type ServerOptions = Executable | vscodeDashLanguageclientLib.Anon_Run | vscodeDashLanguageclientLib.Anon_RunDebug | NodeModule | (js.Function0[
     vscodeDashJsonrpcLib.Thenable[
       nodeLib.childUnderscoreProcessMod.ChildProcess | StreamInfo | vscodeDashLanguageclientLib.libClientMod.MessageTransports | ChildProcessInfo
     ]

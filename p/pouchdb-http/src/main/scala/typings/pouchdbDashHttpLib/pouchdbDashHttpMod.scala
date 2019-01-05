@@ -8,5 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("pouchdb-http", JSImport.Namespace)
 @js.native
 object pouchdbDashHttpMod
-  extends org.scalablytyped.runtime.TopLevel[pouchdbDashCoreLib.PouchDBNs.Static]
+  extends org.scalablytyped.runtime.TopLevel[
+      pouchdbDashCoreLib.PouchDBNs.Static with pouchdbDashAdapterDashHttpLib.PouchDBNs.Static
+    ]
 

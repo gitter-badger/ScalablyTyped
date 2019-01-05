@@ -16,7 +16,7 @@ trait DatePicker
   @JSName("componentWillReceiveProps")
   def componentWillReceiveProps_MDatePicker(nextProps: rmcDashCalendarLib.libDatePickerPropsMod.PropsType): scala.Unit = js.native
   def computeVisible(clientHeight: scala.Double, scrollTop: scala.Double): scala.Boolean = js.native
-  def createOnScroll(): js.Function1[/* data */ rmcDashCalendarLib.Anon_Client, scala.Unit] = js.native
+  def createOnScroll(): js.Function1[/* data */ rmcDashCalendarLib.Anon_Full, scala.Unit] = js.native
   def genMonthComponent(data: rmcDashCalendarLib.libDateDataTypesMod.ModelsNs.MonthData): reactLib.reactMod.ReactNs.ReactNode = js.native
   def genMonthData(): rmcDashCalendarLib.libDateDataTypesMod.ModelsNs.MonthData = js.native
   def genMonthData(date: stdLib.Date): rmcDashCalendarLib.libDateDataTypesMod.ModelsNs.MonthData = js.native

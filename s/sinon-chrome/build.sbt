@@ -1,16 +1,16 @@
 organization := "org.scalablytyped"
 name := "sinon-chrome"
-version := "v2.2.4-dt-20181212Z-79369a"
-scalaVersion := "2.12.7"
+version := "v2.2.4-dt-20181212Z-35ae67"
+scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "chrome" % "0.0-unknown-dt-20181231Z-89881c",
-  "org.scalablytyped" %%% "filesystem" % "0.0-unknown-dt-20180827Z-729b6b",
-  "org.scalablytyped" %%% "filewriter" % "0.0-unknown-dt-20180214Z-7ebafd",
-  "org.scalablytyped" %%% "sinon" % "7.0-dt-20181231Z-67301c",
-  "org.scalablytyped" %%% "std" % "3.2.2-9ed5ff")
+  "org.scalablytyped" %%% "chrome" % "0.0-unknown-dt-20181231Z-189d93",
+  "org.scalablytyped" %%% "filesystem" % "0.0-unknown-dt-20180827Z-f502bb",
+  "org.scalablytyped" %%% "filewriter" % "0.0-unknown-dt-20180214Z-d64933",
+  "org.scalablytyped" %%% "sinon" % "7.0-dt-20181231Z-8657e3",
+  "org.scalablytyped" %%% "std" % "3.2.2-3b2f2a")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

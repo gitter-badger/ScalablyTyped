@@ -19,7 +19,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashAccessLib.AccWizObjectsNs.FieldList, 
-      /* parameter */ Anon_SourceRow, 
+      /* parameter */ Anon_SourceCtlName, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -83,7 +83,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashAccessLib.AccWizObjectsNs.FieldList, 
-      /* parameter */ Anon_KeyCodeShift, 
+      /* parameter */ Anon_FieldListKeyCode, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -110,7 +110,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashAccessLib.AccWizObjectsNs.FieldList, 
-      /* parameter */ Anon_KeyCodeShift, 
+      /* parameter */ Anon_FieldListKeyCode, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -136,7 +136,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashAccessLib.AccWizObjectsNs.FieldList, 
-      /* parameter */ Anon_X, 
+      /* parameter */ Anon_FieldListButton, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -152,7 +152,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashAccessLib.AccWizObjectsNs.FieldList, 
-      /* parameter */ Anon_X, 
+      /* parameter */ Anon_FieldListButton, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -168,7 +168,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashAccessLib.AccWizObjectsNs.FieldList, 
-      /* parameter */ Anon_X, 
+      /* parameter */ Anon_FieldListButton, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -299,7 +299,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashAccessLib.AccessNs.Attachment, 
-      /* parameter */ Anon_Y, 
+      /* parameter */ Anon_Button, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -314,7 +314,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashAccessLib.AccessNs.Attachment, 
-      /* parameter */ Anon_Y, 
+      /* parameter */ Anon_Button, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -329,7 +329,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashAccessLib.AccessNs.Attachment, 
-      /* parameter */ Anon_Y, 
+      /* parameter */ Anon_Button, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -410,7 +410,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashAccessLib.AccessNs.BoundObjectFrame, 
-      /* parameter */ Anon_Y, 
+      /* parameter */ Anon_Button, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -425,7 +425,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashAccessLib.AccessNs.BoundObjectFrame, 
-      /* parameter */ Anon_Y, 
+      /* parameter */ Anon_Button, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -440,7 +440,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashAccessLib.AccessNs.BoundObjectFrame, 
-      /* parameter */ Anon_Y, 
+      /* parameter */ Anon_Button, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -531,7 +531,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashAccessLib.AccessNs.CheckBox, 
-      /* parameter */ Anon_Y, 
+      /* parameter */ Anon_Button, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -546,7 +546,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashAccessLib.AccessNs.CheckBox, 
-      /* parameter */ Anon_Y, 
+      /* parameter */ Anon_Button, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -561,7 +561,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashAccessLib.AccessNs.CheckBox, 
-      /* parameter */ Anon_Y, 
+      /* parameter */ Anon_Button, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -652,7 +652,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashAccessLib.AccessNs.ComboBox, 
-      /* parameter */ Anon_Y, 
+      /* parameter */ Anon_Button, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -667,7 +667,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashAccessLib.AccessNs.ComboBox, 
-      /* parameter */ Anon_Y, 
+      /* parameter */ Anon_Button, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -682,7 +682,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashAccessLib.AccessNs.ComboBox, 
-      /* parameter */ Anon_Y, 
+      /* parameter */ Anon_Button, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -776,7 +776,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashAccessLib.AccessNs.CommandButton, 
-      /* parameter */ Anon_Y, 
+      /* parameter */ Anon_Button, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -791,7 +791,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashAccessLib.AccessNs.CommandButton, 
-      /* parameter */ Anon_Y, 
+      /* parameter */ Anon_Button, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -806,7 +806,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashAccessLib.AccessNs.CommandButton, 
-      /* parameter */ Anon_Y, 
+      /* parameter */ Anon_Button, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -924,7 +924,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashAccessLib.AccessNs.Form, 
-      /* parameter */ Anon_DrawObjectCancel, 
+      /* parameter */ Anon_DrawObjectChartObjectCancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -937,7 +937,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashAccessLib.AccessNs.Form, 
-      /* parameter */ Anon_SourceObject, 
+      /* parameter */ Anon_ScreenTipText, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -1022,7 +1022,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashAccessLib.AccessNs.Form, 
-      /* parameter */ Anon_FilterType, 
+      /* parameter */ Anon_CancelFilterType, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -1071,7 +1071,11 @@ trait ActiveXObject extends js.Object {
       activexDashAccessLib.activexDashAccessLibStrings.X, 
       activexDashAccessLib.activexDashAccessLibStrings.Y
     ],
-    handler: js.ThisFunction1[/* this */ activexDashAccessLib.AccessNs.Form, /* parameter */ Anon_Y, scala.Unit]
+    handler: js.ThisFunction1[
+      /* this */ activexDashAccessLib.AccessNs.Form, 
+      /* parameter */ Anon_Button, 
+      scala.Unit
+    ]
   ): scala.Unit = js.native
   def on(
     obj: activexDashAccessLib.AccessNs.Form,
@@ -1082,7 +1086,11 @@ trait ActiveXObject extends js.Object {
       activexDashAccessLib.activexDashAccessLibStrings.X, 
       activexDashAccessLib.activexDashAccessLibStrings.Y
     ],
-    handler: js.ThisFunction1[/* this */ activexDashAccessLib.AccessNs.Form, /* parameter */ Anon_Y, scala.Unit]
+    handler: js.ThisFunction1[
+      /* this */ activexDashAccessLib.AccessNs.Form, 
+      /* parameter */ Anon_Button, 
+      scala.Unit
+    ]
   ): scala.Unit = js.native
   def on(
     obj: activexDashAccessLib.AccessNs.Form,
@@ -1093,7 +1101,11 @@ trait ActiveXObject extends js.Object {
       activexDashAccessLib.activexDashAccessLibStrings.X, 
       activexDashAccessLib.activexDashAccessLibStrings.Y
     ],
-    handler: js.ThisFunction1[/* this */ activexDashAccessLib.AccessNs.Form, /* parameter */ Anon_Y, scala.Unit]
+    handler: js.ThisFunction1[
+      /* this */ activexDashAccessLib.AccessNs.Form, 
+      /* parameter */ Anon_Button, 
+      scala.Unit
+    ]
   ): scala.Unit = js.native
   def on(
     obj: activexDashAccessLib.AccessNs.Form,
@@ -1143,7 +1155,11 @@ trait ActiveXObject extends js.Object {
       activexDashAccessLib.activexDashAccessLibStrings.X, 
       activexDashAccessLib.activexDashAccessLibStrings.Y
     ],
-    handler: js.ThisFunction1[/* this */ activexDashAccessLib.AccessNs.Image, /* parameter */ Anon_Y, scala.Unit]
+    handler: js.ThisFunction1[
+      /* this */ activexDashAccessLib.AccessNs.Image, 
+      /* parameter */ Anon_Button, 
+      scala.Unit
+    ]
   ): scala.Unit = js.native
   def on(
     obj: activexDashAccessLib.AccessNs.Image,
@@ -1154,7 +1170,11 @@ trait ActiveXObject extends js.Object {
       activexDashAccessLib.activexDashAccessLibStrings.X, 
       activexDashAccessLib.activexDashAccessLibStrings.Y
     ],
-    handler: js.ThisFunction1[/* this */ activexDashAccessLib.AccessNs.Image, /* parameter */ Anon_Y, scala.Unit]
+    handler: js.ThisFunction1[
+      /* this */ activexDashAccessLib.AccessNs.Image, 
+      /* parameter */ Anon_Button, 
+      scala.Unit
+    ]
   ): scala.Unit = js.native
   def on(
     obj: activexDashAccessLib.AccessNs.Image,
@@ -1165,7 +1185,11 @@ trait ActiveXObject extends js.Object {
       activexDashAccessLib.activexDashAccessLibStrings.X, 
       activexDashAccessLib.activexDashAccessLibStrings.Y
     ],
-    handler: js.ThisFunction1[/* this */ activexDashAccessLib.AccessNs.Image, /* parameter */ Anon_Y, scala.Unit]
+    handler: js.ThisFunction1[
+      /* this */ activexDashAccessLib.AccessNs.Image, 
+      /* parameter */ Anon_Button, 
+      scala.Unit
+    ]
   ): scala.Unit = js.native
   def on(
     obj: activexDashAccessLib.AccessNs.Label,
@@ -1186,7 +1210,11 @@ trait ActiveXObject extends js.Object {
       activexDashAccessLib.activexDashAccessLibStrings.X, 
       activexDashAccessLib.activexDashAccessLibStrings.Y
     ],
-    handler: js.ThisFunction1[/* this */ activexDashAccessLib.AccessNs.Label, /* parameter */ Anon_Y, scala.Unit]
+    handler: js.ThisFunction1[
+      /* this */ activexDashAccessLib.AccessNs.Label, 
+      /* parameter */ Anon_Button, 
+      scala.Unit
+    ]
   ): scala.Unit = js.native
   def on(
     obj: activexDashAccessLib.AccessNs.Label,
@@ -1197,7 +1225,11 @@ trait ActiveXObject extends js.Object {
       activexDashAccessLib.activexDashAccessLibStrings.X, 
       activexDashAccessLib.activexDashAccessLibStrings.Y
     ],
-    handler: js.ThisFunction1[/* this */ activexDashAccessLib.AccessNs.Label, /* parameter */ Anon_Y, scala.Unit]
+    handler: js.ThisFunction1[
+      /* this */ activexDashAccessLib.AccessNs.Label, 
+      /* parameter */ Anon_Button, 
+      scala.Unit
+    ]
   ): scala.Unit = js.native
   def on(
     obj: activexDashAccessLib.AccessNs.Label,
@@ -1208,7 +1240,11 @@ trait ActiveXObject extends js.Object {
       activexDashAccessLib.activexDashAccessLibStrings.X, 
       activexDashAccessLib.activexDashAccessLibStrings.Y
     ],
-    handler: js.ThisFunction1[/* this */ activexDashAccessLib.AccessNs.Label, /* parameter */ Anon_Y, scala.Unit]
+    handler: js.ThisFunction1[
+      /* this */ activexDashAccessLib.AccessNs.Label, 
+      /* parameter */ Anon_Button, 
+      scala.Unit
+    ]
   ): scala.Unit = js.native
   def on(
     obj: activexDashAccessLib.AccessNs.ListBox,
@@ -1285,7 +1321,11 @@ trait ActiveXObject extends js.Object {
       activexDashAccessLib.activexDashAccessLibStrings.X, 
       activexDashAccessLib.activexDashAccessLibStrings.Y
     ],
-    handler: js.ThisFunction1[/* this */ activexDashAccessLib.AccessNs.ListBox, /* parameter */ Anon_Y, scala.Unit]
+    handler: js.ThisFunction1[
+      /* this */ activexDashAccessLib.AccessNs.ListBox, 
+      /* parameter */ Anon_Button, 
+      scala.Unit
+    ]
   ): scala.Unit = js.native
   def on(
     obj: activexDashAccessLib.AccessNs.ListBox,
@@ -1296,7 +1336,11 @@ trait ActiveXObject extends js.Object {
       activexDashAccessLib.activexDashAccessLibStrings.X, 
       activexDashAccessLib.activexDashAccessLibStrings.Y
     ],
-    handler: js.ThisFunction1[/* this */ activexDashAccessLib.AccessNs.ListBox, /* parameter */ Anon_Y, scala.Unit]
+    handler: js.ThisFunction1[
+      /* this */ activexDashAccessLib.AccessNs.ListBox, 
+      /* parameter */ Anon_Button, 
+      scala.Unit
+    ]
   ): scala.Unit = js.native
   def on(
     obj: activexDashAccessLib.AccessNs.ListBox,
@@ -1307,7 +1351,11 @@ trait ActiveXObject extends js.Object {
       activexDashAccessLib.activexDashAccessLibStrings.X, 
       activexDashAccessLib.activexDashAccessLibStrings.Y
     ],
-    handler: js.ThisFunction1[/* this */ activexDashAccessLib.AccessNs.ListBox, /* parameter */ Anon_Y, scala.Unit]
+    handler: js.ThisFunction1[
+      /* this */ activexDashAccessLib.AccessNs.ListBox, 
+      /* parameter */ Anon_Button, 
+      scala.Unit
+    ]
   ): scala.Unit = js.native
   def on(
     obj: activexDashAccessLib.AccessNs.NavigationButton,
@@ -1376,7 +1424,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashAccessLib.AccessNs.NavigationButton, 
-      /* parameter */ Anon_Y, 
+      /* parameter */ Anon_Button, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -1391,7 +1439,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashAccessLib.AccessNs.NavigationButton, 
-      /* parameter */ Anon_Y, 
+      /* parameter */ Anon_Button, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -1406,7 +1454,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashAccessLib.AccessNs.NavigationButton, 
-      /* parameter */ Anon_Y, 
+      /* parameter */ Anon_Button, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -1497,7 +1545,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashAccessLib.AccessNs.NavigationControl, 
-      /* parameter */ Anon_Y, 
+      /* parameter */ Anon_Button, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -1512,7 +1560,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashAccessLib.AccessNs.NavigationControl, 
-      /* parameter */ Anon_Y, 
+      /* parameter */ Anon_Button, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -1527,7 +1575,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashAccessLib.AccessNs.NavigationControl, 
-      /* parameter */ Anon_Y, 
+      /* parameter */ Anon_Button, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -1572,7 +1620,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashAccessLib.AccessNs.ObjectFrame, 
-      /* parameter */ Anon_Y, 
+      /* parameter */ Anon_Button, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -1587,7 +1635,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashAccessLib.AccessNs.ObjectFrame, 
-      /* parameter */ Anon_Y, 
+      /* parameter */ Anon_Button, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -1602,7 +1650,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashAccessLib.AccessNs.ObjectFrame, 
-      /* parameter */ Anon_Y, 
+      /* parameter */ Anon_Button, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -1693,7 +1741,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashAccessLib.AccessNs.OptionButton, 
-      /* parameter */ Anon_Y, 
+      /* parameter */ Anon_Button, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -1708,7 +1756,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashAccessLib.AccessNs.OptionButton, 
-      /* parameter */ Anon_Y, 
+      /* parameter */ Anon_Button, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -1723,7 +1771,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashAccessLib.AccessNs.OptionButton, 
-      /* parameter */ Anon_Y, 
+      /* parameter */ Anon_Button, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -1768,7 +1816,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashAccessLib.AccessNs.OptionGroup, 
-      /* parameter */ Anon_Y, 
+      /* parameter */ Anon_Button, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -1783,7 +1831,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashAccessLib.AccessNs.OptionGroup, 
-      /* parameter */ Anon_Y, 
+      /* parameter */ Anon_Button, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -1798,7 +1846,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashAccessLib.AccessNs.OptionGroup, 
-      /* parameter */ Anon_Y, 
+      /* parameter */ Anon_Button, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -1821,7 +1869,11 @@ trait ActiveXObject extends js.Object {
       activexDashAccessLib.activexDashAccessLibStrings.X, 
       activexDashAccessLib.activexDashAccessLibStrings.Y
     ],
-    handler: js.ThisFunction1[/* this */ activexDashAccessLib.AccessNs.Page, /* parameter */ Anon_Y, scala.Unit]
+    handler: js.ThisFunction1[
+      /* this */ activexDashAccessLib.AccessNs.Page, 
+      /* parameter */ Anon_Button, 
+      scala.Unit
+    ]
   ): scala.Unit = js.native
   def on(
     obj: activexDashAccessLib.AccessNs.Page,
@@ -1832,7 +1884,11 @@ trait ActiveXObject extends js.Object {
       activexDashAccessLib.activexDashAccessLibStrings.X, 
       activexDashAccessLib.activexDashAccessLibStrings.Y
     ],
-    handler: js.ThisFunction1[/* this */ activexDashAccessLib.AccessNs.Page, /* parameter */ Anon_Y, scala.Unit]
+    handler: js.ThisFunction1[
+      /* this */ activexDashAccessLib.AccessNs.Page, 
+      /* parameter */ Anon_Button, 
+      scala.Unit
+    ]
   ): scala.Unit = js.native
   def on(
     obj: activexDashAccessLib.AccessNs.Page,
@@ -1843,7 +1899,11 @@ trait ActiveXObject extends js.Object {
       activexDashAccessLib.activexDashAccessLibStrings.X, 
       activexDashAccessLib.activexDashAccessLibStrings.Y
     ],
-    handler: js.ThisFunction1[/* this */ activexDashAccessLib.AccessNs.Page, /* parameter */ Anon_Y, scala.Unit]
+    handler: js.ThisFunction1[
+      /* this */ activexDashAccessLib.AccessNs.Page, 
+      /* parameter */ Anon_Button, 
+      scala.Unit
+    ]
   ): scala.Unit = js.native
   def on(
     obj: activexDashAccessLib.AccessNs.PaletteButton,
@@ -1922,7 +1982,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashAccessLib.AccessNs.PaletteButton, 
-      /* parameter */ Anon_Y, 
+      /* parameter */ Anon_Button, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -1937,7 +1997,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashAccessLib.AccessNs.PaletteButton, 
-      /* parameter */ Anon_Y, 
+      /* parameter */ Anon_Button, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -1952,7 +2012,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashAccessLib.AccessNs.PaletteButton, 
-      /* parameter */ Anon_Y, 
+      /* parameter */ Anon_Button, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -1977,7 +2037,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashAccessLib.AccessNs.Rectangle, 
-      /* parameter */ Anon_Y, 
+      /* parameter */ Anon_Button, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -1992,7 +2052,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashAccessLib.AccessNs.Rectangle, 
-      /* parameter */ Anon_Y, 
+      /* parameter */ Anon_Button, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -2007,7 +2067,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashAccessLib.AccessNs.Rectangle, 
-      /* parameter */ Anon_Y, 
+      /* parameter */ Anon_Button, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -2085,7 +2145,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashAccessLib.AccessNs.Report, 
-      /* parameter */ Anon_FilterType, 
+      /* parameter */ Anon_CancelFilterType, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -2134,7 +2194,11 @@ trait ActiveXObject extends js.Object {
       activexDashAccessLib.activexDashAccessLibStrings.X, 
       activexDashAccessLib.activexDashAccessLibStrings.Y
     ],
-    handler: js.ThisFunction1[/* this */ activexDashAccessLib.AccessNs.Report, /* parameter */ Anon_Y, scala.Unit]
+    handler: js.ThisFunction1[
+      /* this */ activexDashAccessLib.AccessNs.Report, 
+      /* parameter */ Anon_Button, 
+      scala.Unit
+    ]
   ): scala.Unit = js.native
   def on(
     obj: activexDashAccessLib.AccessNs.Report,
@@ -2145,7 +2209,11 @@ trait ActiveXObject extends js.Object {
       activexDashAccessLib.activexDashAccessLibStrings.X, 
       activexDashAccessLib.activexDashAccessLibStrings.Y
     ],
-    handler: js.ThisFunction1[/* this */ activexDashAccessLib.AccessNs.Report, /* parameter */ Anon_Y, scala.Unit]
+    handler: js.ThisFunction1[
+      /* this */ activexDashAccessLib.AccessNs.Report, 
+      /* parameter */ Anon_Button, 
+      scala.Unit
+    ]
   ): scala.Unit = js.native
   def on(
     obj: activexDashAccessLib.AccessNs.Report,
@@ -2156,7 +2224,11 @@ trait ActiveXObject extends js.Object {
       activexDashAccessLib.activexDashAccessLibStrings.X, 
       activexDashAccessLib.activexDashAccessLibStrings.Y
     ],
-    handler: js.ThisFunction1[/* this */ activexDashAccessLib.AccessNs.Report, /* parameter */ Anon_Y, scala.Unit]
+    handler: js.ThisFunction1[
+      /* this */ activexDashAccessLib.AccessNs.Report, 
+      /* parameter */ Anon_Button, 
+      scala.Unit
+    ]
   ): scala.Unit = js.native
   def on(
     obj: activexDashAccessLib.AccessNs.Report,
@@ -2220,7 +2292,11 @@ trait ActiveXObject extends js.Object {
       activexDashAccessLib.activexDashAccessLibStrings.X, 
       activexDashAccessLib.activexDashAccessLibStrings.Y
     ],
-    handler: js.ThisFunction1[/* this */ activexDashAccessLib.AccessNs.Section, /* parameter */ Anon_Y, scala.Unit]
+    handler: js.ThisFunction1[
+      /* this */ activexDashAccessLib.AccessNs.Section, 
+      /* parameter */ Anon_Button, 
+      scala.Unit
+    ]
   ): scala.Unit = js.native
   def on(
     obj: activexDashAccessLib.AccessNs.Section,
@@ -2231,7 +2307,11 @@ trait ActiveXObject extends js.Object {
       activexDashAccessLib.activexDashAccessLibStrings.X, 
       activexDashAccessLib.activexDashAccessLibStrings.Y
     ],
-    handler: js.ThisFunction1[/* this */ activexDashAccessLib.AccessNs.Section, /* parameter */ Anon_Y, scala.Unit]
+    handler: js.ThisFunction1[
+      /* this */ activexDashAccessLib.AccessNs.Section, 
+      /* parameter */ Anon_Button, 
+      scala.Unit
+    ]
   ): scala.Unit = js.native
   def on(
     obj: activexDashAccessLib.AccessNs.Section,
@@ -2242,7 +2322,11 @@ trait ActiveXObject extends js.Object {
       activexDashAccessLib.activexDashAccessLibStrings.X, 
       activexDashAccessLib.activexDashAccessLibStrings.Y
     ],
-    handler: js.ThisFunction1[/* this */ activexDashAccessLib.AccessNs.Section, /* parameter */ Anon_Y, scala.Unit]
+    handler: js.ThisFunction1[
+      /* this */ activexDashAccessLib.AccessNs.Section, 
+      /* parameter */ Anon_Button, 
+      scala.Unit
+    ]
   ): scala.Unit = js.native
   def on(
     obj: activexDashAccessLib.AccessNs.SubForm,
@@ -2321,7 +2405,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashAccessLib.AccessNs.TabControl, 
-      /* parameter */ Anon_Y, 
+      /* parameter */ Anon_Button, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -2336,7 +2420,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashAccessLib.AccessNs.TabControl, 
-      /* parameter */ Anon_Y, 
+      /* parameter */ Anon_Button, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -2351,7 +2435,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashAccessLib.AccessNs.TabControl, 
-      /* parameter */ Anon_Y, 
+      /* parameter */ Anon_Button, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -2440,7 +2524,11 @@ trait ActiveXObject extends js.Object {
       activexDashAccessLib.activexDashAccessLibStrings.X, 
       activexDashAccessLib.activexDashAccessLibStrings.Y
     ],
-    handler: js.ThisFunction1[/* this */ activexDashAccessLib.AccessNs.TextBox, /* parameter */ Anon_Y, scala.Unit]
+    handler: js.ThisFunction1[
+      /* this */ activexDashAccessLib.AccessNs.TextBox, 
+      /* parameter */ Anon_Button, 
+      scala.Unit
+    ]
   ): scala.Unit = js.native
   def on(
     obj: activexDashAccessLib.AccessNs.TextBox,
@@ -2451,7 +2539,11 @@ trait ActiveXObject extends js.Object {
       activexDashAccessLib.activexDashAccessLibStrings.X, 
       activexDashAccessLib.activexDashAccessLibStrings.Y
     ],
-    handler: js.ThisFunction1[/* this */ activexDashAccessLib.AccessNs.TextBox, /* parameter */ Anon_Y, scala.Unit]
+    handler: js.ThisFunction1[
+      /* this */ activexDashAccessLib.AccessNs.TextBox, 
+      /* parameter */ Anon_Button, 
+      scala.Unit
+    ]
   ): scala.Unit = js.native
   def on(
     obj: activexDashAccessLib.AccessNs.TextBox,
@@ -2462,7 +2554,11 @@ trait ActiveXObject extends js.Object {
       activexDashAccessLib.activexDashAccessLibStrings.X, 
       activexDashAccessLib.activexDashAccessLibStrings.Y
     ],
-    handler: js.ThisFunction1[/* this */ activexDashAccessLib.AccessNs.TextBox, /* parameter */ Anon_Y, scala.Unit]
+    handler: js.ThisFunction1[
+      /* this */ activexDashAccessLib.AccessNs.TextBox, 
+      /* parameter */ Anon_Button, 
+      scala.Unit
+    ]
   ): scala.Unit = js.native
   def on(
     obj: activexDashAccessLib.AccessNs.TextBox,
@@ -2551,7 +2647,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashAccessLib.AccessNs.ToggleButton, 
-      /* parameter */ Anon_Y, 
+      /* parameter */ Anon_Button, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -2566,7 +2662,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashAccessLib.AccessNs.ToggleButton, 
-      /* parameter */ Anon_Y, 
+      /* parameter */ Anon_Button, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -2581,7 +2677,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashAccessLib.AccessNs.ToggleButton, 
-      /* parameter */ Anon_Y, 
+      /* parameter */ Anon_Button, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -2624,7 +2720,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashAccessLib.AccessNs.WebBrowserControl, 
-      /* parameter */ Anon_URL, 
+      /* parameter */ Anon_PDisp, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -2685,7 +2781,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashAccessLib.AccessNs.WebBrowserControl, 
-      /* parameter */ Anon_Y, 
+      /* parameter */ Anon_Button, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -2700,7 +2796,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashAccessLib.AccessNs.WebBrowserControl, 
-      /* parameter */ Anon_Y, 
+      /* parameter */ Anon_Button, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -2715,7 +2811,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashAccessLib.AccessNs.WebBrowserControl, 
-      /* parameter */ Anon_Y, 
+      /* parameter */ Anon_Button, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -2731,7 +2827,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashAccessLib.AccessNs.WebBrowserControl, 
-      /* parameter */ Anon_TargetFrameName, 
+      /* parameter */ Anon_PDispURL, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -2744,7 +2840,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashAccessLib.AccessNs.WebBrowserControl, 
-      /* parameter */ Anon_ProgressMax, 
+      /* parameter */ Anon_Progress, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -2835,7 +2931,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashAccessLib.AccessNs._CheckBoxInOption, 
-      /* parameter */ Anon_Y, 
+      /* parameter */ Anon_Button, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -2850,7 +2946,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashAccessLib.AccessNs._CheckBoxInOption, 
-      /* parameter */ Anon_Y, 
+      /* parameter */ Anon_Button, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -2865,7 +2961,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashAccessLib.AccessNs._CheckBoxInOption, 
-      /* parameter */ Anon_Y, 
+      /* parameter */ Anon_Button, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -2946,7 +3042,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashAccessLib.AccessNs._OptionButtonInOption, 
-      /* parameter */ Anon_Y, 
+      /* parameter */ Anon_Button, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -2961,7 +3057,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashAccessLib.AccessNs._OptionButtonInOption, 
-      /* parameter */ Anon_Y, 
+      /* parameter */ Anon_Button, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -2976,7 +3072,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashAccessLib.AccessNs._OptionButtonInOption, 
-      /* parameter */ Anon_Y, 
+      /* parameter */ Anon_Button, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -3014,7 +3110,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashAccessLib.AccessNs._PageHdrFtrInReport, 
-      /* parameter */ Anon_Y, 
+      /* parameter */ Anon_Button, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -3029,7 +3125,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashAccessLib.AccessNs._PageHdrFtrInReport, 
-      /* parameter */ Anon_Y, 
+      /* parameter */ Anon_Button, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -3044,7 +3140,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashAccessLib.AccessNs._PageHdrFtrInReport, 
-      /* parameter */ Anon_Y, 
+      /* parameter */ Anon_Button, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -3095,7 +3191,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashAccessLib.AccessNs._SectionInReport, 
-      /* parameter */ Anon_Y, 
+      /* parameter */ Anon_Button, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -3110,7 +3206,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashAccessLib.AccessNs._SectionInReport, 
-      /* parameter */ Anon_Y, 
+      /* parameter */ Anon_Button, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -3125,7 +3221,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashAccessLib.AccessNs._SectionInReport, 
-      /* parameter */ Anon_Y, 
+      /* parameter */ Anon_Button, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -3219,7 +3315,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashAccessLib.AccessNs._ToggleButtonInOption, 
-      /* parameter */ Anon_Y, 
+      /* parameter */ Anon_Button, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -3234,7 +3330,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashAccessLib.AccessNs._ToggleButtonInOption, 
-      /* parameter */ Anon_Y, 
+      /* parameter */ Anon_Button, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -3249,7 +3345,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashAccessLib.AccessNs._ToggleButtonInOption, 
-      /* parameter */ Anon_Y, 
+      /* parameter */ Anon_Button, 
       scala.Unit
     ]
   ): scala.Unit = js.native

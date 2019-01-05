@@ -75,11 +75,15 @@ trait SelectListProps
   /**
     * The native onKeyDown event, called preventDefault will prevent any custom behavior, included keyboard shortcuts.
     */
-  var onKeyDown: js.UndefOr[js.Function1[/* event */ reactLib.KeyboardEvent, scala.Unit]] = js.undefined
+  var onKeyDown: js.UndefOr[
+    js.Function1[/* event */ reactLib.KeyboardEvent with stdLib.KeyboardEvent, scala.Unit]
+  ] = js.undefined
   /**
     * The native onKeyPress event, called preventDefault will stop any custom behavior.
     */
-  var onKeyPress: js.UndefOr[js.Function1[/* event */ reactLib.KeyboardEvent, scala.Unit]] = js.undefined
+  var onKeyPress: js.UndefOr[
+    js.Function1[/* event */ reactLib.KeyboardEvent with stdLib.KeyboardEvent, scala.Unit]
+  ] = js.undefined
   /**
     * A handler called when focus shifts on the SelectList. Internally this is used to ensure
     * the focused item is in view. If you want to define your own "scrollTo" behavior or just
@@ -89,8 +93,8 @@ trait SelectListProps
     */
   var onMove: js.UndefOr[
     js.Function3[
-      /* list */ reactLib.HTMLElement, 
-      /* focusedNode */ reactLib.HTMLElement, 
+      /* list */ reactLib.HTMLElement with stdLib.HTMLElement, 
+      /* focusedNode */ reactLib.HTMLElement with stdLib.HTMLElement, 
       /* focusedItem */ js.Any, 
       scala.Unit
     ]

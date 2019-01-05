@@ -6,8 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_Name extends js.Object {
-  var id: js.UndefOr[java.lang.String] = js.undefined
-  var name: js.UndefOr[java.lang.String] = js.undefined
-  var version: js.UndefOr[java.lang.String] = js.undefined
+  var code: scala.Double
+  var detail: java.lang.String
+  var name: java.lang.String
+  var standardName: java.lang.String
 }
 

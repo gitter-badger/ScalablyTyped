@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveMultipleInheritance: Dropped parents List(atBlueprintjsCoreLib.libEsmCommonPropsMod.IProps because Would inherit conflicting mutable fields List(className))*/
-trait ITagProps
-  extends reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLSpanElement]
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- atBlueprintjsCoreLib.libEsmCommonPropsMod.IProps because var conflicts: className. Inlined  */ trait ITagProps
+  extends reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLSpanElement with stdLib.HTMLSpanElement]
      with atBlueprintjsCoreLib.libEsmCommonPropsMod.IIntentProps {
   /**
     * Whether the tag should appear in an active state.
@@ -52,7 +52,7 @@ trait ITagProps
   @JSName("onClick")
   var onClick_ITagProps: js.UndefOr[
     js.Function1[
-      /* e */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLDivElement, reactLib.NativeMouseEvent], 
+      /* e */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLDivElement with stdLib.HTMLDivElement, reactLib.NativeMouseEvent], 
       scala.Unit
     ]
   ] = js.undefined
@@ -62,7 +62,10 @@ trait ITagProps
     */
   var onRemove: js.UndefOr[
     js.Function2[
-      /* e */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLButtonElement, reactLib.NativeMouseEvent], 
+      /* e */ reactLib.reactMod.ReactNs.MouseEvent[
+        reactLib.HTMLButtonElement with stdLib.HTMLButtonElement, 
+        reactLib.NativeMouseEvent
+      ], 
       /* tagProps */ ITagProps, 
       scala.Unit
     ]

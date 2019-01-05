@@ -10,7 +10,7 @@ trait DraggableData extends js.Object {
   var deltaY: scala.Double
   var lastX: scala.Double
   var lastY: scala.Double
-  var node: reactLib.HTMLElement
+  var node: reactLib.HTMLElement with stdLib.HTMLElement
   var x: scala.Double
   var y: scala.Double
 }

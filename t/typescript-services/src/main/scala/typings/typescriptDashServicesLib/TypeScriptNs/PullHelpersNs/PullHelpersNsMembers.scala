@@ -29,7 +29,7 @@ object PullHelpersNsMembers extends js.Object {
     semanticInfoChain: typescriptDashServicesLib.TypeScriptNs.SemanticInfoChain
   ): typescriptDashServicesLib.Anon_Getter = js.native
   def getRootType(`type`: typescriptDashServicesLib.TypeScriptNs.PullTypeSymbol): typescriptDashServicesLib.TypeScriptNs.PullTypeSymbol = js.native
-  def getSignatureForFuncDecl(functionDecl: typescriptDashServicesLib.TypeScriptNs.PullDecl): typescriptDashServicesLib.Anon_AllSignatures = js.native
+  def getSignatureForFuncDecl(functionDecl: typescriptDashServicesLib.TypeScriptNs.PullDecl): typescriptDashServicesLib.Anon_Signature = js.native
   def isExportedSymbolInClodule(symbol: typescriptDashServicesLib.TypeScriptNs.PullSymbol): scala.Boolean = js.native
   def isNameNumeric(name: java.lang.String): scala.Boolean = js.native
   def isSymbolDeclaredInScopeChain(

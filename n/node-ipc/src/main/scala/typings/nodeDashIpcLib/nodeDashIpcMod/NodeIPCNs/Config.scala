@@ -30,7 +30,7 @@ trait Config extends js.Object {
     * Primarily used when specifying which interface a client should connect through.
     * see the socket.connect documentation in the node.js api https://nodejs.org/api/net.html#net_socket_connect_options_connectlistener
     */
-  var interfaces: nodeDashIpcLib.Anon_Lookup
+  var interfaces: nodeDashIpcLib.Anon_LocalAddress
   /**
     * Default: 5
     * Set the depth for util.inspect during ipc.log
@@ -100,7 +100,7 @@ trait Config extends js.Object {
     * Synchronous requests. Clients will not send new requests until the server answers
     */
   var sync: scala.Boolean
-  var tls: nodeDashIpcLib.Anon_Private
+  var tls: nodeDashIpcLib.Anon_RejectUnauthorized
   /**
     * Default: true
     * Defaults to true meaning that the module will take care of deleting the IPC socket prior to startup.

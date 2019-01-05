@@ -6,12 +6,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait XMLHttpRequestEventTargetEventMap extends js.Object {
-  var abort: reactLib.Event
-  var error: reactLib.Event
-  var load: reactLib.Event
-  var loadend: reactLib.Event
-  var loadstart: reactLib.Event
-  var progress: reactLib.Event
-  var timeout: reactLib.Event
+  var abort: reactLib.Event with stdLib.Event
+  var error: reactLib.Event with stdLib.Event
+  var load: reactLib.Event with stdLib.Event
+  var loadend: reactLib.Event with stdLib.Event
+  var loadstart: reactLib.Event with stdLib.Event
+  var progress: reactLib.Event with stdLib.Event
+  var timeout: reactLib.Event with stdLib.Event
 }
 

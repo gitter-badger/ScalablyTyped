@@ -20,7 +20,9 @@ trait ReactCropProps extends js.Object {
   var onComplete: js.UndefOr[js.Function2[/* crop */ Crop, /* pixelCrop */ PixelCrop, scala.Unit]] = js.undefined
   var onDragEnd: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   var onDragStart: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
-  var onImageLoaded: js.UndefOr[js.Function1[/* target */ reactLib.HTMLImageElement, scala.Unit]] = js.undefined
+  var onImageLoaded: js.UndefOr[
+    js.Function1[/* target */ reactLib.HTMLImageElement with stdLib.HTMLImageElement, scala.Unit]
+  ] = js.undefined
   var src: java.lang.String
   var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
   def onChange(crop: Crop, pixelCrop: PixelCrop): scala.Unit

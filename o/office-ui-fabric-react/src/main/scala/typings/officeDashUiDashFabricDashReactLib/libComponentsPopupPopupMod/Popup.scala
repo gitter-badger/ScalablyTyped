@@ -16,7 +16,7 @@ class Popup protected ()
   var _containsFocus: js.Any = js.native
   var _onKeyDown: js.Any = js.native
   var _originalFocusedElement: js.Any = js.native
-  var _root: reactLib.reactMod.ReactNs.RefObject[reactLib.HTMLDivElement] = js.native
+  var _root: reactLib.reactMod.ReactNs.RefObject[reactLib.HTMLDivElement with stdLib.HTMLDivElement] = js.native
   /* private */ def _getScrollBar(): js.Any = js.native
   /* private */ def _onBlur(ev: js.Any): js.Any = js.native
   /* private */ def _onFocus(): js.Any = js.native

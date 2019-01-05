@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 object reactDashStickyModMembers extends js.Object {
   val Sticky: reactLib.reactMod.ReactNs.ComponentClass[StickyProps, reactLib.reactMod.ReactNs.ComponentState] = js.native
   val StickyContainer: reactLib.reactMod.ReactNs.ComponentClass[
-    reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLDivElement], 
+    reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLDivElement with stdLib.HTMLDivElement], 
     reactLib.reactMod.ReactNs.ComponentState
   ] = js.native
 }

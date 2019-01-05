@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 
 trait ResembleComparisonResult extends js.Object {
   var analysisTime: scala.Double
-  var diffBounds: resemblejsLib.Anon_Bottom
+  var diffBounds: resemblejsLib.Anon_Top
   /**
     * The difference in width and height between the dimensions of the two compared images
     */
-  var dimensionDifference: resemblejsLib.Anon_Height
+  var dimensionDifference: resemblejsLib.Anon_Width
   /**
     * Do the two images have the same dimensions?
     */

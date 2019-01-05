@@ -21,7 +21,9 @@ trait AlertProps extends js.Object {
   /** Content of Alert */
   var message: reactLib.reactMod.ReactNs.ReactNode
   /** Callback when close Alert */
-  var onClose: js.UndefOr[reactLib.reactMod.ReactNs.MouseEventHandler[reactLib.HTMLAnchorElement]] = js.undefined
+  var onClose: js.UndefOr[
+    reactLib.reactMod.ReactNs.MouseEventHandler[reactLib.HTMLAnchorElement with stdLib.HTMLAnchorElement]
+  ] = js.undefined
   var prefixCls: js.UndefOr[java.lang.String] = js.undefined
   /** Whether to show icon */
   var showIcon: js.UndefOr[scala.Boolean] = js.undefined

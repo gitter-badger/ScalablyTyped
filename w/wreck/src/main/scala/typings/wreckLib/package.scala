@@ -14,7 +14,7 @@ package object wreckLib {
     /* err */ js.UndefOr[
       /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify Boom */ js.Any
     ], 
-    /* details */ Anon_Url, 
+    /* details */ Anon_Req, 
     scala.Unit
   ]
 }

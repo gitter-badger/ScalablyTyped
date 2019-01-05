@@ -54,7 +54,9 @@ trait IAlertProps
     */
   var onCancel: js.UndefOr[
     js.Function1[
-      /* evt */ js.UndefOr[reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.HTMLElement, reactLib.Event]], 
+      /* evt */ js.UndefOr[
+        reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.HTMLElement with stdLib.HTMLElement, reactLib.Event]
+      ], 
       scala.Unit
     ]
   ] = js.undefined
@@ -66,7 +68,9 @@ trait IAlertProps
   var onClose: js.UndefOr[
     js.Function2[
       /* confirmed */ scala.Boolean, 
-      /* evt */ js.UndefOr[reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.HTMLElement, reactLib.Event]], 
+      /* evt */ js.UndefOr[
+        reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.HTMLElement with stdLib.HTMLElement, reactLib.Event]
+      ], 
       scala.Unit
     ]
   ] = js.undefined
@@ -77,7 +81,9 @@ trait IAlertProps
     */
   var onConfirm: js.UndefOr[
     js.Function1[
-      /* evt */ js.UndefOr[reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.HTMLElement, reactLib.Event]], 
+      /* evt */ js.UndefOr[
+        reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.HTMLElement with stdLib.HTMLElement, reactLib.Event]
+      ], 
       scala.Unit
     ]
   ] = js.undefined
@@ -86,7 +92,7 @@ trait IAlertProps
     * This prop is ignored if `usePortal` is `false`.
     * @default document.body
     */
-  var portalContainer: js.UndefOr[reactLib.HTMLElement] = js.undefined
+  var portalContainer: js.UndefOr[reactLib.HTMLElement with stdLib.HTMLElement] = js.undefined
   /**
     * CSS styles to apply to the alert.
     */

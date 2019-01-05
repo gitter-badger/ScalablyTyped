@@ -18,11 +18,11 @@ trait AdditionalItems extends js.Object {
     * @see DataItemType
     */
   var `type`: chromeDashAppsLib.chromeNs.ToStringLiteral[
-    chromeDashAppsLib.Anon_TEXTHTML, 
+    chromeDashAppsLib.Anon_TEXTPLAIN, 
     java.lang.String, 
     stdLib.Exclude[
       java.lang.String, 
-      /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_TEXTHTML[keyof chrome-apps.Anon_TEXTHTML] */ js.Any
+      /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_TEXTPLAIN[keyof chrome-apps.Anon_TEXTPLAIN] */ js.Any
     ]
   ]
 }

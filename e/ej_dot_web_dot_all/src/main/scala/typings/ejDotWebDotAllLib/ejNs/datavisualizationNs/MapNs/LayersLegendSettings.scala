@@ -45,7 +45,7 @@ trait LayersLegendSettings extends js.Object {
   /** set the position of legend settings
     * @Default {topleft}
     */
-  var position: js.UndefOr[Position | java.lang.String] = js.undefined
+  var position: js.UndefOr[(Position with stdLib.Position) | java.lang.String] = js.undefined
   /** x position value for legend setting
     * @Default {0}
     */

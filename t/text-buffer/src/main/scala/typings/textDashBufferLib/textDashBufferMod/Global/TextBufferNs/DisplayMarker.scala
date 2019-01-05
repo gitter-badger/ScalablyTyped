@@ -120,7 +120,7 @@ trait DisplayMarker extends js.Object {
   def plantTail(): scala.Unit = js.native
   /** Modifies the buffer range of this marker. */
   def setBufferRange(bufferRange: RangeCompatible): scala.Unit = js.native
-  def setBufferRange(bufferRange: RangeCompatible, properties: textDashBufferLib.Anon_Reversed): scala.Unit = js.native
+  def setBufferRange(bufferRange: RangeCompatible, properties: textDashBufferLib.Anon_ReversedBoolean): scala.Unit = js.native
   /** Sets the buffer position of the marker's head. */
   def setHeadBufferPosition(bufferPosition: PointCompatible): scala.Unit = js.native
   /** Sets the screen position of the marker's head. */
@@ -130,7 +130,7 @@ trait DisplayMarker extends js.Object {
   def setProperties(properties: js.Object): scala.Unit = js.native
   /** Modifies the screen range of this marker. */
   def setScreenRange(screenRange: RangeCompatible): scala.Unit = js.native
-  def setScreenRange(screenRange: RangeCompatible, options: textDashBufferLib.Anon_ClipDirectionBackward): scala.Unit = js.native
+  def setScreenRange(screenRange: RangeCompatible, options: textDashBufferLib.Anon_ReversedClipDirection): scala.Unit = js.native
   /** Sets the buffer position of the marker's tail. */
   def setTailBufferPosition(bufferPosition: PointCompatible): scala.Unit = js.native
   /** Sets the screen position of the marker's tail. */

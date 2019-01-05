@@ -46,8 +46,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("pc.RenderTarget")
 @js.native
 class RenderTarget protected () extends js.Object {
-  def this(options: playcanvasLib.Anon_AutoResolve) = this()
-  def this(options: GraphicsDevice, _arg2: Texture, _arg3: playcanvasLib.Anon_AutoResolve) = this()
+  def this(options: playcanvasLib.Anon_ColorBuffer) = this()
+  def this(options: GraphicsDevice, _arg2: Texture, _arg3: playcanvasLib.Anon_ColorBuffer) = this()
   /**
     * @readonly
     * @name pc.RenderTarget#colorBuffer

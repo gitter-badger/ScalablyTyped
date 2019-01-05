@@ -56,7 +56,7 @@ trait PartialManifest extends js.Object {
     * chrome.bluetoothLowEnergy APIs.
     * @requires Platforms: Chrome OS, Windows and Mac
     */
-  var bluetooth: js.UndefOr[chromeDashAppsLib.Anon_Socket] = js.undefined
+  var bluetooth: js.UndefOr[chromeDashAppsLib.Anon_Uuids] = js.undefined
   /**
     * Use the commands API to add keyboard shortcuts that trigger actions in your app.
     * E.g. an action to open the browser action or send a command to the app.
@@ -95,18 +95,18 @@ trait PartialManifest extends js.Object {
     * to read the page's content using **declarativeContent**.
     * @see[event_rules docs]{@link https://developer.chrome.com/extensions/manifest/event_rules}
     */
-  var event_rules: js.UndefOr[js.Array[chromeDashAppsLib.Anon_Actions]] = js.undefined
+  var event_rules: js.UndefOr[js.Array[chromeDashAppsLib.Anon_Event]] = js.undefined
   /**
     * Declares which extensions, apps, and web pages can connect
     * to your extension via runtime.connect and runtime.sendMessage.
     */
-  var externally_connectable: chromeDashAppsLib.Anon_MatchesAccepttlschannelid
+  var externally_connectable: chromeDashAppsLib.Anon_IdMatches
   /**
     * @requires Permissions: 'fileBrowserHandle'
     * @requires Location': 'component'
     * You can specify locale-specific strings for the value of 'default_title'
     */
-  var file_browser_handlers: js.UndefOr[js.Array[chromeDashAppsLib.Anon_Defaulttitle]] = js.undefined
+  var file_browser_handlers: js.UndefOr[js.Array[chromeDashAppsLib.Anon_IdDefaulttitle]] = js.undefined
   /**
     * Triggers a launch of the app when one of these files are handled.
     */
@@ -114,7 +114,7 @@ trait PartialManifest extends js.Object {
   /**
     * Files app uses above information in order to render related UI elements approprietly.
     */
-  var file_system_provider_capabilities: js.UndefOr[chromeDashAppsLib.Anon_Source] = js.undefined
+  var file_system_provider_capabilities: js.UndefOr[chromeDashAppsLib.Anon_Configurable] = js.undefined
   /**
     * One or more icons that represent the extension, app, or theme.
     * You should always provide a 128x128 icon; it's used during
@@ -141,7 +141,7 @@ trait PartialManifest extends js.Object {
     * Import resources from another extension / app.
     * @see[Shared modules]{@link https://developer.chrome.com/apps/shared_modules}
     */
-  var `import`: js.UndefOr[js.Array[chromeDashAppsLib.Anon_Id]] = js.undefined
+  var `import`: js.UndefOr[js.Array[chromeDashAppsLib.Anon_IdString]] = js.undefined
   /** This value can be used to control the unique ID of an app when it is loaded during development. */
   var key: js.UndefOr[java.lang.String] = js.undefined
   /**
@@ -158,7 +158,7 @@ trait PartialManifest extends js.Object {
     */
   var minimum_chrome_version: js.UndefOr[java.lang.String] = js.undefined
   /** One or more mappings from MIME types to the Native Client module that handles each type. */
-  var nacl_modules: js.UndefOr[js.Array[chromeDashAppsLib.Anon_Mimetype]] = js.undefined
+  var nacl_modules: js.UndefOr[js.Array[chromeDashAppsLib.Anon_Path]] = js.undefined
   /**
     * The *name* (maximum of 45 characters) is the primary identifier
     * of the app and is a required field.
@@ -203,7 +203,7 @@ trait PartialManifest extends js.Object {
     * @see[NDK Docs]{@link https://github.com/crosswalk-project/chromium-crosswalk/blob/af36cc3ce3f5fcb8033f16236725718f8012abfe/native_client_sdk/src/doc/devguide/distributing.rst}
     * @see[Chromium Source]{@link https://github.com/crosswalk-project/chromium-crosswalk/blob/af36cc3ce3f5fcb8033f16236725718f8012abfe/native_client_sdk/src/tools/fix_manifest.py}
     */
-  var platforms: js.UndefOr[js.Array[chromeDashAppsLib.Anon_Subpackagepath]] = js.undefined
+  var platforms: js.UndefOr[js.Array[chromeDashAppsLib.Anon_Naclarch]] = js.undefined
   /**
     * Technologies required by the app. Hosting sites such
     * as the Chrome Web Store may use this list to dissuade
@@ -219,7 +219,7 @@ trait PartialManifest extends js.Object {
     * (including embedded frames and scripts) inside sandboxed pages.
     * Please use a webview instead.
     */
-  var sandbox: js.UndefOr[chromeDashAppsLib.Anon_Contentsecuritypolicy] = js.undefined
+  var sandbox: js.UndefOr[chromeDashAppsLib.Anon_Pages] = js.undefined
   /**
     * The short_name (maximum of 12 characters recommended) is
     * a short version of the app's name. It is an optional field
@@ -239,7 +239,7 @@ trait PartialManifest extends js.Object {
     * The sockets manifest property declares which permissions are available
     * for the sockets.udp, sockets.tcp and sockets.tcpServer APIs.
     */
-  var sockets: js.UndefOr[chromeDashAppsLib.Anon_TcpServer] = js.undefined
+  var sockets: js.UndefOr[chromeDashAppsLib.Anon_Tcp] = js.undefined
   /**
     * Unlike the local and sync storage areas,
     * the managed storage area requires its structure
@@ -283,7 +283,7 @@ trait PartialManifest extends js.Object {
     */
   var url_handlers: js.UndefOr[org.scalablytyped.runtime.StringDictionary[chromeDashAppsLib.Anon_Matches]] = js.undefined
   /** The usbPrinters manifest property declares which USB printers are supported by an app using the printerProvider API. */
-  var usb_printers: js.UndefOr[chromeDashAppsLib.Anon_FiltersArray] = js.undefined
+  var usb_printers: js.UndefOr[chromeDashAppsLib.Anon_Filters] = js.undefined
   /**
     * One to four dot-separated integers identifying the version of this app.
     * A couple of rules apply to the integers: they must be between 0 and 65535, inclusive,

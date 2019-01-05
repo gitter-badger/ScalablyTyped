@@ -26,7 +26,7 @@ class PageView ()
   /* CompleteClass */
   override var aiDataContract: js.Any = js.native
   @JSName("aiDataContract")
-  var aiDataContract_PageView: applicationinsightsDashJsLib.Anon_Duration = js.native
+  var aiDataContract_PageView: applicationinsightsDashJsLib.Anon_VerName = js.native
 }
 
 @JSGlobal("Microsoft.ApplicationInsights.Telemetry.PageView")

@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Grid extends js.Object {
-  var x: js.UndefOr[c3Lib.Anon_Lines] = js.undefined
-  var y: js.UndefOr[c3Lib.Anon_Lines] = js.undefined
+  var x: js.UndefOr[c3Lib.Anon_ShowLines] = js.undefined
+  var y: js.UndefOr[c3Lib.Anon_ShowLines] = js.undefined
 }
 

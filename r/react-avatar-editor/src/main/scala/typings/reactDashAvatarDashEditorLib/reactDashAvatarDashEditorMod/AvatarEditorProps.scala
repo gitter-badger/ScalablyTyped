@@ -13,12 +13,12 @@ trait AvatarEditorProps extends js.Object {
   var disableDrop: js.UndefOr[scala.Boolean] = js.undefined
   var height: js.UndefOr[scala.Double] = js.undefined
   var image: java.lang.String | stdLib.File
-  var onDropFile: js.UndefOr[js.Function1[/* event */ reactLib.DragEvent, scala.Unit]] = js.undefined
+  var onDropFile: js.UndefOr[js.Function1[/* event */ reactLib.DragEvent with stdLib.DragEvent, scala.Unit]] = js.undefined
   var onImageChange: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
-  var onImageReady: js.UndefOr[js.Function1[/* event */ reactLib.Event, scala.Unit]] = js.undefined
-  var onLoadFailure: js.UndefOr[js.Function1[/* event */ reactLib.Event, scala.Unit]] = js.undefined
+  var onImageReady: js.UndefOr[js.Function1[/* event */ reactLib.Event with stdLib.Event, scala.Unit]] = js.undefined
+  var onLoadFailure: js.UndefOr[js.Function1[/* event */ reactLib.Event with stdLib.Event, scala.Unit]] = js.undefined
   var onLoadSuccess: js.UndefOr[js.Function1[/* imgInfo */ ImageState, scala.Unit]] = js.undefined
-  var onMouseMove: js.UndefOr[js.Function1[/* event */ reactLib.Event, scala.Unit]] = js.undefined
+  var onMouseMove: js.UndefOr[js.Function1[/* event */ reactLib.Event with stdLib.Event, scala.Unit]] = js.undefined
   var onMouseUp: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   var onPositionChange: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   var position: js.UndefOr[js.Object] = js.undefined

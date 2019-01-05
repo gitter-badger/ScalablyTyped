@@ -7,18 +7,12 @@ import scala.scalajs.js.annotation._
 
 trait Anon_Personal extends js.Object {
   /**
-    * The user's business phone number, or null if one is not
-    * specified.
+    * The user's business postal address.
     */
-  var business: java.lang.String
+  var business: microsoftDashLiveDashConnectLib.MicrosoftNs.LiveNs.IPostalAddress
   /**
-    * The user's mobile phone number, or null if one is not specified.
+    * The user's personal postal address.
     */
-  var mobile: java.lang.String
-  /**
-    * The user's personal phone number, or null if one is not
-    * specified.
-    */
-  var personal: java.lang.String
+  var personal: microsoftDashLiveDashConnectLib.MicrosoftNs.LiveNs.IPostalAddress
 }
 

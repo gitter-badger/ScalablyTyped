@@ -6,10 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_Unknown extends js.Object {
-  var approved: scala.Double
-  var canceled: scala.Double
-  var pending: scala.Double
-  var rejected: scala.Double
+  var failed: scala.Double
+  var succeeded: scala.Double
   var unknown: scala.Double
 }
 

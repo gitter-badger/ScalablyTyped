@@ -16,14 +16,14 @@ trait ReactCrop
   def crossOverCheck(): scala.Unit = js.native
   def dragCrop(): reactDashImageDashCropLib.reactDashImageDashCropMod.ReactCropNs.Crop = js.native
   def getCropStyle(): reactLib.reactMod.ReactNs.CSSProperties = js.native
-  def getNewSize(): reactDashImageDashCropLib.Anon_Height = js.native
+  def getNewSize(): reactDashImageDashCropLib.Anon_Width = js.native
   def makeNewCrop(): reactDashImageDashCropLib.reactDashImageDashCropMod.ReactCropNs.Crop = js.native
-  def onComponentKeyDown(e: reactLib.MouseEvent): scala.Unit = js.native
-  def onComponentMouseTouchDown(e: reactLib.MouseEvent): scala.Unit = js.native
-  def onCropMouseTouchDown(e: reactLib.MouseEvent): scala.Unit = js.native
-  def onDocMouseTouchEnd(e: reactLib.MouseEvent): scala.Unit = js.native
-  def onDocMouseTouchMove(e: reactLib.MouseEvent): scala.Unit = js.native
-  def onImageLoad(image: reactLib.HTMLImageElement): scala.Unit = js.native
+  def onComponentKeyDown(e: reactLib.MouseEvent with stdLib.MouseEvent): scala.Unit = js.native
+  def onComponentMouseTouchDown(e: reactLib.MouseEvent with stdLib.MouseEvent): scala.Unit = js.native
+  def onCropMouseTouchDown(e: reactLib.MouseEvent with stdLib.MouseEvent): scala.Unit = js.native
+  def onDocMouseTouchEnd(e: reactLib.MouseEvent with stdLib.MouseEvent): scala.Unit = js.native
+  def onDocMouseTouchMove(e: reactLib.MouseEvent with stdLib.MouseEvent): scala.Unit = js.native
+  def onImageLoad(image: reactLib.HTMLImageElement with stdLib.HTMLImageElement): scala.Unit = js.native
   def resizeCrop(): reactDashImageDashCropLib.reactDashImageDashCropMod.ReactCropNs.Crop = js.native
   def straightenYPath(clientX: scala.Double): scala.Double = js.native
 }

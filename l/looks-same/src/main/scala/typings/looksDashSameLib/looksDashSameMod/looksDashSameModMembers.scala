@@ -37,8 +37,15 @@ object looksDashSameModMembers extends js.Object {
   def colors(color1: LooksSameColor, color2: LooksSameColor, options: looksDashSameLib.Anon_Tolerance): scala.Unit = js.native
   def createDiff(
     options: CreateDiffAsBufferOptions,
-    callback: js.Function2[/* error */ nodeLib.Error | scala.Null, /* buffer */ nodeLib.Buffer, _]
+    callback: js.Function2[
+      /* error */ (nodeLib.Error with stdLib.Error) | scala.Null, 
+      /* buffer */ nodeLib.Buffer, 
+      _
+    ]
   ): scala.Unit = js.native
-  def createDiff(options: CreateDiffOptions, callback: js.Function1[/* error */ nodeLib.Error | scala.Null, _]): scala.Unit = js.native
+  def createDiff(
+    options: CreateDiffOptions,
+    callback: js.Function1[/* error */ (nodeLib.Error with stdLib.Error) | scala.Null, _]
+  ): scala.Unit = js.native
 }
 

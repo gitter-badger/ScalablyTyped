@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait IToggleProps
-  extends reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLElement] {
+  extends reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLElement with stdLib.HTMLElement] {
   /**
     * Text for screen-reader to announce as the name of the toggle.
     */
@@ -15,7 +15,9 @@ trait IToggleProps
     * Render the root element as another type.
     */
   var as: js.UndefOr[
-    atUifabricUtilitiesLib.libIComponentAsMod.IComponentAs[reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLElement]]
+    atUifabricUtilitiesLib.libIComponentAsMod.IComponentAs[
+      reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLElement with stdLib.HTMLElement]
+    ]
   ] = js.undefined
   /**
     * Checked state of the toggle. If you are maintaining state yourself, use this property. Otherwise refer to `defaultChecked`.
@@ -58,7 +60,7 @@ trait IToggleProps
   @JSName("onChange")
   var onChange_IToggleProps: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent], 
+      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement with stdLib.HTMLElement, reactLib.NativeMouseEvent], 
       /* checked */ js.UndefOr[scala.Boolean], 
       scala.Unit
     ]

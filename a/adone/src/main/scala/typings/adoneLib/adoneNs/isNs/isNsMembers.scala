@@ -52,7 +52,7 @@ object isNsMembers extends js.Object {
   def dotfile(str: java.lang.String): scala.Boolean = js.native
   def duplexStream(obj: js.Any): scala.Boolean = js.native
   def email(obj: js.Any): /* is string */ scala.Boolean = js.native
-  def email(obj: js.Any, options: adoneLib.Anon_AllowUtf8LocalPart): /* is string */ scala.Boolean = js.native
+  def email(obj: js.Any, options: adoneLib.Anon_AllowDisplayName): /* is string */ scala.Boolean = js.native
   def emitter(obj: js.Any): /* is adone.adone.event.Emitter */ scala.Boolean = js.native
   def emptyObject(obj: js.Any): /* is object */ scala.Boolean = js.native
   def emptyString(obj: js.Any): /* is string */ scala.Boolean = js.native
@@ -88,12 +88,12 @@ object isNsMembers extends js.Object {
   def ip4(str: java.lang.String, options: adoneLib.adoneNs.regexNs.INs.IPNs.Options): scala.Boolean = js.native
   def ip6(str: java.lang.String): scala.Boolean = js.native
   def ip6(str: java.lang.String, options: adoneLib.adoneNs.regexNs.INs.IPNs.Options): scala.Boolean = js.native
-  def iterable(obj: js.Any): /* is node.Iterable<any> */ scala.Boolean = js.native
+  def iterable(obj: js.Any): scala.Boolean = js.native
   def json(obj: js.Any): scala.Boolean = js.native
   def logger(obj: js.Any): scala.Boolean = js.native
   def long(obj: js.Any): /* is adone.adone.math.Long */ scala.Boolean = js.native
   def lowercase(str: java.lang.String): scala.Boolean = js.native
-  def map(obj: js.Any): /* is lodash.lodash.Global.Map<any, any> */ scala.Boolean = js.native
+  def map(obj: js.Any): scala.Boolean = js.native
   def multiAddress(obj: js.Any): scala.Boolean = js.native
   def namespace(obj: js.Any): scala.Boolean = js.native
   def nan(obj: js.Any): scala.Boolean = js.native
@@ -130,7 +130,7 @@ object isNsMembers extends js.Object {
   def regexp(obj: js.Any): /* is std.RegExp */ scala.Boolean = js.native
   def safeInteger(obj: js.Any): /* is number */ scala.Boolean = js.native
   def sameType(value: js.Any, other: js.Any): scala.Boolean = js.native
-  def set(obj: js.Any): /* is node.Set<any> */ scala.Boolean = js.native
+  def set(obj: js.Any): scala.Boolean = js.native
   def shallowEqual(left: js.Any, right: js.Any): scala.Boolean = js.native
   def stream(obj: js.Any): scala.Boolean = js.native
   def string(obj: js.Any): /* is string */ scala.Boolean = js.native
@@ -146,7 +146,7 @@ object isNsMembers extends js.Object {
   def undefined(obj: js.Any): /* is undefined */ scala.Boolean = js.native
   def uppercase(str: java.lang.String): scala.Boolean = js.native
   def url(obj: js.Any): /* is string */ scala.Boolean = js.native
-  def url(obj: js.Any, options: adoneLib.adoneNs.isNs.INs.FQDNOptions with adoneLib.Anon_RequireProtocol): /* is string */ scala.Boolean = js.native
+  def url(obj: js.Any, options: adoneLib.adoneNs.isNs.INs.FQDNOptions with adoneLib.Anon_Protocols): /* is string */ scala.Boolean = js.native
   def utf8(obj: nodeLib.Buffer): scala.Boolean = js.native
   def uuid(obj: js.Any): /* is string */ scala.Boolean = js.native
   def uuid(obj: js.Any, version: adoneLib.adoneLibNumbers.`1`): /* is string */ scala.Boolean = js.native

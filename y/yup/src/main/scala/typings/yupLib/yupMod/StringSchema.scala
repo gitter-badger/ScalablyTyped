@@ -14,7 +14,7 @@ trait StringSchema
   def lowercase(): StringSchema = js.native
   def lowercase(message: TestOptionsMessage): StringSchema = js.native
   def matches(regex: stdLib.RegExp): StringSchema = js.native
-  def matches(regex: stdLib.RegExp, messageOrOptions: yupLib.Anon_ExcludeEmptyString): StringSchema = js.native
+  def matches(regex: stdLib.RegExp, messageOrOptions: yupLib.Anon_Message): StringSchema = js.native
   def matches(regex: stdLib.RegExp, messageOrOptions: TestOptionsMessage): StringSchema = js.native
   def max(limit: scala.Double): StringSchema = js.native
   def max(limit: scala.Double, message: TestOptionsMessage): StringSchema = js.native

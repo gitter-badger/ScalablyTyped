@@ -10,7 +10,7 @@ trait Props extends js.Object {
   var children: js.UndefOr[
     reactLib.reactMod.ReactNs.ReactElement[_] | reactDashVisibilityDashSensorLib.ChildFunction
   ] = js.undefined
-  var containment: js.UndefOr[reactLib.HTMLElement] = js.undefined
+  var containment: js.UndefOr[reactLib.HTMLElement with stdLib.HTMLElement] = js.undefined
   var delayedCall: js.UndefOr[scala.Boolean] = js.undefined
   var intervalCheck: js.UndefOr[scala.Boolean] = js.undefined
   var intervalDelay: js.UndefOr[scala.Double] = js.undefined

@@ -12,7 +12,7 @@ package object swaggerDashNodeDashRunnerMod {
     /* request */ js.Any, 
     /* securityDefinition */ js.Any, 
     /* scopes */ js.Any, 
-    /* callback */ js.Function1[/* err */ nodeLib.Error, scala.Unit], 
+    /* callback */ js.Function1[/* err */ nodeLib.Error with stdLib.Error, scala.Unit], 
     scala.Unit
   ]
 }

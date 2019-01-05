@@ -41,11 +41,11 @@ trait IHotkeyProps
   /**
     * `keydown` event handler.
     */
-  var onKeyDown: js.UndefOr[js.Function1[/* e */ reactLib.KeyboardEvent, _]] = js.undefined
+  var onKeyDown: js.UndefOr[js.Function1[/* e */ reactLib.KeyboardEvent with stdLib.KeyboardEvent, _]] = js.undefined
   /**
     * `keyup` event handler.
     */
-  var onKeyUp: js.UndefOr[js.Function1[/* e */ reactLib.KeyboardEvent, _]] = js.undefined
+  var onKeyUp: js.UndefOr[js.Function1[/* e */ reactLib.KeyboardEvent with stdLib.KeyboardEvent, _]] = js.undefined
   /**
     * When `true`, invokes `event.preventDefault()` before the respective `onKeyDown` and
     * `onKeyUp` callbacks are invoked. Enabling this can simplify handler implementations.

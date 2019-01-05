@@ -11,13 +11,13 @@ object ncpModMembers extends js.Object {
   def ncp(
     source: java.lang.String,
     destination: java.lang.String,
-    callback: js.Function1[/* err */ nodeLib.Error, scala.Unit]
+    callback: js.Function1[/* err */ nodeLib.Error with stdLib.Error, scala.Unit]
   ): scala.Unit = js.native
   def ncp(
     source: java.lang.String,
     destination: java.lang.String,
     options: Options,
-    callback: js.Function1[/* err */ nodeLib.Error, scala.Unit]
+    callback: js.Function1[/* err */ nodeLib.Error with stdLib.Error, scala.Unit]
   ): scala.Unit = js.native
 }
 

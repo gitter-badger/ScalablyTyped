@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class TorusKnotBufferGeometry protected () extends BufferGeometry {
   def this(radius: js.UndefOr[scala.Double], tube: js.UndefOr[scala.Double], tubularSegments: js.UndefOr[scala.Double], radialSegments: js.UndefOr[scala.Double], p: js.UndefOr[scala.Double], q: js.UndefOr[scala.Double]) = this()
-  var parameters: threeLib.Anon_HeightScale = js.native
+  var parameters: threeLib.Anon_RadiusTubeTubularSegments = js.native
 }
 

@@ -117,7 +117,7 @@ trait Options extends js.Object {
     *
     * Default undefined.
     */
-  var getThumbBoundsFn: js.UndefOr[js.Function1[/* index */ scala.Double, photoswipeLib.Anon_W]] = js.undefined
+  var getThumbBoundsFn: js.UndefOr[js.Function1[/* index */ scala.Double, photoswipeLib.Anon_X]] = js.undefined
   /**
     * The same as the previous option, just for closing (zoom-out) transition.
     * After PhotoSwipe is opened pswp--open class will be added to the root element, you may use it to apply different transition duration in CSS.

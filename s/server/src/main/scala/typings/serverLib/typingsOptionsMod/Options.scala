@@ -10,7 +10,7 @@ trait Options extends js.Object {
   var env: js.UndefOr[java.lang.String] = js.undefined
   var favicon: js.UndefOr[java.lang.String] = js.undefined
   var log: js.UndefOr[serverLib.typingsCommonMod.LogLevel | serverLib.Anon_Level] = js.undefined
-  var parser: js.UndefOr[serverLib.Anon_Body] = js.undefined
+  var parser: js.UndefOr[serverLib.Anon_Json] = js.undefined
   var port: js.UndefOr[scala.Double] = js.undefined
   var public: js.UndefOr[java.lang.String] = js.undefined
   var secret: js.UndefOr[java.lang.String] = js.undefined

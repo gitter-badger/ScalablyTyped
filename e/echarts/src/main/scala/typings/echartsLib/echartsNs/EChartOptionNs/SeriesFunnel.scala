@@ -166,7 +166,7 @@ trait SeriesFunnel extends js.Object {
   /**
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-funnel.emphasis
     */
-  var emphasis: js.UndefOr[echartsLib.Anon_ItemStyleLabelLine] = js.undefined
+  var emphasis: js.UndefOr[echartsLib.Anon_LabelItemStyleLabelLine] = js.undefined
   /**
     * Horizontal align.
     * Defaults to align center. Can be 'left', 'right', 'center'.
@@ -200,7 +200,7 @@ trait SeriesFunnel extends js.Object {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-funnel.itemStyle
     */
-  var itemStyle: js.UndefOr[echartsLib.Anon_ShadowOffsetXBorderTypeShadowBlurBorderWidthColor] = js.undefined
+  var itemStyle: js.UndefOr[echartsLib.Anon_ColorBorderColorBorderWidthBorderTypeShadowBlur] = js.undefined
   /**
     * Text label of funnel chart, to explain some data information
     * about graphic item like value, name and so on.
@@ -212,9 +212,7 @@ trait SeriesFunnel extends js.Object {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-funnel.label
     */
-  var label: js.UndefOr[
-    echartsLib.Anon_ShadowOffsetXBackgroundColorShowAlignTextBorderWidthVerticalAlignShadowBlurHeightBorderWidth
-  ] = js.undefined
+  var label: js.UndefOr[echartsLib.Anon_ShowPositionFormatterColor] = js.undefined
   /**
     * The visual guide line style of label. When
     * [label position](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-funnel.label.position)
@@ -223,7 +221,7 @@ trait SeriesFunnel extends js.Object {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-funnel.labelLine
     */
-  var labelLine: js.UndefOr[echartsLib.Anon_LengthEmphasis] = js.undefined
+  var labelLine: js.UndefOr[echartsLib.Anon_ShowLength] = js.undefined
   /**
     * Whether to enable highlighting chart when
     * [legend](https://ecomfe.github.io/echarts-doc/public/en/option.html#legend)
@@ -242,21 +240,21 @@ trait SeriesFunnel extends js.Object {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-funnel.markArea
     */
-  var markArea: js.UndefOr[echartsLib.Anon_SilentDataLabel] = js.undefined
+  var markArea: js.UndefOr[echartsLib.Anon_SilentLabelItemStyle] = js.undefined
   /**
     * Use a line in the chart to illustrate.
     *
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-funnel.markLine
     */
-  var markLine: js.UndefOr[echartsLib.Anon_PrecisionSilent] = js.undefined
+  var markLine: js.UndefOr[echartsLib.Anon_SilentSymbol] = js.undefined
   /**
     * Mark point in a chart.
     *
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-funnel.markPoint
     */
-  var markPoint: js.UndefOr[echartsLib.Anon_SilentDataLabelAnimationEasingUpdate] = js.undefined
+  var markPoint: js.UndefOr[echartsLib.Anon_SymbolSymbolSize] = js.undefined
   /**
     * The specified maximum value.
     *
@@ -355,7 +353,7 @@ trait SeriesFunnel extends js.Object {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-funnel.tooltip
     */
-  var tooltip: js.UndefOr[echartsLib.Anon_BackgroundColor] = js.undefined
+  var tooltip: js.UndefOr[echartsLib.Anon_Position] = js.undefined
   /**
     * @default
     * "funnel"

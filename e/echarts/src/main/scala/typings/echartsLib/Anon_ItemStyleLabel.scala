@@ -5,14 +5,19 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Anon_ItemStyleLabel extends js.Object {
   /**
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-tree.leaves.emphasis.itemStyle
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-funnel.data.emphasis.itemStyle
     */
-  var itemStyle: js.UndefOr[Anon_ShadowOffsetXBorderType] = js.undefined
+  var itemStyle: js.UndefOr[Anon_ColorBorderColor] = js.native
   /**
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-tree.leaves.emphasis.label
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-funnel.data.emphasis.label
     */
-  var label: js.UndefOr[Anon_ShadowOffsetXBackgroundColorShowAlign] = js.undefined
+  var label: js.UndefOr[Anon_ShowColor] = js.native
+  /**
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-funnel.data.emphasis.labelLine
+    */
+  var labelLine: js.UndefOr[Anon_ShowLengthLineStyle] = js.native
 }
 

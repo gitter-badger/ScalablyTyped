@@ -12,13 +12,13 @@ trait Anon_NodeSetName extends js.Object {
     setName: java.lang.String,
     memberPath: java.lang.String,
     SVGPathSegLinetoHorizontalAbsme: java.lang.String
-  ): js.UndefOr[nodeLib.Error] = js.native
+  ): js.UndefOr[nodeLib.Error with stdLib.Error] = js.native
   def apply(
     node: webgmeLib.CoreNs.Node,
     setName: java.lang.String,
     memberPath: java.lang.String,
     SVGPathSegLinetoHorizontalAbsme: java.lang.String,
     value: webgmeLib.GmeCommonNs.InAttr
-  ): js.UndefOr[nodeLib.Error] = js.native
+  ): js.UndefOr[nodeLib.Error with stdLib.Error] = js.native
 }
 

@@ -24,12 +24,12 @@ trait telebot extends js.Object {
   def deleteMessage(chat_id: scala.Double, from_message_id: scala.Double): scala.Boolean = js.native
   def deleteWebhook(): scala.Boolean = js.native
   def destroyEvent(`type`: java.lang.String): scala.Boolean = js.native
-  def editMessageCaption(config: telebotLib.Anon_MessageIdInlineMsgId, caption: java.lang.String): js.Any | scala.Boolean = js.native
-  def editMessageCaption(config: telebotLib.Anon_MessageId, caption: java.lang.String): js.Any | scala.Boolean = js.native
-  def editMessageReplyMarkup(config: telebotLib.Anon_MessageIdInlineMsgId, replyMarkup: js.Any): js.Any | scala.Boolean = js.native
-  def editMessageReplyMarkup(config: telebotLib.Anon_MessageId, replyMarkup: js.Any): js.Any | scala.Boolean = js.native
-  def editMessageText(config: telebotLib.Anon_MessageIdInlineMsgId, text: java.lang.String): js.Any | scala.Boolean = js.native
-  def editMessageText(config: telebotLib.Anon_MessageId, text: java.lang.String): js.Any | scala.Boolean = js.native
+  def editMessageCaption(config: telebotLib.Anon_ChatIdMessageIdInlineMsgId, caption: java.lang.String): js.Any | scala.Boolean = js.native
+  def editMessageCaption(config: telebotLib.Anon_ChatIdMessageId, caption: java.lang.String): js.Any | scala.Boolean = js.native
+  def editMessageReplyMarkup(config: telebotLib.Anon_ChatIdMessageIdInlineMsgId, replyMarkup: js.Any): js.Any | scala.Boolean = js.native
+  def editMessageReplyMarkup(config: telebotLib.Anon_ChatIdMessageId, replyMarkup: js.Any): js.Any | scala.Boolean = js.native
+  def editMessageText(config: telebotLib.Anon_ChatIdMessageIdInlineMsgId, text: java.lang.String): js.Any | scala.Boolean = js.native
+  def editMessageText(config: telebotLib.Anon_ChatIdMessageId, text: java.lang.String): js.Any | scala.Boolean = js.native
   def event(types: java.lang.String, data: js.Any): js.Promise[_] = js.native
   def event(types: java.lang.String, data: js.Any, self: js.Any): js.Promise[_] = js.native
   def event(types: js.Array[java.lang.String], data: js.Any): js.Promise[_] = js.native
@@ -39,28 +39,28 @@ trait telebot extends js.Object {
     chat_id: java.lang.String,
     from_chat_id: java.lang.String,
     message_id: scala.Double,
-    opt: telebotLib.Anon_NotificationBoolean
+    opt: telebotLib.Anon_Notification
   ): js.Any = js.native
   def forwardMessage(chat_id: java.lang.String, from_chat_id: scala.Double, message_id: scala.Double): js.Any = js.native
   def forwardMessage(
     chat_id: java.lang.String,
     from_chat_id: scala.Double,
     message_id: scala.Double,
-    opt: telebotLib.Anon_NotificationBoolean
+    opt: telebotLib.Anon_Notification
   ): js.Any = js.native
   def forwardMessage(chat_id: scala.Double, from_chat_id: java.lang.String, message_id: scala.Double): js.Any = js.native
   def forwardMessage(
     chat_id: scala.Double,
     from_chat_id: java.lang.String,
     message_id: scala.Double,
-    opt: telebotLib.Anon_NotificationBoolean
+    opt: telebotLib.Anon_Notification
   ): js.Any = js.native
   def forwardMessage(chat_id: scala.Double, from_chat_id: scala.Double, message_id: scala.Double): js.Any = js.native
   def forwardMessage(
     chat_id: scala.Double,
     from_chat_id: scala.Double,
     message_id: scala.Double,
-    opt: telebotLib.Anon_NotificationBoolean
+    opt: telebotLib.Anon_Notification
   ): js.Any = js.native
   def getChat(chat_id: java.lang.String): js.Any = js.native
   def getChat(chat_id: scala.Double): js.Any = js.native
@@ -72,7 +72,7 @@ trait telebot extends js.Object {
   def getChatMembersCount(chat_id: scala.Double): scala.Double = js.native
   def getFile(file_id: java.lang.String): js.Any = js.native
   def getGameHighScores(user_id: scala.Double): js.Array[_] = js.native
-  def getGameHighScores(user_id: scala.Double, opt: telebotLib.Anon_InlineMessageId): js.Array[_] = js.native
+  def getGameHighScores(user_id: scala.Double, opt: telebotLib.Anon_ChatId): js.Array[_] = js.native
   // Telegram API
   def getMe(): js.Any = js.native
   def getUpdates(
@@ -88,7 +88,7 @@ trait telebot extends js.Object {
     allowed_updates: js.Array[java.lang.String]
   ): scala.Unit = js.native
   def getUserProfilePhotos(user_id: scala.Double): js.Any = js.native
-  def getUserProfilePhotos(user_id: scala.Double, opt: telebotLib.Anon_Limit): js.Any = js.native
+  def getUserProfilePhotos(user_id: scala.Double, opt: telebotLib.Anon_Offset): js.Any = js.native
   def getWebhookInfo(): js.Any = js.native
   def inlineButton(text: java.lang.String): js.Any = js.native
   def inlineButton(text: java.lang.String, opt: js.Any): js.Any = js.native
@@ -119,29 +119,21 @@ trait telebot extends js.Object {
   def sendAction(chat_id: java.lang.String, action: java.lang.String): scala.Boolean = js.native
   def sendAction(chat_id: scala.Double, action: java.lang.String): scala.Boolean = js.native
   def sendAudio(chat_id: java.lang.String, file: java.lang.String): js.Any = js.native
-  def sendAudio(chat_id: java.lang.String, file: java.lang.String, opt: telebotLib.Anon_DurationNotification): js.Any = js.native
+  def sendAudio(chat_id: java.lang.String, file: java.lang.String, opt: telebotLib.Anon_Title): js.Any = js.native
   def sendAudio(chat_id: java.lang.String, file: js.Any): js.Any = js.native
-  def sendAudio(chat_id: java.lang.String, file: js.Any, opt: telebotLib.Anon_DurationNotification): js.Any = js.native
+  def sendAudio(chat_id: java.lang.String, file: js.Any, opt: telebotLib.Anon_Title): js.Any = js.native
   def sendAudio(chat_id: java.lang.String, file: nodeLib.Buffer): js.Any = js.native
-  def sendAudio(chat_id: java.lang.String, file: nodeLib.Buffer, opt: telebotLib.Anon_DurationNotification): js.Any = js.native
+  def sendAudio(chat_id: java.lang.String, file: nodeLib.Buffer, opt: telebotLib.Anon_Title): js.Any = js.native
   def sendAudio(chat_id: java.lang.String, file: nodeLib.NodeJSNs.ReadableStream): js.Any = js.native
-  def sendAudio(
-    chat_id: java.lang.String,
-    file: nodeLib.NodeJSNs.ReadableStream,
-    opt: telebotLib.Anon_DurationNotification
-  ): js.Any = js.native
+  def sendAudio(chat_id: java.lang.String, file: nodeLib.NodeJSNs.ReadableStream, opt: telebotLib.Anon_Title): js.Any = js.native
   def sendAudio(chat_id: scala.Double, file: java.lang.String): js.Any = js.native
-  def sendAudio(chat_id: scala.Double, file: java.lang.String, opt: telebotLib.Anon_DurationNotification): js.Any = js.native
+  def sendAudio(chat_id: scala.Double, file: java.lang.String, opt: telebotLib.Anon_Title): js.Any = js.native
   def sendAudio(chat_id: scala.Double, file: js.Any): js.Any = js.native
-  def sendAudio(chat_id: scala.Double, file: js.Any, opt: telebotLib.Anon_DurationNotification): js.Any = js.native
+  def sendAudio(chat_id: scala.Double, file: js.Any, opt: telebotLib.Anon_Title): js.Any = js.native
   def sendAudio(chat_id: scala.Double, file: nodeLib.Buffer): js.Any = js.native
-  def sendAudio(chat_id: scala.Double, file: nodeLib.Buffer, opt: telebotLib.Anon_DurationNotification): js.Any = js.native
+  def sendAudio(chat_id: scala.Double, file: nodeLib.Buffer, opt: telebotLib.Anon_Title): js.Any = js.native
   def sendAudio(chat_id: scala.Double, file: nodeLib.NodeJSNs.ReadableStream): js.Any = js.native
-  def sendAudio(
-    chat_id: scala.Double,
-    file: nodeLib.NodeJSNs.ReadableStream,
-    opt: telebotLib.Anon_DurationNotification
-  ): js.Any = js.native
+  def sendAudio(chat_id: scala.Double, file: nodeLib.NodeJSNs.ReadableStream, opt: telebotLib.Anon_Title): js.Any = js.native
   def sendContact(chat_id: java.lang.String, number: java.lang.String, firstName: java.lang.String): js.Any = js.native
   def sendContact(
     chat_id: java.lang.String,
@@ -154,7 +146,7 @@ trait telebot extends js.Object {
     number: java.lang.String,
     firstName: java.lang.String,
     lastName: java.lang.String,
-    opt: telebotLib.Anon_ReplyMarkup
+    opt: telebotLib.Anon_ReplyToMessage
   ): js.Any = js.native
   def sendContact(chat_id: scala.Double, number: java.lang.String, firstName: java.lang.String): js.Any = js.native
   def sendContact(
@@ -168,118 +160,78 @@ trait telebot extends js.Object {
     number: java.lang.String,
     firstName: java.lang.String,
     lastName: java.lang.String,
-    opt: telebotLib.Anon_ReplyMarkup
+    opt: telebotLib.Anon_ReplyToMessage
   ): js.Any = js.native
   def sendDocument(chat_id: java.lang.String, file: java.lang.String): js.Any = js.native
-  def sendDocument(chat_id: java.lang.String, file: java.lang.String, opt: telebotLib.Anon_NotificationFileName): js.Any = js.native
+  def sendDocument(chat_id: java.lang.String, file: java.lang.String, opt: telebotLib.Anon_Caption): js.Any = js.native
   def sendDocument(chat_id: java.lang.String, file: js.Any): js.Any = js.native
-  def sendDocument(chat_id: java.lang.String, file: js.Any, opt: telebotLib.Anon_NotificationFileName): js.Any = js.native
+  def sendDocument(chat_id: java.lang.String, file: js.Any, opt: telebotLib.Anon_Caption): js.Any = js.native
   def sendDocument(chat_id: java.lang.String, file: nodeLib.Buffer): js.Any = js.native
-  def sendDocument(chat_id: java.lang.String, file: nodeLib.Buffer, opt: telebotLib.Anon_NotificationFileName): js.Any = js.native
+  def sendDocument(chat_id: java.lang.String, file: nodeLib.Buffer, opt: telebotLib.Anon_Caption): js.Any = js.native
   def sendDocument(chat_id: java.lang.String, file: nodeLib.NodeJSNs.ReadableStream): js.Any = js.native
-  def sendDocument(
-    chat_id: java.lang.String,
-    file: nodeLib.NodeJSNs.ReadableStream,
-    opt: telebotLib.Anon_NotificationFileName
-  ): js.Any = js.native
+  def sendDocument(chat_id: java.lang.String, file: nodeLib.NodeJSNs.ReadableStream, opt: telebotLib.Anon_Caption): js.Any = js.native
   def sendDocument(chat_id: scala.Double, file: java.lang.String): js.Any = js.native
-  def sendDocument(chat_id: scala.Double, file: java.lang.String, opt: telebotLib.Anon_NotificationFileName): js.Any = js.native
+  def sendDocument(chat_id: scala.Double, file: java.lang.String, opt: telebotLib.Anon_Caption): js.Any = js.native
   def sendDocument(chat_id: scala.Double, file: js.Any): js.Any = js.native
-  def sendDocument(chat_id: scala.Double, file: js.Any, opt: telebotLib.Anon_NotificationFileName): js.Any = js.native
+  def sendDocument(chat_id: scala.Double, file: js.Any, opt: telebotLib.Anon_Caption): js.Any = js.native
   def sendDocument(chat_id: scala.Double, file: nodeLib.Buffer): js.Any = js.native
-  def sendDocument(chat_id: scala.Double, file: nodeLib.Buffer, opt: telebotLib.Anon_NotificationFileName): js.Any = js.native
+  def sendDocument(chat_id: scala.Double, file: nodeLib.Buffer, opt: telebotLib.Anon_Caption): js.Any = js.native
   def sendDocument(chat_id: scala.Double, file: nodeLib.NodeJSNs.ReadableStream): js.Any = js.native
-  def sendDocument(
-    chat_id: scala.Double,
-    file: nodeLib.NodeJSNs.ReadableStream,
-    opt: telebotLib.Anon_NotificationFileName
-  ): js.Any = js.native
+  def sendDocument(chat_id: scala.Double, file: nodeLib.NodeJSNs.ReadableStream, opt: telebotLib.Anon_Caption): js.Any = js.native
   def sendGame(chat_id: java.lang.String, game_short_name: java.lang.String): js.Any = js.native
-  def sendGame(chat_id: java.lang.String, game_short_name: java.lang.String, opt: telebotLib.Anon_ReplyMarkup): js.Any = js.native
+  def sendGame(chat_id: java.lang.String, game_short_name: java.lang.String, opt: telebotLib.Anon_ReplyToMessage): js.Any = js.native
   def sendGame(chat_id: scala.Double, game_short_name: java.lang.String): js.Any = js.native
-  def sendGame(chat_id: scala.Double, game_short_name: java.lang.String, opt: telebotLib.Anon_ReplyMarkup): js.Any = js.native
-  def sendInvoice(chat_id: java.lang.String, invoiceDetails: telebotLib.Anon_Prices): js.Any = js.native
-  def sendInvoice(chat_id: scala.Double, invoiceDetails: telebotLib.Anon_Prices): js.Any = js.native
+  def sendGame(chat_id: scala.Double, game_short_name: java.lang.String, opt: telebotLib.Anon_ReplyToMessage): js.Any = js.native
+  def sendInvoice(chat_id: java.lang.String, invoiceDetails: telebotLib.Anon_TitleDescription): js.Any = js.native
+  def sendInvoice(chat_id: scala.Double, invoiceDetails: telebotLib.Anon_TitleDescription): js.Any = js.native
   def sendLocation(chat_id: java.lang.String, coords: js.Tuple2[scala.Double, scala.Double]): js.Any = js.native
   def sendLocation(
     chat_id: java.lang.String,
     coords: js.Tuple2[scala.Double, scala.Double],
-    opt: telebotLib.Anon_ReplyMarkup
+    opt: telebotLib.Anon_ReplyToMessage
   ): js.Any = js.native
   def sendLocation(chat_id: scala.Double, coords: js.Tuple2[scala.Double, scala.Double]): js.Any = js.native
   def sendLocation(
     chat_id: scala.Double,
     coords: js.Tuple2[scala.Double, scala.Double],
-    opt: telebotLib.Anon_ReplyMarkup
+    opt: telebotLib.Anon_ReplyToMessage
   ): js.Any = js.native
   def sendMessage(chat_id: java.lang.String, text: java.lang.String): js.Any = js.native
-  def sendMessage(chat_id: java.lang.String, text: java.lang.String, opt: telebotLib.Anon_Notification): js.Any = js.native
+  def sendMessage(chat_id: java.lang.String, text: java.lang.String, opt: telebotLib.Anon_ParseMode): js.Any = js.native
   def sendMessage(chat_id: scala.Double, text: java.lang.String): js.Any = js.native
-  def sendMessage(chat_id: scala.Double, text: java.lang.String, opt: telebotLib.Anon_Notification): js.Any = js.native
+  def sendMessage(chat_id: scala.Double, text: java.lang.String, opt: telebotLib.Anon_ParseMode): js.Any = js.native
   def sendPhoto(chat_id: java.lang.String, file: java.lang.String): js.Any = js.native
-  def sendPhoto(chat_id: java.lang.String, file: java.lang.String, opt: telebotLib.Anon_NotificationFileName): js.Any = js.native
+  def sendPhoto(chat_id: java.lang.String, file: java.lang.String, opt: telebotLib.Anon_Caption): js.Any = js.native
   def sendPhoto(chat_id: java.lang.String, file: js.Any): js.Any = js.native
-  def sendPhoto(chat_id: java.lang.String, file: js.Any, opt: telebotLib.Anon_NotificationFileName): js.Any = js.native
+  def sendPhoto(chat_id: java.lang.String, file: js.Any, opt: telebotLib.Anon_Caption): js.Any = js.native
   def sendPhoto(chat_id: java.lang.String, file: nodeLib.Buffer): js.Any = js.native
-  def sendPhoto(chat_id: java.lang.String, file: nodeLib.Buffer, opt: telebotLib.Anon_NotificationFileName): js.Any = js.native
+  def sendPhoto(chat_id: java.lang.String, file: nodeLib.Buffer, opt: telebotLib.Anon_Caption): js.Any = js.native
   def sendPhoto(chat_id: java.lang.String, file: nodeLib.NodeJSNs.ReadableStream): js.Any = js.native
-  def sendPhoto(
-    chat_id: java.lang.String,
-    file: nodeLib.NodeJSNs.ReadableStream,
-    opt: telebotLib.Anon_NotificationFileName
-  ): js.Any = js.native
+  def sendPhoto(chat_id: java.lang.String, file: nodeLib.NodeJSNs.ReadableStream, opt: telebotLib.Anon_Caption): js.Any = js.native
   def sendPhoto(chat_id: scala.Double, file: java.lang.String): js.Any = js.native
-  def sendPhoto(chat_id: scala.Double, file: java.lang.String, opt: telebotLib.Anon_NotificationFileName): js.Any = js.native
+  def sendPhoto(chat_id: scala.Double, file: java.lang.String, opt: telebotLib.Anon_Caption): js.Any = js.native
   def sendPhoto(chat_id: scala.Double, file: js.Any): js.Any = js.native
-  def sendPhoto(chat_id: scala.Double, file: js.Any, opt: telebotLib.Anon_NotificationFileName): js.Any = js.native
+  def sendPhoto(chat_id: scala.Double, file: js.Any, opt: telebotLib.Anon_Caption): js.Any = js.native
   def sendPhoto(chat_id: scala.Double, file: nodeLib.Buffer): js.Any = js.native
-  def sendPhoto(chat_id: scala.Double, file: nodeLib.Buffer, opt: telebotLib.Anon_NotificationFileName): js.Any = js.native
+  def sendPhoto(chat_id: scala.Double, file: nodeLib.Buffer, opt: telebotLib.Anon_Caption): js.Any = js.native
   def sendPhoto(chat_id: scala.Double, file: nodeLib.NodeJSNs.ReadableStream): js.Any = js.native
-  def sendPhoto(
-    chat_id: scala.Double,
-    file: nodeLib.NodeJSNs.ReadableStream,
-    opt: telebotLib.Anon_NotificationFileName
-  ): js.Any = js.native
+  def sendPhoto(chat_id: scala.Double, file: nodeLib.NodeJSNs.ReadableStream, opt: telebotLib.Anon_Caption): js.Any = js.native
   def sendSticker(chat_id: java.lang.String, file: java.lang.String): js.Any = js.native
-  def sendSticker(
-    chat_id: java.lang.String,
-    file: java.lang.String,
-    opt: telebotLib.Anon_NotificationFileNameServerDownload
-  ): js.Any = js.native
+  def sendSticker(chat_id: java.lang.String, file: java.lang.String, opt: telebotLib.Anon_FileName): js.Any = js.native
   def sendSticker(chat_id: java.lang.String, file: js.Any): js.Any = js.native
-  def sendSticker(chat_id: java.lang.String, file: js.Any, opt: telebotLib.Anon_NotificationFileNameServerDownload): js.Any = js.native
+  def sendSticker(chat_id: java.lang.String, file: js.Any, opt: telebotLib.Anon_FileName): js.Any = js.native
   def sendSticker(chat_id: java.lang.String, file: nodeLib.Buffer): js.Any = js.native
-  def sendSticker(
-    chat_id: java.lang.String,
-    file: nodeLib.Buffer,
-    opt: telebotLib.Anon_NotificationFileNameServerDownload
-  ): js.Any = js.native
+  def sendSticker(chat_id: java.lang.String, file: nodeLib.Buffer, opt: telebotLib.Anon_FileName): js.Any = js.native
   def sendSticker(chat_id: java.lang.String, file: nodeLib.NodeJSNs.ReadableStream): js.Any = js.native
-  def sendSticker(
-    chat_id: java.lang.String,
-    file: nodeLib.NodeJSNs.ReadableStream,
-    opt: telebotLib.Anon_NotificationFileNameServerDownload
-  ): js.Any = js.native
+  def sendSticker(chat_id: java.lang.String, file: nodeLib.NodeJSNs.ReadableStream, opt: telebotLib.Anon_FileName): js.Any = js.native
   def sendSticker(chat_id: scala.Double, file: java.lang.String): js.Any = js.native
-  def sendSticker(
-    chat_id: scala.Double,
-    file: java.lang.String,
-    opt: telebotLib.Anon_NotificationFileNameServerDownload
-  ): js.Any = js.native
+  def sendSticker(chat_id: scala.Double, file: java.lang.String, opt: telebotLib.Anon_FileName): js.Any = js.native
   def sendSticker(chat_id: scala.Double, file: js.Any): js.Any = js.native
-  def sendSticker(chat_id: scala.Double, file: js.Any, opt: telebotLib.Anon_NotificationFileNameServerDownload): js.Any = js.native
+  def sendSticker(chat_id: scala.Double, file: js.Any, opt: telebotLib.Anon_FileName): js.Any = js.native
   def sendSticker(chat_id: scala.Double, file: nodeLib.Buffer): js.Any = js.native
-  def sendSticker(
-    chat_id: scala.Double,
-    file: nodeLib.Buffer,
-    opt: telebotLib.Anon_NotificationFileNameServerDownload
-  ): js.Any = js.native
+  def sendSticker(chat_id: scala.Double, file: nodeLib.Buffer, opt: telebotLib.Anon_FileName): js.Any = js.native
   def sendSticker(chat_id: scala.Double, file: nodeLib.NodeJSNs.ReadableStream): js.Any = js.native
-  def sendSticker(
-    chat_id: scala.Double,
-    file: nodeLib.NodeJSNs.ReadableStream,
-    opt: telebotLib.Anon_NotificationFileNameServerDownload
-  ): js.Any = js.native
+  def sendSticker(chat_id: scala.Double, file: nodeLib.NodeJSNs.ReadableStream, opt: telebotLib.Anon_FileName): js.Any = js.native
   def sendVenue(
     chat_id: java.lang.String,
     coords: js.Tuple2[scala.Double, scala.Double],
@@ -291,7 +243,7 @@ trait telebot extends js.Object {
     coords: js.Tuple2[scala.Double, scala.Double],
     title: java.lang.String,
     address: java.lang.String,
-    opt: telebotLib.Anon_ReplyMarkupReplyToMessage
+    opt: telebotLib.Anon_FoursquareId
   ): js.Any = js.native
   def sendVenue(
     chat_id: scala.Double,
@@ -304,78 +256,70 @@ trait telebot extends js.Object {
     coords: js.Tuple2[scala.Double, scala.Double],
     title: java.lang.String,
     address: java.lang.String,
-    opt: telebotLib.Anon_ReplyMarkupReplyToMessage
+    opt: telebotLib.Anon_FoursquareId
   ): js.Any = js.native
   def sendVideo(chat_id: java.lang.String, file: java.lang.String): js.Any = js.native
-  def sendVideo(chat_id: java.lang.String, file: java.lang.String, opt: telebotLib.Anon_DurationNotificationHeight): js.Any = js.native
+  def sendVideo(chat_id: java.lang.String, file: java.lang.String, opt: telebotLib.Anon_Duration): js.Any = js.native
   def sendVideo(chat_id: java.lang.String, file: js.Any): js.Any = js.native
-  def sendVideo(chat_id: java.lang.String, file: js.Any, opt: telebotLib.Anon_DurationNotificationHeight): js.Any = js.native
+  def sendVideo(chat_id: java.lang.String, file: js.Any, opt: telebotLib.Anon_Duration): js.Any = js.native
   def sendVideo(chat_id: java.lang.String, file: nodeLib.Buffer): js.Any = js.native
-  def sendVideo(chat_id: java.lang.String, file: nodeLib.Buffer, opt: telebotLib.Anon_DurationNotificationHeight): js.Any = js.native
+  def sendVideo(chat_id: java.lang.String, file: nodeLib.Buffer, opt: telebotLib.Anon_Duration): js.Any = js.native
   def sendVideo(chat_id: java.lang.String, file: nodeLib.NodeJSNs.ReadableStream): js.Any = js.native
-  def sendVideo(
+  def sendVideo(chat_id: java.lang.String, file: nodeLib.NodeJSNs.ReadableStream, opt: telebotLib.Anon_Duration): js.Any = js.native
+  def sendVideo(chat_id: scala.Double, file: java.lang.String): js.Any = js.native
+  def sendVideo(chat_id: scala.Double, file: java.lang.String, opt: telebotLib.Anon_Duration): js.Any = js.native
+  def sendVideo(chat_id: scala.Double, file: js.Any): js.Any = js.native
+  def sendVideo(chat_id: scala.Double, file: js.Any, opt: telebotLib.Anon_Duration): js.Any = js.native
+  def sendVideo(chat_id: scala.Double, file: nodeLib.Buffer): js.Any = js.native
+  def sendVideo(chat_id: scala.Double, file: nodeLib.Buffer, opt: telebotLib.Anon_Duration): js.Any = js.native
+  def sendVideo(chat_id: scala.Double, file: nodeLib.NodeJSNs.ReadableStream): js.Any = js.native
+  def sendVideo(chat_id: scala.Double, file: nodeLib.NodeJSNs.ReadableStream, opt: telebotLib.Anon_Duration): js.Any = js.native
+  def sendVideoNote(chat_id: java.lang.String, file: java.lang.String): js.Any = js.native
+  def sendVideoNote(chat_id: java.lang.String, file: java.lang.String, opt: telebotLib.Anon_DurationFileName): js.Any = js.native
+  def sendVideoNote(chat_id: java.lang.String, file: js.Any): js.Any = js.native
+  def sendVideoNote(chat_id: java.lang.String, file: js.Any, opt: telebotLib.Anon_DurationFileName): js.Any = js.native
+  def sendVideoNote(chat_id: java.lang.String, file: nodeLib.Buffer): js.Any = js.native
+  def sendVideoNote(chat_id: java.lang.String, file: nodeLib.Buffer, opt: telebotLib.Anon_DurationFileName): js.Any = js.native
+  def sendVideoNote(chat_id: java.lang.String, file: nodeLib.NodeJSNs.ReadableStream): js.Any = js.native
+  def sendVideoNote(
     chat_id: java.lang.String,
     file: nodeLib.NodeJSNs.ReadableStream,
-    opt: telebotLib.Anon_DurationNotificationHeight
+    opt: telebotLib.Anon_DurationFileName
   ): js.Any = js.native
-  def sendVideo(chat_id: scala.Double, file: java.lang.String): js.Any = js.native
-  def sendVideo(chat_id: scala.Double, file: java.lang.String, opt: telebotLib.Anon_DurationNotificationHeight): js.Any = js.native
-  def sendVideo(chat_id: scala.Double, file: js.Any): js.Any = js.native
-  def sendVideo(chat_id: scala.Double, file: js.Any, opt: telebotLib.Anon_DurationNotificationHeight): js.Any = js.native
-  def sendVideo(chat_id: scala.Double, file: nodeLib.Buffer): js.Any = js.native
-  def sendVideo(chat_id: scala.Double, file: nodeLib.Buffer, opt: telebotLib.Anon_DurationNotificationHeight): js.Any = js.native
-  def sendVideo(chat_id: scala.Double, file: nodeLib.NodeJSNs.ReadableStream): js.Any = js.native
-  def sendVideo(
+  def sendVideoNote(chat_id: scala.Double, file: java.lang.String): js.Any = js.native
+  def sendVideoNote(chat_id: scala.Double, file: java.lang.String, opt: telebotLib.Anon_DurationFileName): js.Any = js.native
+  def sendVideoNote(chat_id: scala.Double, file: js.Any): js.Any = js.native
+  def sendVideoNote(chat_id: scala.Double, file: js.Any, opt: telebotLib.Anon_DurationFileName): js.Any = js.native
+  def sendVideoNote(chat_id: scala.Double, file: nodeLib.Buffer): js.Any = js.native
+  def sendVideoNote(chat_id: scala.Double, file: nodeLib.Buffer, opt: telebotLib.Anon_DurationFileName): js.Any = js.native
+  def sendVideoNote(chat_id: scala.Double, file: nodeLib.NodeJSNs.ReadableStream): js.Any = js.native
+  def sendVideoNote(
     chat_id: scala.Double,
     file: nodeLib.NodeJSNs.ReadableStream,
-    opt: telebotLib.Anon_DurationNotificationHeight
+    opt: telebotLib.Anon_DurationFileName
   ): js.Any = js.native
-  def sendVideoNote(chat_id: java.lang.String, file: java.lang.String): js.Any = js.native
-  def sendVideoNote(chat_id: java.lang.String, file: java.lang.String, opt: telebotLib.Anon_Duration): js.Any = js.native
-  def sendVideoNote(chat_id: java.lang.String, file: js.Any): js.Any = js.native
-  def sendVideoNote(chat_id: java.lang.String, file: js.Any, opt: telebotLib.Anon_Duration): js.Any = js.native
-  def sendVideoNote(chat_id: java.lang.String, file: nodeLib.Buffer): js.Any = js.native
-  def sendVideoNote(chat_id: java.lang.String, file: nodeLib.Buffer, opt: telebotLib.Anon_Duration): js.Any = js.native
-  def sendVideoNote(chat_id: java.lang.String, file: nodeLib.NodeJSNs.ReadableStream): js.Any = js.native
-  def sendVideoNote(chat_id: java.lang.String, file: nodeLib.NodeJSNs.ReadableStream, opt: telebotLib.Anon_Duration): js.Any = js.native
-  def sendVideoNote(chat_id: scala.Double, file: java.lang.String): js.Any = js.native
-  def sendVideoNote(chat_id: scala.Double, file: java.lang.String, opt: telebotLib.Anon_Duration): js.Any = js.native
-  def sendVideoNote(chat_id: scala.Double, file: js.Any): js.Any = js.native
-  def sendVideoNote(chat_id: scala.Double, file: js.Any, opt: telebotLib.Anon_Duration): js.Any = js.native
-  def sendVideoNote(chat_id: scala.Double, file: nodeLib.Buffer): js.Any = js.native
-  def sendVideoNote(chat_id: scala.Double, file: nodeLib.Buffer, opt: telebotLib.Anon_Duration): js.Any = js.native
-  def sendVideoNote(chat_id: scala.Double, file: nodeLib.NodeJSNs.ReadableStream): js.Any = js.native
-  def sendVideoNote(chat_id: scala.Double, file: nodeLib.NodeJSNs.ReadableStream, opt: telebotLib.Anon_Duration): js.Any = js.native
   def sendVoice(chat_id: java.lang.String, file: java.lang.String): js.Any = js.native
-  def sendVoice(
-    chat_id: java.lang.String,
-    file: java.lang.String,
-    opt: telebotLib.Anon_DurationNotificationFileName
-  ): js.Any = js.native
+  def sendVoice(chat_id: java.lang.String, file: java.lang.String, opt: telebotLib.Anon_DurationCaption): js.Any = js.native
   def sendVoice(chat_id: java.lang.String, file: js.Any): js.Any = js.native
-  def sendVoice(chat_id: java.lang.String, file: js.Any, opt: telebotLib.Anon_DurationNotificationFileName): js.Any = js.native
+  def sendVoice(chat_id: java.lang.String, file: js.Any, opt: telebotLib.Anon_DurationCaption): js.Any = js.native
   def sendVoice(chat_id: java.lang.String, file: nodeLib.Buffer): js.Any = js.native
-  def sendVoice(chat_id: java.lang.String, file: nodeLib.Buffer, opt: telebotLib.Anon_DurationNotificationFileName): js.Any = js.native
+  def sendVoice(chat_id: java.lang.String, file: nodeLib.Buffer, opt: telebotLib.Anon_DurationCaption): js.Any = js.native
   def sendVoice(chat_id: java.lang.String, file: nodeLib.NodeJSNs.ReadableStream): js.Any = js.native
   def sendVoice(
     chat_id: java.lang.String,
     file: nodeLib.NodeJSNs.ReadableStream,
-    opt: telebotLib.Anon_DurationNotificationFileName
+    opt: telebotLib.Anon_DurationCaption
   ): js.Any = js.native
   def sendVoice(chat_id: scala.Double, file: java.lang.String): js.Any = js.native
-  def sendVoice(chat_id: scala.Double, file: java.lang.String, opt: telebotLib.Anon_DurationNotificationFileName): js.Any = js.native
+  def sendVoice(chat_id: scala.Double, file: java.lang.String, opt: telebotLib.Anon_DurationCaption): js.Any = js.native
   def sendVoice(chat_id: scala.Double, file: js.Any): js.Any = js.native
-  def sendVoice(chat_id: scala.Double, file: js.Any, opt: telebotLib.Anon_DurationNotificationFileName): js.Any = js.native
+  def sendVoice(chat_id: scala.Double, file: js.Any, opt: telebotLib.Anon_DurationCaption): js.Any = js.native
   def sendVoice(chat_id: scala.Double, file: nodeLib.Buffer): js.Any = js.native
-  def sendVoice(chat_id: scala.Double, file: nodeLib.Buffer, opt: telebotLib.Anon_DurationNotificationFileName): js.Any = js.native
+  def sendVoice(chat_id: scala.Double, file: nodeLib.Buffer, opt: telebotLib.Anon_DurationCaption): js.Any = js.native
   def sendVoice(chat_id: scala.Double, file: nodeLib.NodeJSNs.ReadableStream): js.Any = js.native
-  def sendVoice(
-    chat_id: scala.Double,
-    file: nodeLib.NodeJSNs.ReadableStream,
-    opt: telebotLib.Anon_DurationNotificationFileName
-  ): js.Any = js.native
-  def setGameScore(user_id: scala.Double, score: scala.Double): scala.Boolean | nodeLib.Error | js.Any = js.native
-  def setGameScore(user_id: scala.Double, score: scala.Double, opt: telebotLib.Anon_Force): scala.Boolean | nodeLib.Error | js.Any = js.native
+  def sendVoice(chat_id: scala.Double, file: nodeLib.NodeJSNs.ReadableStream, opt: telebotLib.Anon_DurationCaption): js.Any = js.native
+  def setGameScore(user_id: scala.Double, score: scala.Double): scala.Boolean | (nodeLib.Error with stdLib.Error) | js.Any = js.native
+  def setGameScore(user_id: scala.Double, score: scala.Double, opt: telebotLib.Anon_Force): scala.Boolean | (nodeLib.Error with stdLib.Error) | js.Any = js.native
   def setWebhook(url: java.lang.String): scala.Boolean = js.native
   def setWebhook(url: java.lang.String, certificate: js.Any): scala.Boolean = js.native
   def setWebhook(url: java.lang.String, certificate: js.Any, allowed_updates: js.Array[java.lang.String]): scala.Boolean = js.native

@@ -57,27 +57,27 @@ trait Editor extends js.Object {
     If it is "page" or not given, they are relative to the top-left corner of the page.
     This differs from cursorCoords in that it'll give the size of the whole character,
     rather than just the position that the cursor would have when it would sit at that position. */
-  def charCoords(pos: Position): codemirrorLib.Anon_Bottom = js.native
-  def charCoords(pos: Position, mode: CoordsMode): codemirrorLib.Anon_Bottom = js.native
+  def charCoords(pos: Position): codemirrorLib.Anon_LeftRight = js.native
+  def charCoords(pos: Position, mode: CoordsMode): codemirrorLib.Anon_LeftRight = js.native
   /** Remove all gutter markers in the gutter with the given ID. */
   def clearGutter(gutterID: java.lang.String): scala.Unit = js.native
   /** Given an { left , top } object , returns the { line , ch } position that corresponds to it.
     The optional mode parameter determines relative to what the coordinates are interpreted.
     It may be "window", "page" (the default), or "local". */
-  def coordsChar(`object`: codemirrorLib.Anon_Top): Position = js.native
-  def coordsChar(`object`: codemirrorLib.Anon_Top, mode: CoordsMode): Position = js.native
+  def coordsChar(`object`: codemirrorLib.Anon_LeftTopNumber): Position = js.native
+  def coordsChar(`object`: codemirrorLib.Anon_LeftTopNumber, mode: CoordsMode): Position = js.native
   /** Returns an { left , top , bottom } object containing the coordinates of the cursor position.
     If mode is "local", they will be relative to the top-left corner of the editable document.
     If it is "page" or not given, they are relative to the top-left corner of the page.
     where specifies the precise position at which you want to measure. */
-  def cursorCoords(where: Position): codemirrorLib.Anon_BottomTop = js.native
-  def cursorCoords(where: Position, mode: CoordsMode): codemirrorLib.Anon_BottomTop = js.native
+  def cursorCoords(where: Position): codemirrorLib.Anon_LeftTop = js.native
+  def cursorCoords(where: Position, mode: CoordsMode): codemirrorLib.Anon_LeftTop = js.native
   /** Returns an { left , top , bottom } object containing the coordinates of the cursor position.
     If mode is "local", they will be relative to the top-left corner of the editable document.
     If it is "page" or not given, they are relative to the top-left corner of the page.
     where is a boolean indicating whether you want the start(true) or the end(false) of the selection. */
-  def cursorCoords(where: scala.Boolean): codemirrorLib.Anon_BottomTop = js.native
-  def cursorCoords(where: scala.Boolean, mode: CoordsMode): codemirrorLib.Anon_BottomTop = js.native
+  def cursorCoords(where: scala.Boolean): codemirrorLib.Anon_LeftTop = js.native
+  def cursorCoords(where: scala.Boolean, mode: CoordsMode): codemirrorLib.Anon_LeftTop = js.native
   /** Returns the pixel width of an 'x' in the default font for the editor.
     (Note that for non - monospace fonts , this is mostly useless, and even for monospace fonts, non - ascii characters might have a different width). */
   def defaultCharWidth(): scala.Double = js.native
@@ -91,10 +91,10 @@ trait Editor extends js.Object {
     Will return a position that is produced by moving amount times the distance specified by unit.
     When visually is true , motion in right - to - left text will be visual rather than logical.
     When the motion was clipped by hitting the end or start of the document, the returned value will have a hitSide property set to true. */
-  def findPosH(start: Position, amount: scala.Double, unit: java.lang.String, visually: scala.Boolean): codemirrorLib.Anon_LineHitSide = js.native
+  def findPosH(start: Position, amount: scala.Double, unit: java.lang.String, visually: scala.Boolean): codemirrorLib.Anon_Line = js.native
   /** Similar to findPosH , but used for vertical motion.unit may be "line" or "page".
     The other arguments and the returned value have the same interpretation as they have in findPosH. */
-  def findPosV(start: Position, amount: scala.Double, unit: java.lang.String): codemirrorLib.Anon_LineHitSide = js.native
+  def findPosV(start: Position, amount: scala.Double, unit: java.lang.String): codemirrorLib.Anon_Line = js.native
   /** Returns the start and end of the 'word' (the stretch of letters, whitespace, or punctuation) at the given position. */
   def findWordAt(pos: Position): Range = js.native
   /** Give the editor focus. */
@@ -135,7 +135,7 @@ trait Editor extends js.Object {
   /** Returns a { from , to } object indicating the start (inclusive) and end (exclusive) of the currently rendered part of the document.
     In big documents, when most content is scrolled out of view, CodeMirror will only render the visible part, and a margin around it.
     See also the viewportChange event. */
-  def getViewport(): codemirrorLib.Anon_FromToNumber = js.native
+  def getViewport(): codemirrorLib.Anon_FromTo = js.native
   /** Returns the DOM node that represents the editor, and controls its size. Remove this from your tree to delete an editor instance. */
   def getWrapperElement(): stdLib.HTMLElement = js.native
   /** Tells you whether the editor currently has focus. */
@@ -165,7 +165,7 @@ trait Editor extends js.Object {
   def lineComment(from: Position, to: Position): scala.Unit = js.native
   def lineComment(from: Position, to: Position, options: CommentOptions): scala.Unit = js.native
   /** Returns the line number, text content, and marker status of the given line, which can be either a number or a line handle. */
-  def lineInfo(line: js.Any): codemirrorLib.Anon_Line = js.native
+  def lineInfo(line: js.Any): codemirrorLib.Anon_LineHandle = js.native
   def off(
     eventName: DOMEvent,
     handler: js.Function2[/* instance */ this.type, /* event */ stdLib.Event, scala.Unit]
@@ -180,7 +180,7 @@ trait Editor extends js.Object {
   @JSName("off")
   def off_beforeSelectionChange(
     eventName: codemirrorLib.codemirrorLibStrings.beforeSelectionChange,
-    handler: js.Function2[/* instance */ this.type, /* selection */ codemirrorLib.Anon_Anchor, scala.Unit]
+    handler: js.Function2[/* instance */ this.type, /* selection */ codemirrorLib.Anon_Head, scala.Unit]
   ): scala.Unit = js.native
   @JSName("off")
   def off_blur(
@@ -269,7 +269,7 @@ trait Editor extends js.Object {
   @JSName("on")
   def on_beforeSelectionChange(
     eventName: codemirrorLib.codemirrorLibStrings.beforeSelectionChange,
-    handler: js.Function2[/* instance */ this.type, /* selection */ codemirrorLib.Anon_Anchor, scala.Unit]
+    handler: js.Function2[/* instance */ this.type, /* selection */ codemirrorLib.Anon_Head, scala.Unit]
   ): scala.Unit = js.native
   /** Fires whenever the editor is unfocused. */
   @JSName("on")
@@ -369,12 +369,12 @@ trait Editor extends js.Object {
   /** Pass this the exact argument passed for the mode parameter to addOverlay to remove an overlay again. */
   def removeOverlay(mode: js.Any): scala.Unit = js.native
   def scrollIntoView(): scala.Unit = js.native
-  /** Scrolls the given element into view. pos is a { left , top , right , bottom } object, in editor-local coordinates.
-    The margin parameter is optional. When given, it indicates the amount of pixels around the given area that should be made visible as well. */
-  def scrollIntoView(pos: codemirrorLib.Anon_Bottom, margin: scala.Double): scala.Unit = js.native
   /** Scrolls the given element into view. pos is a { from, to } object, in editor-local coordinates.
     The margin parameter is optional. When given, it indicates the amount of pixels around the given area that should be made visible as well. */
   def scrollIntoView(pos: codemirrorLib.Anon_From, margin: scala.Double): scala.Unit = js.native
+  /** Scrolls the given element into view. pos is a { left , top , right , bottom } object, in editor-local coordinates.
+    The margin parameter is optional. When given, it indicates the amount of pixels around the given area that should be made visible as well. */
+  def scrollIntoView(pos: codemirrorLib.Anon_Left, margin: scala.Double): scala.Unit = js.native
   /** Scrolls the given element into view. pos is a { line, ch } object, in editor-local coordinates.
     The margin parameter is optional. When given, it indicates the amount of pixels around the given area that should be made visible as well. */
   def scrollIntoView(pos: codemirrorLib.Anon_LineCh): scala.Unit = js.native

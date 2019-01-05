@@ -26,7 +26,7 @@ class PivotField protected () extends js.Object {
   val Creator: XlCreator = js.native
   val CubeField: CubeField = js.native
   var CurrentPage: PivotItem = js.native
-  var CurrentPageList: activexDashInteropLib.SafeArray[java.lang.String] = js.native
+  var CurrentPageList: activexDashInteropLib.SafeArray[java.lang.String] with stdLib.SafeArray[java.lang.String] = js.native
   var CurrentPageName: java.lang.String = js.native
   @JSName("DataRange")
   val DataRange_Original: Range = js.native
@@ -48,7 +48,7 @@ class PivotField protected () extends js.Object {
   var Function: XlConsolidationFunction = js.native
   val GroupLevel: scala.Double = js.native
   var Hidden: scala.Boolean = js.native
-  var HiddenItemsList: activexDashInteropLib.SafeArray[java.lang.String] = js.native
+  var HiddenItemsList: activexDashInteropLib.SafeArray[java.lang.String] with stdLib.SafeArray[java.lang.String] = js.native
   var IncludeNewItemsInFilter: scala.Boolean = js.native
   val IsCalculated: scala.Boolean = js.native
   val IsMemberProperty: scala.Boolean = js.native
@@ -83,7 +83,7 @@ class PivotField protected () extends js.Object {
   val TotalLevels: scala.Double = js.native
   var UseMemberPropertyAsCaption: scala.Boolean = js.native
   var Value: java.lang.String = js.native
-  var VisibleItemsList: activexDashInteropLib.SafeArray[java.lang.String] = js.native
+  var VisibleItemsList: activexDashInteropLib.SafeArray[java.lang.String] with stdLib.SafeArray[java.lang.String] = js.native
   var _Default: java.lang.String = js.native
   def AddPageItem(Item: java.lang.String): scala.Unit = js.native
   def AddPageItem(Item: java.lang.String, ClearList: scala.Boolean): scala.Unit = js.native
@@ -92,7 +92,9 @@ class PivotField protected () extends js.Object {
   def AutoSort(Order: scala.Double, Field: java.lang.String, PivotLine: js.Any): scala.Unit = js.native
   def AutoSort(Order: scala.Double, Field: java.lang.String, PivotLine: js.Any, CustomSubtotal: js.Any): scala.Unit = js.native
   def CalculatedItems(): CalculatedItems = js.native
-  def ChildItems(Indexes: activexDashInteropLib.SafeArray[scala.Double | java.lang.String]): PivotItems = js.native
+  def ChildItems(
+    Indexes: (activexDashInteropLib.SafeArray[scala.Double | java.lang.String]) with (stdLib.SafeArray[scala.Double | java.lang.String])
+  ): PivotItems = js.native
   def ChildItems(Index: java.lang.String): PivotItem = js.native
   def ChildItems(Index: scala.Double): PivotItem = js.native
   def ClearAllFilters(): scala.Unit = js.native
@@ -104,21 +106,29 @@ class PivotField protected () extends js.Object {
   def DataRange(RowIndex: scala.Double, ColumnIndex: scala.Double): Range = js.native
   def Delete(): scala.Unit = js.native
   def DrillTo(Field: java.lang.String): scala.Unit = js.native
-  def HiddenItems(Indexes: activexDashInteropLib.SafeArray[scala.Double | java.lang.String]): PivotItems = js.native
+  def HiddenItems(
+    Indexes: (activexDashInteropLib.SafeArray[scala.Double | java.lang.String]) with (stdLib.SafeArray[scala.Double | java.lang.String])
+  ): PivotItems = js.native
   def HiddenItems(Index: java.lang.String): PivotItem = js.native
   def HiddenItems(Index: scala.Double): PivotItem = js.native
   def LabelRange(Address: java.lang.String): Range = js.native
   def LabelRange(RowIndex: scala.Double): Range = js.native
   def LabelRange(RowIndex: scala.Double, ColumnIndex: scala.Double): Range = js.native
-  def ParentItems(Indexes: activexDashInteropLib.SafeArray[scala.Double | java.lang.String]): PivotItems = js.native
+  def ParentItems(
+    Indexes: (activexDashInteropLib.SafeArray[scala.Double | java.lang.String]) with (stdLib.SafeArray[scala.Double | java.lang.String])
+  ): PivotItems = js.native
   def ParentItems(Index: java.lang.String): PivotItem = js.native
   def ParentItems(Index: scala.Double): PivotItem = js.native
   def PivotFilters(Index: scala.Double): PivotFilter = js.native
-  def PivotItems(Indexes: activexDashInteropLib.SafeArray[scala.Double | java.lang.String]): PivotItems = js.native
+  def PivotItems(
+    Indexes: (activexDashInteropLib.SafeArray[scala.Double | java.lang.String]) with (stdLib.SafeArray[scala.Double | java.lang.String])
+  ): PivotItems = js.native
   def PivotItems(Index: java.lang.String): PivotItem = js.native
   def PivotItems(Index: scala.Double): PivotItem = js.native
   def Subtotals(Index: PivotFieldSubtotal): scala.Boolean = js.native
-  def VisibleItems(Indexes: activexDashInteropLib.SafeArray[scala.Double | java.lang.String]): PivotItems = js.native
+  def VisibleItems(
+    Indexes: (activexDashInteropLib.SafeArray[scala.Double | java.lang.String]) with (stdLib.SafeArray[scala.Double | java.lang.String])
+  ): PivotItems = js.native
   def VisibleItems(Index: java.lang.String): PivotItem = js.native
   def VisibleItems(Index: scala.Double): PivotItem = js.native
   def _AutoSort(Order: scala.Double, Field: java.lang.String): scala.Unit = js.native

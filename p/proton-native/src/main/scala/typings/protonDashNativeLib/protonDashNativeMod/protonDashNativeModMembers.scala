@@ -13,24 +13,24 @@ object protonDashNativeModMembers extends js.Object {
   @JSName("Dialog")
   def Dialog_Error(
     `type`: protonDashNativeLib.protonDashNativeLibStrings.Error,
-    options: protonDashNativeLib.Anon_Description
+    options: protonDashNativeLib.Anon_Title
   ): scala.Unit = js.native
   @JSName("Dialog")
   def Dialog_Error(
     `type`: protonDashNativeLib.protonDashNativeLibStrings.Error,
-    options: protonDashNativeLib.Anon_DescriptionTitle
+    options: protonDashNativeLib.Anon_TitleDescription
   ): scala.Unit = js.native
   @JSName("Dialog")
   def Dialog_Message(`type`: protonDashNativeLib.protonDashNativeLibStrings.Message): scala.Unit = js.native
   @JSName("Dialog")
   def Dialog_Message(
     `type`: protonDashNativeLib.protonDashNativeLibStrings.Message,
-    options: protonDashNativeLib.Anon_Description
+    options: protonDashNativeLib.Anon_Title
   ): scala.Unit = js.native
   @JSName("Dialog")
   def Dialog_Message(
     `type`: protonDashNativeLib.protonDashNativeLibStrings.Message,
-    options: protonDashNativeLib.Anon_DescriptionTitle
+    options: protonDashNativeLib.Anon_TitleDescription
   ): scala.Unit = js.native
   @JSName("Dialog")
   def Dialog_Open(`type`: protonDashNativeLib.protonDashNativeLibStrings.Open): java.lang.String = js.native

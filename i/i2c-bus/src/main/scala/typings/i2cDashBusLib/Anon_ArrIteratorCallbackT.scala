@@ -7,14 +7,14 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Anon_ArrIteratorCallbackT extends js.Object {
-  def apply[T, R, E](
+  def apply[T, E](
     arr: i2cDashBusLib.asyncMod.IterableCollection[T],
-    iterator: i2cDashBusLib.asyncMod.AsyncResultIterator[T, js.Array[R], E]
+    iterator: i2cDashBusLib.asyncMod.AsyncBooleanIterator[T, E]
   ): scala.Unit = js.native
-  def apply[T, R, E](
+  def apply[T, E](
     arr: i2cDashBusLib.asyncMod.IterableCollection[T],
-    iterator: i2cDashBusLib.asyncMod.AsyncResultIterator[T, js.Array[R], E],
-    callback: i2cDashBusLib.asyncMod.AsyncResultArrayCallback[R, E]
+    iterator: i2cDashBusLib.asyncMod.AsyncBooleanIterator[T, E],
+    callback: i2cDashBusLib.asyncMod.AsyncResultCallback[T, E]
   ): scala.Unit = js.native
 }
 

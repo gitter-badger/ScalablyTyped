@@ -5,7 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("mssql", "TransactionError")
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- stdLib.Error because var conflicts: stack. Inlined message, name */ @JSImport("mssql", "TransactionError")
 @js.native
 class TransactionError protected ()
   extends nodeLib.Error {

@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait FormProps
-  extends reactLib.reactMod.ReactNs.FormHTMLAttributes[reactLib.HTMLFormElement] {
+  extends reactLib.reactMod.ReactNs.FormHTMLAttributes[reactLib.HTMLFormElement with stdLib.HTMLFormElement] {
   var form: js.UndefOr[WrappedFormUtils] = js.undefined
   var hideRequiredMark: js.UndefOr[scala.Boolean] = js.undefined
   var layout: js.UndefOr[FormLayout] = js.undefined

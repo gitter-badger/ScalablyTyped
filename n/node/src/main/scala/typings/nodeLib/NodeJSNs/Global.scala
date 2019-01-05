@@ -12,7 +12,7 @@ trait Global extends js.Object {
   var Array_Original: stdLib.ArrayConstructor = js.native
   @JSName("Boolean")
   var Boolean_Original: stdLib.BooleanConstructor = js.native
-  var Buffer: nodeLib.Anon_IsEncoding = js.native
+  var Buffer: nodeLib.Anon_Str = js.native
   var DataView: stdLib.DataViewConstructor = js.native
   @JSName("Date")
   var Date_Original: stdLib.DateConstructor = js.native
@@ -29,7 +29,7 @@ trait Global extends js.Object {
   var Int16Array: stdLib.Int16ArrayConstructor = js.native
   var Int32Array: stdLib.Int32ArrayConstructor = js.native
   var Int8Array: stdLib.Int8ArrayConstructor = js.native
-  var Intl: nodeLib.Anon_Collator = js.native
+  var Intl: nodeLib.Anon_PluralRules = js.native
   var JSON: stdLib.JSON = js.native
   var Map: nodeLib.MapConstructor = js.native
   var Math: stdLib.Math = js.native

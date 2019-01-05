@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class CylinderGeometry protected ()
   extends cesiumLib.cesiumMod.CesiumNs.CylinderGeometry {
-  def this(options: cesiumLib.Anon_BottomRadius) = this()
+  def this(options: cesiumLib.Anon_Length) = this()
 }
 
 @JSImport("cesium", "CylinderGeometry")

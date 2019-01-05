@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_TypeDots extends js.Object {
-  var dots: scala.Double
+  var dots: js.UndefOr[scala.Double] = js.undefined
   var duration: java.lang.String
-  var `type`: java.lang.String
+  var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 

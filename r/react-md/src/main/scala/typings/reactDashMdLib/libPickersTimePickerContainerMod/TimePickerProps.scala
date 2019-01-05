@@ -17,7 +17,7 @@ trait TimePickerProps
     js.Function3[
       /* formattedTime */ java.lang.String, 
       /* date */ stdLib.Date, 
-      /* event */ reactLib.Event, 
+      /* event */ reactLib.Event with stdLib.Event, 
       scala.Unit
     ]
   ] = js.undefined

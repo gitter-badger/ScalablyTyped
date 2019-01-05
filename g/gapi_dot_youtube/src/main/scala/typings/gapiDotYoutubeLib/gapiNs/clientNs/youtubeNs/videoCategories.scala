@@ -9,7 +9,7 @@ trait videoCategories extends js.Object {
   /**
     * Returns a list of categories that can be associated with YouTube videos.
     */
-  def list(`object`: gapiDotYoutubeLib.Anon_Part): gapiLib.gapiNs.clientNs.HttpRequest[
+  def list(`object`: gapiDotYoutubeLib.Anon_PartHl): gapiLib.gapiNs.clientNs.HttpRequest[
     gapiDotYoutubeLib.GoogleApiYouTubePageInfo[gapiDotYoutubeLib.GoogleApiYouTubeVideoCategoryResource]
   ]
 }

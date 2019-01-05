@@ -11,7 +11,7 @@ trait ProjectsResource extends js.Object {
     * Returns the RemoteConfig as the payload, and also the eTag as a
     * response header.
     */
-  def getRemoteConfig(request: gapiDotClientDotFirebaseremoteconfigLib.Anon_Accesstoken): gapiDotClientLib.gapiNs.clientNs.Request[RemoteConfig]
+  def getRemoteConfig(request: gapiDotClientDotFirebaseremoteconfigLib.Anon_Xgafv): gapiDotClientLib.gapiNs.clientNs.Request[RemoteConfig]
   /**
     * Update a RemoteConfig. We treat this as an always-existing
     * resource (when it is not found in our data store, we treat it as version
@@ -32,6 +32,6 @@ trait ProjectsResource extends js.Object {
     * &#42; Internal error (HTTP status 500) for Database problems or other internal
     * errors.
     */
-  def updateRemoteConfig(request: gapiDotClientDotFirebaseremoteconfigLib.Anon_ValidateOnly): gapiDotClientLib.gapiNs.clientNs.Request[RemoteConfig]
+  def updateRemoteConfig(request: gapiDotClientDotFirebaseremoteconfigLib.Anon_XgafvAccesstoken): gapiDotClientLib.gapiNs.clientNs.Request[RemoteConfig]
 }
 

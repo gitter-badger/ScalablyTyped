@@ -12,6 +12,6 @@ trait PerMessageDeflateOptions extends js.Object {
   var serverMaxWindowBits: js.UndefOr[scala.Double] = js.undefined
   var serverNoContextTakeover: js.UndefOr[scala.Boolean] = js.undefined
   var threshold: js.UndefOr[scala.Double] = js.undefined
-  var zlibDeflateOptions: js.UndefOr[wsLib.Anon_ChunkSize] = js.undefined
+  var zlibDeflateOptions: js.UndefOr[wsLib.Anon_Flush] = js.undefined
 }
 

@@ -48,7 +48,7 @@ class Graph2d protected () extends js.Object {
   def setCustomTime(time: DateType, id: IdType): scala.Unit = js.native
   def setCustomTimeTitle(title: java.lang.String): scala.Unit = js.native
   def setCustomTimeTitle(title: java.lang.String, id: IdType): scala.Unit = js.native
-  def setData(data: visLib.Anon_Items): scala.Unit = js.native
+  def setData(data: visLib.Anon_Groups): scala.Unit = js.native
   def setGroups(): scala.Unit = js.native
   def setGroups(groups: js.Array[TimelineGroup]): scala.Unit = js.native
   def setGroups(groups: DataGroupCollectionType): scala.Unit = js.native

@@ -42,7 +42,7 @@ trait SharedTextFieldProps extends js.Object {
   var pattern: js.UndefOr[java.lang.String] = js.undefined
   var placeholder: js.UndefOr[java.lang.String] = js.undefined
   var required: js.UndefOr[scala.Boolean] = js.undefined
-  var resize: js.UndefOr[reactDashMdLib.Anon_DisableShrink] = js.undefined
+  var resize: js.UndefOr[reactDashMdLib.Anon_Min] = js.undefined
   var rightIcon: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined
   var rightIconStateful: js.UndefOr[scala.Boolean] = js.undefined
   var rows: js.UndefOr[scala.Double] = js.undefined

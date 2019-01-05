@@ -16,7 +16,7 @@ class BSON () extends js.Object {
     * Calculates the size BSON object for the given object
     */
   def calculateObjectSize(`object`: js.Object): scala.Double = js.native
-  def calculateObjectSize(`object`: js.Object, options: adoneLib.Anon_IgnoreUndefined): scala.Double = js.native
+  def calculateObjectSize(`object`: js.Object, options: adoneLib.Anon_SerializeFunctions): scala.Double = js.native
   /**
     * Deserializes the given buffer into an object
     */

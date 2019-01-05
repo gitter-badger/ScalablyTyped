@@ -185,7 +185,7 @@ object jsPlumbNs extends js.Object {
     var cssClass: js.UndefOr[java.lang.String] = js.undefined
     var label: java.lang.String
      // 0.5
-    var labelStyle: js.UndefOr[jsplumbLib.Anon_BorderWidth] = js.undefined
+    var labelStyle: js.UndefOr[jsplumbLib.Anon_Font] = js.undefined
     var location: js.UndefOr[scala.Double] = js.undefined
   }
   

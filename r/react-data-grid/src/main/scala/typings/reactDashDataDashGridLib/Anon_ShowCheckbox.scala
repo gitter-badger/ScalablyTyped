@@ -19,7 +19,7 @@ trait Anon_ShowCheckbox[T] extends js.Object {
       scala.Unit
     ]
   ] = js.undefined
-  var selectBy: js.UndefOr[Anon_IsSelectedKey] = js.undefined
+  var selectBy: js.UndefOr[Anon_Indexes] = js.undefined
   var showCheckbox: js.UndefOr[scala.Boolean] = js.undefined
 }
 

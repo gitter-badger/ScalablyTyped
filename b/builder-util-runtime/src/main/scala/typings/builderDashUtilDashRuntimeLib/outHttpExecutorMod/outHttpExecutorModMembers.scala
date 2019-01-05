@@ -53,6 +53,6 @@ object outHttpExecutorModMembers extends js.Object {
   def parseJson(result: js.Promise[java.lang.String | scala.Null]): js.Promise[_] = js.native
   def safeGetHeader(response: js.Any, headerKey: java.lang.String): js.Any = js.native
   def safeStringifyJson(data: js.Any): java.lang.String = js.native
-  def safeStringifyJson(data: js.Any, skippedNames: nodeLib.Set[java.lang.String]): java.lang.String = js.native
+  def safeStringifyJson(data: js.Any, skippedNames: nodeLib.Set[java.lang.String] with stdLib.Set[java.lang.String]): java.lang.String = js.native
 }
 

@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait SwipeableViewsProps
-  extends reactLib.reactMod.ReactNs.HTMLProps[reactLib.HTMLDivElement] {
+  extends reactLib.reactMod.ReactNs.HTMLProps[reactLib.HTMLDivElement with stdLib.HTMLDivElement] {
   var animateHeight: js.UndefOr[scala.Boolean] = js.undefined
   var animateTransitions: js.UndefOr[scala.Boolean] = js.undefined
   var axis: js.UndefOr[AxisType] = js.undefined

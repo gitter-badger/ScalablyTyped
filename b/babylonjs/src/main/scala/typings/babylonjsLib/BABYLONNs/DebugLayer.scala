@@ -67,7 +67,7 @@ class DebugLayer protected () extends js.Object {
     * @param config Define the configuration of the inspector
     */
   def show(): scala.Unit = js.native
-  def show(config: babylonjsLib.Anon_ParentElement): scala.Unit = js.native
+  def show(config: babylonjsLib.Anon_Popup): scala.Unit = js.native
 }
 
 /**

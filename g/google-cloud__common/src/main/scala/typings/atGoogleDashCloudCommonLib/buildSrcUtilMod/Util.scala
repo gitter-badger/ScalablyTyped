@@ -34,17 +34,26 @@ class Util () extends js.Object {
     * @param {*} body - Body value.
     * @param {function} callback - The callback function.
     */
-  def handleResp(err: nodeLib.Error): scala.Unit = js.native
-  def handleResp(err: nodeLib.Error, resp: requestLib.requestMod.requestNs.Response): scala.Unit = js.native
-  def handleResp(err: nodeLib.Error, resp: requestLib.requestMod.requestNs.Response, body: ResponseBody): scala.Unit = js.native
+  def handleResp(err: nodeLib.Error with stdLib.Error): scala.Unit = js.native
+  def handleResp(err: nodeLib.Error with stdLib.Error, resp: requestLib.requestMod.requestNs.Response): scala.Unit = js.native
   def handleResp(
-    err: nodeLib.Error,
+    err: nodeLib.Error with stdLib.Error,
+    resp: requestLib.requestMod.requestNs.Response,
+    body: ResponseBody
+  ): scala.Unit = js.native
+  def handleResp(
+    err: nodeLib.Error with stdLib.Error,
     resp: requestLib.requestMod.requestNs.Response,
     body: ResponseBody,
     callback: BodyResponseCallback
   ): scala.Unit = js.native
-  def handleResp(err: nodeLib.Error, resp: scala.Null, body: ResponseBody): scala.Unit = js.native
-  def handleResp(err: nodeLib.Error, resp: scala.Null, body: ResponseBody, callback: BodyResponseCallback): scala.Unit = js.native
+  def handleResp(err: nodeLib.Error with stdLib.Error, resp: scala.Null, body: ResponseBody): scala.Unit = js.native
+  def handleResp(
+    err: nodeLib.Error with stdLib.Error,
+    resp: scala.Null,
+    body: ResponseBody,
+    callback: BodyResponseCallback
+  ): scala.Unit = js.native
   def handleResp(err: scala.Null, resp: requestLib.requestMod.requestNs.Response): scala.Unit = js.native
   def handleResp(err: scala.Null, resp: requestLib.requestMod.requestNs.Response, body: ResponseBody): scala.Unit = js.native
   def handleResp(

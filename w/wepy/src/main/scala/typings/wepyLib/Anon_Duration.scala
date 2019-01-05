@@ -6,10 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_Duration extends js.Object {
-  var animationEnd: js.Function0[scala.Unit]
-  var autoRotate: scala.Boolean
-  var destination: wepyLib.wxUnderscoreEnhancedMod.LagLng
+  var delay: scala.Double
   var duration: scala.Double
-  var markerId: scala.Double
+  var timingFunction: java.lang.String
+  var transformOrigin: java.lang.String
 }
 

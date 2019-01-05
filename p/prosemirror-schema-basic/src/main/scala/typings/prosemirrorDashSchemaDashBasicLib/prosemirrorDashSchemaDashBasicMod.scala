@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object prosemirrorDashSchemaDashBasicMod extends js.Object {
   var marks: prosemirrorDashSchemaDashBasicLib.Anon_Link = js.native
-  var nodes: prosemirrorDashSchemaDashBasicLib.Anon_Heading = js.native
+  var nodes: prosemirrorDashSchemaDashBasicLib.Anon_Doc = js.native
   var schema: prosemirrorDashModelLib.prosemirrorDashModelMod.Schema[java.lang.String, java.lang.String] = js.native
 }
 

@@ -21,8 +21,10 @@ class Worksheet protected () extends js.Object {
   @JSName("Comments")
   val Comments_Original: Comments = js.native
   val ConsolidationFunction: XlConsolidationFunction = js.native
-  val ConsolidationOptions: activexDashInteropLib.SafeArray[scala.Boolean] = js.native
-  val ConsolidationSources: js.UndefOr[activexDashInteropLib.SafeArray[java.lang.String]] = js.native
+  val ConsolidationOptions: activexDashInteropLib.SafeArray[scala.Boolean] with stdLib.SafeArray[scala.Boolean] = js.native
+  val ConsolidationSources: js.UndefOr[
+    activexDashInteropLib.SafeArray[java.lang.String] with stdLib.SafeArray[java.lang.String]
+  ] = js.native
   val Creator: XlCreator = js.native
   @JSName("CustomProperties")
   val CustomProperties_Original: CustomProperties = js.native
@@ -100,7 +102,9 @@ class Worksheet protected () extends js.Object {
   def Cells(RowIndex: scala.Double): Range = js.native
   def Cells(RowIndex: scala.Double, ColumnIndex: scala.Double): Range = js.native
   def ChartObjects(): ChartObjects = js.native
-  def ChartObjects(Index: activexDashInteropLib.SafeArray[java.lang.String | scala.Double]): ChartObjects = js.native
+  def ChartObjects(
+    Index: (activexDashInteropLib.SafeArray[java.lang.String | scala.Double]) with (stdLib.SafeArray[java.lang.String | scala.Double])
+  ): ChartObjects = js.native
   def ChartObjects(Index: java.lang.String): ChartObject = js.native
   def ChartObjects(Index: scala.Double): ChartObject = js.native
   def CheckBoxes(): js.Any = js.native
@@ -415,7 +419,9 @@ class Worksheet protected () extends js.Object {
     Local: js.UndefOr[scala.Boolean]
   ): scala.Unit = js.native
   def Scenarios(): Scenarios = js.native
-  def Scenarios(Index: activexDashInteropLib.SafeArray[scala.Double | java.lang.String]): Scenarios = js.native
+  def Scenarios(
+    Index: (activexDashInteropLib.SafeArray[scala.Double | java.lang.String]) with (stdLib.SafeArray[scala.Double | java.lang.String])
+  ): Scenarios = js.native
   def Scenarios(Index: java.lang.String): Scenario = js.native
   def Scenarios(Index: scala.Double): Scenario = js.native
   def Scripts(Index: js.Any): activexDashOfficeLib.OfficeNs.Script = js.native

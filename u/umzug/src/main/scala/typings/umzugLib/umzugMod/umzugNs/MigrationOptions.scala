@@ -14,7 +14,7 @@ trait MigrationOptions extends js.Object {
     * See https://github.com/sequelize/umzug/tree/master/test/fixtures
     * for examples.
     */
-  var customResolver: js.UndefOr[js.Function1[/* path */ java.lang.String, umzugLib.Anon_Down]] = js.undefined
+  var customResolver: js.UndefOr[js.Function1[/* path */ java.lang.String, umzugLib.Anon_Up]] = js.undefined
   /*
     * The params that gets passed to the migrations.
     * Might be an array or a synchronous function which returns an array.

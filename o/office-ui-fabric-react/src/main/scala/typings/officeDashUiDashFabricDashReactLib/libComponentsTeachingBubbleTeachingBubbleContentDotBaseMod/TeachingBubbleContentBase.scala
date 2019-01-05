@@ -22,12 +22,12 @@ class TeachingBubbleContentBase protected ()
   def componentWillUnmount_MTeachingBubbleContentBase(): scala.Unit = js.native
   def focus(): scala.Unit = js.native
   def rootElement(): scala.Unit = js.native
-  def rootElement(component: reactLib.HTMLDivElement): scala.Unit = js.native
+  def rootElement(component: reactLib.HTMLDivElement with stdLib.HTMLDivElement): scala.Unit = js.native
 }
 
 @JSImport("office-ui-fabric-react/lib/components/TeachingBubble/TeachingBubbleContent.base", "TeachingBubbleContentBase")
 @js.native
 object TeachingBubbleContentBase extends js.Object {
-  var defaultProps: officeDashUiDashFabricDashReactLib.Anon_ImageProps = js.native
+  var defaultProps: officeDashUiDashFabricDashReactLib.Anon_HasCondensedHeadline = js.native
 }
 

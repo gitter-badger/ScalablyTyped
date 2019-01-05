@@ -11,11 +11,11 @@ class HeatMap protected ()
   extends ejDotWebDotAllLib.ejNs.Widget {
   def this(element: ejDotWebDotAllLib.JQuery) = this()
   def this(element: stdLib.Element) = this()
-  def this(element: ejDotWebDotAllLib.JQuery, options: ejDotWebDotAllLib.ejNs.Model) = this()
-  def this(element: stdLib.Element, options: ejDotWebDotAllLib.ejNs.Model) = this()
-  var defaults: ejDotWebDotAllLib.ejNs.Model = js.native
+  def this(element: ejDotWebDotAllLib.JQuery, options: ejDotWebDotAllLib.ejNs.Model with ejDotWebDotAllLib.ejNs.datavisualizationNs.HeatMapNs.Model) = this()
+  def this(element: stdLib.Element, options: ejDotWebDotAllLib.ejNs.Model with ejDotWebDotAllLib.ejNs.datavisualizationNs.HeatMapNs.Model) = this()
+  var defaults: ejDotWebDotAllLib.ejNs.Model with ejDotWebDotAllLib.ejNs.datavisualizationNs.HeatMapNs.Model = js.native
   @JSName("model")
-  var model_HeatMap: ejDotWebDotAllLib.ejNs.Model = js.native
+  var model_HeatMap: ejDotWebDotAllLib.ejNs.Model with ejDotWebDotAllLib.ejNs.datavisualizationNs.HeatMapNs.Model = js.native
 }
 
 @JSGlobal("ej.datavisualization.HeatMap")

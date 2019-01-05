@@ -11,7 +11,7 @@ object platformKeysNsMembers extends js.Object {
   /**
     * @enum
     */
-  val ClientCertificateType: chromeDashAppsLib.Anon_ECDSASIGN = js.native
+  val ClientCertificateType: chromeDashAppsLib.Anon_RSASIGN = js.native
   /**
     * @description
     * Passes the key pair of *certificate* for usage with

@@ -30,7 +30,7 @@ trait ClientOptions extends js.Object {
     * 
     * Options passed to the raven-client, if not specified {release: } will be passed.
     */
-  var errorReporting: webgmeLib.Anon_RavenOptions
+  var errorReporting: webgmeLib.Anon_Enable
   /**
     * When debug is activated in the browser 
     * (type localStorage.debug = gme* in the 

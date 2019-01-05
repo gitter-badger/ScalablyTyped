@@ -5,9 +5,19 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Anon_Key extends js.Object {
-  var key: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+trait Anon_Key
+  extends // for the `component` prop until refactored out
+/* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
+  var component: js.UndefOr[reactLib.reactMod.ReactNs.ReactType[_]] = js.undefined
+  var icon: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined
+  /**
+    * @deprecated
+    */
+  var iconChildren: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  /**
+    * @deprecated
+    */
+  var iconClassName: js.UndefOr[java.lang.String] = js.undefined
   var label: reactLib.reactMod.ReactNs.ReactNode
-  var value: scala.Double | java.lang.String
 }
 

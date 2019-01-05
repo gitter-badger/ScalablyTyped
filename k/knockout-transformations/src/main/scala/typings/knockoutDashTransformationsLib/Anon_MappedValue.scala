@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_MappedValue[TResult] extends js.Object {
-  var dispose: js.Function0[scala.Unit]
   var mappedValue: TResult
+  def dispose(): scala.Unit
 }
 

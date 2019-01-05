@@ -11,7 +11,7 @@ package object reactDashRelayMod {
   type FragmentOrRegularProp[T] = T | js.Array[_FragmentRefs[js.Any]] | _FragmentRefs[js.Any]
   type MappedFragmentProps[T] = reactDashRelayLib.reactDashRelayLibStrings.MappedFragmentProps with T
   type RelayContainer[P] = reactLib.reactMod.ReactNs.ComponentType[MappedFragmentProps[RemoveRelayProp[P]] with ComponentRef]
-  type RelayPaginationProp = RelayProp with reactDashRelayLib.Anon_LoadMore
+  type RelayPaginationProp = RelayProp with reactDashRelayLib.Anon_HasMore
   type RelayRefetchProp = RelayProp with reactDashRelayLib.Anon_Refetch
   type RemoveRelayProp[P] = stdLib.Pick[
     P, 

@@ -7,7 +7,11 @@ import scala.scalajs.js.annotation._
 
 package object RocksDBNs {
   type Bytes = java.lang.String | nodeLib.Buffer
-  type ErrorSizeCallback = js.Function2[/* err */ js.UndefOr[nodeLib.Error], /* size */ scala.Double, scala.Unit]
+  type ErrorSizeCallback = js.Function2[
+    /* err */ js.UndefOr[nodeLib.Error with stdLib.Error], 
+    /* size */ scala.Double, 
+    scala.Unit
+  ]
   // tslint:disable-next-line:no-empty-interface
   type OpenOptions = abstractDashLeveldownLib.abstractDashLeveldownMod.AbstractOpenOptions
 }

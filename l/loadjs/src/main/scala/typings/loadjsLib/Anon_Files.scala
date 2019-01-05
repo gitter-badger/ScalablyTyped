@@ -23,13 +23,13 @@ trait Anon_Files extends js.Object {
   ): scala.Unit = js.native
   def done(bundleId: java.lang.String): scala.Unit = js.native
   def isDefined(bundleId: java.lang.String): scala.Boolean = js.native
-  def ready(bundleIds: java.lang.String, optionsOrCallback: loadjsLib.loadjsMod.loadjsNs.LoadedFn): /* import warning: ImportType.apply Failed type conversion: typeof loadjs.loadjs.loadjs */ js.Any = js.native
-  def ready(bundleIds: java.lang.String, optionsOrCallback: loadjsLib.loadjsMod.loadjsNs.ReadyOptions): /* import warning: ImportType.apply Failed type conversion: typeof loadjs.loadjs.loadjs */ js.Any = js.native
-  def ready(bundleIds: js.Array[java.lang.String], optionsOrCallback: loadjsLib.loadjsMod.loadjsNs.LoadedFn): /* import warning: ImportType.apply Failed type conversion: typeof loadjs.loadjs.loadjs */ js.Any = js.native
+  def ready(bundleIds: java.lang.String, optionsOrCallback: loadjsLib.loadjsMod.loadjsNs.LoadedFn): /* import warning: ImportType.apply Failed type conversion: typeof loadjs */ js.Any = js.native
+  def ready(bundleIds: java.lang.String, optionsOrCallback: loadjsLib.loadjsMod.loadjsNs.ReadyOptions): /* import warning: ImportType.apply Failed type conversion: typeof loadjs */ js.Any = js.native
+  def ready(bundleIds: js.Array[java.lang.String], optionsOrCallback: loadjsLib.loadjsMod.loadjsNs.LoadedFn): /* import warning: ImportType.apply Failed type conversion: typeof loadjs */ js.Any = js.native
   def ready(
     bundleIds: js.Array[java.lang.String],
     optionsOrCallback: loadjsLib.loadjsMod.loadjsNs.ReadyOptions
-  ): /* import warning: ImportType.apply Failed type conversion: typeof loadjs.loadjs.loadjs */ js.Any = js.native
+  ): /* import warning: ImportType.apply Failed type conversion: typeof loadjs */ js.Any = js.native
   def reset(): scala.Unit = js.native
 }
 

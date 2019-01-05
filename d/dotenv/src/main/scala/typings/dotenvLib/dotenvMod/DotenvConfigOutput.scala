@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait DotenvConfigOutput extends js.Object {
-  var error: js.UndefOr[nodeLib.Error] = js.undefined
+  var error: js.UndefOr[nodeLib.Error with stdLib.Error] = js.undefined
   var parsed: js.UndefOr[DotenvParseOutput] = js.undefined
 }
 

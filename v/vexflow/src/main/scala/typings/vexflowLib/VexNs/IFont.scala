@@ -20,7 +20,7 @@ trait IFont extends js.Object {
   /**
     * This property is missing in vexflow_font.js, but present in gonville_original.js and gonville_all.js.
     */
-  var original_font_information: js.UndefOr[vexflowLib.Anon_Versionstring] = js.undefined
+  var original_font_information: js.UndefOr[vexflowLib.Anon_Postscriptname] = js.undefined
   var resolution: scala.Double
   var underlinePosition: scala.Double
   var underlineThickness: scala.Double

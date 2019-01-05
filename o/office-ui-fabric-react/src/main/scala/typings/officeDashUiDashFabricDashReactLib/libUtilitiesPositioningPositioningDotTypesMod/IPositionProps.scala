@@ -35,6 +35,8 @@ trait IPositionProps extends js.Object {
   var directionalHintForRTL: js.UndefOr[officeDashUiDashFabricDashReactLib.libCommonDirectionalHintMod.DirectionalHint] = js.undefined
   /** The gap between the callout and the target */
   var gapSpace: js.UndefOr[scala.Double] = js.undefined
-  var target: js.UndefOr[reactLib.Element | reactLib.MouseEvent | IPoint] = js.undefined
+  var target: js.UndefOr[
+    (reactLib.Element with stdLib.Element) | (reactLib.MouseEvent with stdLib.MouseEvent) | IPoint
+  ] = js.undefined
 }
 

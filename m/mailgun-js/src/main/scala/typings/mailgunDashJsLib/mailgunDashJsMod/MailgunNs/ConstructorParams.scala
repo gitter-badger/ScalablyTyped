@@ -15,7 +15,7 @@ trait ConstructorParams extends js.Object {
   var protocol: js.UndefOr[java.lang.String] = js.undefined
   var proxy: js.UndefOr[java.lang.String] = js.undefined
   var publicApiKey: js.UndefOr[java.lang.String] = js.undefined
-  var retry: js.UndefOr[scala.Double | mailgunDashJsLib.Anon_Interval] = js.undefined
+  var retry: js.UndefOr[scala.Double | mailgunDashJsLib.Anon_Times] = js.undefined
   var timeout: js.UndefOr[scala.Double] = js.undefined
 }
 

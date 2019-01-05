@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait RequestError
-  extends nodeLib.Error {
+  extends stdLib.Error {
   var cause: js.Any
   var error: js.Any
   var options: requestDashPromiseLib.requestDashPromiseMod.requestPromiseNs.Options

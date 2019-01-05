@@ -16,10 +16,10 @@ class TimeZones protected () extends js.Object {
   val Parent: js.Any = js.native
   val Session: NameSpace = js.native
   def ConvertTime(
-    SourceDateTime: activexDashInteropLib.VarDate,
+    SourceDateTime: activexDashInteropLib.VarDate with stdLib.VarDate,
     SourceTimeZone: TimeZone,
     DestinationTimeZone: TimeZone
-  ): activexDashInteropLib.VarDate = js.native
+  ): activexDashInteropLib.VarDate with stdLib.VarDate = js.native
   def Item(Index: js.Any): TimeZone = js.native
 }
 

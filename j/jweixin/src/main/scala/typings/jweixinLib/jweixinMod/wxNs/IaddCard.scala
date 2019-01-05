@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait IaddCard extends BaseParams {
-  var cardList: js.Array[jweixinLib.Anon_CardExt]
+  var cardList: js.Array[jweixinLib.Anon_CardId]
    // 需要添加的卡券列表
   @JSName("success")
   def success_MIaddCard(res: jweixinLib.Anon_CardList): scala.Unit

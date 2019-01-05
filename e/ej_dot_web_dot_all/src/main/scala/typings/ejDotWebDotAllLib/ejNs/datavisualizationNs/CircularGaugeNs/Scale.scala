@@ -21,7 +21,7 @@ trait Scale extends js.Object {
   /** Specify scale direction of circular gauge. See
     * @Default {Clockwise}
     */
-  var direction: js.UndefOr[Direction | java.lang.String] = js.undefined
+  var direction: js.UndefOr[(Direction with ejDotWebDotAllLib.ejNs.Direction) | java.lang.String] = js.undefined
   /** Specify representing state of circular gauge
     * @Default {Array}
     */

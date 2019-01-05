@@ -29,7 +29,7 @@ trait Stream[S, T]
   def compress(
     `this`: js.Object,
     `type`: adoneLib.adoneNs.fastNs.INs.pluginNs.compressorNs.Compressor,
-    options: adoneLib.Anon_Key
+    options: adoneLib.Anon_Rename
   ): this.type = js.native
   def concat(file: adoneLib.Anon_Path): this.type = js.native
   def concat(file: adoneLib.Anon_Path, options: adoneLib.Anon_NewLine): this.type = js.native
@@ -94,9 +94,9 @@ trait Stream[S, T]
     * Rewrite occurrences of filenames which have been renamed by revisionHash
     */
   def revisionHashReplace(): this.type = js.native
-  def revisionHashReplace(options: adoneLib.Anon_ModifyUnreved): this.type = js.native
+  def revisionHashReplace(options: adoneLib.Anon_CanonicalUris): this.type = js.native
   def sourcemapsInit(): this.type = js.native
-  def sourcemapsInit(options: adoneLib.Anon_LargeFile): this.type = js.native
+  def sourcemapsInit(options: adoneLib.Anon_LoadMaps): this.type = js.native
   def sourcemapsWrite(): this.type = js.native
   /**
     *

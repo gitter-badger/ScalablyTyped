@@ -1116,7 +1116,7 @@ trait JQuery extends js.Object {
   @JSName("sortable")
   def sortable_serialize(methodName: jqueryuiLib.jqueryuiLibStrings.serialize): java.lang.String = js.native
   @JSName("sortable")
-  def sortable_serialize(methodName: jqueryuiLib.jqueryuiLibStrings.serialize, options: Anon_Expression): java.lang.String = js.native
+  def sortable_serialize(methodName: jqueryuiLib.jqueryuiLibStrings.serialize, options: Anon_Key): java.lang.String = js.native
   @JSName("sortable")
   def sortable_toArray(methodName: jqueryuiLib.jqueryuiLibStrings.toArray): js.Array[java.lang.String] = js.native
   @JSName("sortable")

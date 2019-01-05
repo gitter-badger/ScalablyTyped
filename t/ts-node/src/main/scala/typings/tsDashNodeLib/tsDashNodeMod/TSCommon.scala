@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait TSCommon extends js.Object {
-  var ModuleKind: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof typescript.typescript.ModuleKind */ js.Any = js.native
+  var ModuleKind: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof _ts.ModuleKind */ js.Any = js.native
   var ScriptSnapshot: tsDashNodeLib.Anon_FromString = js.native
-  var ScriptTarget: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof typescript.typescript.ScriptTarget */ js.Any = js.native
+  var ScriptTarget: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof _ts.ScriptTarget */ js.Any = js.native
   @JSName("createLanguageService")
   var createLanguageService_Original: tsDashNodeLib.Anon_Host = js.native
   @JSName("displayPartsToString")

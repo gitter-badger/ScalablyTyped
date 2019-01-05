@@ -12,6 +12,6 @@ trait VideosResource extends js.Object {
     * `Operation.metadata` contains `AnnotateVideoProgress` (progress).
     * `Operation.response` contains `AnnotateVideoResponse` (results).
     */
-  def annotate(request: gapiDotClientDotVideointelligenceLib.Anon_Accesstoken): gapiDotClientLib.gapiNs.clientNs.Request[GoogleLongrunning_Operation]
+  def annotate(request: gapiDotClientDotVideointelligenceLib.Anon_Xgafv): gapiDotClientLib.gapiNs.clientNs.Request[GoogleLongrunning_Operation]
 }
 

@@ -21,7 +21,7 @@ trait ECharts extends js.Object {
     *
     * @param opts Data options.
     */
-  def appendData(opts: echartsLib.Anon_Data): scala.Unit = js.native
+  def appendData(opts: echartsLib.Anon_SeriesIndex): scala.Unit = js.native
   /**
     * Clears current instance; removes all components and charts in
     *     current instance.
@@ -83,14 +83,14 @@ trait ECharts extends js.Object {
     *
     * @param opts Options.
     */
-  def getConnectedDataURL(opts: echartsLib.Anon_Type): java.lang.String = js.native
+  def getConnectedDataURL(opts: echartsLib.Anon_TypePixelRatio): java.lang.String = js.native
   /**
     * Exports chart image; returns a base64 URL; can be set to `src` of
     *      `Image`.
     *
     * @param opts Options.
     */
-  def getDataURL(opts: echartsLib.Anon_TypePixelRatio): java.lang.String = js.native
+  def getDataURL(opts: echartsLib.Anon_Type): java.lang.String = js.native
   /**
     * Gets DOM element of ECharts instance container.
     *

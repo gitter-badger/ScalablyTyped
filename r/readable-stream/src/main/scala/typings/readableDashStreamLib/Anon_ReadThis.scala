@@ -9,15 +9,15 @@ trait Anon_ReadThis extends js.Object {
   var destroy: js.UndefOr[
     js.ThisFunction2[
       /* this */ readableDashStreamLib.readableDashStreamMod.underscoreReadableNs.Transform, 
-      /* error */ nodeLib.Error | scala.Null, 
-      /* callback */ js.Function1[/* error */ nodeLib.Error | scala.Null, scala.Unit], 
+      /* error */ (nodeLib.Error with stdLib.Error) | scala.Null, 
+      /* callback */ js.Function1[/* error */ (nodeLib.Error with stdLib.Error) | scala.Null, scala.Unit], 
       scala.Unit
     ]
   ] = js.undefined
   var `final`: js.UndefOr[
     js.ThisFunction1[
       /* this */ readableDashStreamLib.readableDashStreamMod.underscoreReadableNs.Transform, 
-      /* callback */ js.Function1[/* error */ js.UndefOr[nodeLib.Error | scala.Null], scala.Unit], 
+      /* callback */ js.Function1[/* error */ js.UndefOr[(nodeLib.Error with stdLib.Error) | scala.Null], scala.Unit], 
       scala.Unit
     ]
   ] = js.undefined
@@ -40,7 +40,11 @@ trait Anon_ReadThis extends js.Object {
       /* this */ readableDashStreamLib.readableDashStreamMod.underscoreReadableNs.Transform, 
       /* chunk */ js.Any, 
       /* encoding */ java.lang.String, 
-      /* callback */ js.Function2[/* error */ js.UndefOr[nodeLib.Error], /* data */ js.UndefOr[js.Any], scala.Unit], 
+      /* callback */ js.Function2[
+        /* error */ js.UndefOr[nodeLib.Error with stdLib.Error], 
+        /* data */ js.UndefOr[js.Any], 
+        scala.Unit
+      ], 
       scala.Unit
     ]
   ] = js.undefined
@@ -49,7 +53,7 @@ trait Anon_ReadThis extends js.Object {
       /* this */ readableDashStreamLib.readableDashStreamMod.underscoreReadableNs.Transform, 
       /* chunk */ js.Any, 
       /* encoding */ java.lang.String, 
-      /* callback */ js.Function1[/* error */ js.UndefOr[nodeLib.Error | scala.Null], scala.Unit], 
+      /* callback */ js.Function1[/* error */ js.UndefOr[(nodeLib.Error with stdLib.Error) | scala.Null], scala.Unit], 
       scala.Unit
     ]
   ] = js.undefined
@@ -57,7 +61,7 @@ trait Anon_ReadThis extends js.Object {
     js.ThisFunction2[
       /* this */ readableDashStreamLib.readableDashStreamMod.underscoreReadableNs.Transform, 
       /* chunks */ js.Array[Anon_Chunk], 
-      /* callback */ js.Function1[/* error */ js.UndefOr[nodeLib.Error | scala.Null], scala.Unit], 
+      /* callback */ js.Function1[/* error */ js.UndefOr[(nodeLib.Error with stdLib.Error) | scala.Null], scala.Unit], 
       scala.Unit
     ]
   ] = js.undefined

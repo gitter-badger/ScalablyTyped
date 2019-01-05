@@ -51,7 +51,7 @@ trait DatePickerProps
     js.Function3[
       /* formattedDate */ java.lang.String, 
       /* date */ stdLib.Date, 
-      /* event */ reactLib.Event, 
+      /* event */ reactLib.Event with stdLib.Event, 
       scala.Unit
     ]
   ] = js.undefined

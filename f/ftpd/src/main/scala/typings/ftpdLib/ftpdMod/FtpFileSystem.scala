@@ -23,7 +23,7 @@ trait FtpFileSystem extends js.Object {
   var createWriteStream: js.UndefOr[
     js.Function2[
       /* path */ java.lang.String, 
-      /* options */ js.UndefOr[ftpdLib.Anon_EncodingString], 
+      /* options */ js.UndefOr[ftpdLib.Anon_FlagsEncoding], 
       nodeLib.fsMod.WriteStream
     ]
   ] = js.native

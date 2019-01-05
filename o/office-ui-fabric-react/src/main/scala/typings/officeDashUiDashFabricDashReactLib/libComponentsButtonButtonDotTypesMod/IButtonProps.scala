@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait IButtonProps
   extends reactLib.reactMod.ReactNs.AllHTMLAttributes[
-      reactLib.HTMLAnchorElement | reactLib.HTMLButtonElement | reactLib.HTMLDivElement | officeDashUiDashFabricDashReactLib.libComponentsButtonBaseButtonMod.BaseButton | officeDashUiDashFabricDashReactLib.libComponentsButtonButtonMod.Button
+      (reactLib.HTMLAnchorElement with stdLib.HTMLAnchorElement) | (reactLib.HTMLButtonElement with stdLib.HTMLButtonElement) | (reactLib.HTMLDivElement with stdLib.HTMLDivElement) | officeDashUiDashFabricDashReactLib.libComponentsButtonBaseButtonMod.BaseButton | officeDashUiDashFabricDashReactLib.libComponentsButtonButtonMod.Button
     ] {
   /**
     * Whether the button can have focus in disabled mode
@@ -129,7 +129,7 @@ trait IButtonProps
   var onMenuClick: js.UndefOr[
     js.Function2[
       /* ev */ js.UndefOr[
-        (reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent]) | reactLib.reactMod.ReactNs.KeyboardEvent[reactLib.HTMLElement]
+        (reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement with stdLib.HTMLElement, reactLib.NativeMouseEvent]) | (reactLib.reactMod.ReactNs.KeyboardEvent[reactLib.HTMLElement with stdLib.HTMLElement])
       ], 
       /* button */ js.UndefOr[IButtonProps], 
       scala.Unit
@@ -191,7 +191,7 @@ trait IButtonProps
     * @deprecated Use button props instead.
     */
   var rootProps: js.UndefOr[
-    reactLib.reactMod.ReactNs.ButtonHTMLAttributes[reactLib.HTMLButtonElement] | reactLib.reactMod.ReactNs.AnchorHTMLAttributes[reactLib.HTMLAnchorElement]
+    (reactLib.reactMod.ReactNs.ButtonHTMLAttributes[reactLib.HTMLButtonElement with stdLib.HTMLButtonElement]) | (reactLib.reactMod.ReactNs.AnchorHTMLAttributes[reactLib.HTMLAnchorElement with stdLib.HTMLAnchorElement])
   ] = js.undefined
   /**
     * Description of the action this button takes.

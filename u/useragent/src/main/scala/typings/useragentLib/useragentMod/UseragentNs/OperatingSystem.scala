@@ -13,7 +13,7 @@ trait OperatingSystem extends js.Object {
   /**
     * Outputs a JSON string of the OS, values are defaulted to undefined so they are not outputed in the stringify.
     */
-  def toJSON(): useragentLib.Anon_Minor
+  def toJSON(): useragentLib.Anon_FamilyMajorMinor
   /**
     * Generates the version of the Operating System.
     */

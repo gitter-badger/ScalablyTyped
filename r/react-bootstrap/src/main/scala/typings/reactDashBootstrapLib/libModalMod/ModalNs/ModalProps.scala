@@ -24,11 +24,11 @@ trait ModalProps
   var dialogTransitionTimeout: js.UndefOr[scala.Double] = js.undefined
   var enforceFocus: js.UndefOr[scala.Boolean] = js.undefined
   var keyboard: js.UndefOr[scala.Boolean] = js.undefined
-  var onBackdropClick: js.UndefOr[js.Function1[/* node */ reactLib.HTMLElement, _]] = js.undefined
-  var onEscapeKeyUp: js.UndefOr[js.Function1[/* node */ reactLib.HTMLElement, _]] = js.undefined
+  var onBackdropClick: js.UndefOr[js.Function1[/* node */ reactLib.HTMLElement with stdLib.HTMLElement, _]] = js.undefined
+  var onEscapeKeyUp: js.UndefOr[js.Function1[/* node */ reactLib.HTMLElement with stdLib.HTMLElement, _]] = js.undefined
   // Required
   var onHide: js.Function
-  var onShow: js.UndefOr[js.Function1[/* node */ reactLib.HTMLElement, _]] = js.undefined
+  var onShow: js.UndefOr[js.Function1[/* node */ reactLib.HTMLElement with stdLib.HTMLElement, _]] = js.undefined
   var show: js.UndefOr[scala.Boolean] = js.undefined
   var transition: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined
 }

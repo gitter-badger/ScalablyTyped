@@ -39,7 +39,7 @@ class Client protected () extends js.Object {
     value: java.lang.String,
     options: memjsLib.Anon_Expires,
     callback: js.Function2[
-      /* err */ js.UndefOr[nodeLib.Error | scala.Null], 
+      /* err */ js.UndefOr[(nodeLib.Error with stdLib.Error) | scala.Null], 
       /* success */ js.UndefOr[scala.Boolean], 
       scala.Unit
     ]
@@ -49,7 +49,7 @@ class Client protected () extends js.Object {
     value: nodeLib.Buffer,
     options: memjsLib.Anon_Expires,
     callback: js.Function2[
-      /* err */ js.UndefOr[nodeLib.Error | scala.Null], 
+      /* err */ js.UndefOr[(nodeLib.Error with stdLib.Error) | scala.Null], 
       /* success */ js.UndefOr[scala.Boolean], 
       scala.Unit
     ]
@@ -70,7 +70,7 @@ class Client protected () extends js.Object {
     key: java.lang.String,
     value: java.lang.String,
     callback: js.Function2[
-      /* err */ js.UndefOr[nodeLib.Error | scala.Null], 
+      /* err */ js.UndefOr[(nodeLib.Error with stdLib.Error) | scala.Null], 
       /* success */ js.UndefOr[scala.Boolean], 
       scala.Unit
     ]
@@ -79,7 +79,7 @@ class Client protected () extends js.Object {
     key: java.lang.String,
     value: nodeLib.Buffer,
     callback: js.Function2[
-      /* err */ js.UndefOr[nodeLib.Error | scala.Null], 
+      /* err */ js.UndefOr[(nodeLib.Error with stdLib.Error) | scala.Null], 
       /* success */ js.UndefOr[scala.Boolean], 
       scala.Unit
     ]
@@ -111,9 +111,9 @@ class Client protected () extends js.Object {
   def decrement(
     key: java.lang.String,
     amount: scala.Double,
-    options: memjsLib.Anon_ExpiresInitial,
+    options: memjsLib.Anon_Initial,
     callback: js.Function3[
-      /* err */ js.UndefOr[nodeLib.Error | scala.Null], 
+      /* err */ js.UndefOr[(nodeLib.Error with stdLib.Error) | scala.Null], 
       /* success */ js.UndefOr[scala.Boolean], 
       /* value */ js.UndefOr[scala.Double], 
       scala.Unit
@@ -134,7 +134,7 @@ class Client protected () extends js.Object {
   def delete(
     key: java.lang.String,
     callback: js.Function2[
-      /* err */ js.UndefOr[nodeLib.Error | scala.Null], 
+      /* err */ js.UndefOr[(nodeLib.Error with stdLib.Error) | scala.Null], 
       /* success */ js.UndefOr[scala.Boolean], 
       scala.Unit
     ]
@@ -153,7 +153,7 @@ class Client protected () extends js.Object {
     */
   def flush(
     callback: js.Function2[
-      /* err */ js.UndefOr[nodeLib.Error | scala.Null], 
+      /* err */ js.UndefOr[(nodeLib.Error with stdLib.Error) | scala.Null], 
       /* results */ js.UndefOr[stdLib.Record[java.lang.String, scala.Boolean]], 
       scala.Unit
     ]
@@ -175,7 +175,7 @@ class Client protected () extends js.Object {
   def get(
     key: java.lang.String,
     callback: js.Function3[
-      /* err */ js.UndefOr[nodeLib.Error | scala.Null], 
+      /* err */ js.UndefOr[(nodeLib.Error with stdLib.Error) | scala.Null], 
       /* value */ js.UndefOr[nodeLib.Buffer], 
       /* flags */ js.UndefOr[nodeLib.Buffer], 
       scala.Unit
@@ -202,9 +202,9 @@ class Client protected () extends js.Object {
   def increment(
     key: java.lang.String,
     amount: scala.Double,
-    options: memjsLib.Anon_ExpiresInitial,
+    options: memjsLib.Anon_Initial,
     callback: js.Function3[
-      /* err */ js.UndefOr[nodeLib.Error | scala.Null], 
+      /* err */ js.UndefOr[(nodeLib.Error with stdLib.Error) | scala.Null], 
       /* success */ js.UndefOr[scala.Boolean], 
       /* value */ js.UndefOr[scala.Double], 
       scala.Unit
@@ -248,7 +248,7 @@ class Client protected () extends js.Object {
     key: java.lang.String,
     value: java.lang.String,
     callback: js.Function2[
-      /* err */ js.UndefOr[nodeLib.Error | scala.Null], 
+      /* err */ js.UndefOr[(nodeLib.Error with stdLib.Error) | scala.Null], 
       /* success */ js.UndefOr[scala.Boolean], 
       scala.Unit
     ]
@@ -257,7 +257,7 @@ class Client protected () extends js.Object {
     key: java.lang.String,
     value: nodeLib.Buffer,
     callback: js.Function2[
-      /* err */ js.UndefOr[nodeLib.Error | scala.Null], 
+      /* err */ js.UndefOr[(nodeLib.Error with stdLib.Error) | scala.Null], 
       /* success */ js.UndefOr[scala.Boolean], 
       scala.Unit
     ]
@@ -294,7 +294,7 @@ class Client protected () extends js.Object {
     value: java.lang.String,
     options: memjsLib.Anon_Expires,
     callback: js.Function2[
-      /* err */ js.UndefOr[nodeLib.Error | scala.Null], 
+      /* err */ js.UndefOr[(nodeLib.Error with stdLib.Error) | scala.Null], 
       /* success */ js.UndefOr[scala.Boolean], 
       scala.Unit
     ]
@@ -304,7 +304,7 @@ class Client protected () extends js.Object {
     value: nodeLib.Buffer,
     options: memjsLib.Anon_Expires,
     callback: js.Function2[
-      /* err */ js.UndefOr[nodeLib.Error | scala.Null], 
+      /* err */ js.UndefOr[(nodeLib.Error with stdLib.Error) | scala.Null], 
       /* success */ js.UndefOr[scala.Boolean], 
       scala.Unit
     ]
@@ -325,7 +325,7 @@ class Client protected () extends js.Object {
     */
   def resetStats(
     callback: js.Function2[
-      /* err */ js.UndefOr[nodeLib.Error | scala.Null], 
+      /* err */ js.UndefOr[(nodeLib.Error with stdLib.Error) | scala.Null], 
       /* server */ js.UndefOr[java.lang.String], 
       scala.Unit
     ]
@@ -357,7 +357,7 @@ class Client protected () extends js.Object {
     value: java.lang.String,
     options: memjsLib.Anon_Expires,
     callback: js.Function2[
-      /* err */ js.UndefOr[nodeLib.Error | scala.Null], 
+      /* err */ js.UndefOr[(nodeLib.Error with stdLib.Error) | scala.Null], 
       /* success */ js.UndefOr[scala.Boolean], 
       scala.Unit
     ]
@@ -367,7 +367,7 @@ class Client protected () extends js.Object {
     value: nodeLib.Buffer,
     options: memjsLib.Anon_Expires,
     callback: js.Function2[
-      /* err */ js.UndefOr[nodeLib.Error | scala.Null], 
+      /* err */ js.UndefOr[(nodeLib.Error with stdLib.Error) | scala.Null], 
       /* success */ js.UndefOr[scala.Boolean], 
       scala.Unit
     ]
@@ -388,7 +388,7 @@ class Client protected () extends js.Object {
   def statsWithKey(
     key: java.lang.String,
     callback: js.Function3[
-      /* err */ js.UndefOr[nodeLib.Error | scala.Null], 
+      /* err */ js.UndefOr[(nodeLib.Error with stdLib.Error) | scala.Null], 
       /* server */ js.UndefOr[java.lang.String], 
       /* stats */ js.UndefOr[stdLib.Record[java.lang.String, java.lang.String]], 
       scala.Unit
@@ -410,7 +410,7 @@ class Client protected () extends js.Object {
     key: java.lang.String,
     expires: scala.Double,
     callback: js.Function2[
-      /* err */ js.UndefOr[nodeLib.Error | scala.Null], 
+      /* err */ js.UndefOr[(nodeLib.Error with stdLib.Error) | scala.Null], 
       /* success */ js.UndefOr[scala.Boolean], 
       scala.Unit
     ]

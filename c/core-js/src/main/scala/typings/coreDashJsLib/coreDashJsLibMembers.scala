@@ -17,7 +17,7 @@ object coreDashJsLibMembers extends js.Object {
     */
   var log: Log = js.native
   @JSName("$for")
-  def $for[T](iterable: nodeLib.Iterable[T]): $for[T] = js.native
+  def $for[T](iterable: nodeLib.Iterable[T] with stdLib.Iterable[T]): $for[T] = js.native
   // #############################################################################################
   // delay - https://github.com/zloirock/core-js/#delay
   // Modules: core.delay

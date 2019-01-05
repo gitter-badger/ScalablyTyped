@@ -52,12 +52,12 @@ trait Entity[C] extends ANode {
   @JSName("addEventListener")
   def addEventListener_componentremoved(
     `type`: aframeLib.aframeLibStrings.componentremoved,
-    listener: js.Function1[/* event */ stdLib.Event with DetailEvent[aframeLib.Anon_NameOldData], scala.Unit]
+    listener: js.Function1[/* event */ stdLib.Event with DetailEvent[aframeLib.Anon_NameId], scala.Unit]
   ): scala.Unit = js.native
   @JSName("addEventListener")
   def addEventListener_componentremoved(
     `type`: aframeLib.aframeLibStrings.componentremoved,
-    listener: js.Function1[/* event */ stdLib.Event with DetailEvent[aframeLib.Anon_NameOldData], scala.Unit],
+    listener: js.Function1[/* event */ stdLib.Event with DetailEvent[aframeLib.Anon_NameId], scala.Unit],
     useCapture: scala.Boolean
   ): scala.Unit = js.native
   // addEventListener specific usages

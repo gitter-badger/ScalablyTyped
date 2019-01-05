@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object kendoNsMembers extends js.Object {
   var history: History = js.native
-  var keys: kendoDashUiLib.Anon_NUMPADPLUS = js.native
+  var keys: kendoDashUiLib.Anon_INSERT = js.native
   var ns: java.lang.String = js.native
   var support: kendoDashUiLib.Anon_Touch = js.native
   var version: java.lang.String = js.native
@@ -40,7 +40,7 @@ object kendoNsMembers extends js.Object {
     namespace: js.Any
   ): scala.Unit = js.native
   def confirm(text: java.lang.String): kendoDashUiLib.JQueryPromise[_] = js.native
-  def culture(): kendoDashUiLib.Anon_NameCalendarCalendars = js.native
+  def culture(): kendoDashUiLib.Anon_Name = js.native
   def culture(culture: java.lang.String): scala.Unit = js.native
   def destroy(element: java.lang.String): scala.Unit = js.native
   def destroy(element: kendoDashUiLib.JQuery): scala.Unit = js.native
@@ -95,8 +95,8 @@ object kendoNsMembers extends js.Object {
   def unbind(element: kendoDashUiLib.JQuery): scala.Unit = js.native
   def unbind(element: stdLib.Element): scala.Unit = js.native
   def widgetInstance(element: kendoDashUiLib.JQuery): kendoDashUiLib.kendoNs.uiNs.Widget = js.native
-  def widgetInstance(element: kendoDashUiLib.JQuery, suite: kendoDashUiLib.Anon_ListView): kendoDashUiLib.kendoNs.uiNs.Widget = js.native
-  def widgetInstance(element: kendoDashUiLib.JQuery, suite: kendoDashUiLib.Anon_Plugin): kendoDashUiLib.kendoNs.uiNs.Widget = js.native
-  def widgetInstance(element: kendoDashUiLib.JQuery, suite: kendoDashUiLib.Anon_PluginWidget): kendoDashUiLib.kendoNs.uiNs.Widget = js.native
+  def widgetInstance(element: kendoDashUiLib.JQuery, suite: kendoDashUiLib.Anon_Progress): kendoDashUiLib.kendoNs.uiNs.Widget = js.native
+  def widgetInstance(element: kendoDashUiLib.JQuery, suite: kendoDashUiLib.Anon_RegisterTheme): kendoDashUiLib.kendoNs.uiNs.Widget = js.native
+  def widgetInstance(element: kendoDashUiLib.JQuery, suite: kendoDashUiLib.Anon_Widget): kendoDashUiLib.kendoNs.uiNs.Widget = js.native
 }
 

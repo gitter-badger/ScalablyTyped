@@ -19,7 +19,7 @@ trait ServicesResource extends js.Object {
     * reliability, the server may inject these errors to prohibit any hard
     * dependency on the quota functionality.
     */
-  def allocateQuota(request: gapiDotClientDotServicecontrolLib.Anon_Accesstoken): gapiDotClientLib.gapiNs.clientNs.Request[AllocateQuotaResponse]
+  def allocateQuota(request: gapiDotClientDotServicecontrolLib.Anon_Xgafv): gapiDotClientLib.gapiNs.clientNs.Request[AllocateQuotaResponse]
   /**
     * Checks an operation with Google Service Control to decide whether
     * the given operation should proceed. It should be called before the
@@ -35,7 +35,7 @@ trait ServicesResource extends js.Object {
     * on the specified service. For more information, see
     * [Google Cloud IAM](https://cloud.google.com/iam).
     */
-  def check(request: gapiDotClientDotServicecontrolLib.Anon_Accesstoken): gapiDotClientLib.gapiNs.clientNs.Request[CheckResponse]
+  def check(request: gapiDotClientDotServicecontrolLib.Anon_Xgafv): gapiDotClientLib.gapiNs.clientNs.Request[CheckResponse]
   /**
     * Signals the quota controller that service ends the ongoing usage
     * reconciliation.
@@ -44,7 +44,7 @@ trait ServicesResource extends js.Object {
     * permission on the specified service. For more information, see
     * [Google Cloud IAM](https://cloud.google.com/iam).
     */
-  def endReconciliation(request: gapiDotClientDotServicecontrolLib.Anon_Accesstoken): gapiDotClientLib.gapiNs.clientNs.Request[EndReconciliationResponse]
+  def endReconciliation(request: gapiDotClientDotServicecontrolLib.Anon_Xgafv): gapiDotClientLib.gapiNs.clientNs.Request[EndReconciliationResponse]
   /**
     * Releases previously allocated quota done through AllocateQuota method.
     *
@@ -58,7 +58,7 @@ trait ServicesResource extends js.Object {
     * reliability, the server may inject these errors to prohibit any hard
     * dependency on the quota functionality.
     */
-  def releaseQuota(request: gapiDotClientDotServicecontrolLib.Anon_Accesstoken): gapiDotClientLib.gapiNs.clientNs.Request[ReleaseQuotaResponse]
+  def releaseQuota(request: gapiDotClientDotServicecontrolLib.Anon_Xgafv): gapiDotClientLib.gapiNs.clientNs.Request[ReleaseQuotaResponse]
   /**
     * Reports operation results to Google Service Control, such as logs and
     * metrics. It should be called after an operation is completed.
@@ -75,7 +75,7 @@ trait ServicesResource extends js.Object {
     * on the specified service. For more information, see
     * [Google Cloud IAM](https://cloud.google.com/iam).
     */
-  def report(request: gapiDotClientDotServicecontrolLib.Anon_Accesstoken): gapiDotClientLib.gapiNs.clientNs.Request[ReportResponse]
+  def report(request: gapiDotClientDotServicecontrolLib.Anon_Xgafv): gapiDotClientLib.gapiNs.clientNs.Request[ReportResponse]
   /**
     * Unlike rate quota, allocation quota does not get refilled periodically.
     * So, it is possible that the quota usage as seen by the service differs from
@@ -103,6 +103,6 @@ trait ServicesResource extends js.Object {
     * permission on the specified service. For more information, see
     * [Google Cloud IAM](https://cloud.google.com/iam).
     */
-  def startReconciliation(request: gapiDotClientDotServicecontrolLib.Anon_Accesstoken): gapiDotClientLib.gapiNs.clientNs.Request[StartReconciliationResponse]
+  def startReconciliation(request: gapiDotClientDotServicecontrolLib.Anon_Xgafv): gapiDotClientLib.gapiNs.clientNs.Request[StartReconciliationResponse]
 }
 

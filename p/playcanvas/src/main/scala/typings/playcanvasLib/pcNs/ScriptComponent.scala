@@ -41,7 +41,7 @@ class ScriptComponent protected ()
     * });
     */
   def create(name: java.lang.String): ScriptType = js.native
-  def create(name: java.lang.String, args: playcanvasLib.Anon_Attributes): ScriptType = js.native
+  def create(name: java.lang.String, args: playcanvasLib.Anon_Enabled): ScriptType = js.native
   /**
     * @function
     * @name pc.ScriptComponent#destroy

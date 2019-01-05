@@ -9,6 +9,6 @@ trait Anon_LayerConnection extends js.Object {
   /**
     * Represents a connection from one layer to another, and keeps track of its weight and gain.
     */
-  var LayerConnection: org.scalablytyped.runtime.Instantiable0[synapticLib.synapticMod.LayerNs.LayerConnection]
+  var LayerConnection: Anon_UidNumber
 }
 

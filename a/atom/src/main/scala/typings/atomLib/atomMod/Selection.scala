@@ -171,7 +171,7 @@ trait Selection extends js.Object {
     *  given selection.
     */
   def merge(otherSelection: Selection): scala.Unit = js.native
-  def merge(otherSelection: Selection, options: atomLib.Anon_AutoscrollPreserveFolds): scala.Unit = js.native
+  def merge(otherSelection: Selection, options: atomLib.Anon_PreserveFolds): scala.Unit = js.native
   // Event Subscription
   /** Calls your callback when the selection was moved. */
   def onDidChangeRange(callback: js.Function1[/* event */ SelectionChangedEvent, scala.Unit]): Disposable = js.native
@@ -264,10 +264,10 @@ trait Selection extends js.Object {
   def selectWord(): scala.Unit = js.native
   /** Modifies the buffer Range for the selection. */
   def setBufferRange(bufferRange: RangeCompatible): scala.Unit = js.native
-  def setBufferRange(bufferRange: RangeCompatible, options: atomLib.Anon_AutoscrollPreserveFolds): scala.Unit = js.native
+  def setBufferRange(bufferRange: RangeCompatible, options: atomLib.Anon_PreserveFolds): scala.Unit = js.native
   /** Modifies the screen range for the selection. */
   def setScreenRange(screenRange: RangeCompatible): scala.Unit = js.native
-  def setScreenRange(screenRange: RangeCompatible, options: atomLib.Anon_AutoscrollPreserveFolds): scala.Unit = js.native
+  def setScreenRange(screenRange: RangeCompatible, options: atomLib.Anon_PreserveFolds): scala.Unit = js.native
   /**
     *  Wraps the selected lines in comments if they aren't currently part of a comment.
     *  Removes the comment if they are currently wrapped in a comment.

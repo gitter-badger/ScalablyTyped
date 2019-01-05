@@ -39,7 +39,7 @@ trait RaphaelStatic extends js.Object {
   def animation(params: js.Any, ms: scala.Double): RaphaelAnimation = js.native
   def animation(params: js.Any, ms: scala.Double, easing: java.lang.String): RaphaelAnimation = js.native
   def animation(params: js.Any, ms: scala.Double, easing: java.lang.String, callback: js.Function): RaphaelAnimation = js.native
-  def bezierBBox(bez: js.Array[_]): Anon_Max = js.native
+  def bezierBBox(bez: js.Array[_]): Anon_Min = js.native
   def bezierBBox(
     p1x: scala.Double,
     p1y: scala.Double,
@@ -49,8 +49,8 @@ trait RaphaelStatic extends js.Object {
     c2y: scala.Double,
     p2x: scala.Double,
     p2y: scala.Double
-  ): Anon_Max = js.native
-  def color(clr: java.lang.String): Anon_S = js.native
+  ): Anon_Min = js.native
+  def color(clr: java.lang.String): Anon_R = js.native
   def createUUID(): java.lang.String = js.native
   def deg(deg: scala.Double): scala.Double = js.native
   def findDotsAtSegment(
@@ -63,19 +63,19 @@ trait RaphaelStatic extends js.Object {
     p2x: scala.Double,
     p2y: scala.Double,
     t: scala.Double
-  ): Anon_AlphaX = js.native
+  ): Anon_XYM = js.native
   def format(token: java.lang.String, parameters: js.Any*): java.lang.String = js.native
   def fullfill(token: java.lang.String, json: stdLib.JSON): java.lang.String = js.native
   def getColor(): java.lang.String = js.native
   def getColor(value: scala.Double): java.lang.String = js.native
-  def getPointAtLength(path: java.lang.String, length: scala.Double): Anon_Alpha = js.native
-  def getRGB(colour: java.lang.String): Anon_Hex = js.native
+  def getPointAtLength(path: java.lang.String, length: scala.Double): Anon_X = js.native
+  def getRGB(colour: java.lang.String): Anon_RG = js.native
   def getSubpath(path: java.lang.String, from: scala.Double, to: scala.Double): java.lang.String = js.native
   def getTotalLength(path: java.lang.String): scala.Double = js.native
   def hsb(h: scala.Double, s: scala.Double, b: scala.Double): java.lang.String = js.native
-  def hsb2rgb(h: scala.Double, s: scala.Double, v: scala.Double): Anon_B = js.native
+  def hsb2rgb(h: scala.Double, s: scala.Double, v: scala.Double): Anon_RGB = js.native
   def hsl(h: scala.Double, s: scala.Double, l: scala.Double): java.lang.String = js.native
-  def hsl2rgb(h: scala.Double, s: scala.Double, l: scala.Double): Anon_B = js.native
+  def hsl2rgb(h: scala.Double, s: scala.Double, l: scala.Double): Anon_RGB = js.native
   def is(o: js.Any, `type`: java.lang.String): scala.Boolean = js.native
   def isBBoxIntersect(bbox1: java.lang.String, bbox2: java.lang.String): scala.Boolean = js.native
   def isPointInsideBBox(bbox: java.lang.String, x: scala.Double, y: scala.Double): scala.Boolean = js.native
@@ -96,14 +96,14 @@ trait RaphaelStatic extends js.Object {
   def path2curve(pathString: java.lang.String): js.Array[java.lang.String] = js.native
   def path2curve(pathString: js.Array[java.lang.String]): js.Array[java.lang.String] = js.native
   def pathBBox(path: java.lang.String): BoundingBox = js.native
-  def pathIntersection(path1: java.lang.String, path2: java.lang.String): js.Array[Anon_Segment1] = js.native
+  def pathIntersection(path1: java.lang.String, path2: java.lang.String): js.Array[Anon_XYT1] = js.native
   def pathToRelative(pathString: java.lang.String): js.Array[java.lang.String] = js.native
   def pathToRelative(pathString: js.Array[java.lang.String]): js.Array[java.lang.String] = js.native
   def rad(deg: scala.Double): scala.Double = js.native
   def registerFont(font: RaphaelFont): RaphaelFont = js.native
   def rgb(r: scala.Double, g: scala.Double, b: scala.Double): java.lang.String = js.native
-  def rgb2hsb(r: scala.Double, g: scala.Double, b: scala.Double): Anon_HB = js.native
-  def rgb2hsl(r: scala.Double, g: scala.Double, b: scala.Double): Anon_H = js.native
+  def rgb2hsb(r: scala.Double, g: scala.Double, b: scala.Double): Anon_H = js.native
+  def rgb2hsl(r: scala.Double, g: scala.Double, b: scala.Double): Anon_HS = js.native
   def setWindow(newwin: stdLib.Window): scala.Unit = js.native
   def snapTo(values: js.Array[scala.Double], value: scala.Double): scala.Double = js.native
   def snapTo(values: js.Array[scala.Double], value: scala.Double, tolerance: scala.Double): scala.Double = js.native

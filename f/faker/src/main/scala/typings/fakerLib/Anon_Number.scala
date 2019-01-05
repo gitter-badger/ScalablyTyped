@@ -18,7 +18,7 @@ trait Anon_Number extends js.Object {
   def locale(): java.lang.String = js.native
   def number(): scala.Double = js.native
   def number(max: scala.Double): scala.Double = js.native
-  def number(options: Anon_Max): scala.Double = js.native
+  def number(options: Anon_Min): scala.Double = js.native
   def objectElement(): java.lang.String = js.native
   def objectElement(`object`: org.scalablytyped.runtime.StringDictionary[js.Any]): java.lang.String = js.native
   def objectElement[T](`object`: org.scalablytyped.runtime.StringDictionary[T], field: js.Any): T = js.native

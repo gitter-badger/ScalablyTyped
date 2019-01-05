@@ -126,7 +126,7 @@ trait DataTypes extends js.Object {
     * Precision and scale for the decimal number
     */
   def DECIMAL(): DataTypeDecimal = js.native
-  def DECIMAL(options: sequelizeLib.Anon_Scale): DataTypeDecimal = js.native
+  def DECIMAL(options: sequelizeLib.Anon_Precision): DataTypeDecimal = js.native
   def DECIMAL(precision: scala.Double): DataTypeDecimal = js.native
   def DECIMAL(precision: scala.Double, scale: scala.Double): DataTypeDecimal = js.native
   /**
@@ -181,7 +181,7 @@ trait DataTypes extends js.Object {
     * Precision and scale for the decimal number
     */
   def NUMERIC(): DataTypeDecimal = js.native
-  def NUMERIC(options: sequelizeLib.Anon_Scale): DataTypeDecimal = js.native
+  def NUMERIC(options: sequelizeLib.Anon_Precision): DataTypeDecimal = js.native
   def NUMERIC(precision: scala.Double): DataTypeDecimal = js.native
   def NUMERIC(precision: scala.Double, scale: scala.Double): DataTypeDecimal = js.native
   /**

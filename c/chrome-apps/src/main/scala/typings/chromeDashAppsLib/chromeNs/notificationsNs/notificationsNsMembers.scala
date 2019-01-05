@@ -13,7 +13,7 @@ object notificationsNsMembers extends js.Object {
     * @property GRANTED - User has elected to show notifications from the app . This is the default at install time.
     * @property DENIED - User has elected not to show notifications from the app.
     */
-  val PermissionLevel: chromeDashAppsLib.Anon_DENIED = js.native
+  val PermissionLevel: chromeDashAppsLib.Anon_GRANTED = js.native
   /**
     * @enum
     * @prop BASIC - icon, title, message, expandedMessage, up to two buttons.
@@ -21,7 +21,7 @@ object notificationsNsMembers extends js.Object {
     * @prop LIST - icon, title, message, items, up to two buttons. Users on Mac OS X only see the first item.
     * @prop PROGRESS - icon, title, message, progress, up to two buttons.
     */
-  val TemplateType: chromeDashAppsLib.Anon_IMAGE = js.native
+  val TemplateType: chromeDashAppsLib.Anon_BASIC = js.native
   /** The user pressed a button in the notification. */
   val onButtonClicked: chromeDashAppsLib.chromeNs.eventsNs.Event[
     js.Function2[
@@ -110,11 +110,11 @@ object notificationsNsMembers extends js.Object {
   def getPermissionLevel(
     callback: js.Function1[
       /* level */ chromeDashAppsLib.chromeNs.ToStringLiteral[
-        chromeDashAppsLib.Anon_DENIED, 
+        chromeDashAppsLib.Anon_GRANTED, 
         java.lang.String, 
         stdLib.Exclude[
           java.lang.String, 
-          /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_DENIED[keyof chrome-apps.Anon_DENIED] */ js.Any
+          /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_GRANTED[keyof chrome-apps.Anon_GRANTED] */ js.Any
         ]
       ], 
       scala.Unit

@@ -110,7 +110,7 @@ class ResponseBuilder protected () extends js.Object {
     * @returns ResponseBuilder
     */
   def playVideo(source: java.lang.String): ResponseBuilder = js.native
-  def playVideo(source: java.lang.String, metadata: alexaDashSdkLib.Anon_Subtitle): ResponseBuilder = js.native
+  def playVideo(source: java.lang.String, metadata: alexaDashSdkLib.Anon_Title): ResponseBuilder = js.native
   /**
     * Creates a Display RenderTemplate Directive
     * Use a template builder to generate a template object

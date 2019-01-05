@@ -32,7 +32,7 @@ trait ModalOptions
   		 */
   var showCancel: js.UndefOr[scala.Boolean] = js.undefined
   @JSName("success")
-  var success_ModalOptions: js.UndefOr[js.Function1[/* res */ weixinDashAppLib.Anon_Cancel, scala.Unit]] = js.undefined
+  var success_ModalOptions: js.UndefOr[js.Function1[/* res */ weixinDashAppLib.Anon_Confirm, scala.Unit]] = js.undefined
   /**
   		 * 提示的标题
   		 */

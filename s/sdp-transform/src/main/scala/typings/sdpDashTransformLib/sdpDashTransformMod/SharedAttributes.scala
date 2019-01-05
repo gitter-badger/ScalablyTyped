@@ -16,7 +16,7 @@ trait SharedAttributes extends js.Object {
     sdpDashTransformLib.sdpDashTransformLibStrings.sendrecv | sdpDashTransformLib.sdpDashTransformLibStrings.recvonly | sdpDashTransformLib.sdpDashTransformLibStrings.sendonly | sdpDashTransformLib.sdpDashTransformLibStrings.inactive
   ] = js.undefined
   // a=extmap
-  var ext: js.UndefOr[sdpDashTransformLib.Anon_ConfigUri] = js.undefined
+  var ext: js.UndefOr[sdpDashTransformLib.Anon_Value] = js.undefined
   var fingerprint: js.UndefOr[sdpDashTransformLib.Anon_TypeHash] = js.undefined
   var icePwd: js.UndefOr[java.lang.String] = js.undefined
   var iceUfrag: js.UndefOr[java.lang.String] = js.undefined

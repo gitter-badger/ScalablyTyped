@@ -30,7 +30,7 @@ object commonDashTagsModMembers extends js.Object {
   def createTag(transformers: (PluginFunction | TemplateTransformer[_])*): TemplateTag = js.native
   def createTag(transformers: js.Array[TemplateTransformer[_]]): TemplateTag = js.native
   def inlineArrayTransformer(): TemplateTransformer[org.scalablytyped.runtime.StringDictionary[_]] = js.native
-  def inlineArrayTransformer(opts: commonDashTagsLib.Anon_Conjunction): TemplateTransformer[org.scalablytyped.runtime.StringDictionary[_]] = js.native
+  def inlineArrayTransformer(opts: commonDashTagsLib.Anon_Separator): TemplateTransformer[org.scalablytyped.runtime.StringDictionary[_]] = js.native
   def replaceResultTransformer(replaceWhat: java.lang.String, replaceWith: java.lang.String): TemplateTransformer[org.scalablytyped.runtime.StringDictionary[_]] = js.native
   def replaceResultTransformer(
     replaceWhat: java.lang.String,

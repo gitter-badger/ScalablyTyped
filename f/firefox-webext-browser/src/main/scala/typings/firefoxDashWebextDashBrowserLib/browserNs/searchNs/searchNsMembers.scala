@@ -12,6 +12,6 @@ object searchNsMembers extends js.Object {
   /** Gets a list of search engines. */
   def get(): js.Promise[js.Array[SearchEngine]] = js.native
   /** Perform a search. */
-  def search(searchProperties: firefoxDashWebextDashBrowserLib.Anon_Engine): js.Promise[_] = js.native
+  def search(searchProperties: firefoxDashWebextDashBrowserLib.Anon_QueryEngine): js.Promise[_] = js.native
 }
 

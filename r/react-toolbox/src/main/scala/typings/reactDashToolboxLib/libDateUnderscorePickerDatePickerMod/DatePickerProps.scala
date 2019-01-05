@@ -25,11 +25,15 @@ trait DatePickerProps
   /**
     * An array of date objects which will be disabled in the calendar. All other dates will be enabled.
     */
-  var disabledDates: js.UndefOr[coreDashJsLib.Array[coreDashJsLib.Date]] = js.undefined
+  var disabledDates: js.UndefOr[
+    (coreDashJsLib.Array[coreDashJsLib.Date with stdLib.Date]) with (js.Array[coreDashJsLib.Date with stdLib.Date])
+  ] = js.undefined
   /**
     * An array of date objects which will be enabled in the calendar. All other dates will be disabled.
     */
-  var enabledDates: js.UndefOr[coreDashJsLib.Array[coreDashJsLib.Date]] = js.undefined
+  var enabledDates: js.UndefOr[
+    (coreDashJsLib.Array[coreDashJsLib.Date with stdLib.Date]) with (js.Array[coreDashJsLib.Date with stdLib.Date])
+  ] = js.undefined
   /**
     * Give an error node to display under the field.
     */
@@ -45,7 +49,7 @@ trait DatePickerProps
   /**
     * Function to format the date displayed on the input.
     */
-  var inputFormat: js.UndefOr[coreDashJsLib.Function] = js.undefined
+  var inputFormat: js.UndefOr[coreDashJsLib.Function with js.Function] = js.undefined
   /**
     * The text string to use for the floating label element in the input component.
     */
@@ -60,11 +64,11 @@ trait DatePickerProps
   /**
     * Date object with the maximum selectable date.
     */
-  var maxDate: js.UndefOr[coreDashJsLib.Date] = js.undefined
+  var maxDate: js.UndefOr[coreDashJsLib.Date with stdLib.Date] = js.undefined
   /**
     * Date object with the minimum selectable date.
     */
-  var minDate: js.UndefOr[coreDashJsLib.Date] = js.undefined
+  var minDate: js.UndefOr[coreDashJsLib.Date with stdLib.Date] = js.undefined
   /**
     * Name for the input field.
     */
@@ -77,23 +81,23 @@ trait DatePickerProps
   /**
     * Callback called when the picker value is changed.
     */
-  var onChange: js.UndefOr[coreDashJsLib.Function] = js.undefined
+  var onChange: js.UndefOr[coreDashJsLib.Function with js.Function] = js.undefined
   /**
     * Callback fired after dismissing the Dialog.
     */
-  var onDismiss: js.UndefOr[coreDashJsLib.Function] = js.undefined
+  var onDismiss: js.UndefOr[coreDashJsLib.Function with js.Function] = js.undefined
   /**
     * Callback called when the ESC key is pressed with the overlay active.
     */
-  var onEscKeyDown: js.UndefOr[coreDashJsLib.Function] = js.undefined
+  var onEscKeyDown: js.UndefOr[coreDashJsLib.Function with js.Function] = js.undefined
   /**
     * Callback invoked on Input key press.
     */
-  var onKeyPress: js.UndefOr[coreDashJsLib.Function] = js.undefined
+  var onKeyPress: js.UndefOr[coreDashJsLib.Function with js.Function] = js.undefined
   /**
     * Callback to be invoked when the dialog overlay is clicked.
     */
-  var onOverlayClick: js.UndefOr[coreDashJsLib.Function] = js.undefined
+  var onOverlayClick: js.UndefOr[coreDashJsLib.Function with js.Function] = js.undefined
   /**
     * The input element will be readonly and look like disabled.
     */
@@ -114,6 +118,6 @@ trait DatePickerProps
   /**
     * Date object with the currently selected date.
     */
-  var value: js.UndefOr[coreDashJsLib.Date | java.lang.String] = js.undefined
+  var value: js.UndefOr[(coreDashJsLib.Date with stdLib.Date) | java.lang.String] = js.undefined
 }
 

@@ -5,13 +5,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Anon_Initialize extends js.Object {
-  var initialize: js.Function3[
-    /* envKey */ java.lang.String, 
-    /* user */ ldclientDashJsLib.ldclientDashJsMod.LDUser, 
-    /* options */ js.UndefOr[ldclientDashJsLib.ldclientDashJsMod.LDOptions], 
-    ldclientDashJsLib.ldclientDashJsMod.LDClient
-  ]
-  var version: java.lang.String
+  var version: java.lang.String = js.native
+  def initialize(envKey: java.lang.String, user: ldclientDashJsLib.ldclientDashJsMod.LDUser): ldclientDashJsLib.ldclientDashJsMod.LDClient = js.native
+  def initialize(
+    envKey: java.lang.String,
+    user: ldclientDashJsLib.ldclientDashJsMod.LDUser,
+    options: ldclientDashJsLib.ldclientDashJsMod.LDOptions
+  ): ldclientDashJsLib.ldclientDashJsMod.LDClient = js.native
 }
 

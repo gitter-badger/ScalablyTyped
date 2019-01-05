@@ -9,7 +9,7 @@ trait Anon_TitleRangeSeparator extends js.Object {
   var agendaEventMinHeight: scala.Double
   var allDayText: java.lang.String
   var aspectRatio: scala.Double
-  var buttonText: Anon_PrevYear
+  var buttonText: Anon_Prev
   var columnHeader: scala.Boolean
   var dayPopoverFormat: java.lang.String
   var defaultAllDayEventDuration: Anon_Days
@@ -26,7 +26,7 @@ trait Anon_TitleRangeSeparator extends js.Object {
   var eventOrder: java.lang.String
   var forceEventDuration: scala.Boolean
   var handleWindowResize: scala.Boolean
-  var header: Anon_Center
+  var header: Anon_LeftCenter
   var isRTL: scala.Boolean
   var lazyFetching: scala.Boolean
   var locale: js.Any

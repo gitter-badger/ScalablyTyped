@@ -27,17 +27,17 @@ class Sticky protected ()
   @JSName("context")
   var context_Sticky: officeDashUiDashFabricDashReactLib.libComponentsScrollablePaneScrollablePaneDotBaseMod.IScrollablePaneContext = js.native
   var distanceFromTop: scala.Double = js.native
-  val nonStickyContent: reactLib.HTMLDivElement | scala.Null = js.native
-  val placeholder: reactLib.HTMLDivElement | scala.Null = js.native
-  val root: reactLib.HTMLDivElement | scala.Null = js.native
-  val stickyContentBottom: reactLib.HTMLDivElement | scala.Null = js.native
-  val stickyContentTop: reactLib.HTMLDivElement | scala.Null = js.native
+  val nonStickyContent: (reactLib.HTMLDivElement with stdLib.HTMLDivElement) | scala.Null = js.native
+  val placeholder: (reactLib.HTMLDivElement with stdLib.HTMLDivElement) | scala.Null = js.native
+  val root: (reactLib.HTMLDivElement with stdLib.HTMLDivElement) | scala.Null = js.native
+  val stickyContentBottom: (reactLib.HTMLDivElement with stdLib.HTMLDivElement) | scala.Null = js.native
+  val stickyContentTop: (reactLib.HTMLDivElement with stdLib.HTMLDivElement) | scala.Null = js.native
   /* private */ def _getBackground(): js.Any = js.native
   /* private */ def _getContentStyles(isSticky: js.Any): js.Any = js.native
   /* private */ def _getNonStickyPlaceholderHeight(): js.Any = js.native
   /* private */ def _getStickyPlaceholderHeight(isSticky: js.Any): js.Any = js.native
   /* private */ def _setDistanceFromTop(distance: js.Any): js.Any = js.native
-  def addSticky(stickyContent: reactLib.HTMLDivElement): scala.Unit = js.native
+  def addSticky(stickyContent: reactLib.HTMLDivElement with stdLib.HTMLDivElement): scala.Unit = js.native
   @JSName("componentDidMount")
   def componentDidMount_MSticky(): scala.Unit = js.native
   @JSName("componentDidUpdate")
@@ -48,13 +48,13 @@ class Sticky protected ()
   @JSName("componentWillUnmount")
   def componentWillUnmount_MSticky(): scala.Unit = js.native
   def resetSticky(): scala.Unit = js.native
-  def setDistanceFromTop(container: reactLib.HTMLDivElement): scala.Unit = js.native
+  def setDistanceFromTop(container: reactLib.HTMLDivElement with stdLib.HTMLDivElement): scala.Unit = js.native
   @JSName("shouldComponentUpdate")
   def shouldComponentUpdate_MSticky(
     nextProps: officeDashUiDashFabricDashReactLib.libComponentsStickyStickyDotTypesMod.IStickyProps,
     nextState: IStickyState
   ): scala.Boolean = js.native
-  def syncScroll(container: reactLib.HTMLElement): scala.Unit = js.native
+  def syncScroll(container: reactLib.HTMLElement with stdLib.HTMLElement): scala.Unit = js.native
 }
 
 @JSImport("office-ui-fabric-react/lib/components/Sticky/Sticky", "Sticky")

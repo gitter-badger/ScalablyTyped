@@ -31,7 +31,7 @@ object ResourcesNs extends js.Object {
     * @param resourceId The resource ID of the string to retrieve.
     * @returns An object that can contain these properties: value, empty, lang.
     **/
-  def getString(resourceId: java.lang.String): winjsLib.Anon_Empty = js.native
+  def getString(resourceId: java.lang.String): winjsLib.Anon_Value = js.native
   //#endregion Functions
   //#region Events
   /**

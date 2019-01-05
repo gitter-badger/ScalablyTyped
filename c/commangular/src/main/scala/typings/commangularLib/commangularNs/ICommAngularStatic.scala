@@ -38,10 +38,13 @@ trait ICommAngularStatic extends js.Object {
   		 * TBD
   		 */
   def build(): scala.Unit = js.native
-  def command(commandName: java.lang.String, commandFunction: angularLib.angularMod.Global.Function): scala.Unit = js.native
   def command(
     commandName: java.lang.String,
-    commandFunction: angularLib.angularMod.Global.Function,
+    commandFunction: angularLib.angularMod.Global.Function with js.Function
+  ): scala.Unit = js.native
+  def command(
+    commandName: java.lang.String,
+    commandFunction: angularLib.angularMod.Global.Function with js.Function,
     commandConfig: ICommandConfig
   ): scala.Unit = js.native
   /**
@@ -52,10 +55,13 @@ trait ICommAngularStatic extends js.Object {
   		 * 				It has to be something that implements ICommand. Same as angular syntax
     * @param commandConfig It's and object with paramaters to configure the command execution.
     */
-  def create(commandName: java.lang.String, commandFunction: angularLib.angularMod.Global.Function): scala.Unit = js.native
   def create(
     commandName: java.lang.String,
-    commandFunction: angularLib.angularMod.Global.Function,
+    commandFunction: angularLib.angularMod.Global.Function with js.Function
+  ): scala.Unit = js.native
+  def create(
+    commandName: java.lang.String,
+    commandFunction: angularLib.angularMod.Global.Function with js.Function,
     commandConfig: ICommandConfig
   ): scala.Unit = js.native
   /**
@@ -65,7 +71,7 @@ trait ICommAngularStatic extends js.Object {
   /**
   		 * Mock dispatch function for testing commands.
   		 */
-  def dispatch(ec: ICommandCall, callback: angularLib.angularMod.Global.Function): scala.Unit = js.native
+  def dispatch(ec: ICommandCall, callback: angularLib.angularMod.Global.Function with js.Function): scala.Unit = js.native
   /**
   		 * Event aspects work the same way command aspects do, but they intercept all the command groups instead,
   		 * so you can run some function before the command group starts it's execution , after or when any
@@ -92,6 +98,9 @@ trait ICommAngularStatic extends js.Object {
   /**
   		 * TBD
   		 */
-  def resolver(commandName: java.lang.String, resolverFunction: angularLib.angularMod.Global.Function): scala.Unit = js.native
+  def resolver(
+    commandName: java.lang.String,
+    resolverFunction: angularLib.angularMod.Global.Function with js.Function
+  ): scala.Unit = js.native
 }
 

@@ -43,7 +43,11 @@ trait NavigationDrawerProps
     * @deprecated
     */
   var onVisibilityToggle: js.UndefOr[
-    js.Function2[/* visible */ scala.Boolean, /* event */ reactLib.Event, scala.Unit]
+    js.Function2[
+      /* visible */ scala.Boolean, 
+      /* event */ reactLib.Event with stdLib.Event, 
+      scala.Unit
+    ]
   ] = js.undefined
   var persistentIcon: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined
   /**

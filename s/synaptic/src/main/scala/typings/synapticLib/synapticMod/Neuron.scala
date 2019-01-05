@@ -46,9 +46,9 @@ class Neuron () extends js.Object {
   /**
     * Hardcodes the behavior of the neuron into an optimized function.
     */
-  def optimize(): synapticLib.Anon_Layers = js.native
-  def optimize(optimized: js.Any): synapticLib.Anon_Layers = js.native
-  def optimize(optimized: js.Any, layer: js.Any): synapticLib.Anon_Layers = js.native
+  def optimize(): synapticLib.Anon_Memory = js.native
+  def optimize(optimized: js.Any): synapticLib.Anon_Memory = js.native
+  def optimize(optimized: js.Any, layer: js.Any): synapticLib.Anon_Memory = js.native
   /**
     * A neuron can project a connection to another neuron. Neurons can also self-connect.
     */

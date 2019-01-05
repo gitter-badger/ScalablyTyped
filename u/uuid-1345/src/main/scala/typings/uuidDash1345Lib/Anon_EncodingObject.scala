@@ -7,5 +7,6 @@ import scala.scalajs.js.annotation._
 
 trait Anon_EncodingObject extends js.Object {
   var encoding: uuidDash1345Lib.uuidDash1345LibStrings.`object`
+  var mac: js.UndefOr[scala.Boolean] = js.undefined
 }
 

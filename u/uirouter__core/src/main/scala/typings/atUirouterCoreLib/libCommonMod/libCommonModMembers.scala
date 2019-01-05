@@ -14,7 +14,7 @@ object libCommonModMembers extends js.Object {
   val forEach: js.Any = js.native
   val fromJson: js.Any = js.native
   val hostRegex: stdLib.RegExp = js.native
-  val inArray: atUirouterCoreLib.Anon_ArrayObj = js.native
+  val inArray: atUirouterCoreLib.Anon_Array = js.native
   val isDefined: atUirouterCoreLib.libCommonCommonMod.Predicate[js.Any] = js.native
   val isNullOrUndefined: atUirouterCoreLib.libCommonCommonMod.Predicate[js.Any] = js.native
   var mapObj: js.Function3[
@@ -27,7 +27,7 @@ object libCommonModMembers extends js.Object {
   ] = js.native
   val propEq: js.Function = js.native
   val pushTo: atUirouterCoreLib.Anon_Arr = js.native
-  val removeFrom: atUirouterCoreLib.Anon_Array = js.native
+  val removeFrom: atUirouterCoreLib.Anon_ArrayObj = js.native
   val root: js.Any = js.native
   val services: atUirouterCoreLib.libCommonCoreservicesMod.CoreServices = js.native
   val toJson: js.Any = js.native

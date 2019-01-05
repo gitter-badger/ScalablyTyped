@@ -22,7 +22,7 @@ trait Timestamp extends js.Object {
     * @return JavaScript `Date` object representing the same point in time as
     *     this `Timestamp`, with millisecond precision.
     */
-  def toDate(): coreDashJsLib.Date
+  def toDate(): coreDashJsLib.Date with stdLib.Date
   /**
     * Returns the number of milliseconds since Unix epoch 1970-01-01T00:00:00Z.
     *

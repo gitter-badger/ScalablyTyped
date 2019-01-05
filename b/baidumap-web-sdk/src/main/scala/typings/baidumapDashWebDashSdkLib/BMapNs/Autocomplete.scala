@@ -13,7 +13,7 @@ class Autocomplete () extends js.Object {
   def getResults(): AutocompleteResult = js.native
   def hide(): scala.Unit = js.native
   def onconfirm(event: baidumapDashWebDashSdkLib.Anon_TypeTargetItem): scala.Unit = js.native
-  def onhighlight(event: baidumapDashWebDashSdkLib.Anon_TypeTargetToitem): scala.Unit = js.native
+  def onhighlight(event: baidumapDashWebDashSdkLib.Anon_TypeTargetFromitem): scala.Unit = js.native
   def search(keywords: java.lang.String): scala.Unit = js.native
   def setInputValue(keyword: java.lang.String): scala.Unit = js.native
   def setLocation(location: Map): scala.Unit = js.native

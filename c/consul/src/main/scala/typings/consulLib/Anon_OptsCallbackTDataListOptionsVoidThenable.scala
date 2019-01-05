@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation._
 trait Anon_OptsCallbackTDataListOptionsVoidThenable extends js.Object {
   def apply[TData](): consulLib.consulMod.ConsulNs.Thenable[TData] = js.native
   def apply[TData](callback: consulLib.consulMod.ConsulNs.Callback[TData]): scala.Unit = js.native
-  def apply[TData](opts: consulLib.consulMod.ConsulNs.AclNs.ListOptions): consulLib.consulMod.ConsulNs.Thenable[TData] = js.native
+  def apply[TData](opts: consulLib.consulMod.ConsulNs.SessionNs.ListOptions): consulLib.consulMod.ConsulNs.Thenable[TData] = js.native
   def apply[TData](
-    opts: consulLib.consulMod.ConsulNs.AclNs.ListOptions,
+    opts: consulLib.consulMod.ConsulNs.SessionNs.ListOptions,
     callback: consulLib.consulMod.ConsulNs.Callback[TData]
   ): scala.Unit = js.native
 }

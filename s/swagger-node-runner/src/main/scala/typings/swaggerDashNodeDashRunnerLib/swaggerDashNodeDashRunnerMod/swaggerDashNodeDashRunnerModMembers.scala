@@ -10,7 +10,11 @@ import scala.scalajs.js.annotation._
 object swaggerDashNodeDashRunnerModMembers extends js.Object {
   def create(
     config: Config,
-    cb: js.Function2[/* err */ js.UndefOr[nodeLib.Error], /* runner */ Runner, scala.Unit]
+    cb: js.Function2[
+      /* err */ js.UndefOr[nodeLib.Error with stdLib.Error], 
+      /* runner */ Runner, 
+      scala.Unit
+    ]
   ): scala.Unit = js.native
 }
 

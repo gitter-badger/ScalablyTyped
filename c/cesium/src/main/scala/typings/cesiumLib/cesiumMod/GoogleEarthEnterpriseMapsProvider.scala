@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class GoogleEarthEnterpriseMapsProvider protected ()
   extends cesiumLib.cesiumMod.CesiumNs.GoogleEarthEnterpriseMapsProvider {
-  def this(options: cesiumLib.Anon_Channel) = this()
+  def this(options: cesiumLib.Anon_UrlChannel) = this()
   /* CompleteClass */
   override val channel: scala.Double = js.native
   /* CompleteClass */

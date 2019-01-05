@@ -17,6 +17,6 @@ class Size protected () extends js.Object {
 @JSImport("yoga-layout", "Size")
 @js.native
 object Size extends js.Object {
-  def fromJS(dim: yogaDashLayoutLib.Anon_Height): yogaDashLayoutLib.yogaDashLayoutMod.Size = js.native
+  def fromJS(dim: yogaDashLayoutLib.Anon_Width): yogaDashLayoutLib.yogaDashLayoutMod.Size = js.native
 }
 

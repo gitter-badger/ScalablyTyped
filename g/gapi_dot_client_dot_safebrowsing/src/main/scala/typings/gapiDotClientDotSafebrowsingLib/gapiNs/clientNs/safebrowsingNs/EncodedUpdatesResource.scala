@@ -6,6 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait EncodedUpdatesResource extends js.Object {
-  def get(request: gapiDotClientDotSafebrowsingLib.Anon_Accesstoken): gapiDotClientLib.gapiNs.clientNs.Request[FetchThreatListUpdatesResponse]
+  def get(request: gapiDotClientDotSafebrowsingLib.Anon_Xgafv): gapiDotClientLib.gapiNs.clientNs.Request[FetchThreatListUpdatesResponse]
 }
 

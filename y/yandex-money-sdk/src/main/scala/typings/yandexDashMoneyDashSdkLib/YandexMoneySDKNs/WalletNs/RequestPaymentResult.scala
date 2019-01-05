@@ -11,7 +11,7 @@ trait RequestPaymentResult extends js.Object {
   var contract_amount: js.UndefOr[scala.Double] = js.undefined
   var error: js.UndefOr[java.lang.String] = js.undefined
   var ext_action_uri: js.UndefOr[java.lang.String] = js.undefined
-  var money_source: js.UndefOr[yandexDashMoneyDashSdkLib.Anon_Cards] = js.undefined
+  var money_source: js.UndefOr[yandexDashMoneyDashSdkLib.Anon_Wallet] = js.undefined
   var protection_code: js.UndefOr[java.lang.String] = js.undefined
   var recipient_account_status: js.UndefOr[java.lang.String] = js.undefined
   var recipient_account_type: js.UndefOr[java.lang.String] = js.undefined

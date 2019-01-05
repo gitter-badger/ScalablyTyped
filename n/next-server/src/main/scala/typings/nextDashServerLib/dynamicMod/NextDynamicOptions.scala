@@ -5,8 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveDifficultInheritance: 
-- Lifted 1 members from Set(std.Pick<react-loadable.react-loadable.CommonOptions, std.Exclude<keyof react-loadable.react-loadable.CommonOptions, 'loading' | 'modules'>>) */ trait NextDynamicOptions[P] extends js.Object {
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
+- Dropped {[ P in std.Exclude<keyof react-loadable.react-loadable.CommonOptions, 'loading' | 'modules'> ]: react-loadable.react-loadable.CommonOptions[P]} */ trait NextDynamicOptions[P] extends js.Object {
   var loadableGenerated: js.UndefOr[nextDashServerLib.Anon_Webpack] = js.undefined
    // optional
   var loader: js.UndefOr[AsyncComponentLoader[P]] = js.undefined

@@ -9,18 +9,18 @@ import scala.scalajs.js.annotation._
 trait Anon_FindSelector[T] extends js.Object {
   def find(): meteorDashTypingsLib.MongoNs.Cursor[T] = js.native
   def find(selector: java.lang.String): meteorDashTypingsLib.MongoNs.Cursor[T] = js.native
-  def find(selector: java.lang.String, options: Anon_Reactive): meteorDashTypingsLib.MongoNs.Cursor[T] = js.native
+  def find(selector: java.lang.String, options: Anon_Sort): meteorDashTypingsLib.MongoNs.Cursor[T] = js.native
   def find(selector: meteorDashTypingsLib.MongoNs.ObjectID): meteorDashTypingsLib.MongoNs.Cursor[T] = js.native
-  def find(selector: meteorDashTypingsLib.MongoNs.ObjectID, options: Anon_Reactive): meteorDashTypingsLib.MongoNs.Cursor[T] = js.native
+  def find(selector: meteorDashTypingsLib.MongoNs.ObjectID, options: Anon_Sort): meteorDashTypingsLib.MongoNs.Cursor[T] = js.native
   def find(selector: meteorDashTypingsLib.MongoNs.Selector): meteorDashTypingsLib.MongoNs.Cursor[T] = js.native
-  def find(selector: meteorDashTypingsLib.MongoNs.Selector, options: Anon_Reactive): meteorDashTypingsLib.MongoNs.Cursor[T] = js.native
+  def find(selector: meteorDashTypingsLib.MongoNs.Selector, options: Anon_Sort): meteorDashTypingsLib.MongoNs.Cursor[T] = js.native
   def findOne(): T = js.native
   def findOne(selector: java.lang.String): T = js.native
-  def findOne(selector: java.lang.String, options: Anon_ReactiveSkip): T = js.native
+  def findOne(selector: java.lang.String, options: Anon_SortSkip): T = js.native
   def findOne(selector: meteorDashTypingsLib.MongoNs.ObjectID): T = js.native
-  def findOne(selector: meteorDashTypingsLib.MongoNs.ObjectID, options: Anon_ReactiveSkip): T = js.native
+  def findOne(selector: meteorDashTypingsLib.MongoNs.ObjectID, options: Anon_SortSkip): T = js.native
   def findOne(selector: meteorDashTypingsLib.MongoNs.Selector): T = js.native
-  def findOne(selector: meteorDashTypingsLib.MongoNs.Selector, options: Anon_ReactiveSkip): T = js.native
+  def findOne(selector: meteorDashTypingsLib.MongoNs.Selector, options: Anon_SortSkip): T = js.native
   def insert(doc: T): java.lang.String = js.native
   def insert(doc: T, callback: js.Function0[scala.Unit]): java.lang.String = js.native
   def remove(selector: java.lang.String): scala.Double = js.native

@@ -12,6 +12,6 @@ trait PathWatcher extends DisposableLike {
     */
   def getStartPromise(): js.Promise[scala.Unit]
   /** Invokes a function when any errors related to this watcher are reported. */
-  def onDidError(callback: js.Function1[/* error */ nodeLib.Error, scala.Unit]): Disposable
+  def onDidError(callback: js.Function1[/* error */ nodeLib.Error with stdLib.Error, scala.Unit]): Disposable
 }
 

@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_Value extends js.Object {
-  var scopeDescriptor: atomLib.atomMod.ScopeDescriptor
-  var value: js.Array[java.lang.String]
+  var scopes: js.Array[java.lang.String]
+  var value: java.lang.String
 }
 

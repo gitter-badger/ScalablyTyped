@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Stave protected () extends js.Object {
   def this(x: scala.Double, y: scala.Double, width: scala.Double) = this()
-  def this(x: scala.Double, y: scala.Double, width: scala.Double, options: vexflowLib.Anon_Numlines) = this()
+  def this(x: scala.Double, y: scala.Double, width: scala.Double, options: vexflowLib.Anon_Verticalbarwidth) = this()
   def addClef(clef: java.lang.String): Stave = js.native
   def addClef(clef: java.lang.String, size: java.lang.String): Stave = js.native
   def addClef(clef: java.lang.String, size: java.lang.String, annotation: java.lang.String): Stave = js.native
@@ -80,12 +80,12 @@ class Stave protected () extends js.Object {
   def setRepetitionTypeLeft(`type`: vexflowLib.VexNs.FlowNs.RepetitionNs.`type`, y: scala.Double): Stave = js.native
   def setRepetitionTypeRight(`type`: vexflowLib.VexNs.FlowNs.RepetitionNs.`type`, y: scala.Double): Stave = js.native
   def setSection(section: java.lang.String, y: scala.Double): Stave = js.native
-  def setTempo(tempo: vexflowLib.Anon_Bpm, y: scala.Double): Stave = js.native
+  def setTempo(tempo: vexflowLib.Anon_Name, y: scala.Double): Stave = js.native
   def setText(text: java.lang.String, position: vexflowLib.VexNs.FlowNs.ModifierNs.Position): Stave = js.native
   def setText(
     text: java.lang.String,
     position: vexflowLib.VexNs.FlowNs.ModifierNs.Position,
-    options: vexflowLib.Anon_Justification
+    options: vexflowLib.Anon_Shiftx
   ): Stave = js.native
   def setVoltaType(`type`: vexflowLib.VexNs.FlowNs.VoltaNs.`type`, number_t: scala.Double, y: scala.Double): Stave = js.native
   def setWidth(width: scala.Double): Stave = js.native

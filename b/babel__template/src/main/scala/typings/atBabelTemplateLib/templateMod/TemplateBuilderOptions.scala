@@ -15,7 +15,9 @@ trait TemplateBuilderOptions
   /**
     * A set of placeholder names to automatically accept. Items in this list do not need to match the given placeholder pattern.
     */
-  var placeholderWhitelist: js.UndefOr[lodashLib.lodashMod.Global.Set[java.lang.String]] = js.undefined
+  var placeholderWhitelist: js.UndefOr[
+    lodashLib.lodashMod.Global.Set[java.lang.String] with stdLib.Set[java.lang.String]
+  ] = js.undefined
   /**
     * Set this to `true` to preserve any comments from the `code` parameter.
     */

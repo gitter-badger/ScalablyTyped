@@ -10,7 +10,7 @@ trait Struct[T]
   extends Type[T]
      with org.scalablytyped.runtime.Instantiable1[/* value */ T, T] {
   @JSName("meta")
-  var meta_Struct: tcombLib.Anon_DefaultProps = js.native
+  var meta_Struct: tcombLib.Anon_KindNameIdentityProps = js.native
   @JSName("update")
   var update_Original: tcombLib.Update[T] = js.native
   def extend[E /* <: T */](mixins: js.Array[tcombLib.StructMixin]): Struct[E] = js.native

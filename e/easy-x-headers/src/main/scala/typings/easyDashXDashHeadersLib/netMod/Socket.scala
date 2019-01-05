@@ -16,7 +16,7 @@ trait Socket
   var remoteAddress: java.lang.String = js.native
   var remoteFamily: java.lang.String = js.native
   var remotePort: scala.Double = js.native
-  def address(): easyDashXDashHeadersLib.Anon_Address = js.native
+  def address(): easyDashXDashHeadersLib.Anon_Port = js.native
   def connect(path: java.lang.String): scala.Unit = js.native
   def connect(path: java.lang.String, connectionListener: js.Function): scala.Unit = js.native
   def connect(port: scala.Double): scala.Unit = js.native

@@ -18,7 +18,7 @@ trait Agent extends js.Object {
     * Force remove node
     */
   @JSName("forceLeave")
-  var forceLeave_Original: consulLib.Anon_NodeCallbackOpts = js.native
+  var forceLeave_Original: consulLib.Anon_Node = js.native
   /**
     * Trigger local agent to join a node
     */

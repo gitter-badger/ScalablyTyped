@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ICalloutProps
-  extends reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLDivElement] {
+  extends reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLDivElement with stdLib.HTMLDivElement] {
   /**
     * If true the positioning logic will prefer to flip edges rather than to nudge the rectangle to fit within bounds,
     * thus making sure the element aligns perfectly with target's alignment edge
@@ -172,7 +172,7 @@ trait ICalloutProps
     * or a MouseEvent. If MouseEvent is given then the origin point of the event will be used.
     */
   var target: js.UndefOr[
-    reactLib.Element | java.lang.String | reactLib.MouseEvent | atUifabricUtilitiesLib.libIPointMod.IPoint | scala.Null
+    (reactLib.Element with stdLib.Element) | java.lang.String | (reactLib.MouseEvent with stdLib.MouseEvent) | atUifabricUtilitiesLib.libIPointMod.IPoint | scala.Null
   ] = js.undefined
   /**
     * Optional theme for component

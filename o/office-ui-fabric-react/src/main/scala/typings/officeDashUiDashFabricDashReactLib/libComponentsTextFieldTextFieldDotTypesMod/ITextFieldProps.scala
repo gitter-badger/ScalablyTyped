@@ -6,7 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ITextFieldProps
-  extends reactLib.reactMod.ReactNs.AllHTMLAttributes[reactLib.HTMLInputElement | reactLib.HTMLTextAreaElement] {
+  extends reactLib.reactMod.ReactNs.AllHTMLAttributes[
+      (reactLib.HTMLInputElement with stdLib.HTMLInputElement) | (reactLib.HTMLTextAreaElement with stdLib.HTMLTextAreaElement)
+    ] {
   /**
     * @deprecated Use `prefix` instead.
     */
@@ -115,7 +117,9 @@ trait ITextFieldProps
   @JSName("onChange")
   var onChange_ITextFieldProps: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.FormEvent[reactLib.HTMLInputElement | reactLib.HTMLTextAreaElement], 
+      /* event */ reactLib.reactMod.ReactNs.FormEvent[
+        (reactLib.HTMLInputElement with stdLib.HTMLInputElement) | (reactLib.HTMLTextAreaElement with stdLib.HTMLTextAreaElement)
+      ], 
       /* newValue */ js.UndefOr[java.lang.String], 
       scala.Unit
     ]

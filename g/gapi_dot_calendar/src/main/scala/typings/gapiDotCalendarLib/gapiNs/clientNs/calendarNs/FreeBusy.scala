@@ -10,11 +10,11 @@ trait FreeBusy extends js.Object {
   @JSName("calendars")
   var calendars_Original: gapiDotCalendarLib.Anon_KeyString = js.native
   @JSName("groups")
-  var groups_Original: gapiDotCalendarLib.Anon_KeyStringAnonErrors = js.native
+  var groups_Original: gapiDotCalendarLib.Anon_Key = js.native
   var kind: gapiDotCalendarLib.gapiDotCalendarLibStrings.`calendar#freeBusy` = js.native
   var timeMax: datetime = js.native
   var timeMin: datetime = js.native
-  def calendars(key: java.lang.String): gapiDotCalendarLib.Anon_Busy = js.native
+  def calendars(key: java.lang.String): gapiDotCalendarLib.Anon_ErrorsBusy = js.native
   def groups(key: java.lang.String): gapiDotCalendarLib.Anon_Errors = js.native
 }
 

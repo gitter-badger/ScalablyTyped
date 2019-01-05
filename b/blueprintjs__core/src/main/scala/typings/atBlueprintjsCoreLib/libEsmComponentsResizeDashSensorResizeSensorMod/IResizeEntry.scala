@@ -9,6 +9,6 @@ trait IResizeEntry extends js.Object {
   /** Measured dimensions of the target. */
   var contentRect: stdLib.DOMRectReadOnly
   /** The resized element. */
-  var target: reactLib.Element
+  var target: reactLib.Element with dom4Lib.Element with stdLib.Element
 }
 

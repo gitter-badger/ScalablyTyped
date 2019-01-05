@@ -14,7 +14,7 @@ trait IAccessiblePopupProps extends js.Object {
     * Sets the HTMLElement to focus on when exiting the FocusTrapZone.
     * @defaultvalue The element.target that triggered the Panel.
     */
-  var elementToFocusOnDismiss: js.UndefOr[reactLib.HTMLElement] = js.undefined
+  var elementToFocusOnDismiss: js.UndefOr[reactLib.HTMLElement with stdLib.HTMLElement] = js.undefined
   /**
     * Indicates the selector for first focusable item
     */

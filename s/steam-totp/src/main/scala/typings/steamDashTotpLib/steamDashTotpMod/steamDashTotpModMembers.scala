@@ -20,7 +20,7 @@ object steamDashTotpModMembers extends js.Object {
   def getDeviceID(steamID: js.Object): java.lang.String = js.native
   def getTimeOffset(
     callback: js.Function3[
-      /* error */ nodeLib.Error, 
+      /* error */ nodeLib.Error with stdLib.Error, 
       /* offset */ js.UndefOr[scala.Double], 
       /* elapsedTime */ js.UndefOr[scala.Double], 
       scala.Unit

@@ -21,7 +21,7 @@ import scala.scalajs.js.annotation._
   * const storage = new Storage();
   * const bucket = storage.bucket('albums');
   */
-/* RemoveDifficultInheritance: 
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
 - Dropped any
 - Dropped any */ @JSImport("@google-cloud/storage/build/src/bucket", "Bucket")
 @js.native
@@ -142,7 +142,7 @@ class Bucket protected () extends js.Object {
     *     this.end();
     *   });
     */
-  var getFilesStream: js.Function = js.native
+  var getFilesStream: js.Function with onceLib.onceMod.Global.Function = js.native
   /**
     * Get and set IAM policies for your bucket.
     *

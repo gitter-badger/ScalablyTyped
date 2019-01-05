@@ -14,7 +14,7 @@ class HttpBatch () extends js.Object {
     * @param opt_params extra parameters for this batch entry.
     */
   def add(httpRequest: HttpRequest[_]): scala.Unit = js.native
-  def add(httpRequest: HttpRequest[_], opt_params: gapiLib.Anon_Callback): scala.Unit = js.native
+  def add(httpRequest: HttpRequest[_], opt_params: gapiLib.Anon_Id): scala.Unit = js.native
   /**
     * Executes all requests in the batch. The supplied callback is executed on success or failure.
     * @param callback The callback to execute when the batch returns.

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait ITooltipProps
   extends reactLib.reactMod.ReactNs.HTMLAttributes[
-      reactLib.HTMLDivElement | officeDashUiDashFabricDashReactLib.libComponentsTooltipTooltipDotBaseMod.TooltipBase
+      (reactLib.HTMLDivElement with stdLib.HTMLDivElement) | officeDashUiDashFabricDashReactLib.libComponentsTooltipTooltipDotBaseMod.TooltipBase
     ] {
   /**
     * Properties to pass through for Callout, reference detail properties in ICalloutProps
@@ -58,7 +58,7 @@ trait ITooltipProps
   /**
     * Element to anchor the Tooltip to.
     */
-  var targetElement: js.UndefOr[reactLib.HTMLElement] = js.undefined
+  var targetElement: js.UndefOr[reactLib.HTMLElement with stdLib.HTMLElement] = js.undefined
   /**
     * Theme to apply to the component.
     */

@@ -22,11 +22,15 @@ trait TextArea
   def componentWillUnmount_MTextArea(): scala.Unit = js.native
   def focus(): scala.Unit = js.native
   def getTextAreaClassName(): js.Any = js.native
-  def handleKeyDown(e: reactLib.reactMod.ReactNs.KeyboardEvent[reactLib.HTMLTextAreaElement]): scala.Unit = js.native
-  def handleTextareaChange(e: reactLib.reactMod.ReactNs.ChangeEvent[reactLib.HTMLTextAreaElement]): scala.Unit = js.native
+  def handleKeyDown(
+    e: reactLib.reactMod.ReactNs.KeyboardEvent[reactLib.HTMLTextAreaElement with stdLib.HTMLTextAreaElement]
+  ): scala.Unit = js.native
+  def handleTextareaChange(
+    e: reactLib.reactMod.ReactNs.ChangeEvent[reactLib.HTMLTextAreaElement with stdLib.HTMLTextAreaElement]
+  ): scala.Unit = js.native
   def resizeOnNextFrame(): scala.Unit = js.native
   def resizeTextarea(): scala.Unit = js.native
-  def saveTextAreaRef(textArea: reactLib.HTMLTextAreaElement): scala.Unit = js.native
+  def saveTextAreaRef(textArea: reactLib.HTMLTextAreaElement with stdLib.HTMLTextAreaElement): scala.Unit = js.native
   def updateResizeObserverHook(): scala.Unit = js.native
 }
 

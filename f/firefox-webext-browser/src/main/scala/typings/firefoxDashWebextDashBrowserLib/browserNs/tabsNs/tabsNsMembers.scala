@@ -17,7 +17,7 @@ object tabsNsMembers extends js.Object {
     */
   val onActivated: firefoxDashWebextDashBrowserLib.WebExtEvent[
     js.Function1[
-      /* activeInfo */ firefoxDashWebextDashBrowserLib.Anon_WindowIdTabIdNumber, 
+      /* activeInfo */ firefoxDashWebextDashBrowserLib.Anon_TabIdWindowIdNumber, 
       scala.Unit
     ]
   ] = js.native
@@ -31,7 +31,7 @@ object tabsNsMembers extends js.Object {
     firefoxDashWebextDashBrowserLib.WebExtEvent[
       js.Function2[
         /* tabId */ scala.Double, 
-        /* selectInfo */ firefoxDashWebextDashBrowserLib.Anon_WindowIdNumber_1120275497, 
+        /* selectInfo */ firefoxDashWebextDashBrowserLib.Anon_WindowIdNumber, 
         scala.Unit
       ]
     ]
@@ -83,7 +83,7 @@ object tabsNsMembers extends js.Object {
   val onMoved: firefoxDashWebextDashBrowserLib.WebExtEvent[
     js.Function2[
       /* tabId */ scala.Double, 
-      /* moveInfo */ firefoxDashWebextDashBrowserLib.Anon_WindowIdToIndex, 
+      /* moveInfo */ firefoxDashWebextDashBrowserLib.Anon_WindowIdFromIndex, 
       scala.Unit
     ]
   ] = js.native
@@ -108,7 +108,7 @@ object tabsNsMembers extends js.Object {
     firefoxDashWebextDashBrowserLib.WebExtEvent[
       js.Function2[
         /* tabId */ scala.Double, 
-        /* selectInfo */ firefoxDashWebextDashBrowserLib.Anon_WindowIdNumber_1120275497, 
+        /* selectInfo */ firefoxDashWebextDashBrowserLib.Anon_WindowIdNumber, 
         scala.Unit
       ]
     ]
@@ -121,7 +121,7 @@ object tabsNsMembers extends js.Object {
   val onUpdated: _TabsOnUpdatedEvent[
     js.Function3[
       /* tabId */ scala.Double, 
-      /* changeInfo */ firefoxDashWebextDashBrowserLib.Anon_IsArticle, 
+      /* changeInfo */ firefoxDashWebextDashBrowserLib.Anon_Attention, 
       /* tab */ Tab, 
       scala.Unit
     ]
@@ -129,7 +129,7 @@ object tabsNsMembers extends js.Object {
   /** Fired when a tab is zoomed. */
   val onZoomChange: firefoxDashWebextDashBrowserLib.WebExtEvent[
     js.Function1[
-      /* ZoomChangeInfo */ firefoxDashWebextDashBrowserLib.Anon_OldZoomFactor, 
+      /* ZoomChangeInfo */ firefoxDashWebextDashBrowserLib.Anon_TabIdOldZoomFactor, 
       scala.Unit
     ]
   ] = js.native
@@ -161,9 +161,9 @@ object tabsNsMembers extends js.Object {
     *     port's `runtime.Port` event is fired if the tab closes or does not exist.
     */
   def connect(tabId: scala.Double): firefoxDashWebextDashBrowserLib.browserNs.runtimeNs.Port = js.native
-  def connect(tabId: scala.Double, connectInfo: firefoxDashWebextDashBrowserLib.Anon_FrameIdName): firefoxDashWebextDashBrowserLib.browserNs.runtimeNs.Port = js.native
+  def connect(tabId: scala.Double, connectInfo: firefoxDashWebextDashBrowserLib.Anon_NameFrameId): firefoxDashWebextDashBrowserLib.browserNs.runtimeNs.Port = js.native
   /** Creates a new tab. */
-  def create(createProperties: firefoxDashWebextDashBrowserLib.Anon_Discarded): js.Promise[js.UndefOr[Tab]] = js.native
+  def create(createProperties: firefoxDashWebextDashBrowserLib.Anon_WindowIdIndex): js.Promise[js.UndefOr[Tab]] = js.native
   /**
     * Detects the primary language of the content in a tab.
     * @param [tabId] Defaults to the active tab of the current window.
@@ -256,19 +256,22 @@ object tabsNsMembers extends js.Object {
     tabId: scala.Double,
     details: firefoxDashWebextDashBrowserLib.browserNs.extensionTypesNs.InjectDetails
   ): js.Promise[scala.Unit] = js.native
-  def move(tabIds: js.Array[scala.Double], moveProperties: firefoxDashWebextDashBrowserLib.Anon_WindowIdIndex): js.Promise[js.UndefOr[Tab | js.Array[Tab]]] = js.native
+  def move(
+    tabIds: js.Array[scala.Double],
+    moveProperties: firefoxDashWebextDashBrowserLib.Anon_WindowIdIndexNumber
+  ): js.Promise[js.UndefOr[Tab | js.Array[Tab]]] = js.native
   /**
     * Moves one or more tabs to a new position within its window, or to a new window. Note that tabs can only be moved
     * to and from normal (window.type === "normal") windows.
     * @param tabIds The tab or list of tabs to move.
     */
-  def move(tabIds: scala.Double, moveProperties: firefoxDashWebextDashBrowserLib.Anon_WindowIdIndex): js.Promise[js.UndefOr[Tab | js.Array[Tab]]] = js.native
+  def move(tabIds: scala.Double, moveProperties: firefoxDashWebextDashBrowserLib.Anon_WindowIdIndexNumber): js.Promise[js.UndefOr[Tab | js.Array[Tab]]] = js.native
   /** Prints page in active tab. */
   def print(): scala.Unit = js.native
   /** Shows print preview for page in active tab. */
   def printPreview(): js.Promise[scala.Unit] = js.native
   /** Gets all tabs that have the specified properties, or all tabs if no properties are specified. */
-  def query(queryInfo: firefoxDashWebextDashBrowserLib.Anon_DiscardedCurrentWindow): js.Promise[js.Array[Tab]] = js.native
+  def query(queryInfo: firefoxDashWebextDashBrowserLib.Anon_Active): js.Promise[js.Array[Tab]] = js.native
   /**
     * Reload a tab.
     * @param [tabId] The ID of the tab to reload; defaults to the selected tab of the current window.
@@ -365,10 +368,10 @@ object tabsNsMembers extends js.Object {
     * Modifies the properties of a tab. Properties that are not specified in `updateProperties` are not modified.
     * @param tabId Defaults to the selected tab of the current window.
     */
-  def update(tabId: scala.Double, updateProperties: firefoxDashWebextDashBrowserLib.Anon_UrlSelected): js.Promise[js.UndefOr[Tab]] = js.native
+  def update(tabId: scala.Double, updateProperties: firefoxDashWebextDashBrowserLib.Anon_UrlActive): js.Promise[js.UndefOr[Tab]] = js.native
   /**
     * Modifies the properties of a tab. Properties that are not specified in `updateProperties` are not modified.
     */
-  def update(updateProperties: firefoxDashWebextDashBrowserLib.Anon_UrlSelected): js.Promise[js.UndefOr[Tab]] = js.native
+  def update(updateProperties: firefoxDashWebextDashBrowserLib.Anon_UrlActive): js.Promise[js.UndefOr[Tab]] = js.native
 }
 

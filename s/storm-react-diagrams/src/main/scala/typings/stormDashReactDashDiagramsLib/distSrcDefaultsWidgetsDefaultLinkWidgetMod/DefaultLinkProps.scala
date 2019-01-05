@@ -13,7 +13,7 @@ trait DefaultLinkProps
   var pointAdded: js.UndefOr[
     js.Function2[
       /* point */ stormDashReactDashDiagramsLib.distSrcModelsPointModelMod.PointModel, 
-      /* event */ reactLib.MouseEvent, 
+      /* event */ reactLib.MouseEvent with stdLib.MouseEvent, 
       _
     ]
   ] = js.undefined

@@ -9,7 +9,7 @@ trait MetricsCallback extends js.Object {
   /**
     *  An error if the request had an error
     */
-  var err: nodeLib.Error
+  var err: nodeLib.Error with stdLib.Error
   var metrics: MetricsCallbackOptions
   var req: restifyLib.restifyMod.Request
   var res: restifyLib.restifyMod.Response

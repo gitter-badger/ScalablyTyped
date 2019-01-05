@@ -8,11 +8,11 @@ import scala.scalajs.js.annotation._
 @js.native
 trait IGridGroupingApi[TEntity] extends js.Object {
   // Events
-  var on: uiDashGridLib.Anon_GroupingChanged[TEntity] = js.native
-  def aggregateColumn(columnName: java.lang.String, or: angularLib.angularMod.Global.Function): scala.Unit = js.native
+  var on: uiDashGridLib.Anon_AggregationChanged[TEntity] = js.native
+  def aggregateColumn(columnName: java.lang.String, or: angularLib.angularMod.Global.Function with js.Function): scala.Unit = js.native
   def aggregateColumn(
     columnName: java.lang.String,
-    or: angularLib.angularMod.Global.Function,
+    or: angularLib.angularMod.Global.Function with js.Function,
     aggregationLabel: java.lang.String
   ): scala.Unit = js.native
   // Methods

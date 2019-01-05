@@ -14,6 +14,6 @@ class default protected () extends Swipeout {
 @JSImport("rc-swipeout/lib/Swipeout", JSImport.Default)
 @js.native
 object default extends js.Object {
-  var defaultProps: rcDashSwipeoutLib.Anon_AutoClose = js.native
+  var defaultProps: rcDashSwipeoutLib.Anon_PrefixCls = js.native
 }
 

@@ -43,7 +43,7 @@ trait VideoProps extends js.Object {
   var preload: js.UndefOr[
     gestaltLib.gestaltLibStrings.auto | gestaltLib.gestaltLibStrings.metadata | gestaltLib.gestaltLibStrings.none
   ] = js.undefined
-  var src: java.lang.String | js.Array[gestaltLib.Anon_Src]
+  var src: java.lang.String | js.Array[gestaltLib.Anon_Type]
   var volume: scala.Double
 }
 

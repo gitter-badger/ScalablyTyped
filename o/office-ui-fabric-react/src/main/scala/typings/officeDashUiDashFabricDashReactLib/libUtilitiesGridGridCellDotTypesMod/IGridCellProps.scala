@@ -76,7 +76,7 @@ trait IGridCellProps[T] extends js.Object {
     */
   var onKeyDown: js.UndefOr[
     js.Function1[
-      /* ev */ reactLib.reactMod.ReactNs.KeyboardEvent[reactLib.HTMLButtonElement], 
+      /* ev */ reactLib.reactMod.ReactNs.KeyboardEvent[reactLib.HTMLButtonElement with stdLib.HTMLButtonElement], 
       scala.Unit
     ]
   ] = js.undefined
@@ -86,7 +86,10 @@ trait IGridCellProps[T] extends js.Object {
     */
   var onMouseEnter: js.UndefOr[
     js.Function1[
-      /* ev */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLButtonElement, reactLib.NativeMouseEvent], 
+      /* ev */ reactLib.reactMod.ReactNs.MouseEvent[
+        reactLib.HTMLButtonElement with stdLib.HTMLButtonElement, 
+        reactLib.NativeMouseEvent
+      ], 
       scala.Boolean
     ]
   ] = js.undefined
@@ -95,7 +98,10 @@ trait IGridCellProps[T] extends js.Object {
     */
   var onMouseLeave: js.UndefOr[
     js.Function1[
-      /* ev */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLButtonElement, reactLib.NativeMouseEvent], 
+      /* ev */ reactLib.reactMod.ReactNs.MouseEvent[
+        reactLib.HTMLButtonElement with stdLib.HTMLButtonElement, 
+        reactLib.NativeMouseEvent
+      ], 
       scala.Unit
     ]
   ] = js.undefined
@@ -105,7 +111,10 @@ trait IGridCellProps[T] extends js.Object {
     */
   var onMouseMove: js.UndefOr[
     js.Function1[
-      /* ev */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLButtonElement, reactLib.NativeMouseEvent], 
+      /* ev */ reactLib.reactMod.ReactNs.MouseEvent[
+        reactLib.HTMLButtonElement with stdLib.HTMLButtonElement, 
+        reactLib.NativeMouseEvent
+      ], 
       scala.Boolean
     ]
   ] = js.undefined
@@ -114,7 +123,10 @@ trait IGridCellProps[T] extends js.Object {
     */
   var onWheel: js.UndefOr[
     js.Function1[
-      /* ev */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLButtonElement, reactLib.NativeMouseEvent], 
+      /* ev */ reactLib.reactMod.ReactNs.MouseEvent[
+        reactLib.HTMLButtonElement with stdLib.HTMLButtonElement, 
+        reactLib.NativeMouseEvent
+      ], 
       scala.Unit
     ]
   ] = js.undefined

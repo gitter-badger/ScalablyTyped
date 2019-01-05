@@ -8,7 +8,9 @@ import scala.scalajs.js.annotation._
 package object libComponentsChoiceGroupChoiceGroupOptionChoiceGroupOptionDotTypesMod {
   type OnChangeCallback = js.Function2[
     /* evt */ js.UndefOr[
-      reactLib.reactMod.ReactNs.FormEvent[reactLib.HTMLElement | reactLib.HTMLInputElement]
+      reactLib.reactMod.ReactNs.FormEvent[
+        (reactLib.HTMLElement with stdLib.HTMLElement) | (reactLib.HTMLInputElement with stdLib.HTMLInputElement)
+      ]
     ], 
     /* props */ js.UndefOr[
       officeDashUiDashFabricDashReactLib.libComponentsChoiceGroupChoiceGroupDotTypesMod.IChoiceGroupOption
@@ -17,7 +19,9 @@ package object libComponentsChoiceGroupChoiceGroupOptionChoiceGroupOptionDotType
   ]
   type OnFocusCallback = js.Function2[
     /* ev */ js.UndefOr[
-      reactLib.reactMod.ReactNs.FocusEvent[reactLib.HTMLElement | reactLib.HTMLInputElement]
+      reactLib.reactMod.ReactNs.FocusEvent[
+        (reactLib.HTMLElement with stdLib.HTMLElement) | (reactLib.HTMLInputElement with stdLib.HTMLInputElement)
+      ]
     ], 
     /* props */ js.UndefOr[
       officeDashUiDashFabricDashReactLib.libComponentsChoiceGroupChoiceGroupDotTypesMod.IChoiceGroupOption

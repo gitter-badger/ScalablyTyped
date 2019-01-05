@@ -50,9 +50,7 @@ trait Anon_NodeFunc extends js.Object {
     options: js.Tuple2[K1, K2]
   ): js.Function1[
     /* arg1 */ A, 
-    rsvpLib.rsvpMod.RSVPNs.Promise[
-      /* import warning: ImportType.apply Failed type conversion: {typemapped, typemapped} */ js.Any
-    ]
+    rsvpLib.rsvpMod.RSVPNs.Promise[rsvpLib.rsvpLibStrings.Anon_NodeFunc with js.Any]
   ] = js.native
   def apply[T1, T2, T3, A, K1 /* <: java.lang.String */, K2 /* <: java.lang.String */, K3 /* <: java.lang.String */](
     nodeFunc: js.Function2[
@@ -63,9 +61,7 @@ trait Anon_NodeFunc extends js.Object {
     options: js.Tuple3[K1, K2, K3]
   ): js.Function1[
     /* arg1 */ A, 
-    rsvpLib.rsvpMod.RSVPNs.Promise[
-      /* import warning: ImportType.apply Failed type conversion: {typemapped, typemapped, typemapped} */ js.Any
-    ]
+    rsvpLib.rsvpMod.RSVPNs.Promise[rsvpLib.rsvpLibStrings.Anon_NodeFunc with js.Any]
   ] = js.native
 }
 

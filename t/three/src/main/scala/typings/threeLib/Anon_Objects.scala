@@ -6,7 +6,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_Objects extends js.Object {
-  var bindingsPerObject: scala.Double
-  var objects: Anon_InUse
+  var elements: js.Array[threeLib.threeDashCoreMod.Face3]
+      // Sprite or Particle
+  var lights: js.Array[threeLib.threeDashCoreMod.Light]
+  var objects: js.Array[threeLib.threeDashCoreMod.Object3D]
+       // Mesh, Line or other object
+  var sprites: js.Array[threeLib.threeDashCoreMod.Object3D]
 }
 

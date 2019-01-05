@@ -13,7 +13,7 @@ class default () extends RouteRecognizer
 @js.native
 object default extends js.Object {
   var ENCODE_AND_DECODE_PATH_SEGMENTS: scala.Boolean = js.native
-  var Normalizer: routeDashRecognizerLib.Anon_EncodePathSegment = js.native
+  var Normalizer: routeDashRecognizerLib.Anon_NormalizeSegment = js.native
   var VERSION: java.lang.String = js.native
 }
 

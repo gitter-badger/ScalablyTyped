@@ -12,7 +12,7 @@ trait DiskStorageOptions extends js.Object {
       /* req */ nodeLib.httpMod.IncomingMessage, 
       /* file */ File, 
       /* callback */ js.Function2[
-        /* error */ nodeLib.Error | scala.Null, 
+        /* error */ (nodeLib.Error with stdLib.Error) | scala.Null, 
         /* destination */ java.lang.String, 
         scala.Unit
       ], 
@@ -24,7 +24,11 @@ trait DiskStorageOptions extends js.Object {
     js.Function3[
       /* req */ nodeLib.httpMod.IncomingMessage, 
       /* file */ File, 
-      /* callback */ js.Function2[/* error */ nodeLib.Error | scala.Null, /* filename */ java.lang.String, scala.Unit], 
+      /* callback */ js.Function2[
+        /* error */ (nodeLib.Error with stdLib.Error) | scala.Null, 
+        /* filename */ java.lang.String, 
+        scala.Unit
+      ], 
       scala.Unit
     ]
   ] = js.undefined

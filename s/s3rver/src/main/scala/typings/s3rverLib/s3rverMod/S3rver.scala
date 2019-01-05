@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait S3rver extends js.Object {
   def run(
     callback: js.Function4[
-      /* error */ nodeLib.Error, 
+      /* error */ nodeLib.Error with stdLib.Error, 
       /* hostname */ java.lang.String, 
       /* port */ scala.Double, 
       /* directory */ java.lang.String, 

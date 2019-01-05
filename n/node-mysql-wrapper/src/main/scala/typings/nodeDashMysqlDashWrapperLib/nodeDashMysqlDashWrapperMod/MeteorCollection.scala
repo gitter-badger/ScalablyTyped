@@ -21,10 +21,10 @@ class MeteorCollection[T] protected () extends js.Object {
   def fillOne(criteriaRawJsObject: js.Any): scala.Unit = js.native
   def find(): nodeDashMysqlDashWrapperLib.MongoNs.Cursor[T] = js.native
   def find(selector: js.Any): nodeDashMysqlDashWrapperLib.MongoNs.Cursor[T] = js.native
-  def find(selector: js.Any, options: nodeDashMysqlDashWrapperLib.Anon_Reactive): nodeDashMysqlDashWrapperLib.MongoNs.Cursor[T] = js.native
+  def find(selector: js.Any, options: nodeDashMysqlDashWrapperLib.Anon_Sort): nodeDashMysqlDashWrapperLib.MongoNs.Cursor[T] = js.native
   def findOne(): T = js.native
   def findOne(selector: js.Any): T = js.native
-  def findOne(selector: js.Any, options: nodeDashMysqlDashWrapperLib.Anon_ReactiveSkip): T = js.native
+  def findOne(selector: js.Any, options: nodeDashMysqlDashWrapperLib.Anon_SortSkip): T = js.native
   def startListeningToDatabase(): scala.Unit = js.native
 }
 

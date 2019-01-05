@@ -22,7 +22,7 @@ class Verifier protected () extends js.Object {
     refreshToken: java.lang.String,
     profile: js.Any,
     done: js.Function3[
-      /* err */ nodeLib.Error | scala.Null, 
+      /* err */ (nodeLib.Error with stdLib.Error) | scala.Null, 
       /* user */ js.Object, 
       /* info */ js.Object, 
       scala.Unit

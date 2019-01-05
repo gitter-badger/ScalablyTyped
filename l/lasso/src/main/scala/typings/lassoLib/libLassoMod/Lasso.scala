@@ -35,7 +35,7 @@ trait Lasso
   def lassoPage(
     options: PageConfig,
     callback: js.Function2[
-      /* err */ nodeLib.Error | scala.Null, 
+      /* err */ (nodeLib.Error with stdLib.Error) | scala.Null, 
       /* result */ lassoLib.libLassoPageResultMod.LassoPageResult, 
       scala.Unit
     ]

@@ -90,6 +90,10 @@ object rpcNs extends js.Object {
     * @param error Error, if any
     * @param [response] Response message
     */
-  type ServiceMethodCallback[TRes /* <: protobufjsLib.protobufjsMod.Message[TRes] */] = js.Function2[/* error */ nodeLib.Error | scala.Null, /* response */ js.UndefOr[TRes], scala.Unit]
+  type ServiceMethodCallback[TRes /* <: protobufjsLib.protobufjsMod.Message[TRes] */] = js.Function2[
+    /* error */ (nodeLib.Error with stdLib.Error) | scala.Null, 
+    /* response */ js.UndefOr[TRes], 
+    scala.Unit
+  ]
 }
 

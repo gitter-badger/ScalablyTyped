@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("bitwise/nibble", JSImport.Namespace)
 @js.native
 object nibbleMod extends js.Object {
-  val default: bitwiseLib.Anon_Write = js.native
+  val default: bitwiseLib.Anon_ReadNibble = js.native
   def read(nibble: bitwiseLib.typesMod.UInt4): js.Tuple4[
     bitwiseLib.typesMod.Bit, 
     bitwiseLib.typesMod.Bit, 

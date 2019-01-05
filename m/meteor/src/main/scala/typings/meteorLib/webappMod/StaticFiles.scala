@@ -6,5 +6,5 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait StaticFiles
-  extends /* key */ org.scalablytyped.runtime.StringDictionary[meteorLib.Anon_AbsolutePath]
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[meteorLib.Anon_ContentAbsolutePath]
 

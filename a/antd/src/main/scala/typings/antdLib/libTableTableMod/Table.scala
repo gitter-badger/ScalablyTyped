@@ -34,8 +34,8 @@ trait Table[T]
   def getCurrentPageData(): js.Array[T] = js.native
   def getDefaultPagination(props: antdLib.libTableInterfaceMod.TableProps[T]): js.Object = js.native
   def getDefaultSelection(): js.Array[_] = js.native
-  def getDefaultSortOrder(): antdLib.Anon_SortOrder = js.native
-  def getDefaultSortOrder(columns: js.Array[antdLib.libTableInterfaceMod.ColumnProps[T]]): antdLib.Anon_SortOrder = js.native
+  def getDefaultSortOrder(): antdLib.Anon_SortColumn = js.native
+  def getDefaultSortOrder(columns: js.Array[antdLib.libTableInterfaceMod.ColumnProps[T]]): antdLib.Anon_SortColumn = js.native
   def getFilteredValueColumns(): js.Any = js.native
   def getFilteredValueColumns(columns: js.Array[antdLib.libTableInterfaceMod.ColumnProps[T]]): js.Any = js.native
   def getFiltersFromColumns(): js.Any = js.native
@@ -48,12 +48,12 @@ trait Table[T]
   def getLocalData(state: antdLib.libTableInterfaceMod.TableState[T], filter: scala.Boolean): js.Array[T] = js.native
   def getLocalData(state: scala.Null, filter: scala.Boolean): js.Array[T] = js.native
   def getMaxCurrent(total: scala.Double): js.UndefOr[scala.Double] = js.native
-  def getPopupContainer(): reactLib.HTMLElement = js.native
+  def getPopupContainer(): reactLib.HTMLElement with stdLib.HTMLElement = js.native
   def getRecordKey(record: T, index: scala.Double): js.Any = js.native
   def getSortOrderColumns(): js.Any = js.native
   def getSortOrderColumns(columns: js.Array[antdLib.libTableInterfaceMod.ColumnProps[T]]): js.Any = js.native
-  def getSortStateFromColumns(): antdLib.Anon_SortOrder = js.native
-  def getSortStateFromColumns(columns: js.Array[antdLib.libTableInterfaceMod.ColumnProps[T]]): antdLib.Anon_SortOrder = js.native
+  def getSortStateFromColumns(): antdLib.Anon_SortColumn = js.native
+  def getSortStateFromColumns(columns: js.Array[antdLib.libTableInterfaceMod.ColumnProps[T]]): antdLib.Anon_SortColumn = js.native
   def getSorterFn(state: antdLib.libTableInterfaceMod.TableState[T]): js.UndefOr[js.Function2[/* a */ T, /* b */ T, scala.Double]] = js.native
   def handleFilter(column: antdLib.libTableInterfaceMod.ColumnProps[T], nextFilters: js.Array[java.lang.String]): scala.Unit = js.native
   def handlePageChange(current: scala.Double, otherArguments: js.Any*): scala.Unit = js.native

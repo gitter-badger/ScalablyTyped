@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("bitwise/buffer", JSImport.Namespace)
 @js.native
 object bufferMod extends js.Object {
-  val default: bitwiseLib.Anon_Read = js.native
+  val default: bitwiseLib.Anon_AndBuffer1 = js.native
   def and(buffer1: nodeLib.Buffer, buffer2: nodeLib.Buffer): nodeLib.Buffer = js.native
   def and(buffer1: nodeLib.Buffer, buffer2: nodeLib.Buffer, isLooping: scala.Boolean): nodeLib.Buffer = js.native
   def create(

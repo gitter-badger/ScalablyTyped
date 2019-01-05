@@ -13,7 +13,7 @@ trait Tooltip
   def getPlacements(): js.Any = js.native
   def getPopupDomNode(): js.Any = js.native
   def isNoTitle(): scala.Boolean = js.native
-  def onPopupAlign(domNode: reactLib.HTMLElement, align: js.Any): scala.Unit = js.native
+  def onPopupAlign(domNode: reactLib.HTMLElement with stdLib.HTMLElement, align: js.Any): scala.Unit = js.native
   def onVisibleChange(visible: scala.Boolean): scala.Unit = js.native
   def renderTooltip(hasGetPopupContainer: antdLib.libConfigDashProviderMod.ConfigProviderProps): reactLib.reactMod.Global.JSXNs.Element = js.native
   def saveTooltip(node: js.Any): scala.Unit = js.native

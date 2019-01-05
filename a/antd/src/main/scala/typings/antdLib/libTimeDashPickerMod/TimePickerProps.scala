@@ -26,7 +26,12 @@ trait TimePickerProps extends js.Object {
   ] = js.undefined
   var focusOnOpen: js.UndefOr[scala.Boolean] = js.undefined
   var format: js.UndefOr[java.lang.String] = js.undefined
-  var getPopupContainer: js.UndefOr[js.Function1[/* triggerNode */ reactLib.Element, reactLib.HTMLElement]] = js.undefined
+  var getPopupContainer: js.UndefOr[
+    js.Function1[
+      /* triggerNode */ reactLib.Element with stdLib.Element, 
+      reactLib.HTMLElement with stdLib.HTMLElement
+    ]
+  ] = js.undefined
   var hideDisabledOptions: js.UndefOr[scala.Boolean] = js.undefined
   var hourStep: js.UndefOr[scala.Double] = js.undefined
   var inputReadOnly: js.UndefOr[scala.Boolean] = js.undefined

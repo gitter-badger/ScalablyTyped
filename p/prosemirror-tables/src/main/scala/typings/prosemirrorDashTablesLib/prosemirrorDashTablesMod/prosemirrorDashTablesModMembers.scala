@@ -43,7 +43,7 @@ object prosemirrorDashTablesModMembers extends js.Object {
   ): scala.Boolean = js.native
   def cellAround[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Schema[_, _] */](pos: prosemirrorDashModelLib.prosemirrorDashModelMod.ResolvedPos[S]): prosemirrorDashModelLib.prosemirrorDashModelMod.ResolvedPos[S] | scala.Null = js.native
   def colCount(pos: prosemirrorDashModelLib.prosemirrorDashModelMod.ResolvedPos[_]): scala.Double = js.native
-  def columnResizing[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Schema[_, _] */](props: prosemirrorDashTablesLib.Anon_CellMinWidth[S]): prosemirrorDashStateLib.prosemirrorDashStateMod.Plugin[S] = js.native
+  def columnResizing[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Schema[_, _] */](props: prosemirrorDashTablesLib.Anon_HandleWidth[S]): prosemirrorDashStateLib.prosemirrorDashStateMod.Plugin[S] = js.native
   def deleteColumn[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Schema[_, _] */](state: prosemirrorDashStateLib.prosemirrorDashStateMod.EditorState[S]): scala.Boolean = js.native
   def deleteColumn[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Schema[_, _] */](
     state: prosemirrorDashStateLib.prosemirrorDashStateMod.EditorState[S],
@@ -68,7 +68,7 @@ object prosemirrorDashTablesModMembers extends js.Object {
       scala.Unit
     ]
   ): scala.Boolean = js.native
-  def findCell(pos: prosemirrorDashModelLib.prosemirrorDashModelMod.ResolvedPos[_]): prosemirrorDashTablesLib.Anon_Buttom = js.native
+  def findCell(pos: prosemirrorDashModelLib.prosemirrorDashModelMod.ResolvedPos[_]): prosemirrorDashTablesLib.Anon_Top = js.native
   def goToNextCell[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Schema[_, _] */](direction: scala.Double): js.Function2[
     /* state */ prosemirrorDashStateLib.prosemirrorDashStateMod.EditorState[S], 
     /* dispatch */ js.UndefOr[

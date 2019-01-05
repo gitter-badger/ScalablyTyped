@@ -40,9 +40,17 @@ trait IGesture extends js.Object {
   var onSwipeRight: js.UndefOr[GestureHandler] = js.undefined
   var onSwipeUp: js.UndefOr[GestureHandler] = js.undefined
   var onTap: js.UndefOr[GestureHandler] = js.undefined
-  var onTouchCancel: js.UndefOr[reactLib.reactMod.ReactNs.TouchEventHandler[reactLib.HTMLElement]] = js.undefined
-  var onTouchEnd: js.UndefOr[reactLib.reactMod.ReactNs.TouchEventHandler[reactLib.HTMLElement]] = js.undefined
-  var onTouchMove: js.UndefOr[reactLib.reactMod.ReactNs.TouchEventHandler[reactLib.HTMLElement]] = js.undefined
-  var onTouchStart: js.UndefOr[reactLib.reactMod.ReactNs.TouchEventHandler[reactLib.HTMLElement]] = js.undefined
+  var onTouchCancel: js.UndefOr[
+    reactLib.reactMod.ReactNs.TouchEventHandler[reactLib.HTMLElement with stdLib.HTMLElement]
+  ] = js.undefined
+  var onTouchEnd: js.UndefOr[
+    reactLib.reactMod.ReactNs.TouchEventHandler[reactLib.HTMLElement with stdLib.HTMLElement]
+  ] = js.undefined
+  var onTouchMove: js.UndefOr[
+    reactLib.reactMod.ReactNs.TouchEventHandler[reactLib.HTMLElement with stdLib.HTMLElement]
+  ] = js.undefined
+  var onTouchStart: js.UndefOr[
+    reactLib.reactMod.ReactNs.TouchEventHandler[reactLib.HTMLElement with stdLib.HTMLElement]
+  ] = js.undefined
 }
 

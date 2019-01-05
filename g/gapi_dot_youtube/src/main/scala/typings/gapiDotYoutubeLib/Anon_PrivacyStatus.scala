@@ -7,7 +7,11 @@ import scala.scalajs.js.annotation._
 
 trait Anon_PrivacyStatus extends js.Object {
   /**
-    * The playlist items privacy status. The channel that uploaded the video that the playlist item represents can set this value using either the videos.insert or videos.update method.
+    * Indicates whether the channel data identifies a user that is already linked to either a YouTube username or a Google+ account. A user that has one of these links already has a public YouTube identity, which is a prerequisite for several actions, such as uploading videos.
+    */
+  var isLinked: scala.Boolean
+  /**
+    * Privacy status of the channel.
     */
   var privacyStatus: java.lang.String
 }

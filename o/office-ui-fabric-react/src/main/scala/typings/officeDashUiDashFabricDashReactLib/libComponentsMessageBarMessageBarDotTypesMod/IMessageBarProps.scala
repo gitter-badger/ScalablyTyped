@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait IMessageBarProps
-  extends reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLElement] {
+  extends reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLElement with stdLib.HTMLElement] {
   /**
     * The actions you want to show on the other side.
     */
@@ -44,7 +44,7 @@ trait IMessageBarProps
     js.Function1[
       /* ev */ js.UndefOr[
         reactLib.reactMod.ReactNs.MouseEvent[
-          reactLib.HTMLButtonElement | officeDashUiDashFabricDashReactLib.libButtonMod.BaseButton | reactLib.HTMLAnchorElement | reactLib.HTMLDivElement | officeDashUiDashFabricDashReactLib.libButtonMod.Button, 
+          (reactLib.HTMLButtonElement with stdLib.HTMLButtonElement) | officeDashUiDashFabricDashReactLib.libButtonMod.BaseButton | (reactLib.HTMLAnchorElement with stdLib.HTMLAnchorElement) | (reactLib.HTMLDivElement with stdLib.HTMLDivElement) | officeDashUiDashFabricDashReactLib.libButtonMod.Button, 
           reactLib.NativeMouseEvent
         ]
       ], 

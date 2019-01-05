@@ -5,8 +5,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SagaIteratorClone
-  extends nodeLib.IterableIterator[
+  extends stdLib.IterableIterator[
+      reduxDashSagaLib.effectsMod.Effect | js.Array[reduxDashSagaLib.effectsMod.Effect]
+    ]
+     with nodeLib.IterableIterator[
       reduxDashSagaLib.effectsMod.Effect | js.Array[reduxDashSagaLib.effectsMod.Effect]
     ]
 

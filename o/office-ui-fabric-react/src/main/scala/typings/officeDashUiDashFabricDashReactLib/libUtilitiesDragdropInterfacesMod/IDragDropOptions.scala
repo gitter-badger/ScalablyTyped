@@ -15,19 +15,19 @@ trait IDragDropOptions extends js.Object {
     ]
   ] = js.undefined
   var context: IDragDropContext
-  var eventMap: js.UndefOr[js.Array[officeDashUiDashFabricDashReactLib.Anon_EventNameCallback]] = js.undefined
+  var eventMap: js.UndefOr[js.Array[officeDashUiDashFabricDashReactLib.Anon_EventName]] = js.undefined
   var key: js.UndefOr[java.lang.String] = js.undefined
   var onDragEnd: js.UndefOr[
     js.Function2[
       /* item */ js.UndefOr[js.Any], 
-      /* event */ js.UndefOr[reactLib.DragEvent], 
+      /* event */ js.UndefOr[reactLib.DragEvent with stdLib.DragEvent], 
       scala.Unit
     ]
   ] = js.undefined
   var onDragOver: js.UndefOr[
     js.Function2[
       /* item */ js.UndefOr[js.Any], 
-      /* event */ js.UndefOr[reactLib.DragEvent], 
+      /* event */ js.UndefOr[reactLib.DragEvent with stdLib.DragEvent], 
       scala.Unit
     ]
   ] = js.undefined
@@ -36,18 +36,18 @@ trait IDragDropOptions extends js.Object {
       /* item */ js.UndefOr[js.Any], 
       /* itemIndex */ js.UndefOr[scala.Double], 
       /* selectedItems */ js.UndefOr[js.Array[_]], 
-      /* event */ js.UndefOr[reactLib.MouseEvent], 
+      /* event */ js.UndefOr[reactLib.MouseEvent with stdLib.MouseEvent], 
       scala.Unit
     ]
   ] = js.undefined
   var onDrop: js.UndefOr[
     js.Function2[
       /* item */ js.UndefOr[js.Any], 
-      /* event */ js.UndefOr[reactLib.DragEvent], 
+      /* event */ js.UndefOr[reactLib.DragEvent with stdLib.DragEvent], 
       scala.Unit
     ]
   ] = js.undefined
   var selectionIndex: scala.Double
-  def updateDropState(isDropping: scala.Boolean, event: reactLib.DragEvent): scala.Unit
+  def updateDropState(isDropping: scala.Boolean, event: reactLib.DragEvent with stdLib.DragEvent): scala.Unit
 }
 

@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 trait IUiGridCellNavConstants extends js.Object {
   var CELL_NAV_EVENT: java.lang.String
-  var EVENT_TYPE: uiDashGridLib.Anon_CLEAR
+  var EVENT_TYPE: uiDashGridLib.Anon_KEYDOWN
   var FEATURE_NAME: java.lang.String
-  var direction: uiDashGridLib.Anon_PGDOWN
+  var direction: uiDashGridLib.Anon_LEFT
 }
 

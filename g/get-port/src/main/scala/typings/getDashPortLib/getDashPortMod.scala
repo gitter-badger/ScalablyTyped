@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object getDashPortMod extends js.Object {
   def apply(): js.Promise[scala.Double] = js.native
-  def apply(options: getDashPortLib.Anon_Host): js.Promise[scala.Double] = js.native
+  def apply(options: getDashPortLib.Anon_Port): js.Promise[scala.Double] = js.native
 }
 

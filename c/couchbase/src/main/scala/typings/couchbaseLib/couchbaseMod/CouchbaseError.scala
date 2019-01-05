@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
   * The virtual class thrown for all Couchnode errors.
   */
 trait CouchbaseError
-  extends nodeLib.Error {
+  extends stdLib.Error {
   /**
     * The error code for this error.
     */

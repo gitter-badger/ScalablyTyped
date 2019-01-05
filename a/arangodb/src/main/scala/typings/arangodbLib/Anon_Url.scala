@@ -6,7 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_Url extends js.Object {
-  var method: js.UndefOr[arangodbLib.ArangoDBNs.HttpMethod] = js.undefined
+  var headers: Anon_Accept
+  var qs: java.lang.String
   var url: java.lang.String
 }
 

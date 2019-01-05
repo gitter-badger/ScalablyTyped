@@ -14,7 +14,11 @@ object cryptoDashAsyncModMembers extends js.Object {
     key: nodeLib.Buffer,
     iv: nodeLib.Buffer,
     plaintext: nodeLib.Buffer,
-    cb: js.Function2[/* error */ js.UndefOr[nodeLib.Error], /* ciphertext */ nodeLib.Buffer, scala.Unit]
+    cb: js.Function2[
+      /* error */ js.UndefOr[nodeLib.Error with stdLib.Error], 
+      /* ciphertext */ nodeLib.Buffer, 
+      scala.Unit
+    ]
   ): scala.Unit = js.native
   def cipher(
     algorithm: java.lang.String,
@@ -30,12 +34,20 @@ object cryptoDashAsyncModMembers extends js.Object {
     sourceSize: scala.Double,
     target: nodeLib.Buffer,
     targetOffset: scala.Double,
-    cb: js.Function2[/* error */ js.UndefOr[nodeLib.Error], /* targetSize */ scala.Double, scala.Unit]
+    cb: js.Function2[
+      /* error */ js.UndefOr[nodeLib.Error with stdLib.Error], 
+      /* targetSize */ scala.Double, 
+      scala.Unit
+    ]
   ): scala.Unit = js.native
   def hash(
     algorithm: java.lang.String,
     source: nodeLib.Buffer,
-    cb: js.Function2[/* error */ js.UndefOr[nodeLib.Error], /* hash */ nodeLib.Buffer, scala.Unit]
+    cb: js.Function2[
+      /* error */ js.UndefOr[nodeLib.Error with stdLib.Error], 
+      /* hash */ nodeLib.Buffer, 
+      scala.Unit
+    ]
   ): scala.Unit = js.native
   def hash(
     algorithm: java.lang.String,
@@ -44,7 +56,11 @@ object cryptoDashAsyncModMembers extends js.Object {
     sourceSize: scala.Double,
     target: nodeLib.Buffer,
     targetOffset: scala.Double,
-    cb: js.Function2[/* error */ js.UndefOr[nodeLib.Error], /* targetSize */ scala.Double, scala.Unit]
+    cb: js.Function2[
+      /* error */ js.UndefOr[nodeLib.Error with stdLib.Error], 
+      /* targetSize */ scala.Double, 
+      scala.Unit
+    ]
   ): scala.Unit = js.native
   def hmac(
     algorithm: java.lang.String,
@@ -56,13 +72,21 @@ object cryptoDashAsyncModMembers extends js.Object {
     sourceSize: scala.Double,
     target: nodeLib.Buffer,
     targetOffset: scala.Double,
-    cb: js.Function2[/* error */ js.UndefOr[nodeLib.Error], /* targetSize */ scala.Double, scala.Unit]
+    cb: js.Function2[
+      /* error */ js.UndefOr[nodeLib.Error with stdLib.Error], 
+      /* targetSize */ scala.Double, 
+      scala.Unit
+    ]
   ): scala.Unit = js.native
   def hmac(
     algorithm: java.lang.String,
     key: nodeLib.Buffer,
     source: nodeLib.Buffer,
-    cb: js.Function2[/* error */ js.UndefOr[nodeLib.Error], /* hmac */ nodeLib.Buffer, scala.Unit]
+    cb: js.Function2[
+      /* error */ js.UndefOr[nodeLib.Error with stdLib.Error], 
+      /* hmac */ nodeLib.Buffer, 
+      scala.Unit
+    ]
   ): scala.Unit = js.native
 }
 

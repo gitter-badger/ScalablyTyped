@@ -29,7 +29,7 @@ trait IPanelProps
     * Sets the HTMLElement to focus on when exiting the FocusTrapZone.
     * @defaultvalue The element.target that triggered the Panel.
     */
-  var elementToFocusOnDismiss: js.UndefOr[reactLib.HTMLElement] = js.undefined
+  var elementToFocusOnDismiss: js.UndefOr[reactLib.HTMLElement with stdLib.HTMLElement] = js.undefined
   /**
     * Indicates the selector for first focusable item.
     * Deprecated, use `focusTrapZoneProps`.
@@ -108,7 +108,9 @@ trait IPanelProps
     */
   var onDismiss: js.UndefOr[
     js.Function1[
-      /* ev */ js.UndefOr[reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.HTMLElement, reactLib.Event]], 
+      /* ev */ js.UndefOr[
+        reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.HTMLElement with stdLib.HTMLElement, reactLib.Event]
+      ], 
       scala.Unit
     ]
   ] = js.undefined

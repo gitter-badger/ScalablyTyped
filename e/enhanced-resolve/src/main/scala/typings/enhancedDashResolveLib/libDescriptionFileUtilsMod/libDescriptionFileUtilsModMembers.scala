@@ -16,7 +16,7 @@ object libDescriptionFileUtilsModMembers extends js.Object {
     directory: java.lang.String,
     filenames: js.Array[java.lang.String],
     callback: js.Function2[
-      /* err */ js.UndefOr[nodeLib.Error | scala.Null], 
+      /* err */ js.UndefOr[(nodeLib.Error with stdLib.Error) | scala.Null], 
       /* result */ js.UndefOr[LoadDescriptionFileResult], 
       _
     ]

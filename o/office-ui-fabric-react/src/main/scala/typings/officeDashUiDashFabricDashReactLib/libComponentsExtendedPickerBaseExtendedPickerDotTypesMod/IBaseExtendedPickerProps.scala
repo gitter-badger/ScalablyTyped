@@ -58,7 +58,7 @@ trait IBaseExtendedPickerProps[T] extends js.Object {
     */
   var onBlur: js.UndefOr[
     reactLib.reactMod.ReactNs.FocusEventHandler[
-      reactLib.HTMLInputElement | officeDashUiDashFabricDashReactLib.libAutofillMod.Autofill
+      (reactLib.HTMLInputElement with stdLib.HTMLInputElement) | officeDashUiDashFabricDashReactLib.libAutofillMod.Autofill
     ]
   ] = js.undefined
   /**
@@ -70,7 +70,7 @@ trait IBaseExtendedPickerProps[T] extends js.Object {
     */
   var onFocus: js.UndefOr[
     reactLib.reactMod.ReactNs.FocusEventHandler[
-      reactLib.HTMLInputElement | officeDashUiDashFabricDashReactLib.libAutofillMod.Autofill
+      (reactLib.HTMLInputElement with stdLib.HTMLInputElement) | officeDashUiDashFabricDashReactLib.libAutofillMod.Autofill
     ]
   ] = js.undefined
   /**

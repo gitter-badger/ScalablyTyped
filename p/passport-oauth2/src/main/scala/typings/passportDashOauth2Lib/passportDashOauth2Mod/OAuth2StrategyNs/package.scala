@@ -6,11 +6,20 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object OAuth2StrategyNs {
-  type StateStoreStoreCallback = js.Function2[/* err */ nodeLib.Error | scala.Null, /* state */ js.Any, scala.Unit]
-  type StateStoreVerifyCallback = js.Function3[/* err */ nodeLib.Error, /* ok */ scala.Boolean, /* state */ js.Any, scala.Unit]
+  type StateStoreStoreCallback = js.Function2[
+    /* err */ (nodeLib.Error with stdLib.Error) | scala.Null, 
+    /* state */ js.Any, 
+    scala.Unit
+  ]
+  type StateStoreVerifyCallback = js.Function3[
+    /* err */ nodeLib.Error with stdLib.Error, 
+    /* ok */ scala.Boolean, 
+    /* state */ js.Any, 
+    scala.Unit
+  ]
   type Strategy = passportDashOauth2Lib.passportDashOauth2Mod.OAuth2Strategy
   type VerifyCallback = js.Function3[
-    /* err */ js.UndefOr[nodeLib.Error | scala.Null], 
+    /* err */ js.UndefOr[(nodeLib.Error with stdLib.Error) | scala.Null], 
     /* user */ js.UndefOr[js.Object], 
     /* info */ js.UndefOr[js.Object], 
     scala.Unit

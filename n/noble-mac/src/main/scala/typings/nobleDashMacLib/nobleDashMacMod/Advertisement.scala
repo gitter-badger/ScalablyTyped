@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait Advertisement extends js.Object {
   var localName: java.lang.String
   var manufacturerData: nodeLib.Buffer
-  var serviceData: nobleDashMacLib.Anon_Data
+  var serviceData: nobleDashMacLib.Anon_Uuid
   var serviceUuids: js.Array[java.lang.String]
   var txPowerLevel: scala.Double
 }

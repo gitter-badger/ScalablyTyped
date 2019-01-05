@@ -42,17 +42,17 @@ object nobleModMembers extends js.Object {
     listener: js.Function1[/* state */ java.lang.String, scala.Unit]
   ): nodeLib.eventsMod.EventEmitter = js.native
   def startScanning(): scala.Unit = js.native
-  def startScanning(callback: js.Function1[/* error */ js.UndefOr[nodeLib.Error], scala.Unit]): scala.Unit = js.native
+  def startScanning(callback: js.Function1[/* error */ js.UndefOr[nodeLib.Error with stdLib.Error], scala.Unit]): scala.Unit = js.native
   def startScanning(serviceUUIDs: js.Array[java.lang.String]): scala.Unit = js.native
   def startScanning(serviceUUIDs: js.Array[java.lang.String], allowDuplicates: scala.Boolean): scala.Unit = js.native
   def startScanning(
     serviceUUIDs: js.Array[java.lang.String],
     allowDuplicates: scala.Boolean,
-    callback: js.Function1[/* error */ js.UndefOr[nodeLib.Error], scala.Unit]
+    callback: js.Function1[/* error */ js.UndefOr[nodeLib.Error with stdLib.Error], scala.Unit]
   ): scala.Unit = js.native
   def startScanning(
     serviceUUIDs: js.Array[java.lang.String],
-    callback: js.Function1[/* error */ js.UndefOr[nodeLib.Error], scala.Unit]
+    callback: js.Function1[/* error */ js.UndefOr[nodeLib.Error with stdLib.Error], scala.Unit]
   ): scala.Unit = js.native
   def stopScanning(): scala.Unit = js.native
   def stopScanning(callback: js.Function0[scala.Unit]): scala.Unit = js.native

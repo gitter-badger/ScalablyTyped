@@ -36,7 +36,7 @@ trait StrictRatingProps extends js.Object {
     */
   var onRate: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLDivElement, reactLib.NativeMouseEvent], 
+      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLDivElement with stdLib.HTMLDivElement, reactLib.NativeMouseEvent], 
       /* data */ RatingProps, 
       scala.Unit
     ]

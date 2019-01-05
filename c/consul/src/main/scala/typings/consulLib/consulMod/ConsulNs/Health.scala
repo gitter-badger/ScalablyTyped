@@ -17,12 +17,12 @@ trait Health extends js.Object {
     * Returns the health info of a node
     */
   @JSName("node")
-  var node_Original: consulLib.Anon_Node = js.native
+  var node_Original: consulLib.Anon_NodeCallbackOpts = js.native
   /**
     * Returns the nodes and health info of a service
     */
   @JSName("service")
-  var service_Original: consulLib.Anon_Service = js.native
+  var service_Original: consulLib.Anon_ServiceCallbackOpts = js.native
   /**
     * Returns the checks in a given state
     */

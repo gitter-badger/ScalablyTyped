@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "uglify-es"
-version := "3.0-dt-20180723Z-bb23eb"
-scalaVersion := "2.12.7"
+version := "3.0-dt-20180723Z-4b97e4"
+scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "source-map" % "0.7.3-fc8207",
-  "org.scalablytyped" %%% "std" % "3.2.2-9ed5ff",
-  "org.scalablytyped" %%% "uglify-js" % "3.0-dt-20181015Z-8b616d")
+  "org.scalablytyped" %%% "source-map" % "0.7.3-c639f4",
+  "org.scalablytyped" %%% "std" % "3.2.2-3b2f2a",
+  "org.scalablytyped" %%% "uglify-js" % "3.0-dt-20181015Z-1864c7")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

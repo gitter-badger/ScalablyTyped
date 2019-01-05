@@ -28,11 +28,11 @@ trait OSS extends js.Object {
   /**
     * After uploading all data parts, you must call the Complete Multipart Upload API to complete Multipart Upload for the entire file.
     */
-  def completeMultipartUpload(name: java.lang.String, uploadId: java.lang.String, parts: js.Array[aliDashOssLib.Anon_Etag]): js.Promise[aliDashOssLib.aliDashOssMod.OSSNs.CompleteMultipartUploadResult] = js.native
+  def completeMultipartUpload(name: java.lang.String, uploadId: java.lang.String, parts: js.Array[aliDashOssLib.Anon_Number]): js.Promise[aliDashOssLib.aliDashOssMod.OSSNs.CompleteMultipartUploadResult] = js.native
   def completeMultipartUpload(
     name: java.lang.String,
     uploadId: java.lang.String,
-    parts: js.Array[aliDashOssLib.Anon_Etag],
+    parts: js.Array[aliDashOssLib.Anon_Number],
     options: aliDashOssLib.aliDashOssMod.OSSNs.CompleteMultipartUploadOptions
   ): js.Promise[aliDashOssLib.aliDashOssMod.OSSNs.CompleteMultipartUploadResult] = js.native
   /**
@@ -47,11 +47,11 @@ trait OSS extends js.Object {
   /**
     * Create a VOD playlist for the channel.
     */
-  def createVod(id: java.lang.String, name: java.lang.String, time: aliDashOssLib.Anon_EndTime): js.Promise[aliDashOssLib.aliDashOssMod.OSSNs.NormalSuccessResponse] = js.native
+  def createVod(id: java.lang.String, name: java.lang.String, time: aliDashOssLib.Anon_StartTime): js.Promise[aliDashOssLib.aliDashOssMod.OSSNs.NormalSuccessResponse] = js.native
   def createVod(
     id: java.lang.String,
     name: java.lang.String,
-    time: aliDashOssLib.Anon_EndTime,
+    time: aliDashOssLib.Anon_StartTime,
     options: aliDashOssLib.aliDashOssMod.OSSNs.RequestOptions
   ): js.Promise[aliDashOssLib.aliDashOssMod.OSSNs.NormalSuccessResponse] = js.native
   /**
@@ -140,8 +140,8 @@ trait OSS extends js.Object {
   /**
     * Get the bucket logging settings.
     */
-  def getBucketLogging(name: java.lang.String): js.Promise[aliDashOssLib.Anon_Prefix] = js.native
-  def getBucketLogging(name: java.lang.String, options: aliDashOssLib.aliDashOssMod.OSSNs.RequestOptions): js.Promise[aliDashOssLib.Anon_Prefix] = js.native
+  def getBucketLogging(name: java.lang.String): js.Promise[aliDashOssLib.Anon_Enable] = js.native
+  def getBucketLogging(name: java.lang.String, options: aliDashOssLib.aliDashOssMod.OSSNs.RequestOptions): js.Promise[aliDashOssLib.Anon_Enable] = js.native
   /**
     * Get the bucket request Referer white list.
     */
@@ -150,8 +150,8 @@ trait OSS extends js.Object {
   /**
     * Get the bucket website config.
     */
-  def getBucketWebsite(name: java.lang.String): js.Promise[aliDashOssLib.Anon_Error] = js.native
-  def getBucketWebsite(name: java.lang.String, options: aliDashOssLib.aliDashOssMod.OSSNs.RequestOptions): js.Promise[aliDashOssLib.Anon_Error] = js.native
+  def getBucketWebsite(name: java.lang.String): js.Promise[aliDashOssLib.Anon_Index] = js.native
+  def getBucketWebsite(name: java.lang.String, options: aliDashOssLib.aliDashOssMod.OSSNs.RequestOptions): js.Promise[aliDashOssLib.Anon_Index] = js.native
   /**
     * Get live channel info.
     */
@@ -420,7 +420,7 @@ trait OSS extends js.Object {
     uploadId: java.lang.String,
     partNo: scala.Double,
     range: java.lang.String,
-    sourceData: aliDashOssLib.Anon_SourceBucketName,
+    sourceData: aliDashOssLib.Anon_SourceKey,
     options: aliDashOssLib.Anon_Timeout
   ): js.Promise[aliDashOssLib.aliDashOssMod.OSSNs.UploadPartResult] = js.native
   /**

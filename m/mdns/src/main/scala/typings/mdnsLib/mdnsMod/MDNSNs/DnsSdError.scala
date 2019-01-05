@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 // --- Error ---
 trait DnsSdError
-  extends nodeLib.Error {
+  extends stdLib.Error {
   var errorCode: js.UndefOr[scala.Double] = js.undefined
 }
 

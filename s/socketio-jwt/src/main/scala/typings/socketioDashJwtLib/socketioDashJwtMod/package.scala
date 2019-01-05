@@ -13,5 +13,9 @@ package object socketioDashJwtMod {
     /* callback */ JwtSecretFuncCallback, 
     scala.Unit
   ]
-  type JwtSecretFuncCallback = js.Function2[/* err */ nodeLib.Error | scala.Null, /* secret */ java.lang.String, scala.Unit]
+  type JwtSecretFuncCallback = js.Function2[
+    /* err */ (nodeLib.Error with stdLib.Error) | scala.Null, 
+    /* secret */ java.lang.String, 
+    scala.Unit
+  ]
 }

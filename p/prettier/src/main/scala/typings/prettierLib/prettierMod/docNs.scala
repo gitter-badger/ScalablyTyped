@@ -115,7 +115,7 @@ object docNs extends js.Object {
       var useTabs: scala.Boolean
     }
     
-    def printDocToString(doc: prettierLib.prettierMod.Doc, options: Options): prettierLib.Anon_CursorNodeText = js.native
+    def printDocToString(doc: prettierLib.prettierMod.Doc, options: Options): prettierLib.Anon_Formatted = js.native
   }
   
   @JSName("utils")

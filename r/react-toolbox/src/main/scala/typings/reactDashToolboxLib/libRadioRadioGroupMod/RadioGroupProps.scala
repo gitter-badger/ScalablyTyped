@@ -23,7 +23,7 @@ trait RadioGroupProps
   /**
     * Callback function that will be invoked when the value changes.
     */
-  var onChange: js.UndefOr[coreDashJsLib.Function] = js.undefined
+  var onChange: js.UndefOr[coreDashJsLib.Function with js.Function] = js.undefined
   /**
     * Default value selected in the radio group.
     */

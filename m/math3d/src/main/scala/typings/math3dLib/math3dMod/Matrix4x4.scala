@@ -27,7 +27,7 @@ class Matrix4x4 protected () extends js.Object {
   var m43: scala.Double = js.native
   var m44: scala.Double = js.native
   var rows: js.Array[js.Array[scala.Double]] = js.native
-  var size: math3dLib.Anon_Columns = js.native
+  var size: math3dLib.Anon_Rows = js.native
   var values: js.Array[scala.Double] = js.native
   def add(matrix4x4: Matrix4x4): Matrix4x4 = js.native
   def determinant(): scala.Double = js.native

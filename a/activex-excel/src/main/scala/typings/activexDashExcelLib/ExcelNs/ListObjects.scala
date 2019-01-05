@@ -14,6 +14,21 @@ trait ListObjects extends js.Object {
   def apply(Index: java.lang.String): ListObject = js.native
   def apply(Index: scala.Double): ListObject = js.native
   def Add(SourceType: XlListObjectSourceType): ListObject = js.native
+  def Add(
+    SourceType: XlListObjectSourceType,
+    Source: activexDashInteropLib.SafeArray[java.lang.String] with stdLib.SafeArray[java.lang.String],
+    LinkSource: scala.Boolean,
+    XlListObjectHasHeaders: XlYesNoGuess,
+    Destination: Range
+  ): ListObject = js.native
+  def Add(
+    SourceType: XlListObjectSourceType,
+    Source: activexDashInteropLib.SafeArray[java.lang.String] with stdLib.SafeArray[java.lang.String],
+    LinkSource: scala.Boolean,
+    XlListObjectHasHeaders: XlYesNoGuess,
+    Destination: Range,
+    TableStyleName: java.lang.String
+  ): ListObject = js.native
   def Add(SourceType: XlListObjectSourceType, Source: Range): ListObject = js.native
   def Add(
     SourceType: XlListObjectSourceType,
@@ -27,21 +42,6 @@ trait ListObjects extends js.Object {
     LinkSource: js.UndefOr[scala.Nothing],
     XlListObjectHasHeaders: XlYesNoGuess,
     Destination: js.UndefOr[scala.Nothing],
-    TableStyleName: java.lang.String
-  ): ListObject = js.native
-  def Add(
-    SourceType: XlListObjectSourceType,
-    Source: activexDashInteropLib.SafeArray[java.lang.String],
-    LinkSource: scala.Boolean,
-    XlListObjectHasHeaders: XlYesNoGuess,
-    Destination: Range
-  ): ListObject = js.native
-  def Add(
-    SourceType: XlListObjectSourceType,
-    Source: activexDashInteropLib.SafeArray[java.lang.String],
-    LinkSource: scala.Boolean,
-    XlListObjectHasHeaders: XlYesNoGuess,
-    Destination: Range,
     TableStyleName: java.lang.String
   ): ListObject = js.native
   /**

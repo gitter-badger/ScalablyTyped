@@ -8,12 +8,12 @@ import scala.scalajs.js.annotation._
 @js.native
 trait DebugResource extends js.Object {
   /** Get encoded debug configuration for component. Not cacheable. */
-  def getConfig(request: gapiDotClientDotDataflowLib.Anon_Accesstoken): gapiDotClientLib.gapiNs.clientNs.Request[GetDebugConfigResponse] = js.native
+  def getConfig(request: gapiDotClientDotDataflowLib.Anon_Xgafv): gapiDotClientLib.gapiNs.clientNs.Request[GetDebugConfigResponse] = js.native
   /** Get encoded debug configuration for component. Not cacheable. */
-  def getConfig(request: gapiDotClientDotDataflowLib.Anon_AccesstokenLocation): gapiDotClientLib.gapiNs.clientNs.Request[GetDebugConfigResponse] = js.native
+  def getConfig(request: gapiDotClientDotDataflowLib.Anon_XgafvAccesstoken): gapiDotClientLib.gapiNs.clientNs.Request[GetDebugConfigResponse] = js.native
   /** Send encoded debug capture data for component. */
-  def sendCapture(request: gapiDotClientDotDataflowLib.Anon_Accesstoken): gapiDotClientLib.gapiNs.clientNs.Request[js.Object] = js.native
+  def sendCapture(request: gapiDotClientDotDataflowLib.Anon_Xgafv): gapiDotClientLib.gapiNs.clientNs.Request[js.Object] = js.native
   /** Send encoded debug capture data for component. */
-  def sendCapture(request: gapiDotClientDotDataflowLib.Anon_AccesstokenLocation): gapiDotClientLib.gapiNs.clientNs.Request[js.Object] = js.native
+  def sendCapture(request: gapiDotClientDotDataflowLib.Anon_XgafvAccesstoken): gapiDotClientLib.gapiNs.clientNs.Request[js.Object] = js.native
 }
 

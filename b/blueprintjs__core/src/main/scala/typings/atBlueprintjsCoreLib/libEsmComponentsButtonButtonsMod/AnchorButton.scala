@@ -8,7 +8,9 @@ import scala.scalajs.js.annotation._
 @JSImport("@blueprintjs/core/lib/esm/components/button/buttons", "AnchorButton")
 @js.native
 class AnchorButton ()
-  extends atBlueprintjsCoreLib.libEsmComponentsButtonAbstractButtonMod.AbstractButton[reactLib.reactMod.ReactNs.AnchorHTMLAttributes[reactLib.HTMLAnchorElement]]
+  extends atBlueprintjsCoreLib.libEsmComponentsButtonAbstractButtonMod.AbstractButton[
+      reactLib.reactMod.ReactNs.AnchorHTMLAttributes[reactLib.HTMLAnchorElement with stdLib.HTMLAnchorElement]
+    ]
 
 @JSImport("@blueprintjs/core/lib/esm/components/button/buttons", "AnchorButton")
 @js.native

@@ -1469,9 +1469,9 @@ trait MathJsStatic extends js.Object {
     * @returns The lower triangular matrix, the upper triangular matrix and
     * the permutation matrix.
     */
-  def lup(): mathjsLib.Anon_P = js.native
-  def lup(A: MathArray): mathjsLib.Anon_P = js.native
-  def lup(A: Matrix): mathjsLib.Anon_P = js.native
+  def lup(): mathjsLib.Anon_L = js.native
+  def lup(A: MathArray): mathjsLib.Anon_L = js.native
+  def lup(A: Matrix): mathjsLib.Anon_L = js.native
   def lusolve(A: MathArray, b: MathArray): Matrix | MathArray = js.native
   def lusolve(A: MathArray, b: MathArray, order: scala.Double): Matrix | MathArray = js.native
   def lusolve(A: MathArray, b: MathArray, order: scala.Double, threshold: scala.Double): Matrix | MathArray = js.native
@@ -1909,7 +1909,7 @@ trait MathJsStatic extends js.Object {
     * @returns The product of all values
     */
   def prod(args: MathType*): js.Any = js.native
-  def qr(A: MathArray): mathjsLib.Anon_R = js.native
+  def qr(A: MathArray): mathjsLib.Anon_Q = js.native
   /**
     * Calculate the Matrix QR decomposition. Matrix A is decomposed in two
     * matrices (Q, R) where Q is an orthogonal matrix and R is an upper
@@ -1918,7 +1918,7 @@ trait MathJsStatic extends js.Object {
     * decomposition.
     * @returns Q: the orthogonal matrix and R: the upper triangular matrix
     */
-  def qr(A: Matrix): mathjsLib.Anon_R = js.native
+  def qr(A: Matrix): mathjsLib.Anon_Q = js.native
   def quantileSeq(A: MathArray, prob: BigNumber): scala.Double | BigNumber | Unit | MathArray = js.native
   def quantileSeq(A: MathArray, prob: BigNumber, sorted: scala.Boolean): scala.Double | BigNumber | Unit | MathArray = js.native
   def quantileSeq(A: MathArray, prob: MathArray): scala.Double | BigNumber | Unit | MathArray = js.native
@@ -2312,13 +2312,13 @@ trait MathJsStatic extends js.Object {
   def simplify(
     expr: java.lang.String,
     rules: js.Array[
-      mathjsLib.Anon_RL | java.lang.String | (js.Function1[/* node */ MathNode, MathNode])
+      mathjsLib.Anon_LR | java.lang.String | (js.Function1[/* node */ MathNode, MathNode])
     ]
   ): MathNode = js.native
   def simplify(
     expr: java.lang.String,
     rules: js.Array[
-      mathjsLib.Anon_RL | java.lang.String | (js.Function1[/* node */ MathNode, MathNode])
+      mathjsLib.Anon_LR | java.lang.String | (js.Function1[/* node */ MathNode, MathNode])
     ],
     scope: js.Object
   ): MathNode = js.native
@@ -2336,13 +2336,13 @@ trait MathJsStatic extends js.Object {
   def simplify(
     expr: MathNode,
     rules: js.Array[
-      mathjsLib.Anon_RL | java.lang.String | (js.Function1[/* node */ MathNode, MathNode])
+      mathjsLib.Anon_LR | java.lang.String | (js.Function1[/* node */ MathNode, MathNode])
     ]
   ): MathNode = js.native
   def simplify(
     expr: MathNode,
     rules: js.Array[
-      mathjsLib.Anon_RL | java.lang.String | (js.Function1[/* node */ MathNode, MathNode])
+      mathjsLib.Anon_LR | java.lang.String | (js.Function1[/* node */ MathNode, MathNode])
     ],
     scope: js.Object
   ): MathNode = js.native

@@ -56,33 +56,33 @@ trait ReactDatePickerProps extends js.Object {
   var nextMonthButtonLabel: js.UndefOr[java.lang.String] = js.native
   var onBlur: js.UndefOr[
     js.Function1[
-      /* event */ reactLib.reactMod.ReactNs.FocusEvent[reactLib.HTMLInputElement], 
+      /* event */ reactLib.reactMod.ReactNs.FocusEvent[reactLib.HTMLInputElement with stdLib.HTMLInputElement], 
       scala.Unit
     ]
   ] = js.native
   var onChangeRaw: js.UndefOr[
     js.Function1[
-      /* event */ reactLib.reactMod.ReactNs.FocusEvent[reactLib.HTMLInputElement], 
+      /* event */ reactLib.reactMod.ReactNs.FocusEvent[reactLib.HTMLInputElement with stdLib.HTMLInputElement], 
       scala.Unit
     ]
   ] = js.native
   var onClickOutside: js.UndefOr[
     js.Function1[
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLDivElement, reactLib.NativeMouseEvent], 
+      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLDivElement with stdLib.HTMLDivElement, reactLib.NativeMouseEvent], 
       scala.Unit
     ]
   ] = js.native
   var onFocus: js.UndefOr[
     js.Function1[
-      /* event */ reactLib.reactMod.ReactNs.FocusEvent[reactLib.HTMLInputElement], 
+      /* event */ reactLib.reactMod.ReactNs.FocusEvent[reactLib.HTMLInputElement with stdLib.HTMLInputElement], 
       scala.Unit
     ]
   ] = js.native
   var onInputClick: js.UndefOr[js.Function0[scala.Unit]] = js.native
-  var onInputError: js.UndefOr[js.Function1[/* err */ reactDashDatepickerLib.Anon_Msg, scala.Unit]] = js.native
+  var onInputError: js.UndefOr[js.Function1[/* err */ reactDashDatepickerLib.Anon_Code, scala.Unit]] = js.native
   var onKeyDown: js.UndefOr[
     js.Function1[
-      /* event */ reactLib.reactMod.ReactNs.KeyboardEvent[reactLib.HTMLDivElement], 
+      /* event */ reactLib.reactMod.ReactNs.KeyboardEvent[reactLib.HTMLDivElement with stdLib.HTMLDivElement], 
       scala.Unit
     ]
   ] = js.native
@@ -121,10 +121,7 @@ trait ReactDatePickerProps extends js.Object {
   var previousMonthButtonLabel: js.UndefOr[java.lang.String] = js.native
   var readOnly: js.UndefOr[scala.Boolean] = js.native
   var renderCustomHeader: js.UndefOr[
-    js.Function1[
-      /* params */ reactDashDatepickerLib.Anon_ChangeYear, 
-      reactLib.reactMod.ReactNs.ReactNode
-    ]
+    js.Function1[/* params */ reactDashDatepickerLib.Anon_Date, reactLib.reactMod.ReactNs.ReactNode]
   ] = js.native
   var renderDayContents: js.UndefOr[js.Function1[/* dayOfMonth */ scala.Double, reactLib.reactMod.ReactNs.ReactNode]] = js.native
   var required: js.UndefOr[scala.Boolean] = js.native

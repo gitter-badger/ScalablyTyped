@@ -58,7 +58,7 @@ trait WiredepParams extends js.Object {
     *  - "PKG_NOT_INSTALLED" (a Bower package was not found)
     *  - "BOWER_COMPONENTS_MISSING" (cannot find the `bower_components` directory)
     */
-  var onError: js.UndefOr[js.Function1[/* err */ nodeLib.Error, scala.Unit]] = js.undefined
+  var onError: js.UndefOr[js.Function1[/* err */ nodeLib.Error with stdLib.Error, scala.Unit]] = js.undefined
   /**
     * @param {string} filePath name of file that was updated
     */

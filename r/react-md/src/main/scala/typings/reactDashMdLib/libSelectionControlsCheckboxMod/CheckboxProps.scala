@@ -17,7 +17,11 @@ trait CheckboxProps
     */
   var checkedIconClassName: js.UndefOr[java.lang.String] = js.undefined
   var onChange: js.UndefOr[
-    js.Function2[/* checked */ scala.Boolean, /* event */ reactLib.Event, scala.Unit]
+    js.Function2[
+      /* checked */ scala.Boolean, 
+      /* event */ reactLib.Event with stdLib.Event, 
+      scala.Unit
+    ]
   ] = js.undefined
   var uncheckedIcon: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
   /**

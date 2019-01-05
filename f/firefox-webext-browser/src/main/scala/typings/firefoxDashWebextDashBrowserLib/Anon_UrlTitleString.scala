@@ -6,7 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_UrlTitleString extends js.Object {
+  /** The new title for the URL. */
   var title: java.lang.String
-  var url: js.UndefOr[java.lang.String] = js.undefined
+  /** The URL for which the title has changed */
+  var url: java.lang.String
 }
 

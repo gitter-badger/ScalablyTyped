@@ -5,8 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
-trait AssertionError
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- stdLib.Error because var conflicts: stack. Inlined message, name */ trait AssertionError
   extends nodeLib.Error {
   var actual: js.Any
   var expected: js.Any

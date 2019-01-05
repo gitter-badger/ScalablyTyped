@@ -5,12 +5,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveMultipleInheritance: Dropped parents List(atBlueprintjsCoreLib.libEsmCommonPropsMod.IProps because Would inherit conflicting mutable fields List(className))*/
-trait IMenuProps
-  extends reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLUListElement] {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- atBlueprintjsCoreLib.libEsmCommonPropsMod.IProps because var conflicts: className. Inlined  */ trait IMenuProps
+  extends reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLUListElement with stdLib.HTMLUListElement] {
   /** Whether the menu items in this menu should use a large appearance. */
   var large: js.UndefOr[scala.Boolean] = js.undefined
   /** Ref handler that receives the HTML `<ul>` element backing this component. */
-  var ulRef: js.UndefOr[js.Function1[/* ref */ reactLib.HTMLUListElement | scala.Null, _]] = js.undefined
+  var ulRef: js.UndefOr[
+    js.Function1[/* ref */ (reactLib.HTMLUListElement with stdLib.HTMLUListElement) | scala.Null, _]
+  ] = js.undefined
 }
 

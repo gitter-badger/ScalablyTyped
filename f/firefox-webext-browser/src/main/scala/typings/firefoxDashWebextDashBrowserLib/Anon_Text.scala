@@ -6,15 +6,18 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_Text extends js.Object {
-  /** Limit results to those visited before this date. */
-  var endTime: js.UndefOr[firefoxDashWebextDashBrowserLib.browserNs.extensionTypesNs.Date] = js.undefined
-  /** The maximum number of results to retrieve. Defaults to 100. */
-  var maxResults: js.UndefOr[scala.Double] = js.undefined
   /**
-    * Limit results to those visited after this date. If not specified, this defaults to 24 hours in the past.
+    * When setting a value, it will be specific to the specified tab, and will automatically reset when the tab
+    * navigates. When getting, specifies the tab to get the value from; if there is no tab-specific value, the
+    * window one will be inherited.
     */
-  var startTime: js.UndefOr[firefoxDashWebextDashBrowserLib.browserNs.extensionTypesNs.Date] = js.undefined
-  /** A free-text query to the history service. Leave empty to retrieve all pages. */
-  var text: java.lang.String
+  var tabId: js.UndefOr[scala.Double] = js.undefined
+  /** Any number of characters can be passed, but only about four can fit in the space. */
+  var text: java.lang.String | scala.Null
+  /**
+    * When setting a value, it will be specific to the specified window. When getting, specifies the window to get
+    * the value from; if there is no window-specific value, the global one will be inherited.
+    */
+  var windowId: js.UndefOr[scala.Double] = js.undefined
 }
 

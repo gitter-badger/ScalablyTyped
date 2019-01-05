@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 class Client protected ()
   extends nodeLib.eventsMod.EventEmitter {
   def this(options: RPCClientOptions) = this()
-  var application: discordDashRpcLib.Anon_Name = js.native
+  var application: discordDashRpcLib.Anon_Description = js.native
   var user: discordDashRpcLib.Anon_Username = js.native
   def captureShortcut(
     callback: js.Function2[
@@ -44,9 +44,9 @@ class Client protected ()
   def login(): js.Promise[this.type] = js.native
   def login(options: RPCLoginOptions): js.Promise[this.type] = js.native
   def selectTextChannel(id: java.lang.String): js.Promise[Channel] = js.native
-  def selectTextChannel(id: java.lang.String, options: discordDashRpcLib.Anon_ForceTimeout): js.Promise[Channel] = js.native
+  def selectTextChannel(id: java.lang.String, options: discordDashRpcLib.Anon_TimeoutForce): js.Promise[Channel] = js.native
   def selectVoiceChannel(id: java.lang.String): js.Promise[Channel] = js.native
-  def selectVoiceChannel(id: java.lang.String, options: discordDashRpcLib.Anon_Force): js.Promise[Channel] = js.native
+  def selectVoiceChannel(id: java.lang.String, options: discordDashRpcLib.Anon_Timeout): js.Promise[Channel] = js.native
   def sendJoinInvite(user: discordDashRpcLib.Anon_Id): js.Promise[_] = js.native
   def sendJoinInvite(user: java.lang.String): js.Promise[_] = js.native
   def sendJoinRequest(user: discordDashRpcLib.Anon_Id): js.Promise[_] = js.native
@@ -62,9 +62,9 @@ class Client protected ()
   def subscribe(event: java.lang.String, args: js.Any, callback: js.Function1[/* data */ js.Any, scala.Unit]): js.Promise[Subscription] = js.native
   def subscribe(event: java.lang.String, callback: js.Function1[/* data */ js.Any, scala.Unit]): js.Promise[Subscription] = js.native
   def updateLobby(lobby: discordDashRpcLib.Anon_Id): js.Promise[_] = js.native
-  def updateLobby(lobby: discordDashRpcLib.Anon_Id, options: discordDashRpcLib.Anon_TypeMetadata): js.Promise[_] = js.native
+  def updateLobby(lobby: discordDashRpcLib.Anon_Id, options: discordDashRpcLib.Anon_TypeOwner): js.Promise[_] = js.native
   def updateLobby(lobby: java.lang.String): js.Promise[_] = js.native
-  def updateLobby(lobby: java.lang.String, options: discordDashRpcLib.Anon_TypeMetadata): js.Promise[_] = js.native
+  def updateLobby(lobby: java.lang.String, options: discordDashRpcLib.Anon_TypeOwner): js.Promise[_] = js.native
   def updateLobbyMember(lobby: discordDashRpcLib.Anon_Id, user: discordDashRpcLib.Anon_Id, metadata: js.Any): js.Promise[_] = js.native
   def updateLobbyMember(lobby: discordDashRpcLib.Anon_Id, user: java.lang.String, metadata: js.Any): js.Promise[_] = js.native
   def updateLobbyMember(lobby: java.lang.String, user: discordDashRpcLib.Anon_Id, metadata: js.Any): js.Promise[_] = js.native

@@ -20,7 +20,7 @@ class TransitiveCompileNgModuleMetadata () extends js.Object {
   var modulesSet: stdLib.Set[_] = js.native
   var pipes: js.Array[CompileIdentifierMetadata] = js.native
   var pipesSet: stdLib.Set[_] = js.native
-  var providers: js.Array[atAngularCompilerLib.Anon_Module] = js.native
+  var providers: js.Array[atAngularCompilerLib.Anon_Provider] = js.native
   def addDirective(id: CompileIdentifierMetadata): scala.Unit = js.native
   def addEntryComponent(ec: CompileEntryComponentMetadata): scala.Unit = js.native
   def addExportedDirective(id: CompileIdentifierMetadata): scala.Unit = js.native

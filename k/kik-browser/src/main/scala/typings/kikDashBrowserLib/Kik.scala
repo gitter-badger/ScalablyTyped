@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Kik extends js.Object {
-  var browser: Anon_Off = js.native
+  var browser: Anon_Background = js.native
   var enabled: scala.Boolean = js.native
-  var formHelpers: Anon_Hide = js.native
+  var formHelpers: Anon_Show = js.native
   var linkData: java.lang.String = js.native
   var message: KikMessage = js.native
   var metrics: Anon_EnableGoogleAnalytics = js.native

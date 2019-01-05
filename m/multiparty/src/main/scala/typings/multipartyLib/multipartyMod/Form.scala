@@ -19,7 +19,12 @@ class Form ()
   def parse(request: nodeLib.httpMod.IncomingMessage): scala.Unit = js.native
   def parse(
     request: nodeLib.httpMod.IncomingMessage,
-    callback: js.Function3[/* error */ nodeLib.Error, /* fields */ js.Any, /* files */ js.Any, _]
+    callback: js.Function3[
+      /* error */ nodeLib.Error with stdLib.Error, 
+      /* fields */ js.Any, 
+      /* files */ js.Any, 
+      _
+    ]
   ): scala.Unit = js.native
 }
 

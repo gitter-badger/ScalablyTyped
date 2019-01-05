@@ -14,7 +14,7 @@ trait TooltipOptions extends js.Object {
     *  Delay showing and hiding the tooltip (ms) - does not apply to manual
     *  trigger type.
     */
-  var delay: js.UndefOr[scala.Double | atomLib.Anon_Hide] = js.undefined
+  var delay: js.UndefOr[scala.Double | atomLib.Anon_Show] = js.undefined
   /** Allow HTML in the tooltip. */
   var html: js.UndefOr[scala.Boolean] = js.undefined
   /** How to position the tooltip. */

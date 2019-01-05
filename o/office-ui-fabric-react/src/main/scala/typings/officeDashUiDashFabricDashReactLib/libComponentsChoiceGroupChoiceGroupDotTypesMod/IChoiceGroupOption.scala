@@ -6,7 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait IChoiceGroupOption
-  extends reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLElement | reactLib.HTMLInputElement] {
+  extends reactLib.reactMod.ReactNs.HTMLAttributes[
+      (reactLib.HTMLElement with stdLib.HTMLElement) | (reactLib.HTMLInputElement with stdLib.HTMLInputElement)
+    ] {
   /**
     * The aria label of the ChoiceGroupOption for the benefit of screen readers.
     */
@@ -31,7 +33,7 @@ trait IChoiceGroupOption
     * The width and height of the image in px for choice field.
     * @defaultvalue \{ width: 32, height: 32 \}
     */
-  var imageSize: js.UndefOr[officeDashUiDashFabricDashReactLib.Anon_Height] = js.undefined
+  var imageSize: js.UndefOr[officeDashUiDashFabricDashReactLib.Anon_Width] = js.undefined
   /**
     * The src of image for choice field.
     */

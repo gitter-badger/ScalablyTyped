@@ -5,8 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveDifficultInheritance: 
-- Lifted 1 members from Set(std.Pick<react.react.InputHTMLAttributes<react.HTMLTextAreaElement>, @webscopeio/react-textarea-autocomplete.PickedAttributes>) */ @js.native
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
+- Dropped {[ P in @webscopeio/react-textarea-autocomplete.PickedAttributes ]: react.react.InputHTMLAttributes<react.HTMLTextAreaElement & std.HTMLTextAreaElement>[P]} */ @js.native
 trait TextareaProps[TItem] extends js.Object {
   /**
     * ClassNames of the textarea.
@@ -36,7 +36,9 @@ trait TextareaProps[TItem] extends js.Object {
   /**
     * Allows you to get React ref of the underlying textarea.
     */
-  var innerRef: js.UndefOr[js.Function1[/* ref */ reactLib.HTMLTextAreaElement, scala.Unit]] = js.native
+  var innerRef: js.UndefOr[
+    js.Function1[/* ref */ reactLib.HTMLTextAreaElement with stdLib.HTMLTextAreaElement, scala.Unit]
+  ] = js.native
   /**
     * ClassNames of item's wrapper.
     */
@@ -86,8 +88,8 @@ trait TextareaProps[TItem] extends js.Object {
     */
   var scrollToItem: js.UndefOr[
     scala.Boolean | (js.Function2[
-      /* container */ reactLib.HTMLDivElement, 
-      /* item */ reactLib.HTMLDivElement, 
+      /* container */ reactLib.HTMLDivElement with stdLib.HTMLDivElement, 
+      /* item */ reactLib.HTMLDivElement with stdLib.HTMLDivElement, 
       scala.Unit
     ])
   ] = js.native

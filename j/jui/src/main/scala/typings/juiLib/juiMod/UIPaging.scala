@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait UIPaging extends js.Object {
   def apply(selector: js.Any): this.type = js.native
-  def apply(selector: js.Any, options: juiLib.Anon_Count): this.type = js.native
+  def apply(selector: js.Any, options: juiLib.Anon_TplEventCount): this.type = js.native
   def first(): scala.Unit = js.native
   def last(): scala.Unit = js.native
   def next(): scala.Unit = js.native

@@ -12,6 +12,6 @@ trait IDracoCompressionConfiguration extends js.Object {
   /**
     * Configuration for the decoder.
     */
-  var decoder: js.UndefOr[babylonjsLib.Anon_FallbackUrl] = js.undefined
+  var decoder: js.UndefOr[babylonjsLib.Anon_WasmUrl] = js.undefined
 }
 

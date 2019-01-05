@@ -309,13 +309,13 @@ trait Router extends js.Object {
     options: koaDashRouterLib.koaDashRouterMod.RouterNs.IUrlOptionsQuery
   ): java.lang.String = js.native
   @JSName("url")
-  def url_Error(name: java.lang.String, params: js.Any): nodeLib.Error = js.native
+  def `url_<intersection>`(name: java.lang.String, params: js.Any): nodeLib.Error with stdLib.Error = js.native
   @JSName("url")
-  def url_Error(
+  def `url_<intersection>`(
     name: java.lang.String,
     params: js.Any,
     options: koaDashRouterLib.koaDashRouterMod.RouterNs.IUrlOptionsQuery
-  ): nodeLib.Error = js.native
+  ): nodeLib.Error with stdLib.Error = js.native
   /**
     * Use given middleware.
     *

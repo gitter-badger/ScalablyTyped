@@ -30,7 +30,7 @@ trait IChoiceGroupOptionProps
   @JSName("onBlur")
   var onBlur_IChoiceGroupOptionProps: js.UndefOr[
     js.Function2[
-      /* ev */ reactLib.reactMod.ReactNs.FocusEvent[reactLib.HTMLElement], 
+      /* ev */ reactLib.reactMod.ReactNs.FocusEvent[reactLib.HTMLElement with stdLib.HTMLElement], 
       /* props */ js.UndefOr[
         officeDashUiDashFabricDashReactLib.libComponentsChoiceGroupChoiceGroupDotTypesMod.IChoiceGroupOption
       ], 

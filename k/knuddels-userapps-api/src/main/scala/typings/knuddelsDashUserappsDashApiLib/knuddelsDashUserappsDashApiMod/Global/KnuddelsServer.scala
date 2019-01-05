@@ -24,7 +24,7 @@ object KnuddelsServer extends js.Object {
   def createKnuddelPot(knuddelAmount: knuddelsDashUserappsDashApiLib.knuddelsDashUserappsDashApiMod.Global.KnuddelAmount): knuddelsDashUserappsDashApiLib.knuddelsDashUserappsDashApiMod.Global.KnuddelPot = js.native
   def createKnuddelPot(
     knuddelAmount: knuddelsDashUserappsDashApiLib.knuddelsDashUserappsDashApiMod.Global.KnuddelAmount,
-    params: knuddelsDashUserappsDashApiLib.Anon_OnPotSealed
+    params: knuddelsDashUserappsDashApiLib.Anon_PayoutTimeoutMinutes
   ): knuddelsDashUserappsDashApiLib.knuddelsDashUserappsDashApiMod.Global.KnuddelPot = js.native
   /**
   		 * @see https://developer.knuddels.de/docs/classes/KnuddelsServer.html#method_execute

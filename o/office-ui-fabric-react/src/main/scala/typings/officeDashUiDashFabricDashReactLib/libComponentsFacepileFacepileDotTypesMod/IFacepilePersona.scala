@@ -6,7 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait IFacepilePersona
-  extends reactLib.reactMod.ReactNs.ButtonHTMLAttributes[reactLib.HTMLButtonElement | reactLib.HTMLDivElement] {
+  extends reactLib.reactMod.ReactNs.ButtonHTMLAttributes[
+      (reactLib.HTMLButtonElement with stdLib.HTMLButtonElement) | (reactLib.HTMLDivElement with stdLib.HTMLDivElement)
+    ] {
   /**
     * Whether initials are calculated for phone numbers and number sequences.
     * Example: Set property to true to get initials for project names consisting of numbers only.
@@ -48,7 +50,7 @@ trait IFacepilePersona
   var onClick_IFacepilePersona: js.UndefOr[
     js.Function2[
       /* ev */ js.UndefOr[
-        reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent]
+        reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement with stdLib.HTMLElement, reactLib.NativeMouseEvent]
       ], 
       /* persona */ js.UndefOr[IFacepilePersona], 
       scala.Unit
@@ -61,7 +63,7 @@ trait IFacepilePersona
   var onMouseMove_IFacepilePersona: js.UndefOr[
     js.Function2[
       /* ev */ js.UndefOr[
-        reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent]
+        reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement with stdLib.HTMLElement, reactLib.NativeMouseEvent]
       ], 
       /* persona */ js.UndefOr[IFacepilePersona], 
       scala.Unit
@@ -74,7 +76,7 @@ trait IFacepilePersona
   var onMouseOut_IFacepilePersona: js.UndefOr[
     js.Function2[
       /* ev */ js.UndefOr[
-        reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent]
+        reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement with stdLib.HTMLElement, reactLib.NativeMouseEvent]
       ], 
       /* persona */ js.UndefOr[IFacepilePersona], 
       scala.Unit

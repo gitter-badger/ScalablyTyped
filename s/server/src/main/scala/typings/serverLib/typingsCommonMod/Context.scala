@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait Context extends js.Object {
   var cookie: org.scalablytyped.runtime.StringDictionary[java.lang.String]
   var data: js.Any
-  var error: nodeLib.Error
+  var error: nodeLib.Error with stdLib.Error
   var files: formidableLib.formidableMod.Files
   var headers: org.scalablytyped.runtime.StringDictionary[java.lang.String]
   var ip: java.lang.String

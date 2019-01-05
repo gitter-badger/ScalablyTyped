@@ -6,6 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_Length extends js.Object {
-  var length: rsvpLib.rsvpLibNumbers.`1`
+  var length: rsvpLib.rsvpLibNumbers.`10`
 }
 

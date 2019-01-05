@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait IScrollablePaneProps
   extends reactLib.reactMod.ReactNs.HTMLAttributes[
-      reactLib.HTMLElement | officeDashUiDashFabricDashReactLib.libComponentsScrollablePaneScrollablePaneDotBaseMod.ScrollablePaneBase
+      (reactLib.HTMLElement with stdLib.HTMLElement) | officeDashUiDashFabricDashReactLib.libComponentsScrollablePaneScrollablePaneDotBaseMod.ScrollablePaneBase
     ] {
   /**
     * Optional callback to access the IScrollablePane interface. Use this instead of ref for accessing

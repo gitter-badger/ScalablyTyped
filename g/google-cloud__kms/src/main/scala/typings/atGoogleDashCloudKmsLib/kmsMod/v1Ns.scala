@@ -428,22 +428,22 @@ object v1Ns extends js.Object {
     }
     
     type DecryptCallback = js.Function2[
-        /* err */ nodeLib.Error | scala.Null, 
+        /* err */ (nodeLib.Error with stdLib.Error) | scala.Null, 
         /* apiResponse */ js.Tuple3[DecryptResponse, js.Any, js.Any], 
         scala.Unit
       ]
     type EncryptCallback = js.Function2[
-        /* err */ nodeLib.Error | scala.Null, 
+        /* err */ (nodeLib.Error with stdLib.Error) | scala.Null, 
         /* apiResponse */ js.Tuple3[EncryptResponse, js.Any, js.Any], 
         scala.Unit
       ]
     type ListCryptoKeysCallback = js.Function2[
-        /* err */ nodeLib.Error | scala.Null, 
+        /* err */ (nodeLib.Error with stdLib.Error) | scala.Null, 
         /* apiResponse */ js.Tuple3[js.Array[atGoogleDashCloudKmsLib.kmsMod.v1Ns.CryptoKey], js.Any, js.Any], 
         scala.Unit
       ]
     type ListKeyRingsCallback = js.Function2[
-        /* err */ nodeLib.Error | scala.Null, 
+        /* err */ (nodeLib.Error with stdLib.Error) | scala.Null, 
         /* apiResponse */ js.Tuple3[js.Array[atGoogleDashCloudKmsLib.kmsMod.v1Ns.KeyRing], js.Any, js.Any], 
         scala.Unit
       ]

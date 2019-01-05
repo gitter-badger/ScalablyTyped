@@ -36,6 +36,6 @@ trait IRadioGroupProps
     * Use `event.currentTarget.value` to read the currently selected value.
     * This prop is required because this component only supports controlled usage.
     */
-  def onChange(event: reactLib.reactMod.ReactNs.FormEvent[reactLib.HTMLInputElement]): scala.Unit
+  def onChange(event: reactLib.reactMod.ReactNs.FormEvent[reactLib.HTMLInputElement with stdLib.HTMLInputElement]): scala.Unit
 }
 

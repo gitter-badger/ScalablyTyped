@@ -450,11 +450,11 @@ object swanNsMembers extends js.Object {
   /**
   	 * 监听低功耗蓝牙设备的特征值变化。必须先启用notify接口才能接收到设备推送的notification。
   	 */
-  def onBLECharacteristicValueChange(callback: js.Function1[/* res */ baiduDashAppLib.Anon_ServiceId, scala.Unit]): scala.Unit = js.native
+  def onBLECharacteristicValueChange(callback: js.Function1[/* res */ baiduDashAppLib.Anon_DeviceIdServiceId, scala.Unit]): scala.Unit = js.native
   /**
   	 * 监听低功耗蓝牙连接的错误事件，包括设备丢失，连接异常断开等等。
   	 */
-  def onBLEConnectionStateChanged(callback: js.Function1[/* res */ baiduDashAppLib.Anon_Connected, scala.Unit]): scala.Unit = js.native
+  def onBLEConnectionStateChanged(callback: js.Function1[/* res */ baiduDashAppLib.Anon_DeviceId, scala.Unit]): scala.Unit = js.native
   /**
   	 * 监听音乐暂停。
   	 * @deprecated 1.2.0

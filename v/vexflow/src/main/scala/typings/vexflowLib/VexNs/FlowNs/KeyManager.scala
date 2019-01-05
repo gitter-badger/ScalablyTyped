@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class KeyManager protected () extends js.Object {
   def this(key: java.lang.String) = this()
-  def getAccidental(key: java.lang.String): vexflowLib.Anon_NoteAccidentalString = js.native
+  def getAccidental(key: java.lang.String): vexflowLib.Anon_Note = js.native
   def getKey(): java.lang.String = js.native
   def reset(): KeyManager = js.native
   def selectNote(note: java.lang.String): vexflowLib.Anon_NoteAccidental = js.native

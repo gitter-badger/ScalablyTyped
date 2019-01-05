@@ -15,7 +15,7 @@ trait ICommServerEventEmitter extends js.Object {
   @JSName("on")
   def on_error(
     event: atIonicDiscoverLib.atIonicDiscoverLibStrings.error,
-    listener: js.Function1[/* err */ nodeLib.Error, scala.Unit]
+    listener: js.Function1[/* err */ nodeLib.Error with stdLib.Error, scala.Unit]
   ): this.type = js.native
 }
 

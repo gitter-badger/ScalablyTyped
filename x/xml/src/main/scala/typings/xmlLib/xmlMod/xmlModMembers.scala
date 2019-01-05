@@ -14,7 +14,7 @@ object xmlModMembers extends js.Object {
     xmlObject: xmlLib.XmlObject | js.Array[xmlLib.XmlObject],
     options: scala.Boolean | java.lang.String | Option
   ): java.lang.String = js.native
-  def apply(xmlObject: xmlLib.XmlObject | js.Array[xmlLib.XmlObject], options: xmlLib.Anon_Indent): nodeLib.NodeJSNs.ReadableStream = js.native
+  def apply(xmlObject: xmlLib.XmlObject | js.Array[xmlLib.XmlObject], options: xmlLib.Anon_Stream): nodeLib.NodeJSNs.ReadableStream = js.native
   def Element(xmlObjects: xmlLib.XmlObject*): ElementObject = js.native
   def element(xmlObjects: xmlLib.XmlObject*): ElementObject = js.native
 }

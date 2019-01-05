@@ -10,7 +10,11 @@ import scala.scalajs.js.annotation._
 object fsDashCsonMod extends js.Object {
   def readFile(
     filePath: java.lang.String,
-    done: js.Function2[/* err */ nodeLib.Error | scala.Null, /* result */ js.Any, scala.Unit]
+    done: js.Function2[
+      /* err */ (nodeLib.Error with stdLib.Error) | scala.Null, 
+      /* result */ js.Any, 
+      scala.Unit
+    ]
   ): scala.Unit = js.native
   def readFileSync(filePath: java.lang.String): js.Any = js.native
   def register(): scala.Unit = js.native

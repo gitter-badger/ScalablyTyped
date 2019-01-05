@@ -18,7 +18,7 @@ trait VirtualTimeScheduler[TAbsolute, TRelative]
     state: TState,
     dueTime: TAbsolute,
     action: js.Function2[
-      /* scheduler */ rxDashCoreLib.RxNs.IScheduler, 
+      /* scheduler */ rxDashCoreLib.RxNs.IScheduler with rxDashLiteLib.RxNs.IScheduler, 
       /* state */ TState, 
       rxDashCoreLib.RxNs.IDisposable
     ]
@@ -28,7 +28,7 @@ trait VirtualTimeScheduler[TAbsolute, TRelative]
     state: TState,
     dueTime: TRelative,
     action: js.Function2[
-      /* scheduler */ rxDashCoreLib.RxNs.IScheduler, 
+      /* scheduler */ rxDashCoreLib.RxNs.IScheduler with rxDashLiteLib.RxNs.IScheduler, 
       /* state */ TState, 
       rxDashCoreLib.RxNs.IDisposable
     ]

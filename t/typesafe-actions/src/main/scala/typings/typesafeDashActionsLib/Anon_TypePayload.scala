@@ -5,7 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Anon_TypePayload[T /* <: typesafeDashActionsLib.distTypesMod.StringType */, P] extends js.Object {
+trait Anon_TypePayload[T /* <: typesafeDashActionsLib.distTypesMod.StringType */, P, M] extends js.Object {
+  var meta: M
   var payload: P
   var `type`: T
 }

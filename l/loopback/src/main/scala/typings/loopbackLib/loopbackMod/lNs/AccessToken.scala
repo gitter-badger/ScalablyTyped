@@ -27,7 +27,7 @@ trait AccessToken extends PersistedModel {
   var id: java.lang.String = js.native
   /** Extends the `Model.settings` object. */
   @JSName("settings")
-  var settings_AccessToken: loopbackLib.Anon_AccessTokenIdLength = js.native
+  var settings_AccessToken: loopbackLib.Anon_Http = js.native
   /** Time to live in seconds, 2 weeks by default. */
   var ttl: scala.Double = js.native
   /**
@@ -37,6 +37,8 @@ trait AccessToken extends PersistedModel {
     * @param {Error} err
     * @param {boolean} isValid
     */
-  def validate(callback: js.Function2[/* err */ nodeLib.Error, /* isValid */ scala.Boolean, scala.Unit]): scala.Unit = js.native
+  def validate(
+    callback: js.Function2[/* err */ nodeLib.Error with stdLib.Error, /* isValid */ scala.Boolean, scala.Unit]
+  ): scala.Unit = js.native
 }
 

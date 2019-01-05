@@ -12,7 +12,7 @@ object imageDashSizeModMembers extends js.Object {
   def apply(path: java.lang.String): ImageInfo = js.native
   def apply(
     path: java.lang.String,
-    callback: js.Function2[/* err */ nodeLib.Error, /* dimensions */ ImageInfo, scala.Unit]
+    callback: js.Function2[/* err */ nodeLib.Error with stdLib.Error, /* dimensions */ ImageInfo, scala.Unit]
   ): scala.Unit = js.native
 }
 

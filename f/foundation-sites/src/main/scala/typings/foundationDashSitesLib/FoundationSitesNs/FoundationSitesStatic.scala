@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait FoundationSitesStatic extends js.Object {
-  var Abide: foundationDashSitesLib.Anon_Defaults = js.native
-  var Accordion: foundationDashSitesLib.Anon_ElementOptionsJQueryAccordion = js.native
-  var AccordionMenu: foundationDashSitesLib.Anon_ElementOptionsJQueryAccordionMenu = js.native
+  var Abide: foundationDashSitesLib.Anon_Element = js.native
+  var Accordion: foundationDashSitesLib.Anon_ElementOptions = js.native
+  var AccordionMenu: foundationDashSitesLib.Anon_ElementOptionsJQuery = js.native
   // utils
   var Box: Box = js.native
   var Drilldown: foundationDashSitesLib.Anon_ElementOptionsJQueryDrilldown = js.native
@@ -18,14 +18,14 @@ trait FoundationSitesStatic extends js.Object {
   var Equalizer: foundationDashSitesLib.Anon_ElementOptionsJQueryEqualizer = js.native
   var Interchange: foundationDashSitesLib.Anon_ElementOptionsJQueryInterchange = js.native
   var Keyboard: Keyboard = js.native
-  var Magellan: foundationDashSitesLib.Anon_ElementOptions = js.native
+  var Magellan: foundationDashSitesLib.Anon_ElementOptionsJQueryMagellan = js.native
   var MediaQuery: MediaQuery = js.native
   var Motion: Motion = js.native
   var Move: Move = js.native
   var Nest: Nest = js.native
-  var OffCanvas: foundationDashSitesLib.Anon_Element = js.native
+  var OffCanvas: foundationDashSitesLib.Anon_ElementOptionsJQueryOffCanvas = js.native
   var Orbit: foundationDashSitesLib.Anon_ElementOptionsJQueryOrbit = js.native
-  var Reveal: foundationDashSitesLib.Anon_ElementOptionsJQuery = js.native
+  var Reveal: foundationDashSitesLib.Anon_ElementOptionsJQueryReveal = js.native
   var Slider: foundationDashSitesLib.Anon_ElementOptionsJQuerySlider = js.native
   var Sticky: foundationDashSitesLib.Anon_ElementOptionsJQuerySticky = js.native
   var Tabs: foundationDashSitesLib.Anon_ElementOptionsJQueryTabs = js.native

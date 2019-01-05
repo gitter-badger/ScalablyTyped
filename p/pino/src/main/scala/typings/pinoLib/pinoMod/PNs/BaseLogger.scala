@@ -130,7 +130,7 @@ trait BaseLogger
     * @param bindings: an object of key-value pairs to include in log lines as properties.
     * @returns a child logger instance.
     */
-  def child(bindings: pinoLib.Anon_KeyLevel): Logger = js.native
+  def child(bindings: pinoLib.Anon_Level): Logger = js.native
   /**
     * Log at `'debug'` level the given msg. If the first argument is an object, all its properties will be included in the JSON line.
     * If more args follows `msg`, these will be used to format `msg` using `util.format`.

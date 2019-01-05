@@ -39,7 +39,7 @@ class TemplateParser protected () extends js.Object {
     schemas: js.Array[atAngularCompilerLib.srcCoreMod.SchemaMetadata],
     templateUrl: java.lang.String,
     preserveWhitespaces: scala.Boolean
-  ): atAngularCompilerLib.Anon_Pipes = js.native
+  ): atAngularCompilerLib.Anon_Template = js.native
   def parse(
     component: atAngularCompilerLib.srcCompileUnderscoreMetadataMod.CompileDirectiveMetadata,
     template: java.lang.String,
@@ -48,7 +48,7 @@ class TemplateParser protected () extends js.Object {
     schemas: js.Array[atAngularCompilerLib.srcCoreMod.SchemaMetadata],
     templateUrl: java.lang.String,
     preserveWhitespaces: scala.Boolean
-  ): atAngularCompilerLib.Anon_Pipes = js.native
+  ): atAngularCompilerLib.Anon_Template = js.native
   def tryParse(
     component: atAngularCompilerLib.srcCompileUnderscoreMetadataMod.CompileDirectiveMetadata,
     template: atAngularCompilerLib.srcMlUnderscoreParserHtmlUnderscoreParserMod.ParseTreeResult,

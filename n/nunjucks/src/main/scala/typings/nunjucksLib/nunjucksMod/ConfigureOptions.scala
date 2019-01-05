@@ -10,7 +10,7 @@ trait ConfigureOptions extends js.Object {
   var express: js.UndefOr[js.Object] = js.undefined
   var lstripBlocks: js.UndefOr[scala.Boolean] = js.undefined
   var noCache: js.UndefOr[scala.Boolean] = js.undefined
-  var tags: js.UndefOr[nunjucksLib.Anon_BlockEnd] = js.undefined
+  var tags: js.UndefOr[nunjucksLib.Anon_BlockStart] = js.undefined
   var throwOnUndefined: js.UndefOr[scala.Boolean] = js.undefined
   var trimBlocks: js.UndefOr[scala.Boolean] = js.undefined
   var watch: js.UndefOr[scala.Boolean] = js.undefined

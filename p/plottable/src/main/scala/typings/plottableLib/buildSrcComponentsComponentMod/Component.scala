@@ -70,7 +70,7 @@ class Component () extends js.Object {
     * Override in subclasses to provide additional functionality.
     */
   /* protected */ def _setup(): scala.Unit = js.native
-  /* protected */ def _sizeFromOffer(availableWidth: scala.Double, availableHeight: scala.Double): plottableLib.Anon_Height = js.native
+  /* protected */ def _sizeFromOffer(availableWidth: scala.Double, availableHeight: scala.Double): plottableLib.Anon_Width = js.native
   /**
     * Adds a given CSS class to the Component.
     *

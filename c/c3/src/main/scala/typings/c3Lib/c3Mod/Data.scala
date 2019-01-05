@@ -42,7 +42,7 @@ trait Data extends js.Object {
   /**
     * Set text displayed when empty data.
     */
-  var empty: js.UndefOr[c3Lib.Anon_Label] = js.undefined
+  var empty: js.UndefOr[c3Lib.Anon_LabelAnonText] = js.undefined
   /**
     * Set groups for the data for stacking.
     */
@@ -59,7 +59,7 @@ trait Data extends js.Object {
   /**
     * Choose which JSON object keys correspond to desired data.
     */
-  var keys: js.UndefOr[c3Lib.Anon_ValueX] = js.undefined
+  var keys: js.UndefOr[c3Lib.Anon_X] = js.undefined
   /**
     * Show labels on each data points or set formatter function for data labels.
     * The formatter function receives 4 arguments such as v, id, i, j and it must return a string that will be shown as the label. The arguments are:
@@ -120,7 +120,7 @@ trait Data extends js.Object {
     * Load data from a multidimensional array, with the first element containing the data names, the following containing related data in that order.
     */
   var rows: js.UndefOr[js.Array[PrimitiveArray]] = js.undefined
-  var selection: js.UndefOr[c3Lib.Anon_EnabledIsselectable] = js.undefined
+  var selection: js.UndefOr[c3Lib.Anon_EnabledGrouped] = js.undefined
   /**
     * Set chart type at once.
     * If this option is specified, the type will be applied to every data. This setting can be overwritten by data.types.

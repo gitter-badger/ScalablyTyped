@@ -9,10 +9,10 @@ import scala.scalajs.js.annotation._
 @js.native
 object libUtilsModMembers extends js.Object {
   def animatedScrollTo(
-    element: reactLib.Element,
+    element: reactLib.Element with stdLib.Element,
     to: scala.Double,
     duration: scala.Double,
-    callback: js.Function1[/* element */ reactLib.Element, scala.Unit]
+    callback: js.Function1[/* element */ reactLib.Element with stdLib.Element, scala.Unit]
   ): scala.Unit = js.native
   def classNames(): java.lang.String = js.native
   def classNames(prefix: java.lang.String): java.lang.String = js.native
@@ -60,9 +60,9 @@ object libUtilsModMembers extends js.Object {
   ): java.lang.String = js.native
   def cleanValue[OptionType](value: reactDashSelectLib.libTypesMod.ValueType[OptionType]): reactDashSelectLib.libTypesMod.OptionsType[OptionType] = js.native
   def emptyString(): java.lang.String = js.native
-  def getBoundingClientObj(element: reactLib.HTMLElement): reactDashSelectLib.Anon_Bottom = js.native
-  def getScrollParent(element: reactLib.reactMod.ReactNs.Ref[_]): reactLib.Element = js.native
-  def getScrollTop(el: reactLib.Element): scala.Double = js.native
+  def getBoundingClientObj(element: reactLib.HTMLElement with stdLib.HTMLElement): reactDashSelectLib.Anon_Bottom = js.native
+  def getScrollParent(element: reactLib.reactMod.ReactNs.Ref[_]): reactLib.Element with stdLib.Element = js.native
+  def getScrollTop(el: reactLib.Element with stdLib.Element): scala.Double = js.native
   def handleInputChange(inputValue: java.lang.String, actionMeta: reactDashSelectLib.libTypesMod.InputActionMeta): java.lang.String = js.native
   def handleInputChange(
     inputValue: java.lang.String,
@@ -73,13 +73,16 @@ object libUtilsModMembers extends js.Object {
       java.lang.String | scala.Unit
     ]
   ): java.lang.String = js.native
-  def isDocumentElement(el: reactLib.Element): scala.Boolean = js.native
+  def isDocumentElement(el: reactLib.Element with stdLib.Element): scala.Boolean = js.native
   def isMobileDevice(): scala.Boolean = js.native
   def isTouchCapable(): scala.Boolean = js.native
   def noop(): scala.Unit = js.native
-  def normalizedHeight(el: reactLib.Element): scala.Double = js.native
-  def scrollIntoView(menuEl: reactLib.HTMLElement, focusedEl: reactLib.HTMLElement): scala.Unit = js.native
-  def scrollTo(el: reactLib.Element, top: scala.Double): scala.Unit = js.native
+  def normalizedHeight(el: reactLib.Element with stdLib.Element): scala.Double = js.native
+  def scrollIntoView(
+    menuEl: reactLib.HTMLElement with stdLib.HTMLElement,
+    focusedEl: reactLib.HTMLElement with stdLib.HTMLElement
+  ): scala.Unit = js.native
+  def scrollTo(el: reactLib.Element with stdLib.Element, top: scala.Double): scala.Unit = js.native
   def toKey(str: java.lang.String): java.lang.String = js.native
 }
 

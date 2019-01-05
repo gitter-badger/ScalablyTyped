@@ -38,7 +38,9 @@ trait INumericInputProps
   /**
     * Ref handler that receives HTML `<input>` element backing this component.
     */
-  var inputRef: js.UndefOr[js.Function1[/* ref */ reactLib.HTMLInputElement | scala.Null, _]] = js.undefined
+  var inputRef: js.UndefOr[
+    js.Function1[/* ref */ (reactLib.HTMLInputElement with stdLib.HTMLInputElement) | scala.Null, _]
+  ] = js.undefined
   /**
     * If set to `true`, the input will display with larger styling.
     * This is equivalent to setting `Classes.LARGE` via className on the

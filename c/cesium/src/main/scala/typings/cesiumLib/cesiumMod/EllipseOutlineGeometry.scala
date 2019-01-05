@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class EllipseOutlineGeometry protected ()
   extends cesiumLib.cesiumMod.CesiumNs.EllipseOutlineGeometry {
-  def this(options: cesiumLib.Anon_ExtrudedHeightSemiMajorAxisCenter) = this()
+  def this(options: cesiumLib.Anon_CenterSemiMajorAxisSemiMinorAxis) = this()
 }
 
 @JSImport("cesium", "EllipseOutlineGeometry")

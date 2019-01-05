@@ -5,8 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveDifficultInheritance: 
-- Lifted 1 members from Set(std.Pick<react.react.InputHTMLAttributes<react.HTMLInputElement>, std.Exclude<keyof react.react.InputHTMLAttributes<react.HTMLInputElement>, 'min' | 'max' | 'step' | 'onChange' | 'defaultValue' | 'onInvalid' | 'style'>>) */ trait NumericInputProps extends js.Object {
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
+- Dropped {[ P in std.Exclude<keyof react.react.InputHTMLAttributes<react.HTMLInputElement & std.HTMLInputElement>, 'min' | 'max' | 'step' | 'onChange' | 'defaultValue' | 'onInvalid' | 'style'> ]: react.react.InputHTMLAttributes<react.HTMLInputElement & std.HTMLInputElement>[P]} */ trait NumericInputProps extends js.Object {
   var addLabelText: js.UndefOr[java.lang.String] = js.undefined
   var componentClass: js.UndefOr[java.lang.String] = js.undefined
   var defaultValue: js.UndefOr[scala.Double | java.lang.String] = js.undefined
@@ -22,20 +22,26 @@ import scala.scalajs.js.annotation._
   var noStyle: js.UndefOr[scala.Boolean] = js.undefined
   var noValidate: js.UndefOr[scala.Boolean | java.lang.String] = js.undefined
   var onBlur: js.UndefOr[
-    reactLib.reactMod.ReactNs.FocusEventHandler[reactLib.HTMLDivElement | reactLib.HTMLInputElement]
+    reactLib.reactMod.ReactNs.FocusEventHandler[
+      (reactLib.HTMLDivElement with stdLib.HTMLDivElement) | (reactLib.HTMLInputElement with stdLib.HTMLInputElement)
+    ]
   ] = js.undefined
   var onChange: js.UndefOr[
     js.Function3[
       /* value */ scala.Double | scala.Null, 
       /* stringValue */ java.lang.String, 
-      /* input */ reactLib.HTMLInputElement, 
+      /* input */ reactLib.HTMLInputElement with stdLib.HTMLInputElement, 
       scala.Unit
     ]
   ] = js.undefined
   var onFocus: js.UndefOr[
-    reactLib.reactMod.ReactNs.FocusEventHandler[reactLib.HTMLDivElement | reactLib.HTMLInputElement]
+    reactLib.reactMod.ReactNs.FocusEventHandler[
+      (reactLib.HTMLDivElement with stdLib.HTMLDivElement) | (reactLib.HTMLInputElement with stdLib.HTMLInputElement)
+    ]
   ] = js.undefined
-  var onInput: js.UndefOr[reactLib.reactMod.ReactNs.FormEventHandler[reactLib.HTMLInputElement]] = js.undefined
+  var onInput: js.UndefOr[
+    reactLib.reactMod.ReactNs.FormEventHandler[reactLib.HTMLInputElement with stdLib.HTMLInputElement]
+  ] = js.undefined
   var onInvalid: js.UndefOr[
     js.Function3[
       /* error */ java.lang.String, 
@@ -45,9 +51,13 @@ import scala.scalajs.js.annotation._
     ]
   ] = js.undefined
   var onKeyDown: js.UndefOr[
-    reactLib.reactMod.ReactNs.KeyboardEventHandler[reactLib.HTMLDivElement | reactLib.HTMLInputElement]
+    reactLib.reactMod.ReactNs.KeyboardEventHandler[
+      (reactLib.HTMLDivElement with stdLib.HTMLDivElement) | (reactLib.HTMLInputElement with stdLib.HTMLInputElement)
+    ]
   ] = js.undefined
-  var onSelect: js.UndefOr[reactLib.reactMod.ReactNs.ReactEventHandler[reactLib.HTMLInputElement]] = js.undefined
+  var onSelect: js.UndefOr[
+    reactLib.reactMod.ReactNs.ReactEventHandler[reactLib.HTMLInputElement with stdLib.HTMLInputElement]
+  ] = js.undefined
   var onValid: js.UndefOr[
     js.Function2[
       /* value */ scala.Double | scala.Null, 

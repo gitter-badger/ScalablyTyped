@@ -26,13 +26,17 @@ trait Props extends js.Object {
     */
   var disabled: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   /** Props to apply to the container. */
-  var innerProps: js.UndefOr[reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLDivElement]] = js.undefined
+  var innerProps: js.UndefOr[
+    reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLDivElement with stdLib.HTMLDivElement]
+  ] = js.undefined
   /** The number of the month (from 1 to 12) which the calendar should be on. */
   var month: js.UndefOr[scala.Double] = js.undefined
   /** Function which is called when the calendar is no longer focused. */
   var onBlur: js.UndefOr[
     js.Function1[
-      /* e */ js.UndefOr[reactLib.reactMod.ReactNs.FocusEvent[reactLib.HTMLDivElement]], 
+      /* e */ js.UndefOr[
+        reactLib.reactMod.ReactNs.FocusEvent[reactLib.HTMLDivElement with stdLib.HTMLDivElement]
+      ], 
       scala.Unit
     ]
   ] = js.undefined
@@ -44,7 +48,9 @@ trait Props extends js.Object {
   /** Called when the calendar receives focus. This could be from a mouse event on the container by tabbing into it. */
   var onFocus: js.UndefOr[
     js.Function1[
-      /* e */ js.UndefOr[reactLib.reactMod.ReactNs.FocusEvent[reactLib.HTMLDivElement]], 
+      /* e */ js.UndefOr[
+        reactLib.reactMod.ReactNs.FocusEvent[reactLib.HTMLDivElement with stdLib.HTMLDivElement]
+      ], 
       scala.Unit
     ]
   ] = js.undefined

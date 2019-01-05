@@ -30,10 +30,10 @@ trait MessageReader extends js.Object {
     * @param disposables An array to which a {{IDisposable}} will be added. The
     * @return
     */
-  def onError(listener: js.Function1[/* e */ nodeLib.Error, _]): vscodeDashJsonrpcLib.libEventsMod.Disposable = js.native
-  def onError(listener: js.Function1[/* e */ nodeLib.Error, _], thisArgs: js.Any): vscodeDashJsonrpcLib.libEventsMod.Disposable = js.native
+  def onError(listener: js.Function1[/* e */ nodeLib.Error with stdLib.Error, _]): vscodeDashJsonrpcLib.libEventsMod.Disposable = js.native
+  def onError(listener: js.Function1[/* e */ nodeLib.Error with stdLib.Error, _], thisArgs: js.Any): vscodeDashJsonrpcLib.libEventsMod.Disposable = js.native
   def onError(
-    listener: js.Function1[/* e */ nodeLib.Error, _],
+    listener: js.Function1[/* e */ nodeLib.Error with stdLib.Error, _],
     thisArgs: js.Any,
     disposables: js.Array[vscodeDashJsonrpcLib.libEventsMod.Disposable]
   ): vscodeDashJsonrpcLib.libEventsMod.Disposable = js.native

@@ -11,7 +11,7 @@ trait JQuery extends js.Object {
     name: java.lang.String,
     options: velocityDashAnimateLib.jqueryNs.velocityNs.RegisteredEffectOptions
   ): JQuery = js.native
-  def velocity(options: Anon_Options): JQuery = js.native
+  def velocity(options: Anon_Properties): JQuery = js.native
   def velocity(properties: velocityDashAnimateLib.jqueryNs.velocityNs.Properties): JQuery = js.native
   def velocity(
     properties: velocityDashAnimateLib.jqueryNs.velocityNs.Properties,

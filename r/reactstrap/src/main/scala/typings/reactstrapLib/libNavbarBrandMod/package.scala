@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 package object libNavbarBrandMod {
   type NavbarBrand[T] = reactLib.reactMod.Component[NavbarBrandProps[T], js.Object, js.Any]
-  type NavbarBrandProps[T] = reactLib.reactMod.ReactNs.HTMLProps[reactLib.HTMLAnchorElement] with reactstrapLib.Anon_ClassName with T
+  type NavbarBrandProps[T] = (reactLib.reactMod.ReactNs.HTMLProps[reactLib.HTMLAnchorElement with stdLib.HTMLAnchorElement]) with reactstrapLib.Anon_TagClassName with T
 }

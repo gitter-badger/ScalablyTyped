@@ -7,9 +7,11 @@ import scala.scalajs.js.annotation._
 
 trait Anon_Userreport extends js.Object {
   /**
-    * If you believe a charge is fraudulent, include a user_report key with a value of fraudulent. If you believe a
-    * charge is safe, include a user_report key with a value of safe. Note that you must refund a charge before setting
-    * the user_report to fraudulent. Stripe will use the information you send to improve our fraud detection algorithm
+    * Assessments from Stripe have the key stripe_report and, if set, the value "fraudulent".
+    */
+  var stripe_report: js.UndefOr[stripeLib.stripeLibStrings.fraudulent] = js.undefined
+  /**
+    * Assessments reported by you have the key user_report and, if set, possible values of "safe" and "fraudulent".
     */
   var user_report: js.UndefOr[stripeLib.stripeLibStrings.fraudulent | stripeLib.stripeLibStrings.safe] = js.undefined
 }

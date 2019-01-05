@@ -7,12 +7,23 @@ import scala.scalajs.js.annotation._
 
 trait Anon_Show extends js.Object {
   /**
-    * Set formatter for the label on gauge.
+    * Set formatter for the label on each donut piece.
     */
-  var format: js.UndefOr[js.Function2[/* value */ js.Any, /* ratio */ scala.Double, java.lang.String]] = js.undefined
+  var format: js.UndefOr[
+    js.Function3[
+      /* value */ scala.Double, 
+      /* ratio */ scala.Double, 
+      /* id */ java.lang.String, 
+      java.lang.String
+    ]
+  ] = js.undefined
   /**
-    * Show or hide label on gauge.
+    * Show or hide label on each donut piece.
     */
   var show: js.UndefOr[scala.Boolean] = js.undefined
+  /**
+    * Set threshold to show/hide labels.
+    */
+  var threshold: js.UndefOr[scala.Double] = js.undefined
 }
 

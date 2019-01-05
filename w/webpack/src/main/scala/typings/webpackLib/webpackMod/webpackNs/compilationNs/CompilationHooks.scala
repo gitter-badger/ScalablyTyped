@@ -31,7 +31,7 @@ trait CompilationHooks extends js.Object {
   var childCompiler: tapableLib.tapableMod.SyncHook[_, _, _]
   var chunkAsset: tapableLib.tapableMod.SyncHook[Chunk, java.lang.String, _]
   var chunkHash: tapableLib.tapableMod.SyncHook[Chunk, ChunkHash, _]
-  var failedModule: tapableLib.tapableMod.SyncHook[Module, nodeLib.Error, _]
+  var failedModule: tapableLib.tapableMod.SyncHook[Module, nodeLib.Error with stdLib.Error, _]
   var finishModules: tapableLib.tapableMod.SyncHook[js.Array[Module], _, _]
   var finishRebuildingModule: tapableLib.tapableMod.SyncHook[Module, _, _]
   var moduleAsset: tapableLib.tapableMod.SyncHook[Module, java.lang.String, _]

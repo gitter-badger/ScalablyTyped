@@ -9,9 +9,13 @@ import scala.scalajs.js.annotation._
 @js.native
 object apolloDashToolsModMembers extends js.Object {
   def buildServiceDefinition(
-    modules: apolloDashEnvLib.libPolyfillsArrayMod.Global.Array[
+    modules: (apolloDashEnvLib.libPolyfillsArrayMod.Global.Array[
       atApollographqlApolloDashToolsLib.libBuildServiceDefinitionMod.GraphQLSchemaModule
-    ]
+    ]) with (coreDashJsLib.Array[
+      atApollographqlApolloDashToolsLib.libBuildServiceDefinitionMod.GraphQLSchemaModule
+    ]) with (js.Array[
+      atApollographqlApolloDashToolsLib.libBuildServiceDefinitionMod.GraphQLSchemaModule
+    ])
   ): atApollographqlApolloDashToolsLib.libBuildServiceDefinitionMod.GraphQLServiceDefinition = js.native
   def invariant(condition: js.Any, message: java.lang.String): scala.Unit = js.native
   def isDocumentNode(node: graphqlLib.languageAstMod.ASTNode): /* is graphql.graphql/language/ast.DocumentNode */ scala.Boolean = js.native

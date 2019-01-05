@@ -9,6 +9,6 @@ trait StrictMountNodeProps extends js.Object {
   /** Additional classes. */
   var className: js.UndefOr[java.lang.String] = js.undefined
   /** The DOM node where we will apply class names. Defaults to document.body. */
-  var node: js.UndefOr[reactLib.HTMLElement] = js.undefined
+  var node: js.UndefOr[reactLib.HTMLElement with stdLib.HTMLElement] = js.undefined
 }
 

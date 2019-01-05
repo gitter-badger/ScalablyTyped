@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("react-onsenui", "Tab")
 @js.native
 class Tab ()
-  extends Component[reactDashOnsenuiLib.Anon_Icon, js.Object]
+  extends Component[reactDashOnsenuiLib.Anon_Label, js.Object]
 

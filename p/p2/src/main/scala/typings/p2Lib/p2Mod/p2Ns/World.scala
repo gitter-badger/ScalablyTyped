@@ -12,7 +12,7 @@ trait World extends EventEmitter {
   var applyDamping: scala.Boolean = js.native
   var applyGravity: scala.Boolean = js.native
   var applySpringForces: scala.Boolean = js.native
-  var beginContactEvent: p2Lib.Anon_ShapeBShapeA = js.native
+  var beginContactEvent: p2Lib.Anon_TypeShapeA = js.native
   var bodies: js.Array[Body] = js.native
   var broadphase: Broadphase = js.native
   var constraints: js.Array[Constraint] = js.native
@@ -21,10 +21,10 @@ trait World extends EventEmitter {
   var defaultMaterial: Material = js.native
   var doProfiling: scala.Boolean = js.native
   var emitImpactEvent: scala.Boolean = js.native
-  var endContactEvent: p2Lib.Anon_ShapeB = js.native
+  var endContactEvent: p2Lib.Anon_TypeShapeAShapeB = js.native
   var frictionGravity: scala.Double = js.native
   var gravity: js.Array[scala.Double] = js.native
-  var impactEvent: p2Lib.Anon_ShapeBContactEquation = js.native
+  var impactEvent: p2Lib.Anon_TypeBodyA = js.native
   var islandManager: IslandManager = js.native
   var islandSplit: scala.Boolean = js.native
   var lastStepTime: scala.Double = js.native

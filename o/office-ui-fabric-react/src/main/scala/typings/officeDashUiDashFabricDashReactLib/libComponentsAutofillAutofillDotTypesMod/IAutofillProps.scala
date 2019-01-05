@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait IAutofillProps
   extends reactLib.reactMod.ReactNs.InputHTMLAttributes[
-      reactLib.HTMLInputElement | officeDashUiDashFabricDashReactLib.libComponentsAutofillAutofillMod.Autofill
+      (reactLib.HTMLInputElement with stdLib.HTMLInputElement) | officeDashUiDashFabricDashReactLib.libComponentsAutofillAutofillMod.Autofill
     ] {
   /**
     * Gets the compoonent ref.

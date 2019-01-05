@@ -11,7 +11,7 @@ package object webRequestNs {
     * An array of HTTP headers. Each header is represented as a dictionary containing the keys `name` and either
     * `value` or `binaryValue`.
     */
-  type HttpHeaders = js.Array[firefoxDashWebextDashBrowserLib.Anon_BinaryValue]
+  type HttpHeaders = js.Array[firefoxDashWebextDashBrowserLib.Anon_NameValueBinaryValue]
   type OnAuthRequiredOptions = firefoxDashWebextDashBrowserLib.firefoxDashWebextDashBrowserLibStrings.responseHeaders | firefoxDashWebextDashBrowserLib.firefoxDashWebextDashBrowserLibStrings.blocking | firefoxDashWebextDashBrowserLib.firefoxDashWebextDashBrowserLibStrings.asyncBlocking
   type OnBeforeRedirectOptions = firefoxDashWebextDashBrowserLib.firefoxDashWebextDashBrowserLibStrings.responseHeaders
   type OnBeforeRequestOptions = firefoxDashWebextDashBrowserLib.firefoxDashWebextDashBrowserLibStrings.blocking | firefoxDashWebextDashBrowserLib.firefoxDashWebextDashBrowserLibStrings.requestBody

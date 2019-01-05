@@ -39,8 +39,8 @@ class PositioningContainer protected ()
   var _targetWindow: js.Any = js.native
   /* private */ def _arePositionsEqual(positions: js.Any, newPosition: js.Any): js.Any = js.native
   /* private */ def _comparePositions(oldPositions: js.Any, newPositions: js.Any): js.Any = js.native
-  /* protected */ def _dismissOnLostFocus(ev: reactLib.Event): scala.Unit = js.native
-  /* protected */ def _dismissOnScroll(ev: reactLib.Event): scala.Unit = js.native
+  /* protected */ def _dismissOnLostFocus(ev: reactLib.Event with stdLib.Event): scala.Unit = js.native
+  /* protected */ def _dismissOnScroll(ev: reactLib.Event with stdLib.Event): scala.Unit = js.native
   /* private */ def _getBounds(): js.Any = js.native
   /**
     * Return the maximum height the container can grow to
@@ -73,13 +73,17 @@ class PositioningContainer protected ()
     * @deprecated Use `onResize` instead.
     */
   def dismiss(): scala.Unit = js.native
-  def dismiss(ev: reactLib.Event): scala.Unit = js.native
-  def dismiss(ev: reactLib.reactMod.ReactNs.KeyboardEvent[reactLib.HTMLElement]): scala.Unit = js.native
-  def dismiss(ev: reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent]): scala.Unit = js.native
+  def dismiss(ev: reactLib.Event with stdLib.Event): scala.Unit = js.native
+  def dismiss(ev: reactLib.reactMod.ReactNs.KeyboardEvent[reactLib.HTMLElement with stdLib.HTMLElement]): scala.Unit = js.native
+  def dismiss(
+    ev: reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement with stdLib.HTMLElement, reactLib.NativeMouseEvent]
+  ): scala.Unit = js.native
   def onResize(): scala.Unit = js.native
-  def onResize(ev: reactLib.Event): scala.Unit = js.native
-  def onResize(ev: reactLib.reactMod.ReactNs.KeyboardEvent[reactLib.HTMLElement]): scala.Unit = js.native
-  def onResize(ev: reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent]): scala.Unit = js.native
+  def onResize(ev: reactLib.Event with stdLib.Event): scala.Unit = js.native
+  def onResize(ev: reactLib.reactMod.ReactNs.KeyboardEvent[reactLib.HTMLElement with stdLib.HTMLElement]): scala.Unit = js.native
+  def onResize(
+    ev: reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement with stdLib.HTMLElement, reactLib.NativeMouseEvent]
+  ): scala.Unit = js.native
 }
 
 @JSImport("office-ui-fabric-react/lib/components/Coachmark/PositioningContainer/PositioningContainer", "PositioningContainer")

@@ -168,9 +168,7 @@ trait SeriesSunburst extends js.Object {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sunburst.downplay
     */
-  var downplay: js.UndefOr[
-    echartsLib.Anon_ItemStyleLabelAnonShadowOffsetXBorderTypeAnonShadowOffsetXBackgroundColorShowMinAngleOptional
-  ] = js.undefined
+  var downplay: js.UndefOr[echartsLib.Anon_LabelItemStyleAnonRotateAlign] = js.undefined
   /**
     * Item style when mouse is hovering. See
     * [highlightPolicy](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sunburst.highlightPolicy)
@@ -179,9 +177,7 @@ trait SeriesSunburst extends js.Object {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sunburst.emphasis
     */
-  var emphasis: js.UndefOr[
-    echartsLib.Anon_ItemStyleLabelAnonShadowOffsetXBorderTypeAnonShadowOffsetXBackgroundColorShowMinAngleOptional
-  ] = js.undefined
+  var emphasis: js.UndefOr[echartsLib.Anon_LabelItemStyleAnonRotateAlign] = js.undefined
   /**
     * Item style when mouse is hovering related items. See
     * [highlightPolicy](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sunburst.highlightPolicy)
@@ -190,9 +186,7 @@ trait SeriesSunburst extends js.Object {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sunburst.highlight
     */
-  var highlight: js.UndefOr[
-    echartsLib.Anon_ItemStyleLabelAnonShadowOffsetXBorderTypeAnonShadowOffsetXBackgroundColorShowMinAngleOptional
-  ] = js.undefined
+  var highlight: js.UndefOr[echartsLib.Anon_LabelItemStyleAnonRotateAlign] = js.undefined
   /**
     * When mouse hovers a sector, the sector is emphasized.
     * **If `highlightPolicy` is set to be `'descendant'`, then the
@@ -269,7 +263,7 @@ trait SeriesSunburst extends js.Object {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sunburst.itemStyle
     */
-  var itemStyle: js.UndefOr[echartsLib.Anon_ShadowOffsetXBorderTypeShadowBlurBorderWidth] = js.undefined
+  var itemStyle: js.UndefOr[echartsLib.Anon_ColorBorderColorBorderWidthBorderType] = js.undefined
   /**
     * `label` sets the text style for every sectors.
     *
@@ -291,7 +285,7 @@ trait SeriesSunburst extends js.Object {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sunburst.label
     */
-  var label: js.UndefOr[echartsLib.Anon_ShadowOffsetXBackgroundColorShowMinAngleAlign] = js.undefined
+  var label: js.UndefOr[echartsLib.Anon_Rotate] = js.undefined
   /**
     * **Multiple levels**
     *
@@ -313,7 +307,7 @@ trait SeriesSunburst extends js.Object {
     * []
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sunburst.levels
     */
-  var levels: js.UndefOr[echartsLib.Anon_Highlight] = js.undefined
+  var levels: js.UndefOr[echartsLib.Anon_LabelItemStyleEmphasis] = js.undefined
   /**
     * Series name used for displaying in
     * [tooltip](https://ecomfe.github.io/echarts-doc/public/en/option.html#tooltip)

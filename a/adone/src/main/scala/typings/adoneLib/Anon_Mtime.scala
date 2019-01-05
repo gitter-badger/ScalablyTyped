@@ -7,7 +7,19 @@ import scala.scalajs.js.annotation._
 
 trait Anon_Mtime extends js.Object {
   /**
-    * Defines file mode, 0o40775 by default
+    * If true, the file data will be deflated (compression method 8).
+    *
+    * If false, the file data will be stored (compression method 0)
+    */
+  var compress: js.UndefOr[scala.Boolean] = js.undefined
+  /**
+    * Use ZIP64 format in this entry's Data Descriptor and Central Directory Record
+    * regardless of if it's required or not (this may be useful for testing.).
+    * Otherwise, packer will use ZIP64 format where necessary.
+    */
+  var forceZip64Format: js.UndefOr[scala.Boolean] = js.undefined
+  /**
+    * Defines file mode, 0o100664 by default
     */
   var mode: js.UndefOr[scala.Double] = js.undefined
   /**

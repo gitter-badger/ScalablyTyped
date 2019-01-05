@@ -9,7 +9,11 @@ package object basicauthDashMiddlewareLib {
   type checkFunctionCallback = js.Function3[
     /* username */ java.lang.String, 
     /* password */ java.lang.String, 
-    /* callback */ js.Function2[/* err */ nodeLib.Error | scala.Null, /* authorized */ scala.Boolean, scala.Unit], 
+    /* callback */ js.Function2[
+      /* err */ (nodeLib.Error with stdLib.Error) | scala.Null, 
+      /* authorized */ scala.Boolean, 
+      scala.Unit
+    ], 
     scala.Unit
   ]
   type checkFunctionPromise = js.Function2[

@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Vex.Flow.StemmableNote")
 @js.native
 class StemmableNote protected () extends Note {
-  def this(note_struct: vexflowLib.Anon_Type) = this()
+  def this(note_struct: vexflowLib.Anon_TypeDots) = this()
   def buildStem(): StemmableNote = js.native
-  def drawStem(stem_struct: vexflowLib.Anon_Xend): scala.Unit = js.native
+  def drawStem(stem_struct: vexflowLib.Anon_Xbegin): scala.Unit = js.native
   def getBeamCount(): scala.Double = js.native
   def getCenterGlyphX(): scala.Double = js.native
   def getStem(): Stem = js.native

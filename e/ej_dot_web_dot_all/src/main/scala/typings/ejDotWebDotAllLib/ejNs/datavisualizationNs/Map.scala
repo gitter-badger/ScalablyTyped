@@ -11,11 +11,11 @@ class Map protected ()
   extends ejDotWebDotAllLib.ejNs.Widget {
   def this(element: ejDotWebDotAllLib.JQuery) = this()
   def this(element: stdLib.Element) = this()
-  def this(element: ejDotWebDotAllLib.JQuery, options: ejDotWebDotAllLib.ejNs.Model) = this()
-  def this(element: stdLib.Element, options: ejDotWebDotAllLib.ejNs.Model) = this()
-  var defaults: ejDotWebDotAllLib.ejNs.Model = js.native
+  def this(element: ejDotWebDotAllLib.JQuery, options: ejDotWebDotAllLib.ejNs.Model with ejDotWebDotAllLib.ejNs.datavisualizationNs.MapNs.Model) = this()
+  def this(element: stdLib.Element, options: ejDotWebDotAllLib.ejNs.Model with ejDotWebDotAllLib.ejNs.datavisualizationNs.MapNs.Model) = this()
+  var defaults: ejDotWebDotAllLib.ejNs.Model with ejDotWebDotAllLib.ejNs.datavisualizationNs.MapNs.Model = js.native
   @JSName("model")
-  var model_Map: ejDotWebDotAllLib.ejNs.Model = js.native
+  var model_Map: ejDotWebDotAllLib.ejNs.Model with ejDotWebDotAllLib.ejNs.datavisualizationNs.MapNs.Model = js.native
   /** Add markers dynamically based on layer and sublayer index value.
     * @returns {void}
     */

@@ -19,11 +19,15 @@ trait TreeSelectProps
     reactLib.reactMod.ReactNs.ReactNode | (js.Function1[/* omittedValues */ js.Array[_], reactLib.reactMod.ReactNs.ReactNode])
   ] = js.undefined
   var multiple: js.UndefOr[scala.Boolean] = js.undefined
-  var onBlur: js.UndefOr[reactLib.reactMod.ReactNs.FocusEventHandler[reactLib.HTMLInputElement]] = js.undefined
+  var onBlur: js.UndefOr[
+    reactLib.reactMod.ReactNs.FocusEventHandler[reactLib.HTMLInputElement with stdLib.HTMLInputElement]
+  ] = js.undefined
   var onChange: js.UndefOr[
     js.Function3[/* value */ js.Any, /* label */ js.Any, /* extra */ js.Any, scala.Unit]
   ] = js.undefined
-  var onFocus: js.UndefOr[reactLib.reactMod.ReactNs.FocusEventHandler[reactLib.HTMLInputElement]] = js.undefined
+  var onFocus: js.UndefOr[
+    reactLib.reactMod.ReactNs.FocusEventHandler[reactLib.HTMLInputElement with stdLib.HTMLInputElement]
+  ] = js.undefined
   @JSName("onSearch")
   var onSearch_TreeSelectProps: js.UndefOr[js.Function1[/* value */ js.Any, scala.Unit]] = js.undefined
   var onSelect: js.UndefOr[js.Function1[/* value */ js.Any, scala.Unit]] = js.undefined

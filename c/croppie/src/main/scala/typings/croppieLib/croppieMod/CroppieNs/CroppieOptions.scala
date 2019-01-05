@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait CroppieOptions extends js.Object {
-  var boundary: js.UndefOr[croppieLib.Anon_Height] = js.undefined
+  var boundary: js.UndefOr[croppieLib.Anon_Width] = js.undefined
   var customClass: js.UndefOr[java.lang.String] = js.undefined
   var enableExif: js.UndefOr[scala.Boolean] = js.undefined
   var enableOrientation: js.UndefOr[scala.Boolean] = js.undefined
@@ -14,6 +14,6 @@ trait CroppieOptions extends js.Object {
   var enforceBoundary: js.UndefOr[scala.Boolean] = js.undefined
   var mouseWheelZoom: js.UndefOr[scala.Boolean] = js.undefined
   var showZoomer: js.UndefOr[scala.Boolean] = js.undefined
-  var viewport: js.UndefOr[croppieLib.Anon_TypeHeight] = js.undefined
+  var viewport: js.UndefOr[croppieLib.Anon_WidthHeight] = js.undefined
 }
 

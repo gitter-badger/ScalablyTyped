@@ -9,6 +9,5 @@ trait Anon_ClipDirectionBackward extends js.Object {
   var clipDirection: js.UndefOr[
     atomLib.atomLibStrings.backward | atomLib.atomLibStrings.forward | atomLib.atomLibStrings.closest
   ] = js.undefined
-  var reversed: js.UndefOr[scala.Boolean] = js.undefined
 }
 

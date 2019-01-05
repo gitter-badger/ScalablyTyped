@@ -22,7 +22,11 @@ trait SMTPTransport
   /** Placeholder function for creating proxy sockets. This method immediatelly returns without a socket */
   def getSocket(
     options: nodemailerLib.libSmtpDashTransportMod.SMTPTransportNs.Options,
-    callback: js.Function2[/* err */ nodeLib.Error | scala.Null, /* socketOptions */ js.Object, scala.Unit]
+    callback: js.Function2[
+      /* err */ (nodeLib.Error with stdLib.Error) | scala.Null, 
+      /* socketOptions */ js.Object, 
+      scala.Unit
+    ]
   ): scala.Unit = js.native
   @JSName("verify")
   def verify_MSMTPTransport(): js.Promise[nodemailerLib.nodemailerLibNumbers.`true`] = js.native
@@ -30,7 +34,7 @@ trait SMTPTransport
   @JSName("verify")
   def verify_MSMTPTransport(
     callback: js.Function2[
-      /* err */ nodeLib.Error | scala.Null, 
+      /* err */ (nodeLib.Error with stdLib.Error) | scala.Null, 
       nodemailerLib.nodemailerLibNumbers.`true`, 
       scala.Unit
     ]

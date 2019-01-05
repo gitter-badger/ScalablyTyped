@@ -20,9 +20,9 @@ trait SimpleSchemaStatic
       ]), 
       SimpleSchema
     ] {
-  var ErrorTypes: simplDashSchemaLib.Anon_BADDATE = js.native
+  var ErrorTypes: simplDashSchemaLib.Anon_REQUIRED = js.native
   var Integer: stdLib.RegExp = js.native
-  var RegEx: simplDashSchemaLib.Anon_Id = js.native
+  var RegEx: simplDashSchemaLib.Anon_Email = js.native
   def addValidator(validator: js.Function0[scala.Boolean]): js.Any = js.native
   def allowsKey(key: js.Any): java.lang.String = js.native
   def clean(doc: js.Any): js.Any = js.native

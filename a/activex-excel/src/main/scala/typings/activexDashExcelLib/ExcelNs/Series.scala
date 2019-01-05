@@ -58,8 +58,8 @@ class Series protected () extends js.Object {
   @JSName("Trendlines")
   var Trendlines_Original: Trendlines with (js.Function1[/* Index */ scala.Double | java.lang.String, Trendline]) = js.native
   var Type: scala.Double = js.native
-  var Values: Range | activexDashInteropLib.SafeArray[scala.Double] = js.native
-  var XValues: Range | activexDashInteropLib.SafeArray[scala.Double] = js.native
+  var Values: Range | (activexDashInteropLib.SafeArray[scala.Double] with stdLib.SafeArray[scala.Double]) = js.native
+  var XValues: Range | (activexDashInteropLib.SafeArray[scala.Double] with stdLib.SafeArray[scala.Double]) = js.native
   def ApplyCustomType(ChartType: XlChartType): scala.Unit = js.native
   /** @param Type [Type=2] */
   def ApplyDataLabels(

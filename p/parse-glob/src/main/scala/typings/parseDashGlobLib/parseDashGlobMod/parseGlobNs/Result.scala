@@ -17,7 +17,7 @@ trait Result extends js.Object {
   /**
     * An object with boolean information about the glob.
     */
-  var is: parseDashGlobLib.Anon_Dotfile
+  var is: parseDashGlobLib.Anon_Glob
   /**
     * A copy of the original, unmodified glob pattern.
     */

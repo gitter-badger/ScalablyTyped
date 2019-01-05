@@ -15,7 +15,7 @@ trait Sandbox extends js.Object {
     * Works exactly like mock, only also adds the returned spy to the internal collection of fakes
     */
   @JSName("mock")
-  var mock_Original: adoneLib.Anon_Obj = js.native
+  var mock_Original: adoneLib.Anon_ObjAny = js.native
   /**
     * Works exactly like spy, only also adds the returned spy to the internal collection of fakes
     */
@@ -25,7 +25,7 @@ trait Sandbox extends js.Object {
     * Works exactly like stub, only also adds the returned spy to the internal collection of fakes
     */
   @JSName("stub")
-  var stub_Original: adoneLib.Anon_ObjMethod = js.native
+  var stub_Original: adoneLib.Anon_Obj = js.native
   /**
     * Works exactly like mock, only also adds the returned spy to the internal collection of fakes
     */

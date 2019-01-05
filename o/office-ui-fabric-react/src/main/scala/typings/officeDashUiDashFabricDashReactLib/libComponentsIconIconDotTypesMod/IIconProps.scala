@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait IIconProps
-  extends reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLElement]
+  extends reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLElement with stdLib.HTMLElement]
      with atUifabricUtilitiesLib.libBaseComponentMod.IBaseProps[js.Any] {
   /**
     * The aria label of the button for the benefit of screen readers.

@@ -27,7 +27,7 @@ trait ServerEventCriteria[T] extends js.Object {
     * * * tags - a tag string or array of tag strings.
     * * * all - if true, all tags must be present for the event update to match the subscription. Defaults to false (at least one matching tag).
     */
-  var filter: js.UndefOr[java.lang.String | js.Array[java.lang.String] | hapiLib.Anon_All] = js.undefined
+  var filter: js.UndefOr[java.lang.String | js.Array[java.lang.String] | hapiLib.Anon_Tags] = js.undefined
   /** (required) the event name string. */
   var name: T
   /**

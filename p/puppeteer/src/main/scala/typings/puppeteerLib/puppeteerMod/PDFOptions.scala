@@ -42,7 +42,7 @@ trait PDFOptions extends js.Object {
     */
   var landscape: js.UndefOr[scala.Boolean] = js.undefined
   /** Paper margins, defaults to none. */
-  var margin: js.UndefOr[puppeteerLib.Anon_Bottom] = js.undefined
+  var margin: js.UndefOr[puppeteerLib.Anon_Top] = js.undefined
   /**
     * Paper ranges to print, e.g., '1-5, 8, 11-13'.
     * @default '' which means print all pages.

@@ -28,7 +28,7 @@ trait SCWorker
   def getHTTPServer(): nodeLib.httpMod.Server | nodeLib.httpsMod.Server = js.native
   def getSCServer(): js.Any = js.native
   def getSocketPath(): java.lang.String = js.native
-  def getStatus(): socketclusterLib.Anon_HttpRPM = js.native
+  def getStatus(): socketclusterLib.Anon_ClientCount = js.native
   @JSName("on")
   def on_connection(
     event: socketclusterLib.socketclusterLibStrings.connection,
@@ -40,14 +40,18 @@ trait SCWorker
   @JSName("on")
   def on_error(
     event: socketclusterLib.socketclusterLibStrings.error,
-    listener: js.Function1[/* err */ nodeLib.Error, scala.Unit]
+    listener: js.Function1[/* err */ nodeLib.Error with stdLib.Error, scala.Unit]
   ): this.type = js.native
   @JSName("on")
   def on_masterMessage(
     event: socketclusterLib.socketclusterLibStrings.masterMessage,
     listener: js.Function2[
       /* data */ js.Any, 
-      /* respond */ js.Function2[/* err */ nodeLib.Error | scala.Null, /* responseData */ js.Any, scala.Unit], 
+      /* respond */ js.Function2[
+        /* err */ (nodeLib.Error with stdLib.Error) | scala.Null, 
+        /* responseData */ js.Any, 
+        scala.Unit
+      ], 
       scala.Unit
     ]
   ): this.type = js.native
@@ -56,17 +60,21 @@ trait SCWorker
   @JSName("on")
   def on_warning(
     event: socketclusterLib.socketclusterLibStrings.warning,
-    listener: js.Function1[/* warning */ nodeLib.Error, scala.Unit]
+    listener: js.Function1[/* warning */ nodeLib.Error with stdLib.Error, scala.Unit]
   ): this.type = js.native
   def open(): scala.Unit = js.native
   @JSName("removeMiddleware")
   def removeMiddleware_start(`type`: socketclusterLib.socketclusterLibStrings.start, middlewareFn: middlewareFunction): scala.Unit = js.native
-  def respondToMaster(err: nodeLib.Error, data: js.Any, rid: scala.Double): scala.Unit = js.native
+  def respondToMaster(err: nodeLib.Error with stdLib.Error, data: js.Any, rid: scala.Double): scala.Unit = js.native
   def respondToMaster(err: scala.Null, data: js.Any, rid: scala.Double): scala.Unit = js.native
   def run(): scala.Unit = js.native
   def sendToMaster(
     data: js.Any,
-    callback: js.Function2[/* err */ nodeLib.Error | scala.Null, /* data */ js.Any, scala.Unit]
+    callback: js.Function2[
+      /* err */ (nodeLib.Error with stdLib.Error) | scala.Null, 
+      /* data */ js.Any, 
+      scala.Unit
+    ]
   ): scala.Unit = js.native
   def setAuthEngine(authEngine: scDashAuthLib.scDashAuthMod.SCAuthEngine): scala.Unit = js.native
   def setCodecEngine(

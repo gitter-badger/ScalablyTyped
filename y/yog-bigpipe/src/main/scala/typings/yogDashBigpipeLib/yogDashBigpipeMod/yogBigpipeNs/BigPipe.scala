@@ -25,7 +25,7 @@ trait BigPipe
   def format(pagelet: Pagelet): java.lang.String = js.native
   def isQuickingMode(): scala.Boolean = js.native
   def isQuicklingMode(): scala.Boolean = js.native
-  def isQuicklingWidget(item: yogDashBigpipeLib.Anon_Key): scala.Unit = js.native
+  def isQuicklingWidget(item: yogDashBigpipeLib.Anon_Mode): scala.Unit = js.native
   def outputPagelet(pagelet: Pagelet): scala.Unit = js.native
   def prepareAllSources(): js.Promise[_] = js.native
   def preparePageOnly(): js.Promise[_] = js.native

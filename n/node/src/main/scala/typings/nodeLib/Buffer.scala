@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Buffer
   extends stdLib.Uint8Array {
-  var constructor: Anon_IsEncoding = js.native
+  var constructor: Anon_Str = js.native
   def compare(otherBuffer: stdLib.Uint8Array): scala.Double = js.native
   def compare(otherBuffer: stdLib.Uint8Array, targetStart: scala.Double): scala.Double = js.native
   def compare(otherBuffer: stdLib.Uint8Array, targetStart: scala.Double, targetEnd: scala.Double): scala.Double = js.native

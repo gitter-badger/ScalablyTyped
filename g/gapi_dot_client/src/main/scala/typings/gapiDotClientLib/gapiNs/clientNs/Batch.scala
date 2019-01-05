@@ -17,7 +17,7 @@ trait Batch[T]
     * @param opt_params extra parameters for this batch entry.
     */
   def add[T](request: Request[T]): scala.Unit = js.native
-  def add[T](request: Request[T], opt_params: gapiDotClientLib.Anon_Callback[T]): scala.Unit = js.native
+  def add[T](request: Request[T], opt_params: gapiDotClientLib.Anon_Id[T]): scala.Unit = js.native
   /**
     * Executes all requests in the batch. The supplied callback is executed on success or failure.
     * @param callback The callback to execute when the batch returns.

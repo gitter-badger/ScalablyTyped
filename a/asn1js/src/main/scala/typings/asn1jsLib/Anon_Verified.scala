@@ -1,0 +1,12 @@
+package typings
+package asn1jsLib
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait Anon_Verified extends js.Object {
+  var result: js.UndefOr[js.Any] = js.undefined
+  var verified: scala.Boolean
+}
+

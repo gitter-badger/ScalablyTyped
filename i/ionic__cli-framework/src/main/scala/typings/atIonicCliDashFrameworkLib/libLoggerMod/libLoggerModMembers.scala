@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@ionic/cli-framework/lib/logger", JSImport.Namespace)
 @js.native
 object libLoggerModMembers extends js.Object {
-  val DEFAULT_LOGGER_HANDLERS: nodeLib.ReadonlySet[StreamHandler] = js.native
+  val DEFAULT_LOGGER_HANDLERS: nodeLib.ReadonlySet[StreamHandler] with stdLib.ReadonlySet[StreamHandler] = js.native
   val LOGGER_LEVEL_NAMES: stdLib.ReadonlyMap[LoggerLevelWeight, LoggerLevel] = js.native
   def createPrefixedFormatter(prefix: java.lang.String): LoggerFormatter = js.native
   def createPrefixedFormatter(prefix: js.Function0[java.lang.String]): LoggerFormatter = js.native

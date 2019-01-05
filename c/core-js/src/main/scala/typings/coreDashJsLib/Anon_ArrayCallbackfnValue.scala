@@ -7,14 +7,14 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Anon_ArrayCallbackfnValue extends js.Object {
-  def apply[T, U](
+  def apply[T](
     array: stdLib.ArrayLike[T],
-    callbackfn: js.Function3[/* value */ T, /* index */ scala.Double, /* array */ Array[T], U]
-  ): Array[U] = js.native
-  def apply[T, U](
+    callbackfn: js.Function3[/* value */ T, /* index */ scala.Double, /* array */ Array[T], scala.Boolean]
+  ): Array[T] = js.native
+  def apply[T](
     array: stdLib.ArrayLike[T],
-    callbackfn: js.Function3[/* value */ T, /* index */ scala.Double, /* array */ Array[T], U],
+    callbackfn: js.Function3[/* value */ T, /* index */ scala.Double, /* array */ Array[T], scala.Boolean],
     thisArg: js.Any
-  ): Array[U] = js.native
+  ): Array[T] = js.native
 }
 

@@ -16,14 +16,14 @@ object asn1jsModMembers extends js.Object {
     * @param {*} inputSchema Input ASN.1 schema to compare with
     * @returns {{ verified: boolean, result?: any }}
     */
-  def compareSchema(root: js.Any, inputData: js.Any, inputSchema: js.Any): asn1jsLib.Anon_Result = js.native
+  def compareSchema(root: js.Any, inputData: js.Any, inputSchema: js.Any): asn1jsLib.Anon_Verified = js.native
   /**
     * Major function for decoding ASN.1 BER array into internal library structuries
     * 
     * @param {ArrayBuffer} inputBuffer ASN.1 BER encoded array of bytes
     * @returns {{ offset: number; result: LocalBaseBlock }}
     */
-  def fromBER(inputBuffer: stdLib.ArrayBuffer): asn1jsLib.Anon_ResultOffset = js.native
+  def fromBER(inputBuffer: stdLib.ArrayBuffer): asn1jsLib.Anon_Offset = js.native
   /**
     * ASN.1 schema verification for ArrayBuffer data
     * 
@@ -31,6 +31,6 @@ object asn1jsModMembers extends js.Object {
     * @param {*} inputSchema Input ASN.1 schema to verify against to
     * @returns {{ verified: boolean, result?: any }}
     */
-  def verifySchema(inputBuffer: stdLib.ArrayBuffer, inputSchema: js.Any): asn1jsLib.Anon_Result = js.native
+  def verifySchema(inputBuffer: stdLib.ArrayBuffer, inputSchema: js.Any): asn1jsLib.Anon_Verified = js.native
 }
 

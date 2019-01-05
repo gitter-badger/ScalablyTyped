@@ -244,7 +244,7 @@ trait App extends EventEmitter {
     */
   def getFileIcon(
     path: java.lang.String,
-    callback: js.Function2[/* error */ nodeLib.Error, /* icon */ NativeImage, scala.Unit]
+    callback: js.Function2[/* error */ nodeLib.Error with stdLib.Error, /* icon */ NativeImage, scala.Unit]
   ): scala.Unit = js.native
   /**
     * Fetches a path's associated icon. On Windows, there a 2 kinds of icons: On Linux
@@ -253,7 +253,7 @@ trait App extends EventEmitter {
   def getFileIcon(
     path: java.lang.String,
     options: FileIconOptions,
-    callback: js.Function2[/* error */ nodeLib.Error, /* icon */ NativeImage, scala.Unit]
+    callback: js.Function2[/* error */ nodeLib.Error with stdLib.Error, /* icon */ NativeImage, scala.Unit]
   ): scala.Unit = js.native
   def getGPUFeatureStatus(): GPUFeatureStatus = js.native
   /**

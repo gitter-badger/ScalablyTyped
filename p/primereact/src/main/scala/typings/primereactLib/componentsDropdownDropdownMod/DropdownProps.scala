@@ -20,9 +20,9 @@ trait DropdownProps extends js.Object {
   var inputId: js.UndefOr[java.lang.String] = js.undefined
   var itemTemplate: js.UndefOr[js.Function1[/* option */ js.Any, reactLib.reactMod.ReactNs.ReactNode]] = js.undefined
   var `lazy`: js.UndefOr[scala.Boolean] = js.undefined
-  var onChange: js.UndefOr[js.Function1[/* e */ primereactLib.Anon_OriginalEvent, scala.Unit]] = js.undefined
-  var onContextMenu: js.UndefOr[js.Function1[/* event */ reactLib.Event, scala.Unit]] = js.undefined
-  var onMouseDown: js.UndefOr[js.Function1[/* event */ reactLib.Event, scala.Unit]] = js.undefined
+  var onChange: js.UndefOr[js.Function1[/* e */ primereactLib.Anon_OriginalEventValue, scala.Unit]] = js.undefined
+  var onContextMenu: js.UndefOr[js.Function1[/* event */ reactLib.Event with stdLib.Event, scala.Unit]] = js.undefined
+  var onMouseDown: js.UndefOr[js.Function1[/* event */ reactLib.Event with stdLib.Event, scala.Unit]] = js.undefined
   var optionLabel: js.UndefOr[java.lang.String] = js.undefined
   var options: js.UndefOr[js.Array[_]] = js.undefined
   var panelClassName: js.UndefOr[java.lang.String] = js.undefined

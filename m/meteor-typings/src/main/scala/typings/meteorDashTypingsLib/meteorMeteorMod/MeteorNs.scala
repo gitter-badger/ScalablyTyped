@@ -137,20 +137,20 @@ object MeteorNs extends js.Object {
   /** Url **/
   def absoluteUrl(): java.lang.String = js.native
   def absoluteUrl(path: java.lang.String): java.lang.String = js.native
-  def absoluteUrl(path: java.lang.String, options: meteorDashTypingsLib.Anon_RootUrl): java.lang.String = js.native
+  def absoluteUrl(path: java.lang.String, options: meteorDashTypingsLib.Anon_Secure): java.lang.String = js.native
   @JSName("apply")
   def apply(name: java.lang.String, args: js.Array[meteorDashTypingsLib.EJSONable]): js.Any = js.native
   @JSName("apply")
   def apply(
     name: java.lang.String,
     args: js.Array[meteorDashTypingsLib.EJSONable],
-    options: meteorDashTypingsLib.Anon_OnResultReceived
+    options: meteorDashTypingsLib.Anon_Wait
   ): js.Any = js.native
   @JSName("apply")
   def apply(
     name: java.lang.String,
     args: js.Array[meteorDashTypingsLib.EJSONable],
-    options: meteorDashTypingsLib.Anon_OnResultReceived,
+    options: meteorDashTypingsLib.Anon_Wait,
     asyncCallback: js.Function
   ): js.Any = js.native
   def bindEnvironment(func: js.Function): js.Any = js.native
@@ -161,8 +161,8 @@ object MeteorNs extends js.Object {
   def disconnect(): scala.Unit = js.native
   def loggingIn(): scala.Boolean = js.native
   def loginWith[ExternalService](): scala.Unit = js.native
-  def loginWith[ExternalService](options: meteorDashTypingsLib.Anon_RedirectUrl): scala.Unit = js.native
-  def loginWith[ExternalService](options: meteorDashTypingsLib.Anon_RedirectUrl, callback: js.Function): scala.Unit = js.native
+  def loginWith[ExternalService](options: meteorDashTypingsLib.Anon_RequestPermissionsRequestOfflineToken): scala.Unit = js.native
+  def loginWith[ExternalService](options: meteorDashTypingsLib.Anon_RequestPermissionsRequestOfflineToken, callback: js.Function): scala.Unit = js.native
   def loginWithFacebook(): scala.Unit = js.native
   def loginWithFacebook(options: LoginWithExternalServiceOptions): scala.Unit = js.native
   def loginWithFacebook(options: LoginWithExternalServiceOptions, callback: js.Function): scala.Unit = js.native

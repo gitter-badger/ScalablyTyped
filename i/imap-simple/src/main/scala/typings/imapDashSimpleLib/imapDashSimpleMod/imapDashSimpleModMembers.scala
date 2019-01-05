@@ -11,7 +11,7 @@ object imapDashSimpleModMembers extends js.Object {
   def connect(options: ImapSimpleOptions): js.Promise[ImapSimple] = js.native
   def connect(
     options: ImapSimpleOptions,
-    callback: js.Function2[/* err */ nodeLib.Error, /* connection */ ImapSimple, scala.Unit]
+    callback: js.Function2[/* err */ nodeLib.Error with stdLib.Error, /* connection */ ImapSimple, scala.Unit]
   ): scala.Unit = js.native
   def getParts(struct: js.Array[_]): js.Array[_] = js.native
 }

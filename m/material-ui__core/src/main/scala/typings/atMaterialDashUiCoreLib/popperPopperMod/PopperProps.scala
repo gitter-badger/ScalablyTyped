@@ -6,9 +6,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait PopperProps
-  extends reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLDivElement] {
+  extends reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLDivElement with stdLib.HTMLDivElement] {
   var anchorEl: js.UndefOr[
-    scala.Null | reactLib.HTMLElement | popperDotJsLib.popperDotJsMod.ReferenceObject | (js.Function1[/* element */ reactLib.HTMLElement, reactLib.HTMLElement])
+    scala.Null | (reactLib.HTMLElement with stdLib.HTMLElement) | popperDotJsLib.popperDotJsMod.ReferenceObject | (js.Function1[
+      /* element */ reactLib.HTMLElement with stdLib.HTMLElement, 
+      reactLib.HTMLElement with stdLib.HTMLElement
+    ])
   ] = js.undefined
   @JSName("children")
   var children_PopperProps: reactLib.reactMod.ReactNs.ReactNode | (js.Function1[

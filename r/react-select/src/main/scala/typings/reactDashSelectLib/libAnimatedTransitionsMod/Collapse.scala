@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 class Collapse ()
   extends reactLib.reactMod.Component[CollapseProps, CollapseState, js.Any] {
   var duration: scala.Double = js.native
-  var transition: reactDashSelectLib.Anon_Exited = js.native
+  var transition: reactDashSelectLib.Anon_Exiting = js.native
   // get base styles
   def getStyle(width: Width): js.Any = js.native
   // get transition styles

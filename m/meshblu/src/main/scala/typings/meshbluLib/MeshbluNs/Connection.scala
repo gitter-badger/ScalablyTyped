@@ -64,7 +64,7 @@ trait Connection extends js.Object {
   		 */
   def getPublicKey(
     uuid: java.lang.String,
-    fn: js.Function2[/* err */ nodeLib.Error, /* publicKey */ js.Any, scala.Unit]
+    fn: js.Function2[/* err */ nodeLib.Error with stdLib.Error, /* publicKey */ js.Any, scala.Unit]
   ): scala.Unit
   /**
   		 * Get a meshblu data for a device.

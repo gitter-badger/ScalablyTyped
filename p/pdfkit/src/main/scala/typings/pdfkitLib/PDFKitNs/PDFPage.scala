@@ -20,7 +20,7 @@ trait PDFPage extends js.Object {
   var fonts: js.Any
   var height: scala.Double
   var layout: java.lang.String
-  var margins: pdfkitLib.Anon_Bottom
+  var margins: pdfkitLib.Anon_Top
   var patterns: js.Any
   var size: java.lang.String
   var width: scala.Double

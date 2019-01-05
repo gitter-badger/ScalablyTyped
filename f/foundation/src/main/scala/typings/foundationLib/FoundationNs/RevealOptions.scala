@@ -13,7 +13,7 @@ trait RevealOptions extends js.Object {
   var close: js.UndefOr[js.Function0[_]] = js.undefined
   var close_on_background_click: js.UndefOr[scala.Boolean] = js.undefined
   var closed: js.UndefOr[js.Function0[_]] = js.undefined
-  var css: js.UndefOr[foundationLib.Anon_Close] = js.undefined
+  var css: js.UndefOr[foundationLib.Anon_Open] = js.undefined
   var dismiss_modal_class: js.UndefOr[java.lang.String] = js.undefined
   var multiple_opened: js.UndefOr[scala.Boolean] = js.undefined
   var on_ajax_error: js.UndefOr[js.Function0[_]] = js.undefined

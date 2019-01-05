@@ -55,7 +55,7 @@ trait StrictMessageProps extends js.Object {
     */
   var onDismiss: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent], 
+      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement with stdLib.HTMLElement, reactLib.NativeMouseEvent], 
       /* data */ MessageProps, 
       scala.Unit
     ]

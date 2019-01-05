@@ -31,7 +31,7 @@ trait Recordset extends js.Object {
     * * Array of bookmarks — an array of unique bookmark values that point to records in the Recordset object.
     * * A FilterGroupEnum value
     */
-  var Filter: java.lang.String | activexDashInteropLib.SafeArray[Bookmark] | FilterGroupEnum = js.native
+  var Filter: java.lang.String | (activexDashInteropLib.SafeArray[Bookmark] with stdLib.SafeArray[Bookmark]) | FilterGroupEnum = js.native
   var Index: java.lang.String = js.native
   var LockType: LockTypeEnum = js.native
   var MarshalOptions: MarshalOptionsEnum = js.native
@@ -51,8 +51,8 @@ trait Recordset extends js.Object {
   def AddNew(): scala.Unit = js.native
   def AddNew(Field: java.lang.String, Value: js.Any): scala.Unit = js.native
   def AddNew(
-    Fields: activexDashInteropLib.SafeArray[java.lang.String | scala.Double],
-    Values: activexDashInteropLib.SafeArray[_]
+    Fields: (activexDashInteropLib.SafeArray[java.lang.String | scala.Double]) with (stdLib.SafeArray[java.lang.String | scala.Double]),
+    Values: activexDashInteropLib.SafeArray[_] with stdLib.SafeArray[_]
   ): scala.Unit = js.native
   def Cancel(): scala.Unit = js.native
   /** @param AffectRecords [AffectRecords=3] */
@@ -84,29 +84,29 @@ trait Recordset extends js.Object {
     Start: Bookmark
   ): scala.Unit = js.native
   /** @param Rows [Rows=-1] */
-  def GetRows(): activexDashInteropLib.SafeArray[_] = js.native
-  def GetRows(Rows: scala.Double): activexDashInteropLib.SafeArray[_] = js.native
-  def GetRows(Rows: scala.Double, Start: Bookmark): activexDashInteropLib.SafeArray[_] = js.native
-  def GetRows(Rows: scala.Double, Start: BookmarkEnum): activexDashInteropLib.SafeArray[_] = js.native
+  def GetRows(): activexDashInteropLib.SafeArray[_] with stdLib.SafeArray[_] = js.native
+  def GetRows(Rows: scala.Double): activexDashInteropLib.SafeArray[_] with stdLib.SafeArray[_] = js.native
+  def GetRows(Rows: scala.Double, Start: Bookmark): activexDashInteropLib.SafeArray[_] with stdLib.SafeArray[_] = js.native
+  def GetRows(Rows: scala.Double, Start: BookmarkEnum): activexDashInteropLib.SafeArray[_] with stdLib.SafeArray[_] = js.native
   def GetRows(
     Rows: scala.Double,
     Start: BookmarkEnum,
-    Fields: activexDashInteropLib.SafeArray[java.lang.String | scala.Double]
-  ): activexDashInteropLib.SafeArray[_] = js.native
-  def GetRows(Rows: scala.Double, Start: BookmarkEnum, Fields: java.lang.String): activexDashInteropLib.SafeArray[_] = js.native
+    Fields: (activexDashInteropLib.SafeArray[java.lang.String | scala.Double]) with (stdLib.SafeArray[java.lang.String | scala.Double])
+  ): activexDashInteropLib.SafeArray[_] with stdLib.SafeArray[_] = js.native
+  def GetRows(Rows: scala.Double, Start: BookmarkEnum, Fields: java.lang.String): activexDashInteropLib.SafeArray[_] with stdLib.SafeArray[_] = js.native
   def GetRows(
     Rows: scala.Double,
     Start: Bookmark,
-    Fields: activexDashInteropLib.SafeArray[java.lang.String | scala.Double]
-  ): activexDashInteropLib.SafeArray[_] = js.native
-  def GetRows(Rows: scala.Double, Start: Bookmark, Fields: java.lang.String): activexDashInteropLib.SafeArray[_] = js.native
-  def GetRows(Rows: scala.Double, Start: java.lang.String): activexDashInteropLib.SafeArray[_] = js.native
+    Fields: (activexDashInteropLib.SafeArray[java.lang.String | scala.Double]) with (stdLib.SafeArray[java.lang.String | scala.Double])
+  ): activexDashInteropLib.SafeArray[_] with stdLib.SafeArray[_] = js.native
+  def GetRows(Rows: scala.Double, Start: Bookmark, Fields: java.lang.String): activexDashInteropLib.SafeArray[_] with stdLib.SafeArray[_] = js.native
+  def GetRows(Rows: scala.Double, Start: java.lang.String): activexDashInteropLib.SafeArray[_] with stdLib.SafeArray[_] = js.native
   def GetRows(
     Rows: scala.Double,
     Start: java.lang.String,
-    Fields: activexDashInteropLib.SafeArray[java.lang.String | scala.Double]
-  ): activexDashInteropLib.SafeArray[_] = js.native
-  def GetRows(Rows: scala.Double, Start: java.lang.String, Fields: java.lang.String): activexDashInteropLib.SafeArray[_] = js.native
+    Fields: (activexDashInteropLib.SafeArray[java.lang.String | scala.Double]) with (stdLib.SafeArray[java.lang.String | scala.Double])
+  ): activexDashInteropLib.SafeArray[_] with stdLib.SafeArray[_] = js.native
+  def GetRows(Rows: scala.Double, Start: java.lang.String, Fields: java.lang.String): activexDashInteropLib.SafeArray[_] with stdLib.SafeArray[_] = js.native
   /**
     * @param StringFormat [StringFormat=2]
     * @param NumRows [NumRows=-1]
@@ -244,8 +244,8 @@ trait Recordset extends js.Object {
   def Update(): scala.Unit = js.native
   def Update(Field: java.lang.String, Value: js.Any): scala.Unit = js.native
   def Update(
-    Fields: activexDashInteropLib.SafeArray[java.lang.String | scala.Double],
-    Values: activexDashInteropLib.SafeArray[_]
+    Fields: (activexDashInteropLib.SafeArray[java.lang.String | scala.Double]) with (stdLib.SafeArray[java.lang.String | scala.Double]),
+    Values: activexDashInteropLib.SafeArray[_] with stdLib.SafeArray[_]
   ): scala.Unit = js.native
   /** @param AffectRecords [AffectRecords=3] */
   def UpdateBatch(): scala.Unit = js.native

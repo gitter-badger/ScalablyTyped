@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
   * Represents a scene to be rendered by the engine.
   * @see http://doc.babylonjs.com/features/scene
   */
-/* RemoveMultipleInheritance: Dropped parents List(babylonjsLib.BABYLONNs.IAnimatable because Would inherit conflicting mutable fields List(animations))*/
-@JSGlobal("BABYLON.Scene")
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- babylonjsLib.BABYLONNs.IAnimatable because var conflicts: animations. Inlined  */ @JSGlobal("BABYLON.Scene")
 @js.native
 class Scene protected () extends AbstractScene {
   /**
@@ -550,7 +550,7 @@ class Scene protected () extends AbstractScene {
   /**
     * Gets the list of meshes imported to the scene through SceneLoader
     */
-  var importedMeshesFiles: js.Array[nodeLib.String] = js.native
+  var importedMeshesFiles: js.Array[nodeLib.String with java.lang.String] = js.native
   /** @hidden */
   val interFramePerfCounter: Nullable[PerfCounter] = js.native
   /**
@@ -1886,8 +1886,8 @@ class Scene protected () extends AbstractScene {
     * @param filterPredicate the predicate - which meshes should be included when calculating the world size
     * @returns {{ min: Vector3; max: Vector3 }} min and max vectors
     */
-  def getWorldExtends(): babylonjsLib.Anon_Max = js.native
-  def getWorldExtends(filterPredicate: js.Function1[/* mesh */ AbstractMesh, scala.Boolean]): babylonjsLib.Anon_Max = js.native
+  def getWorldExtends(): babylonjsLib.Anon_Min = js.native
+  def getWorldExtends(filterPredicate: js.Function1[/* mesh */ AbstractMesh, scala.Boolean]): babylonjsLib.Anon_Min = js.native
   /** Call this function if you want to manually increment the render Id*/
   def incrementRenderId(): scala.Unit = js.native
   /**

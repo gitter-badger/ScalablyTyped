@@ -10,11 +10,11 @@ trait ReactPropTypes extends js.Object {
   var any: propDashTypesLib.propDashTypesMod.Requireable[_] = js.native
   var array: propDashTypesLib.propDashTypesMod.Requireable[js.Array[_]] = js.native
   @JSName("arrayOf")
-  var arrayOf_Original: reactLib.Anon_TypeT = js.native
+  var arrayOf_Original: reactLib.Anon_Type = js.native
   var bool: propDashTypesLib.propDashTypesMod.Requireable[scala.Boolean] = js.native
   var element: propDashTypesLib.propDashTypesMod.Requireable[propDashTypesLib.propDashTypesMod.ReactElementLike] = js.native
   @JSName("exact")
-  var exact_Original: reactLib.Anon_Type = js.native
+  var exact_Original: reactLib.Anon_TypePValidationMap = js.native
   var func: propDashTypesLib.propDashTypesMod.Requireable[js.Function1[/* repeated */ _, _]] = js.native
   @JSName("instanceOf")
   var instanceOf_Original: reactLib.Anon_ExpectedClass = js.native
@@ -22,7 +22,7 @@ trait ReactPropTypes extends js.Object {
   var number: propDashTypesLib.propDashTypesMod.Requireable[scala.Double] = js.native
   var `object`: propDashTypesLib.propDashTypesMod.Requireable[js.Object] = js.native
   @JSName("objectOf")
-  var objectOf_Original: reactLib.Anon_TypeTValidator = js.native
+  var objectOf_Original: reactLib.Anon_TypeT = js.native
   @JSName("oneOfType")
   var oneOfType_Original: reactLib.Anon_TypesT = js.native
   @JSName("oneOf")

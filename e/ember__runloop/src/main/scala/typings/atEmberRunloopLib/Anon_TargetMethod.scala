@@ -7,10 +7,6 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Anon_TargetMethod extends js.Object {
-  def apply[Target, Ret](
-    target: Target,
-    method: atEmberRunloopLib.dashPrivateTypesMod.RunMethod[Target, Ret],
-    args: js.Any*
-  ): js.Function1[/* repeated */ js.Any, Ret] = js.native
+  def apply[Target](target: Target, method: atEmberRunloopLib.dashPrivateTypesMod.RunMethod[Target, _], args: js.Any*): atEmberRunloopLib.typesMod.EmberRunTimer = js.native
 }
 

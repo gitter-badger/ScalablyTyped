@@ -18,25 +18,25 @@ class BlobClient protected () extends js.Object {
     * @return resolved with Artifact artifact.
     */
   @JSName("getArtifact")
-  var getArtifact_Original: webgmeLib.Anon_MetadataHash = js.native
+  var getArtifact_Original: webgmeLib.Anon_MetadataHashCallback = js.native
   @JSName("getMetadata")
-  var getMetadata_Original: webgmeLib.Anon_MetadataHashCallbackResultCallback = js.native
+  var getMetadata_Original: webgmeLib.Anon_MetadataHashCallbackResultCallbackMetadata = js.native
   @JSName("getObjectAsJSON")
-  var getObjectAsJSON_Original: webgmeLib.Anon_MetadataHashCallback = js.native
+  var getObjectAsJSON_Original: webgmeLib.Anon_MetadataHashCallbackResultCallbackJSON = js.native
   @JSName("getObjectAsString")
-  var getObjectAsString_Original: webgmeLib.Anon_MetadataHashCallbackResultCallbackContentString = js.native
+  var getObjectAsString_Original: webgmeLib.Anon_MetadataHashCallbackResultCallback = js.native
   @JSName("getObject")
   var getObject_Original: webgmeLib.Anon_MetadataHashCallbackSubpath = js.native
   @JSName("getSubObject")
   var getSubObject_Original: webgmeLib.Anon_MetadataHashSubpath = js.native
   @JSName("putFile")
-  var putFile_Original: webgmeLib.Anon_Name = js.native
+  var putFile_Original: webgmeLib.Anon_NameData = js.native
   @JSName("putFiles")
   var putFiles_Original: webgmeLib.Anon_O = js.native
   @JSName("putMetadata")
   var putMetadata_Original: webgmeLib.Anon_MetadataDescriptor = js.native
   @JSName("saveAllArtifacts")
-  var saveAllArtifacts_Original: webgmeLib.Anon_Callback = js.native
+  var saveAllArtifacts_Original: webgmeLib.Anon_CallbackResultCallbackArray = js.native
   /**
     * Creates a new artifact 
     * and adds it to array of artifacts of the instance.

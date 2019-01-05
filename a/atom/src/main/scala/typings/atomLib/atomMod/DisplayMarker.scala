@@ -119,7 +119,7 @@ trait DisplayMarker extends js.Object {
   def setProperties(properties: js.Object): scala.Unit = js.native
   /** Modifies the screen range of this marker. */
   def setScreenRange(screenRange: RangeCompatible): scala.Unit = js.native
-  def setScreenRange(screenRange: RangeCompatible, options: atomLib.Anon_ClipDirectionBackward): scala.Unit = js.native
+  def setScreenRange(screenRange: RangeCompatible, options: atomLib.Anon_ReversedClipDirection): scala.Unit = js.native
   /** Sets the buffer position of the marker's tail. */
   def setTailBufferPosition(bufferPosition: PointCompatible): scala.Unit = js.native
   /** Sets the screen position of the marker's tail. */

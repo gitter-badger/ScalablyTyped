@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait GraphQLResponse extends js.Object {
   var data: js.UndefOr[stdLib.Record[java.lang.String, _]] = js.undefined
   var errors: js.UndefOr[
-    apolloDashEnvLib.libPolyfillsArrayMod.Global.Array[graphqlLib.graphqlMod.GraphQLError]
+    apolloDashEnvLib.libPolyfillsArrayMod.Global.Array[graphqlLib.graphqlMod.GraphQLError] with coreDashJsLib.Array[graphqlLib.graphqlMod.GraphQLError] with js.Array[graphqlLib.graphqlMod.GraphQLError]
   ] = js.undefined
   var extensions: js.UndefOr[stdLib.Record[java.lang.String, _]] = js.undefined
   var http: js.UndefOr[

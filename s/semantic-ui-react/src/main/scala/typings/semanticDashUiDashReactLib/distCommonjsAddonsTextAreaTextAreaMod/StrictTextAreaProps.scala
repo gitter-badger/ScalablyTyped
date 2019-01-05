@@ -18,7 +18,7 @@ trait StrictTextAreaProps extends js.Object {
     */
   var onChange: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.FormEvent[reactLib.HTMLTextAreaElement], 
+      /* event */ reactLib.reactMod.ReactNs.FormEvent[reactLib.HTMLTextAreaElement with stdLib.HTMLTextAreaElement], 
       /* data */ TextAreaProps, 
       scala.Unit
     ]
@@ -31,7 +31,7 @@ trait StrictTextAreaProps extends js.Object {
     */
   var onInput: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.FormEvent[reactLib.HTMLTextAreaElement], 
+      /* event */ reactLib.reactMod.ReactNs.FormEvent[reactLib.HTMLTextAreaElement with stdLib.HTMLTextAreaElement], 
       /* data */ TextAreaProps, 
       scala.Unit
     ]

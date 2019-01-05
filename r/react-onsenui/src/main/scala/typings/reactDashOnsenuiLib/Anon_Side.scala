@@ -17,11 +17,11 @@ trait Anon_Side extends js.Object {
   var mode: js.UndefOr[
     reactDashOnsenuiLib.reactDashOnsenuiLibStrings.collapse | reactDashOnsenuiLib.reactDashOnsenuiLibStrings.split
   ] = js.undefined
-  var onClose: js.UndefOr[js.Function1[/* e */ js.UndefOr[reactLib.Event], scala.Unit]] = js.undefined
-  var onModeChange: js.UndefOr[js.Function1[/* e */ js.UndefOr[reactLib.Event], scala.Unit]] = js.undefined
-  var onOpen: js.UndefOr[js.Function1[/* e */ js.UndefOr[reactLib.Event], scala.Unit]] = js.undefined
-  var onPreClose: js.UndefOr[js.Function1[/* e */ js.UndefOr[reactLib.Event], scala.Unit]] = js.undefined
-  var onPreOpen: js.UndefOr[js.Function1[/* e */ js.UndefOr[reactLib.Event], scala.Unit]] = js.undefined
+  var onClose: js.UndefOr[js.Function1[/* e */ js.UndefOr[reactLib.Event with stdLib.Event], scala.Unit]] = js.undefined
+  var onModeChange: js.UndefOr[js.Function1[/* e */ js.UndefOr[reactLib.Event with stdLib.Event], scala.Unit]] = js.undefined
+  var onOpen: js.UndefOr[js.Function1[/* e */ js.UndefOr[reactLib.Event with stdLib.Event], scala.Unit]] = js.undefined
+  var onPreClose: js.UndefOr[js.Function1[/* e */ js.UndefOr[reactLib.Event with stdLib.Event], scala.Unit]] = js.undefined
+  var onPreOpen: js.UndefOr[js.Function1[/* e */ js.UndefOr[reactLib.Event with stdLib.Event], scala.Unit]] = js.undefined
   var openThreshold: js.UndefOr[scala.Double] = js.undefined
   var side: js.UndefOr[
     reactDashOnsenuiLib.reactDashOnsenuiLibStrings.left | reactDashOnsenuiLib.reactDashOnsenuiLibStrings.right

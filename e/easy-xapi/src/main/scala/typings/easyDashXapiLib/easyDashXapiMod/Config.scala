@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Config extends js.Object {
-  var log: easyDashXapiLib.Anon_Level
+  var log: easyDashXapiLib.Anon_Name
   var name: java.lang.String
   var port: scala.Double
   var root: java.lang.String

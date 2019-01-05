@@ -12,7 +12,7 @@ class Comment protected () extends js.Object {
   val Author: java.lang.String = js.native
   val AuthorIndex: scala.Double = js.native
   val AuthorInitials: java.lang.String = js.native
-  val DateTime: activexDashInteropLib.VarDate = js.native
+  val DateTime: activexDashInteropLib.VarDate with stdLib.VarDate = js.native
   val Left: scala.Double = js.native
   val Parent: js.Any = js.native
   var `PowerPoint.Comment_typekey`: Comment = js.native

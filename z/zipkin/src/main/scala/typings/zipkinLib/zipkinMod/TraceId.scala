@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class TraceId ()
   extends zipkinLib.zipkinMod.zipkinNs.TraceId {
-  def this(args: zipkinLib.Anon_Flags) = this()
+  def this(args: zipkinLib.Anon_TraceId) = this()
   /* CompleteClass */
   override val flags: scala.Double = js.native
   /* CompleteClass */

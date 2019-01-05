@@ -15,9 +15,9 @@ trait Response extends js.Object {
   var proto: java.lang.String = js.native
   var remote_ip: java.lang.String = js.native
   var remote_port: scala.Double = js.native
-  var request: k6Lib.Anon_Method = js.native
+  var request: k6Lib.Anon_Body = js.native
   var status: scala.Double = js.native
-  var timings: k6Lib.Anon_Duration = js.native
+  var timings: k6Lib.Anon_Blocked = js.native
   var tls_cipher_suite: java.lang.String = js.native
   var tls_version: java.lang.String = js.native
   var url: java.lang.String = js.native
@@ -27,6 +27,6 @@ trait Response extends js.Object {
   def html(selector: java.lang.String): js.Any = js.native
   def json(): js.Any = js.native
   def submitForm(): Response = js.native
-  def submitForm(params: k6Lib.Anon_SubmitSelector): Response = js.native
+  def submitForm(params: k6Lib.Anon_FormSelector): Response = js.native
 }
 

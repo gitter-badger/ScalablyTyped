@@ -10,7 +10,7 @@ trait InputFileSystem extends js.Object {
   def readFile(
     path: java.lang.String,
     callback: js.Function2[
-      /* err */ js.UndefOr[nodeLib.Error | scala.Null], 
+      /* err */ js.UndefOr[(nodeLib.Error with stdLib.Error) | scala.Null], 
       /* contents */ nodeLib.Buffer, 
       scala.Unit
     ]
@@ -19,7 +19,7 @@ trait InputFileSystem extends js.Object {
   def readlink(
     path: java.lang.String,
     callback: js.Function2[
-      /* err */ js.UndefOr[nodeLib.Error | scala.Null], 
+      /* err */ js.UndefOr[(nodeLib.Error with stdLib.Error) | scala.Null], 
       /* linkString */ java.lang.String, 
       scala.Unit
     ]
@@ -27,7 +27,11 @@ trait InputFileSystem extends js.Object {
   def readlinkSync(path: java.lang.String): java.lang.String
   def stat(
     path: java.lang.String,
-    callback: js.Function2[/* err */ js.UndefOr[nodeLib.Error | scala.Null], /* stats */ js.Any, scala.Unit]
+    callback: js.Function2[
+      /* err */ js.UndefOr[(nodeLib.Error with stdLib.Error) | scala.Null], 
+      /* stats */ js.Any, 
+      scala.Unit
+    ]
   ): scala.Unit
   def statSync(path: java.lang.String): js.Any
 }

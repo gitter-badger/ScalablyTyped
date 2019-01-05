@@ -74,7 +74,7 @@ trait AtomEnvironment extends js.Object {
     *
     *  Returns the chosen button index number if the buttons option was an array.
     */
-  def confirm(options: atomLib.Anon_MessageButtons): scala.Double = js.native
+  def confirm(options: atomLib.Anon_MessageDetailedMessage): scala.Double = js.native
   /**
     *  A flexible way to open a dialog akin to an alert dialog. If a callback
     *  is provided, then the confirmation will work asynchronously, which is
@@ -104,14 +104,14 @@ trait AtomEnvironment extends js.Object {
   /** Get the load settings for the current window. */
   def getLoadSettings(): WindowLoadSettings = js.native
   /** Get the position of current window. */
-  def getPosition(): atomLib.Anon_Y = js.native
+  def getPosition(): atomLib.Anon_X = js.native
   /**
     *  Gets the release channel of the Atom application.
     *  Returns the release channel, which can be 'dev', 'beta', or 'stable'.
     */
   def getReleaseChannel(): atomLib.atomLibStrings.dev | atomLib.atomLibStrings.beta | atomLib.atomLibStrings.stable = js.native
   /** Get the size of current window. */
-  def getSize(): atomLib.Anon_Height = js.native
+  def getSize(): atomLib.Anon_Width = js.native
   /** Get the version of the Atom application. */
   def getVersion(): java.lang.String = js.native
   /** Get the time taken to completely load the current window. */

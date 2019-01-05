@@ -57,10 +57,10 @@ trait App extends js.Object {
   def getobject(): js.Promise[_] = js.native
   def getobject(elem: java.lang.String): js.Promise[_] = js.native
   def getobject(elem: java.lang.String, id: java.lang.String): js.Promise[_] = js.native
-  def getobject(elem: java.lang.String, id: java.lang.String, options: qlikLib.Anon_NoSelections): js.Promise[_] = js.native
+  def getobject(elem: java.lang.String, id: java.lang.String, options: qlikLib.Anon_NoInteraction): js.Promise[_] = js.native
   def getobject(elem: stdLib.HTMLElement): js.Promise[_] = js.native
   def getobject(elem: stdLib.HTMLElement, id: java.lang.String): js.Promise[_] = js.native
-  def getobject(elem: stdLib.HTMLElement, id: java.lang.String, options: qlikLib.Anon_NoSelections): js.Promise[_] = js.native
+  def getobject(elem: stdLib.HTMLElement, id: java.lang.String, options: qlikLib.Anon_NoInteraction): js.Promise[_] = js.native
   def getobjectProperties(id: java.lang.String): js.Promise[_] = js.native
   @JSName("getobject")
   def getobject_CurrentSelections(elem: java.lang.String, id: qlikLib.qlikLibStrings.CurrentSelections): js.Promise[_] = js.native
@@ -68,7 +68,7 @@ trait App extends js.Object {
   def getobject_CurrentSelections(
     elem: java.lang.String,
     id: qlikLib.qlikLibStrings.CurrentSelections,
-    options: qlikLib.Anon_NoSelections
+    options: qlikLib.Anon_NoInteraction
   ): js.Promise[_] = js.native
   @JSName("getobject")
   def getobject_CurrentSelections(elem: stdLib.HTMLElement, id: qlikLib.qlikLibStrings.CurrentSelections): js.Promise[_] = js.native
@@ -76,7 +76,7 @@ trait App extends js.Object {
   def getobject_CurrentSelections(
     elem: stdLib.HTMLElement,
     id: qlikLib.qlikLibStrings.CurrentSelections,
-    options: qlikLib.Anon_NoSelections
+    options: qlikLib.Anon_NoInteraction
   ): js.Promise[_] = js.native
   def lockAll(): js.Promise[_] = js.native
   def lockAll(state: java.lang.String): js.Promise[_] = js.native

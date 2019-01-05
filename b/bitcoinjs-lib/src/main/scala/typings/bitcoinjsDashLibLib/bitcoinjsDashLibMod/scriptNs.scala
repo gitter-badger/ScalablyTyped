@@ -9,13 +9,13 @@ import scala.scalajs.js.annotation._
 @js.native
 object scriptNs extends js.Object {
   val multisig: bitcoinjsDashLibLib.Anon_Input = js.native
-  val nullData: bitcoinjsDashLibLib.Anon_Output = js.native
-  val pubKey: bitcoinjsDashLibLib.Anon_InputOutputAnonCheck = js.native
-  val pubKeyHash: bitcoinjsDashLibLib.Anon_InputOutputAnonCheck = js.native
-  val scriptHash: bitcoinjsDashLibLib.Anon_InputOutput = js.native
-  val witnessCommitment: bitcoinjsDashLibLib.Anon_OutputAnonEncode = js.native
-  val witnessPubKeyHash: bitcoinjsDashLibLib.Anon_InputOutputAnonCheck = js.native
-  val witnessScriptHash: bitcoinjsDashLibLib.Anon_InputOutput = js.native
+  val nullData: bitcoinjsDashLibLib.Anon_OutputAnonCheckScript = js.native
+  val pubKey: bitcoinjsDashLibLib.Anon_InputOutput = js.native
+  val pubKeyHash: bitcoinjsDashLibLib.Anon_InputOutput = js.native
+  val scriptHash: bitcoinjsDashLibLib.Anon_InputOutputAnonCheck = js.native
+  val witnessCommitment: bitcoinjsDashLibLib.Anon_Output = js.native
+  val witnessPubKeyHash: bitcoinjsDashLibLib.Anon_InputOutput = js.native
+  val witnessScriptHash: bitcoinjsDashLibLib.Anon_InputOutputAnonCheck = js.native
   def classifyInput(script: js.Array[nodeLib.Buffer | scala.Double]): bitcoinjsDashLibLib.bitcoinjsDashLibLibStrings.pubkeyhash | bitcoinjsDashLibLib.bitcoinjsDashLibLibStrings.scripthash | bitcoinjsDashLibLib.bitcoinjsDashLibLibStrings.multisig | bitcoinjsDashLibLib.bitcoinjsDashLibLibStrings.pubkey | bitcoinjsDashLibLib.bitcoinjsDashLibLibStrings.nonstandard = js.native
   def classifyInput(script: js.Array[nodeLib.Buffer | scala.Double], allowIncomplete: scala.Boolean): bitcoinjsDashLibLib.bitcoinjsDashLibLibStrings.pubkeyhash | bitcoinjsDashLibLib.bitcoinjsDashLibLibStrings.scripthash | bitcoinjsDashLibLib.bitcoinjsDashLibLibStrings.multisig | bitcoinjsDashLibLib.bitcoinjsDashLibLibStrings.pubkey | bitcoinjsDashLibLib.bitcoinjsDashLibLibStrings.nonstandard = js.native
   def classifyInput(script: nodeLib.Buffer): bitcoinjsDashLibLib.bitcoinjsDashLibLibStrings.pubkeyhash | bitcoinjsDashLibLib.bitcoinjsDashLibLibStrings.scripthash | bitcoinjsDashLibLib.bitcoinjsDashLibLibStrings.multisig | bitcoinjsDashLibLib.bitcoinjsDashLibLibStrings.pubkey | bitcoinjsDashLibLib.bitcoinjsDashLibLibStrings.nonstandard = js.native
@@ -45,7 +45,7 @@ object scriptNs extends js.Object {
   @JSName("signature")
   @js.native
   object signatureNs extends js.Object {
-    def decode(buffer: nodeLib.Buffer): bitcoinjsDashLibLib.Anon_HashType = js.native
+    def decode(buffer: nodeLib.Buffer): bitcoinjsDashLibLib.Anon_Signature = js.native
     def encode(signature: nodeLib.Buffer, hashType: scala.Double): nodeLib.Buffer = js.native
   }
   

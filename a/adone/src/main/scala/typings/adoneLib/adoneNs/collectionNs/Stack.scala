@@ -19,7 +19,7 @@ class Stack[T] () extends js.Object {
     * Returns an iterator over the values
     */
   @JSName(org.scalablytyped.runtime.Symbol.iterator)
-  var iterator: js.Function0[nodeLib.IterableIterator[T]] = js.native
+  var iterator: js.Function0[nodeLib.IterableIterator[T] with stdLib.IterableIterator[T]] = js.native
   /**
     * The top element of the stack
     */
@@ -43,6 +43,6 @@ object Stack extends js.Object {
   /**
     * Creates a stack and pushed all the values from the given iterable object
     */
-  def from[T](iterable: nodeLib.Iterable[T]): adoneLib.adoneNs.collectionNs.Stack[T] = js.native
+  def from[T](iterable: nodeLib.Iterable[T] with stdLib.Iterable[T]): adoneLib.adoneNs.collectionNs.Stack[T] = js.native
 }
 

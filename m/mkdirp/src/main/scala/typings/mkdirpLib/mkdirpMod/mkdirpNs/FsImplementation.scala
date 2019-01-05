@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait FsImplementation extends js.Object {
   @JSName("mkdir")
-  var mkdir_Original: mkdirpLib.Anon_PathCallback = js.native
+  var mkdir_Original: mkdirpLib.Anon_Path = js.native
   @JSName("stat")
   var stat_Original: (js.Function2[
     /* path */ nodeLib.fsMod.PathLike, 

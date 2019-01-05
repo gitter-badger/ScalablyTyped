@@ -6,6 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_RETURNDOMFRAGMENT extends js.Object {
-  var RETURN_DOM_FRAGMENT: dompurifyLib.dompurifyLibNumbers.`true`
+  var RETURN_DOM: js.UndefOr[dompurifyLib.dompurifyLibNumbers.`false`] = js.undefined
+  var RETURN_DOM_FRAGMENT: js.UndefOr[dompurifyLib.dompurifyLibNumbers.`false`] = js.undefined
 }
 

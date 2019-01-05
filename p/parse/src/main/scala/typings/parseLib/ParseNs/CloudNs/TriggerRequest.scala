@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait TriggerRequest extends js.Object {
   var headers: js.Any
-  var installationId: js.UndefOr[nodeLib.String] = js.undefined
+  var installationId: js.UndefOr[nodeLib.String with java.lang.String] = js.undefined
   var ip: java.lang.String
   var log: js.Any
   var master: js.UndefOr[scala.Boolean] = js.undefined

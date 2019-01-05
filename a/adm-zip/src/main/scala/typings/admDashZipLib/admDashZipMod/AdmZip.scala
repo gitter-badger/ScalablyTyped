@@ -89,7 +89,7 @@ trait AdmZip extends js.Object {
   def extractAllToAsync(
     targetPath: java.lang.String,
     overwrite: scala.Boolean,
-    callback: js.Function1[/* error */ nodeLib.Error, scala.Unit]
+    callback: js.Function1[/* error */ nodeLib.Error with stdLib.Error, scala.Unit]
   ): scala.Unit = js.native
   /**
     * Extracts the given entry to the given targetPath.

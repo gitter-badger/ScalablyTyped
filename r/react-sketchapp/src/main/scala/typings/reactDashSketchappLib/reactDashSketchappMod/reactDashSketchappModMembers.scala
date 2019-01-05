@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object reactDashSketchappModMembers extends js.Object {
   val Platform: reactDashSketchappLib.Anon_OS = js.native
-  val StyleSheet: reactDashSketchappLib.Anon_Flatten = js.native
-  val TextStyles: reactDashSketchappLib.Anon_Clear = js.native
+  val StyleSheet: reactDashSketchappLib.Anon_HairlineWidth = js.native
+  val TextStyles: reactDashSketchappLib.Anon_Create = js.native
   def injectSymbols(context: SketchContext): scala.Unit = js.native
   def makeSymbol[P](node: js.Function1[/* props */ P, reactLib.reactMod.Global.JSXNs.Element]): reactLib.reactMod.ReactNs.ComponentClass[
     P with reactDashSketchappLib.Anon_Overrides, 

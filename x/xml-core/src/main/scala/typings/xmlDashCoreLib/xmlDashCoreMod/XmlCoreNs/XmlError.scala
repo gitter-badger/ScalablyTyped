@@ -5,7 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait XmlError
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- stdLib.Error because var conflicts: stack. Inlined message, name */ trait XmlError
   extends nodeLib.Error {
   var code: scala.Double
   var message: java.lang.String

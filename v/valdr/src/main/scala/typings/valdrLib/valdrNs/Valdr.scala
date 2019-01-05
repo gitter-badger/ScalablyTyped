@@ -27,7 +27,7 @@ trait Valdr extends js.Object {
     * Sets custom classes on the surrounding elements.
     * @param newClasses the new classes.
     */
-  def setClasses(newClasses: valdrLib.Anon_Invalid): scala.Unit = js.native
+  def setClasses(newClasses: valdrLib.Anon_Valid): scala.Unit = js.native
   /**
     * Validates the value of the given type with the constraints for the given field name.
     * @param typeName the type name.

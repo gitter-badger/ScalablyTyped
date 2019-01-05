@@ -32,23 +32,25 @@ trait SelectProps[T] extends AbstractSelectProps {
   var onFocus: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   var onInputKeyDown: js.UndefOr[
     js.Function1[
-      /* e */ reactLib.reactMod.ReactNs.KeyboardEvent[reactLib.HTMLInputElement], 
+      /* e */ reactLib.reactMod.ReactNs.KeyboardEvent[reactLib.HTMLInputElement with stdLib.HTMLInputElement], 
       scala.Unit
     ]
   ] = js.undefined
   var onMouseEnter: js.UndefOr[
     js.Function1[
-      /* e */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLInputElement, reactLib.NativeMouseEvent], 
+      /* e */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLInputElement with stdLib.HTMLInputElement, reactLib.NativeMouseEvent], 
       _
     ]
   ] = js.undefined
   var onMouseLeave: js.UndefOr[
     js.Function1[
-      /* e */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLInputElement, reactLib.NativeMouseEvent], 
+      /* e */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLInputElement with stdLib.HTMLInputElement, reactLib.NativeMouseEvent], 
       _
     ]
   ] = js.undefined
-  var onPopupScroll: js.UndefOr[reactLib.reactMod.ReactNs.UIEventHandler[reactLib.HTMLDivElement]] = js.undefined
+  var onPopupScroll: js.UndefOr[
+    reactLib.reactMod.ReactNs.UIEventHandler[reactLib.HTMLDivElement with stdLib.HTMLDivElement]
+  ] = js.undefined
   var onSelect: js.UndefOr[
     js.Function2[/* value */ T, /* option */ reactLib.reactMod.ReactNs.ReactElement[_], _]
   ] = js.undefined

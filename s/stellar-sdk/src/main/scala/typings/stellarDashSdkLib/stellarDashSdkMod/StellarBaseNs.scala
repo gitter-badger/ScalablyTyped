@@ -532,7 +532,7 @@ object StellarBaseNs extends js.Object {
       var memo: js.UndefOr[
             stellarDashSdkLib.stellarDashSdkMod.StellarBaseNs.Memo[stellarDashSdkLib.stellarDashSdkMod.StellarBaseNs.MemoNs.AnyType]
           ] = js.undefined
-      var timebounds: js.UndefOr[stellarDashSdkLib.Anon_MaxTime] = js.undefined
+      var timebounds: js.UndefOr[stellarDashSdkLib.Anon_MinTime] = js.undefined
     }
     
   }

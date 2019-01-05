@@ -12,22 +12,22 @@ trait Check extends js.Object {
     * Deregister a local check
     */
   @JSName("deregister")
-  var deregister_Original: consulLib.Anon_IdCallbackOptsTDataStringVoidDeregisterOptions = js.native
+  var deregister_Original: consulLib.Anon_IdCallbackOptsTDataString = js.native
   /**
     * Mark a local test as critical
     */
   @JSName("fail")
-  var fail_Original: consulLib.Anon_IdCallbackOptsTDataStringVoid = js.native
+  var fail_Original: consulLib.Anon_IdCallbackOptsTDataStringVoidFailOptions = js.native
   /**
     * Returns the checks the local agent is managing
     */
   @JSName("list")
-  var list_Original: consulLib.Anon_OptsCallbackTDataListOptionsVoid = js.native
+  var list_Original: consulLib.Anon_OptsCallbackTDataListOptions = js.native
   /**
     * Mark a local test as passing
     */
   @JSName("pass")
-  var pass_Original: consulLib.Anon_IdCallbackOptsTDataStringVoidPassOptions = js.native
+  var pass_Original: consulLib.Anon_IdCallbackOptsTDataStringVoid = js.native
   /**
     * Registers a new local check
     */

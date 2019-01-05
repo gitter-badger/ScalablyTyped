@@ -21,7 +21,7 @@ trait Options extends js.Object {
   /**
     * support extend types
     */
-  var extendTypes: js.UndefOr[koaDashBodyparserLib.Anon_Text] = js.undefined
+  var extendTypes: js.UndefOr[koaDashBodyparserLib.Anon_Json] = js.undefined
   /**
     * limit of the urlencoded body. If the body ends up being larger than this limit
     * a 413 error code is returned. Default is 56kb
@@ -35,7 +35,11 @@ trait Options extends js.Object {
     * support custom error handle
     */
   var onerror: js.UndefOr[
-    js.Function2[/* err */ nodeLib.Error, /* ctx */ koaLib.koaMod.ApplicationNs.Context, scala.Unit]
+    js.Function2[
+      /* err */ nodeLib.Error with stdLib.Error, 
+      /* ctx */ koaLib.koaMod.ApplicationNs.Context, 
+      scala.Unit
+    ]
   ] = js.undefined
   /**
     * when set to true, JSON parser will only accept arrays and objects. Default is true

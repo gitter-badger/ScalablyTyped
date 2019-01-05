@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait IRatingProps
-  extends reactLib.reactMod.ReactNs.AllHTMLAttributes[reactLib.HTMLElement] {
+  extends reactLib.reactMod.ReactNs.AllHTMLAttributes[reactLib.HTMLElement with stdLib.HTMLElement] {
   /**
     * Allow the rating value to be set to 0 instead of a minimum of 1.
     */
@@ -52,7 +52,7 @@ trait IRatingProps
   @JSName("onChange")
   var onChange_IRatingProps: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.FocusEvent[reactLib.HTMLElement], 
+      /* event */ reactLib.reactMod.ReactNs.FocusEvent[reactLib.HTMLElement with stdLib.HTMLElement], 
       /* rating */ js.UndefOr[scala.Double], 
       scala.Unit
     ]

@@ -14,7 +14,7 @@ package object libTableInterfaceMod {
     /* record */ T, 
     /* selected */ scala.Boolean, 
     /* selectedRows */ js.Array[js.Object], 
-    /* nativeEvent */ reactLib.Event, 
+    /* nativeEvent */ reactLib.Event with stdLib.Event, 
     js.Any
   ]
   type SortOrder = antdLib.antdLibStrings.descend | antdLib.antdLibStrings.ascend

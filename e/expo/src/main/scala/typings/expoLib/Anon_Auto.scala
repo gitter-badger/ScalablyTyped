@@ -7,8 +7,10 @@ import scala.scalajs.js.annotation._
 
 trait Anon_Auto extends js.Object {
   var auto: java.lang.String
-  var off: java.lang.String
-  var on: java.lang.String
-  var torch: java.lang.String
+  var cloudy: java.lang.String
+  var fluorescent: java.lang.String
+  var incandescent: java.lang.String
+  var shadow: java.lang.String
+  var sunny: java.lang.String
 }
 

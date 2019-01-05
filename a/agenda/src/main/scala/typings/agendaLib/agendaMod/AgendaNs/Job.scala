@@ -30,12 +30,12 @@ trait Job[T /* <: JobAttributesData */] extends js.Object {
     * Enables the job.
     */
   def enable(): this.type = js.native
+  def fail(reason: nodeLib.Error with stdLib.Error): this.type = js.native
   /**
     * Sets job.attrs.failedAt to now, and sets job.attrs.failReason to reason.
     * @param reason A message or Error object that indicates why the job failed.
     */
   def fail(reason: java.lang.String): this.type = js.native
-  def fail(reason: nodeLib.Error): this.type = js.native
   /**
     * Returns true if the job is running; otherwise, returns false.
     */

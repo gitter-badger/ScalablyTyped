@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class HermiteSpline protected ()
   extends cesiumLib.cesiumMod.CesiumNs.HermiteSpline {
-  def this(options: cesiumLib.Anon_InTangents) = this()
+  def this(options: cesiumLib.Anon_TimesPoints) = this()
 }
 
 @JSImport("cesium", "HermiteSpline")

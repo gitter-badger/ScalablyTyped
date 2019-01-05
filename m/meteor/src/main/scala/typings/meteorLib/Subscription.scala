@@ -10,7 +10,7 @@ trait Subscription extends js.Object {
   var userId: java.lang.String
   def added(collection: java.lang.String, id: java.lang.String, fields: js.Object): scala.Unit
   def changed(collection: java.lang.String, id: java.lang.String, fields: js.Object): scala.Unit
-  def error(error: nodeLib.Error): scala.Unit
+  def error(error: nodeLib.Error with stdLib.Error): scala.Unit
   def onStop(func: js.Function): scala.Unit
   def ready(): scala.Unit
   def removed(collection: java.lang.String, id: java.lang.String): scala.Unit

@@ -44,7 +44,7 @@ trait UploaderOption extends js.Object {
   var onChunkUploaded: js.UndefOr[
     js.Function2[/* file */ FileObj, /* responseObject */ ResponseObject, scala.Unit]
   ] = js.undefined
-  var onError: js.UndefOr[js.Function1[/* error */ Anon_File, scala.Unit]] = js.undefined
+  var onError: js.UndefOr[js.Function1[/* error */ Anon_Error, scala.Unit]] = js.undefined
   var onFileUploaded: js.UndefOr[
     js.Function2[/* file */ FileObj, /* responseObject */ ResponseObject, scala.Unit]
   ] = js.undefined
@@ -57,20 +57,20 @@ trait UploaderOption extends js.Object {
   var onUploadFile: js.UndefOr[js.Function1[/* file */ FileObj, scala.Unit]] = js.undefined
   var onUploadProgress: js.UndefOr[js.Function1[/* file */ FileObj, scala.Unit]] = js.undefined
   var previewImageIcon: js.UndefOr[scala.Boolean] = js.undefined
-  var previewImageSize: js.UndefOr[Anon_Height] = js.undefined
+  var previewImageSize: js.UndefOr[Anon_Width] = js.undefined
   var qiniu: js.UndefOr[js.Object] = js.undefined
   var removeUploaded: js.UndefOr[scala.Boolean] = js.undefined
   var rename: js.UndefOr[scala.Boolean] = js.undefined
   var renameActionOnDone: js.UndefOr[scala.Boolean] = js.undefined
   var renameByClick: js.UndefOr[scala.Boolean] = js.undefined
   var renameExtension: js.UndefOr[scala.Boolean] = js.undefined
-  var resize: js.UndefOr[Anon_Preserveheaders] = js.undefined
+  var resize: js.UndefOr[Anon_WidthHeight] = js.undefined
   var responseHandler: js.UndefOr[scala.Boolean | CallBack] = js.undefined
   var runtimes: js.UndefOr[java.lang.String] = js.undefined
   var sendFileId: js.UndefOr[scala.Boolean] = js.undefined
   var sendFileName: js.UndefOr[scala.Boolean] = js.undefined
   var silverlight_xap_url: js.UndefOr[java.lang.String] = js.undefined
-  var staticFiles: js.UndefOr[js.Array[Anon_Name]] = js.undefined
+  var staticFiles: js.UndefOr[js.Array[Anon_Id]] = js.undefined
   var statusCreator: js.UndefOr[
     js.Function3[/* total */ UploadProgress, /* state */ STATUS, /* uploader */ Uploader, scala.Unit]
   ] = js.undefined

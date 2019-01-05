@@ -184,7 +184,7 @@ abstract class AbstractControl () extends js.Object {
     * When false, no events are emitted.
     */
   def disable(): scala.Unit = js.native
-  def disable(opts: atAngularFormsLib.Anon_OnlySelf): scala.Unit = js.native
+  def disable(opts: atAngularFormsLib.Anon_OnlySelfEmitEvent): scala.Unit = js.native
   /**
     * Enables the control. This means the control is included in validation checks and
     * the aggregate value of its parent. Its status recalculates based on its value and
@@ -202,7 +202,7 @@ abstract class AbstractControl () extends js.Object {
     * When false, no events are emitted.
     */
   def enable(): scala.Unit = js.native
-  def enable(opts: atAngularFormsLib.Anon_OnlySelf): scala.Unit = js.native
+  def enable(opts: atAngularFormsLib.Anon_OnlySelfEmitEvent): scala.Unit = js.native
   def get(path: java.lang.String): AbstractControl | scala.Null = js.native
   /**
     * Retrieves a child control given the control's name or path.
@@ -254,7 +254,7 @@ abstract class AbstractControl () extends js.Object {
     * marks all direct ancestors. Default is false.
     */
   def markAsDirty(): scala.Unit = js.native
-  def markAsDirty(opts: atAngularFormsLib.Anon_OnlySelfBoolean): scala.Unit = js.native
+  def markAsDirty(opts: atAngularFormsLib.Anon_OnlySelf): scala.Unit = js.native
   /**
     * Marks the control as `pending`.
     *
@@ -270,7 +270,7 @@ abstract class AbstractControl () extends js.Object {
     *
     */
   def markAsPending(): scala.Unit = js.native
-  def markAsPending(opts: atAngularFormsLib.Anon_OnlySelf): scala.Unit = js.native
+  def markAsPending(opts: atAngularFormsLib.Anon_OnlySelfEmitEvent): scala.Unit = js.native
   /**
     * Marks the control as `pristine`.
     *
@@ -284,7 +284,7 @@ abstract class AbstractControl () extends js.Object {
     * marks all direct ancestors. Default is false..
     */
   def markAsPristine(): scala.Unit = js.native
-  def markAsPristine(opts: atAngularFormsLib.Anon_OnlySelfBoolean): scala.Unit = js.native
+  def markAsPristine(opts: atAngularFormsLib.Anon_OnlySelf): scala.Unit = js.native
   /**
     * Marks the control as `touched`. A control is touched by focus and
     * blur events that do not change the value; compare `markAsDirty`;
@@ -295,7 +295,7 @@ abstract class AbstractControl () extends js.Object {
     * marks all direct ancestors. Default is false.
     */
   def markAsTouched(): scala.Unit = js.native
-  def markAsTouched(opts: atAngularFormsLib.Anon_OnlySelfBoolean): scala.Unit = js.native
+  def markAsTouched(opts: atAngularFormsLib.Anon_OnlySelf): scala.Unit = js.native
   /**
     * Marks the control as `untouched`.
     *
@@ -308,7 +308,7 @@ abstract class AbstractControl () extends js.Object {
     * marks all direct ancestors. Default is false.
     */
   def markAsUntouched(): scala.Unit = js.native
-  def markAsUntouched(opts: atAngularFormsLib.Anon_OnlySelfBoolean): scala.Unit = js.native
+  def markAsUntouched(opts: atAngularFormsLib.Anon_OnlySelf): scala.Unit = js.native
   /**
     * Patches the value of the control. Abstract method (implemented in sub-classes).
     */
@@ -388,6 +388,6 @@ abstract class AbstractControl () extends js.Object {
     * When false, no events are emitted.
     */
   def updateValueAndValidity(): scala.Unit = js.native
-  def updateValueAndValidity(opts: atAngularFormsLib.Anon_OnlySelf): scala.Unit = js.native
+  def updateValueAndValidity(opts: atAngularFormsLib.Anon_OnlySelfEmitEvent): scala.Unit = js.native
 }
 

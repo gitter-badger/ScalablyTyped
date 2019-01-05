@@ -24,7 +24,11 @@ trait SMTPPool
   /** Placeholder function for creating proxy sockets. This method immediatelly returns without a socket */
   def getSocket(
     options: nodemailerLib.libSmtpDashPoolMod.SMTPPoolNs.Options,
-    callback: js.Function2[/* err */ nodeLib.Error | scala.Null, /* socketOptions */ js.Any, scala.Unit]
+    callback: js.Function2[
+      /* err */ (nodeLib.Error with stdLib.Error) | scala.Null, 
+      /* socketOptions */ js.Any, 
+      scala.Unit
+    ]
   ): scala.Unit = js.native
   /** Returns true if there are free slots in the queue */
   def isIdle(): scala.Boolean = js.native
@@ -44,7 +48,7 @@ trait SMTPPool
   @JSName("verify")
   def verify_MSMTPPool(
     callback: js.Function2[
-      /* err */ nodeLib.Error | scala.Null, 
+      /* err */ (nodeLib.Error with stdLib.Error) | scala.Null, 
       nodemailerLib.nodemailerLibNumbers.`true`, 
       scala.Unit
     ]

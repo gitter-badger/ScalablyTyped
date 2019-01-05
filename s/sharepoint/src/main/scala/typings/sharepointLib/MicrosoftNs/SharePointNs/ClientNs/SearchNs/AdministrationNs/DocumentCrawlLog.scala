@@ -18,8 +18,8 @@ class DocumentCrawlLog protected ()
     contentSourceID: scala.Double,
     errorLevel: scala.Double,
     errorID: scala.Double,
-    startDateTime: microsoftDashAjaxLib.Date,
-    endDateTime: microsoftDashAjaxLib.Date
+    startDateTime: microsoftDashAjaxLib.Date with stdLib.Date,
+    endDateTime: microsoftDashAjaxLib.Date with stdLib.Date
   ): sharepointLib.SPNs.JsonObjectResult = js.native
 }
 

@@ -109,7 +109,7 @@ trait Element extends js.Object {
   ): Element = js.native
   def getAlign(el: Element, way: java.lang.String): java.lang.String = js.native
   def getBBox(): BBox = js.native
-  def getPointAtLength(length: scala.Double): snapsvgLib.Anon_Alpha = js.native
+  def getPointAtLength(length: scala.Double): snapsvgLib.Anon_X = js.native
   def getSubpath(from: scala.Double, to: scala.Double): java.lang.String = js.native
   def getTotalLength(): scala.Double = js.native
   def hasClass(value: java.lang.String): scala.Boolean = js.native

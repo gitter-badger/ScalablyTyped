@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 trait GetCenterLocationOptions
   extends BaseOptions[js.Any, js.Any] {
   @JSName("success")
-  def success_MGetCenterLocationOptions(res: baiduDashAppLib.Anon_Latitude): scala.Unit
+  def success_MGetCenterLocationOptions(res: baiduDashAppLib.Anon_Longitude): scala.Unit
 }
 

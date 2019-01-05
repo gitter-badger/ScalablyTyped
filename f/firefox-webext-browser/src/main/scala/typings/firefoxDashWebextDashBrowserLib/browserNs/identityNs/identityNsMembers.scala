@@ -29,7 +29,7 @@ object identityNsMembers extends js.Object {
     * @deprecated Unsupported on Firefox at this time.
     */
   def getAuthToken(): js.Promise[js.UndefOr[js.Array[AccountInfo]]] = js.native
-  def getAuthToken(details: firefoxDashWebextDashBrowserLib.Anon_Account): js.Promise[js.UndefOr[js.Array[AccountInfo]]] = js.native
+  def getAuthToken(details: firefoxDashWebextDashBrowserLib.Anon_Interactive): js.Promise[js.UndefOr[js.Array[AccountInfo]]] = js.native
   /**
     * Retrieves email address and obfuscated gaia id of the user signed into a profile.
     * @deprecated Unsupported on Firefox at this time.

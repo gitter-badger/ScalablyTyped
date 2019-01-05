@@ -68,6 +68,6 @@ trait Config
     * Sets the TypeScript transpiler options.
     */
   // TODO: Import Typescript.CompilerOptions
-  var typescriptOptions: js.UndefOr[systemjsLib.Anon_Key] = js.undefined
+  var typescriptOptions: js.UndefOr[systemjsLib.Anon_Tsconfig] = js.undefined
 }
 

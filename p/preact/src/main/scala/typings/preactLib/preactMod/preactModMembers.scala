@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("preact", JSImport.Namespace)
 @js.native
 object preactModMembers extends js.Object {
-  var options: preactLib.Anon_DebounceRendering = js.native
+  var options: preactLib.Anon_SyncComponentUpdates = js.native
   def cloneElement(
     element: preactLib.preactMod.Global.JSXNs.Element,
     props: js.Any,

@@ -6,6 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_Id extends js.Object {
-  var id: java.lang.String
+  var data: js.Array[chromeDashAppsLib.chromeNs.integer]
+  var id: chromeDashAppsLib.chromeNs.integer
 }
 

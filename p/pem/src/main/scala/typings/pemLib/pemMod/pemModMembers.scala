@@ -32,7 +32,7 @@ object pemModMembers extends js.Object {
   def createPrivateKey(keyBitsize: scala.Double, options: PrivateKeyCreationOptions, callback: Callback[pemLib.Anon_Key]): scala.Unit = js.native
   def createPrivateKey(optionsOrKeyBitsize: PrivateKeyCreationOptions, callback: Callback[pemLib.Anon_Key]): scala.Unit = js.native
   def createPrivateKey(optionsOrKeyBitsize: scala.Double, callback: Callback[pemLib.Anon_Key]): scala.Unit = js.native
-  def getDhparamInfo(dh: java.lang.String, callback: Callback[pemLib.Anon_Prime]): scala.Unit = js.native
+  def getDhparamInfo(dh: java.lang.String, callback: Callback[pemLib.Anon_Size]): scala.Unit = js.native
   def getFingerprint(callback: Callback[pemLib.Anon_Fingerprint]): scala.Unit = js.native
   def getFingerprint(certificate: java.lang.String, callback: Callback[pemLib.Anon_Fingerprint]): scala.Unit = js.native
   def getFingerprint(certificate: java.lang.String, hash: HashFunction, callback: Callback[pemLib.Anon_Fingerprint]): scala.Unit = js.native

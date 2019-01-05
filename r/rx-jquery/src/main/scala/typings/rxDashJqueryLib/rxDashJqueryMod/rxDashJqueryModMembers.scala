@@ -15,7 +15,7 @@ object rxDashJqueryModMembers extends js.Object {
   val MockObserver: rxDashLiteDashTestingLib.RxNs.MockObserverStatic = js.native
   val Observable: rxDashLiteLib.RxNs.ObservableStatic = js.native
   val Observer: rxDashLiteLib.RxNs.ObserverStatic = js.native
-  val ReactiveTest: rxDashLiteDashTestingLib.Anon_Disposed = js.native
+  val ReactiveTest: rxDashLiteDashTestingLib.Anon_Created = js.native
   val ReplaySubject: rxDashCoreDashBindingLib.RxNs.ReplaySubjectStatic = js.native
   val Scheduler: rxDashLiteLib.RxNs.SchedulerStatic = js.native
   val Subject: rxDashCoreDashBindingLib.RxNs.SubjectStatic = js.native

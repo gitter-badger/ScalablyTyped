@@ -28,7 +28,7 @@ import scala.scalajs.js.annotation._
   *
   * const file = myBucket.file('my-file');
   */
-/* RemoveDifficultInheritance: 
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
 - Dropped any
 - Dropped any */ @JSImport("@google-cloud/storage/build/src/file", "File")
 @js.native

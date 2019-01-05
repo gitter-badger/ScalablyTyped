@@ -6,7 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ICheckboxProps
-  extends reactLib.reactMod.ReactNs.ButtonHTMLAttributes[reactLib.HTMLElement | reactLib.HTMLInputElement] {
+  extends reactLib.reactMod.ReactNs.ButtonHTMLAttributes[
+      (reactLib.HTMLElement with stdLib.HTMLElement) | (reactLib.HTMLInputElement with stdLib.HTMLInputElement)
+    ] {
   /**
     * ID for element that provides extended information for the checkbox.
     */
@@ -55,7 +57,9 @@ trait ICheckboxProps
     * precedence over the later.
     */
   var inputProps: js.UndefOr[
-    reactLib.reactMod.ReactNs.ButtonHTMLAttributes[reactLib.HTMLElement | reactLib.HTMLButtonElement]
+    reactLib.reactMod.ReactNs.ButtonHTMLAttributes[
+      (reactLib.HTMLElement with stdLib.HTMLElement) | (reactLib.HTMLButtonElement with stdLib.HTMLButtonElement)
+    ]
   ] = js.undefined
   /**
     * Optional keytip for this checkbox
@@ -74,7 +78,9 @@ trait ICheckboxProps
   var onChange_ICheckboxProps: js.UndefOr[
     js.Function2[
       /* ev */ js.UndefOr[
-        reactLib.reactMod.ReactNs.FormEvent[reactLib.HTMLElement | reactLib.HTMLInputElement]
+        reactLib.reactMod.ReactNs.FormEvent[
+          (reactLib.HTMLElement with stdLib.HTMLElement) | (reactLib.HTMLInputElement with stdLib.HTMLInputElement)
+        ]
       ], 
       /* checked */ js.UndefOr[scala.Boolean], 
       scala.Unit

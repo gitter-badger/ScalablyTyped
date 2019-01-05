@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("electron-util", JSImport.Namespace)
 @js.native
 object electronDashUtilModMembers extends js.Object {
-  val app: electronDashUtilLib.Anon_BrowserWindow = js.native
+  val app: electronDashUtilLib.Anon_App = js.native
   val appReady: js.Promise[scala.Unit] = js.native
   val chromeVersion: java.lang.String = js.native
   val electronVersion: java.lang.String = js.native

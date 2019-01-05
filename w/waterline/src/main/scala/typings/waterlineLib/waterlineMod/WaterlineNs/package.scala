@@ -13,13 +13,13 @@ package object WaterlineNs {
   type AttributeValidation[T] = T | AttributeValidationSyncFn[T] | AttributeValidationAsyncFn[T]
   type AttributeValidationAsyncFn[T] = js.Function1[/* cb */ js.Function1[/* value */ T, js.Any], scala.Unit]
   type AttributeValidationSyncFn[T] = js.Function0[T]
-  type BaseAttribute[T] = AttributeValidations with waterlineLib.Anon_Size[T]
+  type BaseAttribute[T] = AttributeValidations with waterlineLib.Anon_Type[T]
   type BinaryAttribute = BaseAttribute[_] with waterlineLib.Anon_TypeBinary
   type BooleanAttribute = BaseAttribute[scala.Boolean] with waterlineLib.Anon_TypeBoolean
   type Callback[T] = js.Function2[/* err */ js.Any, /* result */ T, js.Any]
   type Collection = CollectionDefinition
   type CollectionClass = js.Function0[Collection]
-  type CollectionDefinition = LifecycleCallbacks with waterlineLib.Anon_AutoPK
+  type CollectionDefinition = LifecycleCallbacks with waterlineLib.Anon_Attributes
   type DateAttribute = BaseAttribute[stdLib.Date] with waterlineLib.Anon_TypeDate
   type DatetimeAttribute = BaseAttribute[stdLib.Date] with waterlineLib.Anon_TypeDatetime
   type DefaultsToFn[T] = js.Function0[T]
@@ -28,12 +28,12 @@ package object WaterlineNs {
   type FunctionAttribute = js.Function0[js.Any]
   type IntegerAttribute = BaseAttribute[scala.Double] with waterlineLib.Anon_TypeInteger
   type JsonAttribute = BaseAttribute[_] with waterlineLib.Anon_TypeJson
-  type ManyToManyAttribute = BaseAttribute[_] with waterlineLib.Anon_Dominant
+  type ManyToManyAttribute = BaseAttribute[_] with waterlineLib.Anon_CollectionVia
   type OneToManyAttribute = BaseAttribute[_] with waterlineLib.Anon_Collection
   type OneToOneAttribute = BaseAttribute[_] with waterlineLib.Anon_Model
-  type QueryBuilder[T] = WaterlinePromise[T] with waterlineLib.Anon_Min
+  type QueryBuilder[T] = WaterlinePromise[T] with waterlineLib.Anon_Where
   type StringAttribute = BaseAttribute[java.lang.String] with waterlineLib.Anon_TypeString
-  type TextAttribute = BaseAttribute[java.lang.String] with waterlineLib.Anon_Type
+  type TextAttribute = BaseAttribute[java.lang.String] with waterlineLib.Anon_TypeText
   type TimeAttribute = BaseAttribute[stdLib.Date] with waterlineLib.Anon_TypeTime
   type WaterlinePromise[T] = bluebirdLib.bluebirdMod.namespaced[T] with waterlineLib.Anon_Exec[T]
 }

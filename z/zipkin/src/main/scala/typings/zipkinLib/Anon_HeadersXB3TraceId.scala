@@ -6,6 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_HeadersXB3TraceId[H] extends js.Object {
-  var headers: H with (/* import warning: ImportType.apply Failed type conversion: {indexed, indexed, indexed, indexed, indexed} */ js.Any)
+  var headers: H with (/* import warning: ImportType.apply Failed type conversion: {[X-B3-TraceId] : string, [X-B3-SpanId] : string, [X-B3-ParentSpanId]? : string, [X-B3-Sampled]? : '1' | '0', [X-B3-Flags]? : '1' | '0'} */ js.Any)
 }
 

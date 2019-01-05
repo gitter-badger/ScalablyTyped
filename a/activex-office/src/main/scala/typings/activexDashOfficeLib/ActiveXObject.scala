@@ -16,7 +16,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOfficeLib.OfficeNs.CommandBarButton, 
-      /* parameter */ Anon_CancelDefault, 
+      /* parameter */ Anon_Ctrl, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -32,7 +32,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOfficeLib.OfficeNs.CommandBarButton, 
-      /* parameter */ Anon_Rgdispid, 
+      /* parameter */ Anon_Riid, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -56,7 +56,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOfficeLib.OfficeNs.CommandBarButton, 
-      /* parameter */ Anon_Lcid, 
+      /* parameter */ Anon_Itinfo, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -69,7 +69,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOfficeLib.OfficeNs.CommandBarButton, 
-      /* parameter */ Anon_PpvObj, 
+      /* parameter */ Anon_RiidPpvObj, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -79,7 +79,7 @@ trait ActiveXObject extends js.Object {
     argNames: js.Array[activexDashOfficeLib.activexDashOfficeLibStrings.Ctrl],
     handler: js.ThisFunction1[
       /* this */ activexDashOfficeLib.OfficeNs.CommandBarComboBox, 
-      /* parameter */ Anon_Ctrl, 
+      /* parameter */ Anon_CtrlCommandBarComboBox, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -95,7 +95,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOfficeLib.OfficeNs.CommandBarComboBox, 
-      /* parameter */ Anon_Rgdispid, 
+      /* parameter */ Anon_Riid, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -119,7 +119,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOfficeLib.OfficeNs.CommandBarComboBox, 
-      /* parameter */ Anon_Lcid, 
+      /* parameter */ Anon_Itinfo, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -132,7 +132,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOfficeLib.OfficeNs.CommandBarComboBox, 
-      /* parameter */ Anon_PpvObj, 
+      /* parameter */ Anon_RiidPpvObj, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -148,7 +148,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOfficeLib.OfficeNs.CommandBars, 
-      /* parameter */ Anon_Rgdispid, 
+      /* parameter */ Anon_Riid, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -172,7 +172,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOfficeLib.OfficeNs.CommandBars, 
-      /* parameter */ Anon_Lcid, 
+      /* parameter */ Anon_Itinfo, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -185,7 +185,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOfficeLib.OfficeNs.CommandBars, 
-      /* parameter */ Anon_PpvObj, 
+      /* parameter */ Anon_RiidPpvObj, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -211,7 +211,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOfficeLib.OfficeNs.CustomTaskPane, 
-      /* parameter */ Anon_Rgdispid, 
+      /* parameter */ Anon_Riid, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -235,7 +235,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOfficeLib.OfficeNs.CustomTaskPane, 
-      /* parameter */ Anon_Lcid, 
+      /* parameter */ Anon_Itinfo, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -248,7 +248,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOfficeLib.OfficeNs.CustomTaskPane, 
-      /* parameter */ Anon_PpvObj, 
+      /* parameter */ Anon_RiidPpvObj, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -274,7 +274,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOfficeLib.OfficeNs.CustomXMLPart, 
-      /* parameter */ Anon_Rgdispid, 
+      /* parameter */ Anon_Riid, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -298,7 +298,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOfficeLib.OfficeNs.CustomXMLPart, 
-      /* parameter */ Anon_Lcid, 
+      /* parameter */ Anon_Itinfo, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -313,7 +313,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOfficeLib.OfficeNs.CustomXMLPart, 
-      /* parameter */ Anon_OldNextSibling, 
+      /* parameter */ Anon_OldNode, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -326,7 +326,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOfficeLib.OfficeNs.CustomXMLPart, 
-      /* parameter */ Anon_InUndoRedo, 
+      /* parameter */ Anon_NewNode, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -340,7 +340,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOfficeLib.OfficeNs.CustomXMLPart, 
-      /* parameter */ Anon_OldNode, 
+      /* parameter */ Anon_OldNodeNewNode, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -353,7 +353,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOfficeLib.OfficeNs.CustomXMLPart, 
-      /* parameter */ Anon_PpvObj, 
+      /* parameter */ Anon_RiidPpvObj, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -369,7 +369,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOfficeLib.OfficeNs.CustomXMLParts, 
-      /* parameter */ Anon_Rgdispid, 
+      /* parameter */ Anon_Riid, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -393,7 +393,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOfficeLib.OfficeNs.CustomXMLParts, 
-      /* parameter */ Anon_Lcid, 
+      /* parameter */ Anon_Itinfo, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -436,7 +436,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOfficeLib.OfficeNs.CustomXMLParts, 
-      /* parameter */ Anon_PpvObj, 
+      /* parameter */ Anon_RiidPpvObj, 
       scala.Unit
     ]
   ): scala.Unit = js.native

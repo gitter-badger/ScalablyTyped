@@ -10,7 +10,7 @@ trait PortalWithStateProps
   var closeOnEsc: js.UndefOr[scala.Boolean] = js.undefined
   var closeOnOutsideClick: js.UndefOr[scala.Boolean] = js.undefined
   var defaultOpen: js.UndefOr[scala.Boolean] = js.undefined
-  var node: js.UndefOr[reactLib.Element | scala.Null] = js.undefined
+  var node: js.UndefOr[(reactLib.Element with stdLib.Element) | scala.Null] = js.undefined
   var onClose: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   var onOpen: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   var openByClickOn: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined

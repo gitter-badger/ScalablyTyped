@@ -6,6 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait TimeoutError extends StdError {
-  var name: gotLib.gotLibStrings.TimeoutError
+  @JSName("name")
+  var name_TimeoutError: gotLib.gotLibStrings.TimeoutError
 }
 

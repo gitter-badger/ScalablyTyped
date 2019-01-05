@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation._
   * @param size
   */
 class FastLRU[K, V] () extends js.Object {
-  def this(options: adoneLib.Anon_Dispose[K, V]) = this()
+  def this(options: adoneLib.Anon_MaxSize[K, V]) = this()
   /**
     * The actual size of the cache
     */
@@ -30,7 +30,7 @@ class FastLRU[K, V] () extends js.Object {
   /**
     * Returns the entries iterator
     */
-  def entries(): nodeLib.IterableIterator[js.Tuple2[K, V]] = js.native
+  def entries(): (nodeLib.IterableIterator[js.Tuple2[K, V]]) with (stdLib.IterableIterator[js.Tuple2[K, V]]) = js.native
   /**
     * Gets the value by the given key
     */
@@ -42,7 +42,7 @@ class FastLRU[K, V] () extends js.Object {
   /**
     * Returns the keys iterator
     */
-  def keys(): nodeLib.IterableIterator[K] = js.native
+  def keys(): nodeLib.IterableIterator[K] with stdLib.IterableIterator[K] = js.native
   /**
     * Sets a new value for the given key
     */
@@ -50,6 +50,6 @@ class FastLRU[K, V] () extends js.Object {
   /**
     * Returns the values iterator
     */
-  def values(): nodeLib.IterableIterator[V] = js.native
+  def values(): nodeLib.IterableIterator[V] with stdLib.IterableIterator[V] = js.native
 }
 

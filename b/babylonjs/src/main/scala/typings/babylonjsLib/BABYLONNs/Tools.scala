@@ -724,7 +724,7 @@ object Tools extends js.Object {
     * Function used to register events at window level
     * @param events defines the events to register
     */
-  def RegisterTopRootEvents(events: js.Array[babylonjsLib.Anon_Handler]): scala.Unit = js.native
+  def RegisterTopRootEvents(events: js.Array[babylonjsLib.Anon_NameHandler]): scala.Unit = js.native
   /**
     * Ask the browser to promote the current element to fullscreen rendering mode
     * @param element defines the DOM element to promote
@@ -789,7 +789,7 @@ object Tools extends js.Object {
     * Function used to unregister events from window level
     * @param events defines the events to unregister
     */
-  def UnregisterTopRootEvents(events: js.Array[babylonjsLib.Anon_Handler]): scala.Unit = js.native
+  def UnregisterTopRootEvents(events: js.Array[babylonjsLib.Anon_NameHandler]): scala.Unit = js.native
   /**
     * Validates if xhr data is correct
     * @param xhr defines the request to validate

@@ -49,7 +49,7 @@ trait PromiseSftp extends js.Object {
     */
   def createReadStream(path: java.lang.String): bluebirdLib.bluebirdMod.namespaced[nodeLib.NodeJSNs.ReadableStream] = js.native
   def createReadStream(path: java.lang.String, options: java.lang.String): bluebirdLib.bluebirdMod.namespaced[nodeLib.NodeJSNs.ReadableStream] = js.native
-  def createReadStream(path: java.lang.String, options: promiseDashSftpLib.Anon_AutoClose): bluebirdLib.bluebirdMod.namespaced[nodeLib.NodeJSNs.ReadableStream] = js.native
+  def createReadStream(path: java.lang.String, options: promiseDashSftpLib.Anon_Flags): bluebirdLib.bluebirdMod.namespaced[nodeLib.NodeJSNs.ReadableStream] = js.native
   /**
     * Creates a write stream to a file on the server.
     * @param path - The path of the file to create a write stream to.
@@ -57,7 +57,7 @@ trait PromiseSftp extends js.Object {
     */
   def createWriteStream(path: java.lang.String): bluebirdLib.bluebirdMod.namespaced[nodeLib.NodeJSNs.WritableStream] = js.native
   def createWriteStream(path: java.lang.String, options: java.lang.String): bluebirdLib.bluebirdMod.namespaced[nodeLib.NodeJSNs.WritableStream] = js.native
-  def createWriteStream(path: java.lang.String, options: promiseDashSftpLib.Anon_AutoClose): bluebirdLib.bluebirdMod.namespaced[nodeLib.NodeJSNs.WritableStream] = js.native
+  def createWriteStream(path: java.lang.String, options: promiseDashSftpLib.Anon_Flags): bluebirdLib.bluebirdMod.namespaced[nodeLib.NodeJSNs.WritableStream] = js.native
   /**
     * Closes the connection to the server immediately.
     * @returns whether the connection was connected prior to the call to **destroy()**.
@@ -257,13 +257,13 @@ trait PromiseSftp extends js.Object {
     offset: scala.Double,
     length: scala.Double,
     position: scala.Double
-  ): bluebirdLib.bluebirdMod.namespaced[promiseDashSftpLib.Anon_Position] = js.native
-  def readdir(location: java.lang.String): bluebirdLib.bluebirdMod.namespaced[promiseDashSftpLib.Anon_Attrs] = js.native
+  ): bluebirdLib.bluebirdMod.namespaced[promiseDashSftpLib.Anon_BytesRead] = js.native
+  def readdir(location: java.lang.String): bluebirdLib.bluebirdMod.namespaced[promiseDashSftpLib.Anon_Filename] = js.native
   /**
     * Read a directory on the server.
     * @param location - The path of the directory to read or a handle returned from `#opendir()`.
     */
-  def readdir(location: nodeLib.Buffer): bluebirdLib.bluebirdMod.namespaced[promiseDashSftpLib.Anon_Attrs] = js.native
+  def readdir(location: nodeLib.Buffer): bluebirdLib.bluebirdMod.namespaced[promiseDashSftpLib.Anon_Filename] = js.native
   /**
     * Read the target of a symlink on the server.
     * @param path - The path of the symlink to read the target of.

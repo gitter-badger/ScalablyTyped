@@ -136,8 +136,8 @@ class GraphicsDevice protected () extends js.Object {
     *     indexed: false
     * )};
     */
-  def draw(primitive: playcanvasLib.Anon_Count): scala.Unit = js.native
-  def draw(primitive: playcanvasLib.Anon_Count, numInstances: scala.Double): scala.Unit = js.native
+  def draw(primitive: playcanvasLib.Anon_Type): scala.Unit = js.native
+  def draw(primitive: playcanvasLib.Anon_Type, numInstances: scala.Double): scala.Unit = js.native
   /**
     * @function
     * @name pc.GraphicsDevice#fire

@@ -20,17 +20,17 @@ class Scrollbar protected ()
     * Container bounding rect
     */
   @JSName("bounding")
-  var bounding_Scrollbar: smoothDashScrollbarLib.Anon_Bottom = js.native
+  var bounding_Scrollbar: smoothDashScrollbarLib.Anon_Top = js.native
   /**
     * Max-allowed scrolling offsets
     */
   @JSName("limit")
-  var limit_Scrollbar: smoothDashScrollbarLib.Anon_Y = js.native
+  var limit_Scrollbar: smoothDashScrollbarLib.Anon_X = js.native
   /**
     * Current scrolling offsets
     */
   @JSName("offset")
-  var offset_Scrollbar: smoothDashScrollbarLib.Anon_Y = js.native
+  var offset_Scrollbar: smoothDashScrollbarLib.Anon_X = js.native
   /**
     * Options for current scrollbar instancs
     */

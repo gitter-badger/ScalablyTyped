@@ -13,7 +13,12 @@ trait AbstractTooltipProps
   var builtinPlacements: js.UndefOr[js.Object] = js.undefined
   var children: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
   var defaultVisible: js.UndefOr[scala.Boolean] = js.undefined
-  var getTooltipContainer: js.UndefOr[js.Function1[/* triggerNode */ reactLib.Element, reactLib.HTMLElement]] = js.undefined
+  var getTooltipContainer: js.UndefOr[
+    js.Function1[
+      /* triggerNode */ reactLib.Element with stdLib.Element, 
+      reactLib.HTMLElement with stdLib.HTMLElement
+    ]
+  ] = js.undefined
   var mouseEnterDelay: js.UndefOr[scala.Double] = js.undefined
   var mouseLeaveDelay: js.UndefOr[scala.Double] = js.undefined
   var onVisibleChange: js.UndefOr[js.Function1[/* visible */ scala.Boolean, scala.Unit]] = js.undefined

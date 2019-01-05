@@ -27,6 +27,6 @@ trait DroppableProps extends js.Object {
     * For example, you may pass ['type', 'data'] to only rerender if these keys change.
     */
   var subscribeTo: js.UndefOr[js.Array[java.lang.String] | scala.Null] = js.undefined
-  def children(arg: State with reactDashDragtasticLib.Anon_EventsIsOver): reactLib.reactMod.ReactNs.ReactNode
+  def children(arg: State with reactDashDragtasticLib.Anon_IsOver): reactLib.reactMod.ReactNs.ReactNode
 }
 

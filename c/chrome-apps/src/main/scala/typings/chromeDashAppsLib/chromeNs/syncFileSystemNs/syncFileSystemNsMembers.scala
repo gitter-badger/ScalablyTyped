@@ -111,7 +111,7 @@ object syncFileSystemNsMembers extends js.Object {
     */
   def getUsageAndQuota(
     fileSystem: filesystemLib.FileSystem,
-    callback: js.Function1[/* info */ chromeDashAppsLib.Anon_QuotaBytes, scala.Unit]
+    callback: js.Function1[/* info */ chromeDashAppsLib.Anon_UsageBytes, scala.Unit]
   ): scala.Unit = js.native
   /**
     * Returns a syncable filesystem backed by Google Drive.

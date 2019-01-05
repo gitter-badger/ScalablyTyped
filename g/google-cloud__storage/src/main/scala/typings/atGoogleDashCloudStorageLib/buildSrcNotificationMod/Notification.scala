@@ -25,7 +25,7 @@ import scala.scalajs.js.annotation._
   *
   * const notification = myBucket.notification('1');
   */
-/* RemoveDifficultInheritance: 
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
 - Dropped any
 - Dropped any */ @JSImport("@google-cloud/storage/build/src/notification", "Notification")
 @js.native

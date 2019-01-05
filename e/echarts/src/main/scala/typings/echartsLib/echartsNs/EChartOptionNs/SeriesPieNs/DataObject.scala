@@ -9,9 +9,7 @@ trait DataObject extends js.Object {
   /**
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.data.emphasis
     */
-  var emphasis: js.UndefOr[
-    echartsLib.Anon_ItemStyleLabelAnonShadowOffsetXBorderTypeAnonShadowOffsetXBackgroundColorShowAlignTextBorderWidthVerticalAlignShadowBlurHeightBorderWidthFontStyleRichUserStyleBorderRadius
-  ] = js.undefined
+  var emphasis: js.UndefOr[echartsLib.Anon_LabelItemStyleAnonShowColor] = js.undefined
   /**
     * Graphic style of , `emphasis` is the style when it is highlighted,
     * like being hovered by mouse, or highlighted via legend connect.
@@ -19,23 +17,21 @@ trait DataObject extends js.Object {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.data.itemStyle
     */
-  var itemStyle: js.UndefOr[echartsLib.Anon_ShadowOffsetXBorderTypeShadowBlurBorderWidth] = js.undefined
+  var itemStyle: js.UndefOr[echartsLib.Anon_ColorBorderColorBorderWidthBorderType] = js.undefined
   /**
     * The label configuration of a single sector.
     *
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.data.label
     */
-  var label: js.UndefOr[
-    echartsLib.Anon_ShadowOffsetXBackgroundColorShowAlignTextBorderWidthVerticalAlignShadowBlurHeightBorderWidthFontStyleRichUserStyle
-  ] = js.undefined
+  var label: js.UndefOr[echartsLib.Anon_ShowPositionColor] = js.undefined
   /**
     * The style of visual guide line.
     *
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.data.labelLine
     */
-  var labelLine: js.UndefOr[echartsLib.Anon_Show] = js.undefined
+  var labelLine: js.UndefOr[echartsLib.Anon_ShowLengthLength2] = js.undefined
   /**
     * The name of data item.
     *
@@ -56,7 +52,7 @@ trait DataObject extends js.Object {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.data.tooltip
     */
-  var tooltip: js.UndefOr[echartsLib.Anon_BackgroundColor] = js.undefined
+  var tooltip: js.UndefOr[echartsLib.Anon_Position] = js.undefined
   /**
     * Data value.
     *

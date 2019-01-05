@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait IDatePickerProps
-  extends reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLElement]
+  extends reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLElement with stdLib.HTMLElement]
      with atUifabricUtilitiesLib.libBaseComponentMod.IBaseProps[IDatePicker] {
   /**
     * Allows all elements to be focused, including disabled ones

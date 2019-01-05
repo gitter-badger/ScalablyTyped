@@ -9,37 +9,39 @@ trait TextDocumentClientCapabilities extends js.Object {
   /**
     * Capabilities specific to the `textDocument/codeAction`
     */
-  var codeAction: js.UndefOr[vscodeDashLanguageserverDashProtocolLib.Anon_CodeActionLiteralSupport] = js.undefined
+  var codeAction: js.UndefOr[
+    vscodeDashLanguageserverDashProtocolLib.Anon_DynamicRegistrationCodeActionLiteralSupport
+  ] = js.undefined
   /**
     * Capabilities specific to the `textDocument/codeLens`
     */
-  var codeLens: js.UndefOr[vscodeDashLanguageserverDashProtocolLib.Anon_DynamicRegistrationBoolean] = js.undefined
+  var codeLens: js.UndefOr[vscodeDashLanguageserverDashProtocolLib.Anon_DynamicRegistration] = js.undefined
   /**
     * Capabilities specific to the `textDocument/completion`
     */
-  var completion: js.UndefOr[vscodeDashLanguageserverDashProtocolLib.Anon_DynamicRegistrationContextSupport] = js.undefined
+  var completion: js.UndefOr[vscodeDashLanguageserverDashProtocolLib.Anon_DynamicRegistrationCompletionItem] = js.undefined
   /**
     * Capabilities specific to the `textDocument/definition`
     */
-  var definition: js.UndefOr[vscodeDashLanguageserverDashProtocolLib.Anon_DynamicRegistration] = js.undefined
+  var definition: js.UndefOr[vscodeDashLanguageserverDashProtocolLib.Anon_DynamicRegistrationLinkSupport] = js.undefined
   /**
     * Capabilities specific to the `textDocument/documentHighlight`
     */
-  var documentHighlight: js.UndefOr[vscodeDashLanguageserverDashProtocolLib.Anon_DynamicRegistrationBoolean] = js.undefined
+  var documentHighlight: js.UndefOr[vscodeDashLanguageserverDashProtocolLib.Anon_DynamicRegistration] = js.undefined
   /**
     * Capabilities specific to the `textDocument/documentLink`
     */
-  var documentLink: js.UndefOr[vscodeDashLanguageserverDashProtocolLib.Anon_DynamicRegistrationBoolean] = js.undefined
+  var documentLink: js.UndefOr[vscodeDashLanguageserverDashProtocolLib.Anon_DynamicRegistration] = js.undefined
   /**
     * Capabilities specific to the `textDocument/documentSymbol`
     */
   var documentSymbol: js.UndefOr[
-    vscodeDashLanguageserverDashProtocolLib.Anon_DynamicRegistrationHierarchicalDocumentSymbolSupport
+    vscodeDashLanguageserverDashProtocolLib.Anon_DynamicRegistrationSymbolKindHierarchicalDocumentSymbolSupport
   ] = js.undefined
   /**
     * Capabilities specific to the `textDocument/formatting`
     */
-  var formatting: js.UndefOr[vscodeDashLanguageserverDashProtocolLib.Anon_DynamicRegistrationBoolean] = js.undefined
+  var formatting: js.UndefOr[vscodeDashLanguageserverDashProtocolLib.Anon_DynamicRegistration] = js.undefined
   /**
     * Capabilities specific to the `textDocument/hover`
     */
@@ -47,7 +49,7 @@ trait TextDocumentClientCapabilities extends js.Object {
   /**
     * Capabilities specific to the `textDocument/onTypeFormatting`
     */
-  var onTypeFormatting: js.UndefOr[vscodeDashLanguageserverDashProtocolLib.Anon_DynamicRegistrationBoolean] = js.undefined
+  var onTypeFormatting: js.UndefOr[vscodeDashLanguageserverDashProtocolLib.Anon_DynamicRegistration] = js.undefined
   /**
     * Capabilities specific to `textDocument/publishDiagnostics`.
     */
@@ -55,11 +57,11 @@ trait TextDocumentClientCapabilities extends js.Object {
   /**
     * Capabilities specific to the `textDocument/rangeFormatting`
     */
-  var rangeFormatting: js.UndefOr[vscodeDashLanguageserverDashProtocolLib.Anon_DynamicRegistrationBoolean] = js.undefined
+  var rangeFormatting: js.UndefOr[vscodeDashLanguageserverDashProtocolLib.Anon_DynamicRegistration] = js.undefined
   /**
     * Capabilities specific to the `textDocument/references`
     */
-  var references: js.UndefOr[vscodeDashLanguageserverDashProtocolLib.Anon_DynamicRegistrationBoolean] = js.undefined
+  var references: js.UndefOr[vscodeDashLanguageserverDashProtocolLib.Anon_DynamicRegistration] = js.undefined
   /**
     * Capabilities specific to the `textDocument/rename`
     */
@@ -67,10 +69,12 @@ trait TextDocumentClientCapabilities extends js.Object {
   /**
     * Capabilities specific to the `textDocument/signatureHelp`
     */
-  var signatureHelp: js.UndefOr[vscodeDashLanguageserverDashProtocolLib.Anon_SignatureInformation] = js.undefined
+  var signatureHelp: js.UndefOr[
+    vscodeDashLanguageserverDashProtocolLib.Anon_DynamicRegistrationSignatureInformation
+  ] = js.undefined
   /**
     * Defines which synchronization capabilities the client supports.
     */
-  var synchronization: js.UndefOr[vscodeDashLanguageserverDashProtocolLib.Anon_WillSaveWaitUntil] = js.undefined
+  var synchronization: js.UndefOr[vscodeDashLanguageserverDashProtocolLib.Anon_DynamicRegistrationWillSave] = js.undefined
 }
 

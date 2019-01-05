@@ -42,7 +42,7 @@ trait Request extends js.Object {
   def acceptsLanguages(languages: java.lang.String*): java.lang.String | arangodbLib.arangodbLibNumbers.`false` = js.native
   def acceptsLanguages(languages: js.Array[java.lang.String]): java.lang.String | arangodbLib.arangodbLibNumbers.`false` = js.native
   def cookie(name: java.lang.String): java.lang.String | scala.Null = js.native
-  def cookie(name: java.lang.String, options: arangodbLib.Anon_Algorithm): java.lang.String | scala.Null = js.native
+  def cookie(name: java.lang.String, options: arangodbLib.Anon_Secret): java.lang.String | scala.Null = js.native
   def get(name: java.lang.String): js.UndefOr[java.lang.String] = js.native
   def header(name: java.lang.String): js.UndefOr[java.lang.String] = js.native
   def is(types: java.lang.String*): java.lang.String = js.native

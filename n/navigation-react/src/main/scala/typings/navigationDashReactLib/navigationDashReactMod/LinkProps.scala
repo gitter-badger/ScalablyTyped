@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait LinkProps
-  extends reactLib.reactMod.ReactNs.HTMLProps[reactLib.HTMLAnchorElement] {
+  extends reactLib.reactMod.ReactNs.HTMLProps[reactLib.HTMLAnchorElement with stdLib.HTMLAnchorElement] {
   /**
     * Determines the effect on browser history
     */
@@ -22,7 +22,7 @@ trait LinkProps
     */
   var navigating: js.UndefOr[
     js.Function3[
-      /* e */ reactLib.MouseEvent, 
+      /* e */ reactLib.MouseEvent with stdLib.MouseEvent, 
       /* domId */ java.lang.String, 
       /* link */ java.lang.String, 
       scala.Boolean

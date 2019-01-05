@@ -13,10 +13,10 @@ trait Collection[T] extends js.Object {
   def deny(options: nodeDashMysqlDashWrapperLib.Anon_Insert[T]): scala.Boolean = js.native
   def find(): Cursor[T] = js.native
   def find(selector: js.Any): Cursor[T] = js.native
-  def find(selector: js.Any, options: nodeDashMysqlDashWrapperLib.Anon_Reactive): Cursor[T] = js.native
+  def find(selector: js.Any, options: nodeDashMysqlDashWrapperLib.Anon_Sort): Cursor[T] = js.native
   def findOne(): T = js.native
   def findOne(selector: js.Any): T = js.native
-  def findOne(selector: js.Any, options: nodeDashMysqlDashWrapperLib.Anon_ReactiveSkip): T = js.native
+  def findOne(selector: js.Any, options: nodeDashMysqlDashWrapperLib.Anon_SortSkip): T = js.native
   def insert(doc: T): java.lang.String = js.native
   def insert(doc: T, callback: js.Function): java.lang.String = js.native
   def rawCollection(): js.Any = js.native

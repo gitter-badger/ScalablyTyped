@@ -5,8 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveDifficultInheritance: 
-- Lifted 1 members from Set(std.Pick<react.react.InputHTMLAttributes<react.HTMLDivElement>, react-dropzone.PickedAttributes>) */ trait DropzoneProps extends js.Object {
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
+- Dropped {[ P in react-dropzone.PickedAttributes ]: react.react.InputHTMLAttributes<react.HTMLDivElement & std.HTMLDivElement>[P]} */ trait DropzoneProps extends js.Object {
   var accept: js.UndefOr[java.lang.String | js.Array[java.lang.String]] = js.undefined
   var acceptClassName: js.UndefOr[java.lang.String] = js.undefined
   var acceptStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
@@ -17,7 +17,9 @@ import scala.scalajs.js.annotation._
   var disabled: js.UndefOr[scala.Boolean] = js.undefined
   var disabledClassName: js.UndefOr[java.lang.String] = js.undefined
   var disabledStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
-  var inputProps: js.UndefOr[reactLib.reactMod.ReactNs.InputHTMLAttributes[reactLib.HTMLInputElement]] = js.undefined
+  var inputProps: js.UndefOr[
+    reactLib.reactMod.ReactNs.InputHTMLAttributes[reactLib.HTMLInputElement with stdLib.HTMLInputElement]
+  ] = js.undefined
   var maxSize: js.UndefOr[scala.Double] = js.undefined
   var minSize: js.UndefOr[scala.Double] = js.undefined
   var onDrop: js.UndefOr[DropFilesEventHandler] = js.undefined

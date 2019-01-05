@@ -19,7 +19,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashExcelLib.ExcelNs.Application, 
-      /* parameter */ Anon_Rgdispid, 
+      /* parameter */ Anon_Riid, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -43,7 +43,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashExcelLib.ExcelNs.Application, 
-      /* parameter */ Anon_Lcid, 
+      /* parameter */ Anon_Itinfo, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -77,7 +77,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashExcelLib.ExcelNs.Application, 
-      /* parameter */ Anon_Cancel, 
+      /* parameter */ Anon_PvwReason, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -90,7 +90,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashExcelLib.ExcelNs.Application, 
-      /* parameter */ Anon_CancelPvw, 
+      /* parameter */ Anon_PvwCancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -133,7 +133,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashExcelLib.ExcelNs.Application, 
-      /* parameter */ Anon_PpvObj, 
+      /* parameter */ Anon_RiidPpvObj, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -157,7 +157,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashExcelLib.ExcelNs.Application, 
-      /* parameter */ Anon_CancelTarget, 
+      /* parameter */ Anon_ShTarget, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -171,7 +171,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashExcelLib.ExcelNs.Application, 
-      /* parameter */ Anon_CancelTarget, 
+      /* parameter */ Anon_ShTarget, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -194,7 +194,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashExcelLib.ExcelNs.Application, 
-      /* parameter */ Anon_Target, 
+      /* parameter */ Anon_ShTargetRowIndex, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -217,7 +217,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashExcelLib.ExcelNs.Application, 
-      /* parameter */ Anon_TargetSh, 
+      /* parameter */ Anon_ShTargetWorksheet, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -231,7 +231,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashExcelLib.ExcelNs.Application, 
-      /* parameter */ Anon_TargetRange, 
+      /* parameter */ Anon_ShTargetPivotTable, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -247,7 +247,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashExcelLib.ExcelNs.Application, 
-      /* parameter */ Anon_ValueChangeEnd, 
+      /* parameter */ Anon_ShTargetPivotTableValueChangeStart, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -263,7 +263,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashExcelLib.ExcelNs.Application, 
-      /* parameter */ Anon_ValueChangeEnd, 
+      /* parameter */ Anon_ShTargetPivotTableValueChangeStart, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -278,7 +278,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashExcelLib.ExcelNs.Application, 
-      /* parameter */ Anon_ShValueChangeStart, 
+      /* parameter */ Anon_ShTargetPivotTableValueChangeStartValueChangeEnd, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -291,7 +291,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashExcelLib.ExcelNs.Application, 
-      /* parameter */ Anon_TargetShPivotTable, 
+      /* parameter */ Anon_ShTargetWorksheetPivotTable, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -304,7 +304,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashExcelLib.ExcelNs.Application, 
-      /* parameter */ Anon_Target, 
+      /* parameter */ Anon_ShTargetRowIndex, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -401,7 +401,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashExcelLib.ExcelNs.Application, 
-      /* parameter */ Anon_WbUrl, 
+      /* parameter */ Anon_WbMap, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -416,7 +416,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashExcelLib.ExcelNs.Application, 
-      /* parameter */ Anon_WbResult, 
+      /* parameter */ Anon_WbMapIsRefresh, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -456,7 +456,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashExcelLib.ExcelNs.Application, 
-      /* parameter */ Anon_SaveAsUI, 
+      /* parameter */ Anon_WbSaveAsUI, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -471,7 +471,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashExcelLib.ExcelNs.Application, 
-      /* parameter */ Anon_WbUrlCancel, 
+      /* parameter */ Anon_WbMapUrl, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -487,7 +487,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashExcelLib.ExcelNs.Application, 
-      /* parameter */ Anon_Map, 
+      /* parameter */ Anon_WbMapUrlIsRefresh, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -574,7 +574,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashExcelLib.ExcelNs.Application, 
-      /* parameter */ Anon_Sheet, 
+      /* parameter */ Anon_WbDescription, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -600,7 +600,11 @@ trait ActiveXObject extends js.Object {
       activexDashExcelLib.activexDashExcelLibStrings.Arg2, 
       activexDashExcelLib.activexDashExcelLibStrings.Cancel
     ],
-    handler: js.ThisFunction1[/* this */ activexDashExcelLib.ExcelNs.Chart, /* parameter */ Anon_Arg1, scala.Unit]
+    handler: js.ThisFunction1[
+      /* this */ activexDashExcelLib.ExcelNs.Chart, 
+      /* parameter */ Anon_ElementID, 
+      scala.Unit
+    ]
   ): scala.Unit = js.native
   def on(
     obj: activexDashExcelLib.ExcelNs.Chart,
@@ -608,7 +612,7 @@ trait ActiveXObject extends js.Object {
     argNames: js.Array[activexDashExcelLib.activexDashExcelLibStrings.Cancel],
     handler: js.ThisFunction1[
       /* this */ activexDashExcelLib.ExcelNs.Chart, 
-      /* parameter */ Anon_CancelBoolean, 
+      /* parameter */ Anon_Cancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -622,11 +626,7 @@ trait ActiveXObject extends js.Object {
       activexDashExcelLib.activexDashExcelLibStrings.lcid, 
       activexDashExcelLib.activexDashExcelLibStrings.rgdispid
     ],
-    handler: js.ThisFunction1[
-      /* this */ activexDashExcelLib.ExcelNs.Chart, 
-      /* parameter */ Anon_Rgdispid, 
-      scala.Unit
-    ]
+    handler: js.ThisFunction1[/* this */ activexDashExcelLib.ExcelNs.Chart, /* parameter */ Anon_Riid, scala.Unit]
   ): scala.Unit = js.native
   def on(
     obj: activexDashExcelLib.ExcelNs.Chart,
@@ -646,7 +646,11 @@ trait ActiveXObject extends js.Object {
       activexDashExcelLib.activexDashExcelLibStrings.lcid, 
       activexDashExcelLib.activexDashExcelLibStrings.pptinfo
     ],
-    handler: js.ThisFunction1[/* this */ activexDashExcelLib.ExcelNs.Chart, /* parameter */ Anon_Lcid, scala.Unit]
+    handler: js.ThisFunction1[
+      /* this */ activexDashExcelLib.ExcelNs.Chart, 
+      /* parameter */ Anon_Itinfo, 
+      scala.Unit
+    ]
   ): scala.Unit = js.native
   def on(
     obj: activexDashExcelLib.ExcelNs.Chart,
@@ -657,7 +661,11 @@ trait ActiveXObject extends js.Object {
       activexDashExcelLib.activexDashExcelLibStrings.x, 
       activexDashExcelLib.activexDashExcelLibStrings.y
     ],
-    handler: js.ThisFunction1[/* this */ activexDashExcelLib.ExcelNs.Chart, /* parameter */ Anon_Shift, scala.Unit]
+    handler: js.ThisFunction1[
+      /* this */ activexDashExcelLib.ExcelNs.Chart, 
+      /* parameter */ Anon_Button, 
+      scala.Unit
+    ]
   ): scala.Unit = js.native
   def on(
     obj: activexDashExcelLib.ExcelNs.Chart,
@@ -668,7 +676,11 @@ trait ActiveXObject extends js.Object {
       activexDashExcelLib.activexDashExcelLibStrings.x, 
       activexDashExcelLib.activexDashExcelLibStrings.y
     ],
-    handler: js.ThisFunction1[/* this */ activexDashExcelLib.ExcelNs.Chart, /* parameter */ Anon_Shift, scala.Unit]
+    handler: js.ThisFunction1[
+      /* this */ activexDashExcelLib.ExcelNs.Chart, 
+      /* parameter */ Anon_Button, 
+      scala.Unit
+    ]
   ): scala.Unit = js.native
   def on(
     obj: activexDashExcelLib.ExcelNs.Chart,
@@ -679,7 +691,11 @@ trait ActiveXObject extends js.Object {
       activexDashExcelLib.activexDashExcelLibStrings.x, 
       activexDashExcelLib.activexDashExcelLibStrings.y
     ],
-    handler: js.ThisFunction1[/* this */ activexDashExcelLib.ExcelNs.Chart, /* parameter */ Anon_Shift, scala.Unit]
+    handler: js.ThisFunction1[
+      /* this */ activexDashExcelLib.ExcelNs.Chart, 
+      /* parameter */ Anon_Button, 
+      scala.Unit
+    ]
   ): scala.Unit = js.native
   def on(
     obj: activexDashExcelLib.ExcelNs.Chart,
@@ -690,7 +706,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashExcelLib.ExcelNs.Chart, 
-      /* parameter */ Anon_PpvObj, 
+      /* parameter */ Anon_RiidPpvObj, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -704,7 +720,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashExcelLib.ExcelNs.Chart, 
-      /* parameter */ Anon_Arg1ElementID, 
+      /* parameter */ Anon_ElementIDArg1, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -717,7 +733,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashExcelLib.ExcelNs.Chart, 
-      /* parameter */ Anon_PointIndex, 
+      /* parameter */ Anon_SeriesIndex, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -733,7 +749,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashExcelLib.ExcelNs.OLEObject, 
-      /* parameter */ Anon_Rgdispid, 
+      /* parameter */ Anon_Riid, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -757,7 +773,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashExcelLib.ExcelNs.OLEObject, 
-      /* parameter */ Anon_Lcid, 
+      /* parameter */ Anon_Itinfo, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -770,7 +786,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashExcelLib.ExcelNs.OLEObject, 
-      /* parameter */ Anon_PpvObj, 
+      /* parameter */ Anon_RiidPpvObj, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -790,7 +806,7 @@ trait ActiveXObject extends js.Object {
     argNames: js.Array[activexDashExcelLib.activexDashExcelLibStrings.Cancel],
     handler: js.ThisFunction1[
       /* this */ activexDashExcelLib.ExcelNs.QueryTable, 
-      /* parameter */ Anon_CancelBoolean, 
+      /* parameter */ Anon_Cancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -806,7 +822,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashExcelLib.ExcelNs.QueryTable, 
-      /* parameter */ Anon_Rgdispid, 
+      /* parameter */ Anon_Riid, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -830,7 +846,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashExcelLib.ExcelNs.QueryTable, 
-      /* parameter */ Anon_Lcid, 
+      /* parameter */ Anon_Itinfo, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -843,7 +859,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashExcelLib.ExcelNs.QueryTable, 
-      /* parameter */ Anon_PpvObj, 
+      /* parameter */ Anon_RiidPpvObj, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -867,7 +883,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashExcelLib.ExcelNs.Workbook, 
-      /* parameter */ Anon_Url, 
+      /* parameter */ Anon_Map, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -881,7 +897,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashExcelLib.ExcelNs.Workbook, 
-      /* parameter */ Anon_Result, 
+      /* parameter */ Anon_MapIsRefresh, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -891,7 +907,7 @@ trait ActiveXObject extends js.Object {
     argNames: js.Array[activexDashExcelLib.activexDashExcelLibStrings.Cancel],
     handler: js.ThisFunction1[
       /* this */ activexDashExcelLib.ExcelNs.Workbook, 
-      /* parameter */ Anon_CancelBoolean, 
+      /* parameter */ Anon_Cancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -901,7 +917,7 @@ trait ActiveXObject extends js.Object {
     argNames: js.Array[activexDashExcelLib.activexDashExcelLibStrings.Cancel],
     handler: js.ThisFunction1[
       /* this */ activexDashExcelLib.ExcelNs.Workbook, 
-      /* parameter */ Anon_CancelBoolean, 
+      /* parameter */ Anon_Cancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -914,7 +930,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashExcelLib.ExcelNs.Workbook, 
-      /* parameter */ Anon_SaveAsUICancel, 
+      /* parameter */ Anon_SaveAsUI, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -928,7 +944,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashExcelLib.ExcelNs.Workbook, 
-      /* parameter */ Anon_UrlCancel, 
+      /* parameter */ Anon_MapUrl, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -943,7 +959,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashExcelLib.ExcelNs.Workbook, 
-      /* parameter */ Anon_UrlCancelIsRefresh, 
+      /* parameter */ Anon_MapUrlIsRefresh, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -959,7 +975,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashExcelLib.ExcelNs.Workbook, 
-      /* parameter */ Anon_Rgdispid, 
+      /* parameter */ Anon_Riid, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -983,7 +999,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashExcelLib.ExcelNs.Workbook, 
-      /* parameter */ Anon_Lcid, 
+      /* parameter */ Anon_Itinfo, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -1005,7 +1021,7 @@ trait ActiveXObject extends js.Object {
     argNames: js.Array[activexDashExcelLib.activexDashExcelLibStrings.Target],
     handler: js.ThisFunction1[
       /* this */ activexDashExcelLib.ExcelNs.Workbook, 
-      /* parameter */ Anon_TargetPivotTable, 
+      /* parameter */ Anon_Target, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -1015,7 +1031,7 @@ trait ActiveXObject extends js.Object {
     argNames: js.Array[activexDashExcelLib.activexDashExcelLibStrings.Target],
     handler: js.ThisFunction1[
       /* this */ activexDashExcelLib.ExcelNs.Workbook, 
-      /* parameter */ Anon_TargetPivotTable, 
+      /* parameter */ Anon_Target, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -1028,7 +1044,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashExcelLib.ExcelNs.Workbook, 
-      /* parameter */ Anon_PpvObj, 
+      /* parameter */ Anon_RiidPpvObj, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -1042,7 +1058,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashExcelLib.ExcelNs.Workbook, 
-      /* parameter */ Anon_SheetDescription, 
+      /* parameter */ Anon_Description, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -1062,7 +1078,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashExcelLib.ExcelNs.Workbook, 
-      /* parameter */ Anon_CancelTarget, 
+      /* parameter */ Anon_ShTarget, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -1076,7 +1092,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashExcelLib.ExcelNs.Workbook, 
-      /* parameter */ Anon_CancelTarget, 
+      /* parameter */ Anon_ShTarget, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -1095,7 +1111,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashExcelLib.ExcelNs.Workbook, 
-      /* parameter */ Anon_Target, 
+      /* parameter */ Anon_ShTargetRowIndex, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -1114,7 +1130,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashExcelLib.ExcelNs.Workbook, 
-      /* parameter */ Anon_TargetSh, 
+      /* parameter */ Anon_ShTargetWorksheet, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -1128,7 +1144,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashExcelLib.ExcelNs.Workbook, 
-      /* parameter */ Anon_TargetRange, 
+      /* parameter */ Anon_ShTargetPivotTable, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -1144,7 +1160,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashExcelLib.ExcelNs.Workbook, 
-      /* parameter */ Anon_ValueChangeEnd, 
+      /* parameter */ Anon_ShTargetPivotTableValueChangeStart, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -1160,7 +1176,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashExcelLib.ExcelNs.Workbook, 
-      /* parameter */ Anon_ValueChangeEnd, 
+      /* parameter */ Anon_ShTargetPivotTableValueChangeStart, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -1175,7 +1191,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashExcelLib.ExcelNs.Workbook, 
-      /* parameter */ Anon_ShValueChangeStart, 
+      /* parameter */ Anon_ShTargetPivotTableValueChangeStartValueChangeEnd, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -1188,7 +1204,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashExcelLib.ExcelNs.Workbook, 
-      /* parameter */ Anon_TargetShPivotTable, 
+      /* parameter */ Anon_ShTargetWorksheetPivotTable, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -1201,7 +1217,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashExcelLib.ExcelNs.Workbook, 
-      /* parameter */ Anon_TargetShPivotTable, 
+      /* parameter */ Anon_ShTargetWorksheetPivotTable, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -1214,7 +1230,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashExcelLib.ExcelNs.Workbook, 
-      /* parameter */ Anon_Target, 
+      /* parameter */ Anon_ShTargetRowIndex, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -1255,7 +1271,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashExcelLib.ExcelNs.Worksheet, 
-      /* parameter */ Anon_CancelTargetBoolean, 
+      /* parameter */ Anon_TargetRowIndex, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -1268,7 +1284,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashExcelLib.ExcelNs.Worksheet, 
-      /* parameter */ Anon_CancelTargetBoolean, 
+      /* parameter */ Anon_TargetRowIndex, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -1278,7 +1294,7 @@ trait ActiveXObject extends js.Object {
     argNames: js.Array[activexDashExcelLib.activexDashExcelLibStrings.Target],
     handler: js.ThisFunction1[
       /* this */ activexDashExcelLib.ExcelNs.Worksheet, 
-      /* parameter */ Anon_TargetRange_1506387795, 
+      /* parameter */ Anon_TargetRowIndexColumnIndex, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -1304,7 +1320,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashExcelLib.ExcelNs.Worksheet, 
-      /* parameter */ Anon_Rgdispid, 
+      /* parameter */ Anon_Riid, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -1328,7 +1344,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashExcelLib.ExcelNs.Worksheet, 
-      /* parameter */ Anon_Lcid, 
+      /* parameter */ Anon_Itinfo, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -1341,7 +1357,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashExcelLib.ExcelNs.Worksheet, 
-      /* parameter */ Anon_TargetRangeTargetPivotTable, 
+      /* parameter */ Anon_TargetPivotTable, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -1356,7 +1372,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashExcelLib.ExcelNs.Worksheet, 
-      /* parameter */ Anon_CancelValueChangeStart, 
+      /* parameter */ Anon_TargetPivotTableValueChangeStart, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -1371,7 +1387,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashExcelLib.ExcelNs.Worksheet, 
-      /* parameter */ Anon_CancelValueChangeStart, 
+      /* parameter */ Anon_TargetPivotTableValueChangeStart, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -1385,7 +1401,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashExcelLib.ExcelNs.Worksheet, 
-      /* parameter */ Anon_ValueChangeStart, 
+      /* parameter */ Anon_TargetPivotTableValueChangeStartValueChangeEnd, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -1395,7 +1411,7 @@ trait ActiveXObject extends js.Object {
     argNames: js.Array[activexDashExcelLib.activexDashExcelLibStrings.Target],
     handler: js.ThisFunction1[
       /* this */ activexDashExcelLib.ExcelNs.Worksheet, 
-      /* parameter */ Anon_TargetPivotTable, 
+      /* parameter */ Anon_Target, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -1405,7 +1421,7 @@ trait ActiveXObject extends js.Object {
     argNames: js.Array[activexDashExcelLib.activexDashExcelLibStrings.Target],
     handler: js.ThisFunction1[
       /* this */ activexDashExcelLib.ExcelNs.Worksheet, 
-      /* parameter */ Anon_TargetPivotTable, 
+      /* parameter */ Anon_Target, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -1418,7 +1434,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashExcelLib.ExcelNs.Worksheet, 
-      /* parameter */ Anon_PpvObj, 
+      /* parameter */ Anon_RiidPpvObj, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -1428,7 +1444,7 @@ trait ActiveXObject extends js.Object {
     argNames: js.Array[activexDashExcelLib.activexDashExcelLibStrings.Target],
     handler: js.ThisFunction1[
       /* this */ activexDashExcelLib.ExcelNs.Worksheet, 
-      /* parameter */ Anon_TargetRange_1506387795, 
+      /* parameter */ Anon_TargetRowIndexColumnIndex, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -1778,7 +1794,7 @@ trait ActiveXObject extends js.Object {
     obj: activexDashExcelLib.ExcelNs.ControlFormat,
     propertyName: activexDashExcelLib.activexDashExcelLibStrings.List,
     parameterTypes: js.Array[scala.Nothing],
-    newValue: activexDashInteropLib.SafeArray[java.lang.String]
+    newValue: activexDashInteropLib.SafeArray[java.lang.String] with stdLib.SafeArray[java.lang.String]
   ): scala.Unit = js.native
   @JSName("set")
   def set_List(

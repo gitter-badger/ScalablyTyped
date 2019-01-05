@@ -10,7 +10,7 @@ trait NavigationProps
   /**
     * Array of objects that will be represented as <Button/> so the keys will be transferred as properties the Button Component.
     */
-  var actions: js.UndefOr[coreDashJsLib.Array[_]] = js.undefined
+  var actions: js.UndefOr[coreDashJsLib.Array[_] with js.Array[_]] = js.undefined
   /**
     * Children to pass through the component.
     */
@@ -18,7 +18,7 @@ trait NavigationProps
   /**
     * Array of objects similar to actions but that will be rendered as <Link/> component definition.
     */
-  var routes: js.UndefOr[coreDashJsLib.Array[_]] = js.undefined
+  var routes: js.UndefOr[coreDashJsLib.Array[_] with js.Array[_]] = js.undefined
   /**
     * Classnames object defining the component style.
     */

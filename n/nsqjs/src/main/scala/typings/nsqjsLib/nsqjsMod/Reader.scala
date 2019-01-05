@@ -19,7 +19,10 @@ class Reader protected ()
   @JSName("on")
   def on_discard(event: nsqjsLib.nsqjsLibStrings.discard, listener: js.Function1[/* message */ Message, scala.Unit]): this.type = js.native
   @JSName("on")
-  def on_error(event: nsqjsLib.nsqjsLibStrings.error, listener: js.Function1[/* err */ nodeLib.Error, scala.Unit]): this.type = js.native
+  def on_error(
+    event: nsqjsLib.nsqjsLibStrings.error,
+    listener: js.Function1[/* err */ nodeLib.Error with stdLib.Error, scala.Unit]
+  ): this.type = js.native
   @JSName("on")
   def on_message(event: nsqjsLib.nsqjsLibStrings.message, listener: js.Function1[/* message */ Message, scala.Unit]): this.type = js.native
   @JSName("on")

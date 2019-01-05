@@ -17,7 +17,7 @@ trait AriaModalProps extends js.Object {
     * node will receive the attribute `aria-hidden="true"`.
     * This can help screen readers understand what's going on.
     */
-  var applicationNode: js.UndefOr[stdLib.Node | reactLib.Element] = js.undefined
+  var applicationNode: js.UndefOr[stdLib.Node | (reactLib.Element with stdLib.Element)] = js.undefined
   /**
     * Apply a class to the dialog in order to custom-style it.
     *
@@ -56,7 +56,7 @@ trait AriaModalProps extends js.Object {
     * and refer to DOM nodes within it (e.g. `document.getElementById(..)`),
     * without ruining your server-side rendering.
     */
-  var getApplicationNode: js.UndefOr[js.Function0[stdLib.Node | reactLib.Element]] = js.undefined
+  var getApplicationNode: js.UndefOr[js.Function0[stdLib.Node | (reactLib.Element with stdLib.Element)]] = js.undefined
   /**
     * By default, styles are applied inline to the dialog and underlay
     * portions of the component. However, you can disable all inline

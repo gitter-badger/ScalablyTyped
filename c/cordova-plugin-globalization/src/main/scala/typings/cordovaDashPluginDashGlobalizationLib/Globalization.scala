@@ -21,12 +21,12 @@ trait Globalization extends js.Object {
     */
   def dateToString(
     date: stdLib.Date,
-    onSuccess: js.Function1[/* date */ Anon_ValueString, scala.Unit],
+    onSuccess: js.Function1[/* date */ Anon_Value, scala.Unit],
     onError: js.Function1[/* error */ GlobalizationError, scala.Unit]
   ): scala.Unit = js.native
   def dateToString(
     date: stdLib.Date,
-    onSuccess: js.Function1[/* date */ Anon_ValueString, scala.Unit],
+    onSuccess: js.Function1[/* date */ Anon_Value, scala.Unit],
     onError: js.Function1[/* error */ GlobalizationError, scala.Unit],
     options: Anon_FormatLength
   ): scala.Unit = js.native
@@ -84,7 +84,7 @@ trait Globalization extends js.Object {
     *                  The error's expected code is GlobalizationError.UNKNOWN_ERROR.
     */
   def getFirstDayOfWeek(
-    onSuccess: js.Function1[/* day */ Anon_Value, scala.Unit],
+    onSuccess: js.Function1[/* day */ Anon_ValueNumber, scala.Unit],
     onError: js.Function1[/* error */ GlobalizationError, scala.Unit]
   ): scala.Unit = js.native
   /**
@@ -95,7 +95,7 @@ trait Globalization extends js.Object {
     *                  The error's expected code is GlobalizationError.UNKNOWN\_ERROR.
     */
   def getLocaleName(
-    onSuccess: js.Function1[/* locale */ Anon_ValueString, scala.Unit],
+    onSuccess: js.Function1[/* locale */ Anon_Value, scala.Unit],
     onError: js.Function1[/* error */ GlobalizationError, scala.Unit]
   ): scala.Unit = js.native
   /**
@@ -122,7 +122,7 @@ trait Globalization extends js.Object {
     *                  The error's expected code is GlobalizationError.UNKNOWN_ERROR.
     */
   def getPreferredLanguage(
-    onSuccess: js.Function1[/* language */ Anon_ValueString, scala.Unit],
+    onSuccess: js.Function1[/* language */ Anon_Value, scala.Unit],
     onError: js.Function1[/* error */ GlobalizationError, scala.Unit]
   ): scala.Unit = js.native
   /**
@@ -149,12 +149,12 @@ trait Globalization extends js.Object {
     */
   def nubmerToString(
     value: scala.Double,
-    onSuccess: js.Function1[/* result */ Anon_ValueString, scala.Unit],
+    onSuccess: js.Function1[/* result */ Anon_Value, scala.Unit],
     onError: js.Function1[/* error */ GlobalizationError, scala.Unit]
   ): scala.Unit = js.native
   def nubmerToString(
     value: scala.Double,
-    onSuccess: js.Function1[/* result */ Anon_ValueString, scala.Unit],
+    onSuccess: js.Function1[/* result */ Anon_Value, scala.Unit],
     onError: js.Function1[/* error */ GlobalizationError, scala.Unit],
     format: Anon_TypeString
   ): scala.Unit = js.native
@@ -189,12 +189,12 @@ trait Globalization extends js.Object {
     */
   def stringToNumber(
     value: java.lang.String,
-    onSuccess: js.Function1[/* result */ Anon_Value, scala.Unit],
+    onSuccess: js.Function1[/* result */ Anon_ValueNumber, scala.Unit],
     onError: js.Function1[/* error */ GlobalizationError, scala.Unit]
   ): scala.Unit = js.native
   def stringToNumber(
     value: java.lang.String,
-    onSuccess: js.Function1[/* result */ Anon_Value, scala.Unit],
+    onSuccess: js.Function1[/* result */ Anon_ValueNumber, scala.Unit],
     onError: js.Function1[/* error */ GlobalizationError, scala.Unit],
     format: Anon_TypeString
   ): scala.Unit = js.native

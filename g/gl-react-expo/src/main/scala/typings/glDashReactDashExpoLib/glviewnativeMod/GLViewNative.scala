@@ -12,7 +12,7 @@ class GLViewNative ()
   var afterDraw: js.UndefOr[js.Function0[scala.Unit]] = js.native
   var ref: js.UndefOr[js.Any] = js.native
   def capture(opt: js.Any): js.Promise[glDashReactDashExpoLib.Anon_Uri] = js.native
-  def onContextCreate(gl: reactLib.WebGLRenderingContext): scala.Unit = js.native
+  def onContextCreate(gl: reactLib.WebGLRenderingContext with stdLib.WebGLRenderingContext): scala.Unit = js.native
   def onRef(ref: js.Any): scala.Unit = js.native
 }
 

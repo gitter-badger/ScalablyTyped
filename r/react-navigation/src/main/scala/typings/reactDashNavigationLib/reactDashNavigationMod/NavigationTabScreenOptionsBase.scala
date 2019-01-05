@@ -9,17 +9,17 @@ import scala.scalajs.js.annotation._
 trait NavigationTabScreenOptionsBase extends js.Object {
   var tabBarIcon: js.UndefOr[
     reactLib.reactMod.ReactNs.ReactElement[_] | (js.Function1[
-      /* options */ reactDashNavigationLib.Anon_FocusedHorizontal, 
+      /* options */ reactDashNavigationLib.Anon_TintColorFocused, 
       reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null
     ])
   ] = js.undefined
   var tabBarLabel: js.UndefOr[
     java.lang.String | reactLib.reactMod.ReactNs.ReactElement[_] | (js.Function1[
-      /* options */ reactDashNavigationLib.Anon_Focused, 
+      /* options */ reactDashNavigationLib.Anon_TintColor, 
       reactLib.reactMod.ReactNs.ReactElement[_] | java.lang.String | scala.Null
     ])
   ] = js.undefined
-  var tabBarTestIDProps: js.UndefOr[reactDashNavigationLib.Anon_AccessibilityLabel] = js.undefined
+  var tabBarTestIDProps: js.UndefOr[reactDashNavigationLib.Anon_TestID] = js.undefined
   var tabBarVisible: js.UndefOr[scala.Boolean] = js.undefined
   var title: js.UndefOr[java.lang.String] = js.undefined
 }

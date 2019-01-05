@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait NodeProps extends js.Object {
   var backbuffering: js.UndefOr[scala.Boolean] = js.undefined
-  var blendFunc: js.UndefOr[glDashReactLib.Anon_Dst] = js.undefined
+  var blendFunc: js.UndefOr[glDashReactLib.Anon_Src] = js.undefined
   var children: js.UndefOr[js.Any] = js.undefined
   var clear: js.UndefOr[glDashReactLib.Anon_Color] = js.undefined
   var height: js.UndefOr[scala.Double] = js.undefined

@@ -213,8 +213,8 @@ trait ByteBuffer extends js.Object {
   /**
     * Reads a length as uint32 prefixed UTF8 encoded string.
     */
-  def readIString(): java.lang.String | bytebufferLib.Anon_Length = js.native
-  def readIString(offset: scala.Double): java.lang.String | bytebufferLib.Anon_Length = js.native
+  def readIString(): java.lang.String | bytebufferLib.Anon_String = js.native
+  def readIString(offset: scala.Double): java.lang.String | bytebufferLib.Anon_String = js.native
   /**
     * Reads a 32bit signed integer.This is an alias of ByteBuffer#readInt32.
     */
@@ -259,9 +259,9 @@ trait ByteBuffer extends js.Object {
   /**
     * Reads an UTF8 encoded string.
     */
-  def readUTF8String(chars: scala.Double): java.lang.String | bytebufferLib.Anon_Length = js.native
-  def readUTF8String(chars: scala.Double, metrics: scala.Double): java.lang.String | bytebufferLib.Anon_Length = js.native
-  def readUTF8String(chars: scala.Double, metrics: scala.Double, offset: scala.Double): java.lang.String | bytebufferLib.Anon_Length = js.native
+  def readUTF8String(chars: scala.Double): java.lang.String | bytebufferLib.Anon_String = js.native
+  def readUTF8String(chars: scala.Double, metrics: scala.Double): java.lang.String | bytebufferLib.Anon_String = js.native
+  def readUTF8String(chars: scala.Double, metrics: scala.Double, offset: scala.Double): java.lang.String | bytebufferLib.Anon_String = js.native
   /**
     * Reads a 16bit unsigned integer.
     */

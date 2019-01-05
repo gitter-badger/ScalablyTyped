@@ -10,7 +10,7 @@ trait ExceptionTelemetry
   /**
     * Exception thrown
     */
-  var exception: nodeLib.Error
+  var exception: nodeLib.Error with stdLib.Error
   /**
     * Metrics associated with this exception, displayed in Metrics Explorer on the portal. Defaults to empty
     */

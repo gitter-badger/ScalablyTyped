@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait SelectProps
-  extends reactLib.reactMod.ReactNs.SelectHTMLAttributes[reactLib.HTMLSelectElement]
+  extends reactLib.reactMod.ReactNs.SelectHTMLAttributes[reactLib.HTMLSelectElement with stdLib.HTMLSelectElement]
      with FieldProps {
   var options: SelectOptions
 }

@@ -23,7 +23,7 @@ trait StrictFormProps extends js.Object {
   /** The HTML form submit handler. */
   var onSubmit: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.FormEvent[reactLib.HTMLFormElement], 
+      /* event */ reactLib.reactMod.ReactNs.FormEvent[reactLib.HTMLFormElement with stdLib.HTMLFormElement], 
       /* data */ FormProps, 
       scala.Unit
     ]

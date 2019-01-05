@@ -16,20 +16,24 @@ class namespaced protected () extends WebpackDevServer {
 @js.native
 object namespaced extends js.Object {
   def addDevServerEntrypoints(
-    webpackOptions: js.Array[webpackDashDevDashServerLib.webpackDashDevDashServerMod.webpackMod.Configuration],
+    webpackOptions: webpackDashDevDashServerLib.webpackDashDevDashServerMod.webpackMod.Configuration with webpackLib.webpackMod.webpackNs.Configuration,
     config: webpackDashDevDashServerLib.webpackDashDevDashServerMod.WebpackDevServerNs.Configuration
   ): scala.Unit = js.native
   def addDevServerEntrypoints(
-    webpackOptions: js.Array[webpackDashDevDashServerLib.webpackDashDevDashServerMod.webpackMod.Configuration],
+    webpackOptions: webpackDashDevDashServerLib.webpackDashDevDashServerMod.webpackMod.Configuration with webpackLib.webpackMod.webpackNs.Configuration,
     config: webpackDashDevDashServerLib.webpackDashDevDashServerMod.WebpackDevServerNs.Configuration,
     listeningApp: webpackDashDevDashServerLib.webpackDashDevDashServerMod.WebpackDevServerNs.ListeningApp
   ): scala.Unit = js.native
   def addDevServerEntrypoints(
-    webpackOptions: webpackDashDevDashServerLib.webpackDashDevDashServerMod.webpackMod.Configuration,
+    webpackOptions: js.Array[
+      webpackDashDevDashServerLib.webpackDashDevDashServerMod.webpackMod.Configuration with webpackLib.webpackMod.webpackNs.Configuration
+    ],
     config: webpackDashDevDashServerLib.webpackDashDevDashServerMod.WebpackDevServerNs.Configuration
   ): scala.Unit = js.native
   def addDevServerEntrypoints(
-    webpackOptions: webpackDashDevDashServerLib.webpackDashDevDashServerMod.webpackMod.Configuration,
+    webpackOptions: js.Array[
+      webpackDashDevDashServerLib.webpackDashDevDashServerMod.webpackMod.Configuration with webpackLib.webpackMod.webpackNs.Configuration
+    ],
     config: webpackDashDevDashServerLib.webpackDashDevDashServerMod.WebpackDevServerNs.Configuration,
     listeningApp: webpackDashDevDashServerLib.webpackDashDevDashServerMod.WebpackDevServerNs.ListeningApp
   ): scala.Unit = js.native

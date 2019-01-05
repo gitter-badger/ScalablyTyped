@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class ObservableQuery[TData, TVariables] protected ()
   extends apolloDashClientLib.utilObservableMod.Observable[apolloDashClientLib.coreTypesMod.ApolloQueryResult[TData]] {
-  def this(hasSchedulerOptionsShouldSubscribe: apolloDashClientLib.Anon_Options[TVariables]) = this()
+  def this(hasSchedulerOptionsShouldSubscribe: apolloDashClientLib.Anon_Scheduler[TVariables]) = this()
   var isCurrentlyPolling: js.Any = js.native
   var isTornDown: js.Any = js.native
   var lastError: js.Any = js.native

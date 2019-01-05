@@ -19,7 +19,7 @@ trait Hooks extends js.Object {
       /* commandName */ java.lang.String, 
       /* args */ js.Array[_], 
       /* result */ js.Any, 
-      /* error */ js.UndefOr[nodeLib.Error], 
+      /* error */ js.UndefOr[nodeLib.Error with stdLib.Error], 
       js.UndefOr[js.Promise[_]]
     ]
   ] = js.undefined
@@ -67,7 +67,9 @@ trait Hooks extends js.Object {
   var beforeSuite: js.UndefOr[js.Function1[/* suite */ Suite, js.Promise[_] | scala.Unit]] = js.undefined
   var beforeTest: js.UndefOr[js.Function1[/* test */ Test, js.Promise[_] | scala.Unit]] = js.undefined
   var onComplete: js.UndefOr[js.Function1[/* exitCode */ scala.Double, js.Promise[_] | scala.Unit]] = js.undefined
-  var onError: js.UndefOr[js.Function1[/* error */ nodeLib.Error, js.Promise[_] | scala.Unit]] = js.undefined
+  var onError: js.UndefOr[
+    js.Function1[/* error */ nodeLib.Error with stdLib.Error, js.Promise[_] | scala.Unit]
+  ] = js.undefined
   var onPrepare: js.UndefOr[
     js.Function2[
       /* config */ Options, 

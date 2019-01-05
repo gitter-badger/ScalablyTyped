@@ -46,7 +46,7 @@ trait RaygunV2 extends js.Object {
   ): scala.Unit = js.native
   def apply(
     key: raygun4jsLib.raygun4jsLibStrings.recordBreadcrumb,
-    message: raygun4jsLib.Anon_Level,
+    message: raygun4jsLib.Anon_Message,
     metadata: js.Object
   ): scala.Unit = js.native
   def apply(key: raygun4jsLib.raygun4jsLibStrings.saveIfOffline, value: scala.Boolean): scala.Unit = js.native

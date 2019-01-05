@@ -74,7 +74,7 @@ trait Workbooks extends js.Object {
       scala.Boolean | js.UndefOr[scala.Nothing] | activexDashExcelLib.activexDashExcelLibNumbers.`true`
     ],
     OtherChar: js.UndefOr[java.lang.String | js.UndefOr[scala.Nothing]],
-    FieldInfo: js.UndefOr[activexDashInteropLib.SafeArray[_]],
+    FieldInfo: js.UndefOr[activexDashInteropLib.SafeArray[_] with stdLib.SafeArray[_]],
     TextVisualLayout: js.UndefOr[js.Any],
     DecimalSeparator: js.UndefOr[java.lang.String],
     ThousandsSeparator: js.UndefOr[java.lang.String],
@@ -82,10 +82,13 @@ trait Workbooks extends js.Object {
     Local: js.UndefOr[scala.Boolean]
   ): scala.Unit = js.native
   def OpenXML(Filename: java.lang.String): Workbook = js.native
-  def OpenXML(Filename: java.lang.String, Stylesheets: activexDashInteropLib.SafeArray[java.lang.String]): Workbook = js.native
   def OpenXML(
     Filename: java.lang.String,
-    Stylesheets: activexDashInteropLib.SafeArray[java.lang.String],
+    Stylesheets: activexDashInteropLib.SafeArray[java.lang.String] with stdLib.SafeArray[java.lang.String]
+  ): Workbook = js.native
+  def OpenXML(
+    Filename: java.lang.String,
+    Stylesheets: activexDashInteropLib.SafeArray[java.lang.String] with stdLib.SafeArray[java.lang.String],
     LoadOption: XlXmlLoadOption
   ): Workbook = js.native
   def OpenXML(Filename: java.lang.String, Stylesheets: java.lang.String): Workbook = js.native

@@ -9,12 +9,12 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class AbstractButton[H /* <: reactLib.reactMod.ReactNs.HTMLAttributes[_] */] ()
   extends reactLib.reactMod.PureComponent[IButtonProps with H, IButtonState, js.Any] {
-  var buttonRef: reactLib.HTMLElement = js.native
+  var buttonRef: reactLib.HTMLElement with stdLib.HTMLElement = js.native
   var currentKeyDown: js.Any = js.native
   var refHandlers: atBlueprintjsCoreLib.Anon_Button = js.native
   @JSName("state")
   var state_AbstractButton: atBlueprintjsCoreLib.Anon_IsActive = js.native
-  /* protected */ def getCommonButtonProps(): atBlueprintjsCoreLib.Anon_TabIndexOnClick[H] = js.native
+  /* protected */ def getCommonButtonProps(): atBlueprintjsCoreLib.Anon_ClassName[H] = js.native
   /* protected */ def handleKeyDown(e: reactLib.reactMod.ReactNs.KeyboardEvent[_]): scala.Unit = js.native
   /* protected */ def handleKeyUp(e: reactLib.reactMod.ReactNs.KeyboardEvent[_]): scala.Unit = js.native
   /* protected */ def renderChildren(): reactLib.reactMod.ReactNs.ReactNode = js.native

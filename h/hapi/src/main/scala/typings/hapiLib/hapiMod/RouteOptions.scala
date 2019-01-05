@@ -186,7 +186,7 @@ trait RouteOptions extends js.Object {
     * errors. Defaults to 'error' (return a Bad Request (400) error response).
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-routeoptionsstate)
     */
-  var state: js.UndefOr[hapiLib.Anon_FailAction] = js.undefined
+  var state: js.UndefOr[hapiLib.Anon_Parse] = js.undefined
   /**
     * Default value: none.
     * Route tags used for generating documentation (array of strings).
@@ -199,7 +199,7 @@ trait RouteOptions extends js.Object {
     * Timeouts for processing durations.
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-routeoptionstimeout)
     */
-  var timeout: js.UndefOr[hapiLib.Anon_Socket] = js.undefined
+  var timeout: js.UndefOr[hapiLib.Anon_Server] = js.undefined
   /**
     * Default value: { headers: true, params: true, query: true, payload: true, failAction: 'error' }.
     * Request input validation rules for various request components.

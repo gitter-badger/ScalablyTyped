@@ -11,7 +11,7 @@ trait FileInfo extends js.Object {
   var modifyTime: scala.Double
   var name: java.lang.String
   var owner: scala.Double
-  var rights: ssh2DashSftpDashClientLib.Anon_Group
+  var rights: ssh2DashSftpDashClientLib.Anon_User
   var size: scala.Double
   var `type`: java.lang.String
 }

@@ -10,9 +10,9 @@ import scala.scalajs.js.annotation._
 object dtsDebugMod extends js.Object {
   def getRawMetadata(
     container: /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify inversifyInterfaces.Container */ js.Any
-  ): js.Array[inversifyDashExpressDashUtilsLib.Anon_MethodMetadata] = js.native
+  ): js.Array[inversifyDashExpressDashUtilsLib.Anon_ControllerMetadata] = js.native
   def getRouteInfo(
     container: /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify inversifyInterfaces.Container */ js.Any
-  ): js.Array[inversifyDashExpressDashUtilsLib.Anon_Endpoints] = js.native
+  ): js.Array[inversifyDashExpressDashUtilsLib.Anon_ControllerEndpoints] = js.native
 }
 

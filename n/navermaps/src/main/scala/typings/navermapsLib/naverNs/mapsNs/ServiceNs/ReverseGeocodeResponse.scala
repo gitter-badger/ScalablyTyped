@@ -6,6 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ReverseGeocodeResponse extends js.Object {
-  var result: navermapsLib.Anon_ItemsTotal
+  var result: navermapsLib.Anon_UserqueryTotal
 }
 

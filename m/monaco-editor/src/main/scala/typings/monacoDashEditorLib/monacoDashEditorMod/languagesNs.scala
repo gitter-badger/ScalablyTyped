@@ -899,7 +899,7 @@ object languagesNs extends js.Object {
   trait ResourceFileEdit extends js.Object {
     var newUri: monacoDashEditorLib.monacoDashEditorMod.Uri
     var oldUri: monacoDashEditorLib.monacoDashEditorMod.Uri
-    var options: monacoDashEditorLib.Anon_IgnoreIfNotExists
+    var options: monacoDashEditorLib.Anon_Overwrite
   }
   
   trait ResourceTextEdit extends js.Object {
@@ -1458,7 +1458,7 @@ object languagesNs extends js.Object {
   @js.native
   object cssNs extends js.Object {
     trait DiagnosticsOptions extends js.Object {
-      val lint: js.UndefOr[monacoDashEditorLib.Anon_ZeroUnits] = js.undefined
+      val lint: js.UndefOr[monacoDashEditorLib.Anon_CompatibleVendorPrefixes] = js.undefined
       val validate: js.UndefOr[scala.Boolean] = js.undefined
     }
     

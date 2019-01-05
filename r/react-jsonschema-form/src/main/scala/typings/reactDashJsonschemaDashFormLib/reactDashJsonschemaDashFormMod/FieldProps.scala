@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait FieldProps
-  extends reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLElement]
+  extends reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLElement with stdLib.HTMLElement]
      with /* prop */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var autofocus: scala.Boolean
   var disabled: scala.Boolean
@@ -16,7 +16,7 @@ trait FieldProps
   var idSchema: IdSchema
   var name: java.lang.String
   var readonly: scala.Boolean
-  var registry: reactDashJsonschemaDashFormLib.Anon_Definitions
+  var registry: reactDashJsonschemaDashFormLib.Anon_Fields
   var required: scala.Boolean
   var schema: jsonDashSchemaLib.jsonDashSchemaMod.JSONSchema6
   var uiSchema: UiSchema

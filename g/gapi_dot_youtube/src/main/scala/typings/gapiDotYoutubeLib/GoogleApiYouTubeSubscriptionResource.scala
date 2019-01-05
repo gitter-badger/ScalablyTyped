@@ -25,10 +25,10 @@ trait GoogleApiYouTubeSubscriptionResource extends js.Object {
   /**
     * The snippet object contains basic details about the subscription, including its title and the channel that the user subscribed to.
     */
-  var snippet: Anon_ResourceIdDescription
+  var snippet: Anon_PublishedAtChannelTitle
   /**
     *
     */
-  var subscriberSnippet: Anon_DescriptionThumbnails
+  var subscriberSnippet: Anon_TitleDescriptionChannelId
 }
 

@@ -251,7 +251,7 @@ trait DocumentQuery[T, DocType /* <: Document */, QueryHelpers] extends mquery {
     * @param object Must contain a type property which is a String and a coordinates property which
     *   is an Array. See the examples.
     */
-  def geometry(`object`: mongooseLib.Anon_Coordinates): this.type = js.native
+  def geometry(`object`: mongooseLib.Anon_Type): this.type = js.native
   /**
     * Returns the current query options as a JSON object.
     * @returns current query options
@@ -520,7 +520,7 @@ trait DocumentQuery[T, DocType /* <: Document */, QueryHelpers] extends mquery {
     */
   def tailable(): this.type = js.native
   def tailable(bool: scala.Boolean): this.type = js.native
-  def tailable(bool: scala.Boolean, opts: mongooseLib.Anon_TailableRetryInterval): this.type = js.native
+  def tailable(bool: scala.Boolean, opts: mongooseLib.Anon_NumberOfRetries): this.type = js.native
   /** Executes this query and returns a promise */
   def `then`[TRes](): js.Promise[TRes] = js.native
   def `then`[TRes](resolve: js.Function1[/* res */ T, scala.Unit | TRes | js.Thenable[TRes]]): js.Promise[TRes] = js.native

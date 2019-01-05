@@ -11,7 +11,7 @@ object libSharedModMembers extends js.Object {
   def assign(target: js.Object, sources: js.Object*): js.Object = js.native
   def callbackPromise(
     resolve: js.Function1[/* repeated */ js.Any, scala.Unit],
-    reject: js.Function1[/* err */ nodeLib.Error, scala.Unit]
+    reject: js.Function1[/* err */ nodeLib.Error with stdLib.Error, scala.Unit]
   ): js.Function0[scala.Unit] = js.native
   def encodeXText(str: java.lang.String): java.lang.String = js.native
   def getLogger(): Logger = js.native
@@ -26,7 +26,7 @@ object libSharedModMembers extends js.Object {
     data: js.Array[_],
     key: java.lang.String,
     callback: js.Function2[
-      /* err */ nodeLib.Error | scala.Null, 
+      /* err */ (nodeLib.Error with stdLib.Error) | scala.Null, 
       /* value */ nodeLib.Buffer | java.lang.String, 
       scala.Unit
     ]
@@ -36,7 +36,7 @@ object libSharedModMembers extends js.Object {
     data: js.Array[_],
     key: scala.Double,
     callback: js.Function2[
-      /* err */ nodeLib.Error | scala.Null, 
+      /* err */ (nodeLib.Error with stdLib.Error) | scala.Null, 
       /* value */ nodeLib.Buffer | java.lang.String, 
       scala.Unit
     ]
@@ -46,7 +46,7 @@ object libSharedModMembers extends js.Object {
     data: js.Object,
     key: java.lang.String,
     callback: js.Function2[
-      /* err */ nodeLib.Error | scala.Null, 
+      /* err */ (nodeLib.Error with stdLib.Error) | scala.Null, 
       /* value */ nodeLib.Buffer | java.lang.String, 
       scala.Unit
     ]
@@ -56,7 +56,7 @@ object libSharedModMembers extends js.Object {
     data: js.Object,
     key: scala.Double,
     callback: js.Function2[
-      /* err */ nodeLib.Error | scala.Null, 
+      /* err */ (nodeLib.Error with stdLib.Error) | scala.Null, 
       /* value */ nodeLib.Buffer | java.lang.String, 
       scala.Unit
     ]

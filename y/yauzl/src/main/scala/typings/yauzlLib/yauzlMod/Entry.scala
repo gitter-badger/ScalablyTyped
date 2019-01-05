@@ -14,7 +14,7 @@ class Entry () extends js.Object {
   var crc32: scala.Double = js.native
   var externalFileAttributes: scala.Double = js.native
   var extraFieldLength: scala.Double = js.native
-  var extraFields: js.Array[yauzlLib.Anon_Data] = js.native
+  var extraFields: js.Array[yauzlLib.Anon_Id] = js.native
   var fileCommentLength: scala.Double = js.native
   var fileName: java.lang.String = js.native
   var fileNameLength: scala.Double = js.native

@@ -76,10 +76,10 @@ trait Collection[TSchema] extends js.Object {
   def createIndexes(indexSpecs: js.Array[IndexSpecification]): js.Promise[_] = js.native
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/Collection.html#createIndexes and  http://docs.mongodb.org/manual/reference/command/createIndexes/ */
   def createIndexes(indexSpecs: js.Array[IndexSpecification], callback: MongoCallback[_]): scala.Unit = js.native
-  def createIndexes(indexSpecs: js.Array[IndexSpecification], options: mongodbLib.Anon_SessionClientSessionOptional): js.Promise[_] = js.native
+  def createIndexes(indexSpecs: js.Array[IndexSpecification], options: mongodbLib.Anon_Session): js.Promise[_] = js.native
   def createIndexes(
     indexSpecs: js.Array[IndexSpecification],
-    options: mongodbLib.Anon_SessionClientSessionOptional,
+    options: mongodbLib.Anon_Session,
     callback: MongoCallback[_]
   ): scala.Unit = js.native
   def deleteMany(filter: FilterQuery[TSchema]): js.Promise[DeleteWriteOpResultObject] = js.native
@@ -106,12 +106,12 @@ trait Collection[TSchema] extends js.Object {
   def distinct(
     key: java.lang.String,
     query: FilterQuery[TSchema],
-    options: mongodbLib.Anon_SessionReadPreferenceMaxTimeMS
+    options: mongodbLib.Anon_ReadPreferenceMaxTimeMSSession
   ): js.Promise[_] = js.native
   def distinct(
     key: java.lang.String,
     query: FilterQuery[TSchema],
-    options: mongodbLib.Anon_SessionReadPreferenceMaxTimeMS,
+    options: mongodbLib.Anon_ReadPreferenceMaxTimeMSSession,
     callback: MongoCallback[_]
   ): scala.Unit = js.native
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/Collection.html#drop */
@@ -154,10 +154,10 @@ trait Collection[TSchema] extends js.Object {
   def findOneAndDelete(filter: FilterQuery[TSchema]): js.Promise[FindAndModifyWriteOpResultObject[TSchema]] = js.native
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/Collection.html#findOneAndDelete */
   def findOneAndDelete(filter: FilterQuery[TSchema], callback: MongoCallback[FindAndModifyWriteOpResultObject[TSchema]]): scala.Unit = js.native
-  def findOneAndDelete(filter: FilterQuery[TSchema], options: mongodbLib.Anon_SessionProjection): js.Promise[FindAndModifyWriteOpResultObject[TSchema]] = js.native
+  def findOneAndDelete(filter: FilterQuery[TSchema], options: mongodbLib.Anon_Projection): js.Promise[FindAndModifyWriteOpResultObject[TSchema]] = js.native
   def findOneAndDelete(
     filter: FilterQuery[TSchema],
-    options: mongodbLib.Anon_SessionProjection,
+    options: mongodbLib.Anon_Projection,
     callback: MongoCallback[FindAndModifyWriteOpResultObject[TSchema]]
   ): scala.Unit = js.native
   def findOneAndReplace(filter: FilterQuery[TSchema], replacement: js.Object): js.Promise[FindAndModifyWriteOpResultObject[TSchema]] = js.native
@@ -808,13 +808,13 @@ trait Collection[TSchema] extends js.Object {
   def indexInformation(): js.Promise[_] = js.native
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/Collection.html#indexInformation */
   def indexInformation(callback: MongoCallback[_]): scala.Unit = js.native
-  def indexInformation(options: mongodbLib.Anon_SessionFull): js.Promise[_] = js.native
-  def indexInformation(options: mongodbLib.Anon_SessionFull, callback: MongoCallback[_]): scala.Unit = js.native
+  def indexInformation(options: mongodbLib.Anon_FullSession): js.Promise[_] = js.native
+  def indexInformation(options: mongodbLib.Anon_FullSession, callback: MongoCallback[_]): scala.Unit = js.native
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/Collection.html#indexes */
   def indexes(): js.Promise[_] = js.native
   def indexes(callback: MongoCallback[_]): scala.Unit = js.native
   def indexes(options: mongodbLib.Anon_SessionClientSession): js.Promise[_] = js.native
-  def indexes(options: mongodbLib.Anon_SessionClientSessionOptional, callback: MongoCallback[_]): scala.Unit = js.native
+  def indexes(options: mongodbLib.Anon_Session, callback: MongoCallback[_]): scala.Unit = js.native
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/Collection.html#initializeOrderedBulkOp */
   def initializeOrderedBulkOp(): OrderedBulkOperation = js.native
   def initializeOrderedBulkOp(options: CommonOptions): OrderedBulkOperation = js.native
@@ -858,7 +858,7 @@ trait Collection[TSchema] extends js.Object {
   def isCapped(options: mongodbLib.Anon_SessionClientSession, callback: MongoCallback[_]): scala.Unit = js.native
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/Collection.html#listIndexes */
   def listIndexes(): CommandCursor = js.native
-  def listIndexes(options: mongodbLib.Anon_SessionReadPreference): CommandCursor = js.native
+  def listIndexes(options: mongodbLib.Anon_BatchSize): CommandCursor = js.native
   def mapReduce(map: java.lang.String, reduce: java.lang.String): js.Promise[_] = js.native
   def mapReduce(map: java.lang.String, reduce: java.lang.String, callback: MongoCallback[_]): scala.Unit = js.native
   def mapReduce(map: java.lang.String, reduce: java.lang.String, options: MapReduceOptions): js.Promise[_] = js.native
@@ -915,10 +915,10 @@ trait Collection[TSchema] extends js.Object {
   def rename(newName: java.lang.String): js.Promise[Collection[TSchema]] = js.native
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/Collection.html#rename */
   def rename(newName: java.lang.String, callback: MongoCallback[Collection[TSchema]]): scala.Unit = js.native
-  def rename(newName: java.lang.String, options: mongodbLib.Anon_DropTarget): js.Promise[Collection[TSchema]] = js.native
+  def rename(newName: java.lang.String, options: mongodbLib.Anon_DropTargetSession): js.Promise[Collection[TSchema]] = js.native
   def rename(
     newName: java.lang.String,
-    options: mongodbLib.Anon_DropTarget,
+    options: mongodbLib.Anon_DropTargetSession,
     callback: MongoCallback[Collection[TSchema]]
   ): scala.Unit = js.native
   def replaceOne(filter: FilterQuery[TSchema], doc: TSchema): js.Promise[ReplaceWriteOpResult] = js.native
@@ -942,8 +942,8 @@ trait Collection[TSchema] extends js.Object {
   def stats(): js.Promise[CollStats] = js.native
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/Collection.html#stats */
   def stats(callback: MongoCallback[CollStats]): scala.Unit = js.native
-  def stats(options: mongodbLib.Anon_Session): js.Promise[CollStats] = js.native
-  def stats(options: mongodbLib.Anon_Session, callback: MongoCallback[CollStats]): scala.Unit = js.native
+  def stats(options: mongodbLib.Anon_ScaleSession): js.Promise[CollStats] = js.native
+  def stats(options: mongodbLib.Anon_ScaleSession, callback: MongoCallback[CollStats]): scala.Unit = js.native
   def update(filter: FilterQuery[TSchema], update: TSchema): js.Promise[WriteOpResult] = js.native
   def update(filter: FilterQuery[TSchema], update: TSchema, callback: MongoCallback[WriteOpResult]): scala.Unit = js.native
   def update(
@@ -1025,7 +1025,7 @@ trait Collection[TSchema] extends js.Object {
   def watch(pipeline: js.Array[js.Object]): ChangeStream = js.native
   def watch(
     pipeline: js.Array[js.Object],
-    options: ChangeStreamOptions with mongodbLib.Anon_SessionStartAtClusterTime
+    options: ChangeStreamOptions with mongodbLib.Anon_StartAtClusterTime
   ): ChangeStream = js.native
 }
 

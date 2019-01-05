@@ -18,15 +18,6 @@ trait Anon_Template extends js.Object {
     */
   var index: scala.Double = js.native
   /**
-    * A method to repeated output a template.
-    *
-    * @param element The target container into which the content will be inserted.
-    * @param template A string of markup.
-    * @param data The iterable data the template will consume.
-    * @return void.
-    */
-  var repeater: js.Function3[/* element */ JQuery, /* template */ java.lang.String, /* data */ js.Any, scala.Unit] = js.native
-  /**
     * This method parses a string and an optoinal variable name and returns a parsed template in the form of a function. You can then pass this function data to get rendered nodes.
     *
     * @param template A string of markup to use as a template.
@@ -35,5 +26,14 @@ trait Anon_Template extends js.Object {
     */
   def apply(template: java.lang.String): js.Function = js.native
   def apply(template: java.lang.String, variable: java.lang.String): js.Function = js.native
+  /**
+    * A method to repeated output a template.
+    *
+    * @param element The target container into which the content will be inserted.
+    * @param template A string of markup.
+    * @param data The iterable data the template will consume.
+    * @return void.
+    */
+  def repeater(element: JQuery, template: java.lang.String, data: js.Any): scala.Unit = js.native
 }
 

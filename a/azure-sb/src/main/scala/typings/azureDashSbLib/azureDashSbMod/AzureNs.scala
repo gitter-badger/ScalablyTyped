@@ -142,7 +142,7 @@ object AzureNs extends js.Object {
       object ModelsNs extends js.Object {
         trait Base extends js.Object {
           var CreatedAt: azureDashSbLib.azureDashSbMod.AzureNs.ServiceBusNs.DateString
-          var `_`: azureDashSbLib.Anon_Author
+          var `_`: azureDashSbLib.Anon_ContentRootElement
         }
         
         @js.native
@@ -311,7 +311,7 @@ object AzureNs extends js.Object {
                   ] = js.native
         }
         
-        type CorrelationFilter = stdLib.Partial[azureDashSbLib.Anon_Properties]
+        type CorrelationFilter = stdLib.Partial[azureDashSbLib.Anon_ContentType]
       }
       
     }
@@ -332,15 +332,19 @@ object AzureNs extends js.Object {
     type ListSubscriptionsOptions = stdLib.Partial[PaginationOptions]
     type ListTopicsOptions = stdLib.Partial[PaginationOptions]
     type MessageOrName = Message | java.lang.String
-    type ResponseCallback = js.Function2[/* error */ nodeLib.Error | scala.Null, /* response */ Response, scala.Unit]
+    type ResponseCallback = js.Function2[
+        /* error */ (nodeLib.Error with stdLib.Error) | scala.Null, 
+        /* response */ Response, 
+        scala.Unit
+      ]
     type ResultAndResponseCallback = js.Function3[
-        /* error */ nodeLib.Error | scala.Null, 
+        /* error */ (nodeLib.Error with stdLib.Error) | scala.Null, 
         /* result */ scala.Boolean | azureDashSbLib.azureDashSbMod.AzureNs.ServiceBusNs.ResultsNs.ModelsNs.Base | js.Array[azureDashSbLib.azureDashSbMod.AzureNs.ServiceBusNs.ResultsNs.ModelsNs.Base], 
         /* response */ Response, 
         scala.Unit
       ]
     type TypedResultAndResponseCallback[T] = js.Function3[
-        /* error */ nodeLib.Error | scala.Null, 
+        /* error */ (nodeLib.Error with stdLib.Error) | scala.Null, 
         /* result */ T, 
         /* response */ Response, 
         scala.Unit

@@ -12,7 +12,7 @@ trait DeclarationOption extends js.Object {
   var help: java.lang.String
   var hint: js.UndefOr[ParameterHint] = js.undefined
   var map: js.UndefOr[
-    typedocLib.typedocLibStrings.`object` | (lodashLib.lodashMod.Global.Map[java.lang.String | scala.Double, _]) | org.scalablytyped.runtime.StringDictionary[js.Any]
+    typedocLib.typedocLibStrings.`object` | ((lodashLib.lodashMod.Global.Map[java.lang.String | scala.Double, _]) with (stdLib.Map[java.lang.String | scala.Double, _])) | org.scalablytyped.runtime.StringDictionary[js.Any]
   ] = js.undefined
   var mapError: js.UndefOr[java.lang.String] = js.undefined
   var name: java.lang.String

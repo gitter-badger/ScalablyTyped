@@ -15,6 +15,9 @@ object distRunHttpQueryModMembers extends js.Object {
     ]) with apolloDashServerDashCoreLib.Anon_Context[TContext],
     httpRequest: HttpQueryRequest
   ): js.Promise[HttpQueryResponse] = js.native
-  def runHttpQuery(handlerArguments: apolloDashEnvLib.libPolyfillsArrayMod.Global.Array[_], request: HttpQueryRequest): js.Promise[HttpQueryResponse] = js.native
+  def runHttpQuery(
+    handlerArguments: apolloDashEnvLib.libPolyfillsArrayMod.Global.Array[_] with coreDashJsLib.Array[_] with js.Array[_],
+    request: HttpQueryRequest
+  ): js.Promise[HttpQueryResponse] = js.native
 }
 

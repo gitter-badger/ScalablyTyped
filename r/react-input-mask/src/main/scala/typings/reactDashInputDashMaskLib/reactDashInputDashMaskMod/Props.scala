@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Props
-  extends reactLib.reactMod.ReactNs.InputHTMLAttributes[reactLib.HTMLInputElement] {
+  extends reactLib.reactMod.ReactNs.InputHTMLAttributes[reactLib.HTMLInputElement with stdLib.HTMLInputElement] {
   /**
     * Show mask even in empty input without focus.
     */
@@ -38,7 +38,9 @@ trait Props
   /**
     * Use inputRef instead of ref if you need input node to manage focus, selection, etc.
     */
-  var inputRef: js.UndefOr[reactLib.reactMod.ReactNs.Ref[reactLib.HTMLInputElement]] = js.undefined
+  var inputRef: js.UndefOr[
+    reactLib.reactMod.ReactNs.Ref[reactLib.HTMLInputElement with stdLib.HTMLInputElement]
+  ] = js.undefined
   /**
     * Mask string. Format characters are:
     * * `9`: `0-9`

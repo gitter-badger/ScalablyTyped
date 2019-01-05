@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 @JSImport("azure", "ServiceSettings")
 @js.native
 object ServiceSettingsNs extends js.Object {
-  @js.native
+  /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+  - stdLib.Error because var conflicts: stack. Inlined message, name */ @js.native
   class NoMatchError ()
     extends nodeLib.Error {
     def this(message: java.lang.String) = this()

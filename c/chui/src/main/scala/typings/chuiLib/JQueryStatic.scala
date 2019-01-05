@@ -185,14 +185,14 @@ trait JQueryStatic extends js.Object {
     * @param: options UICreateSegmentedOptions
     * @return JQuery
     */
-  def UICreateSegmented(options: Anon_ClassName): JQuery = js.native
+  def UICreateSegmented(options: Anon_IdClassName): JQuery = js.native
   /**
     * Create a switch control. Possible options: { id: '#myId', name: 'fruit.mango', state: 'on', value: 'Mango', checked: 'on', style: 'traditional', callback: function() { alert('hi');}}
     *
     * @return void
     */
   def UICreateSwitch(): scala.Unit = js.native
-  def UICreateSwitch(options: Anon_Name): scala.Unit = js.native
+  def UICreateSwitch(options: Anon_IdName): scala.Unit = js.native
   /**
     * Method to tell ChocolateChip-UI to register navigation history on Window hash.
     */
@@ -240,7 +240,7 @@ trait JQueryStatic extends js.Object {
     * @return void
     */
   def UIPopover(): scala.Unit = js.native
-  def UIPopover(options: Anon_CallbackTitle): scala.Unit = js.native
+  def UIPopover(options: Anon_IdCallback): scala.Unit = js.native
   /**
     * Close any currently visible popovers.
     *
@@ -255,7 +255,7 @@ trait JQueryStatic extends js.Object {
     * @return void
     */
   def UIPopup(): scala.Unit = js.native
-  def UIPopup(options: Anon_Empty): scala.Unit = js.native
+  def UIPopup(options: Anon_Id): scala.Unit = js.native
   /**
     * Reset the value of the stepper to its defaults at initialization. Pass it a reference to the stepper to reset.
     *
@@ -268,19 +268,19 @@ trait JQueryStatic extends js.Object {
     * @return void
     */
   def UISearch(): scala.Unit = js.native
-  def UISearch(options: Anon_Results): scala.Unit = js.native
+  def UISearch(options: Anon_ArticleId): scala.Unit = js.native
   /**
     * Create and initialize a swipable carousel. Options: {target : '#myCarousel', panels: ['<p>stuff</p>','<p>more</p>'], loop: true, pagination: true }
     *
     * @return void
     */
-  def UISetupCarousel(options: Anon_TargetLoop): scala.Unit = js.native
+  def UISetupCarousel(options: Anon_TargetPanels): scala.Unit = js.native
   /**
     * Creates a sheet. Minimum option is an id: {id : 'starTrek', listClass :'enterprise', background: 'transparent', handle: false }
     *
     * @return void
     */
-  def UISheet(options: Anon_ListClass): scala.Unit = js.native
+  def UISheet(options: Anon_IdListClass): scala.Unit = js.native
   /**
     * If the navigation bar is hidden, show it, pushing down the content to make room.
     */
@@ -300,7 +300,7 @@ trait JQueryStatic extends js.Object {
     * Creates and initializes a slide out menu. Possible options: {dynamic: true, callback: function() { alert("Woohoo!");}}
     */
   def UISlideout(): js.Any = js.native
-  def UISlideout(options: Anon_CallbackArgs): js.Any = js.native
+  def UISlideout(options: Anon_Dynamic): js.Any = js.native
   /**
     * Creates a tabbar. On iOS this is at the bottom of the screen. On Android and Windows, it is at the top.
     * Options: {id: 'mySpecialTabbar', tabs: 4, labels: ["Refresh", "Add", "Info", "Downloads", "Favorite"], icons: ["refresh", "add", "info", "downloads", "favorite"], selected: 2 }
@@ -308,7 +308,7 @@ trait JQueryStatic extends js.Object {
     * @return void
     */
   def UITabbar(): scala.Unit = js.native
-  def UITabbar(options: Anon_Selected): scala.Unit = js.native
+  def UITabbar(options: Anon_IdTabs): scala.Unit = js.native
   /**
     * Unbind the values of data-models from their data-controllers.
     * If you provide a controller name as the argument, only that controller will be unbound.

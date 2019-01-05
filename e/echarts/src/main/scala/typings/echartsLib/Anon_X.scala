@@ -7,95 +7,50 @@ import scala.scalajs.js.annotation._
 
 trait Anon_X extends js.Object {
   /**
-    * The format is \[start coordinate, end coordinate\],
-    * where the coordinate system can be `x`, `y` on
-    * [cartesian](https://ecomfe.github.io/echarts-doc/public/en/option.html#grid)
-    * , or `radius`, `angle` on
-    * [polar](https://ecomfe.github.io/echarts-doc/public/en/option.html#polar)
-    * .
+    * The height of the shape of the element.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-candlestick.markArea.data.0.coord
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.renderItem.return_rect.shape.height
     */
-  var coord: js.UndefOr[js.Array[_]] = js.undefined
+  var height: js.UndefOr[scala.Double] = js.undefined
   /**
-    * Style of the item.
-    * `itemStyle` of start point and end point will be
-    * merged together.
+    * Specify border radius of the rectangular here.
+    * Generally, `r` should be `[topLeftRadius, topRightRadius,
+    * BottomRightRadius, bottomLeftRadius]`, where each
+    * item is a number.
+    *
+    * Abbreviation is enabled, for example:
+    *
+    * + `r`: `1` means `[1, 1, 1, 1]`
+    * + `r`: `[1]` means `[1, 1, 1, 1]`
+    * + `r`: `[1, 2]` means `[1, 2, 1, 2]`
+    * + `r`: `[1, 2, 3]` means `[1, 2, 3, 2]`
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-candlestick.markArea.data.0.itemStyle
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.renderItem.return_rect.shape.r
     */
-  var itemStyle: js.UndefOr[Anon_ShadowOffsetXBorderTypeShadowBlur] = js.undefined
+  var r: js.UndefOr[js.Array[_]] = js.undefined
   /**
-    * Label style of the item.
-    * Label style of start point and end point will be
-    * merged together.
+    * The width of the shape of the element.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-candlestick.markArea.data.0.label
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.renderItem.return_rect.shape.width
     */
-  var label: js.UndefOr[Anon_ShadowOffsetXBackgroundColorShow] = js.undefined
+  var width: js.UndefOr[scala.Double] = js.undefined
   /**
-    * Specify this item is on min or max or average value.
-    *
-    * **Options:**
-    *
-    * + `'min'` max value。
-    * + `'max'` min value。
-    * + `'average'` average value。
+    * The x value of the left-top corner of the element
+    * in the coordinate system of its parent.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-candlestick.markArea.data.0.type
-    */
-  var `type`: js.UndefOr[java.lang.String] = js.undefined
-  /**
-    * value of the item, not necessary.
-    *
-    *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-candlestick.markArea.data.0.value
-    */
-  var value: js.UndefOr[scala.Double] = js.undefined
-  /**
-    * Specify the dimension on which min, max, average
-    * are calculated, available when
-    * [type](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-.markArea.data.type)
-    * used.
-    * The value can be the name of the dimension (for example,
-    * the value can be `x`, `angle` in line chart, and
-    * `open`, `close` in candlestick).
-    *
-    *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-candlestick.markArea.data.0.valueDim
-    */
-  var valueDim: js.UndefOr[java.lang.String] = js.undefined
-  /**
-    * Specify the dimension on which min, max, average
-    * are calculated, available when
-    * [type](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-.markArea.data.type)
-    * used.
-    * The value can be `0` (means xAxis, radiusAxis) or
-    * `1` (means yAxis, angleAxis), using the dimension
-    * of the first axis by default.
-    *
-    *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-candlestick.markArea.data.0.valueIndex
-    */
-  var valueIndex: js.UndefOr[scala.Double] = js.undefined
-  /**
-    * x value on screen coordinate system, can be pixel
-    * number (like `5`), or percent value (like `'20%'`).
-    *
-    *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-candlestick.markArea.data.0.x
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.renderItem.return_rect.shape.x
     */
   var x: js.UndefOr[scala.Double] = js.undefined
   /**
-    * y value on screen coordinate system, can be pixel
-    * number (like `5`), or percent value (like `'20%'`).
+    * The y value of the left-top corner of the element
+    * in the coordinate system of its parent.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-candlestick.markArea.data.0.y
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.renderItem.return_rect.shape.y
     */
   var y: js.UndefOr[scala.Double] = js.undefined
 }

@@ -16,6 +16,6 @@ trait Result extends js.Object {
     * The source map.
     */
   var map: js.UndefOr[nodeLib.Buffer] = js.undefined
-  var stats: sassLib.Anon_Duration
+  var stats: sassLib.Anon_Entry
 }
 

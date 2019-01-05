@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 class Socket ()
   extends nodeLib.eventsMod.EventEmitter {
   def addSocket(sock: Socket): scala.Unit = js.native
-  def address(): js.UndefOr[axonLib.Anon_Address] = js.native
+  def address(): js.UndefOr[axonLib.Anon_Port] = js.native
   def bind(port: ConnectionPort): Socket = js.native
   def bind(port: ConnectionPort, host: java.lang.String): Socket = js.native
   def bind(port: ConnectionPort, host: java.lang.String, fn: js.Function0[scala.Unit]): Socket = js.native

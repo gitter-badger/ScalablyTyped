@@ -16,7 +16,7 @@ trait Anon_ArrLimitIteratorCallbackT extends js.Object {
     arr: i2cDashBusLib.asyncMod.IterableCollection[T],
     limit: scala.Double,
     iterator: i2cDashBusLib.asyncMod.AsyncBooleanIterator[T, E],
-    callback: i2cDashBusLib.asyncMod.AsyncResultArrayCallback[T, E]
+    callback: i2cDashBusLib.asyncMod.AsyncBooleanResultCallback[E]
   ): scala.Unit = js.native
 }
 

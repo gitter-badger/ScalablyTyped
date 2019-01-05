@@ -38,7 +38,7 @@ trait Campaign
     longitude: scala.Double,
     radius: scala.Double,
     radiusUnits: RadiusUnits,
-    optArgs: Anon_Address
+    optArgs: Anon_BidModifier
   ): AdWordsOperation[TargetedProximity] = js.native
   def addProximity(proximity: ProximityObject): AdWordsOperation[TargetedProximity] = js.native
   def addProximity(proximity: TargetedProximity): AdWordsOperation[TargetedProximity] = js.native

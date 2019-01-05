@@ -7,17 +7,13 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Anon_OptionsFileListCallback extends js.Object {
-  def apply(options: tarLib.tarMod.ReplaceOptions): js.Promise[scala.Unit] = js.native
-  def apply(options: tarLib.tarMod.ReplaceOptions, fileList: js.Array[java.lang.String]): js.Promise[scala.Unit] = js.native
+  def apply(): nodeLib.streamMod.Writable = js.native
+  def apply(options: tarLib.tarMod.ListOptions): nodeLib.streamMod.Writable = js.native
+  def apply(options: tarLib.tarMod.ListOptions, fileList: js.Array[java.lang.String]): nodeLib.streamMod.Writable = js.native
   def apply(
-    options: tarLib.tarMod.ReplaceOptions,
+    options: tarLib.tarMod.ListOptions,
     fileList: js.Array[java.lang.String],
-    callback: js.Function1[/* err */ js.UndefOr[nodeLib.Error], scala.Unit]
-  ): js.Promise[scala.Unit] = js.native
-  def apply(
-    options: tarLib.tarMod.ReplaceOptions,
-    fileList: js.UndefOr[scala.Nothing],
-    callback: js.Function1[/* err */ js.UndefOr[nodeLib.Error], scala.Unit]
-  ): js.Promise[scala.Unit] = js.native
+    callback: js.Function1[/* err */ js.UndefOr[nodeLib.Error with stdLib.Error], scala.Unit]
+  ): nodeLib.streamMod.Writable = js.native
 }
 

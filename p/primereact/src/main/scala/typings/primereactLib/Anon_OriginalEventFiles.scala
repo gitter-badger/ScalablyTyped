@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 trait Anon_OriginalEventFiles extends js.Object {
   var files: js.Any
-  var originalEvent: reactLib.Event
+  var originalEvent: reactLib.Event with stdLib.Event
 }
 

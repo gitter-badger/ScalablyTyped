@@ -58,7 +58,7 @@ trait AutocompleteProps
   var onChange: js.UndefOr[
     js.Function2[
       /* value */ java.lang.String, 
-      /* event */ reactLib.reactMod.ReactNs.FormEvent[reactLib.HTMLFormElement], 
+      /* event */ reactLib.reactMod.ReactNs.FormEvent[reactLib.HTMLFormElement with stdLib.HTMLFormElement], 
       scala.Unit
     ]
   ] = js.undefined

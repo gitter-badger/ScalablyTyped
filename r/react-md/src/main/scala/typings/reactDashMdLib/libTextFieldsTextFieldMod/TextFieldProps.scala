@@ -23,17 +23,21 @@ trait TextFieldProps
   var icon: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
   var id: js.UndefOr[reactDashMdLib.libMod.IdPropType] = js.undefined
   var onChange: js.UndefOr[
-    js.Function2[/* value */ scala.Double | java.lang.String, /* event */ reactLib.Event, scala.Unit]
+    js.Function2[
+      /* value */ scala.Double | java.lang.String, 
+      /* event */ reactLib.Event with stdLib.Event, 
+      scala.Unit
+    ]
   ] = js.undefined
   var onDoubleClick: js.UndefOr[
     js.Function1[
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent], 
+      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement with stdLib.HTMLElement, reactLib.NativeMouseEvent], 
       scala.Unit
     ]
   ] = js.undefined
   var onPaste: js.UndefOr[
     js.Function1[
-      /* event */ reactLib.reactMod.ReactNs.ClipboardEvent[reactLib.HTMLElement], 
+      /* event */ reactLib.reactMod.ReactNs.ClipboardEvent[reactLib.HTMLElement with stdLib.HTMLElement], 
       scala.Unit
     ]
   ] = js.undefined

@@ -78,7 +78,7 @@ trait SingleDatePickerShape extends js.Object {
   ] = js.native
   var renderMonthElement: js.UndefOr[
     js.Function1[
-      /* props */ reactDashDatesLib.Anon_OnYearSelect, 
+      /* props */ reactDashDatesLib.Anon_Month, 
       java.lang.String | reactLib.reactMod.Global.JSXNs.Element
     ]
   ] = js.native

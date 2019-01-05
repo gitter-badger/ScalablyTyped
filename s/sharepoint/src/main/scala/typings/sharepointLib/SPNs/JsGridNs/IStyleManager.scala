@@ -7,14 +7,14 @@ import scala.scalajs.js.annotation._
 
 // tslint:disable-next-line: interface-name
 trait IStyleManager extends js.Object {
-  var columnHeaderStyleCollection: sharepointLib.Anon_AllSelected
+  var columnHeaderStyleCollection: sharepointLib.Anon_Normal
   var defaultCellStyle: sharepointLib.SPNs.JsGridNs.IStyleTypeNs.Cell
   var gridPaneStyle: sharepointLib.SPNs.JsGridNs.IStyleTypeNs.GridPane
   var groupingStyles: js.Array[_]
   var readOnlyCellStyle: sharepointLib.SPNs.JsGridNs.IStyleTypeNs.Cell
   var readOnlyFocusedCellStyle: sharepointLib.SPNs.JsGridNs.IStyleTypeNs.Cell
-  var rowHeaderStyleCollection: sharepointLib.Anon_AllSelected
-  var splitterStyleCollection: sharepointLib.Anon_NormalHandle
+  var rowHeaderStyleCollection: sharepointLib.Anon_Normal
+  var splitterStyleCollection: sharepointLib.Anon_NormalNormalHandle
   var timescaleTierStyle: sharepointLib.SPNs.JsGridNs.IStyleTypeNs.TimescaleTier
   var widgetDockHoverStyle: sharepointLib.SPNs.JsGridNs.IStyleTypeNs.Widget
   var widgetDockPressedStyle: sharepointLib.SPNs.JsGridNs.IStyleTypeNs.Widget

@@ -14,7 +14,7 @@ trait SharedIniFileCredentialsOptions extends js.Object {
     js.Function2[
       /* mfaSerial */ java.lang.String, 
       /* callback */ js.Function2[
-        /* err */ js.UndefOr[nodeLib.Error], 
+        /* err */ js.UndefOr[nodeLib.Error with stdLib.Error], 
         /* token */ js.UndefOr[java.lang.String], 
         scala.Unit
       ], 

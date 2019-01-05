@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Intermediate
-  extends reactLib.reactMod.ReactNs.AllHTMLAttributes[reactLib.HTMLElement] {
+  extends reactLib.reactMod.ReactNs.AllHTMLAttributes[reactLib.HTMLElement with stdLib.HTMLElement] {
   @JSName("size")
   var size_Intermediate: js.UndefOr[js.Any] = js.undefined
 }

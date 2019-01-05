@@ -26,6 +26,6 @@ object buildSrcUtilsStackingUtilsModMembers extends js.Object {
     keyAccessor: plottableLib.buildSrcCoreInterfacesMod.IAccessor[_],
     filter: plottableLib.buildSrcCoreInterfacesMod.IAccessor[scala.Boolean]
   ): js.Array[scala.Double] = js.native
-  def stackedExtents[D](stackingResult: GenericStackingResult[D]): plottableLib.Anon_MinimumExtents[D] = js.native
+  def stackedExtents[D](stackingResult: GenericStackingResult[D]): plottableLib.Anon_MaximumExtents[D] = js.native
 }
 

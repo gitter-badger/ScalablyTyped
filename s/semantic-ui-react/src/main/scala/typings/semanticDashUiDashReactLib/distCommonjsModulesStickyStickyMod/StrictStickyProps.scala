@@ -28,7 +28,7 @@ trait StrictStickyProps extends js.Object {
     */
   var onBottom: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent], 
+      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement with stdLib.HTMLElement, reactLib.NativeMouseEvent], 
       /* data */ StickyProps, 
       scala.Unit
     ]
@@ -41,7 +41,7 @@ trait StrictStickyProps extends js.Object {
     */
   var onStick: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent], 
+      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement with stdLib.HTMLElement, reactLib.NativeMouseEvent], 
       /* data */ StickyProps, 
       scala.Unit
     ]
@@ -54,7 +54,7 @@ trait StrictStickyProps extends js.Object {
     */
   var onTop: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent], 
+      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement with stdLib.HTMLElement, reactLib.NativeMouseEvent], 
       /* data */ StickyProps, 
       scala.Unit
     ]
@@ -67,7 +67,7 @@ trait StrictStickyProps extends js.Object {
     */
   var onUnstick: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent], 
+      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement with stdLib.HTMLElement, reactLib.NativeMouseEvent], 
       /* data */ StickyProps, 
       scala.Unit
     ]

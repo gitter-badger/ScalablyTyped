@@ -15,11 +15,11 @@ object releaseUtilsModMembers extends js.Object {
   def getCommonBasePathOfArray(paths: js.Array[java.lang.String]): java.lang.String = js.native
   def getError(
     info: typescriptLib.typescriptMod.tsNs.Diagnostic,
-    typescript: gulpDashTypescriptLib.Anon_CreateFunctionExpression
+    typescript: gulpDashTypescriptLib.Anon_VersionMajorMinor
   ): gulpDashTypescriptLib.releaseReporterMod.TypeScriptError = js.native
   def getError(
     info: typescriptLib.typescriptMod.tsNs.Diagnostic,
-    typescript: gulpDashTypescriptLib.Anon_CreateFunctionExpression,
+    typescript: gulpDashTypescriptLib.Anon_VersionMajorMinor,
     file: gulpDashTypescriptLib.releaseInputMod.File
   ): gulpDashTypescriptLib.releaseReporterMod.TypeScriptError = js.native
   def message(title: java.lang.String, alternative: java.lang.String): scala.Unit = js.native

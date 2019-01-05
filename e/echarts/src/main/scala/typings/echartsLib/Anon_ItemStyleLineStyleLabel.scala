@@ -8,16 +8,16 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Anon_ItemStyleLineStyleLabel extends js.Object {
   /**
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sankey.emphasis.itemStyle
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-tree.emphasis.itemStyle
     */
-  var itemStyle: js.UndefOr[Anon_ShadowOffsetXBorderType] = js.native
+  var itemStyle: js.UndefOr[Anon_ColorBorderColor] = js.native
   /**
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sankey.emphasis.label
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-tree.emphasis.label
     */
-  var label: js.UndefOr[Anon_ShadowOffsetXBackgroundColorShowAlign] = js.native
+  var label: js.UndefOr[Anon_ShowPosition] = js.native
   /**
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sankey.emphasis.lineStyle
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-tree.emphasis.lineStyle
     */
-  var lineStyle: js.UndefOr[Anon_ShadowOffsetXShadowBlurColorShadowColorOpacityShadowOffsetYCurveness] = js.native
+  var lineStyle: js.UndefOr[Anon_ColorWidthCurvenessShadowBlur] = js.native
 }
 

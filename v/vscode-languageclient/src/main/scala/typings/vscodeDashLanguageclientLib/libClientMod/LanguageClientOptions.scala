@@ -25,7 +25,7 @@ trait LanguageClientOptions extends js.Object {
     */
   var stdioEncoding: js.UndefOr[java.lang.String] = js.undefined
   var synchronize: js.UndefOr[SynchronizeOptions] = js.undefined
-  var uriConverters: js.UndefOr[vscodeDashLanguageclientLib.Anon_Protocol2Code] = js.undefined
+  var uriConverters: js.UndefOr[vscodeDashLanguageclientLib.Anon_Code2Protocol] = js.undefined
   var workspaceFolder: /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify VWorkspaceFolder */ js.UndefOr[
     /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify VWorkspaceFolder */ js.Any
   ] = js.undefined

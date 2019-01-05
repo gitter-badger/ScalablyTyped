@@ -20,12 +20,12 @@ trait SharedDrawerProps
   var navItemsId: js.UndefOr[reactDashMdLib.libMod.IdPropType] = js.undefined
   var navStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
   var onMediaTypeChange: js.UndefOr[
-    js.Function2[/* type */ DrawerType, /* media */ reactDashMdLib.Anon_Desktop, scala.Unit]
+    js.Function2[/* type */ DrawerType, /* media */ reactDashMdLib.Anon_Mobile, scala.Unit]
   ] = js.undefined
   var onVisibilityChange: js.UndefOr[
     js.Function2[
       /* visible */ scala.Boolean, 
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent], 
+      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement with stdLib.HTMLElement, reactLib.NativeMouseEvent], 
       scala.Unit
     ]
   ] = js.undefined

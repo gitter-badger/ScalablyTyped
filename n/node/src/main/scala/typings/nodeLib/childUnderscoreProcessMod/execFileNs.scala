@@ -14,7 +14,7 @@ object execFileNs extends js.Object {
   def `__promisify__`(
     file: java.lang.String,
     args: js.Array[java.lang.String],
-    options: nodeLib.Anon_EncodingStringNull with nodeLib.childUnderscoreProcessMod.ExecFileOptions
+    options: nodeLib.Anon_EncodingString with nodeLib.childUnderscoreProcessMod.ExecFileOptions
   ): js.Promise[nodeLib.Anon_StdoutStderrString] = js.native
   def `__promisify__`(
     file: java.lang.String,
@@ -39,7 +39,7 @@ object execFileNs extends js.Object {
   def `__promisify__`(
     file: java.lang.String,
     args: js.UndefOr[scala.Nothing],
-    options: nodeLib.Anon_EncodingStringNull with nodeLib.childUnderscoreProcessMod.ExecFileOptions
+    options: nodeLib.Anon_EncodingString with nodeLib.childUnderscoreProcessMod.ExecFileOptions
   ): js.Promise[nodeLib.Anon_StdoutStderrString] = js.native
   def `__promisify__`(
     file: java.lang.String,
@@ -64,7 +64,7 @@ object execFileNs extends js.Object {
   def `__promisify__`(
     file: java.lang.String,
     args: scala.Null,
-    options: nodeLib.Anon_EncodingStringNull with nodeLib.childUnderscoreProcessMod.ExecFileOptions
+    options: nodeLib.Anon_EncodingString with nodeLib.childUnderscoreProcessMod.ExecFileOptions
   ): js.Promise[nodeLib.Anon_StdoutStderrString] = js.native
   def `__promisify__`(
     file: java.lang.String,
@@ -88,7 +88,7 @@ object execFileNs extends js.Object {
   ): js.Promise[nodeLib.Anon_Stdout] = js.native
   def `__promisify__`(
     file: java.lang.String,
-    options: nodeLib.Anon_EncodingStringNull with nodeLib.childUnderscoreProcessMod.ExecFileOptions
+    options: nodeLib.Anon_EncodingString with nodeLib.childUnderscoreProcessMod.ExecFileOptions
   ): js.Promise[nodeLib.Anon_StdoutStderrString] = js.native
   def `__promisify__`(file: java.lang.String, options: nodeLib.childUnderscoreProcessMod.ExecFileOptions): js.Promise[nodeLib.Anon_Stdout] = js.native
   def `__promisify__`(

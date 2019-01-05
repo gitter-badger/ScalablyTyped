@@ -13,7 +13,11 @@ trait MulterOptions extends js.Object {
     js.Function3[
       /* req */ expressLib.expressMod.eNs.Request, 
       /* file */ File, 
-      /* callback */ js.Function2[/* error */ nodeLib.Error, /* acceptFile */ scala.Boolean, scala.Unit], 
+      /* callback */ js.Function2[
+        /* error */ nodeLib.Error with stdLib.Error, 
+        /* acceptFile */ scala.Boolean, 
+        scala.Unit
+      ], 
       scala.Unit
     ]
   ] = js.undefined

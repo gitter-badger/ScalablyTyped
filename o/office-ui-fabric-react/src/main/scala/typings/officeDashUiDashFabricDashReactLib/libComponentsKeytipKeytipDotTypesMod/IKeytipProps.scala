@@ -52,8 +52,8 @@ trait IKeytipProps extends js.Object {
     */
   var onExecute: js.UndefOr[
     js.Function2[
-      /* executeTarget */ reactLib.HTMLElement | scala.Null, 
-      /* target */ reactLib.HTMLElement | scala.Null, 
+      /* executeTarget */ (reactLib.HTMLElement with stdLib.HTMLElement) | scala.Null, 
+      /* target */ (reactLib.HTMLElement with stdLib.HTMLElement) | scala.Null, 
       scala.Unit
     ]
   ] = js.undefined
@@ -64,8 +64,8 @@ trait IKeytipProps extends js.Object {
     */
   var onReturn: js.UndefOr[
     js.Function2[
-      /* executeTarget */ reactLib.HTMLElement | scala.Null, 
-      /* target */ reactLib.HTMLElement | scala.Null, 
+      /* executeTarget */ (reactLib.HTMLElement with stdLib.HTMLElement) | scala.Null, 
+      /* target */ (reactLib.HTMLElement with stdLib.HTMLElement) | scala.Null, 
       scala.Unit
     ]
   ] = js.undefined

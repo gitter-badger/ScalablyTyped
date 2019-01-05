@@ -6,7 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_Assigned extends js.Object {
+  var active: scala.Double
   var assigned: scala.Double
-  var inherited: scala.Double
+  var moving: scala.Double
 }
 

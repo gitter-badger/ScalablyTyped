@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait IOverlayProps
-  extends reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLElement] {
+  extends reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLElement with stdLib.HTMLElement] {
   /**
     * Gets the component ref.
     */

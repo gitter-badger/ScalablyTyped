@@ -12,7 +12,7 @@ trait FullMetadata extends UploadMetadata {
     * Use Reference.getDownloadURL instead. This property will be removed in a
     * future release.
     */
-  var downloadURLs: coreDashJsLib.Array[java.lang.String]
+  var downloadURLs: coreDashJsLib.Array[java.lang.String] with js.Array[java.lang.String]
   var fullPath: java.lang.String
   var generation: java.lang.String
   var metageneration: java.lang.String

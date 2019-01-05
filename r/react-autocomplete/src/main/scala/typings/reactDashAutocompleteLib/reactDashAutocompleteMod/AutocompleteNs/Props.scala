@@ -22,7 +22,9 @@ trait Props extends js.Object {
     * aria-autocomplete. `inputProps` is commonly used for (but not limited to)
     * placeholder, event handlers (onFocus, onBlur, etc.), autoFocus, etc..
     */
-  var inputProps: js.UndefOr[reactLib.reactMod.ReactNs.HTMLProps[reactLib.HTMLInputElement]] = js.native
+  var inputProps: js.UndefOr[
+    reactLib.reactMod.ReactNs.HTMLProps[reactLib.HTMLInputElement with stdLib.HTMLInputElement]
+  ] = js.native
   /**
     * Arguments: `item: Any`
     *
@@ -48,7 +50,7 @@ trait Props extends js.Object {
     */
   var onChange: js.UndefOr[
     js.Function2[
-      /* e */ reactLib.reactMod.ReactNs.ChangeEvent[reactLib.HTMLInputElement], 
+      /* e */ reactLib.reactMod.ReactNs.ChangeEvent[reactLib.HTMLInputElement with stdLib.HTMLInputElement], 
       /* value */ java.lang.String, 
       scala.Unit
     ]
@@ -84,7 +86,7 @@ trait Props extends js.Object {
     */
   var renderInput: js.UndefOr[
     js.Function1[
-      /* props */ reactLib.reactMod.ReactNs.HTMLProps[reactLib.HTMLInputElement], 
+      /* props */ reactLib.reactMod.ReactNs.HTMLProps[reactLib.HTMLInputElement with stdLib.HTMLInputElement], 
       reactLib.reactMod.ReactNs.ReactNode
     ]
   ] = js.native
@@ -134,7 +136,9 @@ trait Props extends js.Object {
     * Props that are applied to the element which wraps the `<input />` and
     * dropdown menu elements rendered by `Autocomplete`.
     */
-  var wrapperProps: js.UndefOr[reactLib.reactMod.ReactNs.HTMLProps[reactLib.HTMLDivElement]] = js.native
+  var wrapperProps: js.UndefOr[
+    reactLib.reactMod.ReactNs.HTMLProps[reactLib.HTMLDivElement with stdLib.HTMLDivElement]
+  ] = js.native
   /**
     * This is a shorthand for `wrapperProps={{ style: <your styles> }}`.
     * Note that `wrapperStyle` is applied before `wrapperProps`, so the latter

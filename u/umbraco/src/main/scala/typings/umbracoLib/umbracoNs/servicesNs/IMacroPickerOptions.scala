@@ -10,6 +10,6 @@ import scala.scalajs.js.annotation._
   */
 trait IMacroPickerOptions extends js.Object {
   /*callback function*/
-  var callback: angularLib.angularMod.Global.Function
+  var callback: angularLib.angularMod.Global.Function with js.Function
 }
 

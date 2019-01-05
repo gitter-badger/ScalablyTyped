@@ -10,7 +10,7 @@ trait User extends UserInfo {
   var emailVerified: scala.Boolean = js.native
   var isAnonymous: scala.Boolean = js.native
   var metadata: firebaseLib.firebaseMod.firebaseNs.authNs.UserMetadata = js.native
-  var providerData: coreDashJsLib.Array[UserInfo | scala.Null] = js.native
+  var providerData: (coreDashJsLib.Array[UserInfo | scala.Null]) with (js.Array[UserInfo | scala.Null]) = js.native
   var refreshToken: java.lang.String = js.native
   def delete(): js.Promise[scala.Unit] = js.native
   def getIdToken(): js.Promise[java.lang.String] = js.native
@@ -36,7 +36,7 @@ trait User extends UserInfo {
   def reload(): js.Promise[scala.Unit] = js.native
   def sendEmailVerification(): js.Promise[scala.Unit] = js.native
   def sendEmailVerification(actionCodeSettings: firebaseLib.firebaseMod.firebaseNs.authNs.ActionCodeSettings): js.Promise[scala.Unit] = js.native
-  def toJSON(): coreDashJsLib.Object = js.native
+  def toJSON(): coreDashJsLib.Object with js.Object = js.native
   def unlink(providerId: java.lang.String): js.Promise[User] = js.native
   def updateEmail(newEmail: java.lang.String): js.Promise[scala.Unit] = js.native
   def updatePassword(newPassword: java.lang.String): js.Promise[scala.Unit] = js.native

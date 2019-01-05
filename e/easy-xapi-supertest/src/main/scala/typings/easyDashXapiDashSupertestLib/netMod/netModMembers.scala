@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("net", JSImport.Namespace)
 @js.native
 object netModMembers extends js.Object {
-  var Socket: easyDashXapiDashSupertestLib.Anon_Options = js.native
+  var Socket: easyDashXapiDashSupertestLib.Anon_OptionsSocket = js.native
   def connect(options: easyDashXapiDashSupertestLib.Anon_AllowHalfOpen): Socket = js.native
   def connect(options: easyDashXapiDashSupertestLib.Anon_AllowHalfOpen, connectionListener: js.Function): Socket = js.native
   def connect(path: java.lang.String): Socket = js.native

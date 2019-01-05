@@ -11,7 +11,7 @@ object nodeDashSpriteDashGeneratorModMembers extends js.Object {
   def apply(option: nodeDashSpriteDashGeneratorLib.nodeDashSpriteDashGeneratorMod.NodeSpriteGeneratorNs.Option): scala.Unit = js.native
   def apply(
     option: nodeDashSpriteDashGeneratorLib.nodeDashSpriteDashGeneratorMod.NodeSpriteGeneratorNs.Option,
-    callback: js.Function1[/* err */ nodeLib.Error, scala.Unit]
+    callback: js.Function1[/* err */ nodeLib.Error with stdLib.Error, scala.Unit]
   ): scala.Unit = js.native
   def middleware(option: nodeDashSpriteDashGeneratorLib.nodeDashSpriteDashGeneratorMod.NodeSpriteGeneratorNs.Option): expressLib.expressMod.eNs.RequestHandler = js.native
 }

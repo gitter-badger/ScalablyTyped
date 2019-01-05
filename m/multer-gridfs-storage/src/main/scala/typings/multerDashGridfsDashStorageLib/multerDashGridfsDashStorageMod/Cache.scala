@@ -14,7 +14,7 @@ trait Cache extends js.Object {
   def initialize(opts: js.Object): js.Object
   def isOpening(cacheIndex: js.Object): scala.Boolean
   def isPending(cacheIndex: js.Object): scala.Boolean
-  def reject(cacheIndex: js.Object, err: nodeLib.Error): scala.Unit
+  def reject(cacheIndex: js.Object, err: nodeLib.Error with stdLib.Error): scala.Unit
   def remove(cacheIndex: js.Object): scala.Unit
   def resolve(cacheIndex: js.Object, db: mongodbLib.mongodbMod.Db, client: mongodbLib.mongodbMod.MongoClient): scala.Unit
   def set(cacheIndex: js.Object, value: js.Object): scala.Unit

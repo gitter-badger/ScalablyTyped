@@ -33,7 +33,7 @@ trait TinySliderSettings extends CommonOptions {
     * @defaultValue false
     */
   var autoplayButton: js.UndefOr[
-    reactLib.HTMLElement | java.lang.String | tinyDashSliderDashReactLib.tinyDashSliderDashReactLibNumbers.`false`
+    (reactLib.HTMLElement with stdLib.HTMLElement) | java.lang.String | tinyDashSliderDashReactLib.tinyDashSliderDashReactLibNumbers.`false`
   ] = js.undefined
   /**
     * Output autoplayButton markup when autoplay is true but a customized autoplayButton is not provided.
@@ -60,7 +60,7 @@ trait TinySliderSettings extends CommonOptions {
     * @defaultValue false
     */
   var controlsContainer: js.UndefOr[
-    reactLib.HTMLElement | java.lang.String | tinyDashSliderDashReactLib.tinyDashSliderDashReactLibNumbers.`false`
+    (reactLib.HTMLElement with stdLib.HTMLElement) | java.lang.String | tinyDashSliderDashReactLib.tinyDashSliderDashReactLibNumbers.`false`
   ] = js.undefined
   /**
     * Indicate whether the slider will be frozen (controls, nav, autoplay and other functions will stop work) when all slides can be displayed in one page.
@@ -96,7 +96,7 @@ trait TinySliderSettings extends CommonOptions {
     * @defaultValue false
     */
   var navContainer: js.UndefOr[
-    reactLib.HTMLElement | java.lang.String | tinyDashSliderDashReactLib.tinyDashSliderDashReactLibNumbers.`false`
+    (reactLib.HTMLElement with stdLib.HTMLElement) | java.lang.String | tinyDashSliderDashReactLib.tinyDashSliderDashReactLibNumbers.`false`
   ] = js.undefined
   /**
     * Difine the relationship between nested sliders.

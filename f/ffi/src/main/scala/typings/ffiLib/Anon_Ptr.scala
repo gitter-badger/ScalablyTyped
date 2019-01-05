@@ -9,20 +9,20 @@ import scala.scalajs.js.annotation._
 trait Anon_Ptr
   extends org.scalablytyped.runtime.Instantiable3[
       /* ptr */ Buffer, 
-      (/* ret */ java.lang.String) | (/* ret */ refLib.refMod.Type), 
-      /* fixedArgs */ js.Array[js.Any], 
-      ffiLib.ffiMod.VariadicForeignFunction
+      (/* retType */ java.lang.String) | (/* retType */ refLib.refMod.Type), 
+      /* argTypes */ js.Array[js.Any], 
+      ffiLib.ffiMod.ForeignFunction
     ]
      with org.scalablytyped.runtime.Instantiable4[
       /* ptr */ Buffer, 
-      (/* ret */ java.lang.String) | (/* ret */ refLib.refMod.Type), 
-      /* fixedArgs */ js.Array[js.Any], 
+      (/* retType */ java.lang.String) | (/* retType */ refLib.refMod.Type), 
+      /* argTypes */ js.Array[js.Any], 
       /* abi */ scala.Double, 
-      ffiLib.ffiMod.VariadicForeignFunction
+      ffiLib.ffiMod.ForeignFunction
     ] {
-  def apply(ptr: Buffer, ret: java.lang.String, fixedArgs: js.Array[_]): ffiLib.ffiMod.VariadicForeignFunction = js.native
-  def apply(ptr: Buffer, ret: java.lang.String, fixedArgs: js.Array[_], abi: scala.Double): ffiLib.ffiMod.VariadicForeignFunction = js.native
-  def apply(ptr: Buffer, ret: refLib.refMod.Type, fixedArgs: js.Array[_]): ffiLib.ffiMod.VariadicForeignFunction = js.native
-  def apply(ptr: Buffer, ret: refLib.refMod.Type, fixedArgs: js.Array[_], abi: scala.Double): ffiLib.ffiMod.VariadicForeignFunction = js.native
+  def apply(ptr: Buffer, retType: java.lang.String, argTypes: js.Array[_]): ffiLib.ffiMod.ForeignFunction = js.native
+  def apply(ptr: Buffer, retType: java.lang.String, argTypes: js.Array[_], abi: scala.Double): ffiLib.ffiMod.ForeignFunction = js.native
+  def apply(ptr: Buffer, retType: refLib.refMod.Type, argTypes: js.Array[_]): ffiLib.ffiMod.ForeignFunction = js.native
+  def apply(ptr: Buffer, retType: refLib.refMod.Type, argTypes: js.Array[_], abi: scala.Double): ffiLib.ffiMod.ForeignFunction = js.native
 }
 

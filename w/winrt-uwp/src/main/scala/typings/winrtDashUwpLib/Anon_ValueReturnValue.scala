@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 trait Anon_ValueReturnValue extends js.Object {
   /** Returns true if the method succeeds, or false otherwise. */ var returnValue: scala.Boolean
-  /** True if automatic adjustment is enabled; false otherwise. */ var value: scala.Boolean
+  /** The current value of the setting. The units depend on the setting. */ var value: scala.Double
 }
 

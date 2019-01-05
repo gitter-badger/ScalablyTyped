@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 trait LocationsResource extends js.Object {
   var queues: QueuesResource
   /** Get information about a location. */
-  def get(request: gapiDotClientDotCloudtasksLib.Anon_Name): gapiDotClientLib.gapiNs.clientNs.Request[Location]
+  def get(request: gapiDotClientDotCloudtasksLib.Anon_Xgafv): gapiDotClientLib.gapiNs.clientNs.Request[Location]
   /** Lists information about the supported locations for this service. */
-  def list(request: gapiDotClientDotCloudtasksLib.Anon_NameAccesstoken): gapiDotClientLib.gapiNs.clientNs.Request[ListLocationsResponse]
+  def list(request: gapiDotClientDotCloudtasksLib.Anon_XgafvAccesstokenAltBearertokenCallbackFieldsFilter): gapiDotClientLib.gapiNs.clientNs.Request[ListLocationsResponse]
 }
 

@@ -8,23 +8,23 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Anon_NameFn extends js.Object {
   /**
-    * Registers a new test suite.
-    * @param name The suite name.
-    * @param fn The suite function, or {@code undefined} to define a pending test suite.
+    * Add a test to the current suite.
+    * @param name The test name.
+    * @param fn The test function, or {@code undefined} to define a pending test case.
     */
   def apply(name: java.lang.String, fn: js.Function): scala.Unit = js.native
   /**
-    * An alias for {@link #describe()} that marks the suite as exclusive,
-    * suppressing all other test suites.
-    * @param {string} name The suite name.
-    * @param {function()=} opt_fn The suite function, or `undefined` to define
-    *     a pending test suite.
+    * An alias for {@link #it()} that flags the test as the only one that should
+    * be run within the current suite.
+    * @param {string} name The test name.
+    * @param {function()=} opt_fn The test function, or `undefined` to define
+    *     a pending test case.
     */
   def only(name: java.lang.String, fn: js.Function): scala.Unit = js.native
   /**
-    * Defines a suppressed test suite.
-    * @param name The suite name.
-    * @param fn The suite function, or {@code undefined} to define a pending test suite.
+    * Adds a test to the current suite while suppressing it so it is not run.
+    * @param name The test name.
+    * @param fn The test function, or {@code undefined} to define a pending test case.
     */
   def skip(name: java.lang.String, fn: js.Function): scala.Unit = js.native
 }

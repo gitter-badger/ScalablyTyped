@@ -41,6 +41,6 @@ trait GetClusterResult extends js.Object {
   /**
     * Nested attribute containing VPC configuration for the cluster.
     */
-  val vpcConfig: atPulumiAwsLib.Anon_VpcIdSecurityGroupIds
+  val vpcConfig: atPulumiAwsLib.Anon_SecurityGroupIdsSubnetIdsVpcIdArray
 }
 

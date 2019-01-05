@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait Anon_WasClean extends js.Object {
   var code: scala.Double
   var reason: java.lang.String
-  var target: this.type
+  var target: wsLib.wsMod.WebSocket
   var wasClean: scala.Boolean
 }
 

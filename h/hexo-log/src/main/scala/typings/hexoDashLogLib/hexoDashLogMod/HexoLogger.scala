@@ -20,7 +20,7 @@ trait HexoLogger
     * (including the stack) and sets `msg` to the exception
     * message or you can specify the `msg`.
     */
-  def d(error: nodeLib.Error, params: js.Any*): scala.Unit = js.native
+  def d(error: nodeLib.Error with stdLib.Error, params: js.Any*): scala.Unit = js.native
   /**
     * Uses `util.format` for msg formatting.
     */
@@ -45,7 +45,7 @@ trait HexoLogger
     * (including the stack) and sets `msg` to the exception
     * message or you can specify the `msg`.
     */
-  def e(error: nodeLib.Error, params: js.Any*): scala.Unit = js.native
+  def e(error: nodeLib.Error with stdLib.Error, params: js.Any*): scala.Unit = js.native
   /**
     * Uses `util.format` for msg formatting.
     */
@@ -70,7 +70,7 @@ trait HexoLogger
     * (including the stack) and sets `msg` to the exception
     * message or you can specify the `msg`.
     */
-  def i(error: nodeLib.Error, params: js.Any*): scala.Unit = js.native
+  def i(error: nodeLib.Error with stdLib.Error, params: js.Any*): scala.Unit = js.native
   /**
     * Uses `util.format` for msg formatting.
     */
@@ -95,7 +95,7 @@ trait HexoLogger
     * (including the stack) and sets `msg` to the exception
     * message or you can specify the `msg`.
     */
-  def log(error: nodeLib.Error, params: js.Any*): scala.Unit = js.native
+  def log(error: nodeLib.Error with stdLib.Error, params: js.Any*): scala.Unit = js.native
   /**
     * Uses `util.format` for msg formatting.
     */
@@ -120,7 +120,7 @@ trait HexoLogger
     * (including the stack) and sets `msg` to the exception
     * message or you can specify the `msg`.
     */
-  def w(error: nodeLib.Error, params: js.Any*): scala.Unit = js.native
+  def w(error: nodeLib.Error with stdLib.Error, params: js.Any*): scala.Unit = js.native
   /**
     * Uses `util.format` for msg formatting.
     */

@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object StateMachineNs extends js.Object {
   val ASYNC: java.lang.String = js.native
-  val Error: javascriptDashStateDashMachineLib.Anon_PENDINGTRANSITION = js.native
-  val Result: javascriptDashStateDashMachineLib.Anon_CANCELLED = js.native
+  val Error: javascriptDashStateDashMachineLib.Anon_INVALIDTRANSITION = js.native
+  val Result: javascriptDashStateDashMachineLib.Anon_SUCCEEDED = js.native
   val VERSION: java.lang.String = js.native
   val WILDCARD: java.lang.String = js.native
   def create(config: javascriptDashStateDashMachineLib.javascriptDashStateDashMachineMod.StateMachineConfig): javascriptDashStateDashMachineLib.javascriptDashStateDashMachineMod.StateMachine = js.native

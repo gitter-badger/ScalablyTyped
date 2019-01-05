@@ -24,7 +24,7 @@ class DataTable () extends js.Object {
   def getColumnPattern(columnIndex: scala.Double): java.lang.String = js.native
   def getColumnProperties(columnIndex: scala.Double): Properties = js.native
   def getColumnProperty(columnIndex: scala.Double, name: java.lang.String): js.Any = js.native
-  def getColumnRange(columnIndex: scala.Double): googleDotVisualizationLib.Anon_Max = js.native
+  def getColumnRange(columnIndex: scala.Double): googleDotVisualizationLib.Anon_Min = js.native
   def getColumnRole(columnIndex: scala.Double): java.lang.String = js.native
   def getColumnType(columnIndex: scala.Double): java.lang.String = js.native
   def getDistinctValues(columnIndex: scala.Double): js.Array[_] = js.native

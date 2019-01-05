@@ -10,7 +10,7 @@ trait LinkLayerProps
   var diagramEngine: stormDashReactDashDiagramsLib.distSrcDiagramEngineMod.DiagramEngine
   def pointAdded(
     point: stormDashReactDashDiagramsLib.distSrcModelsPointModelMod.PointModel,
-    event: reactLib.MouseEvent
+    event: reactLib.MouseEvent with stdLib.MouseEvent
   ): js.Any
 }
 

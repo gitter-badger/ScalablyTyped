@@ -456,7 +456,7 @@ object baconjsModMembers extends js.Object {
     * @param {Bacon.retry1~delay} [options.delay] - function that returns the time in milliseconds to wait before retrying. Defaults to `0`.
     * @returns {EventStream<E, A>}
     */
-  def retry[E, A](options: baconjsLib.Anon_IsRetryable[E, A]): baconjsLib.BaconNs.EventStream[E, A] = js.native
+  def retry[E, A](options: baconjsLib.Anon_Source[E, A]): baconjsLib.BaconNs.EventStream[E, A] = js.native
   /**
     * @callback Bacon.retry1~source
     * @description Function that produces an [Property]{@link Bacon.Property}.
@@ -486,7 +486,7 @@ object baconjsModMembers extends js.Object {
     * @param {Bacon.retry1~delay} [options.delay] - function that returns the time in milliseconds to wait before retrying. Defaults to `0`.
     * @returns {Property<E, A>}
     */
-  def retry[E, A](options: baconjsLib.Anon_IsRetryableError[E, A]): baconjsLib.BaconNs.Property[E, A] = js.native
+  def retry[E, A](options: baconjsLib.Anon_SourceRetries[E, A]): baconjsLib.BaconNs.Property[E, A] = js.native
   /**
     * @function
     * @description Creates a [EventStream]{@link Bacon.EventStream} containing given `values` (given as array) with the given `interval` (in milliseconds).

@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("plottable/build/src/axes/axis", JSImport.Namespace)
 @js.native
 object buildSrcAxesAxisModMembers extends js.Object {
-  val AxisOrientation: plottableLib.Anon_Bottom = js.native
+  val AxisOrientation: plottableLib.Anon_Left = js.native
 }
 

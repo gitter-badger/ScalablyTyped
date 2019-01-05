@@ -12,11 +12,7 @@ class default () extends SmoothScrollbar
 @JSImport("smooth-scrollbar", JSImport.Default)
 @js.native
 object default extends js.Object {
-  var ScrollbarPlugin: org.scalablytyped.runtime.Instantiable2[
-    /* scrollbar */ smoothDashScrollbarLib.scrollbarMod.Scrollbar, 
-    /* options */ js.UndefOr[/* options */ js.Any], 
-    smoothDashScrollbarLib.pluginMod.ScrollbarPlugin
-  ] = js.native
+  var ScrollbarPlugin: smoothDashScrollbarLib.Anon_PluginName = js.native
   var version: java.lang.String = js.native
   /**
     * Attaches default style sheets to current document.
@@ -47,7 +43,7 @@ object default extends js.Object {
   /**
     * Returns an array that contains all scrollbar instances
     */
-  def getAll(): coreDashJsLib.Array[smoothDashScrollbarLib.scrollbarMod.Scrollbar] = js.native
+  def getAll(): coreDashJsLib.Array[smoothDashScrollbarLib.scrollbarMod.Scrollbar] with js.Array[smoothDashScrollbarLib.scrollbarMod.Scrollbar] = js.native
   /**
     * Check if there is a scrollbar on given element
     *
@@ -70,19 +66,13 @@ object default extends js.Object {
     *
     * @param options Initial options
     */
-  def initAll(): coreDashJsLib.Array[smoothDashScrollbarLib.scrollbarMod.Scrollbar] = js.native
-  def initAll(options: stdLib.Partial[smoothDashScrollbarLib.interfacesScrollbarMod.ScrollbarOptions]): coreDashJsLib.Array[smoothDashScrollbarLib.scrollbarMod.Scrollbar] = js.native
+  def initAll(): coreDashJsLib.Array[smoothDashScrollbarLib.scrollbarMod.Scrollbar] with js.Array[smoothDashScrollbarLib.scrollbarMod.Scrollbar] = js.native
+  def initAll(options: stdLib.Partial[smoothDashScrollbarLib.interfacesScrollbarMod.ScrollbarOptions]): coreDashJsLib.Array[smoothDashScrollbarLib.scrollbarMod.Scrollbar] with js.Array[smoothDashScrollbarLib.scrollbarMod.Scrollbar] = js.native
   /**
     * Attaches plugins to scrollbars
     *
     * @param ...Plugins Scrollbar plugin classes
     */
-  def use(
-    Plugins: (org.scalablytyped.runtime.Instantiable2[
-      /* scrollbar */ smoothDashScrollbarLib.scrollbarMod.Scrollbar, 
-      /* options */ js.UndefOr[/* options */ js.Any], 
-      smoothDashScrollbarLib.pluginMod.ScrollbarPlugin
-    ])*
-  ): scala.Unit = js.native
+  def use(Plugins: smoothDashScrollbarLib.Anon_PluginName*): scala.Unit = js.native
 }
 

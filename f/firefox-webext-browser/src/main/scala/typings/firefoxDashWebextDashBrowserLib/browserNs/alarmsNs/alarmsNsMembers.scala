@@ -32,7 +32,7 @@ object alarmsNsMembers extends js.Object {
     *     Users should never provide both 'when' and 'delayInMinutes'. If 'periodInMinutes' is provided, then the
     *     alarm recurs repeatedly after that many minutes.
     */
-  def create(alarmInfo: firefoxDashWebextDashBrowserLib.Anon_DelayInMinutes): scala.Unit = js.native
+  def create(alarmInfo: firefoxDashWebextDashBrowserLib.Anon_When): scala.Unit = js.native
   /**
     * Creates an alarm. After the delay is expired, the onAlarm event is fired. If there is another alarm with the
     * same name (or no name if none is specified), it will be cancelled and replaced by this alarm.
@@ -43,7 +43,7 @@ object alarmsNsMembers extends js.Object {
     *     Users should never provide both 'when' and 'delayInMinutes'. If 'periodInMinutes' is provided, then the
     *     alarm recurs repeatedly after that many minutes.
     */
-  def create(name: java.lang.String, alarmInfo: firefoxDashWebextDashBrowserLib.Anon_DelayInMinutes): scala.Unit = js.native
+  def create(name: java.lang.String, alarmInfo: firefoxDashWebextDashBrowserLib.Anon_When): scala.Unit = js.native
   /**
     * Retrieves details about the specified alarm.
     * @param [name] The name of the alarm to get. Defaults to the empty string.

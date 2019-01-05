@@ -30,7 +30,7 @@ class BannerAd () extends js.Object {
   /**
     * 取消监听banner 广告错误事件
     */
-  def offError(callback: js.Function1[/* res */ Anon_ErrMsgString, scala.Unit]): scala.Unit = js.native
+  def offError(callback: js.Function1[/* res */ Anon_ErrMsg, scala.Unit]): scala.Unit = js.native
   /**
     * 取消监听banner 广告加载事件
     */
@@ -38,11 +38,11 @@ class BannerAd () extends js.Object {
   /**
     * 取消监听隐藏 banner 广告缩放
     */
-  def offResize(callback: js.Function1[/* res */ Anon_Height, scala.Unit]): scala.Unit = js.native
+  def offResize(callback: js.Function1[/* res */ Anon_Width, scala.Unit]): scala.Unit = js.native
   /**
     * 监听banner 广告错误事件
     */
-  def onError(callback: js.Function1[/* res */ Anon_ErrMsgString, scala.Unit]): scala.Unit = js.native
+  def onError(callback: js.Function1[/* res */ Anon_ErrMsg, scala.Unit]): scala.Unit = js.native
   /**
     * 监听banner 广告加载事件
     */
@@ -50,7 +50,7 @@ class BannerAd () extends js.Object {
   /**
     * 监听 banner 广告缩放
     */
-  def onResize(callback: js.Function1[/* res */ Anon_Height, scala.Unit]): scala.Unit = js.native
+  def onResize(callback: js.Function1[/* res */ Anon_Width, scala.Unit]): scala.Unit = js.native
   /**
     * 显示 banner 广告。
     */

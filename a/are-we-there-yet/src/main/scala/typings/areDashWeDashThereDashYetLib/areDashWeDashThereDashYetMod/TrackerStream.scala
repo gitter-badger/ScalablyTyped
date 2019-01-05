@@ -35,7 +35,7 @@ class TrackerStream ()
   @JSName("addListener")
   def addListener_error(
     event: areDashWeDashThereDashYetLib.areDashWeDashThereDashYetLibStrings.error,
-    listener: js.Function1[/* err */ nodeLib.Error, scala.Unit]
+    listener: js.Function1[/* err */ nodeLib.Error with stdLib.Error, scala.Unit]
   ): this.type = js.native
   @JSName("addListener")
   def addListener_readable(
@@ -67,7 +67,7 @@ class TrackerStream ()
   @JSName("on")
   def on_error(
     event: areDashWeDashThereDashYetLib.areDashWeDashThereDashYetLibStrings.error,
-    listener: js.Function1[/* err */ nodeLib.Error, scala.Unit]
+    listener: js.Function1[/* err */ nodeLib.Error with stdLib.Error, scala.Unit]
   ): this.type = js.native
   @JSName("on")
   def on_readable(
@@ -97,7 +97,7 @@ class TrackerStream ()
   @JSName("once")
   def once_error(
     event: areDashWeDashThereDashYetLib.areDashWeDashThereDashYetLibStrings.error,
-    listener: js.Function1[/* err */ nodeLib.Error, scala.Unit]
+    listener: js.Function1[/* err */ nodeLib.Error with stdLib.Error, scala.Unit]
   ): this.type = js.native
   @JSName("once")
   def once_readable(
@@ -127,7 +127,7 @@ class TrackerStream ()
   @JSName("prependListener")
   def prependListener_error(
     event: areDashWeDashThereDashYetLib.areDashWeDashThereDashYetLibStrings.error,
-    listener: js.Function1[/* err */ nodeLib.Error, scala.Unit]
+    listener: js.Function1[/* err */ nodeLib.Error with stdLib.Error, scala.Unit]
   ): this.type = js.native
   @JSName("prependListener")
   def prependListener_readable(
@@ -157,7 +157,7 @@ class TrackerStream ()
   @JSName("prependOnceListener")
   def prependOnceListener_error(
     event: areDashWeDashThereDashYetLib.areDashWeDashThereDashYetLibStrings.error,
-    listener: js.Function1[/* err */ nodeLib.Error, scala.Unit]
+    listener: js.Function1[/* err */ nodeLib.Error with stdLib.Error, scala.Unit]
   ): this.type = js.native
   @JSName("prependOnceListener")
   def prependOnceListener_readable(
@@ -187,7 +187,7 @@ class TrackerStream ()
   @JSName("removeListener")
   def removeListener_error(
     event: areDashWeDashThereDashYetLib.areDashWeDashThereDashYetLibStrings.error,
-    listener: js.Function1[/* err */ nodeLib.Error, scala.Unit]
+    listener: js.Function1[/* err */ nodeLib.Error with stdLib.Error, scala.Unit]
   ): this.type = js.native
   @JSName("removeListener")
   def removeListener_readable(

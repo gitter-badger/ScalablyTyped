@@ -13,7 +13,7 @@ trait Instance
   // used for debug logging
   def _debug(): scala.Unit = js.native
   def _debug(message: js.Any, optionalParams: js.Any*): scala.Unit = js.native
-  def address(): simpleDashPeerLib.Anon_Address = js.native
+  def address(): simpleDashPeerLib.Anon_Port = js.native
   // https://github.com/feross/simple-peer/tree/v6.1.5#peersenddata
   def send(data: SimplePeerData): scala.Unit = js.native
   // https://github.com/feross/simple-peer/tree/v6.1.5#peersignaldata

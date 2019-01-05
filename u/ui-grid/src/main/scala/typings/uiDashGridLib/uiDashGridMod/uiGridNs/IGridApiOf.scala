@@ -109,7 +109,7 @@ trait IGridApiOf[TEntity] extends js.Object {
   def registerMethod(
     featureName: java.lang.String,
     methodName: java.lang.String,
-    callBackFn: angularLib.angularMod.Global.Function,
+    callBackFn: angularLib.angularMod.Global.Function with js.Function,
     _this: js.Any
   ): scala.Unit = js.native
   /**
@@ -128,12 +128,12 @@ trait IGridApiOf[TEntity] extends js.Object {
     * @param callBackFn function to execute
     */
   def suppressEvents(
-    listenerFuncs: angularLib.angularMod.Global.Function,
-    callBackFn: angularLib.angularMod.Global.Function
+    listenerFuncs: angularLib.angularMod.Global.Function with js.Function,
+    callBackFn: angularLib.angularMod.Global.Function with js.Function
   ): scala.Unit = js.native
   def suppressEvents(
-    listenerFuncs: js.Array[angularLib.angularMod.Global.Function],
-    callBackFn: angularLib.angularMod.Global.Function
+    listenerFuncs: js.Array[angularLib.angularMod.Global.Function with js.Function],
+    callBackFn: angularLib.angularMod.Global.Function with js.Function
   ): scala.Unit = js.native
 }
 

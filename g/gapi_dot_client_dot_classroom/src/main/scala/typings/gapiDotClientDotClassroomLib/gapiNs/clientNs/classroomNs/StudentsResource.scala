@@ -23,7 +23,7 @@ trait StudentsResource extends js.Object {
     * course.
     */
   def create(
-    request: gapiDotClientDotClassroomLib.Anon_AccesstokenCourseIdPrettyPrintBearertokenCallbackQuotaUser
+    request: gapiDotClientDotClassroomLib.Anon_XgafvAccesstokenAltBearertokenCallbackCourseIdEnrollmentCode
   ): gapiDotClientLib.gapiNs.clientNs.Request[Student]
   /**
     * Deletes a student of a course.
@@ -35,7 +35,7 @@ trait StudentsResource extends js.Object {
     * &#42; `NOT_FOUND` if no student of this course has the requested ID or if the
     * course does not exist.
     */
-  def delete(request: gapiDotClientDotClassroomLib.Anon_Accesstoken): gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
+  def delete(request: gapiDotClientDotClassroomLib.Anon_XgafvAccesstokenAltBearertokenCallbackCourseIdFields): gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
   /**
     * Returns a student of a course.
     *
@@ -46,7 +46,7 @@ trait StudentsResource extends js.Object {
     * &#42; `NOT_FOUND` if no student of this course has the requested ID or if the
     * course does not exist.
     */
-  def get(request: gapiDotClientDotClassroomLib.Anon_Accesstoken): gapiDotClientLib.gapiNs.clientNs.Request[Student]
+  def get(request: gapiDotClientDotClassroomLib.Anon_XgafvAccesstokenAltBearertokenCallbackCourseIdFields): gapiDotClientLib.gapiNs.clientNs.Request[Student]
   /**
     * Returns a list of students of this course that the requester
     * is permitted to view.
@@ -56,6 +56,6 @@ trait StudentsResource extends js.Object {
     * &#42; `NOT_FOUND` if the course does not exist.
     * &#42; `PERMISSION_DENIED` for access errors.
     */
-  def list(request: gapiDotClientDotClassroomLib.Anon_AccesstokenPageSize): gapiDotClientLib.gapiNs.clientNs.Request[ListStudentsResponse]
+  def list(request: gapiDotClientDotClassroomLib.Anon_XgafvAccesstokenAlt): gapiDotClientLib.gapiNs.clientNs.Request[ListStudentsResponse]
 }
 

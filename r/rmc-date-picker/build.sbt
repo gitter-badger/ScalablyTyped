@@ -1,19 +1,19 @@
 organization := "org.scalablytyped"
 name := "rmc-date-picker"
-version := "6.0.8-749353"
-scalaVersion := "2.12.7"
+version := "6.0.8-1a28ca"
+scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "classnames" % "2.2-dt-20180721Z-b84a90",
-  "org.scalablytyped" %%% "csstype" % "2.5.8-a13970",
-  "org.scalablytyped" %%% "prop-types" % "15.5-dt-20181212Z-89199d",
-  "org.scalablytyped" %%% "react" % "16.7-dt-20181220Z-3dff88",
-  "org.scalablytyped" %%% "rmc-dialog" % "1.1.1-744a64",
-  "org.scalablytyped" %%% "rmc-feedback" % "2.0.0-e4c310",
-  "org.scalablytyped" %%% "rmc-picker" % "5.0.5-868c67",
-  "org.scalablytyped" %%% "std" % "3.2.2-9ed5ff")
+  "org.scalablytyped" %%% "classnames" % "2.2-dt-20181230Z-c754c3",
+  "org.scalablytyped" %%% "csstype" % "2.5.8-c53c8c",
+  "org.scalablytyped" %%% "prop-types" % "15.5-dt-20181212Z-8f2b50",
+  "org.scalablytyped" %%% "react" % "16.7-dt-20181220Z-9a2db2",
+  "org.scalablytyped" %%% "rmc-dialog" % "1.1.1-9930ee",
+  "org.scalablytyped" %%% "rmc-feedback" % "2.0.0-2ac3f6",
+  "org.scalablytyped" %%% "rmc-picker" % "5.0.5-0d1a25",
+  "org.scalablytyped" %%% "std" % "3.2.2-3b2f2a")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

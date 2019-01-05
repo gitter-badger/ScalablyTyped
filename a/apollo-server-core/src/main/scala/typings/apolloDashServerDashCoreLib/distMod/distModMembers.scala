@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object distModMembers extends js.Object {
   val GraphQLUpload: js.UndefOr[graphqlLib.graphqlMod.GraphQLScalarType] = js.native
-  val defaultPlaygroundOptions: apolloDashServerDashCoreLib.Anon_Settings = js.native
+  val defaultPlaygroundOptions: apolloDashServerDashCoreLib.Anon_Version = js.native
   val processFileUploads: js.UndefOr[
     js.Function3[
       /* request */ apolloDashServerDashCoreLib.graphqlDashUploadMod.Request, 
@@ -47,7 +47,7 @@ object distModMembers extends js.Object {
     apolloDashServerDashCoreLib.distGraphqlOptionsMod.GraphQLServerOptions[stdLib.Record[java.lang.String, _], _]
   ] = js.native
   def runHttpQuery(
-    handlerArguments: apolloDashEnvLib.libPolyfillsArrayMod.Global.Array[_],
+    handlerArguments: apolloDashEnvLib.libPolyfillsArrayMod.Global.Array[_] with coreDashJsLib.Array[_] with js.Array[_],
     request: apolloDashServerDashCoreLib.distRunHttpQueryMod.HttpQueryRequest
   ): js.Promise[apolloDashServerDashCoreLib.distRunHttpQueryMod.HttpQueryResponse] = js.native
   def toApolloError(error: stdLib.Error with apolloDashServerDashErrorsLib.Anon_Extensions): stdLib.Error with apolloDashServerDashErrorsLib.Anon_ExtensionsRecord = js.native

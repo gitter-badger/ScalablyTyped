@@ -21,7 +21,7 @@ trait DataTableProps
   var checkedIconClassName: js.UndefOr[java.lang.String] = js.undefined
   var children: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
   var defaultSelectedRows: js.UndefOr[js.Array[scala.Boolean]] = js.undefined
-  var fixedDividers: js.UndefOr[scala.Boolean | reactDashMdLib.Anon_Footer] = js.undefined
+  var fixedDividers: js.UndefOr[scala.Boolean | reactDashMdLib.Anon_Header] = js.undefined
   var fixedFooter: js.UndefOr[scala.Boolean] = js.undefined
   var fixedHeader: js.UndefOr[scala.Boolean] = js.undefined
   var fixedHeight: js.UndefOr[scala.Double] = js.undefined
@@ -48,7 +48,7 @@ trait DataTableProps
       /* rowId */ scala.Double, 
       /* checked */ scala.Boolean, 
       /* selectedCount */ scala.Double, 
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent], 
+      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement with stdLib.HTMLElement, reactLib.NativeMouseEvent], 
       scala.Unit
     ]
   ] = js.undefined

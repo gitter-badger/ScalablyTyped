@@ -35,7 +35,7 @@ trait mapsjsWidget extends js.Object {
     mapUnitsX: scala.Double,
     mapUnitsY: scala.Double,
     addAction: js.Function1[/* ele */ stdLib.HTMLElement, scala.Unit],
-    dragOptions: mapsjsLib.Anon_UseElementInsteadOfNewGestureOverlay
+    dragOptions: mapsjsLib.Anon_DragEnabled
   ): scala.Unit = js.native
   /**
   	 * Add a styled path geometry to the content area which resides at a z-level 

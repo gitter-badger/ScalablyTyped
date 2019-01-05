@@ -10,7 +10,7 @@ trait Config extends js.Object {
   var baseURL: java.lang.String
   var cancelToken: adoneLib.adoneNs.netNs.httpNs.clientNs.CancelToken
   var data: Data
-  var formData: /* import warning: ImportType.apply Failed type conversion: {indexed, indexed, indexed, indexed} */ js.Any
+  var formData: /* import warning: ImportType.apply Failed type conversion: {[formKey: string] : adone.adone.net.http.client.I.FormValue | std.Array<adone.adone.net.http.client.I.FormValue>, [formKey: string] : adone.adone.net.http.client.I.FormValue | std.Array<adone.adone.net.http.client.I.FormValue>, [formKey: string] : adone.adone.net.http.client.I.FormValue | std.Array<adone.adone.net.http.client.I.FormValue>, [formKey: string] : adone.adone.net.http.client.I.FormValue | std.Array<adone.adone.net.http.client.I.FormValue>} */ js.Any
   var headers: RequestHeaders
   var httpAgent: js.Object
   var httpsAgent: js.Object

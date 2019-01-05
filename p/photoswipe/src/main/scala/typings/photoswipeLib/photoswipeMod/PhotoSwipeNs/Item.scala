@@ -38,7 +38,7 @@ trait Item extends js.Object {
   /**
     * Internal property added by PhotoSwipe.
     */
-  var vGap: js.UndefOr[photoswipeLib.Anon_Bottom] = js.undefined
+  var vGap: js.UndefOr[photoswipeLib.Anon_TopBottom] = js.undefined
   /**
     * The width of this image.
     */

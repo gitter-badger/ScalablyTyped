@@ -2,7 +2,7 @@
 
 # ScalablyTyped - The Javascript ecosystem for Scala.js!
 
-This is the home of Scala.js typings for **6061** Javascript libraries,
+This is the home of Scala.js typings for **6081** Javascript libraries,
  which should span more or less the entire set of modern and popular libraries.
 
 This should make it one of the biggest Scala repos on the planet:
@@ -11,13 +11,13 @@ This should make it one of the biggest Scala repos on the planet:
 --------------------------------------------------------------------------------
  Language             Files        Lines        Blank      Comment         Code
 --------------------------------------------------------------------------------
- Scala               178002      6898874       669461      2112505      4116908
- Markdown              5760        58902         1137            0        57765
- Makefile                 2           25            6            0           19
+ Scala               180406      7025340       677600      2156255      4191485
+ Markdown              5769        58894         1133            0        57761
  JSON                     3           19            0            0           19
+ Makefile                 2           25            6            0           19
  HTML                     1            6            0            0            6
 --------------------------------------------------------------------------------
- Total               183768      6957826       670604      2112505      4174717
+ Total               186181      7084284       678739      2156255      4249290
 --------------------------------------------------------------------------------
 
 ```
@@ -83,7 +83,7 @@ These should be the main steps you would have to follow:
 ScalablyTyped is hosted at bintray, so make sure to include the resolver
 ```scala
   resolvers += Resolver.bintrayRepo("oyvindberg", "ScalablyTyped")
-  addSbtPlugin("org.scalablytyped" % "sbt-scalablytyped" % "201901040734")
+  addSbtPlugin("org.scalablytyped" % "sbt-scalablytyped" % "201901050812")
 ```
 
 ### `build.sbt`

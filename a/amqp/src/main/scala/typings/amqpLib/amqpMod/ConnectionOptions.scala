@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait ConnectionOptions extends js.Object {
   var authMechanism: js.UndefOr[java.lang.String] = js.undefined
-  var clientProperties: js.UndefOr[amqpLib.Anon_Capabilities] = js.undefined
+  var clientProperties: js.UndefOr[amqpLib.Anon_ApplicationName] = js.undefined
   var connectionTimeout: js.UndefOr[scala.Double] = js.undefined
   var defaultExchangeName: js.UndefOr[java.lang.String] = js.undefined
   var heartbeat: js.UndefOr[scala.Double] = js.undefined

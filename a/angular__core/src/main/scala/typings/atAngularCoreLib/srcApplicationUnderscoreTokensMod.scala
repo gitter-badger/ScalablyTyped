@@ -17,7 +17,7 @@ object srcApplicationUnderscoreTokensMod extends js.Object {
     ]
   ] = js.native
   val APP_ID: atAngularCoreLib.srcDiMod.InjectionToken[java.lang.String] = js.native
-  val APP_ID_RANDOM_PROVIDER: atAngularCoreLib.Anon_Deps = js.native
+  val APP_ID_RANDOM_PROVIDER: atAngularCoreLib.Anon_Provide = js.native
   val PACKAGE_ROOT_URL: atAngularCoreLib.srcDiMod.InjectionToken[java.lang.String] = js.native
   val PLATFORM_ID: atAngularCoreLib.srcDiMod.InjectionToken[js.Object] = js.native
   val PLATFORM_INITIALIZER: atAngularCoreLib.srcDiMod.InjectionToken[js.Array[js.Function0[scala.Unit]]] = js.native

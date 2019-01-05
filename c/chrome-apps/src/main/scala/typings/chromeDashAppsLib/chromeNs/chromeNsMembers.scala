@@ -50,7 +50,7 @@ object chromeNsMembers extends js.Object {
   /**
     * Different page speed and load metrics
     */
-  def csi(): chromeDashAppsLib.Anon_Tran = js.native
+  def csi(): chromeDashAppsLib.Anon_OnloadT = js.native
   /**
     * @deprecated Deprecated in Chrome 64.
     * chrome.loadTimes() is a non-standard API that exposes loading metrics

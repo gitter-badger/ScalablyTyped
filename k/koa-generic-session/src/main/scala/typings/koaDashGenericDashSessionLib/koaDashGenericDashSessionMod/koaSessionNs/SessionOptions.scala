@@ -9,7 +9,7 @@ trait SessionOptions extends js.Object {
   var allowEmpty: js.UndefOr[scala.Boolean] = js.undefined
   var beforeSave: js.UndefOr[
     js.Function2[
-      /* ctx */ koaDashGenericDashSessionLib.koaDashGenericDashSessionMod.koaMod.Context, 
+      /* ctx */ koaDashGenericDashSessionLib.koaDashGenericDashSessionMod.koaMod.Context with koaLib.koaMod.ApplicationNs.Context, 
       /* session */ Session, 
       scala.Unit
     ]
@@ -18,9 +18,9 @@ trait SessionOptions extends js.Object {
   var defer: js.UndefOr[scala.Boolean] = js.undefined
   var errorHandler: js.UndefOr[
     js.Function3[
-      /* error */ nodeLib.Error, 
+      /* error */ nodeLib.Error with stdLib.Error, 
       /* type */ java.lang.String, 
-      /* ctx */ koaDashGenericDashSessionLib.koaDashGenericDashSessionMod.koaMod.Context, 
+      /* ctx */ koaDashGenericDashSessionLib.koaDashGenericDashSessionMod.koaMod.Context with koaLib.koaMod.ApplicationNs.Context, 
       scala.Unit
     ]
   ] = js.undefined
@@ -34,7 +34,7 @@ trait SessionOptions extends js.Object {
   var ttl: js.UndefOr[scala.Double] = js.undefined
   var valid: js.UndefOr[
     js.Function2[
-      /* ctx */ koaDashGenericDashSessionLib.koaDashGenericDashSessionMod.koaMod.Context, 
+      /* ctx */ koaDashGenericDashSessionLib.koaDashGenericDashSessionMod.koaMod.Context with koaLib.koaMod.ApplicationNs.Context, 
       /* session */ Session, 
       scala.Boolean
     ]

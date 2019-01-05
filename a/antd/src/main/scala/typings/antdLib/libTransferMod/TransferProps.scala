@@ -37,7 +37,7 @@ trait TransferProps extends js.Object {
   var onScroll: js.UndefOr[
     js.Function2[
       /* direction */ TransferDirection, 
-      /* e */ reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.HTMLDivElement, reactLib.Event], 
+      /* e */ reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.HTMLDivElement with stdLib.HTMLDivElement, reactLib.Event], 
       scala.Unit
     ]
   ] = js.undefined
@@ -47,7 +47,7 @@ trait TransferProps extends js.Object {
   var onSearchChange: js.UndefOr[
     js.Function2[
       /* direction */ TransferDirection, 
-      /* e */ reactLib.reactMod.ReactNs.ChangeEvent[reactLib.HTMLInputElement], 
+      /* e */ reactLib.reactMod.ReactNs.ChangeEvent[reactLib.HTMLInputElement with stdLib.HTMLInputElement], 
       scala.Unit
     ]
   ] = js.undefined

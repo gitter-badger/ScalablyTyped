@@ -26,9 +26,9 @@ class Users () extends js.Object {
   ): scala.Unit = js.native
   def list(): js.Promise[ApiResponse[intercomDashClientLib.userMod.List]] = js.native
   def list(cb: callback[ApiResponse[intercomDashClientLib.userMod.List]]): scala.Unit = js.native
-  def listBy(params: intercomDashClientLib.Anon_Segmentid): js.Promise[ApiResponse[intercomDashClientLib.userMod.List]] = js.native
+  def listBy(params: intercomDashClientLib.Anon_Tagid): js.Promise[ApiResponse[intercomDashClientLib.userMod.List]] = js.native
   def listBy(
-    params: intercomDashClientLib.Anon_Segmentid,
+    params: intercomDashClientLib.Anon_Tagid,
     cb: callback[ApiResponse[intercomDashClientLib.userMod.List]]
   ): scala.Unit = js.native
   def requestPermanentDeletion(id: java.lang.String): js.Promise[intercomDashClientLib.Anon_IdNumber] = js.native

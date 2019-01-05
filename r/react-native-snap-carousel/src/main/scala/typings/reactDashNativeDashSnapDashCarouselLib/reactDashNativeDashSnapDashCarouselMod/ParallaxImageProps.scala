@@ -17,7 +17,7 @@ trait ParallaxImageProps
   /**
     * On screen dimensions of the image
     */
-  var dimensions: js.UndefOr[reactDashNativeDashSnapDashCarouselLib.Anon_Height] = js.undefined
+  var dimensions: js.UndefOr[reactDashNativeDashSnapDashCarouselLib.Anon_Width] = js.undefined
   /**
     * Speed of parallax effect. A higher value appears more 'zoomed in'
     */

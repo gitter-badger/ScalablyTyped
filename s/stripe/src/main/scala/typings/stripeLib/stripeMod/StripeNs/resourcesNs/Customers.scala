@@ -82,7 +82,7 @@ trait Customers
     data: stripeLib.stripeMod.StripeNs.customersNs.ICustomerCreationOptions,
     response: stripeLib.stripeMod.StripeNs.IResponseFn[stripeLib.stripeMod.StripeNs.customersNs.ICustomer]
   ): js.Promise[stripeLib.stripeMod.StripeNs.customersNs.ICustomer] = js.native
-  def createCard(customerId: java.lang.String, data: stripeLib.Anon_Card): js.Promise[stripeLib.stripeMod.StripeNs.cardsNs.ICard] = js.native
+  def createCard(customerId: java.lang.String, data: stripeLib.Anon_CardISourceCreationOptionsExtended): js.Promise[stripeLib.stripeMod.StripeNs.cardsNs.ICard] = js.native
   /**
     * When you create a new credit card, you must specify a customer or recipient to create it on. If the card's owner has no default card,
     * then the new card will become the default. However, if the owner already has a default then it will not change. To change the default,
@@ -96,18 +96,18 @@ trait Customers
     */
   def createCard(
     customerId: java.lang.String,
-    data: stripeLib.Anon_Card,
+    data: stripeLib.Anon_CardISourceCreationOptionsExtended,
     options: stripeLib.stripeMod.StripeNs.HeaderOptions
   ): js.Promise[stripeLib.stripeMod.StripeNs.cardsNs.ICard] = js.native
   def createCard(
     customerId: java.lang.String,
-    data: stripeLib.Anon_Card,
+    data: stripeLib.Anon_CardISourceCreationOptionsExtended,
     options: stripeLib.stripeMod.StripeNs.HeaderOptions,
     response: stripeLib.stripeMod.StripeNs.IResponseFn[stripeLib.stripeMod.StripeNs.cardsNs.ICard]
   ): js.Promise[stripeLib.stripeMod.StripeNs.cardsNs.ICard] = js.native
   def createCard(
     customerId: java.lang.String,
-    data: stripeLib.Anon_Card,
+    data: stripeLib.Anon_CardISourceCreationOptionsExtended,
     response: stripeLib.stripeMod.StripeNs.IResponseFn[stripeLib.stripeMod.StripeNs.cardsNs.ICard]
   ): js.Promise[stripeLib.stripeMod.StripeNs.cardsNs.ICard] = js.native
   def createSource(

@@ -25,7 +25,7 @@ class Metric protected ()
   /* CompleteClass */
   override var aiDataContract: js.Any = js.native
   @JSName("aiDataContract")
-  var aiDataContract_Metric: applicationinsightsDashJsLib.Anon_Metrics = js.native
+  var aiDataContract_Metric: applicationinsightsDashJsLib.Anon_VerMetrics = js.native
   var metrics: js.Array[applicationinsightsDashJsLib.AINs.DataPoint] = js.native
   var properties: js.Any = js.native
   var ver: scala.Double = js.native

@@ -8,15 +8,27 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Anon_Session
   extends /**
-  * Creates a new token iterator object. The inital token index is set to the provided row and column coordinates.
-  * @param session The session to associate with
-  * @param initialRow The row to start the tokenizing at
-  * @param initialColumn The column to start the tokenizing at
+  * - @param session (Document): The document to associate with the anchor
+  * - @param length (Number): The starting row position
+  * - @param pos (Number): The starting column position
+  * - @param others (String):
+  * - @param mainClass (String):
+  * - @param othersClass (String):
   **/
-org.scalablytyped.runtime.Instantiable3[
+org.scalablytyped.runtime.Instantiable6[
+      /* session */ braceLib.braceMod.AceAjaxNs.Document, 
+      /* length */ scala.Double, 
+      /* pos */ scala.Double, 
+      /* others */ java.lang.String, 
+      /* mainClass */ java.lang.String, 
+      /* othersClass */ java.lang.String, 
+      braceLib.braceMod.AceAjaxNs.PlaceHolder
+    ]
+     with org.scalablytyped.runtime.Instantiable4[
       /* session */ braceLib.braceMod.AceAjaxNs.IEditSession, 
-      /* initialRow */ scala.Double, 
-      /* initialColumn */ scala.Double, 
-      braceLib.braceMod.AceAjaxNs.TokenIterator
+      /* length */ scala.Double, 
+      /* pos */ braceLib.braceMod.AceAjaxNs.Position, 
+      /* positions */ js.Array[braceLib.braceMod.AceAjaxNs.Position], 
+      braceLib.braceMod.AceAjaxNs.PlaceHolder
     ]
 

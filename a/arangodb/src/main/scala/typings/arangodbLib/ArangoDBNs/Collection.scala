@@ -75,7 +75,11 @@ trait Collection[T /* <: js.Object */] extends js.Object {
     options: ReplaceOptions
   ): js.Array[UpdateResult[T]] = js.native
   def replaceByExample(example: stdLib.Partial[Document[T]], newValue: DocumentData[T]): scala.Double = js.native
-  def replaceByExample(example: stdLib.Partial[Document[T]], newValue: DocumentData[T], options: arangodbLib.Anon_Limit): scala.Double = js.native
+  def replaceByExample(
+    example: stdLib.Partial[Document[T]],
+    newValue: DocumentData[T],
+    options: arangodbLib.Anon_WaitForSync
+  ): scala.Double = js.native
   def replaceByExample(example: stdLib.Partial[Document[T]], newValue: DocumentData[T], waitForSync: scala.Boolean): scala.Double = js.native
   def replaceByExample(
     example: stdLib.Partial[Document[T]],

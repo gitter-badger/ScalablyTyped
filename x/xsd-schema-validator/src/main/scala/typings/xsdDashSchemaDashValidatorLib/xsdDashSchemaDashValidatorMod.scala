@@ -12,8 +12,8 @@ object xsdDashSchemaDashValidatorMod extends js.Object {
     xml: java.lang.String,
     pathToXsd: java.lang.String,
     callback: js.Function2[
-      /* err */ nodeLib.Error, 
-      /* result */ xsdDashSchemaDashValidatorLib.Anon_Result, 
+      /* err */ nodeLib.Error with stdLib.Error, 
+      /* result */ xsdDashSchemaDashValidatorLib.Anon_Valid, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -21,8 +21,8 @@ object xsdDashSchemaDashValidatorMod extends js.Object {
     xml: nodeLib.NodeJSNs.ReadableStream,
     pathToXsd: java.lang.String,
     callback: js.Function2[
-      /* err */ nodeLib.Error, 
-      /* result */ xsdDashSchemaDashValidatorLib.Anon_Result, 
+      /* err */ nodeLib.Error with stdLib.Error, 
+      /* result */ xsdDashSchemaDashValidatorLib.Anon_Valid, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -30,8 +30,8 @@ object xsdDashSchemaDashValidatorMod extends js.Object {
     xml: xsdDashSchemaDashValidatorLib.Anon_File,
     pathToXsd: java.lang.String,
     callback: js.Function2[
-      /* err */ nodeLib.Error, 
-      /* result */ xsdDashSchemaDashValidatorLib.Anon_Result, 
+      /* err */ nodeLib.Error with stdLib.Error, 
+      /* result */ xsdDashSchemaDashValidatorLib.Anon_Valid, 
       scala.Unit
     ]
   ): scala.Unit = js.native

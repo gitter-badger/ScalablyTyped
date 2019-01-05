@@ -13,14 +13,14 @@ object mu2ModMembers extends js.Object {
   def clearCache(templateName: java.lang.String): scala.Unit = js.native
   def compile(
     filename: java.lang.String,
-    callback: js.Function2[/* err */ nodeLib.Error, /* parsed */ IParsed, scala.Unit]
+    callback: js.Function2[/* err */ nodeLib.Error with stdLib.Error, /* parsed */ IParsed, scala.Unit]
   ): scala.Unit = js.native
   def compileAndRender(templateName: java.lang.String, view: js.Any): nodeLib.NodeJSNs.ReadableStream = js.native
   def compileText(name: java.lang.String, template: java.lang.String): IParsed = js.native
   def compileText(
     name: java.lang.String,
     template: java.lang.String,
-    callback: js.Function2[/* err */ nodeLib.Error, /* parsed */ IParsed, scala.Unit]
+    callback: js.Function2[/* err */ nodeLib.Error with stdLib.Error, /* parsed */ IParsed, scala.Unit]
   ): scala.Unit = js.native
   def compileText(template: java.lang.String): IParsed = js.native
   def render(filenameOrParsed: java.lang.String, view: js.Any): nodeLib.NodeJSNs.ReadableStream = js.native

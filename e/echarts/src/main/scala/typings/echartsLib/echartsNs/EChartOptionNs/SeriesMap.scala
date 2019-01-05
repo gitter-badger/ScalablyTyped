@@ -174,7 +174,7 @@ trait SeriesMap extends js.Object {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.itemStyle
     */
-  var itemStyle: js.UndefOr[echartsLib.Anon_Emphasis] = js.undefined
+  var itemStyle: js.UndefOr[echartsLib.Anon_AreaColorEmphasis] = js.undefined
   /**
     * Text label of , to explain some data information about graphic
     * item like value, name and so on.
@@ -186,9 +186,7 @@ trait SeriesMap extends js.Object {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.label
     */
-  var label: js.UndefOr[
-    echartsLib.Anon_ShadowOffsetXBackgroundColorShowAlignTextBorderWidthVerticalAlignShadowBlurHeight
-  ] = js.undefined
+  var label: js.UndefOr[echartsLib.Anon_ShowPositionDistanceRotateOffsetFormatterColor] = js.undefined
   /**
     * `layoutCenter` and `layoutSize` provides layout strategy other
     * than `left/right/top/bottom/width/height`.
@@ -301,21 +299,21 @@ trait SeriesMap extends js.Object {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.markArea
     */
-  var markArea: js.UndefOr[echartsLib.Anon_SilentDataLabelAnimationEasingUpdateItemStyle] = js.undefined
+  var markArea: js.UndefOr[echartsLib.Anon_SilentLabelItemStyleData] = js.undefined
   /**
     * Use a line in the chart to illustrate.
     *
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.markLine
     */
-  var markLine: js.UndefOr[echartsLib.Anon_PrecisionSilentData] = js.undefined
+  var markLine: js.UndefOr[echartsLib.Anon_SilentSymbolSymbolSize] = js.undefined
   /**
     * Mark point in a chart.
     *
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.markPoint
     */
-  var markPoint: js.UndefOr[echartsLib.Anon_SilentDataLabelAnimationEasingUpdateItemStyleSymbolKeepAspect] = js.undefined
+  var markPoint: js.UndefOr[echartsLib.Anon_SymbolSymbolSizeSymbolRotate] = js.undefined
   /**
     * Series name used for displaying in
     * [tooltip](https://ecomfe.github.io/echarts-doc/public/en/option.html#tooltip)
@@ -372,7 +370,7 @@ trait SeriesMap extends js.Object {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.scaleLimit
     */
-  var scaleLimit: js.UndefOr[echartsLib.Anon_Max] = js.undefined
+  var scaleLimit: js.UndefOr[echartsLib.Anon_Min] = js.undefined
   /**
     * Selected mode decides whether multiple selecting is supported.
     * By default, `false` is used for disabling selection.
@@ -430,7 +428,7 @@ trait SeriesMap extends js.Object {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.tooltip
     */
-  var tooltip: js.UndefOr[echartsLib.Anon_BackgroundColor] = js.undefined
+  var tooltip: js.UndefOr[echartsLib.Anon_Position] = js.undefined
   /**
     * Distance between component and the top side of the container.
     *

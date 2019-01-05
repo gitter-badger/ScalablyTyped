@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 object reduxDashSagaModMembers extends js.Object {
   val CANCEL: java.lang.String = js.native
   val END: END = js.native
-  val buffers: reduxDashSagaLib.Anon_Sliding = js.native
+  val buffers: reduxDashSagaLib.Anon_None = js.native
   val takeLatest: reduxDashSagaLib.Anon_ChannelWorker = js.native
   def channel[T](): Channel[T] = js.native
   def channel[T](buffer: Buffer[T]): Channel[T] = js.native
@@ -22,7 +22,7 @@ object reduxDashSagaModMembers extends js.Object {
   def eventChannel[T](subscribe: reduxDashSagaLib.Subscribe[T]): Channel[T] = js.native
   def eventChannel[T](subscribe: reduxDashSagaLib.Subscribe[T], buffer: Buffer[T]): Channel[T] = js.native
   def eventChannel[T](subscribe: reduxDashSagaLib.Subscribe[T], buffer: Buffer[T], matcher: Predicate[T]): Channel[T] = js.native
-  def runSaga[A, S](iterator: nodeLib.Iterator[_], options: RunSagaOptions[A, S]): Task = js.native
+  def runSaga[A, S](iterator: nodeLib.Iterator[_] with stdLib.Iterator[_], options: RunSagaOptions[A, S]): Task = js.native
   def runSaga[A, S](storeInterface: RunSagaOptions[A, S], saga: reduxDashSagaLib.Saga0): Task = js.native
   def runSaga[A, S, T1](storeInterface: RunSagaOptions[A, S], saga: reduxDashSagaLib.Saga1[T1], arg1: T1): Task = js.native
   def runSaga[A, S, T1, T2](storeInterface: RunSagaOptions[A, S], saga: reduxDashSagaLib.Saga2[T1, T2], arg1: T1, arg2: T2): Task = js.native

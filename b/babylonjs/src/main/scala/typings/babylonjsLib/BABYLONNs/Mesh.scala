@@ -613,7 +613,7 @@ class Mesh protected () extends AbstractMesh {
     * the user know there was an issue with importing the mesh
     * @returns a validation object with skinned, valid and report string
     */
-  def validateSkinning(): babylonjsLib.Anon_Valid = js.native
+  def validateSkinning(): babylonjsLib.Anon_Skinned = js.native
 }
 
 /**
@@ -659,7 +659,7 @@ object Mesh extends js.Object {
     * @param meshesOrMinMaxVector could be an array of meshes or a `{min:` Vector3`, max:` Vector3`}` object
     * @returns a vector3
     */
-  def Center(meshesOrMinMaxVector: babylonjsLib.Anon_Max): babylonjsLib.BABYLONNs.Vector3 = js.native
+  def Center(meshesOrMinMaxVector: babylonjsLib.Anon_Min): babylonjsLib.BABYLONNs.Vector3 = js.native
   def Center(meshesOrMinMaxVector: js.Array[babylonjsLib.BABYLONNs.AbstractMesh]): babylonjsLib.BABYLONNs.Vector3 = js.native
   /**
     * Creates a box mesh. Please consider using the same method from the MeshBuilder class instead
@@ -943,11 +943,7 @@ object Mesh extends js.Object {
     * @returns a new Mesh
     * @see http://doc.babylonjs.com/how_to/polyhedra_shapes#icosphere
     */
-  def CreateIcoSphere(
-    name: java.lang.String,
-    options: babylonjsLib.Anon_Subdivisions,
-    scene: babylonjsLib.BABYLONNs.Scene
-  ): babylonjsLib.BABYLONNs.Mesh = js.native
+  def CreateIcoSphere(name: java.lang.String, options: babylonjsLib.Anon_Radius, scene: babylonjsLib.BABYLONNs.Scene): babylonjsLib.BABYLONNs.Mesh = js.native
   /**
     * Creates lathe mesh.
     * The lathe is a shape with a symetry axis : a 2D model shape is rotated around this axis to design the lathe.
@@ -1101,7 +1097,7 @@ object Mesh extends js.Object {
     * @param scene defines the hosting scene
     * @returns a new Mesh
     */
-  def CreatePolyhedron(name: java.lang.String, options: babylonjsLib.Anon_SizeZ, scene: babylonjsLib.BABYLONNs.Scene): babylonjsLib.BABYLONNs.Mesh = js.native
+  def CreatePolyhedron(name: java.lang.String, options: babylonjsLib.Anon_Type, scene: babylonjsLib.BABYLONNs.Scene): babylonjsLib.BABYLONNs.Mesh = js.native
   def CreateRibbon(
     name: java.lang.String,
     pathArray: js.Array[js.Array[babylonjsLib.BABYLONNs.Vector3]],
@@ -1643,7 +1639,7 @@ object Mesh extends js.Object {
     * @param meshes defines the list of meshes to scan
     * @returns an object `{min:` Vector3`, max:` Vector3`}`
     */
-  def MinMax(meshes: js.Array[babylonjsLib.BABYLONNs.AbstractMesh]): babylonjsLib.Anon_Max = js.native
+  def MinMax(meshes: js.Array[babylonjsLib.BABYLONNs.AbstractMesh]): babylonjsLib.Anon_Min = js.native
   /**
     * Returns a new Mesh object parsed from the source provided.
     * @param parsedMesh is the source

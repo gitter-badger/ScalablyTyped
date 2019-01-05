@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait Anon_ChildrenInnerProps extends js.Object {
   /** The children to be rendered. */
   var children: reactLib.reactMod.ReactNs.ReactNode
-  /** Inner props to be passed down to the container. */
-  var innerProps: Anon_OnKeyDown
+  /** props passed to the wrapping element for the group. */
+  var innerProps: org.scalablytyped.runtime.StringDictionary[js.Any]
 }
 

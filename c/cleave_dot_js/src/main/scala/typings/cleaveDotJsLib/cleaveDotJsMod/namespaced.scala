@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 @JSImport("cleave.js", JSImport.Namespace)
 @js.native
 class namespaced protected () extends Cleave {
+  def this(selector: reactLib.HTMLElement with stdLib.HTMLElement, options: cleaveDotJsLib.optionsMod.CleaveOptions) = this()
   def this(selector: java.lang.String, options: cleaveDotJsLib.optionsMod.CleaveOptions) = this()
-  def this(selector: reactLib.HTMLElement, options: cleaveDotJsLib.optionsMod.CleaveOptions) = this()
   /* CompleteClass */
   override def destroy(): scala.Unit = js.native
   /* CompleteClass */

@@ -16,7 +16,7 @@ class Mailer protected () extends js.Object {
   val Parent: js.Any = js.native
   val Received: scala.Boolean = js.native
   var Recipients: js.Any = js.native
-  val SendDateTime: activexDashInteropLib.VarDate = js.native
+  val SendDateTime: activexDashInteropLib.VarDate with stdLib.VarDate = js.native
   val Sender: java.lang.String = js.native
   var Subject: java.lang.String = js.native
   var `Word.Mailer_typekey`: Mailer = js.native

@@ -46,7 +46,7 @@ object rawNs extends js.Object {
     extends pgLib.pgMod.Query
   
   val defaults: pgLib.pgMod.Defaults with pgLib.pgMod.ClientConfig = js.native
-  val native: pgLib.Anon_Defaults | scala.Null = js.native
+  val native: pgLib.Anon_Connection | scala.Null = js.native
   val types: pgLib.Anon_GetTypeParser = js.native
 }
 

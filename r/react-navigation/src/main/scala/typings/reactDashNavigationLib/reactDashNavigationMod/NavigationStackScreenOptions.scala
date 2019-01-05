@@ -9,7 +9,7 @@ trait NavigationStackScreenOptions extends js.Object {
   var gestureDirection: js.UndefOr[
     reactDashNavigationLib.reactDashNavigationLibStrings.default | reactDashNavigationLib.reactDashNavigationLibStrings.inverted
   ] = js.undefined
-  var gestureResponseDistance: js.UndefOr[reactDashNavigationLib.Anon_Horizontal] = js.undefined
+  var gestureResponseDistance: js.UndefOr[reactDashNavigationLib.Anon_Vertical] = js.undefined
   var gesturesEnabled: js.UndefOr[scala.Boolean] = js.undefined
   var header: js.UndefOr[
     reactLib.reactMod.ReactNs.ReactElement[_] | (js.Function1[/* headerProps */ HeaderProps, reactLib.reactMod.ReactNs.ReactElement[_]]) | scala.Null

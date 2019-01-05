@@ -11,12 +11,12 @@ object BOOSTS
   extends /* part */ org.scalablytyped.runtime.StringDictionary[
       org.scalablytyped.runtime.StringDictionary[org.scalablytyped.runtime.StringDictionary[scala.Double]]
     ] {
-  var attack: screepsLib.Anon_UH2OUH = js.native
+  var attack: screepsLib.Anon_UHUH2O = js.native
   var carry: screepsLib.Anon_KH = js.native
-  var heal: screepsLib.Anon_LHO2 = js.native
-  var move: screepsLib.Anon_ZHO2 = js.native
-  var ranged_attack: screepsLib.Anon_XKHO2 = js.native
-  var tough: screepsLib.Anon_XGHO2 = js.native
-  var work: screepsLib.Anon_XUHO2 = js.native
+  var heal: screepsLib.Anon_LO = js.native
+  var move: screepsLib.Anon_ZO = js.native
+  var ranged_attack: screepsLib.Anon_KO = js.native
+  var tough: screepsLib.Anon_GO = js.native
+  var work: screepsLib.Anon_UO = js.native
 }
 

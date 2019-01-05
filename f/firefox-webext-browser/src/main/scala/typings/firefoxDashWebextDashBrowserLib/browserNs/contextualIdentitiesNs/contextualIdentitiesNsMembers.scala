@@ -34,7 +34,7 @@ object contextualIdentitiesNsMembers extends js.Object {
     * Creates a contextual identity with the given data.
     * @param details Details about the contextual identity being created.
     */
-  def create(details: firefoxDashWebextDashBrowserLib.Anon_Color): js.Promise[ContextualIdentity] = js.native
+  def create(details: firefoxDashWebextDashBrowserLib.Anon_NameColor): js.Promise[ContextualIdentity] = js.native
   /* contextualIdentities functions */
   /**
     * Retrieves information about a single contextual identity.
@@ -56,6 +56,6 @@ object contextualIdentitiesNsMembers extends js.Object {
     * @param cookieStoreId The ID of the contextual identity cookie store.
     * @param details Details about the contextual identity being created.
     */
-  def update(cookieStoreId: java.lang.String, details: firefoxDashWebextDashBrowserLib.Anon_ColorName): js.Promise[ContextualIdentity] = js.native
+  def update(cookieStoreId: java.lang.String, details: firefoxDashWebextDashBrowserLib.Anon_NameColorIcon): js.Promise[ContextualIdentity] = js.native
 }
 

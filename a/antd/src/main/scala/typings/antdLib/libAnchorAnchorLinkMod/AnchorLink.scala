@@ -9,13 +9,18 @@ import scala.scalajs.js.annotation._
 trait AnchorLink
   extends reactLib.reactMod.Component[AnchorLinkProps, js.Any, js.Any] {
   @JSName("context")
-  var context_AnchorLink: antdLib.Anon_AntAnchor = js.native
+  var context_AnchorLink: antdLib.Anon_AntAnchor_1011846465 = js.native
   @JSName("componentDidMount")
   def componentDidMount_MAnchorLink(): scala.Unit = js.native
   @JSName("componentWillReceiveProps")
   def componentWillReceiveProps_MAnchorLink(nextProps: AnchorLinkProps): scala.Unit = js.native
   @JSName("componentWillUnmount")
   def componentWillUnmount_MAnchorLink(): scala.Unit = js.native
-  def handleClick(e: reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.MouseEvent]): scala.Unit = js.native
+  def handleClick(
+    e: reactLib.reactMod.ReactNs.MouseEvent[
+      reactLib.HTMLElement with stdLib.HTMLElement, 
+      reactLib.MouseEvent with stdLib.MouseEvent
+    ]
+  ): scala.Unit = js.native
 }
 

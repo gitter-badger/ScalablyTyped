@@ -13,7 +13,7 @@ object reactDashImageDashCropModMembers extends js.Object {
     imageAspect: scala.Double
   ): reactDashImageDashCropLib.reactDashImageDashCropMod.ReactCropNs.Crop = js.native
   def getPixelCrop(
-    image: reactLib.HTMLImageElement,
+    image: reactLib.HTMLImageElement with stdLib.HTMLImageElement,
     percentCrop: reactDashImageDashCropLib.reactDashImageDashCropMod.ReactCropNs.Crop
   ): reactDashImageDashCropLib.reactDashImageDashCropMod.ReactCropNs.Crop = js.native
   def makeAspectCrop(

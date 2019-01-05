@@ -17,7 +17,7 @@ trait NavigationControl extends js.Object {
   /** Set the dockPosition value for navigation control
     * @Default {centerleft}
     */
-  var dockPosition: js.UndefOr[Position | java.lang.String] = js.undefined
+  var dockPosition: js.UndefOr[(Position with stdLib.Position) | java.lang.String] = js.undefined
   /** Enables or Disables the Navigation for handling zooming map
     * @Default {false}
     */

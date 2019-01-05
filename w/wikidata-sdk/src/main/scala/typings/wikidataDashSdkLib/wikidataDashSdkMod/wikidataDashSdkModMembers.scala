@@ -228,10 +228,10 @@ object wikidataDashSdkModMembers extends js.Object {
     options: wikidataDashSdkLib.Anon_Limit
   ): java.lang.String = js.native
   def getSitelinkData(a: java.lang.String): SitelinkData = js.native
-  def getSitelinkUrl(a: wikidataDashSdkLib.Anon_Title): java.lang.String = js.native
+  def getSitelinkUrl(a: wikidataDashSdkLib.Anon_Site): java.lang.String = js.native
   def getSitelinkUrl(site: wikidataDashSdkLib.defTypeSiteMod.WikidataSite, title: java.lang.String): java.lang.String = js.native
   def getWikidataIdsFromSitelinks(): scala.Unit = js.native
-  def getWikidataIdsFromWikipediaTitles(a: wikidataDashSdkLib.Anon_FormatTitles): java.lang.String = js.native
+  def getWikidataIdsFromWikipediaTitles(a: wikidataDashSdkLib.Anon_Titles): java.lang.String = js.native
   def getWikidataIdsFromWikipediaTitles(titles: java.lang.String): java.lang.String = js.native
   def getWikidataIdsFromWikipediaTitles(titles: java.lang.String, sites: wikidataDashSdkLib.defTypeSiteMod.WikidataSite): java.lang.String = js.native
   def getWikidataIdsFromWikipediaTitles(
@@ -366,7 +366,7 @@ object wikidataDashSdkModMembers extends js.Object {
   def isNumericId(a: java.lang.String): scala.Boolean = js.native
   def isPropertyId(a: java.lang.String): scala.Boolean = js.native
   def isSitelinkKey(a: java.lang.String): scala.Boolean = js.native
-  def searchEntities(opt: wikidataDashSdkLib.Anon_Format): java.lang.String = js.native
+  def searchEntities(opt: wikidataDashSdkLib.Anon_Search): java.lang.String = js.native
   def searchEntities(search: java.lang.String): java.lang.String = js.native
   def searchEntities(search: java.lang.String, language: wikidataDashSdkLib.defTypeLanguageMod.WikidataLanguage): java.lang.String = js.native
   def searchEntities(

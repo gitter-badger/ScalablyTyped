@@ -10,11 +10,11 @@ trait FS extends js.Object {
   @JSName("readFileSync")
   var readFileSync_Original: jsonfileLib.Anon_PathOptions = js.native
   @JSName("readFile")
-  var readFile_Original: jsonfileLib.Anon_PathCallback = js.native
+  var readFile_Original: jsonfileLib.Anon_Path = js.native
   @JSName("writeFileSync")
-  var writeFileSync_Original: jsonfileLib.Anon_PathData = js.native
+  var writeFileSync_Original: jsonfileLib.Anon_PathDataOptions = js.native
   @JSName("writeFile")
-  var writeFile_Original: jsonfileLib.Anon_Path = js.native
+  var writeFile_Original: jsonfileLib.Anon_PathData = js.native
   def readFile(
     path: nodeLib.fsMod.PathLike,
     callback: js.Function2[/* err */ nodeLib.NodeJSNs.ErrnoException, /* data */ nodeLib.Buffer, scala.Unit]

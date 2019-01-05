@@ -15,7 +15,7 @@ class Gpio protected ()
     * @param options   object (optional)
     */
   def this(gpio: scala.Double) = this()
-  def this(gpio: scala.Double, options: pigpioLib.Anon_Alert) = this()
+  def this(gpio: scala.Double, options: pigpioLib.Anon_Mode) = this()
   /**
     * The same to #pwmWrite.
     * @param dutyCycle     an unsigned integer >= 0 (off) and <= range (fully on). range defaults to 255.

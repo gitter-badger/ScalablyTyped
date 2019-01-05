@@ -9,41 +9,136 @@ import scala.scalajs.js.annotation._
 trait Anon_Path extends js.Object {
   def apply(
     path: nodeLib.fsMod.PathLike,
-    data: js.Any,
-    callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]
+    callback: js.Function2[/* err */ nodeLib.NodeJSNs.ErrnoException, /* data */ nodeLib.Buffer, scala.Unit]
   ): scala.Unit = js.native
   def apply(
     path: nodeLib.fsMod.PathLike,
-    data: js.Any,
-    options: nodeLib.fsMod.WriteFileOptions,
-    callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]
+    options: java.lang.String,
+    callback: js.Function2[
+      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      nodeLib.Buffer | (/* data */ java.lang.String), 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  def apply(
+    path: nodeLib.fsMod.PathLike,
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function2[
+      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      (/* data */ nodeLib.Buffer) | java.lang.String, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  def apply(
+    path: nodeLib.fsMod.PathLike,
+    options: nodeLib.Anon_EncodingFlagStringNull,
+    callback: js.Function2[
+      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      /* data */ java.lang.String | nodeLib.Buffer, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  def apply(
+    path: nodeLib.fsMod.PathLike,
+    options: nodeLib.Anon_EncodingFlagString,
+    callback: js.Function2[/* err */ nodeLib.NodeJSNs.ErrnoException, /* data */ java.lang.String, scala.Unit]
+  ): scala.Unit = js.native
+  def apply(
+    path: nodeLib.fsMod.PathLike,
+    options: nodeLib.Anon_EncodingFlag,
+    callback: js.Function2[/* err */ nodeLib.NodeJSNs.ErrnoException, /* data */ nodeLib.Buffer, scala.Unit]
+  ): scala.Unit = js.native
+  def apply(
+    path: nodeLib.fsMod.PathLike,
+    options: scala.Null,
+    callback: js.Function2[
+      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      (/* data */ nodeLib.Buffer) | java.lang.String, 
+      scala.Unit
+    ]
   ): scala.Unit = js.native
   def apply(
     path: scala.Double,
-    data: js.Any,
-    callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]
+    callback: js.Function2[/* err */ nodeLib.NodeJSNs.ErrnoException, /* data */ nodeLib.Buffer, scala.Unit]
   ): scala.Unit = js.native
   def apply(
     path: scala.Double,
-    data: js.Any,
-    options: nodeLib.fsMod.WriteFileOptions,
-    callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]
+    options: java.lang.String,
+    callback: js.Function2[
+      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      nodeLib.Buffer | (/* data */ java.lang.String), 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  def apply(
+    path: scala.Double,
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function2[
+      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      (/* data */ nodeLib.Buffer) | java.lang.String, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  def apply(
+    path: scala.Double,
+    options: nodeLib.Anon_EncodingFlagStringNull,
+    callback: js.Function2[
+      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      /* data */ java.lang.String | nodeLib.Buffer, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  def apply(
+    path: scala.Double,
+    options: nodeLib.Anon_EncodingFlagString,
+    callback: js.Function2[/* err */ nodeLib.NodeJSNs.ErrnoException, /* data */ java.lang.String, scala.Unit]
+  ): scala.Unit = js.native
+  def apply(
+    path: scala.Double,
+    options: nodeLib.Anon_EncodingFlag,
+    callback: js.Function2[/* err */ nodeLib.NodeJSNs.ErrnoException, /* data */ nodeLib.Buffer, scala.Unit]
+  ): scala.Unit = js.native
+  def apply(
+    path: scala.Double,
+    options: scala.Null,
+    callback: js.Function2[
+      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      (/* data */ nodeLib.Buffer) | java.lang.String, 
+      scala.Unit
+    ]
   ): scala.Unit = js.native
   /**
-    * Asynchronously writes data to a file, replacing the file if it already exists.
+    * Asynchronously reads the entire contents of a file.
+    * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
+    * If a file descriptor is provided, the underlying file will _not_ be closed automatically.
+    * @param options An object that may contain an optional flag.
+    * If a flag is not provided, it defaults to `'r'`.
+    */
+  /**
+    * Asynchronously reads the entire contents of a file.
     * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
     * URL support is _experimental_.
     * If a file descriptor is provided, the underlying file will _not_ be closed automatically.
-    * @param data The data to write. If something other than a Buffer or Uint8Array is provided, the value is coerced to a string.
-    * @param options Either the encoding for the file, or an object optionally specifying the encoding, file mode, and flag.
-    * If `encoding` is not supplied, the default of `'utf8'` is used.
-    * If `mode` is not supplied, the default of `0o666` is used.
-    * If `mode` is a string, it is parsed as an octal integer.
-    * If `flag` is not supplied, the default of `'w'` is used.
+    * @param options Either the encoding for the result, or an object that contains the encoding and an optional flag.
+    * If a flag is not provided, it defaults to `'r'`.
     */
-  def `__promisify__`(path: nodeLib.fsMod.PathLike, data: js.Any): js.Promise[scala.Unit] = js.native
-  def `__promisify__`(path: nodeLib.fsMod.PathLike, data: js.Any, options: nodeLib.fsMod.WriteFileOptions): js.Promise[scala.Unit] = js.native
-  def `__promisify__`(path: scala.Double, data: js.Any): js.Promise[scala.Unit] = js.native
-  def `__promisify__`(path: scala.Double, data: js.Any, options: nodeLib.fsMod.WriteFileOptions): js.Promise[scala.Unit] = js.native
+  def `__promisify__`(path: nodeLib.fsMod.PathLike): js.Promise[nodeLib.Buffer] = js.native
+  def `__promisify__`(path: nodeLib.fsMod.PathLike, options: java.lang.String): js.Promise[java.lang.String] = js.native
+  def `__promisify__`(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_EncodingFlag): js.Promise[nodeLib.Buffer] = js.native
+  /**
+    * Asynchronously reads the entire contents of a file.
+    * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
+    * URL support is _experimental_.
+    * If a file descriptor is provided, the underlying file will _not_ be closed automatically.
+    * @param options Either the encoding for the result, or an object that contains the encoding and an optional flag.
+    * If a flag is not provided, it defaults to `'r'`.
+    */
+  def `__promisify__`(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_EncodingFlagString): js.Promise[java.lang.String] = js.native
+  def `__promisify__`(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_EncodingFlagStringNull): js.Promise[java.lang.String | nodeLib.Buffer] = js.native
+  def `__promisify__`(path: scala.Double): js.Promise[nodeLib.Buffer] = js.native
+  def `__promisify__`(path: scala.Double, options: java.lang.String): js.Promise[java.lang.String] = js.native
+  def `__promisify__`(path: scala.Double, options: nodeLib.Anon_EncodingFlag): js.Promise[nodeLib.Buffer] = js.native
+  def `__promisify__`(path: scala.Double, options: nodeLib.Anon_EncodingFlagString): js.Promise[java.lang.String] = js.native
+  def `__promisify__`(path: scala.Double, options: nodeLib.Anon_EncodingFlagStringNull): js.Promise[java.lang.String | nodeLib.Buffer] = js.native
 }
 

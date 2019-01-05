@@ -10,7 +10,7 @@ trait NavbarElementProps extends js.Object {
   var className: java.lang.String = js.native
   var classNames: reactDashDayDashPickerLib.typesCommonMod.ClassNames = js.native
   var dir: js.UndefOr[java.lang.String] = js.native
-  var labels: reactDashDayDashPickerLib.Anon_NextMonth = js.native
+  var labels: reactDashDayDashPickerLib.Anon_PreviousMonth = js.native
   var locale: java.lang.String = js.native
   var localeUtils: reactDashDayDashPickerLib.typesUtilsMod.LocaleUtils = js.native
   var month: stdLib.Date = js.native

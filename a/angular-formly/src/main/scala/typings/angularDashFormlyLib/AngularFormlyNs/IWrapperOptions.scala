@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait IWrapperOptions extends js.Object {
   var apiCheck: js.UndefOr[
-    org.scalablytyped.runtime.StringDictionary[angularLib.angularMod.Global.Function]
+    org.scalablytyped.runtime.StringDictionary[angularLib.angularMod.Global.Function with js.Function]
   ] = js.undefined
   var apiCheckFunction: js.UndefOr[java.lang.String] = js.undefined
    //'throw' or 'warn
@@ -18,6 +18,6 @@ trait IWrapperOptions extends js.Object {
   var template: js.UndefOr[java.lang.String] = js.undefined
   var templateUrl: js.UndefOr[java.lang.String] = js.undefined
   var types: js.UndefOr[js.Array[java.lang.String]] = js.undefined
-  var validateOptions: js.UndefOr[angularLib.angularMod.Global.Function] = js.undefined
+  var validateOptions: js.UndefOr[angularLib.angularMod.Global.Function with js.Function] = js.undefined
 }
 

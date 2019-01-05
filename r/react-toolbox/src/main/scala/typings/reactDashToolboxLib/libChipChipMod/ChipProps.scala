@@ -19,7 +19,7 @@ trait ChipProps
   /**
     * Callback to be invoked when the delete icon is clicked.
     */
-  var onDeleteClick: js.UndefOr[coreDashJsLib.Function] = js.undefined
+  var onDeleteClick: js.UndefOr[coreDashJsLib.Function with js.Function] = js.undefined
   /**
     * Classnames object defining the component style.
     */

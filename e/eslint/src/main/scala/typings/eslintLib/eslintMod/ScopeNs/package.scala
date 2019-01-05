@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 package object ScopeNs {
   type Definition = DefinitionType with eslintLib.Anon_Name
-  type DefinitionType = eslintLib.Anon_Node | eslintLib.Anon_NodeType | eslintLib.Anon_NodeTypeFunctionName | eslintLib.Anon_NodeTypeImplicitGlobalVariable | eslintLib.Anon_NodeTypeImportBinding | eslintLib.Anon_NodeTypeParameter | eslintLib.Anon_NodeTypeTDZ | eslintLib.Anon_NodeTypeVariable
+  type DefinitionType = eslintLib.Anon_Type | eslintLib.Anon_TypeClassName | eslintLib.Anon_TypeFunctionName | eslintLib.Anon_TypeImplicitGlobalVariable | eslintLib.Anon_TypeImportBinding | eslintLib.Anon_TypeParameter | eslintLib.Anon_TypeTDZ | eslintLib.Anon_TypeVariable
 }

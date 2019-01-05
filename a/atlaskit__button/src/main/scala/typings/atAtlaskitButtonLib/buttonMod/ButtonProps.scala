@@ -39,7 +39,9 @@ trait ButtonProps extends js.Object {
   /** Change the style to indicate the button is selected. */
   val isSelected: js.UndefOr[scala.Boolean] = js.undefined
   /** Handler to be called on click. */
-  val onClick: js.UndefOr[reactLib.reactMod.ReactNs.MouseEventHandler[reactLib.HTMLButtonElement]] = js.undefined
+  val onClick: js.UndefOr[
+    reactLib.reactMod.ReactNs.MouseEventHandler[reactLib.HTMLButtonElement with stdLib.HTMLButtonElement]
+  ] = js.undefined
   /** Option to fit button width to its parent width */
   val shouldFitContainer: js.UndefOr[scala.Boolean] = js.undefined
   /** Set the amount of padding in the button. */

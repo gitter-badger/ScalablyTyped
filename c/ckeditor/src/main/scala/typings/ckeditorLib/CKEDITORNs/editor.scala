@@ -184,7 +184,7 @@ class editor () extends event {
   def setActiveEnterMode(enterMode: scala.Double, shiftEnterMode: scala.Double): scala.Unit = js.native
   def setActiveFilter(filter: filter): scala.Unit = js.native
   def setData(data: java.lang.String): scala.Unit = js.native
-  def setData(data: java.lang.String, options: ckeditorLib.Anon_Callback): scala.Unit = js.native
+  def setData(data: java.lang.String, options: ckeditorLib.Anon_Internal): scala.Unit = js.native
   def setKeystroke(keystroke: js.Array[js.Tuple2[scala.Double, java.lang.String | scala.Boolean]]): scala.Unit = js.native
   def setKeystroke(keystroke: scala.Double, behavior: java.lang.String): scala.Unit = js.native
   def setKeystroke(keystroke: scala.Double, behavior: scala.Boolean): scala.Unit = js.native

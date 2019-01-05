@@ -26,7 +26,7 @@ trait Element
   def animate(duration: scala.Double): Animation = js.native
   def animate(duration: scala.Double, ease: java.lang.String): Animation = js.native
   def animate(duration: scala.Double, ease: java.lang.String, delay: scala.Double): Animation = js.native
-  def animate(info: svgDotJsLib.Anon_Delay): Animation = js.native
+  def animate(info: svgDotJsLib.Anon_Ease): Animation = js.native
   def attr(): js.Object = js.native
   def attr(name: java.lang.String): js.Any = js.native
   def attr(name: java.lang.String, value: js.Any): this.type = js.native
@@ -57,7 +57,7 @@ trait Element
   def dy(y: NumberAlias): this.type = js.native
   def event(): stdLib.Event | stdLib.CustomEvent[_] = js.native
   def fill(color: java.lang.String): this.type = js.native
-  def fill(fill: svgDotJsLib.Anon_Rule): this.type = js.native
+  def fill(fill: svgDotJsLib.Anon_Color): this.type = js.native
   def fill(image: Image): this.type = js.native
   def fill(pattern: Element): this.type = js.native
   def fire(event: java.lang.String): this.type = js.native
@@ -115,7 +115,7 @@ trait Element
   def parent(`type`: ParentTypeAlias): Parent | stdLib.HTMLElement = js.native
   def parents(): js.Array[Parent] = js.native
   def point(): Point = js.native
-  def point(position: svgDotJsLib.Anon_Y): Point = js.native
+  def point(position: svgDotJsLib.Anon_X): Point = js.native
   def point(position: ArrayPoint): Point = js.native
   def point(x: scala.Double, y: scala.Double): Point = js.native
   def position(): scala.Double = js.native

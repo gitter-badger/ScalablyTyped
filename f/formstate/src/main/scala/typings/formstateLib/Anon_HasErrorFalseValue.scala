@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Anon_HasErrorFalseValue[TValue] extends js.Object {
+trait Anon_HasErrorFalseValue[TValue /* <: formstateLib.libCoreFormStateMod.ValidatableMapOrArray */] extends js.Object {
   var hasError: formstateLib.formstateLibNumbers.`false`
   var value: TValue
 }

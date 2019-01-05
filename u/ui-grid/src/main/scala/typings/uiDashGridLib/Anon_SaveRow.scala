@@ -17,10 +17,9 @@ trait Anon_SaveRow[TEntity] extends js.Object {
     * @param {ng.IScope} scope The grid scope
     * @param {saveRowHandler} handler Callback
     */
-  var saveRow: js.Function2[
-    /* scope */ angularLib.angularMod.angularNs.IScope, 
-    /* handler */ uiDashGridLib.uiDashGridMod.uiGridNs.rowEditNs.saveRowHandler[TEntity], 
-    scala.Unit
-  ]
+  def saveRow(
+    scope: angularLib.angularMod.angularNs.IScope,
+    handler: uiDashGridLib.uiDashGridMod.uiGridNs.rowEditNs.saveRowHandler[TEntity]
+  ): scala.Unit
 }
 

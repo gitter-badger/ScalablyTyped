@@ -64,7 +64,7 @@ trait IBasePickerProps[T]
     */
   var onBlur: js.UndefOr[
     reactLib.reactMod.ReactNs.FocusEventHandler[
-      reactLib.HTMLInputElement | officeDashUiDashFabricDashReactLib.libComponentsPickersAutoFillBaseAutoFillMod.BaseAutoFill
+      (reactLib.HTMLInputElement with stdLib.HTMLInputElement) | officeDashUiDashFabricDashReactLib.libComponentsPickersAutoFillBaseAutoFillMod.BaseAutoFill
     ]
   ] = js.native
   /**
@@ -91,7 +91,7 @@ trait IBasePickerProps[T]
     */
   var onFocus: js.UndefOr[
     reactLib.reactMod.ReactNs.FocusEventHandler[
-      reactLib.HTMLInputElement | officeDashUiDashFabricDashReactLib.libComponentsPickersAutoFillBaseAutoFillMod.BaseAutoFill
+      (reactLib.HTMLInputElement with stdLib.HTMLInputElement) | officeDashUiDashFabricDashReactLib.libComponentsPickersAutoFillBaseAutoFillMod.BaseAutoFill
     ]
   ] = js.native
   /**

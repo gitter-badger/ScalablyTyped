@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait GetSignedPolicyOptions extends js.Object {
   var acl: js.UndefOr[java.lang.String] = js.undefined
-  var contentLengthRange: js.UndefOr[atGoogleDashCloudStorageLib.Anon_Max] = js.undefined
+  var contentLengthRange: js.UndefOr[atGoogleDashCloudStorageLib.Anon_Min] = js.undefined
   @JSName("equals")
   var equals_FGetSignedPolicyOptions: js.UndefOr[js.Array[java.lang.String] | js.Array[js.Array[java.lang.String]]] = js.undefined
   var expires: stdLib.Date

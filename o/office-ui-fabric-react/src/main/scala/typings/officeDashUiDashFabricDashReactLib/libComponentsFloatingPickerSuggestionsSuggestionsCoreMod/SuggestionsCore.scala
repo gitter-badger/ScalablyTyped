@@ -14,12 +14,12 @@ class SuggestionsCore[T] protected ()
     ] {
   def this(suggestionsProps: officeDashUiDashFabricDashReactLib.libComponentsFloatingPickerSuggestionsSuggestionsDotTypesMod.ISuggestionsCoreProps[T]) = this()
   var SuggestionsItemOfProperType: js.Any = js.native
-  var _selectedElement: reactLib.HTMLDivElement = js.native
+  var _selectedElement: reactLib.HTMLDivElement with stdLib.HTMLDivElement = js.native
   var currentIndex: scala.Double = js.native
   var currentSuggestion: js.UndefOr[
     officeDashUiDashFabricDashReactLib.libComponentsPickersSuggestionsSuggestionsControllerMod.ISuggestionModel[T]
   ] = js.native
-  val selectedElement: js.UndefOr[reactLib.HTMLDivElement] = js.native
+  val selectedElement: js.UndefOr[reactLib.HTMLDivElement with stdLib.HTMLDivElement] = js.native
   /* private */ def _onClickTypedSuggestionsItem(item: js.Any, index: js.Any): js.Any = js.native
   /* private */ def _onRemoveTypedSuggestionsItem(item: js.Any, index: js.Any): js.Any = js.native
   @JSName("componentDidUpdate")

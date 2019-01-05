@@ -14,37 +14,46 @@ trait Reference extends Query {
   def onDisconnect(): OnDisconnect = js.native
   def push(): ThenableReference = js.native
   def push(value: js.Any): ThenableReference = js.native
-  def push(value: js.Any, onComplete: js.Function1[/* a */ nodeLib.Error | scala.Null, _]): ThenableReference = js.native
+  def push(value: js.Any, onComplete: js.Function1[/* a */ (nodeLib.Error with stdLib.Error) | scala.Null, _]): ThenableReference = js.native
   def remove(): js.Promise[_] = js.native
-  def remove(onComplete: js.Function1[/* a */ nodeLib.Error | scala.Null, _]): js.Promise[_] = js.native
+  def remove(onComplete: js.Function1[/* a */ (nodeLib.Error with stdLib.Error) | scala.Null, _]): js.Promise[_] = js.native
   def set(value: js.Any): js.Promise[_] = js.native
-  def set(value: js.Any, onComplete: js.Function1[/* a */ nodeLib.Error | scala.Null, _]): js.Promise[_] = js.native
-  def setPriority(priority: java.lang.String, onComplete: js.Function1[/* a */ nodeLib.Error | scala.Null, _]): js.Promise[_] = js.native
-  def setPriority(priority: scala.Double, onComplete: js.Function1[/* a */ nodeLib.Error | scala.Null, _]): js.Promise[_] = js.native
-  def setPriority(priority: scala.Null, onComplete: js.Function1[/* a */ nodeLib.Error | scala.Null, _]): js.Promise[_] = js.native
+  def set(value: js.Any, onComplete: js.Function1[/* a */ (nodeLib.Error with stdLib.Error) | scala.Null, _]): js.Promise[_] = js.native
+  def setPriority(
+    priority: java.lang.String,
+    onComplete: js.Function1[/* a */ (nodeLib.Error with stdLib.Error) | scala.Null, _]
+  ): js.Promise[_] = js.native
+  def setPriority(
+    priority: scala.Double,
+    onComplete: js.Function1[/* a */ (nodeLib.Error with stdLib.Error) | scala.Null, _]
+  ): js.Promise[_] = js.native
+  def setPriority(
+    priority: scala.Null,
+    onComplete: js.Function1[/* a */ (nodeLib.Error with stdLib.Error) | scala.Null, _]
+  ): js.Promise[_] = js.native
   def setWithPriority(newVal: js.Any): js.Promise[_] = js.native
   def setWithPriority(newVal: js.Any, newPriority: java.lang.String): js.Promise[_] = js.native
   def setWithPriority(
     newVal: js.Any,
     newPriority: java.lang.String,
-    onComplete: js.Function1[/* a */ nodeLib.Error | scala.Null, _]
+    onComplete: js.Function1[/* a */ (nodeLib.Error with stdLib.Error) | scala.Null, _]
   ): js.Promise[_] = js.native
   def setWithPriority(newVal: js.Any, newPriority: scala.Double): js.Promise[_] = js.native
   def setWithPriority(
     newVal: js.Any,
     newPriority: scala.Double,
-    onComplete: js.Function1[/* a */ nodeLib.Error | scala.Null, _]
+    onComplete: js.Function1[/* a */ (nodeLib.Error with stdLib.Error) | scala.Null, _]
   ): js.Promise[_] = js.native
   def setWithPriority(
     newVal: js.Any,
     newPriority: scala.Null,
-    onComplete: js.Function1[/* a */ nodeLib.Error | scala.Null, _]
+    onComplete: js.Function1[/* a */ (nodeLib.Error with stdLib.Error) | scala.Null, _]
   ): js.Promise[_] = js.native
   def transaction(transactionUpdate: js.Function1[/* a */ js.Any, _]): js.Promise[_] = js.native
   def transaction(
     transactionUpdate: js.Function1[/* a */ js.Any, _],
     onComplete: js.Function3[
-      /* a */ nodeLib.Error | scala.Null, 
+      /* a */ (nodeLib.Error with stdLib.Error) | scala.Null, 
       /* b */ scala.Boolean, 
       /* c */ DataSnapshot | scala.Null, 
       _
@@ -53,14 +62,17 @@ trait Reference extends Query {
   def transaction(
     transactionUpdate: js.Function1[/* a */ js.Any, _],
     onComplete: js.Function3[
-      /* a */ nodeLib.Error | scala.Null, 
+      /* a */ (nodeLib.Error with stdLib.Error) | scala.Null, 
       /* b */ scala.Boolean, 
       /* c */ DataSnapshot | scala.Null, 
       _
     ],
     applyLocally: scala.Boolean
   ): js.Promise[_] = js.native
-  def update(values: coreDashJsLib.Object): js.Promise[_] = js.native
-  def update(values: coreDashJsLib.Object, onComplete: js.Function1[/* a */ nodeLib.Error | scala.Null, _]): js.Promise[_] = js.native
+  def update(values: coreDashJsLib.Object with js.Object): js.Promise[_] = js.native
+  def update(
+    values: coreDashJsLib.Object with js.Object,
+    onComplete: js.Function1[/* a */ (nodeLib.Error with stdLib.Error) | scala.Null, _]
+  ): js.Promise[_] = js.native
 }
 

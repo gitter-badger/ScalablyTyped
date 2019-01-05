@@ -51,11 +51,11 @@ class QueryTable protected () extends js.Object {
   var SourceDataFile: java.lang.String = js.native
   var Sql: js.Any = js.native
   var TablesOnlyFromHTML: scala.Boolean = js.native
-  var TextFileColumnDataTypes: activexDashInteropLib.SafeArray[XlColumnDataType] = js.native
+  var TextFileColumnDataTypes: activexDashInteropLib.SafeArray[XlColumnDataType] with stdLib.SafeArray[XlColumnDataType] = js.native
   var TextFileCommaDelimiter: scala.Boolean = js.native
   var TextFileConsecutiveDelimiter: scala.Boolean = js.native
   var TextFileDecimalSeparator: java.lang.String = js.native
-  var TextFileFixedColumnWidths: activexDashInteropLib.SafeArray[scala.Double] = js.native
+  var TextFileFixedColumnWidths: activexDashInteropLib.SafeArray[scala.Double] with stdLib.SafeArray[scala.Double] = js.native
   var TextFileOtherDelimiter: java.lang.String = js.native
   var TextFileParseType: XlTextParsingType = js.native
   var TextFilePlatform: scala.Double = js.native

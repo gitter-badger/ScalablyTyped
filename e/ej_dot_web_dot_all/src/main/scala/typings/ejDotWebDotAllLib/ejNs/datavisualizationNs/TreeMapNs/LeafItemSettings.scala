@@ -29,7 +29,7 @@ trait LeafItemSettings extends js.Object {
   /** Specifies the position of the leaf labels.
     * @Default {center}
     */
-  var labelPosition: js.UndefOr[Position | java.lang.String] = js.undefined
+  var labelPosition: js.UndefOr[(Position with stdLib.Position) | java.lang.String] = js.undefined
   /** Specifies the mode of label visibility
     * @Default {visible}
     */

@@ -14,7 +14,7 @@ trait IAutofill extends js.Object {
   /**
     * The current input element.
     */
-  var inputElement: reactLib.HTMLInputElement | scala.Null
+  var inputElement: (reactLib.HTMLInputElement with stdLib.HTMLInputElement) | scala.Null
   /**
     * A boolean for whether or not there is a value selected in the input area.
     */

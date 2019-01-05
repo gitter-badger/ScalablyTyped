@@ -7,7 +7,10 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Anon_BranchNameCallback extends js.Object {
-  def apply(branchName: java.lang.String): js.Promise[webgmeLib.GmeStorageNs.CommitHash] = js.native
-  def apply(branchName: java.lang.String, callback: webgmeLib.GmeStorageNs.CommitHashCallback): scala.Unit = js.native
+  def apply(branchName: webgmeLib.GmeCommonNs.Name): js.Promise[webgmeLib.GmeStorageNs.CommitHash] = js.native
+  def apply(
+    branchName: webgmeLib.GmeCommonNs.Name,
+    callback: webgmeLib.GmeCommonNs.ResultCallback[webgmeLib.GmeStorageNs.CommitHash]
+  ): scala.Unit = js.native
 }
 

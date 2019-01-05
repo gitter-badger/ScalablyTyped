@@ -17,15 +17,15 @@ trait TooltipProps
   /**
     * Callback to be invoked when Component is clicked.
     */
-  var onClick: js.UndefOr[coreDashJsLib.Function] = js.undefined
+  var onClick: js.UndefOr[coreDashJsLib.Function with js.Function] = js.undefined
   /**
     * Callback called when the mouse enters the Component.
     */
-  var onMouseEnter: js.UndefOr[coreDashJsLib.Function] = js.undefined
+  var onMouseEnter: js.UndefOr[coreDashJsLib.Function with js.Function] = js.undefined
   /**
     * Callback called when the mouse leaves the Component.
     */
-  var onMouseLeave: js.UndefOr[coreDashJsLib.Function] = js.undefined
+  var onMouseLeave: js.UndefOr[coreDashJsLib.Function with js.Function] = js.undefined
   /**
     * Classnames object defining the component style.
     */

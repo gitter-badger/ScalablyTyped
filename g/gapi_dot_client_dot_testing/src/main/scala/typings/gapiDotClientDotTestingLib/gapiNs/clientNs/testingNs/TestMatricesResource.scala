@@ -17,7 +17,7 @@ trait TestMatricesResource extends js.Object {
     * - INVALID_ARGUMENT - if the request is malformed
     * - NOT_FOUND - if the Test Matrix does not exist
     */
-  def cancel(request: gapiDotClientDotTestingLib.Anon_Accesstoken): gapiDotClientLib.gapiNs.clientNs.Request[CancelTestMatrixResponse]
+  def cancel(request: gapiDotClientDotTestingLib.Anon_Xgafv): gapiDotClientLib.gapiNs.clientNs.Request[CancelTestMatrixResponse]
   /**
     * Request to run a matrix of tests according to the given specifications.
     * Unsupported environments will be returned in the state UNSUPPORTED.
@@ -29,7 +29,7 @@ trait TestMatricesResource extends js.Object {
     * - INVALID_ARGUMENT - if the request is malformed or if the matrix expands
     * to more than 200 supported executions
     */
-  def create(request: gapiDotClientDotTestingLib.Anon_AccesstokenPrettyPrint): gapiDotClientLib.gapiNs.clientNs.Request[TestMatrix]
+  def create(request: gapiDotClientDotTestingLib.Anon_XgafvAccesstoken): gapiDotClientLib.gapiNs.clientNs.Request[TestMatrix]
   /**
     * Check the status of a test matrix.
     *
@@ -39,6 +39,6 @@ trait TestMatricesResource extends js.Object {
     * - INVALID_ARGUMENT - if the request is malformed
     * - NOT_FOUND - if the Test Matrix does not exist
     */
-  def get(request: gapiDotClientDotTestingLib.Anon_Accesstoken): gapiDotClientLib.gapiNs.clientNs.Request[TestMatrix]
+  def get(request: gapiDotClientDotTestingLib.Anon_Xgafv): gapiDotClientLib.gapiNs.clientNs.Request[TestMatrix]
 }
 

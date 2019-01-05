@@ -110,7 +110,10 @@ class KeytipLayerBase protected ()
     * @param key - Key pressed by the user
     */
   def processInput(key: java.lang.String): scala.Unit = js.native
-  def processInput(key: java.lang.String, ev: reactLib.reactMod.ReactNs.KeyboardEvent[reactLib.HTMLElement]): scala.Unit = js.native
+  def processInput(
+    key: java.lang.String,
+    ev: reactLib.reactMod.ReactNs.KeyboardEvent[reactLib.HTMLElement with stdLib.HTMLElement]
+  ): scala.Unit = js.native
   /**
     * Processes an IKeytipTransitionKey entered by the user
     *
@@ -121,7 +124,7 @@ class KeytipLayerBase protected ()
   ): scala.Unit = js.native
   def processTransitionInput(
     transitionKey: officeDashUiDashFabricDashReactLib.libUtilitiesKeytipsIKeytipTransitionKeyMod.IKeytipTransitionKey,
-    ev: reactLib.reactMod.ReactNs.KeyboardEvent[reactLib.HTMLElement]
+    ev: reactLib.reactMod.ReactNs.KeyboardEvent[reactLib.HTMLElement with stdLib.HTMLElement]
   ): scala.Unit = js.native
   /**
     * Show the given keytips and hide all others

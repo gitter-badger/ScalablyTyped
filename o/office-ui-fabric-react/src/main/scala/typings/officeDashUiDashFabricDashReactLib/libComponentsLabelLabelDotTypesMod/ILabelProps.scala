@@ -6,12 +6,14 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ILabelProps
-  extends reactLib.reactMod.ReactNs.LabelHTMLAttributes[reactLib.HTMLLabelElement] {
+  extends reactLib.reactMod.ReactNs.LabelHTMLAttributes[reactLib.HTMLLabelElement with stdLib.HTMLLabelElement] {
   /**
     * Render the root element as another type.
     */
   var as: js.UndefOr[
-    atUifabricUtilitiesLib.libIComponentAsMod.IComponentAs[reactLib.reactMod.ReactNs.AllHTMLAttributes[reactLib.HTMLElement]]
+    atUifabricUtilitiesLib.libIComponentAsMod.IComponentAs[
+      reactLib.reactMod.ReactNs.AllHTMLAttributes[reactLib.HTMLElement with stdLib.HTMLElement]
+    ]
   ] = js.undefined
   /**
     * Optional callback to access the ILabel interface. Use this instead of ref for accessing

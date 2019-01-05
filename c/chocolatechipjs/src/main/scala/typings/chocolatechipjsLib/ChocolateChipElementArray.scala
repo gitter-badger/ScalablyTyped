@@ -373,7 +373,7 @@ trait ChocolateChipElementArray
     * Get an object of the current coordinates of the first element in the set of matched elements, relative to the document.
     * These are: top, left, bottom and right. The values are numbers representing pixel values.
     */
-  def offset(): Anon_Bottom = js.native
+  def offset(): Anon_Top = js.native
   /**
     * Add a handler to an event for elements. If a selector is provided as the second argument, this implements a delegated event.
     *

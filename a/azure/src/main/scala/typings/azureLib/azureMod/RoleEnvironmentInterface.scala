@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait RoleEnvironmentInterface
   extends nodeLib.eventsMod.EventEmitter {
-  var EnvironmentVariables: azureLib.Anon_KeyVersionEndpointEnvironmentName = js.native
+  var EnvironmentVariables: azureLib.Anon_Key = js.native
   var VersionEndpointFixedPath: java.lang.String = js.native
   var clientId: java.lang.String = js.native
   var incorrectCallbackErr: java.lang.String = js.native

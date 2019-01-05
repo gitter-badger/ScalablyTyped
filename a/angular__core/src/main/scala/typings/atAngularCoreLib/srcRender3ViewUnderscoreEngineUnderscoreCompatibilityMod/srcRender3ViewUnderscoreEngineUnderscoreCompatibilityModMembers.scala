@@ -50,11 +50,7 @@ object srcRender3ViewUnderscoreEngineUnderscoreCompatibilityModMembers extends j
     view: atAngularCoreLib.srcRender3InterfacesViewMod.LViewData
   ): atAngularCoreLib.srcLinkerElementUnderscoreRefMod.ElementRef[_] = js.native
   def createTemplateRef[T](
-    TemplateRefToken: org.scalablytyped.runtime.Instantiable0[
-      atAngularCoreLib.srcLinkerTemplateUnderscoreRefMod.TemplateRef[
-        /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for C */ js.Any
-      ]
-    ],
+    TemplateRefToken: org.scalablytyped.runtime.Instantiable0[atAngularCoreLib.srcLinkerTemplateUnderscoreRefMod.TemplateRef[js.Object]],
     ElementRefToken: org.scalablytyped.runtime.Instantiable1[
       /* nativeElement */ js.Object, 
       atAngularCoreLib.srcLinkerElementUnderscoreRefMod.ElementRef[js.Object]
@@ -76,11 +72,7 @@ object srcRender3ViewUnderscoreEngineUnderscoreCompatibilityModMembers extends j
   ): atAngularCoreLib.srcLinkerElementUnderscoreRefMod.ElementRef[_] = js.native
   def injectRenderer2(): atAngularCoreLib.srcRenderApiMod.Renderer2 = js.native
   def injectTemplateRef[T](
-    TemplateRefToken: org.scalablytyped.runtime.Instantiable0[
-      atAngularCoreLib.srcLinkerTemplateUnderscoreRefMod.TemplateRef[
-        /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for C */ js.Any
-      ]
-    ],
+    TemplateRefToken: org.scalablytyped.runtime.Instantiable0[atAngularCoreLib.srcLinkerTemplateUnderscoreRefMod.TemplateRef[js.Object]],
     ElementRefToken: org.scalablytyped.runtime.Instantiable1[
       /* nativeElement */ js.Object, 
       atAngularCoreLib.srcLinkerElementUnderscoreRefMod.ElementRef[js.Object]

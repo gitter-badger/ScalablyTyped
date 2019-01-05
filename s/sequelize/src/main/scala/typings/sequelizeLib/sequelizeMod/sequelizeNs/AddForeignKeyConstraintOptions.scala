@@ -9,7 +9,7 @@ trait AddForeignKeyConstraintOptions extends js.Object {
   var name: js.UndefOr[java.lang.String] = js.undefined
   var onDelete: java.lang.String
   var onUpdate: java.lang.String
-  var references: js.UndefOr[sequelizeLib.Anon_Field] = js.undefined
+  var references: js.UndefOr[sequelizeLib.Anon_Table] = js.undefined
   var `type`: sequelizeLib.sequelizeLibStrings.`foreign key`
 }
 

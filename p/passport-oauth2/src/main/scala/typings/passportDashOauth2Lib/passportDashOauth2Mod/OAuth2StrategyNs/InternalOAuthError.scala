@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait InternalOAuthError
-  extends nodeLib.Error {
+  extends stdLib.Error {
   var oauthError: js.Any
 }
 

@@ -39,7 +39,7 @@ class Default protected () extends js.Object {
   def isLeftInBounds(leftOffset: js.Any): scala.Boolean = js.native
   def isPointInBounds(leftOffset: js.Any, topOffset: js.Any): scala.Boolean = js.native
   def isTopInBounds(topOffset: js.Any): scala.Boolean = js.native
-  def queryBoundingRect(): fullcalendarLib.Anon_Bottom = js.native
+  def queryBoundingRect(): fullcalendarLib.Anon_Left = js.native
 }
 
 @JSImport("fullcalendar/CoordCache", JSImport.Default)

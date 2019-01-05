@@ -29,7 +29,7 @@ class EditorView[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Schema[
     * information about the dragged slice and whether it is being
     * copied or moved. At any other time, it is null.
     */
-  var dragging: js.UndefOr[prosemirrorDashViewLib.Anon_Move[S] | scala.Null] = js.native
+  var dragging: js.UndefOr[prosemirrorDashViewLib.Anon_Slice[S] | scala.Null] = js.native
   /**
     * The view's current [props](#view.EditorProps).
     */
@@ -44,13 +44,13 @@ class EditorView[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Schema[
   /**
     * The view's current [state](#state.EditorState).
     */
-  var state: /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify EditorState<S> */ js.Any = js.native
+  var state: prosemirrorDashStateLib.prosemirrorDashStateMod.EditorState[S] = js.native
   /**
     * Returns the viewport rectangle at a given document position. `left`
     * and `right` will be the same number, as this returns a flat
     * cursor-ish rectangle.
     */
-  def coordsAtPos(pos: scala.Double): prosemirrorDashViewLib.Anon_Bottom = js.native
+  def coordsAtPos(pos: scala.Double): prosemirrorDashViewLib.Anon_LeftRight = js.native
   /**
     * Removes the editor from the DOM and destroys all [node
     * views](#view.NodeView).
@@ -65,7 +65,7 @@ class EditorView[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Schema[
     * This method is bound to the view instance, so that it can be
     * easily passed around.
     */
-  def dispatch(tr: /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify Transaction<S> */ js.Any): scala.Unit = js.native
+  def dispatch(tr: prosemirrorDashStateLib.prosemirrorDashStateMod.Transaction[S]): scala.Unit = js.native
   /**
     * Find the DOM position that corresponds to the given document
     * position. Note that you should **not** mutate the editor's
@@ -78,35 +78,35 @@ class EditorView[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Schema[
   @JSName("endOfTextblock")
   def endOfTextblock_backward(
     dir: prosemirrorDashViewLib.prosemirrorDashViewLibStrings.backward,
-    state: /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify EditorState<S> */ js.Any
+    state: prosemirrorDashStateLib.prosemirrorDashStateMod.EditorState[S]
   ): scala.Boolean = js.native
   @JSName("endOfTextblock")
   def endOfTextblock_down(dir: prosemirrorDashViewLib.prosemirrorDashViewLibStrings.down): scala.Boolean = js.native
   @JSName("endOfTextblock")
   def endOfTextblock_down(
     dir: prosemirrorDashViewLib.prosemirrorDashViewLibStrings.down,
-    state: /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify EditorState<S> */ js.Any
+    state: prosemirrorDashStateLib.prosemirrorDashStateMod.EditorState[S]
   ): scala.Boolean = js.native
   @JSName("endOfTextblock")
   def endOfTextblock_forward(dir: prosemirrorDashViewLib.prosemirrorDashViewLibStrings.forward): scala.Boolean = js.native
   @JSName("endOfTextblock")
   def endOfTextblock_forward(
     dir: prosemirrorDashViewLib.prosemirrorDashViewLibStrings.forward,
-    state: /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify EditorState<S> */ js.Any
+    state: prosemirrorDashStateLib.prosemirrorDashStateMod.EditorState[S]
   ): scala.Boolean = js.native
   @JSName("endOfTextblock")
   def endOfTextblock_left(dir: prosemirrorDashViewLib.prosemirrorDashViewLibStrings.left): scala.Boolean = js.native
   @JSName("endOfTextblock")
   def endOfTextblock_left(
     dir: prosemirrorDashViewLib.prosemirrorDashViewLibStrings.left,
-    state: /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify EditorState<S> */ js.Any
+    state: prosemirrorDashStateLib.prosemirrorDashStateMod.EditorState[S]
   ): scala.Boolean = js.native
   @JSName("endOfTextblock")
   def endOfTextblock_right(dir: prosemirrorDashViewLib.prosemirrorDashViewLibStrings.right): scala.Boolean = js.native
   @JSName("endOfTextblock")
   def endOfTextblock_right(
     dir: prosemirrorDashViewLib.prosemirrorDashViewLibStrings.right,
-    state: /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify EditorState<S> */ js.Any
+    state: prosemirrorDashStateLib.prosemirrorDashStateMod.EditorState[S]
   ): scala.Boolean = js.native
   /**
     * Find out whether the selection is at the end of a textblock when
@@ -121,7 +121,7 @@ class EditorView[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Schema[
   @JSName("endOfTextblock")
   def endOfTextblock_up(
     dir: prosemirrorDashViewLib.prosemirrorDashViewLibStrings.up,
-    state: /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify EditorState<S> */ js.Any
+    state: prosemirrorDashStateLib.prosemirrorDashStateMod.EditorState[S]
   ): scala.Boolean = js.native
   /**
     * Focus the editor.
@@ -151,7 +151,7 @@ class EditorView[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Schema[
     * inner node that the position falls inside of, or -1 if it is at
     * the top level, not in any node.
     */
-  def posAtCoords(coords: prosemirrorDashViewLib.Anon_Top): js.UndefOr[prosemirrorDashViewLib.Anon_Pos | scala.Null] = js.native
+  def posAtCoords(coords: prosemirrorDashViewLib.Anon_Left): js.UndefOr[prosemirrorDashViewLib.Anon_Pos | scala.Null] = js.native
   /**
     * Find the document position that corresponds to a given DOM position.
     * (Whenever possible, it is preferable to inspect the document structure
@@ -188,8 +188,6 @@ class EditorView[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Schema[
     * Update the editor's `state` prop, without touching any of the
     * other props.
     */
-  def updateState(
-    state: /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify EditorState<S> */ js.Any
-  ): scala.Unit = js.native
+  def updateState(state: prosemirrorDashStateLib.prosemirrorDashStateMod.EditorState[S]): scala.Unit = js.native
 }
 

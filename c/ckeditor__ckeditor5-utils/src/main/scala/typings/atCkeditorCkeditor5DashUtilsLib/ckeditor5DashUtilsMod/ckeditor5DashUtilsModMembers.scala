@@ -11,7 +11,7 @@ object ckeditor5DashUtilsModMembers extends js.Object {
   val DOCUMENTATION_URL: java.lang.String = js.native
   val EmitterMixin: Emitter = js.native
   val ObservableMixin: Observable = js.native
-  val keyCodes: atCkeditorCkeditor5DashUtilsLib.Anon_Esc = js.native
+  val keyCodes: atCkeditorCkeditor5DashUtilsLib.Anon_A = js.native
   def add(
     language: java.lang.String,
     translations: org.scalablytyped.runtime.StringDictionary[java.lang.String]
@@ -55,7 +55,7 @@ object ckeditor5DashUtilsModMembers extends js.Object {
   def fastDiff(oldText: java.lang.String, newText: java.lang.String): js.Array[DeleteChange | InsertChange] = js.native
   def first[T](iterable: stdLib.Iterable[T]): T = js.native
   def getAncestors(node: stdLib.Node): js.Array[stdLib.Node | stdLib.DocumentFragment] = js.native
-  def getBorderWidths(element: stdLib.HTMLElement): atCkeditorCkeditor5DashUtilsLib.Anon_Bottom = js.native
+  def getBorderWidths(element: stdLib.HTMLElement): atCkeditorCkeditor5DashUtilsLib.Anon_Top = js.native
   def getCode(key: KeystrokeInfo): scala.Double = js.native
   def getCode(key: java.lang.String): scala.Double = js.native
   def getCommonAncestor(nodeA: stdLib.Node, nodeB: stdLib.Node): stdLib.Node | stdLib.DocumentFragment | stdLib.Document | scala.Null = js.native

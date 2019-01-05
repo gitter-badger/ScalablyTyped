@@ -11,7 +11,7 @@ trait ILookupPropertyType extends IPropertyType {
   def GetImageSource(record: IRecord, dataValue: js.Any): java.lang.String
   def GetIsLimitedToList(): scala.Boolean
   def GetItems(fnCallback: js.Any): scala.Unit
-  def GetSerializableLookupPropType(): sharepointLib.Anon_BLimitToList
+  def GetSerializableLookupPropType(): sharepointLib.Anon_Items
   def GetStyleId(dataValue: js.Any): java.lang.String
   def LocalizedToData(localized: java.lang.String): js.Any
 }

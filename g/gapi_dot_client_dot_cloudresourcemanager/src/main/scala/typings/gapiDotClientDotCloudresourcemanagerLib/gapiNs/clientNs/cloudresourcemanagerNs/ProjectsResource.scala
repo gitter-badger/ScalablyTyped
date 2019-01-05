@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait ProjectsResource extends js.Object {
   /** Clears a `Policy` from a resource. */
-  def clearOrgPolicy(request: gapiDotClientDotCloudresourcemanagerLib.Anon_Accesstoken): gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
+  def clearOrgPolicy(request: gapiDotClientDotCloudresourcemanagerLib.Anon_Xgafv): gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
   /**
     * Request that a new Project be created. The result is an Operation which
     * can be used to track the creation process. It is automatically deleted
@@ -22,7 +22,7 @@ trait ProjectsResource extends js.Object {
     * `resourcemanager.projects.create` on the specified parent for the new
     * project.
     */
-  def create(request: gapiDotClientDotCloudresourcemanagerLib.Anon_AccesstokenPrettyPrint): gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+  def create(request: gapiDotClientDotCloudresourcemanagerLib.Anon_XgafvAccesstoken): gapiDotClientLib.gapiNs.clientNs.Request[Operation]
   /**
     * Marks the Project identified by the specified
     * `project_id` (for example, `my-project-123`) for deletion.
@@ -49,27 +49,27 @@ trait ProjectsResource extends js.Object {
     *
     * The caller must have modify permissions for this Project.
     */
-  def delete(request: gapiDotClientDotCloudresourcemanagerLib.Anon_AccesstokenPrettyPrintBearertoken): gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
+  def delete(request: gapiDotClientDotCloudresourcemanagerLib.Anon_XgafvAccesstokenAltBearertokenCallback): gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
   /**
     * Retrieves the Project identified by the specified
     * `project_id` (for example, `my-project-123`).
     *
     * The caller must have read permissions for this Project.
     */
-  def get(request: gapiDotClientDotCloudresourcemanagerLib.Anon_AccesstokenPrettyPrintBearertoken): gapiDotClientLib.gapiNs.clientNs.Request[Project]
+  def get(request: gapiDotClientDotCloudresourcemanagerLib.Anon_XgafvAccesstokenAltBearertokenCallback): gapiDotClientLib.gapiNs.clientNs.Request[Project]
   /**
     * Gets a list of ancestors in the resource hierarchy for the Project
     * identified by the specified `project_id` (for example, `my-project-123`).
     *
     * The caller must have read permissions for this Project.
     */
-  def getAncestry(request: gapiDotClientDotCloudresourcemanagerLib.Anon_AccesstokenPrettyPrintBearertoken): gapiDotClientLib.gapiNs.clientNs.Request[GetAncestryResponse]
+  def getAncestry(request: gapiDotClientDotCloudresourcemanagerLib.Anon_XgafvAccesstokenAltBearertokenCallback): gapiDotClientLib.gapiNs.clientNs.Request[GetAncestryResponse]
   /**
     * Gets the effective `Policy` on a resource. This is the result of merging
     * `Policies` in the resource hierarchy. The returned `Policy` will not have
     * an `etag`set because it is a computed `Policy` across multiple resources.
     */
-  def getEffectiveOrgPolicy(request: gapiDotClientDotCloudresourcemanagerLib.Anon_Accesstoken): gapiDotClientLib.gapiNs.clientNs.Request[OrgPolicy]
+  def getEffectiveOrgPolicy(request: gapiDotClientDotCloudresourcemanagerLib.Anon_Xgafv): gapiDotClientLib.gapiNs.clientNs.Request[OrgPolicy]
   /**
     * Returns the IAM access control policy for the specified Project.
     * Permission is denied if the policy or the resource does not exist.
@@ -77,7 +77,7 @@ trait ProjectsResource extends js.Object {
     * Authorization requires the Google IAM permission
     * `resourcemanager.projects.getIamPolicy` on the project
     */
-  def getIamPolicy(request: gapiDotClientDotCloudresourcemanagerLib.Anon_Accesstoken): gapiDotClientLib.gapiNs.clientNs.Request[Policy]
+  def getIamPolicy(request: gapiDotClientDotCloudresourcemanagerLib.Anon_Xgafv): gapiDotClientLib.gapiNs.clientNs.Request[Policy]
   /**
     * Gets a `Policy` on a resource.
     *
@@ -86,17 +86,17 @@ trait ProjectsResource extends js.Object {
     * `etag` value can be used with `SetOrgPolicy()` to create or update a
     * `Policy` during read-modify-write.
     */
-  def getOrgPolicy(request: gapiDotClientDotCloudresourcemanagerLib.Anon_Accesstoken): gapiDotClientLib.gapiNs.clientNs.Request[OrgPolicy]
+  def getOrgPolicy(request: gapiDotClientDotCloudresourcemanagerLib.Anon_Xgafv): gapiDotClientLib.gapiNs.clientNs.Request[OrgPolicy]
   /**
     * Lists Projects that are visible to the user and satisfy the
     * specified filter. This method returns Projects in an unspecified order.
     * New Projects do not necessarily appear at the end of the list.
     */
-  def list(request: gapiDotClientDotCloudresourcemanagerLib.Anon_AccesstokenPageSize): gapiDotClientLib.gapiNs.clientNs.Request[ListProjectsResponse]
+  def list(request: gapiDotClientDotCloudresourcemanagerLib.Anon_XgafvAccesstokenAltBearertokenCallbackFields): gapiDotClientLib.gapiNs.clientNs.Request[ListProjectsResponse]
   /** Lists `Constraints` that could be applied on the specified resource. */
-  def listAvailableOrgPolicyConstraints(request: gapiDotClientDotCloudresourcemanagerLib.Anon_Accesstoken): gapiDotClientLib.gapiNs.clientNs.Request[ListAvailableOrgPolicyConstraintsResponse]
+  def listAvailableOrgPolicyConstraints(request: gapiDotClientDotCloudresourcemanagerLib.Anon_Xgafv): gapiDotClientLib.gapiNs.clientNs.Request[ListAvailableOrgPolicyConstraintsResponse]
   /** Lists all the `Policies` set for a particular resource. */
-  def listOrgPolicies(request: gapiDotClientDotCloudresourcemanagerLib.Anon_Accesstoken): gapiDotClientLib.gapiNs.clientNs.Request[ListOrgPoliciesResponse]
+  def listOrgPolicies(request: gapiDotClientDotCloudresourcemanagerLib.Anon_Xgafv): gapiDotClientLib.gapiNs.clientNs.Request[ListOrgPoliciesResponse]
   /**
     * Sets the IAM access control policy for the specified Project. Replaces
     * any existing policy.
@@ -141,7 +141,7 @@ trait ProjectsResource extends js.Object {
     * Authorization requires the Google IAM permission
     * `resourcemanager.projects.setIamPolicy` on the project
     */
-  def setIamPolicy(request: gapiDotClientDotCloudresourcemanagerLib.Anon_Accesstoken): gapiDotClientLib.gapiNs.clientNs.Request[Policy]
+  def setIamPolicy(request: gapiDotClientDotCloudresourcemanagerLib.Anon_Xgafv): gapiDotClientLib.gapiNs.clientNs.Request[Policy]
   /**
     * Updates the specified `Policy` on the resource. Creates a new `Policy` for
     * that `Constraint` on the resource if one does not exist.
@@ -149,13 +149,13 @@ trait ProjectsResource extends js.Object {
     * Not supplying an `etag` on the request `Policy` results in an unconditional
     * write of the `Policy`.
     */
-  def setOrgPolicy(request: gapiDotClientDotCloudresourcemanagerLib.Anon_Accesstoken): gapiDotClientLib.gapiNs.clientNs.Request[OrgPolicy]
+  def setOrgPolicy(request: gapiDotClientDotCloudresourcemanagerLib.Anon_Xgafv): gapiDotClientLib.gapiNs.clientNs.Request[OrgPolicy]
   /**
     * Returns permissions that a caller has on the specified Project.
     *
     * There are no permissions required for making this API call.
     */
-  def testIamPermissions(request: gapiDotClientDotCloudresourcemanagerLib.Anon_Accesstoken): gapiDotClientLib.gapiNs.clientNs.Request[TestIamPermissionsResponse]
+  def testIamPermissions(request: gapiDotClientDotCloudresourcemanagerLib.Anon_Xgafv): gapiDotClientLib.gapiNs.clientNs.Request[TestIamPermissionsResponse]
   /**
     * Restores the Project identified by the specified
     * `project_id` (for example, `my-project-123`).
@@ -165,13 +165,13 @@ trait ProjectsResource extends js.Object {
     *
     * The caller must have modify permissions for this Project.
     */
-  def undelete(request: gapiDotClientDotCloudresourcemanagerLib.Anon_AccesstokenPrettyPrintBearertoken): gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
+  def undelete(request: gapiDotClientDotCloudresourcemanagerLib.Anon_XgafvAccesstokenAltBearertokenCallback): gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
   /**
     * Updates the attributes of the Project identified by the specified
     * `project_id` (for example, `my-project-123`).
     *
     * The caller must have modify permissions for this Project.
     */
-  def update(request: gapiDotClientDotCloudresourcemanagerLib.Anon_AccesstokenPrettyPrintBearertoken): gapiDotClientLib.gapiNs.clientNs.Request[Project]
+  def update(request: gapiDotClientDotCloudresourcemanagerLib.Anon_XgafvAccesstokenAltBearertokenCallback): gapiDotClientLib.gapiNs.clientNs.Request[Project]
 }
 

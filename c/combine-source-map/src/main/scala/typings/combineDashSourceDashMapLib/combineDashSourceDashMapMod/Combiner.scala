@@ -28,9 +28,9 @@ trait Combiner extends js.Object {
     * @param opts the 'sourceFile' path/name and the file's 'source' contents
     * @param offset the source file 'line' number and 'column' number offsets
     */
-  def addFile(opts: combineDashSourceDashMapLib.Anon_Source): Combiner = js.native
+  def addFile(opts: combineDashSourceDashMapLib.Anon_SourceFile): Combiner = js.native
   def addFile(
-    opts: combineDashSourceDashMapLib.Anon_Source,
+    opts: combineDashSourceDashMapLib.Anon_SourceFile,
     offset: combineDashSourceDashMapLib.combineDashSourceDashMapMod.CombinerNs.Offset
   ): Combiner = js.native
   /**

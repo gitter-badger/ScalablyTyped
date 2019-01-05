@@ -9,10 +9,10 @@ trait SetMatcher extends Matcher {
   /**
     * Requires a Set to contain each one of the items the given set has.
     */
-  def contains(expected: nodeLib.Set[_]): Matcher
+  def contains(expected: nodeLib.Set[_] with lodashLib.lodashMod.Global.Set[_] with stdLib.Set[_]): Matcher
   /**
     *  Requires a Set to be deep equal another one.
     */
-  def deepEquals(expected: nodeLib.Set[_]): Matcher
+  def deepEquals(expected: nodeLib.Set[_] with lodashLib.lodashMod.Global.Set[_] with stdLib.Set[_]): Matcher
 }
 

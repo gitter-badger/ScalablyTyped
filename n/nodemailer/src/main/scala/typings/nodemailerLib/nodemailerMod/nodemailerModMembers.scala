@@ -12,10 +12,18 @@ object nodemailerModMembers extends js.Object {
   def createTestAccount(apiUrl: java.lang.String): js.Promise[TestAccount] = js.native
   def createTestAccount(
     apiUrl: java.lang.String,
-    callback: js.Function2[/* err */ nodeLib.Error | scala.Null, /* testAccount */ TestAccount, scala.Unit]
+    callback: js.Function2[
+      /* err */ (nodeLib.Error with stdLib.Error) | scala.Null, 
+      /* testAccount */ TestAccount, 
+      scala.Unit
+    ]
   ): scala.Unit = js.native
   def createTestAccount(
-    callback: js.Function2[/* err */ nodeLib.Error | scala.Null, /* testAccount */ TestAccount, scala.Unit]
+    callback: js.Function2[
+      /* err */ (nodeLib.Error with stdLib.Error) | scala.Null, 
+      /* testAccount */ TestAccount, 
+      scala.Unit
+    ]
   ): scala.Unit = js.native
   def createTransport(): nodemailerLib.libMailerMod.namespaced = js.native
   def createTransport(

@@ -17,7 +17,7 @@ trait SeriesMarkerDataLabelConnectorLine extends js.Object {
   /** Specifies when the connector has to be drawn as Bezier curve or straight line. This is applicable only for Pie and Doughnut chart types.
     * @Default {line. See ConnectorLineType}
     */
-  var `type`: js.UndefOr[Type | java.lang.String] = js.undefined
+  var `type`: js.UndefOr[(Type with ejDotWebDotAllLib.ejNs.Type) | java.lang.String] = js.undefined
   /** Width of the connector.
     * @Default {0.5}
     */

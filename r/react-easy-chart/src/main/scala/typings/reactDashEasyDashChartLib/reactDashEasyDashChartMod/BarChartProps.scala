@@ -9,10 +9,12 @@ trait BarChartProps extends js.Object {
   /** Whether to show axis labels */
   var axes: js.UndefOr[scala.Boolean] = js.undefined
   /** Labels for each of the axis */
-  var axisLabels: js.UndefOr[reactDashEasyDashChartLib.Anon_YX] = js.undefined
+  var axisLabels: js.UndefOr[reactDashEasyDashChartLib.Anon_X] = js.undefined
   /** The width of an individual bar in pixels */
   var barWidth: js.UndefOr[scala.Double] = js.undefined
-  var clickHandler: js.UndefOr[js.Function2[/* data */ BarData, /* mouseEvent */ reactLib.MouseEvent, _]] = js.undefined
+  var clickHandler: js.UndefOr[
+    js.Function2[/* data */ BarData, /* mouseEvent */ reactLib.MouseEvent with stdLib.MouseEvent, _]
+  ] = js.undefined
   /** Whether to automatically color the bars */
   var colorBars: js.UndefOr[scala.Boolean] = js.undefined
   var data: js.Array[BarData]
@@ -26,10 +28,16 @@ trait BarChartProps extends js.Object {
   var interpolate: js.UndefOr[java.lang.String] = js.undefined
   var lineData: js.UndefOr[js.Array[LineData]] = js.undefined
   /** css margins */
-  var margin: js.UndefOr[reactDashEasyDashChartLib.Anon_Bottom] = js.undefined
-  var mouseMoveHandler: js.UndefOr[js.Function2[/* data */ BarData, /* mouseEvent */ reactLib.MouseEvent, _]] = js.undefined
-  var mouseOutHandler: js.UndefOr[js.Function2[/* data */ BarData, /* mouseEvent */ reactLib.MouseEvent, _]] = js.undefined
-  var mouseOverHandler: js.UndefOr[js.Function2[/* data */ BarData, /* mouseEvent */ reactLib.MouseEvent, _]] = js.undefined
+  var margin: js.UndefOr[reactDashEasyDashChartLib.Anon_Top] = js.undefined
+  var mouseMoveHandler: js.UndefOr[
+    js.Function2[/* data */ BarData, /* mouseEvent */ reactLib.MouseEvent with stdLib.MouseEvent, _]
+  ] = js.undefined
+  var mouseOutHandler: js.UndefOr[
+    js.Function2[/* data */ BarData, /* mouseEvent */ reactLib.MouseEvent with stdLib.MouseEvent, _]
+  ] = js.undefined
+  var mouseOverHandler: js.UndefOr[
+    js.Function2[/* data */ BarData, /* mouseEvent */ reactLib.MouseEvent with stdLib.MouseEvent, _]
+  ] = js.undefined
   /** The d3 time format to be used for the x axis (when xType is 'time') */
   var tickTimeDisplayFormat: js.UndefOr[java.lang.String] = js.undefined
   /** Width of the chart in pixels */

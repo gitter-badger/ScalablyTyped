@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Mongoose extends js.Object {
   var DocumentProvider: js.Any = js.native
+  val ErrorNs: js.Any = js.native
   var Model: Model[_, js.Object] = js.native
   var Mongoose: org.scalablytyped.runtime.Instantiable1[
     /* args (repeated) */ js.Any, 
@@ -16,6 +17,10 @@ trait Mongoose extends js.Object {
   var Promise: js.Any = js.native
   var PromiseProvider: js.Any = js.native
   var STATES: js.Any = js.native
+  val SchemaNs: mongooseLib.Anon_Types = js.native
+  // Interfaces specific to schema type options should be scoped in this namespace
+  val SchemaTypeOptsNs: js.Any = js.native
+  val TypesNs: js.Any = js.native
   var connection: Connection = js.native
   var models: org.scalablytyped.runtime.StringDictionary[Model[_, js.Object]] = js.native
   var version: java.lang.String = js.native

@@ -6,9 +6,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_UrlTitle extends js.Object {
-  /** The new title for the URL. */
-  var title: java.lang.String
-  /** The URL for which the title has changed */
+  /** The title of the page. */
+  var title: js.UndefOr[java.lang.String] = js.undefined
+  /** The transition type for this visit from its referrer. */
+  var transition: js.UndefOr[firefoxDashWebextDashBrowserLib.browserNs.historyNs.TransitionType] = js.undefined
+  /** The URL to add. Must be a valid URL that can be added to history. */
   var url: java.lang.String
+  /** The date when this visit occurred. */
+  var visitTime: js.UndefOr[firefoxDashWebextDashBrowserLib.browserNs.extensionTypesNs.Date] = js.undefined
 }
 

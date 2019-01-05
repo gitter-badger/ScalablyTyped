@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait Server
   extends easyDashXDashHeadersLib.eventsMod.EventEmitter {
   var maxHeadersCount: scala.Double = js.native
-  def address(): easyDashXDashHeadersLib.Anon_Address = js.native
+  def address(): easyDashXDashHeadersLib.Anon_Port = js.native
   def close(): Server = js.native
   def close(cb: js.Any): Server = js.native
   def listen(handle: js.Any): Server = js.native

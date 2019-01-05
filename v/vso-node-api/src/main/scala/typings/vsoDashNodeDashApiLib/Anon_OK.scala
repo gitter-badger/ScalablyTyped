@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_OK extends js.Object {
-  var invalidFilterClause: scala.Double
+  var error: scala.Double
   var oK: scala.Double
-  var unknown: scala.Double
+  var warning: scala.Double
 }
 

@@ -7,12 +7,24 @@ import scala.scalajs.js.annotation._
 
 trait Anon_Type extends js.Object {
   /**
-    * The promoted items type.
+    * The author of the social network post.
+    */
+  var author: java.lang.String
+  /**
+    * An image of the posts author.
+    */
+  var imageUrl: java.lang.String
+  /**
+    * The URL of the social network post.
+    */
+  var referenceUrl: java.lang.String
+  /**
+    * The resourceId object encapsulates information that identifies the resource associated with a social network post.
+    */
+  var resourceId: Anon_KindVideoIdChannelId
+  /**
+    * The name of the social network.
     */
   var `type`: java.lang.String
-  /**
-    * If the promoted item represents a video, then this value is present and identifies the YouTube ID that YouTube assigned to identify that video. This field is only present if the type propertys value is video.
-    */
-  var videoId: java.lang.String
 }
 

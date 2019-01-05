@@ -166,7 +166,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashPowerpointLib.PowerPointNs.Application, 
-      /* parameter */ Anon_Cancel, 
+      /* parameter */ Anon_ProtViewWindowProtectedViewCloseReason, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -179,7 +179,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashPowerpointLib.PowerPointNs.Application, 
-      /* parameter */ Anon_CancelProtViewWindow, 
+      /* parameter */ Anon_ProtViewWindowCancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -308,7 +308,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashPowerpointLib.PowerPointNs.Application, 
-      /* parameter */ Anon_CancelSel, 
+      /* parameter */ Anon_Sel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -321,7 +321,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashPowerpointLib.PowerPointNs.Application, 
-      /* parameter */ Anon_CancelSel, 
+      /* parameter */ Anon_Sel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -344,7 +344,7 @@ trait ActiveXObject extends js.Object {
     argNames: js.Array[activexDashPowerpointLib.activexDashPowerpointLibStrings.Sel],
     handler: js.ThisFunction1[
       /* this */ activexDashPowerpointLib.PowerPointNs.Application, 
-      /* parameter */ Anon_Sel, 
+      /* parameter */ Anon_SelSelection, 
       scala.Unit
     ]
   ): scala.Unit = js.native

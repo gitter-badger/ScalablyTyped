@@ -24,15 +24,15 @@ object pkiNs extends js.Object {
   @js.native
   trait Certificate extends js.Object {
     var extensions: js.Array[_] = js.native
-    var issuer: nodeDashForgeLib.Anon_Hash = js.native
+    var issuer: nodeDashForgeLib.Anon_GetField = js.native
     var md: js.Any = js.native
     var privateKey: PrivateKey = js.native
     var publicKey: PublicKey = js.native
     var serialNumber: java.lang.String = js.native
     var siginfo: js.Any = js.native
     var signature: js.Any = js.native
-    var subject: nodeDashForgeLib.Anon_Hash = js.native
-    var validity: nodeDashForgeLib.Anon_NotAfter = js.native
+    var subject: nodeDashForgeLib.Anon_GetField = js.native
+    var validity: nodeDashForgeLib.Anon_NotBefore = js.native
     var version: scala.Double = js.native
     /**
       * Gets an extension by its name or id.
@@ -154,8 +154,8 @@ object pkiNs extends js.Object {
     def generateKeyPair(): nodeDashForgeLib.Anon_PublicKey = js.native
     def generateKeyPair(options: nodeDashForgeLib.Anon_Seed): nodeDashForgeLib.Anon_PublicKey = js.native
     def publicKeyFromPrivateKey(options: nodeDashForgeLib.Anon_PrivateKey): NativeBuffer = js.native
-    def sign(options: nodeDashForgeLib.Anon_Encoding): NativeBuffer = js.native
-    def verify(options: nodeDashForgeLib.Anon_PublicKeyEncoding): scala.Boolean = js.native
+    def sign(options: nodeDashForgeLib.Anon_Message): NativeBuffer = js.native
+    def verify(options: nodeDashForgeLib.Anon_MessageEncoding): scala.Boolean = js.native
     @JSName("constants")
     @js.native
     object constantsNs extends js.Object {
@@ -229,12 +229,12 @@ object pkiNs extends js.Object {
     def generateKeyPair(
       bits: scala.Double,
       e: scala.Double,
-      callback: js.Function2[/* err */ nodeLib.Error, /* keypair */ KeyPair, scala.Unit]
+      callback: js.Function2[/* err */ nodeLib.Error with stdLib.Error, /* keypair */ KeyPair, scala.Unit]
     ): KeyPair = js.native
     def generateKeyPair(options: GenerateKeyPairOptions): KeyPair = js.native
     def generateKeyPair(
       options: GenerateKeyPairOptions,
-      callback: js.Function2[/* err */ nodeLib.Error, /* keypair */ KeyPair, scala.Unit]
+      callback: js.Function2[/* err */ nodeLib.Error with stdLib.Error, /* keypair */ KeyPair, scala.Unit]
     ): KeyPair = js.native
     def setPublicKey(n: js.Any, e: js.Any): js.Any = js.native
     type EncryptionScheme = nodeDashForgeLib.nodeDashForgeLibStrings.`RSAES-PKCS1-V1_5` | nodeDashForgeLib.nodeDashForgeLibStrings.`RSA-OAEP` | nodeDashForgeLib.nodeDashForgeLibStrings.RAW | nodeDashForgeLib.nodeDashForgeLibStrings.NONE | scala.Null

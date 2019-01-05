@@ -35,7 +35,7 @@ object Beam extends js.Object {
     groups: js.Array[vexflowLib.VexNs.FlowNs.Fraction]
   ): js.Array[vexflowLib.VexNs.FlowNs.Beam] = js.native
   def generateBeams(notes: js.Array[vexflowLib.VexNs.FlowNs.StemmableNote]): js.Array[vexflowLib.VexNs.FlowNs.Beam] = js.native
-  def generateBeams(notes: js.Array[vexflowLib.VexNs.FlowNs.StemmableNote], config: vexflowLib.Anon_Showstemlets): js.Array[vexflowLib.VexNs.FlowNs.Beam] = js.native
+  def generateBeams(notes: js.Array[vexflowLib.VexNs.FlowNs.StemmableNote], config: vexflowLib.Anon_Groups): js.Array[vexflowLib.VexNs.FlowNs.Beam] = js.native
   def getDefaultBeamGroups(time_sig: java.lang.String): js.Array[vexflowLib.VexNs.FlowNs.Fraction] = js.native
 }
 

@@ -10,6 +10,6 @@ trait Static
   extends org.scalablytyped.runtime.Instantiable2[
       (/* name */ scala.Null) | (/* name */ java.lang.String), 
       /* options */ pouchdbDashAdapterDashLeveldbLib.PouchDBNs.LevelDbAdapterNs.LevelDbAdapterConfiguration, 
-      pouchdbDashCoreLib.PouchDBNs.Database[js.Object]
+      pouchdbDashCoreLib.PouchDBNs.Database[js.Object] with pouchdbDashFindLib.PouchDBNs.Database[js.Object]
     ]
 

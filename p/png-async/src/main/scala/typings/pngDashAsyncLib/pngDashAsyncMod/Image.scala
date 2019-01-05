@@ -27,7 +27,7 @@ class Image ()
   def parse(data: nodeLib.Buffer): Image = js.native
   def parse(
     data: nodeLib.Buffer,
-    callback: js.Function2[/* err */ nodeLib.Error, /* image */ this.type, scala.Unit]
+    callback: js.Function2[/* err */ nodeLib.Error with stdLib.Error, /* image */ this.type, scala.Unit]
   ): Image = js.native
   def write(data: js.Any, cb: js.Any): scala.Boolean = js.native
 }

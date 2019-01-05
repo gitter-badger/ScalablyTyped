@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait ITooltipOptions extends js.Object {
   var animation: js.UndefOr[java.lang.String] = js.undefined
   var container: js.UndefOr[java.lang.String | scala.Boolean] = js.undefined
-  var delay: js.UndefOr[scala.Double | angularDashStrapLib.Anon_Hide] = js.undefined
+  var delay: js.UndefOr[scala.Double | angularDashStrapLib.Anon_Show] = js.undefined
   var html: js.UndefOr[scala.Boolean] = js.undefined
   var id: js.UndefOr[java.lang.String] = js.undefined
   var onBeforeHide: js.UndefOr[js.Function1[/* tooltip */ ITooltip, scala.Unit]] = js.undefined
@@ -25,6 +25,6 @@ trait ITooltipOptions extends js.Object {
   var title: js.UndefOr[java.lang.String] = js.undefined
   var titleTemplate: js.UndefOr[java.lang.String] = js.undefined
   var trigger: js.UndefOr[java.lang.String] = js.undefined
-  var viewport: js.UndefOr[java.lang.String | angularDashStrapLib.Anon_Padding] = js.undefined
+  var viewport: js.UndefOr[java.lang.String | angularDashStrapLib.Anon_Selector] = js.undefined
 }
 

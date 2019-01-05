@@ -11,6 +11,8 @@ trait CaptionElementProps extends js.Object {
   var locale: java.lang.String
   var localeUtils: reactDashDayDashPickerLib.typesUtilsMod.LocaleUtils
   var months: js.UndefOr[scala.Nothing]
-  var onClick: js.UndefOr[reactLib.reactMod.ReactNs.MouseEventHandler[reactLib.HTMLElement]] = js.undefined
+  var onClick: js.UndefOr[
+    reactLib.reactMod.ReactNs.MouseEventHandler[reactLib.HTMLElement with stdLib.HTMLElement]
+  ] = js.undefined
 }
 

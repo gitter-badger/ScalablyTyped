@@ -18,7 +18,10 @@ trait StrictPaginationItemProps extends js.Object {
     */
   var onClick: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLAnchorElement, reactLib.NativeMouseEvent], 
+      /* event */ reactLib.reactMod.ReactNs.MouseEvent[
+        reactLib.HTMLAnchorElement with stdLib.HTMLAnchorElement, 
+        reactLib.NativeMouseEvent
+      ], 
       /* data */ PaginationItemProps, 
       scala.Unit
     ]
@@ -31,7 +34,10 @@ trait StrictPaginationItemProps extends js.Object {
     */
   var onKeyDown: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLAnchorElement, reactLib.NativeMouseEvent], 
+      /* event */ reactLib.reactMod.ReactNs.MouseEvent[
+        reactLib.HTMLAnchorElement with stdLib.HTMLAnchorElement, 
+        reactLib.NativeMouseEvent
+      ], 
       /* data */ PaginationItemProps, 
       scala.Unit
     ]

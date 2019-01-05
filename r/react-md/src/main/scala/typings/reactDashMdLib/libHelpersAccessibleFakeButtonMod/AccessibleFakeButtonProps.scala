@@ -12,7 +12,7 @@ trait AccessibleFakeButtonProps
   var component: js.UndefOr[reactLib.reactMod.ReactNs.ReactType[_]] = js.undefined
   var disabled: js.UndefOr[scala.Boolean] = js.undefined
   var noFocusOutline: js.UndefOr[scala.Boolean] = js.undefined
-  var onTabFocus: js.UndefOr[js.Function1[/* event */ reactLib.Event, scala.Unit]] = js.undefined
+  var onTabFocus: js.UndefOr[js.Function1[/* event */ reactLib.Event with stdLib.Event, scala.Unit]] = js.undefined
   var role: js.UndefOr[java.lang.String] = js.undefined
   var tabIndex: js.UndefOr[scala.Double] = js.undefined
   var tabbedClassName: js.UndefOr[java.lang.String] = js.undefined

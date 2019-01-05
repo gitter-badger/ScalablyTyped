@@ -17,7 +17,7 @@ class WebMercatorViewport () extends Viewport {
   var pitch: scala.Double = js.native
   var zoom: scala.Double = js.native
   def fitBounds(bounds: Bounds): WebMercatorViewport = js.native
-  def fitBounds(bounds: Bounds, opts: viewportDashMercatorDashProjectLib.Anon_Offset): WebMercatorViewport = js.native
+  def fitBounds(bounds: Bounds, opts: viewportDashMercatorDashProjectLib.Anon_Padding): WebMercatorViewport = js.native
   def getMapCenterByLngLatPosition(opts: viewportDashMercatorDashProjectLib.Anon_LngLat): Coordinates = js.native
   def projectFlat(lngLat: Coordinates): Coordinates = js.native
   def projectFlat(lngLat: Coordinates, scale: scala.Double): Coordinates = js.native

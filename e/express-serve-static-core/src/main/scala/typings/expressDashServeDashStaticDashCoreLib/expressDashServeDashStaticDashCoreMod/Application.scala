@@ -5,8 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveMultipleInheritance: Dropped parents List(expressDashServeDashStaticDashCoreLib.expressDashServeDashStaticDashCoreMod.IRouter because Inheritance from two classes)*/
-@js.native
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- expressDashServeDashStaticDashCoreLib.expressDashServeDashStaticDashCoreMod.IRouter because Inheritance from two classes */ @js.native
 trait Application
   extends nodeLib.eventsMod.EventEmitter
      with expressDashServeDashStaticDashCoreLib.expressDashServeDashStaticDashCoreMod.Global.ExpressNs.Application {
@@ -233,13 +233,13 @@ trait Application
   def render(name: java.lang.String): scala.Unit = js.native
   def render(
     name: java.lang.String,
-    callback: js.Function2[/* err */ nodeLib.Error, /* html */ java.lang.String, scala.Unit]
+    callback: js.Function2[/* err */ nodeLib.Error with stdLib.Error, /* html */ java.lang.String, scala.Unit]
   ): scala.Unit = js.native
   def render(name: java.lang.String, options: js.Object): scala.Unit = js.native
   def render(
     name: java.lang.String,
     options: js.Object,
-    callback: js.Function2[/* err */ nodeLib.Error, /* html */ java.lang.String, scala.Unit]
+    callback: js.Function2[/* err */ nodeLib.Error with stdLib.Error, /* html */ java.lang.String, scala.Unit]
   ): scala.Unit = js.native
   /**
     * Assign `setting` to `val`, or return `setting`'s value.

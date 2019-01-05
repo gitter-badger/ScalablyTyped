@@ -42,7 +42,7 @@ object Injector extends js.Object {
   var THROW_IF_NOT_FOUND: js.Object = js.native
   /** @nocollapse */
   var ngInjectableDef: scala.Nothing = js.native
-  def create(options: atAngularCoreLib.Anon_Name): atAngularCoreLib.srcDiInjectorMod.Injector = js.native
+  def create(options: atAngularCoreLib.Anon_Providers): atAngularCoreLib.srcDiInjectorMod.Injector = js.native
   /**
     * @deprecated from v5 use the new signature Injector.create(options)
     */

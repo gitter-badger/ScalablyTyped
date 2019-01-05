@@ -17,7 +17,12 @@ trait ExtButtonsCollectionSettings extends js.Object {
   var fade: scala.Double = js.native
   @JSName("text")
   var text_Original: FunctionExtButtonsCollectionText = js.native
-  def action(e: js.Any, dt: Api, node: datatablesDotNetLib.JQuery, config: ButtonSettings): scala.Unit = js.native
+  def action(
+    e: js.Any,
+    dt: Api,
+    node: datatablesDotNetLib.JQuery with jqueryLib.JQuery[stdLib.HTMLElement],
+    config: ButtonSettings
+  ): scala.Unit = js.native
   def text(a: js.Any): java.lang.String = js.native
 }
 

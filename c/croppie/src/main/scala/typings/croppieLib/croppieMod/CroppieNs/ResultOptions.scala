@@ -10,7 +10,7 @@ trait ResultOptions extends js.Object {
   var format: js.UndefOr[Format] = js.undefined
   var quality: js.UndefOr[scala.Double] = js.undefined
   var size: js.UndefOr[
-    croppieLib.croppieLibStrings.viewport | croppieLib.croppieLibStrings.original | croppieLib.Anon_Height
+    croppieLib.croppieLibStrings.viewport | croppieLib.croppieLibStrings.original | croppieLib.Anon_Width
   ] = js.undefined
   var `type`: js.UndefOr[Type] = js.undefined
 }

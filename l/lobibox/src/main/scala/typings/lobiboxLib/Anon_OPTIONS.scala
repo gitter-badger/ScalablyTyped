@@ -12,7 +12,8 @@ trait Anon_OPTIONS extends js.Object {
 
 @js.native
 trait Anon_Options extends js.Object {
-  var DEFAULTS: lobiboxLib.LobiboxModuleNs.WindowOptions = js.native
-  def apply[T /* <: lobiboxLib.LobiboxModuleNs.MessageBoxesDefault */](options: lobiboxLib.LobiboxModuleNs.WindowOptions): T = js.native
+  var DEFAULTS: lobiboxLib.LobiboxModuleNs.ConfirmOptions = js.native
+  def apply[T /* <: lobiboxLib.LobiboxModuleNs.MessageBoxesDefault */](): T = js.native
+  def apply[T /* <: lobiboxLib.LobiboxModuleNs.MessageBoxesDefault */](options: lobiboxLib.LobiboxModuleNs.ConfirmOptions): T = js.native
 }
 

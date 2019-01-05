@@ -27,8 +27,8 @@ class CalloutContentBase protected ()
   /* private */ def _addListeners(): js.Any = js.native
   /* private */ def _arePositionsEqual(positions: js.Any, newPosition: js.Any): js.Any = js.native
   /* private */ def _comparePositions(oldPositions: js.Any, newPositions: js.Any): js.Any = js.native
-  /* protected */ def _dismissOnLostFocus(ev: reactLib.Event): scala.Unit = js.native
-  /* protected */ def _dismissOnScroll(ev: reactLib.Event): scala.Unit = js.native
+  /* protected */ def _dismissOnLostFocus(ev: reactLib.Event with stdLib.Event): scala.Unit = js.native
+  /* protected */ def _dismissOnScroll(ev: reactLib.Event with stdLib.Event): scala.Unit = js.native
   /* private */ def _getBeakPosition(): js.Any = js.native
   /* private */ def _getBounds(): js.Any = js.native
   /* private */ def _getMaxHeight(): js.Any = js.native
@@ -50,14 +50,16 @@ class CalloutContentBase protected ()
   @JSName("componentWillUpdate")
   def componentWillUpdate_MCalloutContentBase(newProps: officeDashUiDashFabricDashReactLib.libComponentsCalloutCalloutDotTypesMod.ICalloutProps): scala.Unit = js.native
   def dismiss(): scala.Unit = js.native
-  def dismiss(ev: reactLib.Event): scala.Unit = js.native
-  def dismiss(ev: reactLib.reactMod.ReactNs.KeyboardEvent[reactLib.HTMLElement]): scala.Unit = js.native
-  def dismiss(ev: reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent]): scala.Unit = js.native
+  def dismiss(ev: reactLib.Event with stdLib.Event): scala.Unit = js.native
+  def dismiss(ev: reactLib.reactMod.ReactNs.KeyboardEvent[reactLib.HTMLElement with stdLib.HTMLElement]): scala.Unit = js.native
+  def dismiss(
+    ev: reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement with stdLib.HTMLElement, reactLib.NativeMouseEvent]
+  ): scala.Unit = js.native
 }
 
 @JSImport("office-ui-fabric-react/lib/components/Callout/CalloutContent.base", "CalloutContentBase")
 @js.native
 object CalloutContentBase extends js.Object {
-  var defaultProps: officeDashUiDashFabricDashReactLib.Anon_DirectionalHint = js.native
+  var defaultProps: officeDashUiDashFabricDashReactLib.Anon_PreventDismissOnLostFocus = js.native
 }
 

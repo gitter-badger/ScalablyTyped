@@ -17,6 +17,6 @@ class SelectingAction protected ()
     y: scala.Double,
     diagramModel: stormDashReactDashDiagramsLib.distSrcModelsDiagramModelMod.DiagramModel
   ): scala.Boolean = js.native
-  def getBoxDimensions(): stormDashReactDashDiagramsLib.Anon_Bottom = js.native
+  def getBoxDimensions(): stormDashReactDashDiagramsLib.Anon_Left = js.native
 }
 

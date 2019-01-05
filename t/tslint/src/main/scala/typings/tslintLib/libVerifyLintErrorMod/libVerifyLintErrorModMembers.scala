@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object libVerifyLintErrorModMembers extends js.Object {
   def errorComparator(err1: LintError, err2: LintError): scala.Double = js.native
-  def lintSyntaxError(message: java.lang.String): nodeLib.Error = js.native
+  def lintSyntaxError(message: java.lang.String): nodeLib.Error with stdLib.Error = js.native
 }
 

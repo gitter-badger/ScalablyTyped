@@ -11,7 +11,7 @@ object antdModMembers extends js.Object {
   val ConfigProvider: reactLib.reactMod.ReactNs.SFC[antdLib.libConfigDashProviderMod.ConfigProviderProps] = js.native
   val DatePicker: antdLib.libDateDashPickerInterfaceMod.DatePickerDecorator = js.native
   val Icon: antdLib.libIconMod.IconComponent[antdLib.libIconMod.IconProps] = js.native
-  val Layout: (reactLib.reactMod.ReactNs.ComponentClass[antdLib.libLayoutLayoutMod.BasicProps, reactLib.reactMod.ReactNs.ComponentState]) with antdLib.Anon_Content = js.native
+  val Layout: (reactLib.reactMod.ReactNs.ComponentClass[antdLib.libLayoutLayoutMod.BasicProps, reactLib.reactMod.ReactNs.ComponentState]) with antdLib.Anon_Header = js.native
   val message: antdLib.libMessageMod.MessageApi = js.native
   val notification: antdLib.libNotificationMod.NotificationApi = js.native
   var version: antdLib.antdLibStrings.`3DOT11DOT6` = js.native

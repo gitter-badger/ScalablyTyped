@@ -13,7 +13,7 @@ class Table ()
 @JSImport("react-virtualized", "Table")
 @js.native
 object Table extends js.Object {
-  var defaultProps: reactDashVirtualizedLib.Anon_EstimatedRowSize = js.native
-  var propTypes: reactDashVirtualizedLib.Anon_Children = js.native
+  var defaultProps: reactDashVirtualizedLib.Anon_DisableHeader = js.native
+  var propTypes: reactDashVirtualizedLib.Anon_ArialabelAutoHeight = js.native
 }
 

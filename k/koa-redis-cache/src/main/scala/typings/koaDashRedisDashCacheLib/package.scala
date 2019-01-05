@@ -9,5 +9,5 @@ package object koaDashRedisDashCacheLib {
     /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify Koa.Context */ /* ctx */ js.Any, 
     java.lang.String
   ]
-  type onErrorCallback = js.Function1[/* error */ nodeLib.Error, scala.Unit]
+  type onErrorCallback = js.Function1[/* error */ nodeLib.Error with stdLib.Error, scala.Unit]
 }

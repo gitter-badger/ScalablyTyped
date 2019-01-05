@@ -12,18 +12,18 @@ object childUnderscoreProcessModMembers extends js.Object {
   def exec(
     command: java.lang.String,
     callback: js.Function3[
-      /* error */ nodeLib.Error, 
+      /* error */ nodeLib.Error with stdLib.Error, 
       /* stdout */ easyDashXDashHeadersLib.Buffer, 
       /* stderr */ easyDashXDashHeadersLib.Buffer, 
       scala.Unit
     ]
   ): ChildProcess = js.native
-  def exec(command: java.lang.String, options: easyDashXDashHeadersLib.Anon_KillSignalStdioEncoding): ChildProcess = js.native
+  def exec(command: java.lang.String, options: easyDashXDashHeadersLib.Anon_CwdStdio): ChildProcess = js.native
   def exec(
     command: java.lang.String,
-    options: easyDashXDashHeadersLib.Anon_KillSignalStdioEncoding,
+    options: easyDashXDashHeadersLib.Anon_CwdStdio,
     callback: js.Function3[
-      /* error */ nodeLib.Error, 
+      /* error */ nodeLib.Error with stdLib.Error, 
       /* stdout */ easyDashXDashHeadersLib.Buffer, 
       /* stderr */ easyDashXDashHeadersLib.Buffer, 
       scala.Unit
@@ -35,7 +35,7 @@ object childUnderscoreProcessModMembers extends js.Object {
     file: java.lang.String,
     args: js.Array[java.lang.String],
     callback: js.Function3[
-      /* error */ nodeLib.Error, 
+      /* error */ nodeLib.Error with stdLib.Error, 
       /* stdout */ easyDashXDashHeadersLib.Buffer, 
       /* stderr */ easyDashXDashHeadersLib.Buffer, 
       scala.Unit
@@ -44,14 +44,14 @@ object childUnderscoreProcessModMembers extends js.Object {
   def execFile(
     file: java.lang.String,
     args: js.Array[java.lang.String],
-    options: easyDashXDashHeadersLib.Anon_KillSignalStdio
+    options: easyDashXDashHeadersLib.Anon_CwdStdioCustomFds
   ): ChildProcess = js.native
   def execFile(
     file: java.lang.String,
     args: js.Array[java.lang.String],
-    options: easyDashXDashHeadersLib.Anon_KillSignalStdio,
+    options: easyDashXDashHeadersLib.Anon_CwdStdioCustomFds,
     callback: js.Function3[
-      /* error */ nodeLib.Error, 
+      /* error */ nodeLib.Error with stdLib.Error, 
       /* stdout */ easyDashXDashHeadersLib.Buffer, 
       /* stderr */ easyDashXDashHeadersLib.Buffer, 
       scala.Unit
@@ -60,7 +60,7 @@ object childUnderscoreProcessModMembers extends js.Object {
   def execFile(
     file: java.lang.String,
     callback: js.Function3[
-      /* error */ nodeLib.Error, 
+      /* error */ nodeLib.Error with stdLib.Error, 
       /* stdout */ easyDashXDashHeadersLib.Buffer, 
       /* stderr */ easyDashXDashHeadersLib.Buffer, 
       scala.Unit
@@ -71,23 +71,23 @@ object childUnderscoreProcessModMembers extends js.Object {
   def execFileSync(
     command: java.lang.String,
     args: js.Array[java.lang.String],
-    options: easyDashXDashHeadersLib.Anon_KillSignal
+    options: easyDashXDashHeadersLib.Anon_CwdInput
   ): ChildProcess = js.native
   def execSync(command: java.lang.String): ChildProcess = js.native
-  def execSync(command: java.lang.String, options: easyDashXDashHeadersLib.Anon_KillSignal): ChildProcess = js.native
+  def execSync(command: java.lang.String, options: easyDashXDashHeadersLib.Anon_CwdInput): ChildProcess = js.native
   def fork(modulePath: java.lang.String): ChildProcess = js.native
   def fork(modulePath: java.lang.String, args: js.Array[java.lang.String]): ChildProcess = js.native
   def fork(
     modulePath: java.lang.String,
     args: js.Array[java.lang.String],
-    options: easyDashXDashHeadersLib.Anon_Cwd
+    options: easyDashXDashHeadersLib.Anon_CwdEnv
   ): ChildProcess = js.native
   def spawn(command: java.lang.String): ChildProcess = js.native
   def spawn(command: java.lang.String, args: js.Array[java.lang.String]): ChildProcess = js.native
   def spawn(
     command: java.lang.String,
     args: js.Array[java.lang.String],
-    options: easyDashXDashHeadersLib.Anon_Stdio
+    options: easyDashXDashHeadersLib.Anon_Cwd
   ): ChildProcess = js.native
 }
 

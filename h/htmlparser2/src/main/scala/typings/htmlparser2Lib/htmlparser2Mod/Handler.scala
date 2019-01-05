@@ -15,7 +15,7 @@ trait Handler extends js.Object {
   var oncomment: js.UndefOr[js.Function1[/* data */ java.lang.String, scala.Unit]] = js.undefined
   var oncommentend: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   var onend: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
-  var onerror: js.UndefOr[js.Function1[/* error */ nodeLib.Error, scala.Unit]] = js.undefined
+  var onerror: js.UndefOr[js.Function1[/* error */ nodeLib.Error with stdLib.Error, scala.Unit]] = js.undefined
   var onopentag: js.UndefOr[
     js.Function2[
       /* name */ java.lang.String, 

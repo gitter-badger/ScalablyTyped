@@ -14,7 +14,7 @@ trait Anon_ImageData extends js.Object {
     * Note that 'details.imageData = foo' is equivalent to 'details.imageData = {'19': foo}'
     */
   var imageData: js.UndefOr[
-    firefoxDashWebextDashBrowserLib.browserNs.pageActionNs.ImageDataType | org.scalablytyped.runtime.NumberDictionary[firefoxDashWebextDashBrowserLib.browserNs.pageActionNs.ImageDataType]
+    firefoxDashWebextDashBrowserLib.browserNs.browserActionNs.ImageDataType | org.scalablytyped.runtime.NumberDictionary[firefoxDashWebextDashBrowserLib.browserNs.browserActionNs.ImageDataType]
   ] = js.undefined
   /**
     * Either a relative image path or a dictionary {size -> relative image path} pointing to icon to be set. If
@@ -24,7 +24,16 @@ trait Anon_ImageData extends js.Object {
     * be specified. Note that 'details.path = foo' is equivalent to 'details.imageData = {'19': foo}'
     */
   var path: js.UndefOr[java.lang.String | org.scalablytyped.runtime.NumberDictionary[java.lang.String]] = js.undefined
-  /** The id of the tab for which you want to modify the page action. */
-  var tabId: scala.Double
+  /**
+    * When setting a value, it will be specific to the specified tab, and will automatically reset when the tab
+    * navigates. When getting, specifies the tab to get the value from; if there is no tab-specific value, the
+    * window one will be inherited.
+    */
+  var tabId: js.UndefOr[scala.Double] = js.undefined
+  /**
+    * When setting a value, it will be specific to the specified window. When getting, specifies the window to get
+    * the value from; if there is no window-specific value, the global one will be inherited.
+    */
+  var windowId: js.UndefOr[scala.Double] = js.undefined
 }
 

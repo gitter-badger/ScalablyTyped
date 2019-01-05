@@ -34,7 +34,7 @@ trait TextFieldProps
     reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.TextStyle]
   ] = js.undefined
   var lineWidth: js.UndefOr[scala.Double] = js.undefined
-  var onPress: js.UndefOr[js.Function1[/* event */ reactLib.Event, scala.Unit]] = js.undefined
+  var onPress: js.UndefOr[js.Function1[/* event */ reactLib.Event with stdLib.Event, scala.Unit]] = js.undefined
   var prefix: js.UndefOr[java.lang.String] = js.undefined
   var renderAccessory: js.UndefOr[js.Function0[reactLib.reactMod.Global.JSXNs.Element]] = js.undefined
   @JSName("style")

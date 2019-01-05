@@ -49,7 +49,7 @@ class PageSetup protected () extends js.Object {
   var PrintHeadings: scala.Boolean = js.native
   var PrintNotes: scala.Boolean = js.native
   @JSName("PrintQuality")
-  var PrintQuality_Original: activexDashInteropLib.SafeArray[scala.Double] with (js.Function1[
+  var PrintQuality_Original: activexDashInteropLib.SafeArray[scala.Double] with stdLib.SafeArray[scala.Double] with (js.Function1[
     /* Index */ activexDashExcelLib.activexDashExcelLibNumbers.`1` | activexDashExcelLib.activexDashExcelLibNumbers.`2`, 
     scala.Double
   ]) = js.native

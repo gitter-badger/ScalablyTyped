@@ -12,7 +12,7 @@ object execNs extends js.Object {
   def `__promisify__`(command: java.lang.String): js.Promise[nodeLib.Anon_Stdout] = js.native
   def `__promisify__`(
     command: java.lang.String,
-    options: nodeLib.Anon_EncodingStringNull with nodeLib.childUnderscoreProcessMod.ExecOptions
+    options: nodeLib.Anon_EncodingString with nodeLib.childUnderscoreProcessMod.ExecOptions
   ): js.Promise[nodeLib.Anon_StdoutStderrString] = js.native
   def `__promisify__`(
     command: java.lang.String,

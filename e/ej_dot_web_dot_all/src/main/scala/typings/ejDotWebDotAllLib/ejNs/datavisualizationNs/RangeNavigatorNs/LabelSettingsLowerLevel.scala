@@ -31,7 +31,7 @@ trait LabelSettingsLowerLevel extends js.Object {
   /** Specifies the position of the labels in lower level.See Position
     * @Default {bottom}
     */
-  var position: js.UndefOr[Position | java.lang.String] = js.undefined
+  var position: js.UndefOr[(Position with stdLib.Position) | java.lang.String] = js.undefined
   /** Options for customizing the style of labels.
     */
   var style: js.UndefOr[LabelSettingsLowerLevelStyle] = js.undefined

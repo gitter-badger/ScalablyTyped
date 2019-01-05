@@ -29,7 +29,7 @@ trait RequestParams extends js.Object {
   /**
     * res.data usually can be string or ArrayBuffer
     */
-  var success: js.UndefOr[js.Function1[/* res */ wegameDashApiLib.Anon_DataHeader, scala.Unit]] = js.undefined
+  var success: js.UndefOr[js.Function1[/* res */ wegameDashApiLib.Anon_DataStatusCode, scala.Unit]] = js.undefined
   /**
     * 开发者服务器接口地址
     */

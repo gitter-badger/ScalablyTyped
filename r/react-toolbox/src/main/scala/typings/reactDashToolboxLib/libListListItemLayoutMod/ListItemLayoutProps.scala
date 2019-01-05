@@ -31,7 +31,9 @@ trait ListItemLayoutProps
   /**
     * A list of elements that are placed on the left side of the item and after the avatar attribute.
     */
-  var leftActions: js.UndefOr[coreDashJsLib.Array[reactLib.reactMod.ReactNs.ReactNode]] = js.undefined
+  var leftActions: js.UndefOr[
+    coreDashJsLib.Array[reactLib.reactMod.ReactNs.ReactNode] with js.Array[reactLib.reactMod.ReactNs.ReactNode]
+  ] = js.undefined
   /**
     * A string key of a font icon or element to display an icon in the left side of the item.
     */
@@ -43,7 +45,9 @@ trait ListItemLayoutProps
   /**
     * A list of elements that are placed on the right side of the item and after the rightIcon attribute.
     */
-  var rightActions: js.UndefOr[coreDashJsLib.Array[reactLib.reactMod.ReactNs.ReactNode]] = js.undefined
+  var rightActions: js.UndefOr[
+    coreDashJsLib.Array[reactLib.reactMod.ReactNs.ReactNode] with js.Array[reactLib.reactMod.ReactNs.ReactNode]
+  ] = js.undefined
   /**
     * The same as the leftIcon but in this case the icon is displayed in the right side.
     */

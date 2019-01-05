@@ -23,7 +23,7 @@ class Event protected ()
   /* CompleteClass */
   override var aiDataContract: js.Any = js.native
   @JSName("aiDataContract")
-  var aiDataContract_Event: applicationinsightsDashJsLib.Anon_Measurements = js.native
+  var aiDataContract_Event: applicationinsightsDashJsLib.Anon_Ver = js.native
   var measurements: js.Any = js.native
   var name: java.lang.String = js.native
   var properties: js.Any = js.native

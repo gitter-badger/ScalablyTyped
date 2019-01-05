@@ -12,12 +12,16 @@ trait Props
   var arrowContent: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
   var defaultVisible: js.UndefOr[scala.Boolean] = js.undefined
   var destroyTooltipOnHide: js.UndefOr[scala.Boolean] = js.undefined
-  var getTooltipContainer: js.UndefOr[js.Function0[reactLib.Element]] = js.undefined
+  var getTooltipContainer: js.UndefOr[js.Function0[reactLib.Element with stdLib.Element]] = js.undefined
   var id: js.UndefOr[java.lang.String] = js.undefined
   var mouseEnterDelay: js.UndefOr[scala.Double] = js.undefined
   var mouseLeaveDelay: js.UndefOr[scala.Double] = js.undefined
   var onPopupAlign: js.UndefOr[
-    js.Function2[/* popupDomNode */ reactLib.Element, /* align */ js.Object, scala.Unit]
+    js.Function2[
+      /* popupDomNode */ reactLib.Element with stdLib.Element, 
+      /* align */ js.Object, 
+      scala.Unit
+    ]
   ] = js.undefined
   var onVisibleChange: js.UndefOr[js.Function1[/* visible */ js.UndefOr[scala.Boolean], scala.Unit]] = js.undefined
   var overlay: reactLib.reactMod.ReactNs.ReactNode

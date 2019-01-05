@@ -13,6 +13,6 @@ object lwipModMembers extends js.Object {
   def open(source: java.lang.String, callback: ImageCallback): scala.Unit = js.native
   def open(source: java.lang.String, `type`: java.lang.String, callback: ImageCallback): scala.Unit = js.native
   def open(source: nodeLib.Buffer, `type`: java.lang.String, callback: ImageCallback): js.Any = js.native
-  def open(source: nodeLib.Buffer, `type`: lwipLib.Anon_Height, callback: ImageCallback): js.Any = js.native
+  def open(source: nodeLib.Buffer, `type`: lwipLib.Anon_Width, callback: ImageCallback): js.Any = js.native
 }
 

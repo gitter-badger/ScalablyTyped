@@ -22,6 +22,6 @@ trait PromptOptions
   /** prompt框标题 */
   var title: js.UndefOr[java.lang.String] = js.undefined
   @JSName("success")
-  def success_MPromptOptions(result: aliDashAppLib.Anon_InputValue): scala.Unit
+  def success_MPromptOptions(result: aliDashAppLib.Anon_Ok): scala.Unit
 }
 

@@ -55,7 +55,7 @@ class OAuth2Client ()
     * resulting SHA256. If used, this must be paired with a S256
     * code_challenge_method.
     */
-  def generateCodeVerifier(): googleDashAuthDashLibraryLib.Anon_CodeChallenge = js.native
+  def generateCodeVerifier(): googleDashAuthDashLibraryLib.Anon_CodeVerifier = js.native
   /**
     * Get a non-expired access token, after refreshing if necessary
     *
@@ -169,7 +169,7 @@ class OAuth2Client ()
   def verifyIdToken(
     options: VerifyIdTokenOptions,
     callback: js.Function2[
-      /* err */ nodeLib.Error | scala.Null, 
+      /* err */ (nodeLib.Error with stdLib.Error) | scala.Null, 
       /* login */ js.UndefOr[googleDashAuthDashLibraryLib.buildSrcAuthLoginticketMod.LoginTicket], 
       scala.Unit
     ]

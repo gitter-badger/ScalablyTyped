@@ -16,7 +16,7 @@ trait DataSnapshot extends js.Object {
   def hasChild(path: java.lang.String): scala.Boolean
   def hasChildren(): scala.Boolean
   def numChildren(): scala.Double
-  def toJSON(): coreDashJsLib.Object | scala.Null
+  def toJSON(): (coreDashJsLib.Object with js.Object) | scala.Null
   def `val`(): js.Any
 }
 

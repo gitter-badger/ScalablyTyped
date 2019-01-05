@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait Header
   extends reactLib.reactMod.Component[HeaderProps, js.Any, js.Any] {
   var calenderHeaderNode: js.Any = js.native
-  def getCalenderHeaderNode(node: reactLib.HTMLDivElement): scala.Unit = js.native
+  def getCalenderHeaderNode(node: reactLib.HTMLDivElement with stdLib.HTMLDivElement): scala.Unit = js.native
   def getMonthSelectElement(month: scala.Double, months: js.Array[scala.Double]): reactLib.reactMod.Global.JSXNs.Element = js.native
   def getMonthsLocale(value: momentLib.momentMod.momentNs.Moment): js.Array[_] = js.native
   def getYearSelectElement(year: scala.Double): reactLib.reactMod.Global.JSXNs.Element = js.native

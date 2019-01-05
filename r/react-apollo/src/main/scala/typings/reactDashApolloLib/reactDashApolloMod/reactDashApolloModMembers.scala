@@ -34,7 +34,7 @@ object reactDashApolloModMembers extends js.Object {
     visitor: js.Function5[
       /* element */ reactLib.reactMod.ReactNs.ReactNode, 
       /* instance */ (reactLib.reactMod.Component[_, js.Object, _]) | scala.Null, 
-      /* newContextMap */ lodashLib.lodashMod.Global.Map[_, _], 
+      /* newContextMap */ (lodashLib.lodashMod.Global.Map[_, _]) with (stdLib.Map[_, _]), 
       /* context */ reactDashApolloLib.walkTreeMod.Context, 
       /* childContext */ js.UndefOr[reactDashApolloLib.walkTreeMod.Context], 
       scala.Boolean | scala.Unit
@@ -46,12 +46,12 @@ object reactDashApolloModMembers extends js.Object {
     visitor: js.Function5[
       /* element */ reactLib.reactMod.ReactNs.ReactNode, 
       /* instance */ (reactLib.reactMod.Component[_, js.Object, _]) | scala.Null, 
-      /* newContextMap */ lodashLib.lodashMod.Global.Map[_, _], 
+      /* newContextMap */ (lodashLib.lodashMod.Global.Map[_, _]) with (stdLib.Map[_, _]), 
       /* context */ reactDashApolloLib.walkTreeMod.Context, 
       /* childContext */ js.UndefOr[reactDashApolloLib.walkTreeMod.Context], 
       scala.Boolean | scala.Unit
     ],
-    newContext: lodashLib.lodashMod.Global.Map[_, _]
+    newContext: (lodashLib.lodashMod.Global.Map[_, _]) with (stdLib.Map[_, _])
   ): scala.Unit = js.native
   def withApollo[TProps, TResult](
     WrappedComponent: reactLib.reactMod.ReactNs.ComponentType[reactDashApolloLib.withApolloMod.WithApolloClient[TProps]]

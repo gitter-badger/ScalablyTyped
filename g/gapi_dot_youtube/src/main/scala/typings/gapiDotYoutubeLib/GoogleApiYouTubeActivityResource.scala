@@ -9,7 +9,7 @@ trait GoogleApiYouTubeActivityResource extends js.Object {
   /**
     * The contentDetails object contains information about the content associated with the activity.
     */
-  var contentDetails: Anon_Bulletin
+  var contentDetails: Anon_Upload
   /**
     * The ETag of the activity resource.
     */
@@ -25,6 +25,6 @@ trait GoogleApiYouTubeActivityResource extends js.Object {
   /**
     * The snippet object contains basic details about the activity, including the activitys type and group ID.
     */
-  var snippet: Anon_DescriptionGroupId
+  var snippet: Anon_PublishedAt
 }
 

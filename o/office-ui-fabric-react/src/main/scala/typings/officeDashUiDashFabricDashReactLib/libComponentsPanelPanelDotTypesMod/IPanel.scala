@@ -11,7 +11,7 @@ trait IPanel extends js.Object {
     * Forces the panel to dismiss.
     */
   def dismiss(): scala.Unit = js.native
-  def dismiss(ev: reactLib.reactMod.ReactNs.KeyboardEvent[reactLib.HTMLElement]): scala.Unit = js.native
+  def dismiss(ev: reactLib.reactMod.ReactNs.KeyboardEvent[reactLib.HTMLElement with stdLib.HTMLElement]): scala.Unit = js.native
   /**
     * Forces the panel to open.
     */

@@ -21,6 +21,6 @@ trait ChooseAlipayContactOptions
     ]
   ] = js.undefined
   @JSName("success")
-  def success_MChooseAlipayContactOptions(result: aliDashAppLib.Anon_Avatar): scala.Unit
+  def success_MChooseAlipayContactOptions(result: aliDashAppLib.Anon_RealName): scala.Unit
 }
 

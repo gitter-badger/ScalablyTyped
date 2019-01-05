@@ -10,7 +10,7 @@ trait LinkProps extends js.Object {
   var className: js.UndefOr[java.lang.String] = js.undefined
   var href: Href
   var location: js.UndefOr[Location] = js.undefined
-  var onClick: js.UndefOr[js.Function1[/* event */ reactLib.Event, _]] = js.undefined
+  var onClick: js.UndefOr[js.Function1[/* event */ reactLib.Event with stdLib.Event, _]] = js.undefined
   var persistQuery: js.UndefOr[scala.Boolean] = js.undefined
   var push: js.UndefOr[
     js.Function2[

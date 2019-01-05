@@ -31,7 +31,7 @@ trait IPopupProps
   var onDismiss: js.UndefOr[
     js.Function1[
       /* ev */ js.UndefOr[
-        (reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent]) | reactLib.reactMod.ReactNs.KeyboardEvent[reactLib.HTMLElement]
+        (reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement with stdLib.HTMLElement, reactLib.NativeMouseEvent]) | (reactLib.reactMod.ReactNs.KeyboardEvent[reactLib.HTMLElement with stdLib.HTMLElement])
       ], 
       _
     ]

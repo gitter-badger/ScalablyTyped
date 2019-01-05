@@ -12,14 +12,14 @@ object cpxModMembers extends js.Object {
   def copy(
     source: java.lang.String,
     dest: java.lang.String,
-    callback: js.Function1[/* error */ nodeLib.Error | scala.Null, scala.Unit]
+    callback: js.Function1[/* error */ (nodeLib.Error with stdLib.Error) | scala.Null, scala.Unit]
   ): scala.Unit = js.native
   def copy(source: java.lang.String, dest: java.lang.String, options: AsyncOptions): scala.Unit = js.native
   def copy(
     source: java.lang.String,
     dest: java.lang.String,
     options: AsyncOptions,
-    callback: js.Function1[/* error */ nodeLib.Error | scala.Null, scala.Unit]
+    callback: js.Function1[/* error */ (nodeLib.Error with stdLib.Error) | scala.Null, scala.Unit]
   ): scala.Unit = js.native
   def copySync(source: java.lang.String, dest: java.lang.String): scala.Unit = js.native
   def copySync(source: java.lang.String, dest: java.lang.String, options: SyncOptions): scala.Unit = js.native

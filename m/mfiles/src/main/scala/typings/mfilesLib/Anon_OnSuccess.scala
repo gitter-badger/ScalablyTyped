@@ -15,6 +15,8 @@ trait Anon_OnSuccess extends js.Object {
       scala.Unit
     ]
   ] = js.undefined
-  var OnSuccess: js.UndefOr[js.Function1[/* objectVersions */ IObjectVersions, scala.Unit]] = js.undefined
+  var OnSuccess: js.UndefOr[
+    js.Function2[/* objectVersion */ IObjectVersion, /* objectFile */ IObjectFile, scala.Unit]
+  ] = js.undefined
 }
 

@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait CustomScrollbarOptions extends js.Object {
-  var advanced: js.UndefOr[mcustomscrollbarLib.Anon_UpdateOnImageLoad] = js.undefined
+  var advanced: js.UndefOr[mcustomscrollbarLib.Anon_UpdateOnBrowserResize] = js.undefined
   /**
     * Always keep scrollbar(s) visible, even when there’s nothing to scroll.
     * 0 – disable (default)
@@ -36,7 +36,7 @@ trait CustomScrollbarOptions extends js.Object {
   /**
     * All of the following callbacks option have examples in the callback demo - http://manos.malihu.gr/tuts/custom-scrollbar-plugin/callbacks_example.html
     */
-  var callbacks: js.UndefOr[mcustomscrollbarLib.Anon_AlwaysTriggerOffsets] = js.undefined
+  var callbacks: js.UndefOr[mcustomscrollbarLib.Anon_OnCreate] = js.undefined
   /**
     * Enable or disable content touch-swipe scrolling for touch-enabled devices.
     * To completely disable, set contentTouchScroll: false.
@@ -50,7 +50,7 @@ trait CustomScrollbarOptions extends js.Object {
   /**
     * Keyboard support 
     */
-  var keyboard: js.UndefOr[mcustomscrollbarLib.Anon_ScrollAmount] = js.undefined
+  var keyboard: js.UndefOr[mcustomscrollbarLib.Anon_EnableScrollAmount] = js.undefined
   /**
     * Enable or disable applying scrollbar(s) on all elements matching the current selector, now and in the future.
     * Set live: true when you need to add scrollbar(s) on elements that do not yet exist in the page. 
@@ -66,12 +66,12 @@ trait CustomScrollbarOptions extends js.Object {
   /**
     * Mouse wheel support
     */
-  var mouseWheel: js.UndefOr[mcustomscrollbarLib.Anon_PreventDefault] = js.undefined
+  var mouseWheel: js.UndefOr[mcustomscrollbarLib.Anon_Enable] = js.undefined
   /**
     * Mouse wheel scrolling pixels amount, value in pixels (integer) or "auto" (script calculates and sets pixels amount according to content length)
     */
   var mouseWheelPixels: js.UndefOr[js.Any] = js.undefined
-  var scrollButtons: js.UndefOr[mcustomscrollbarLib.Anon_ScrollAmountAuto] = js.undefined
+  var scrollButtons: js.UndefOr[mcustomscrollbarLib.Anon_EnableScrollType] = js.undefined
   /**
     * Scrolling inertia (easing), value in milliseconds (0 for no scrolling inertia)
     */

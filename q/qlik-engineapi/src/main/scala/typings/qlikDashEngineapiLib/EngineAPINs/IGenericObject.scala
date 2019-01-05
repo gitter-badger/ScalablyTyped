@@ -384,7 +384,7 @@ trait IGenericObject
     * Options.MaxNbrTicks - maximum number of ticks.
     * @returns - A Promise <Boolean> or <Array of NxDataPage> or <Array of NxAxisData>
     */
-  def getHyperCubeContinuousData(qPath: java.lang.String, qOptions: js.Array[IContinuousDataOptions]): js.Promise[qlikDashEngineapiLib.Anon_QAxisData] = js.native
+  def getHyperCubeContinuousData(qPath: java.lang.String, qOptions: js.Array[IContinuousDataOptions]): js.Promise[qlikDashEngineapiLib.Anon_QDataPages] = js.native
   /**
     * Retrieves the values of a chart, a table, or a scatter plot. It is possible to retrieve specific pages of data.
     * Note: This method does not apply to stacked tables.
@@ -509,7 +509,7 @@ trait IGenericObject
     * - Options.MaxNbrTicks - maximum number of ticks.
     * @returns - A data set Array of (NxDataPage) or (NxAxisData)
     */
-  def getListObjectContinuousData(qPath: java.lang.String, qOptions: IContinuousDataOptions): js.Promise[qlikDashEngineapiLib.Anon_QAxisDataQDataPages] = js.native
+  def getListObjectContinuousData(qPath: java.lang.String, qOptions: IContinuousDataOptions): js.Promise[qlikDashEngineapiLib.Anon_QDataPagesQAxisData] = js.native
   /**
     * Retrieves the values of a list object.
     * @param qPath - Path to the definition of the object to be selected.

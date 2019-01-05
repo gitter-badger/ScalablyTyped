@@ -21,7 +21,7 @@ trait SeriesSetting extends js.Object {
   /** Specifies the type of the series to render in chart.
     * @Default {column. see Type}
     */
-  var `type`: js.UndefOr[Type | java.lang.String] = js.undefined
+  var `type`: js.UndefOr[(Type with ejDotWebDotAllLib.ejNs.Type) | java.lang.String] = js.undefined
   /** Name of the property in the datasource that contains x value for the series.
     * @Default {null}
     */

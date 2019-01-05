@@ -92,7 +92,7 @@ trait PlotParams extends js.Object {
   var onInitialized: js.UndefOr[
     js.Function2[
       /* figure */ stdLib.Readonly[Figure], 
-      /* graphDiv */ stdLib.Readonly[reactLib.HTMLElement], 
+      /* graphDiv */ stdLib.Readonly[reactLib.HTMLElement with stdLib.HTMLElement], 
       scala.Unit
     ]
   ] = js.undefined
@@ -120,7 +120,7 @@ trait PlotParams extends js.Object {
   var onPurge: js.UndefOr[
     js.Function2[
       /* figure */ stdLib.Readonly[Figure], 
-      /* graphDiv */ stdLib.Readonly[reactLib.HTMLElement], 
+      /* graphDiv */ stdLib.Readonly[reactLib.HTMLElement with stdLib.HTMLElement], 
       scala.Unit
     ]
   ] = js.undefined
@@ -199,7 +199,7 @@ trait PlotParams extends js.Object {
   var onUpdate: js.UndefOr[
     js.Function2[
       /* figure */ stdLib.Readonly[Figure], 
-      /* graphDiv */ stdLib.Readonly[reactLib.HTMLElement], 
+      /* graphDiv */ stdLib.Readonly[reactLib.HTMLElement with stdLib.HTMLElement], 
       scala.Unit
     ]
   ] = js.undefined

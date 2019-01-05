@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ConnectError
-  extends nodeLib.Error {
+  extends stdLib.Error {
   var connectArgs: stompitLib.libConnectMod.connectNs.ConnectOptions
 }
 

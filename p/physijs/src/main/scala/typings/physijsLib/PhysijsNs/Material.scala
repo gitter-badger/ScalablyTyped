@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Material
   extends threeLib.threeMod.Material {
-  var _physijs: physijsLib.Anon_Friction = js.native
+  var _physijs: physijsLib.Anon_Id = js.native
 }
 

@@ -17,11 +17,13 @@ trait TooltipFont extends js.Object {
   /** Specifies the font Style for the tooltip.
     * @Default {Normal}
     */
-  var fontStyle: js.UndefOr[FontStyle | java.lang.String] = js.undefined
+  var fontStyle: js.UndefOr[(FontStyle with ejDotWebDotAllLib.ejNs.SparklineNs.FontStyle) | java.lang.String] = js.undefined
   /** Specifies the font weight for the tooltip.
     * @Default {Regular}
     */
-  var fontWeight: js.UndefOr[FontWeight | java.lang.String] = js.undefined
+  var fontWeight: js.UndefOr[
+    (FontWeight with ejDotWebDotAllLib.ejNs.SparklineNs.FontWeight) | java.lang.String
+  ] = js.undefined
   /** Opacity for text in the tooltip.
     * @Default {1}
     */

@@ -12,11 +12,11 @@ class UrlAdaptor () extends Adaptor {
   def beforeSend(dm: DataManager, request: js.Any): scala.Unit = js.native
   def beforeSend(dm: DataManager, request: js.Any, settings: js.Any): scala.Unit = js.native
   def getFiltersFrom(data: js.Any, query: Query): Predicate = js.native
-  def insert(dm: DataManager, data: js.Any, tableName: java.lang.String): ejDotWebDotAllLib.Anon_Data = js.native
+  def insert(dm: DataManager, data: js.Any, tableName: java.lang.String): ejDotWebDotAllLib.Anon_Url = js.native
   def onAggregates(e: js.Any): scala.Unit = js.native
   def onGroup(e: js.Any): scala.Unit = js.native
-  def processQuery(dm: DataManager, query: Query, hierarchyFilters: js.Any): ejDotWebDotAllLib.Anon_Url = js.native
-  def remove(dm: DataManager, keyField: java.lang.String, value: js.Any, tableName: java.lang.String): ejDotWebDotAllLib.Anon_TypeDataUrl = js.native
-  def update(dm: DataManager, keyField: java.lang.String, value: js.Any, tableName: java.lang.String): ejDotWebDotAllLib.Anon_Type = js.native
+  def processQuery(dm: DataManager, query: Query, hierarchyFilters: js.Any): ejDotWebDotAllLib.Anon_Type = js.native
+  def remove(dm: DataManager, keyField: java.lang.String, value: js.Any, tableName: java.lang.String): ejDotWebDotAllLib.Anon_TypeUrl = js.native
+  def update(dm: DataManager, keyField: java.lang.String, value: js.Any, tableName: java.lang.String): ejDotWebDotAllLib.Anon_TypeUrlData = js.native
 }
 

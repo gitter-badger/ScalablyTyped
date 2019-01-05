@@ -50,7 +50,7 @@ trait ObservableStatic extends js.Object {
   def `case`[T](
     selector: js.Function0[scala.Double],
     sources: org.scalablytyped.runtime.NumberDictionary[rxDashCoreLib.RxNs.IPromise[T] | Observable[T]],
-    scheduler: rxDashCoreLib.RxNs.IScheduler
+    scheduler: rxDashCoreLib.RxNs.IScheduler with rxDashLiteLib.RxNs.IScheduler
   ): Observable[T] = js.native
   /**
     *  Uses selector to determine which source in sources to use.
@@ -95,7 +95,7 @@ trait ObservableStatic extends js.Object {
   def `case`[T](
     selector: js.Function0[java.lang.String],
     sources: org.scalablytyped.runtime.StringDictionary[rxDashCoreLib.RxNs.IPromise[T] | Observable[T]],
-    scheduler: rxDashCoreLib.RxNs.IScheduler
+    scheduler: rxDashCoreLib.RxNs.IScheduler with rxDashLiteLib.RxNs.IScheduler
   ): Observable[T] = js.native
   /**
     *  Concatenates the observable sequences obtained by running the specified result selector for each element in source.
@@ -145,7 +145,7 @@ trait ObservableStatic extends js.Object {
   def `if`[T](
     condition: js.Function0[scala.Boolean],
     thenSource: rxDashCoreLib.RxNs.IPromise[T],
-    scheduler: rxDashCoreLib.RxNs.IScheduler
+    scheduler: rxDashCoreLib.RxNs.IScheduler with rxDashLiteLib.RxNs.IScheduler
   ): Observable[T] = js.native
   /**
     *  Determines whether an observable collection contains values. There is an alias for this method called 'ifThen' for browsers <IE9
@@ -177,7 +177,7 @@ trait ObservableStatic extends js.Object {
   def `if`[T](
     condition: js.Function0[scala.Boolean],
     thenSource: Observable[T],
-    scheduler: rxDashCoreLib.RxNs.IScheduler
+    scheduler: rxDashCoreLib.RxNs.IScheduler with rxDashLiteLib.RxNs.IScheduler
   ): Observable[T] = js.native
   def ifThen[T](condition: js.Function0[scala.Boolean], thenSource: rxDashCoreLib.RxNs.IPromise[T]): Observable[T] = js.native
   def ifThen[T](
@@ -193,7 +193,7 @@ trait ObservableStatic extends js.Object {
   def ifThen[T](
     condition: js.Function0[scala.Boolean],
     thenSource: rxDashCoreLib.RxNs.IPromise[T],
-    scheduler: rxDashCoreLib.RxNs.IScheduler
+    scheduler: rxDashCoreLib.RxNs.IScheduler with rxDashLiteLib.RxNs.IScheduler
   ): Observable[T] = js.native
   /**
     *  Determines whether an observable collection contains values. There is an alias for this method called 'ifThen' for browsers <IE9
@@ -225,7 +225,7 @@ trait ObservableStatic extends js.Object {
   def ifThen[T](
     condition: js.Function0[scala.Boolean],
     thenSource: Observable[T],
-    scheduler: rxDashCoreLib.RxNs.IScheduler
+    scheduler: rxDashCoreLib.RxNs.IScheduler with rxDashLiteLib.RxNs.IScheduler
   ): Observable[T] = js.native
   /**
     *  Uses selector to determine which source in sources to use.
@@ -270,7 +270,7 @@ trait ObservableStatic extends js.Object {
   def switchCase[T](
     selector: js.Function0[scala.Double],
     sources: org.scalablytyped.runtime.NumberDictionary[rxDashCoreLib.RxNs.IPromise[T] | Observable[T]],
-    scheduler: rxDashCoreLib.RxNs.IScheduler
+    scheduler: rxDashCoreLib.RxNs.IScheduler with rxDashLiteLib.RxNs.IScheduler
   ): Observable[T] = js.native
   /**
     *  Uses selector to determine which source in sources to use.
@@ -315,7 +315,7 @@ trait ObservableStatic extends js.Object {
   def switchCase[T](
     selector: js.Function0[java.lang.String],
     sources: org.scalablytyped.runtime.StringDictionary[rxDashCoreLib.RxNs.IPromise[T] | Observable[T]],
-    scheduler: rxDashCoreLib.RxNs.IScheduler
+    scheduler: rxDashCoreLib.RxNs.IScheduler with rxDashLiteLib.RxNs.IScheduler
   ): Observable[T] = js.native
   def `while`[T](condition: js.Function0[scala.Boolean], source: rxDashCoreLib.RxNs.IPromise[T]): Observable[T] = js.native
   /**

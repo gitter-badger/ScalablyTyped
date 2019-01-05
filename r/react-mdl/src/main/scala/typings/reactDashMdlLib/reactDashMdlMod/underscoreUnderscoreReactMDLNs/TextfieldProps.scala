@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait TextfieldProps
   extends MDLHTMLAttributes
-     with reactLib.reactMod.ReactNs.DOMAttributes[reactLib.HTMLInputElement] {
+     with reactLib.reactMod.ReactNs.DOMAttributes[reactLib.HTMLInputElement with stdLib.HTMLInputElement] {
   var error: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
   var expandable: js.UndefOr[scala.Boolean] = js.undefined
   var expandableIcon: js.UndefOr[java.lang.String] = js.undefined

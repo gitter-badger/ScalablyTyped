@@ -128,7 +128,7 @@ trait Page
   @JSName("on")
   def on_error(
     eventName: puppeteerLib.puppeteerLibStrings.error,
-    handler: js.Function2[/* e */ nodeLib.Error, /* repeated */ js.Any, scala.Unit]
+    handler: js.Function2[/* e */ nodeLib.Error with stdLib.Error, /* repeated */ js.Any, scala.Unit]
   ): this.type = js.native
   /**
     * Adds the listener function to the end of the listeners array for the event named `eventName`.
@@ -188,7 +188,7 @@ trait Page
   @JSName("on")
   def on_metrics(
     eventName: puppeteerLib.puppeteerLibStrings.metrics,
-    handler: js.Function2[/* e */ puppeteerLib.Anon_Metrics, /* repeated */ js.Any, scala.Unit]
+    handler: js.Function2[/* e */ puppeteerLib.Anon_Title, /* repeated */ js.Any, scala.Unit]
   ): this.type = js.native
   /**
     * Adds the listener function to the end of the listeners array for the event named `eventName`.
@@ -200,7 +200,7 @@ trait Page
   @JSName("on")
   def on_pageerror(
     eventName: puppeteerLib.puppeteerLibStrings.pageerror,
-    handler: js.Function2[/* e */ nodeLib.Error, /* repeated */ js.Any, scala.Unit]
+    handler: js.Function2[/* e */ nodeLib.Error with stdLib.Error, /* repeated */ js.Any, scala.Unit]
   ): this.type = js.native
   /**
     * Adds the listener function to the end of the listeners array for the event named `eventName`.
@@ -316,7 +316,7 @@ trait Page
   @JSName("once")
   def once_error(
     eventName: puppeteerLib.puppeteerLibStrings.error,
-    handler: js.Function2[/* e */ nodeLib.Error, /* repeated */ js.Any, scala.Unit]
+    handler: js.Function2[/* e */ nodeLib.Error with stdLib.Error, /* repeated */ js.Any, scala.Unit]
   ): this.type = js.native
   /**
     * Adds a one time listener function for the event named `eventName`.
@@ -371,7 +371,7 @@ trait Page
   @JSName("once")
   def once_metrics(
     eventName: puppeteerLib.puppeteerLibStrings.metrics,
-    handler: js.Function2[/* e */ puppeteerLib.Anon_Metrics, /* repeated */ js.Any, scala.Unit]
+    handler: js.Function2[/* e */ puppeteerLib.Anon_Title, /* repeated */ js.Any, scala.Unit]
   ): this.type = js.native
   /**
     * Adds a one time listener function for the event named `eventName`.
@@ -382,7 +382,7 @@ trait Page
   @JSName("once")
   def once_pageerror(
     eventName: puppeteerLib.puppeteerLibStrings.pageerror,
-    handler: js.Function2[/* e */ nodeLib.Error, /* repeated */ js.Any, scala.Unit]
+    handler: js.Function2[/* e */ nodeLib.Error with stdLib.Error, /* repeated */ js.Any, scala.Unit]
   ): this.type = js.native
   /**
     * Adds a one time listener function for the event named `eventName`.

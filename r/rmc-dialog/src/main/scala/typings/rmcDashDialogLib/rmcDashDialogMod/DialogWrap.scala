@@ -22,6 +22,6 @@ trait DialogWrap
   def renderDialog(visible: js.Any): scala.Unit = js.native
   def saveRef(node: js.Any): scala.Unit = js.native
   @JSName("shouldComponentUpdate")
-  def shouldComponentUpdate_MDialogWrap(hasVisible: rmcDashDialogLib.Anon_Visible): scala.Boolean = js.native
+  def shouldComponentUpdate_MDialogWrap(hasVisible: rmcDashDialogLib.Anon_VisibleAny): scala.Boolean = js.native
 }
 

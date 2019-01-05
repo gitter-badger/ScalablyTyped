@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 trait ResultFactoryBuilderOptions extends js.Object {
   @JSName("formatter")
   var formatter_Original: ErrorFormatter[_] = js.native
-  def formatter(error: expressDashValidatorLib.Anon_LocationMsg): js.Any = js.native
+  def formatter(error: expressDashValidatorLib.Anon_Location): js.Any = js.native
 }
 

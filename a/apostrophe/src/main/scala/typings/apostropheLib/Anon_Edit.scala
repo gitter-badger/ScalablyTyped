@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Anon_Edit extends js.Object {
-  var edit: js.Function2[/* id */ java.lang.String, /* afterRevert */ js.UndefOr[js.Function0[scala.Unit]], _]
+  def edit(id: java.lang.String): js.Any = js.native
+  def edit(id: java.lang.String, afterRevert: js.Function0[scala.Unit]): js.Any = js.native
 }
 

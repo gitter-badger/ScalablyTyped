@@ -10,7 +10,7 @@ trait Entry extends js.Object {
   var city: js.UndefOr[java.lang.String] = js.undefined
   var country: js.UndefOr[java.lang.String] = js.undefined
   var countryCode: js.UndefOr[java.lang.String] = js.undefined
-  var extra: js.UndefOr[nodeDashGeocoderLib.Anon_Confidence] = js.undefined
+  var extra: js.UndefOr[nodeDashGeocoderLib.Anon_GooglePlaceId] = js.undefined
   var formattedAddress: js.UndefOr[java.lang.String] = js.undefined
   var latitude: js.UndefOr[scala.Double] = js.undefined
   var longitude: js.UndefOr[scala.Double] = js.undefined

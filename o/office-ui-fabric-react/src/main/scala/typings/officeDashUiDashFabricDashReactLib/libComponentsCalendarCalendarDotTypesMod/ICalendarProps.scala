@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ICalendarProps
-  extends reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLElement]
+  extends reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLElement with stdLib.HTMLElement]
      with atUifabricUtilitiesLib.libBaseComponentMod.IBaseProps[ICalendar] {
   /**
     * Allows all dates and buttons to be focused, including disabled ones

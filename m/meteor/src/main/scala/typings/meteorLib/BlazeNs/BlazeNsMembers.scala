@@ -22,10 +22,10 @@ object BlazeNsMembers extends js.Object {
   def With(data: js.Function, contentFunc: js.Function): View = js.native
   def With(data: js.Object, contentFunc: js.Function): View = js.native
   def getData(): js.Object = js.native
+  def getData(elementOrView: reactLib.HTMLElement with stdLib.HTMLElement): js.Object = js.native
   def getData(elementOrView: View): js.Object = js.native
-  def getData(elementOrView: reactLib.HTMLElement): js.Object = js.native
   def getView(): View = js.native
-  def getView(element: reactLib.HTMLElement): View = js.native
+  def getView(element: reactLib.HTMLElement with stdLib.HTMLElement): View = js.native
   def isTemplate(value: js.Any): scala.Boolean = js.native
   def remove(renderedView: View): scala.Unit = js.native
   def render(templateOrView: Template, parentNode: stdLib.Node): View = js.native

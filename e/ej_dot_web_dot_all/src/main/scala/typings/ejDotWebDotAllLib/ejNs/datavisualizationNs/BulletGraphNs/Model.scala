@@ -85,7 +85,7 @@ trait Model extends js.Object {
   /** Bullet graph will render in the specified orientation.
     * @Default {horizontal}
     */
-  var orientation: js.UndefOr[Orientation | java.lang.String] = js.undefined
+  var orientation: js.UndefOr[(Orientation with ejDotWebDotAllLib.ejNs.Orientation) | java.lang.String] = js.undefined
   /** Size of the qualitative range depends up on the specified value.
     * @Default {32}
     */

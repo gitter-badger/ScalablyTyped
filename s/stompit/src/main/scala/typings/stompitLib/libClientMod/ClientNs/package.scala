@@ -7,5 +7,9 @@ import scala.scalajs.js.annotation._
 
 package object ClientNs {
   type Ack = stompitLib.stompitLibStrings.auto | stompitLib.stompitLibStrings.client | stompitLib.stompitLibStrings.`client-individual`
-  type MessageCallback = js.Function2[/* err */ nodeLib.Error | scala.Null, /* message */ Message, scala.Unit]
+  type MessageCallback = js.Function2[
+    /* err */ (nodeLib.Error with stdLib.Error) | scala.Null, 
+    /* message */ Message, 
+    scala.Unit
+  ]
 }

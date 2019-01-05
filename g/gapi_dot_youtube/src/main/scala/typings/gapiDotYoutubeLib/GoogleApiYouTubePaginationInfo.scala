@@ -25,7 +25,7 @@ trait GoogleApiYouTubePaginationInfo[T] extends js.Object {
   /**
     * The pageInfo object encapsulates paging information for the result set.
     */
-  var pageInfo: Anon_ResultsPerPage
+  var pageInfo: Anon_TotalResults
   /**
     * The token that can be used as the value of the pageToken parameter to retrieve the previous page in the result set.
     */

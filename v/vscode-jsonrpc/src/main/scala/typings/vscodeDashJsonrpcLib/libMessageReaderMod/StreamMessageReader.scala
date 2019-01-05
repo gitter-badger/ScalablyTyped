@@ -50,12 +50,12 @@ class StreamMessageReader protected ()
     * @return
     */
   /* InferMemberOverrides */
-  override def onError(listener: js.Function1[/* e */ nodeLib.Error, _]): vscodeDashJsonrpcLib.libEventsMod.Disposable = js.native
+  override def onError(listener: js.Function1[/* e */ nodeLib.Error with stdLib.Error, _]): vscodeDashJsonrpcLib.libEventsMod.Disposable = js.native
   /* InferMemberOverrides */
-  override def onError(listener: js.Function1[/* e */ nodeLib.Error, _], thisArgs: js.Any): vscodeDashJsonrpcLib.libEventsMod.Disposable = js.native
+  override def onError(listener: js.Function1[/* e */ nodeLib.Error with stdLib.Error, _], thisArgs: js.Any): vscodeDashJsonrpcLib.libEventsMod.Disposable = js.native
   /* InferMemberOverrides */
   override def onError(
-    listener: js.Function1[/* e */ nodeLib.Error, _],
+    listener: js.Function1[/* e */ nodeLib.Error with stdLib.Error, _],
     thisArgs: js.Any,
     disposables: js.Array[vscodeDashJsonrpcLib.libEventsMod.Disposable]
   ): vscodeDashJsonrpcLib.libEventsMod.Disposable = js.native

@@ -40,7 +40,11 @@ object utilNsMembers extends js.Object {
   def asyncWaterfall[T](tasks: js.Array[adoneLib.adoneNs.utilNs.INs.WaterFallTask]): scala.Unit = js.native
   def asyncWaterfall[T](
     tasks: js.Array[adoneLib.adoneNs.utilNs.INs.WaterFallTask],
-    callback: js.Function2[/* err */ js.UndefOr[nodeLib.Error | scala.Null], /* repeated */ js.Any, scala.Unit]
+    callback: js.Function2[
+      /* err */ js.UndefOr[(nodeLib.Error with stdLib.Error) | scala.Null], 
+      /* repeated */ js.Any, 
+      scala.Unit
+    ]
   ): scala.Unit = js.native
   def clone(`object`: js.Any): js.Any = js.native
   def clone(`object`: js.Any, options: adoneLib.adoneNs.utilNs.INs.CloneOptions): js.Any = js.native
@@ -94,8 +98,8 @@ object utilNsMembers extends js.Object {
   def delegate(`object`: js.Object, property: java.lang.String): adoneLib.adoneNs.utilNs.INs.Delegator = js.native
   def entries(`object`: js.Object): js.Array[js.Tuple2[java.lang.String, _]] = js.native
   def entries(`object`: js.Object, options: adoneLib.adoneNs.utilNs.INs.KeysOptions): js.Array[js.Tuple2[java.lang.String, _]] = js.native
-  def enumerate[T](iterable: nodeLib.Iterable[T]): nodeLib.IterableIterator[js.Tuple2[scala.Double, T]] = js.native
-  def enumerate[T](iterable: nodeLib.Iterable[T], start: scala.Double): nodeLib.IterableIterator[js.Tuple2[scala.Double, T]] = js.native
+  def enumerate[T](iterable: nodeLib.Iterable[T] with stdLib.Iterable[T]): (nodeLib.IterableIterator[js.Tuple2[scala.Double, T]]) with (stdLib.IterableIterator[js.Tuple2[scala.Double, T]]) = js.native
+  def enumerate[T](iterable: nodeLib.Iterable[T] with stdLib.Iterable[T], start: scala.Double): (nodeLib.IterableIterator[js.Tuple2[scala.Double, T]]) with (stdLib.IterableIterator[js.Tuple2[scala.Double, T]]) = js.native
   def fillRange(from: java.lang.String, to: java.lang.String): js.Array[java.lang.String] = js.native
   def fillRange(
     from: java.lang.String,
@@ -110,7 +114,7 @@ object utilNsMembers extends js.Object {
   def fillRange(
     from: scala.Double,
     to: scala.Double,
-    options: (adoneLib.adoneNs.utilNs.INs.FillRangeOptions with adoneLib.Anon_Stringify) | adoneLib.adoneNs.utilNs.INs.FillRangeOptions
+    options: (adoneLib.adoneNs.utilNs.INs.FillRangeOptions with adoneLib.Anon_StringifyTrue) | adoneLib.adoneNs.utilNs.INs.FillRangeOptions
   ): js.Array[java.lang.String] = js.native
   @JSName("fillRange")
   def fillRange_String(
@@ -179,7 +183,7 @@ object utilNsMembers extends js.Object {
   def parseSize(str: scala.Double): scala.Double | scala.Null = js.native
   def parseTime(`val`: js.Any): scala.Double | scala.Null = js.native
   def parseTime(`val`: scala.Double): scala.Double = js.native
-  def pick(obj: js.Any, props: nodeLib.Iterable[_]): js.Object = js.native
+  def pick(obj: js.Any, props: nodeLib.Iterable[_] with stdLib.Iterable[_]): js.Object = js.native
   def pluralizeWord(str: java.lang.String): java.lang.String = js.native
   def pluralizeWord(str: java.lang.String, plural: java.lang.String): java.lang.String = js.native
   def pluralizeWord(str: java.lang.String, plural: java.lang.String, count: scala.Double): java.lang.String = js.native
@@ -250,13 +254,22 @@ object utilNsMembers extends js.Object {
   def unixifyPath(filePath: java.lang.String, unescape: scala.Boolean): java.lang.String = js.native
   def values(`object`: js.Object): js.Array[_] = js.native
   def values(`object`: js.Object, options: adoneLib.adoneNs.utilNs.INs.KeysOptions): js.Array[_] = js.native
-  def xrange(): nodeLib.IterableIterator[scala.Double] = js.native
-  def xrange(start: scala.Double): nodeLib.IterableIterator[scala.Double] = js.native
-  def xrange(start: scala.Double, stop: scala.Double): nodeLib.IterableIterator[scala.Double] = js.native
-  def xrange(start: scala.Double, stop: scala.Double, step: scala.Double): nodeLib.IterableIterator[scala.Double] = js.native
-  def zip(iterables: nodeLib.Iterable[_]*): nodeLib.IterableIterator[js.Array[_]] = js.native
-  def zip[T1, T2](a: nodeLib.Iterable[T1], b: nodeLib.Iterable[T2]): nodeLib.IterableIterator[js.Tuple2[T1, T2]] = js.native
-  def zip[T1, T2, T3](a: nodeLib.Iterable[T1], b: nodeLib.Iterable[T2], c: nodeLib.Iterable[T3]): nodeLib.IterableIterator[js.Tuple3[T1, T2, T3]] = js.native
-  def zip[T1, T2, T3, T4](a: nodeLib.Iterable[T1], b: nodeLib.Iterable[T2], c: nodeLib.Iterable[T3], d: nodeLib.Iterable[T4]): nodeLib.IterableIterator[js.Tuple4[T1, T2, T3, T4]] = js.native
+  def xrange(): nodeLib.IterableIterator[scala.Double] with stdLib.IterableIterator[scala.Double] = js.native
+  def xrange(start: scala.Double): nodeLib.IterableIterator[scala.Double] with stdLib.IterableIterator[scala.Double] = js.native
+  def xrange(start: scala.Double, stop: scala.Double): nodeLib.IterableIterator[scala.Double] with stdLib.IterableIterator[scala.Double] = js.native
+  def xrange(start: scala.Double, stop: scala.Double, step: scala.Double): nodeLib.IterableIterator[scala.Double] with stdLib.IterableIterator[scala.Double] = js.native
+  def zip(iterables: (nodeLib.Iterable[_] with stdLib.Iterable[_])*): nodeLib.IterableIterator[js.Array[_]] with stdLib.IterableIterator[js.Array[_]] = js.native
+  def zip[T1, T2](a: nodeLib.Iterable[T1] with stdLib.Iterable[T1], b: nodeLib.Iterable[T2] with stdLib.Iterable[T2]): (nodeLib.IterableIterator[js.Tuple2[T1, T2]]) with (stdLib.IterableIterator[js.Tuple2[T1, T2]]) = js.native
+  def zip[T1, T2, T3](
+    a: nodeLib.Iterable[T1] with stdLib.Iterable[T1],
+    b: nodeLib.Iterable[T2] with stdLib.Iterable[T2],
+    c: nodeLib.Iterable[T3] with stdLib.Iterable[T3]
+  ): (nodeLib.IterableIterator[js.Tuple3[T1, T2, T3]]) with (stdLib.IterableIterator[js.Tuple3[T1, T2, T3]]) = js.native
+  def zip[T1, T2, T3, T4](
+    a: nodeLib.Iterable[T1] with stdLib.Iterable[T1],
+    b: nodeLib.Iterable[T2] with stdLib.Iterable[T2],
+    c: nodeLib.Iterable[T3] with stdLib.Iterable[T3],
+    d: nodeLib.Iterable[T4] with stdLib.Iterable[T4]
+  ): (nodeLib.IterableIterator[js.Tuple4[T1, T2, T3, T4]]) with (stdLib.IterableIterator[js.Tuple4[T1, T2, T3, T4]]) = js.native
 }
 

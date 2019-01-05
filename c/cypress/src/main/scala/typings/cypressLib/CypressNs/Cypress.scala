@@ -29,11 +29,11 @@ trait Cypress extends js.Object {
     * @example
     *    Cypress.Blob.method()
     */
-  var Blob: cypressLib.BlobUtilNs.BlobUtilStatic = js.native
+  var Blob: /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify BlobUtil.BlobUtilStatic */ js.Any = js.native
   /**
     * @see https://on.cypress.io/api/commands
     */
-  var Commands: cypressLib.Anon_Overwrite = js.native
+  var Commands: cypressLib.Anon_Add = js.native
   /**
     * @see https://on.cypress.io/cookies
     */
@@ -46,15 +46,15 @@ trait Cypress extends js.Object {
     * @example
     *   new Cypress.Promise((resolve, reject) => { ... })
     */
-  var Promise: cypressLib.BluebirdNs.BluebirdStatic = js.native
+  var Promise: /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify Bluebird.BluebirdStatic */ js.Any = js.native
   /**
     * @see https://on.cypress.io/api/screenshot-api
     */
-  var Screenshot: cypressLib.Anon_Defaults = js.native
+  var Screenshot: cypressLib.Anon_DefaultsOptions = js.native
   /**
     * @see https://on.cypress.io/api/api-server
     */
-  var Server: cypressLib.Anon_DefaultsOptions = js.native
+  var Server: cypressLib.Anon_Defaults = js.native
   /**
     * Lodash library
     *
@@ -85,7 +85,7 @@ trait Cypress extends js.Object {
     *
     * @see https://on.cypress.io/minimatch
     */
-  var minimatch: cypressLib.MimimatchNs.MimimatchStatic = js.native
+  var minimatch: /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify Mimimatch.MimimatchStatic */ js.Any = js.native
   /**
     * Cypress automatically includes moment.js and exposes it as Cypress.moment.
     *
@@ -94,8 +94,7 @@ trait Cypress extends js.Object {
     * @example
     *    const todaysDate = Cypress.moment().format("MMM DD, YYYY")
     */
-  @JSName("moment")
-  var moment_Original: cypressLib.MomentNs.MomentStatic = js.native
+  var moment: /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify Moment.MomentStatic */ js.Any = js.native
   /**
     * These events come from Cypress as it issues commands and reacts to their state. These are all useful to listen to for debugging purposes.
     * @see https://on.cypress.io/catalog-of-events#App-Events
@@ -119,7 +118,7 @@ trait Cypress extends js.Object {
   /**
     * Currently executing spec file.
     */
-  var spec: cypressLib.Anon_Absolute = js.native
+  var spec: cypressLib.Anon_Name = js.native
   /**
     * Cypress version string. i.e. "1.1.2"
     * @see https://on.cypress.io/version
@@ -637,76 +636,6 @@ trait Cypress extends js.Object {
     */
   def log(options: stdLib.Partial[LogConfig]): Log = js.native
   /**
-    * Cypress automatically includes moment.js and exposes it as Cypress.moment.
-    *
-    * @see https://on.cypress.io/moment
-    * @see http://momentjs.com/
-    * @example
-    *    const todaysDate = Cypress.moment().format("MMM DD, YYYY")
-    */
-  def moment(): momentLib.momentMod.momentNs.Moment = js.native
-  /**
-    * Cypress automatically includes moment.js and exposes it as Cypress.moment.
-    *
-    * @see https://on.cypress.io/moment
-    * @see http://momentjs.com/
-    * @example
-    *    const todaysDate = Cypress.moment().format("MMM DD, YYYY")
-    */
-  def moment(inp: momentLib.momentMod.momentNs.MomentInput): momentLib.momentMod.momentNs.Moment = js.native
-  /**
-    * Cypress automatically includes moment.js and exposes it as Cypress.moment.
-    *
-    * @see https://on.cypress.io/moment
-    * @see http://momentjs.com/
-    * @example
-    *    const todaysDate = Cypress.moment().format("MMM DD, YYYY")
-    */
-  def moment(
-    inp: momentLib.momentMod.momentNs.MomentInput,
-    format: momentLib.momentMod.momentNs.MomentFormatSpecification
-  ): momentLib.momentMod.momentNs.Moment = js.native
-  /**
-    * Cypress automatically includes moment.js and exposes it as Cypress.moment.
-    *
-    * @see https://on.cypress.io/moment
-    * @see http://momentjs.com/
-    * @example
-    *    const todaysDate = Cypress.moment().format("MMM DD, YYYY")
-    */
-  def moment(
-    inp: momentLib.momentMod.momentNs.MomentInput,
-    format: momentLib.momentMod.momentNs.MomentFormatSpecification,
-    language: java.lang.String
-  ): momentLib.momentMod.momentNs.Moment = js.native
-  /**
-    * Cypress automatically includes moment.js and exposes it as Cypress.moment.
-    *
-    * @see https://on.cypress.io/moment
-    * @see http://momentjs.com/
-    * @example
-    *    const todaysDate = Cypress.moment().format("MMM DD, YYYY")
-    */
-  def moment(
-    inp: momentLib.momentMod.momentNs.MomentInput,
-    format: momentLib.momentMod.momentNs.MomentFormatSpecification,
-    language: java.lang.String,
-    strict: scala.Boolean
-  ): momentLib.momentMod.momentNs.Moment = js.native
-  /**
-    * Cypress automatically includes moment.js and exposes it as Cypress.moment.
-    *
-    * @see https://on.cypress.io/moment
-    * @see http://momentjs.com/
-    * @example
-    *    const todaysDate = Cypress.moment().format("MMM DD, YYYY")
-    */
-  def moment(
-    inp: momentLib.momentMod.momentNs.MomentInput,
-    format: momentLib.momentMod.momentNs.MomentFormatSpecification,
-    strict: scala.Boolean
-  ): momentLib.momentMod.momentNs.Moment = js.native
-  /**
     * Fires when cy finishes running and executing your command. Useful for debugging and understanding how commands are handled.
     * @see https://on.cypress.io/catalog-of-events#App-Events
     */
@@ -769,7 +698,11 @@ trait Cypress extends js.Object {
   @JSName("off")
   def off_fail(
     action: cypressLib.cypressLibStrings.fail,
-    fn: js.Function2[/* error */ nodeLib.Error, /* mocha */ mochaLib.MochaNs.IRunnable, scala.Unit]
+    fn: js.Function2[
+      /* error */ nodeLib.Error with stdLib.Error, 
+      /* mocha */ mochaLib.MochaNs.IRunnable, 
+      scala.Unit
+    ]
   ): scala.Unit = js.native
   /**
     * Fires whenever a command emits this event so it can be displayed in the Command Log. Useful to see how internal cypress commands utilize the {% url 'Cypress.log()' cypress-log %} API.
@@ -869,7 +802,7 @@ trait Cypress extends js.Object {
   def `off_uncaught:exception`(
     action: cypressLib.cypressLibStrings.`uncaught:exception`,
     fn: js.Function2[
-      /* error */ nodeLib.Error, 
+      /* error */ nodeLib.Error with stdLib.Error, 
       /* runnable */ mochaLib.MochaNs.IRunnable, 
       cypressLib.cypressLibNumbers.`false` | scala.Unit
     ]
@@ -935,7 +868,7 @@ trait Cypress extends js.Object {
   @JSName("off")
   def `off_window:before:load`(
     action: cypressLib.cypressLibStrings.`window:before:load`,
-    fn: js.Function1[/* win */ mochaLib.Window, scala.Unit]
+    fn: js.Function1[/* win */ mochaLib.Window with stdLib.Window, scala.Unit]
   ): scala.Unit = js.native
   /**
     * Fires when your application is about to navigate away. The real event object is provided to you. Your app may have set a `returnValue` on the event, which is useful to assert on.
@@ -985,7 +918,7 @@ trait Cypress extends js.Object {
   @JSName("off")
   def `off_window:load`(
     action: cypressLib.cypressLibStrings.`window:load`,
-    fn: js.Function1[/* win */ mochaLib.Window, scala.Unit]
+    fn: js.Function1[/* win */ mochaLib.Window with stdLib.Window, scala.Unit]
   ): scala.Unit = js.native
   /**
     * Fires when your application is has unloaded and is navigating away. The real event object is provided to you. This event is not cancelable.
@@ -1063,7 +996,11 @@ trait Cypress extends js.Object {
   @JSName("on")
   def on_fail(
     action: cypressLib.cypressLibStrings.fail,
-    fn: js.Function2[/* error */ nodeLib.Error, /* mocha */ mochaLib.MochaNs.IRunnable, scala.Unit]
+    fn: js.Function2[
+      /* error */ nodeLib.Error with stdLib.Error, 
+      /* mocha */ mochaLib.MochaNs.IRunnable, 
+      scala.Unit
+    ]
   ): scala.Unit = js.native
   /**
     * Fires whenever a command emits this event so it can be displayed in the Command Log. Useful to see how internal cypress commands utilize the {% url 'Cypress.log()' cypress-log %} API.
@@ -1163,7 +1100,7 @@ trait Cypress extends js.Object {
   def `on_uncaught:exception`(
     action: cypressLib.cypressLibStrings.`uncaught:exception`,
     fn: js.Function2[
-      /* error */ nodeLib.Error, 
+      /* error */ nodeLib.Error with stdLib.Error, 
       /* runnable */ mochaLib.MochaNs.IRunnable, 
       cypressLib.cypressLibNumbers.`false` | scala.Unit
     ]
@@ -1229,7 +1166,7 @@ trait Cypress extends js.Object {
   @JSName("on")
   def `on_window:before:load`(
     action: cypressLib.cypressLibStrings.`window:before:load`,
-    fn: js.Function1[/* win */ mochaLib.Window, scala.Unit]
+    fn: js.Function1[/* win */ mochaLib.Window with stdLib.Window, scala.Unit]
   ): scala.Unit = js.native
   /**
     * Fires when your application is about to navigate away. The real event object is provided to you. Your app may have set a `returnValue` on the event, which is useful to assert on.
@@ -1279,7 +1216,7 @@ trait Cypress extends js.Object {
   @JSName("on")
   def `on_window:load`(
     action: cypressLib.cypressLibStrings.`window:load`,
-    fn: js.Function1[/* win */ mochaLib.Window, scala.Unit]
+    fn: js.Function1[/* win */ mochaLib.Window with stdLib.Window, scala.Unit]
   ): scala.Unit = js.native
   /**
     * Fires when your application is has unloaded and is navigating away. The real event object is provided to you. This event is not cancelable.

@@ -81,7 +81,7 @@ class KiiGroup () extends js.Object {
     *     );
     */
   def changeGroupName(newName: java.lang.String): js.Promise[KiiGroup] = js.native
-  def changeGroupName(newName: java.lang.String, callbacks: kiiDashCloudDashSdkLib.Anon_FailureTheGroupAnErrorString): js.Promise[KiiGroup] = js.native
+  def changeGroupName(newName: java.lang.String, callbacks: kiiDashCloudDashSdkLib.Anon_SuccessTheRenamedGroup): js.Promise[KiiGroup] = js.native
   /**
     * Delete the group from the server
     *
@@ -129,7 +129,7 @@ class KiiGroup () extends js.Object {
     *     );
     */
   def delete(): js.Promise[KiiGroup] = js.native
-  def delete(callbacks: kiiDashCloudDashSdkLib.Anon_FailureTheGroupAnErrorString): js.Promise[KiiGroup] = js.native
+  def delete(callbacks: kiiDashCloudDashSdkLib.Anon_SuccessTheDeletedGroup): js.Promise[KiiGroup] = js.native
   /**
     * Creates a reference to a encrypted bucket for this group
     *
@@ -222,7 +222,7 @@ class KiiGroup () extends js.Object {
     *     );
     */
   def getMemberList(): js.Promise[js.Tuple2[KiiGroup, js.Array[KiiUser]]] = js.native
-  def getMemberList(callbacks: kiiDashCloudDashSdkLib.Anon_FailureTheGroupAnErrorStringSuccessMemberList): js.Promise[js.Tuple2[KiiGroup, js.Array[KiiUser]]] = js.native
+  def getMemberList(callbacks: kiiDashCloudDashSdkLib.Anon_SuccessTheGroup): js.Promise[js.Tuple2[KiiGroup, js.Array[KiiUser]]] = js.native
   /**
     * The name of this group
     *
@@ -276,7 +276,7 @@ class KiiGroup () extends js.Object {
     *     );
     */
   def getOwner(): js.Promise[js.Tuple2[KiiGroup, KiiUser]] = js.native
-  def getOwner(callbacks: kiiDashCloudDashSdkLib.Anon_FailureTheGroupAnErrorStringSuccess): js.Promise[js.Tuple2[KiiGroup, KiiUser]] = js.native
+  def getOwner(callbacks: kiiDashCloudDashSdkLib.Anon_SuccessTheGroupTheOwner): js.Promise[js.Tuple2[KiiGroup, KiiUser]] = js.native
   /**
     *
     *
@@ -352,8 +352,8 @@ class KiiGroup () extends js.Object {
     *     );
     */
   def listTopics(): js.Promise[js.Tuple2[js.Array[KiiTopic], java.lang.String]] = js.native
-  def listTopics(callbacks: kiiDashCloudDashSdkLib.Anon_FailureAnErrorString): js.Promise[js.Tuple2[js.Array[KiiTopic], java.lang.String]] = js.native
-  def listTopics(callbacks: kiiDashCloudDashSdkLib.Anon_FailureAnErrorString, paginationKey: java.lang.String): js.Promise[js.Tuple2[js.Array[KiiTopic], java.lang.String]] = js.native
+  def listTopics(callbacks: kiiDashCloudDashSdkLib.Anon_SuccessTopicList): js.Promise[js.Tuple2[js.Array[KiiTopic], java.lang.String]] = js.native
+  def listTopics(callbacks: kiiDashCloudDashSdkLib.Anon_SuccessTopicList, paginationKey: java.lang.String): js.Promise[js.Tuple2[js.Array[KiiTopic], java.lang.String]] = js.native
   /**
     * Get a specifically formatted string referencing the group
     *
@@ -409,7 +409,7 @@ class KiiGroup () extends js.Object {
     *     );
     */
   def refresh(): js.Promise[KiiGroup] = js.native
-  def refresh(callbacks: kiiDashCloudDashSdkLib.Anon_FailureTheGroupAnErrorString): js.Promise[KiiGroup] = js.native
+  def refresh(callbacks: kiiDashCloudDashSdkLib.Anon_SuccessTheRefreshedGroup): js.Promise[KiiGroup] = js.native
   /**
     * Removes a user from the given group
     *
@@ -473,7 +473,7 @@ class KiiGroup () extends js.Object {
     *     });
     */
   def save(): js.Promise[KiiGroup] = js.native
-  def save(callbacks: kiiDashCloudDashSdkLib.Anon_FailureTheGroupAnErrorStringAddMembersArray): js.Promise[KiiGroup] = js.native
+  def save(callbacks: kiiDashCloudDashSdkLib.Anon_SuccessTheSavedGroup): js.Promise[KiiGroup] = js.native
   /**
     * Saves the latest group values to the server with specified owner.
     * This method can be used only by the group owner or app admin.
@@ -525,10 +525,7 @@ class KiiGroup () extends js.Object {
     *     });
     */
   def saveWithOwner(user: java.lang.String): js.Promise[KiiGroup] = js.native
-  def saveWithOwner(
-    user: java.lang.String,
-    callbacks: kiiDashCloudDashSdkLib.Anon_FailureTheGroupAnErrorStringAddMembersArray
-  ): js.Promise[KiiGroup] = js.native
+  def saveWithOwner(user: java.lang.String, callbacks: kiiDashCloudDashSdkLib.Anon_SuccessTheSavedGroup): js.Promise[KiiGroup] = js.native
   /**
     * Instantiate topic belongs to this group.
     *
@@ -669,7 +666,7 @@ object KiiGroup extends js.Object {
     groupID: java.lang.String,
     groupName: java.lang.String,
     members: js.Array[kiiDashCloudDashSdkLib.KiiCloudNs.KiiUser],
-    callbacks: kiiDashCloudDashSdkLib.Anon_FailureTheGroupAnErrorStringAddMembersArray
+    callbacks: kiiDashCloudDashSdkLib.Anon_SuccessTheSavedGroup
   ): js.Promise[kiiDashCloudDashSdkLib.KiiCloudNs.KiiGroup] = js.native
 }
 

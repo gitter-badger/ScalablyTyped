@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 package object passportDashSamlMod {
   type VerifiedCallback = js.Function3[
-    /* err */ nodeLib.Error | scala.Null, 
+    /* err */ (nodeLib.Error with stdLib.Error) | scala.Null, 
     /* user */ js.Object, 
     /* info */ js.Object, 
     scala.Unit

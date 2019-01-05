@@ -12,6 +12,6 @@ trait ConnectionsResource extends js.Object {
     * <br>
     * The request throws a 400 error if 'personFields' is not specified.
     */
-  def list(request: gapiDotClientDotPeopleLib.Anon_AccesstokenPersonFieldsPageSize): gapiDotClientLib.gapiNs.clientNs.Request[ListConnectionsResponse]
+  def list(request: gapiDotClientDotPeopleLib.Anon_XgafvAccesstokenAltBearertokenCallbackFieldsKey): gapiDotClientLib.gapiNs.clientNs.Request[ListConnectionsResponse]
 }
 

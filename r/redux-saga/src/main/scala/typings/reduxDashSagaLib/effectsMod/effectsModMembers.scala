@@ -48,9 +48,9 @@ object effectsModMembers extends js.Object {
   @JSName("apply")
   def apply[C /* <: reduxDashSagaLib.reduxDashSagaLibStrings.apply with js.Any */, N /* <: java.lang.String */, T1, T2, T3, T4, T5](context: C, fn: N, args: js.Tuple5[T1, T2, T3, T4, T5]): CallEffect = js.native
   @JSName("apply")
-  def apply[T1, T2, T3, T4, T5, T6, AA /* <: js.Array[_] with (reduxDashSagaLib.Anon_4[T1, T3, T5, T4, T2, T6]) */](context: js.Any, fn: Func6Rest[T1, T2, T3, T4, T5, T6], args: AA): CallEffect = js.native
+  def apply[T1, T2, T3, T4, T5, T6, AA /* <: js.Array[_] with (reduxDashSagaLib.Anon_0[T1, T3, T5, T4, T2, T6]) */](context: js.Any, fn: Func6Rest[T1, T2, T3, T4, T5, T6], args: AA): CallEffect = js.native
   @JSName("apply")
-  def apply[C /* <: reduxDashSagaLib.reduxDashSagaLibStrings.apply with js.Any */, N /* <: java.lang.String */, T1, T2, T3, T4, T5, T6, AA /* <: js.Array[_] with (reduxDashSagaLib.Anon_4[T1, T3, T5, T4, T2, T6]) */](context: C, fn: N, args: AA): CallEffect = js.native
+  def apply[C /* <: reduxDashSagaLib.reduxDashSagaLibStrings.apply with js.Any */, N /* <: java.lang.String */, T1, T2, T3, T4, T5, T6, AA /* <: js.Array[_] with (reduxDashSagaLib.Anon_0[T1, T3, T5, T4, T2, T6]) */](context: C, fn: N, args: AA): CallEffect = js.native
   def cancel(): CancelEffect = js.native
   def cancel(task: reduxDashSagaLib.reduxDashSagaMod.Task): CancelEffect = js.native
   def cancel(tasks: reduxDashSagaLib.reduxDashSagaMod.Task*): js.Array[CancelEffect] = js.native

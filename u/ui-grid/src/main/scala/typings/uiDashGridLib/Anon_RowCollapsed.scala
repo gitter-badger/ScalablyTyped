@@ -11,11 +11,10 @@ trait Anon_RowCollapsed[TEntity] extends js.Object {
     * @param {ng.IScope} scope Grid scope
     * @param {rowCollapsedHandler} handler Callback
     */
-  var rowCollapsed: js.Function2[
-    /* scope */ angularLib.angularMod.angularNs.IScope, 
-    /* handler */ uiDashGridLib.uiDashGridMod.uiGridNs.treeBaseNs.rowCollapsedHandler[TEntity], 
-    scala.Unit
-  ]
+  def rowCollapsed(
+    scope: angularLib.angularMod.angularNs.IScope,
+    handler: uiDashGridLib.uiDashGridMod.uiGridNs.treeBaseNs.rowCollapsedHandler[TEntity]
+  ): scala.Unit
   /**
     * Raised whenever a row is expanded.
     *
@@ -26,10 +25,9 @@ trait Anon_RowCollapsed[TEntity] extends js.Object {
     * @param {ng.IScope} scope Grid Scope
     * @param {rowExpandedHandler} handler Callback
     */
-  var rowExpanded: js.Function2[
-    /* scope */ angularLib.angularMod.angularNs.IScope, 
-    /* handler */ uiDashGridLib.uiDashGridMod.uiGridNs.treeBaseNs.rowExpandedHandler[TEntity], 
-    scala.Unit
-  ]
+  def rowExpanded(
+    scope: angularLib.angularMod.angularNs.IScope,
+    handler: uiDashGridLib.uiDashGridMod.uiGridNs.treeBaseNs.rowExpandedHandler[TEntity]
+  ): scala.Unit
 }
 

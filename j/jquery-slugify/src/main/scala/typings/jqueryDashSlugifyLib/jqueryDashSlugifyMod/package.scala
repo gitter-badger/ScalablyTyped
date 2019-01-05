@@ -6,5 +6,5 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object jqueryDashSlugifyMod {
-  type Options = stdLib.Partial[jqueryDashSlugifyLib.Anon_Custom]
+  type Options = stdLib.Partial[jqueryDashSlugifyLib.Anon_PreSlug]
 }

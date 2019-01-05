@@ -17,6 +17,6 @@ trait MulterGridfsStorage
   var connected: scala.Boolean = js.native
   var connecting: scala.Boolean = js.native
   var db: mongodbLib.mongodbMod.Db = js.native
-  var error: nodeLib.Error = js.native
+  var error: nodeLib.Error with stdLib.Error = js.native
 }
 

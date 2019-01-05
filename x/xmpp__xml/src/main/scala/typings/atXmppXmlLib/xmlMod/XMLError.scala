@@ -6,7 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait XMLError
-  extends nodeLib.Error {
-  val name: atXmppXmlLib.atXmppXmlLibStrings.XMLError
+  extends stdLib.Error {
+  @JSName("name")
+  val name_XMLError: atXmppXmlLib.atXmppXmlLibStrings.XMLError
 }
 

@@ -15,7 +15,7 @@ trait ShadowPropTypesIOSStatic extends js.Object {
     * Sets the drop shadow offset
     * @platform ios
     */
-  var shadowOffset: reactDashNativeLib.Anon_Height
+  var shadowOffset: reactDashNativeLib.Anon_Width
   /**
     * Sets the drop shadow opacity (multiplied by the color's alpha component)
     * @platform ios

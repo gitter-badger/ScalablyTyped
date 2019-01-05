@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait IFocusTrapZoneProps
-  extends reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLDivElement] {
+  extends reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLDivElement with stdLib.HTMLDivElement] {
   /**
     * Sets the aria-labelledby attribute.
     */
@@ -25,7 +25,7 @@ trait IFocusTrapZoneProps
     * Sets the HTMLElement to focus on when exiting the FocusTrapZone.
     * @defaultvalue The element.target that triggered the FTZ.
     */
-  var elementToFocusOnDismiss: js.UndefOr[reactLib.HTMLElement] = js.undefined
+  var elementToFocusOnDismiss: js.UndefOr[reactLib.HTMLElement with stdLib.HTMLElement] = js.undefined
   /**
     * Indicates the selector for first focusable item.  Only applies if focusPreviouslyFocusedInnerElement == false.
     */

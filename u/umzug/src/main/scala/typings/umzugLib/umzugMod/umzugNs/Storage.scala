@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
   */
 trait Storage extends js.Object {
   /** Gets list of executed migrations. */
-  def executed(): js.Promise[js.Array[nodeLib.String]]
+  def executed(): js.Promise[js.Array[nodeLib.String with java.lang.String]]
   /**
     * Logs migration to be considered as executed.
     *

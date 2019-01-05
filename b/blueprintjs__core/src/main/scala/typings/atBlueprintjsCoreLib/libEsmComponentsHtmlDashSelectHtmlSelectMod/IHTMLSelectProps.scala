@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait IHTMLSelectProps
-  extends reactLib.reactMod.ReactNs.SelectHTMLAttributes[reactLib.HTMLSelectElement]
-     with atBlueprintjsCoreLib.libEsmComponentsHtmlHtmlMod.IElementRefProps[reactLib.HTMLSelectElement] {
+  extends reactLib.reactMod.ReactNs.SelectHTMLAttributes[reactLib.HTMLSelectElement with stdLib.HTMLSelectElement]
+     with atBlueprintjsCoreLib.libEsmComponentsHtmlHtmlMod.IElementRefProps[reactLib.HTMLSelectElement with stdLib.HTMLSelectElement] {
   /** Whether this element should fill its container. */
   var fill: js.UndefOr[scala.Boolean] = js.undefined
   /** Props to spread to the `<Icon>` element. */
@@ -21,7 +21,9 @@ trait IHTMLSelectProps
   var multiple_IHTMLSelectProps: js.UndefOr[scala.Nothing] = js.undefined
   /** Change event handler. Use `event.currentTarget.value` to access the new value. */
   @JSName("onChange")
-  var onChange_IHTMLSelectProps: js.UndefOr[reactLib.reactMod.ReactNs.ChangeEventHandler[reactLib.HTMLSelectElement]] = js.undefined
+  var onChange_IHTMLSelectProps: js.UndefOr[
+    reactLib.reactMod.ReactNs.ChangeEventHandler[reactLib.HTMLSelectElement with stdLib.HTMLSelectElement]
+  ] = js.undefined
   /**
     * Shorthand for supplying options: an array of basic types or
     * `{ label?, value }` objects. If no `label` is supplied, `value`

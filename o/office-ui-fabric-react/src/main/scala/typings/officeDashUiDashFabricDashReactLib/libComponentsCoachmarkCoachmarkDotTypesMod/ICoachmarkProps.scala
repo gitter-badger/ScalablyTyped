@@ -108,7 +108,7 @@ trait ICoachmarkProps
   /**
     * Callback to run when the mouse moves.
     */
-  var onMouseMove: js.UndefOr[js.Function1[/* e */ reactLib.MouseEvent, scala.Unit]] = js.undefined
+  var onMouseMove: js.UndefOr[js.Function1[/* e */ reactLib.MouseEvent with stdLib.MouseEvent, scala.Unit]] = js.undefined
   /**
     * Props to pass to the PositioningContainer component. Specify the `directionalHint` to indicate
     * on which edge the Coachmark/TeachingBubble should be positioned.
@@ -137,7 +137,7 @@ trait ICoachmarkProps
   /**
     * The target that the Coachmark should try to position itself based on.
     */
-  var target: reactLib.HTMLElement | java.lang.String | scala.Null
+  var target: (reactLib.HTMLElement with stdLib.HTMLElement) | java.lang.String | scala.Null
   /**
     * Ref for TeachingBubble
     * @deprecated Coachmark uses `focusFirstChild` utility instead to focus on TeachingBubbleContent

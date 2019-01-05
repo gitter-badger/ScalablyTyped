@@ -8,7 +8,9 @@ import scala.scalajs.js.annotation._
 trait IconProps extends js.Object {
   var className: js.UndefOr[java.lang.String] = js.undefined
   var component: js.UndefOr[reactLib.reactMod.ReactNs.ComponentType[CustomIconComponentProps]] = js.undefined
-  var onClick: js.UndefOr[reactLib.reactMod.ReactNs.MouseEventHandler[reactLib.HTMLElement]] = js.undefined
+  var onClick: js.UndefOr[
+    reactLib.reactMod.ReactNs.MouseEventHandler[reactLib.HTMLElement with stdLib.HTMLElement]
+  ] = js.undefined
   var prefixCls: js.UndefOr[java.lang.String] = js.undefined
   var spin: js.UndefOr[scala.Boolean] = js.undefined
   var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined

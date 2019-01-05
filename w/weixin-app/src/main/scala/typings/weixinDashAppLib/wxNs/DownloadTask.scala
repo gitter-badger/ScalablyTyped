@@ -17,6 +17,6 @@ trait DownloadTask extends js.Object {
   		 * @version 1.4.0
   		 */
   def onProgressUpdate(): scala.Unit = js.native
-  def onProgressUpdate(callback: js.Function1[/* res */ weixinDashAppLib.Anon_Progress, scala.Unit]): scala.Unit = js.native
+  def onProgressUpdate(callback: js.Function1[/* res */ weixinDashAppLib.Anon_ProgressTotalBytesWritten, scala.Unit]): scala.Unit = js.native
 }
 

@@ -24,6 +24,6 @@ trait Anon_Regions extends js.Object {
     * removed.
     */
   def remove(): scala.Unit = js.native
-  def remove(args: Anon_ValueClass): scala.Unit = js.native
+  def remove(args: Anon_Value): scala.Unit = js.native
 }
 

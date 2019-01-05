@@ -10,7 +10,7 @@ trait TestContext extends js.Object {
   var parent: js.Any
   var path: java.lang.String
   var schema: Schema[_]
-  def createError(params: yupLib.Anon_Message): ValidationError
+  def createError(params: yupLib.Anon_Path): ValidationError
   def resolve(value: js.Any): js.Any
 }
 

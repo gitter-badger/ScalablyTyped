@@ -20,7 +20,7 @@ object policiesNs extends js.Object {
     }
     
     trait EC2MultiRegionTranslator extends AddressTranslator {
-      def logError(address: java.lang.String, err: nodeLib.Error): scala.Unit
+      def logError(address: java.lang.String, err: nodeLib.Error with stdLib.Error): scala.Unit
     }
     
     @js.native
@@ -148,7 +148,7 @@ object policiesNs extends js.Object {
         writeType: java.lang.String
       ): DecisionInfo
       def rethrowResult(): cassandraDashDriverLib.Anon_Decision
-      def retryResult(): cassandraDashDriverLib.Anon_UseCurrentHost
+      def retryResult(): cassandraDashDriverLib.Anon_DecisionConsistency
     }
     
     @js.native

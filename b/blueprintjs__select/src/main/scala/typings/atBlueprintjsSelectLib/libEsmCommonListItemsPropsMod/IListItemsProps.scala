@@ -81,7 +81,9 @@ trait IListItemsProps[T]
   var onQueryChange: js.UndefOr[
     js.Function2[
       /* query */ java.lang.String, 
-      /* event */ js.UndefOr[reactLib.reactMod.ReactNs.ChangeEvent[reactLib.HTMLInputElement]], 
+      /* event */ js.UndefOr[
+        reactLib.reactMod.ReactNs.ChangeEvent[reactLib.HTMLInputElement with stdLib.HTMLInputElement]
+      ], 
       scala.Unit
     ]
   ] = js.native
@@ -123,6 +125,9 @@ trait IListItemsProps[T]
     * typically by clicking or pressing `enter` key.
     */
   def onItemSelect(item: T): scala.Unit = js.native
-  def onItemSelect(item: T, event: reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.HTMLElement, reactLib.Event]): scala.Unit = js.native
+  def onItemSelect(
+    item: T,
+    event: reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.HTMLElement with stdLib.HTMLElement, reactLib.Event]
+  ): scala.Unit = js.native
 }
 

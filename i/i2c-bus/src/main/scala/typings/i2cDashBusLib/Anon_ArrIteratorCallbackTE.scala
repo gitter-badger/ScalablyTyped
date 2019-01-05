@@ -9,12 +9,12 @@ import scala.scalajs.js.annotation._
 trait Anon_ArrIteratorCallbackTE extends js.Object {
   def apply[T, E](
     arr: i2cDashBusLib.asyncMod.IterableCollection[T],
-    iterator: i2cDashBusLib.asyncMod.AsyncIterator[T, E]
+    iterator: i2cDashBusLib.asyncMod.AsyncBooleanIterator[T, E]
   ): scala.Unit = js.native
   def apply[T, E](
     arr: i2cDashBusLib.asyncMod.IterableCollection[T],
-    iterator: i2cDashBusLib.asyncMod.AsyncIterator[T, E],
-    callback: i2cDashBusLib.asyncMod.ErrorCallback[E]
+    iterator: i2cDashBusLib.asyncMod.AsyncBooleanIterator[T, E],
+    callback: i2cDashBusLib.asyncMod.AsyncBooleanResultCallback[E]
   ): scala.Unit = js.native
 }
 

@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ColProps
-  extends reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLDivElement] {
+  extends reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLDivElement with stdLib.HTMLDivElement] {
   var lg: js.UndefOr[scala.Double] = js.undefined
   var `lg-offset`: js.UndefOr[scala.Double] = js.undefined
   var md: js.UndefOr[scala.Double] = js.undefined

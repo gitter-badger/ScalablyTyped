@@ -5,8 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveDifficultInheritance: 
-- Lifted 3 members from Set(std.Pick<@material-ui/core.@material-ui/core/Modal.ModalProps & std.Partial<@material-ui/core.@material-ui/core/transitions/transition.TransitionHandlerProps>, std.Exclude<keyof @material-ui/core.@material-ui/core/Modal.ModalProps & std.Partial<@material-ui/core.@material-ui/core/transitions/transition.TransitionHandlerProps>, 'classes' | 'children'>>, @material-ui/core.@material-ui/core.StandardProps<@material-ui/core.@material-ui/core/Modal.ModalProps & std.Partial<@material-ui/core.@material-ui/core/transitions/transition.TransitionHandlerProps>, @material-ui/core.@material-ui/core/Popover/Popover.PopoverClassKey, 'children'>) */ trait PopoverProps
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
+- Dropped {[ P in std.Exclude<keyof @material-ui/core.@material-ui/core/Modal.ModalProps & std.Partial<@material-ui/core.@material-ui/core/transitions/transition.TransitionHandlerProps>, 'classes' | 'children'> ]: @material-ui/core.@material-ui/core/Modal.ModalProps & std.Partial<@material-ui/core.@material-ui/core/transitions/transition.TransitionHandlerProps>[P]}
+- Lifted 2 members from Set(@material-ui/core.@material-ui/core.StandardProps<@material-ui/core.@material-ui/core/Modal.ModalProps & std.Partial<@material-ui/core.@material-ui/core/transitions/transition.TransitionHandlerProps>, @material-ui/core.@material-ui/core/Popover/Popover.PopoverClassKey, 'children'>) */ trait PopoverProps
   extends atMaterialDashUiCoreLib.stylesWithStylesMod.StyledComponentProps[PopoverClassKey] {
   var ModalClasses: js.UndefOr[
     stdLib.Partial[
@@ -18,7 +19,10 @@ import scala.scalajs.js.annotation._
   var TransitionProps: js.UndefOr[atMaterialDashUiCoreLib.transitionsTransitionMod.TransitionProps] = js.undefined
   var action: js.UndefOr[js.Function1[/* actions */ PopoverActions, scala.Unit]] = js.undefined
   var anchorEl: js.UndefOr[
-    scala.Null | reactLib.HTMLElement | (js.Function1[/* element */ reactLib.HTMLElement, reactLib.HTMLElement])
+    scala.Null | (reactLib.HTMLElement with stdLib.HTMLElement) | (js.Function1[
+      /* element */ reactLib.HTMLElement with stdLib.HTMLElement, 
+      reactLib.HTMLElement with stdLib.HTMLElement
+    ])
   ] = js.undefined
   var anchorOrigin: js.UndefOr[PopoverOrigin] = js.undefined
   var anchorPosition: js.UndefOr[PopoverPosition] = js.undefined
@@ -27,7 +31,10 @@ import scala.scalajs.js.annotation._
   var className: js.UndefOr[java.lang.String] = js.undefined
   var elevation: js.UndefOr[scala.Double] = js.undefined
   var getContentAnchorEl: js.UndefOr[
-    scala.Null | (js.Function1[/* element */ reactLib.HTMLElement, reactLib.HTMLElement])
+    scala.Null | (js.Function1[
+      /* element */ reactLib.HTMLElement with stdLib.HTMLElement, 
+      reactLib.HTMLElement with stdLib.HTMLElement
+    ])
   ] = js.undefined
   var marginThreshold: js.UndefOr[scala.Double] = js.undefined
   var modal: js.UndefOr[scala.Boolean] = js.undefined

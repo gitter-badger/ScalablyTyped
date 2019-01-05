@@ -17,6 +17,6 @@ trait IchooseImage extends BaseParams {
   def cancel(): scala.Unit
   /** 成功则返回图片的本地文件路径列表 tempFilePaths */
   @JSName("success")
-  def success_MIchooseImage(res: jweixinLib.Anon_ErrMsgLocalIds): scala.Unit
+  def success_MIchooseImage(res: jweixinLib.Anon_SourceType): scala.Unit
 }
 

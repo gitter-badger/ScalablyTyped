@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("grpc", JSImport.Namespace)
 @js.native
 object grpcModMembers extends js.Object {
-  val credentials: grpcLib.Anon_CreateFromGoogleCredential = js.native
+  val credentials: grpcLib.Anon_CreateSsl = js.native
   def closeClient(clientObj: Client): scala.Unit = js.native
   def getClientChannel(client: Client): Channel = js.native
   def load[T](filename: Filename): T = js.native
@@ -30,11 +30,11 @@ object grpcModMembers extends js.Object {
     Client
   ] = js.native
   def setLogVerbosity(verbosity: logVerbosity): scala.Unit = js.native
-  def setLogger(logger: nodeLib.Console): scala.Unit = js.native
+  def setLogger(logger: nodeLib.Console with stdLib.Console): scala.Unit = js.native
   def waitForClientReady(
     client: Client,
     deadline: Deadline,
-    callback: js.Function1[/* error */ nodeLib.Error | scala.Null, scala.Unit]
+    callback: js.Function1[/* error */ (nodeLib.Error with stdLib.Error) | scala.Null, scala.Unit]
   ): scala.Unit = js.native
 }
 

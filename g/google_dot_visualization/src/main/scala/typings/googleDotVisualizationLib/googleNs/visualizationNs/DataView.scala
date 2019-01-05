@@ -14,7 +14,7 @@ class DataView protected () extends js.Object {
   def getColumnLabel(columnIndex: scala.Double): java.lang.String = js.native
   def getColumnPattern(columnIndex: scala.Double): java.lang.String = js.native
   def getColumnProperty(columnIndex: scala.Double, name: java.lang.String): js.Any = js.native
-  def getColumnRange(columnIndex: scala.Double): googleDotVisualizationLib.Anon_Max = js.native
+  def getColumnRange(columnIndex: scala.Double): googleDotVisualizationLib.Anon_Min = js.native
   def getColumnType(columnIndex: scala.Double): java.lang.String = js.native
   def getDistinctValues(columnIndex: scala.Double): js.Array[_] = js.native
   def getFilteredRows(filters: js.Array[DataTableCellFilter]): js.Array[scala.Double] = js.native

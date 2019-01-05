@@ -89,7 +89,7 @@ trait RedisOptions extends js.Object {
     */
   var reconnectOnError: js.UndefOr[
     js.Function1[
-      /* error */ nodeLib.Error, 
+      /* error */ nodeLib.Error with stdLib.Error, 
       scala.Boolean | ioredisLib.ioredisLibNumbers.`1` | ioredisLib.ioredisLibNumbers.`2`
     ]
   ] = js.undefined

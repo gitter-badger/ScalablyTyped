@@ -21,7 +21,9 @@ trait ISliderProps
   /**
     * Optional mixin for additional props on the thumb button within the slider.
     */
-  var buttonProps: js.UndefOr[reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLButtonElement]] = js.undefined
+  var buttonProps: js.UndefOr[
+    reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLButtonElement with stdLib.HTMLButtonElement]
+  ] = js.undefined
   /**
     * Optional className to attach to the slider root element.
     */
@@ -63,7 +65,7 @@ trait ISliderProps
     */
   var onChanged: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.MouseEvent | reactLib.TouchEvent, 
+      /* event */ (reactLib.MouseEvent with stdLib.MouseEvent) | (reactLib.TouchEvent with stdLib.TouchEvent), 
       /* value */ scala.Double, 
       scala.Unit
     ]

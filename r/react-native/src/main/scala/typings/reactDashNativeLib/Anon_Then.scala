@@ -5,13 +5,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Anon_Then extends js.Object {
-  var cancel: js.Function0[scala.Unit]
-  var done: js.Function1[/* repeated */ js.Any, _]
-  var `then`: js.Function2[
-    /* onfulfilled */ js.UndefOr[js.Function0[_]], 
-    /* onrejected */ js.UndefOr[js.Function0[_]], 
-    js.Promise[_]
-  ]
+  def cancel(): scala.Unit = js.native
+  def done(args: js.Any*): js.Any = js.native
+  def `then`(): js.Promise[_] = js.native
+  def `then`(onfulfilled: js.Function0[_]): js.Promise[_] = js.native
+  def `then`(onfulfilled: js.Function0[_], onrejected: js.Function0[_]): js.Promise[_] = js.native
 }
 

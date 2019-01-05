@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ContextSession extends js.Object {
-  var app: js.Any
-  var ctx: koaDashSessionLib.koaDashSessionMod.koaMod.Context
+  var app: /* import warning: ImportType.apply Failed type conversion: koa-session.koa-session.koa.Context & koa.koa.Application.Context['app'] */ js.Any
+  var ctx: koaDashSessionLib.koaDashSessionMod.koaMod.Context with koaLib.koaMod.ApplicationNs.Context
   var opts: opts
   var prevHash: java.lang.String
   var session: Session | koaDashSessionLib.koaDashSessionLibNumbers.`false`

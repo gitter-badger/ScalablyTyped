@@ -13,15 +13,15 @@ object rxDashNodeModMembers extends js.Object {
   	 * @param {Stream} stream A stream to convert to a observable sequence.
   	 * @returns {Observable} An observable sequence which fires on each 'data' event as well as handling 'error' and 'end' events.
   	 */
-  def fromReadLineStream[T](stream: nodeLib.NodeJSNs.ReadableStream): rxDashLiteDashAggregatesLib.RxNs.Observable[T] = js.native
+  def fromReadLineStream[T](stream: nodeLib.NodeJSNs.ReadableStream): rxDashLiteDashAggregatesLib.RxNs.Observable[T] with rxDashCoreLib.RxNs.Observable[T] with rxDashLiteLib.RxNs.Observable[T] with rxDashLiteDashExperimentalLib.RxNs.Observable[T] with rxDashLiteDashBackpressureLib.RxNs.Observable[T] with rxDashLiteDashJoinpatternsLib.RxNs.Observable[T] with rxDashLiteDashTimeLib.RxNs.Observable[T] with rxDashLiteDashCoincidenceLib.RxNs.Observable[T] with rxDashCoreDashBindingLib.RxNs.Observable[T] = js.native
   /**
   	 * Converts a flowing readable stream to an Observable sequence.
   	 * @param {Stream} stream A stream to convert to a observable sequence.
   	 * @param {String} [dataEventName] Event that notifies about incoming data. ("data" by default)
   	 * @returns {Observable} An observable sequence which fires on each 'data' event as well as handling 'error' and 'end' events.
   	 */
-  def fromReadableStream[T](stream: nodeLib.NodeJSNs.ReadableStream): rxDashLiteDashAggregatesLib.RxNs.Observable[T] = js.native
-  def fromReadableStream[T](stream: nodeLib.NodeJSNs.ReadableStream, dataEventName: java.lang.String): rxDashLiteDashAggregatesLib.RxNs.Observable[T] = js.native
+  def fromReadableStream[T](stream: nodeLib.NodeJSNs.ReadableStream): rxDashLiteDashAggregatesLib.RxNs.Observable[T] with rxDashCoreLib.RxNs.Observable[T] with rxDashLiteLib.RxNs.Observable[T] with rxDashLiteDashExperimentalLib.RxNs.Observable[T] with rxDashLiteDashBackpressureLib.RxNs.Observable[T] with rxDashLiteDashJoinpatternsLib.RxNs.Observable[T] with rxDashLiteDashTimeLib.RxNs.Observable[T] with rxDashLiteDashCoincidenceLib.RxNs.Observable[T] with rxDashCoreDashBindingLib.RxNs.Observable[T] = js.native
+  def fromReadableStream[T](stream: nodeLib.NodeJSNs.ReadableStream, dataEventName: java.lang.String): rxDashLiteDashAggregatesLib.RxNs.Observable[T] with rxDashCoreLib.RxNs.Observable[T] with rxDashLiteLib.RxNs.Observable[T] with rxDashLiteDashExperimentalLib.RxNs.Observable[T] with rxDashLiteDashBackpressureLib.RxNs.Observable[T] with rxDashLiteDashJoinpatternsLib.RxNs.Observable[T] with rxDashLiteDashTimeLib.RxNs.Observable[T] with rxDashLiteDashCoincidenceLib.RxNs.Observable[T] with rxDashCoreDashBindingLib.RxNs.Observable[T] = js.native
   /**
   	 * Converts a flowing stream to an Observable sequence.
   	 * @param {Stream} stream A stream to convert to a observable sequence.
@@ -29,27 +29,27 @@ object rxDashNodeModMembers extends js.Object {
   	 * @param {String} [dataEventName] Event that notifies about incoming data. ("data" by default)
   	 * @returns {Observable} An observable sequence which fires on each 'data' event as well as handling 'error' and finish events like `end` or `finish`.
   	 */
-  def fromStream[T](stream: nodeLib.NodeJSNs.ReadableStream): rxDashLiteDashAggregatesLib.RxNs.Observable[T] = js.native
-  def fromStream[T](stream: nodeLib.NodeJSNs.ReadableStream, finishEventName: java.lang.String): rxDashLiteDashAggregatesLib.RxNs.Observable[T] = js.native
+  def fromStream[T](stream: nodeLib.NodeJSNs.ReadableStream): rxDashLiteDashAggregatesLib.RxNs.Observable[T] with rxDashCoreLib.RxNs.Observable[T] with rxDashLiteLib.RxNs.Observable[T] with rxDashLiteDashExperimentalLib.RxNs.Observable[T] with rxDashLiteDashBackpressureLib.RxNs.Observable[T] with rxDashLiteDashJoinpatternsLib.RxNs.Observable[T] with rxDashLiteDashTimeLib.RxNs.Observable[T] with rxDashLiteDashCoincidenceLib.RxNs.Observable[T] with rxDashCoreDashBindingLib.RxNs.Observable[T] = js.native
+  def fromStream[T](stream: nodeLib.NodeJSNs.ReadableStream, finishEventName: java.lang.String): rxDashLiteDashAggregatesLib.RxNs.Observable[T] with rxDashCoreLib.RxNs.Observable[T] with rxDashLiteLib.RxNs.Observable[T] with rxDashLiteDashExperimentalLib.RxNs.Observable[T] with rxDashLiteDashBackpressureLib.RxNs.Observable[T] with rxDashLiteDashJoinpatternsLib.RxNs.Observable[T] with rxDashLiteDashTimeLib.RxNs.Observable[T] with rxDashLiteDashCoincidenceLib.RxNs.Observable[T] with rxDashCoreDashBindingLib.RxNs.Observable[T] = js.native
   def fromStream[T](
     stream: nodeLib.NodeJSNs.ReadableStream,
     finishEventName: java.lang.String,
     dataEventName: java.lang.String
-  ): rxDashLiteDashAggregatesLib.RxNs.Observable[T] = js.native
+  ): rxDashLiteDashAggregatesLib.RxNs.Observable[T] with rxDashCoreLib.RxNs.Observable[T] with rxDashLiteLib.RxNs.Observable[T] with rxDashLiteDashExperimentalLib.RxNs.Observable[T] with rxDashLiteDashBackpressureLib.RxNs.Observable[T] with rxDashLiteDashJoinpatternsLib.RxNs.Observable[T] with rxDashLiteDashTimeLib.RxNs.Observable[T] with rxDashLiteDashCoincidenceLib.RxNs.Observable[T] with rxDashCoreDashBindingLib.RxNs.Observable[T] = js.native
   /**
   	 * Converts a flowing transform stream to an Observable sequence.
   	 * @param {Stream} stream A stream to convert to a observable sequence.
   	 * @param {String} [dataEventName] Event that notifies about incoming data. ("data" by default)
   	 * @returns {Observable} An observable sequence which fires on each 'data' event as well as handling 'error' and 'finish' events.
   	 */
-  def fromTransformStream[T](stream: nodeLib.NodeJSNs.ReadWriteStream): rxDashLiteDashAggregatesLib.RxNs.Observable[T] = js.native
-  def fromTransformStream[T](stream: nodeLib.NodeJSNs.ReadWriteStream, dataEventName: java.lang.String): rxDashLiteDashAggregatesLib.RxNs.Observable[T] = js.native
+  def fromTransformStream[T](stream: nodeLib.NodeJSNs.ReadWriteStream): rxDashLiteDashAggregatesLib.RxNs.Observable[T] with rxDashCoreLib.RxNs.Observable[T] with rxDashLiteLib.RxNs.Observable[T] with rxDashLiteDashExperimentalLib.RxNs.Observable[T] with rxDashLiteDashBackpressureLib.RxNs.Observable[T] with rxDashLiteDashJoinpatternsLib.RxNs.Observable[T] with rxDashLiteDashTimeLib.RxNs.Observable[T] with rxDashLiteDashCoincidenceLib.RxNs.Observable[T] with rxDashCoreDashBindingLib.RxNs.Observable[T] = js.native
+  def fromTransformStream[T](stream: nodeLib.NodeJSNs.ReadWriteStream, dataEventName: java.lang.String): rxDashLiteDashAggregatesLib.RxNs.Observable[T] with rxDashCoreLib.RxNs.Observable[T] with rxDashLiteLib.RxNs.Observable[T] with rxDashLiteDashExperimentalLib.RxNs.Observable[T] with rxDashLiteDashBackpressureLib.RxNs.Observable[T] with rxDashLiteDashJoinpatternsLib.RxNs.Observable[T] with rxDashLiteDashTimeLib.RxNs.Observable[T] with rxDashLiteDashCoincidenceLib.RxNs.Observable[T] with rxDashCoreDashBindingLib.RxNs.Observable[T] = js.native
   /**
   	 * Converts a flowing writeable stream to an Observable sequence.
   	 * @param {Stream} stream A stream to convert to a observable sequence.
   	 * @returns {Observable} An observable sequence which fires on each 'data' event as well as handling 'error' and 'finish' events.
   	 */
-  def fromWritableStream[T](stream: nodeLib.NodeJSNs.WritableStream): rxDashLiteDashAggregatesLib.RxNs.Observable[T] = js.native
+  def fromWritableStream[T](stream: nodeLib.NodeJSNs.WritableStream): rxDashLiteDashAggregatesLib.RxNs.Observable[T] with rxDashCoreLib.RxNs.Observable[T] with rxDashLiteLib.RxNs.Observable[T] with rxDashLiteDashExperimentalLib.RxNs.Observable[T] with rxDashLiteDashBackpressureLib.RxNs.Observable[T] with rxDashLiteDashJoinpatternsLib.RxNs.Observable[T] with rxDashLiteDashTimeLib.RxNs.Observable[T] with rxDashLiteDashCoincidenceLib.RxNs.Observable[T] with rxDashCoreDashBindingLib.RxNs.Observable[T] = js.native
   /**
   	 * Converts the given observable sequence to an event emitter with the given event name.
   	 * The errors are handled on the 'error' event and completion on the 'end' event.
@@ -58,7 +58,10 @@ object rxDashNodeModMembers extends js.Object {
   	 * @param {String} eventName The event name to emit onNext calls.
   	 * @returns {EventEmitter} An EventEmitter which emits the given eventName for each onNext call in addition to 'error' and 'end' events.
   	 */
-  def toEventEmitter[T](observable: rxDashLiteDashAggregatesLib.RxNs.Observable[T], eventName: java.lang.String): rxDashNodeLib.RxNodeNs.PublishableEventEmitter = js.native
+  def toEventEmitter[T](
+    observable: rxDashLiteDashAggregatesLib.RxNs.Observable[T] with rxDashCoreLib.RxNs.Observable[T] with rxDashLiteLib.RxNs.Observable[T] with rxDashLiteDashExperimentalLib.RxNs.Observable[T] with rxDashLiteDashBackpressureLib.RxNs.Observable[T] with rxDashLiteDashJoinpatternsLib.RxNs.Observable[T] with rxDashLiteDashTimeLib.RxNs.Observable[T] with rxDashLiteDashCoincidenceLib.RxNs.Observable[T] with rxDashCoreDashBindingLib.RxNs.Observable[T],
+    eventName: java.lang.String
+  ): rxDashNodeLib.RxNodeNs.PublishableEventEmitter = js.native
   /**
   	 * Writes an observable sequence to a stream
   	 * @param {Observable} observable Observable sequence to write to a stream.
@@ -67,7 +70,7 @@ object rxDashNodeModMembers extends js.Object {
   	 * @returns {Disposable} The subscription handle.
   	 */
   def writeToStream[T](
-    observable: rxDashLiteDashAggregatesLib.RxNs.Observable[T],
+    observable: rxDashLiteDashAggregatesLib.RxNs.Observable[T] with rxDashCoreLib.RxNs.Observable[T] with rxDashLiteLib.RxNs.Observable[T] with rxDashLiteDashExperimentalLib.RxNs.Observable[T] with rxDashLiteDashBackpressureLib.RxNs.Observable[T] with rxDashLiteDashJoinpatternsLib.RxNs.Observable[T] with rxDashLiteDashTimeLib.RxNs.Observable[T] with rxDashLiteDashCoincidenceLib.RxNs.Observable[T] with rxDashCoreDashBindingLib.RxNs.Observable[T],
     stream: nodeLib.NodeJSNs.WritableStream,
     encoding: java.lang.String
   ): rxDashLiteLib.RxNs.Disposable = js.native

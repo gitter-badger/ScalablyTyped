@@ -9,8 +9,10 @@ trait LineChartProps extends js.Object {
   /** Whether to show axis labels */
   var axes: js.UndefOr[scala.Boolean] = js.undefined
   /** Labels for each of the axis */
-  var axisLabels: js.UndefOr[reactDashEasyDashChartLib.Anon_Y] = js.undefined
-  var clickHandler: js.UndefOr[js.Function2[/* data */ LineData, /* mouseEvent */ reactLib.MouseEvent, _]] = js.undefined
+  var axisLabels: js.UndefOr[reactDashEasyDashChartLib.Anon_XY] = js.undefined
+  var clickHandler: js.UndefOr[
+    js.Function2[/* data */ LineData, /* mouseEvent */ reactLib.MouseEvent with stdLib.MouseEvent, _]
+  ] = js.undefined
   var data: js.Array[js.Array[LineData]]
   /** Whether to show circles on the data points */
   var dataPoints: js.UndefOr[scala.Boolean] = js.undefined
@@ -24,10 +26,16 @@ trait LineChartProps extends js.Object {
   ] = js.undefined
   var lineColors: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   /** css margins */
-  var margin: js.UndefOr[reactDashEasyDashChartLib.Anon_Bottom] = js.undefined
-  var mouseMoveHandler: js.UndefOr[js.Function2[/* data */ LineData, /* mouseEvent */ reactLib.MouseEvent, _]] = js.undefined
-  var mouseOutHandler: js.UndefOr[js.Function2[/* data */ LineData, /* mouseEvent */ reactLib.MouseEvent, _]] = js.undefined
-  var mouseOverHandler: js.UndefOr[js.Function2[/* data */ LineData, /* mouseEvent */ reactLib.MouseEvent, _]] = js.undefined
+  var margin: js.UndefOr[reactDashEasyDashChartLib.Anon_Top] = js.undefined
+  var mouseMoveHandler: js.UndefOr[
+    js.Function2[/* data */ LineData, /* mouseEvent */ reactLib.MouseEvent with stdLib.MouseEvent, _]
+  ] = js.undefined
+  var mouseOutHandler: js.UndefOr[
+    js.Function2[/* data */ LineData, /* mouseEvent */ reactLib.MouseEvent with stdLib.MouseEvent, _]
+  ] = js.undefined
+  var mouseOverHandler: js.UndefOr[
+    js.Function2[/* data */ LineData, /* mouseEvent */ reactLib.MouseEvent with stdLib.MouseEvent, _]
+  ] = js.undefined
   /** The d3 time format to be used for the x axis (when xType is 'time') */
   var tickTimeDisplayFormat: js.UndefOr[java.lang.String] = js.undefined
   /** Whether to show vertical grid lines on the chart */

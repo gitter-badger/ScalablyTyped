@@ -16,7 +16,7 @@ trait MentionsInputProps extends js.Object {
   var markup: js.UndefOr[java.lang.String] = js.undefined
   var onBlur: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.FocusEvent[reactLib.HTMLInputElement] | reactLib.reactMod.ReactNs.FocusEvent[reactLib.HTMLTextAreaElement], 
+      /* event */ (reactLib.reactMod.ReactNs.FocusEvent[reactLib.HTMLInputElement with stdLib.HTMLInputElement]) | (reactLib.reactMod.ReactNs.FocusEvent[reactLib.HTMLTextAreaElement with stdLib.HTMLTextAreaElement]), 
       /* clickedSuggestion */ scala.Boolean, 
       scala.Unit
     ]
@@ -24,7 +24,7 @@ trait MentionsInputProps extends js.Object {
   var onChange: js.UndefOr[OnChangeHandlerFunc] = js.undefined
   var onKeyDown: js.UndefOr[
     js.Function1[
-      /* event */ reactLib.reactMod.ReactNs.KeyboardEvent[reactLib.HTMLTextAreaElement] | reactLib.reactMod.ReactNs.KeyboardEvent[reactLib.HTMLInputElement], 
+      /* event */ (reactLib.reactMod.ReactNs.KeyboardEvent[reactLib.HTMLTextAreaElement with stdLib.HTMLTextAreaElement]) | (reactLib.reactMod.ReactNs.KeyboardEvent[reactLib.HTMLInputElement with stdLib.HTMLInputElement]), 
       scala.Unit
     ]
   ] = js.undefined
@@ -39,7 +39,7 @@ trait MentionsInputProps extends js.Object {
     */
   var singleLine: js.UndefOr[scala.Boolean] = js.undefined
   var style: js.UndefOr[js.Any] = js.undefined
-  var suggestionsPortalHost: js.UndefOr[reactLib.Element] = js.undefined
+  var suggestionsPortalHost: js.UndefOr[reactLib.Element with stdLib.Element] = js.undefined
   var value: js.UndefOr[java.lang.String] = js.undefined
 }
 

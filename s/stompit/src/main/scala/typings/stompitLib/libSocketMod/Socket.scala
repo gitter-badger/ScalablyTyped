@@ -9,15 +9,15 @@ import scala.scalajs.js.annotation._
 trait Socket
   extends nodeLib.eventsMod.EventEmitter {
   def createApplicationError(): stompitLib.libSocketMod.SocketNs.SocketError = js.native
+  def createApplicationError(message: nodeLib.Error with stdLib.Error): stompitLib.libSocketMod.SocketNs.SocketError = js.native
   def createApplicationError(message: java.lang.String): stompitLib.libSocketMod.SocketNs.SocketError = js.native
-  def createApplicationError(message: nodeLib.Error): stompitLib.libSocketMod.SocketNs.SocketError = js.native
   def createProtocolError(): stompitLib.libSocketMod.SocketNs.SocketError = js.native
+  def createProtocolError(message: nodeLib.Error with stdLib.Error): stompitLib.libSocketMod.SocketNs.SocketError = js.native
   def createProtocolError(message: java.lang.String): stompitLib.libSocketMod.SocketNs.SocketError = js.native
-  def createProtocolError(message: nodeLib.Error): stompitLib.libSocketMod.SocketNs.SocketError = js.native
   def createTransportError(): stompitLib.libSocketMod.SocketNs.SocketError = js.native
+  def createTransportError(message: nodeLib.Error with stdLib.Error): stompitLib.libSocketMod.SocketNs.SocketError = js.native
   def createTransportError(message: java.lang.String): stompitLib.libSocketMod.SocketNs.SocketError = js.native
-  def createTransportError(message: nodeLib.Error): stompitLib.libSocketMod.SocketNs.SocketError = js.native
-  def destroy(exception: nodeLib.Error): scala.Unit = js.native
+  def destroy(exception: nodeLib.Error with stdLib.Error): scala.Unit = js.native
   def getHeartbeat(): stompitLib.libSocketMod.SocketNs.Heartbeat = js.native
   def getTransportSocket(): nodeLib.streamMod.Duplex = js.native
   def hasFinishedOutput(): scala.Boolean = js.native

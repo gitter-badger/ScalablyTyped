@@ -85,7 +85,7 @@ trait ServerOptions extends js.Object {
     * * maxRssBytes - maximum process RSS size over which incoming requests are rejected with an HTTP Server Timeout (503) response. Defaults to 0 (no limit).
     * * maxEventLoopDelay - maximum event loop delay duration in milliseconds over which incoming requests are rejected with an HTTP Server Timeout (503) response. Defaults to 0 (no limit).
     */
-  var load: js.UndefOr[hapiLib.Anon_Concurrent] = js.undefined
+  var load: js.UndefOr[hapiLib.Anon_SampleInterval] = js.undefined
   /**
     * Default value: none.
     * Options passed to the mimos module when generating the mime database used by the server (and accessed via server.mime):
@@ -135,7 +135,7 @@ trait ServerOptions extends js.Object {
     */
   // TODO I am not sure if I need to use all the server.state() definition (like the default value) OR only the options below. The v16 use "any" here.
   // state?: ServerStateCookieOptions;
-  var state: js.UndefOr[hapiLib.Anon_IsHttpOnly] = js.undefined
+  var state: js.UndefOr[hapiLib.Anon_StrictHeader] = js.undefined
   /**
     * Default value: none.
     * Used to create an HTTPS connection. The tls object is passed unchanged to the node HTTPS server as described in the node HTTPS documentation.

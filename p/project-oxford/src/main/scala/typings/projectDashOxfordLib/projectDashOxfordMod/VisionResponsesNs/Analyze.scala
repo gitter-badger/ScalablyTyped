@@ -8,10 +8,10 @@ import scala.scalajs.js.annotation._
 trait Analyze extends js.Object {
   var adult: projectDashOxfordLib.Anon_IsAdultContent
   var categories: js.Array[projectDashOxfordLib.Anon_Name]
-  var color: projectDashOxfordLib.Anon_IsBWImg
-  var faces: js.Array[projectDashOxfordLib.Anon_FaceRectangle]
-  var imageType: projectDashOxfordLib.Anon_LineDrawingType
-  var metadata: projectDashOxfordLib.Anon_Height
+  var color: projectDashOxfordLib.Anon_DominantColorForeground
+  var faces: js.Array[projectDashOxfordLib.Anon_Age]
+  var imageType: projectDashOxfordLib.Anon_ClipArtType
+  var metadata: projectDashOxfordLib.Anon_Width
   var requestId: java.lang.String
 }
 

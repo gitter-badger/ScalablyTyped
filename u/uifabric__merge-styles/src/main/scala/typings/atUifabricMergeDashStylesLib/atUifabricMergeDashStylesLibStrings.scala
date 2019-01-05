@@ -37,10 +37,19 @@ object atUifabricMergeDashStylesLibStrings {
   sealed trait Anon_SubComponentStyles extends js.Object
   
   @js.native
-  sealed trait Anon_SubComponentStylesOmit extends js.Object
+  sealed trait Anon_SubComponentStylesTStyleSet extends js.Object
   
   @js.native
-  sealed trait Anon_SubComponentStylesOmitTStyleSet extends js.Object
+  sealed trait Anon_SubComponentStylesTStyleSetMapToFunctionType extends js.Object
+  
+  @js.native
+  sealed trait IConcatenatedStyleSet extends js.Object
+  
+  @js.native
+  sealed trait IProcessedStyleSet extends js.Object
+  
+  @js.native
+  sealed trait IStyleSet extends js.Object
   
   @js.native
   sealed trait absolute extends js.Object
@@ -499,8 +508,11 @@ object atUifabricMergeDashStylesLibStrings {
   def `800`: `800` = "800".asInstanceOf[`800`]
   def `900`: `900` = "900".asInstanceOf[`900`]
   def Anon_SubComponentStyles: Anon_SubComponentStyles = "Anon_SubComponentStyles".asInstanceOf[Anon_SubComponentStyles]
-  def Anon_SubComponentStylesOmit: Anon_SubComponentStylesOmit = "Anon_SubComponentStylesOmit".asInstanceOf[Anon_SubComponentStylesOmit]
-  def Anon_SubComponentStylesOmitTStyleSet: Anon_SubComponentStylesOmitTStyleSet = "Anon_SubComponentStylesOmitTStyleSet".asInstanceOf[Anon_SubComponentStylesOmitTStyleSet]
+  def Anon_SubComponentStylesTStyleSet: Anon_SubComponentStylesTStyleSet = "Anon_SubComponentStylesTStyleSet".asInstanceOf[Anon_SubComponentStylesTStyleSet]
+  def Anon_SubComponentStylesTStyleSetMapToFunctionType: Anon_SubComponentStylesTStyleSetMapToFunctionType = "Anon_SubComponentStylesTStyleSetMapToFunctionType".asInstanceOf[Anon_SubComponentStylesTStyleSetMapToFunctionType]
+  def IConcatenatedStyleSet: IConcatenatedStyleSet = "IConcatenatedStyleSet".asInstanceOf[IConcatenatedStyleSet]
+  def IProcessedStyleSet: IProcessedStyleSet = "IProcessedStyleSet".asInstanceOf[IProcessedStyleSet]
+  def IStyleSet: IStyleSet = "IStyleSet".asInstanceOf[IStyleSet]
   def absolute: absolute = "absolute".asInstanceOf[absolute]
   def all: all = "all".asInstanceOf[all]
   def antialiased: antialiased = "antialiased".asInstanceOf[antialiased]

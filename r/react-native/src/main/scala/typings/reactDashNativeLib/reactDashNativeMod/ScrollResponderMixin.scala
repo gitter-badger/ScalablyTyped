@@ -222,9 +222,9 @@ trait ScrollResponderMixin extends SubscribableMixin {
     * This is deprecated due to ambiguity (y before x), and SHOULD NOT BE USED.
     */
   def scrollResponderScrollTo(): scala.Unit = js.native
-  def scrollResponderScrollTo(x: reactDashNativeLib.Anon_Animated): scala.Unit = js.native
-  def scrollResponderScrollTo(x: reactDashNativeLib.Anon_Animated, y: scala.Double): scala.Unit = js.native
-  def scrollResponderScrollTo(x: reactDashNativeLib.Anon_Animated, y: scala.Double, animated: scala.Boolean): scala.Unit = js.native
+  def scrollResponderScrollTo(x: reactDashNativeLib.Anon_XYAnimated): scala.Unit = js.native
+  def scrollResponderScrollTo(x: reactDashNativeLib.Anon_XYAnimated, y: scala.Double): scala.Unit = js.native
+  def scrollResponderScrollTo(x: reactDashNativeLib.Anon_XYAnimated, y: scala.Double, animated: scala.Boolean): scala.Unit = js.native
   def scrollResponderScrollTo(x: scala.Double): scala.Unit = js.native
   def scrollResponderScrollTo(x: scala.Double, y: scala.Double): scala.Unit = js.native
   def scrollResponderScrollTo(x: scala.Double, y: scala.Double, animated: scala.Boolean): scala.Unit = js.native
@@ -235,7 +235,7 @@ trait ScrollResponderMixin extends SubscribableMixin {
     *
     * @platform ios
     */
-  def scrollResponderZoomTo(rect: reactDashNativeLib.Anon_X): scala.Unit = js.native
-  def scrollResponderZoomTo(rect: reactDashNativeLib.Anon_X, animated: scala.Boolean): scala.Unit = js.native
+  def scrollResponderZoomTo(rect: reactDashNativeLib.Anon_XYWidth): scala.Unit = js.native
+  def scrollResponderZoomTo(rect: reactDashNativeLib.Anon_XYWidth, animated: scala.Boolean): scala.Unit = js.native
 }
 

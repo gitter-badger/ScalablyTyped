@@ -14,7 +14,7 @@ trait IPanelAnimation extends js.Object {
   def openFrom(from: java.lang.String): IPanelAnimation = js.native
   def openFrom(from: stdLib.Element): IPanelAnimation = js.native
   def openFrom(from: stdLib.Event): IPanelAnimation = js.native
-  def withAnimation(cssClass: angularDashMaterialLib.Anon_Close): IPanelAnimation = js.native
+  def withAnimation(cssClass: angularDashMaterialLib.Anon_Open): IPanelAnimation = js.native
   def withAnimation(cssClass: java.lang.String): IPanelAnimation = js.native
 }
 

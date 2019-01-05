@@ -10,11 +10,11 @@ import scala.scalajs.js.annotation._
 class Sparkline protected () extends Widget {
   def this(element: ejDotWebDotAllLib.JQuery) = this()
   def this(element: stdLib.Element) = this()
-  def this(element: ejDotWebDotAllLib.JQuery, options: Model) = this()
-  def this(element: stdLib.Element, options: Model) = this()
-  var defaults: Model = js.native
+  def this(element: ejDotWebDotAllLib.JQuery, options: Model with ejDotWebDotAllLib.ejNs.SparklineNs.Model) = this()
+  def this(element: stdLib.Element, options: Model with ejDotWebDotAllLib.ejNs.SparklineNs.Model) = this()
+  var defaults: Model with ejDotWebDotAllLib.ejNs.SparklineNs.Model = js.native
   @JSName("model")
-  var model_Sparkline: Model = js.native
+  var model_Sparkline: Model with ejDotWebDotAllLib.ejNs.SparklineNs.Model = js.native
   /** Redraws the entire sparkline. You can call this method whenever you update, add or remove points from the data source or whenever you want to refresh the UI.
     * @returns {void}
     */

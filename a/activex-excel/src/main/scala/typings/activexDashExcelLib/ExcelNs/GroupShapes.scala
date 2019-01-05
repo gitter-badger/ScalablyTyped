@@ -15,7 +15,9 @@ trait GroupShapes extends js.Object {
   def apply(Index: scala.Double): Shape = js.native
   def Item(Index: java.lang.String): Shape = js.native
   def Item(Index: scala.Double): Shape = js.native
-  def Range(Index: activexDashInteropLib.SafeArray[scala.Double | java.lang.String]): ShapeRange = js.native
+  def Range(
+    Index: (activexDashInteropLib.SafeArray[scala.Double | java.lang.String]) with (stdLib.SafeArray[scala.Double | java.lang.String])
+  ): ShapeRange = js.native
   def Range(Index: java.lang.String): ShapeRange = js.native
   def Range(Index: scala.Double): ShapeRange = js.native
   def _Default(Index: js.Any): Shape = js.native

@@ -78,7 +78,7 @@ trait Board
     bytesToRead: scala.Double,
     callback: js.Function1[/* data */ js.Array[scala.Double], scala.Unit]
   ): scala.Unit = js.native
-  def i2cStop(options: firmataLib.Anon_Address): scala.Unit = js.native
+  def i2cStop(options: firmataLib.Anon_Bus): scala.Unit = js.native
   // TODO untested --- TWW
   def i2cStop(options: scala.Double): scala.Unit = js.native
   def i2cWrite(address: scala.Double, data: js.Array[scala.Double]): scala.Unit = js.native
@@ -130,7 +130,7 @@ trait Board
     data: js.Array[scala.Double],
     numBytesToRead: scala.Double,
     callback: js.Function2[
-      /* error */ js.UndefOr[nodeLib.Error], 
+      /* error */ js.UndefOr[nodeLib.Error with stdLib.Error], 
       /* data */ js.UndefOr[scala.Double], 
       scala.Unit
     ]
@@ -142,7 +142,7 @@ trait Board
     data: scala.Double,
     numBytesToRead: scala.Double,
     callback: js.Function2[
-      /* error */ js.UndefOr[nodeLib.Error], 
+      /* error */ js.UndefOr[nodeLib.Error with stdLib.Error], 
       /* data */ js.UndefOr[scala.Double], 
       scala.Unit
     ]
@@ -152,7 +152,7 @@ trait Board
   // TODO untested --- TWW
   def serialClose(portId: firmataLib.firmataMod.BoardNs.SERIAL_PORT_ID): scala.Unit = js.native
   // TODO untested --- TWW
-  def serialConfig(options: firmataLib.Anon_Baud): scala.Unit = js.native
+  def serialConfig(options: firmataLib.Anon_PortId): scala.Unit = js.native
   // TODO untested --- TWW
   def serialFlush(portId: firmataLib.firmataMod.BoardNs.SERIAL_PORT_ID): scala.Unit = js.native
   // TODO untested --- TWW

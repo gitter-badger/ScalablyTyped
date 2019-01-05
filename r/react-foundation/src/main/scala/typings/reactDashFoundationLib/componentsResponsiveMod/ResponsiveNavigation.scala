@@ -30,7 +30,7 @@ class ResponsiveNavigation ()
 @JSImport("react-foundation/components/responsive", "ResponsiveNavigation")
 @js.native
 object ResponsiveNavigation extends js.Object {
-  var defaultProps: reactDashFoundationLib.Anon_Breakpoint = js.native
-  var propTypes: reactDashFoundationLib.Anon_ShowForSr = js.native
+  var defaultProps: reactDashFoundationLib.Anon_BreakpointNumber = js.native
+  var propTypes: reactDashFoundationLib.Anon_Breakpoint = js.native
 }
 

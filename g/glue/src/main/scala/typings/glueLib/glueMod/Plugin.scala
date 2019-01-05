@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait Plugin extends js.Object {
   var options: js.UndefOr[js.Any] = js.undefined
-  var plugin: java.lang.String | glueLib.Anon_Options
+  var plugin: java.lang.String | glueLib.Anon_Register
   var routes: js.UndefOr[js.Any] = js.undefined
 }
 

@@ -14,7 +14,7 @@ class AppContent () extends js.Object {
   /**
   		 * @see https://developer.knuddels.de/docs/classes/AppContent.html#method_addCloseListener
   		 */
-  def addCloseListener(callback: knuddelsDashUserappsDashApiLib.Anon_AppContent): scala.Unit = js.native
+  def addCloseListener(callback: knuddelsDashUserappsDashApiLib.Anon_User): scala.Unit = js.native
   /**
   		 * @see https://developer.knuddels.de/docs/classes/AppContent.html#method_getAppViewMode
   		 */

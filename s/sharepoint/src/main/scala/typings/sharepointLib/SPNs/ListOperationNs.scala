@@ -18,7 +18,7 @@ object ListOperationNs extends js.Object {
   @js.native
   object SelectionNs extends js.Object {
     def deselectAllListItems(iid: java.lang.String): scala.Unit = js.native
-    def getSelectedItems(): js.Array[sharepointLib.Anon_FsObjType] = js.native
+    def getSelectedItems(): js.Array[sharepointLib.Anon_Id] = js.native
     def getSelectedList(): java.lang.String = js.native
     def getSelectedView(): java.lang.String = js.native
     def navigateUp(viewId: java.lang.String): scala.Unit = js.native

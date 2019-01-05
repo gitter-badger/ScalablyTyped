@@ -805,7 +805,7 @@ package object sequelizeNs {
   /**
     * Logic of where statement
     */
-  type WhereLogic = stdLib.Partial[sequelizeLib.Anon_Contained]
+  type WhereLogic = stdLib.Partial[sequelizeLib.Anon_Ne]
   /**
     * A hash of attributes to describe your search. See above for examples.
     *

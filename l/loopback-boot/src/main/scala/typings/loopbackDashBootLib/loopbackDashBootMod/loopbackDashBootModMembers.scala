@@ -82,7 +82,7 @@ object loopbackDashBootModMembers extends js.Object {
   def apply(
     app: loopbackLib.loopbackMod.lNs.LoopBackApplication,
     options: java.lang.String | OptionsLB,
-    callback: js.Function1[/* err */ nodeLib.Error, scala.Unit]
+    callback: js.Function1[/* err */ nodeLib.Error with stdLib.Error, scala.Unit]
   ): scala.Unit = js.native
 }
 

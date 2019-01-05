@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class LocalQueryComparisonOptions protected ()
   extends breezeLib.breezeNs.LocalQueryComparisonOptions {
-  def this(config: breezeLib.Anon_IsCaseSensitive) = this()
+  def this(config: breezeLib.Anon_NameIsCaseSensitive) = this()
 }
 
 @JSImport("breeze", "LocalQueryComparisonOptions")

@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait IShimmerElementsGroupProps
-  extends reactLib.reactMod.ReactNs.AllHTMLAttributes[reactLib.HTMLElement] {
+  extends reactLib.reactMod.ReactNs.AllHTMLAttributes[reactLib.HTMLElement with stdLib.HTMLElement] {
   /**
     * Optional callback to access the IShimmerElementsGroup interface. Use this instead of ref for accessing
     * the public methods and properties of the component.

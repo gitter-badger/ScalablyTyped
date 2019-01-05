@@ -19,7 +19,7 @@ object LNs extends js.Object {
       var sanitizer: js.UndefOr[js.Function1[/* template */ java.lang.String, java.lang.String]] = js.undefined
     }
     
-    /* RemoveDifficultInheritance: 
+    /* import warning: RemoveDifficultInheritance.summarizeChanges 
     - Dropped any */ trait FeatureLayer extends js.Object {
       /**
       			 * Gets the filter function for this data layer.
@@ -98,7 +98,7 @@ object LNs extends js.Object {
       var keepOpen: js.UndefOr[scala.Boolean] = js.undefined
     }
     
-    /* RemoveDifficultInheritance: 
+    /* import warning: RemoveDifficultInheritance.summarizeChanges 
     - Dropped any */ trait GridControl extends js.Object {
       /**
       			 * If a tooltip is currently shown by the gridControl, hide and close it.
@@ -144,7 +144,7 @@ object LNs extends js.Object {
       def onRemove(): js.Any = js.native
     }
     
-    /* RemoveDifficultInheritance: 
+    /* import warning: RemoveDifficultInheritance.summarizeChanges 
     - Dropped any */ trait InfoControl extends js.Object {
       /**
       			 * Adds an info string to infoControl.
@@ -158,7 +158,7 @@ object LNs extends js.Object {
       def removeInfo(info: java.lang.String): js.Any
     }
     
-    /* RemoveDifficultInheritance: 
+    /* import warning: RemoveDifficultInheritance.summarizeChanges 
     - Dropped any */ trait LegendControl extends js.Object {
       /**
       			 * Adds a legend to the legendControl.
@@ -184,7 +184,7 @@ object LNs extends js.Object {
       def getTileJSON(): js.Any = js.native
     }
     
-    /* RemoveDifficultInheritance: 
+    /* import warning: RemoveDifficultInheritance.summarizeChanges 
     - Dropped any */ trait MapOptions extends js.Object {
       var featureLayer: js.UndefOr[FeatureLayerOptions] = js.undefined
       var gridLayer: js.UndefOr[js.Any] = js.undefined
@@ -194,7 +194,7 @@ object LNs extends js.Object {
       var tileLayer: js.UndefOr[TileLayerOptions] = js.undefined
     }
     
-    /* RemoveDifficultInheritance: 
+    /* import warning: RemoveDifficultInheritance.summarizeChanges 
     - Dropped any */ trait ShareControl extends js.Object {
       def onAdd(map: Map): js.Any
     }

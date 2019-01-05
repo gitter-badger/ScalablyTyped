@@ -5,14 +5,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveDifficultInheritance: 
-- Dropped new Some()Some((args  : ...any))Some(: react-native.react-native.ScrollResponderMixin) */ @JSImport("react-native", "ListView")
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
+- Dropped new (args : ...any): react-native.react-native.ScrollResponderMixin */ @JSImport("react-native", "ListView")
 @js.native
 class ListView () extends js.Object {
   /**
     * Exports some data, e.g. for perf investigations or analytics.
     */
-  def getMetrics(): reactDashNativeLib.Anon_RenderedRows = js.native
+  def getMetrics(): reactDashNativeLib.Anon_ContentLength = js.native
   /**
     * Provides a handle to the underlying scroll responder.
     */
@@ -23,16 +23,16 @@ class ListView () extends js.Object {
     * See `ScrollView#scrollTo`.
     */
   def scrollTo(): scala.Unit = js.native
-  def scrollTo(y: reactDashNativeLib.Anon_Animated): scala.Unit = js.native
-  def scrollTo(y: reactDashNativeLib.Anon_Animated, x: scala.Double): scala.Unit = js.native
-  def scrollTo(y: reactDashNativeLib.Anon_Animated, x: scala.Double, animated: scala.Boolean): scala.Unit = js.native
+  def scrollTo(y: reactDashNativeLib.Anon_XYAnimated): scala.Unit = js.native
+  def scrollTo(y: reactDashNativeLib.Anon_XYAnimated, x: scala.Double): scala.Unit = js.native
+  def scrollTo(y: reactDashNativeLib.Anon_XYAnimated, x: scala.Double, animated: scala.Boolean): scala.Unit = js.native
   def scrollTo(y: scala.Double): scala.Unit = js.native
   def scrollTo(y: scala.Double, x: scala.Double): scala.Unit = js.native
   def scrollTo(y: scala.Double, x: scala.Double, animated: scala.Boolean): scala.Unit = js.native
 }
 
-/* RemoveDifficultInheritance: 
-- Dropped new Some()Some((args  : ...any))Some(: react-native.react-native.ScrollResponderMixin) */ @JSImport("react-native", "ListView")
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
+- Dropped new (args : ...any): react-native.react-native.ScrollResponderMixin */ @JSImport("react-native", "ListView")
 @js.native
 object ListView extends js.Object {
   var DataSource: reactDashNativeLib.reactDashNativeMod.ListViewDataSource = js.native

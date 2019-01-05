@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait IShimmerProps
-  extends reactLib.reactMod.ReactNs.AllHTMLAttributes[reactLib.HTMLElement] {
+  extends reactLib.reactMod.ReactNs.AllHTMLAttributes[reactLib.HTMLElement with stdLib.HTMLElement] {
   /**
     * Localized string of the status label for screen reader
     */

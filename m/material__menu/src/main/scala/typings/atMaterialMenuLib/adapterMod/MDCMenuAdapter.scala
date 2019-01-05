@@ -12,13 +12,13 @@ trait MDCMenuAdapter extends js.Object {
   def deregisterInteractionHandler(`type`: java.lang.String, handler: stdLib.EventListener): scala.Unit
   def focus(): scala.Unit
   def focusItemAtIndex(index: scala.Double): scala.Unit
-  def getAnchorDimensions(): atMaterialMenuLib.Anon_Bottom
+  def getAnchorDimensions(): atMaterialMenuLib.Anon_WidthHeight
   def getAttributeForEventTarget(target: stdLib.EventTarget, attributeName: java.lang.String): java.lang.String
   def getFocusedItemIndex(): scala.Double
   def getIndexForEventTarget(target: stdLib.EventTarget): scala.Double
-  def getInnerDimensions(): atMaterialMenuLib.Anon_Height
+  def getInnerDimensions(): atMaterialMenuLib.Anon_Width
   def getNumberOfItems(): scala.Double
-  def getWindowDimensions(): atMaterialMenuLib.Anon_Height
+  def getWindowDimensions(): atMaterialMenuLib.Anon_Width
   def hasAnchor(): scala.Boolean
   def hasClass(className: java.lang.String): scala.Boolean
   def hasNecessaryDom(): scala.Boolean
@@ -35,7 +35,7 @@ trait MDCMenuAdapter extends js.Object {
   def saveFocus(): scala.Unit
   def setAttrForOptionAtIndex(index: scala.Double, attr: java.lang.String, value: java.lang.String): scala.Unit
   def setMaxHeight(height: scala.Double): scala.Unit
-  def setPosition(position: atMaterialMenuLib.Anon_BottomTop): scala.Unit
+  def setPosition(position: atMaterialMenuLib.Anon_Top): scala.Unit
   def setTransformOrigin(origin: java.lang.String): scala.Unit
 }
 

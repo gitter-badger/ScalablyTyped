@@ -14,6 +14,6 @@ class default ()
 @js.native
 object default extends js.Object {
   var Item: reactLib.reactMod.ReactNs.ClassicComponentClass[antdLib.libTimelineTimelineItemMod.TimeLineItemProps] = js.native
-  var defaultProps: antdLib.Anon_PrefixClsMode = js.native
+  var defaultProps: antdLib.Anon_PrefixClsReverse = js.native
 }
 

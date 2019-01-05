@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
   */
 trait IMemberGroupPickerOptions extends js.Object {
   /*callback function*/
-  var callback: angularLib.angularMod.Global.Function
+  var callback: angularLib.angularMod.Global.Function with js.Function
   /*should the tree pick one or multiple members before returning*/
   var multiPicker: scala.Boolean
 }

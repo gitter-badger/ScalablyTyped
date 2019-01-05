@@ -6,7 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait IChoiceGroupProps
-  extends reactLib.reactMod.ReactNs.InputHTMLAttributes[reactLib.HTMLElement | reactLib.HTMLInputElement] {
+  extends reactLib.reactMod.ReactNs.InputHTMLAttributes[
+      (reactLib.HTMLElement with stdLib.HTMLElement) | (reactLib.HTMLInputElement with stdLib.HTMLInputElement)
+    ] {
   /**
     * Aria labelled by prop for the ChoiceGroup itself
     */
@@ -31,7 +33,9 @@ trait IChoiceGroupProps
   var onChange_IChoiceGroupProps: js.UndefOr[
     js.Function2[
       /* ev */ js.UndefOr[
-        reactLib.reactMod.ReactNs.FormEvent[reactLib.HTMLElement | reactLib.HTMLInputElement]
+        reactLib.reactMod.ReactNs.FormEvent[
+          (reactLib.HTMLElement with stdLib.HTMLElement) | (reactLib.HTMLInputElement with stdLib.HTMLInputElement)
+        ]
       ], 
       /* option */ js.UndefOr[IChoiceGroupOption], 
       scala.Unit
@@ -45,7 +49,9 @@ trait IChoiceGroupProps
     js.Function2[
       /* option */ IChoiceGroupOption, 
       /* evt */ js.UndefOr[
-        reactLib.reactMod.ReactNs.FormEvent[reactLib.HTMLElement | reactLib.HTMLInputElement]
+        reactLib.reactMod.ReactNs.FormEvent[
+          (reactLib.HTMLElement with stdLib.HTMLElement) | (reactLib.HTMLInputElement with stdLib.HTMLInputElement)
+        ]
       ], 
       scala.Unit
     ]

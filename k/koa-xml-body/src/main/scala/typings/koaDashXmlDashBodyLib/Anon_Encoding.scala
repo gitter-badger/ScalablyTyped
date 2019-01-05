@@ -14,7 +14,11 @@ trait Anon_Encoding extends js.Object {
   var limit: js.UndefOr[scala.Double] = js.undefined
   // error handler. Default is a noop function. It means it will eat the error silently. You can config it to customize the response.
   var onerror: js.UndefOr[
-    js.Function2[/* err */ nodeLib.Error, /* ctx */ koaLib.koaMod.ApplicationNs.Context, scala.Unit]
+    js.Function2[
+      /* err */ nodeLib.Error with stdLib.Error, 
+      /* ctx */ koaLib.koaMod.ApplicationNs.Context, 
+      scala.Unit
+    ]
   ] = js.undefined
   // options which will be used to parse xml. Default is {}. See xml2js Options for details.
   var xmlOptions: js.UndefOr[xml2jsLib.xml2jsMod.Options] = js.undefined

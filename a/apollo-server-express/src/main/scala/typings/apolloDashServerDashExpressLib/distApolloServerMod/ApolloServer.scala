@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveDifficultInheritance: 
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
 - Dropped any */ @JSImport("apollo-server-express/dist/ApolloServer", "ApolloServer")
 @js.native
 class ApolloServer () extends js.Object {

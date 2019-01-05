@@ -34,7 +34,11 @@ trait BasePickerProps
   var okLabel: js.UndefOr[java.lang.String] = js.undefined
   var okPrimary: js.UndefOr[scala.Boolean] = js.undefined
   var onVisibilityChange: js.UndefOr[
-    js.Function2[/* visible */ scala.Boolean, /* event */ reactLib.Event, scala.Unit]
+    js.Function2[
+      /* visible */ scala.Boolean, 
+      /* event */ reactLib.Event with stdLib.Event, 
+      scala.Unit
+    ]
   ] = js.undefined
   var pickerClassName: js.UndefOr[java.lang.String] = js.undefined
   var pickerContentClassName: js.UndefOr[java.lang.String] = js.undefined

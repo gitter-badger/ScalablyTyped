@@ -93,6 +93,6 @@ class Options () extends js.Object {
     * @throws {TypeError} if width or height is unspecified, not a number, or
     *     less than or equal to 0.
     */
-  def windowSize(size: seleniumDashWebdriverLib.Anon_Height): Options = js.native
+  def windowSize(size: seleniumDashWebdriverLib.Anon_Width): Options = js.native
 }
 

@@ -5,8 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveDifficultInheritance: 
-- Lifted 3 members from Set(std.Pick<@material-ui/core.@material-ui/core/TablePagination/TablePagination.TablePaginationBaseProps, std.Exclude<keyof @material-ui/core.@material-ui/core/TablePagination/TablePagination.TablePaginationBaseProps, 'classes' | never>>, @material-ui/core.@material-ui/core.StandardProps<@material-ui/core.@material-ui/core/TablePagination/TablePagination.TablePaginationBaseProps, @material-ui/core.@material-ui/core/TablePagination/TablePagination.TablePaginationClassKey, never>) */ @js.native
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
+- Dropped {[ P in std.Exclude<keyof @material-ui/core.@material-ui/core/TablePagination/TablePagination.TablePaginationBaseProps, 'classes' | never> ]: @material-ui/core.@material-ui/core/TablePagination/TablePagination.TablePaginationBaseProps[P]}
+- Lifted 2 members from Set(@material-ui/core.@material-ui/core.StandardProps<@material-ui/core.@material-ui/core/TablePagination/TablePagination.TablePaginationBaseProps, @material-ui/core.@material-ui/core/TablePagination/TablePagination.TablePaginationClassKey, never>) */ @js.native
 trait TablePaginationProps
   extends atMaterialDashUiCoreLib.stylesWithStylesMod.StyledComponentProps[TablePaginationClassKey] {
   var ActionsComponent: js.UndefOr[
@@ -25,14 +26,19 @@ trait TablePaginationProps
   var labelRowsPerPage: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.native
   var nextIconButtonProps: js.UndefOr[stdLib.Partial[atMaterialDashUiCoreLib.iconbuttonIconButtonMod.IconButtonProps]] = js.native
   var onChangeRowsPerPage: js.UndefOr[
-    reactLib.reactMod.ReactNs.ChangeEventHandler[reactLib.HTMLTextAreaElement | reactLib.HTMLInputElement]
+    reactLib.reactMod.ReactNs.ChangeEventHandler[
+      (reactLib.HTMLTextAreaElement with stdLib.HTMLTextAreaElement) | (reactLib.HTMLInputElement with stdLib.HTMLInputElement)
+    ]
   ] = js.native
   var page: scala.Double = js.native
   var rowsPerPage: scala.Double = js.native
   var rowsPerPageOptions: js.UndefOr[js.Array[scala.Double]] = js.native
   var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.native
   def onChangePage(
-    event: reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLButtonElement, reactLib.NativeMouseEvent],
+    event: reactLib.reactMod.ReactNs.MouseEvent[
+      reactLib.HTMLButtonElement with stdLib.HTMLButtonElement, 
+      reactLib.NativeMouseEvent
+    ],
     page: scala.Double
   ): scala.Unit = js.native
   def onChangePage(event: scala.Null, page: scala.Double): scala.Unit = js.native

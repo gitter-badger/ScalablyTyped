@@ -12,7 +12,7 @@ trait IDatepickerOptions extends js.Object {
   var dateFormat: js.UndefOr[java.lang.String] = js.undefined
   var dateType: js.UndefOr[java.lang.String] = js.undefined
   var daysOfWeekDisabled: js.UndefOr[java.lang.String] = js.undefined
-  var delay: js.UndefOr[scala.Double | angularDashStrapLib.Anon_Hide] = js.undefined
+  var delay: js.UndefOr[scala.Double | angularDashStrapLib.Anon_Show] = js.undefined
   var disabledDates: js.UndefOr[js.Array[IDatepickerDateRange]] = js.undefined
   var html: js.UndefOr[scala.Boolean] = js.undefined
   var iconLeft: js.UndefOr[java.lang.String] = js.undefined

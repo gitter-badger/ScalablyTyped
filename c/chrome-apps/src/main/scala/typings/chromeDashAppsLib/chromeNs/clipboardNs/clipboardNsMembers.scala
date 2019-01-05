@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object clipboardNsMembers extends js.Object {
   /** @enum */
-  val DataItemType: chromeDashAppsLib.Anon_TEXTHTML = js.native
+  val DataItemType: chromeDashAppsLib.Anon_TEXTPLAIN = js.native
   /**
     * **Dev channel only.**
     * Fired when clipboard data changes.

@@ -25,7 +25,7 @@ trait ListingElement extends js.Object {
   /**
     * The various permissions for this entry **(*NIX only)**
     */
-  var rights: js.UndefOr[ftpLib.Anon_Group] = js.undefined
+  var rights: js.UndefOr[ftpLib.Anon_User] = js.undefined
   /**
     * The size of the entry in bytes
     */

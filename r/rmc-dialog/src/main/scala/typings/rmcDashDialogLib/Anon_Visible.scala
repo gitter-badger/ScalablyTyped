@@ -5,7 +5,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Anon_Visible extends js.Object {
-  var visible: js.Any
+  @JSName("onClose")
+  var onClose_Original: js.Function0[scala.Unit] = js.native
+  var prefixCls: java.lang.String = js.native
+  var visible: scala.Boolean = js.native
+  def onClose(): scala.Unit = js.native
 }
 

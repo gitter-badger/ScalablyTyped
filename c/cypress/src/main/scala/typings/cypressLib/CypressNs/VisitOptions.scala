@@ -38,12 +38,12 @@ trait VisitOptions
     *
     * @param {Window} contentWindow the remote page's window object
     */
-  def onBeforeLoad(win: mochaLib.Window): scala.Unit
+  def onBeforeLoad(win: mochaLib.Window with stdLib.Window): scala.Unit
   /**
     * Called once your page has fired its load event.
     *
     * @param {Window} contentWindow the remote page's window object
     */
-  def onLoad(win: mochaLib.Window): scala.Unit
+  def onLoad(win: mochaLib.Window with stdLib.Window): scala.Unit
 }
 

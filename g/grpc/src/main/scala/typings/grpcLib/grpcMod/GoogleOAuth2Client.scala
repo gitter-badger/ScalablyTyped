@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait GoogleOAuth2Client extends js.Object {
   def getRequestMetadata(
     optUri: java.lang.String,
-    metadataCallback: js.Function2[/* err */ nodeLib.Error, /* headers */ js.Any, scala.Unit]
+    metadataCallback: js.Function2[/* err */ nodeLib.Error with stdLib.Error, /* headers */ js.Any, scala.Unit]
   ): scala.Unit
 }
 

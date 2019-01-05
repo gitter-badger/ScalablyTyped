@@ -18,7 +18,7 @@ class BaseFloatingPicker[T, P /* <: officeDashUiDashFabricDashReactLib.libCompon
   var _onValidateInput: js.Any = js.native
   var currentPromise: js.Thenable[_] = js.native
   val currentSelectedSuggestionIndex: scala.Double = js.native
-  var root: reactLib.reactMod.ReactNs.RefObject[reactLib.HTMLDivElement] = js.native
+  var root: reactLib.reactMod.ReactNs.RefObject[reactLib.HTMLDivElement with stdLib.HTMLDivElement] = js.native
   var selection: stdLib.Selection = js.native
   var suggestionStore: officeDashUiDashFabricDashReactLib.libComponentsFloatingPickerSuggestionsSuggestionsStoreMod.SuggestionsStore[T] = js.native
   var suggestionsControl: officeDashUiDashFabricDashReactLib.libComponentsFloatingPickerSuggestionsSuggestionsControlMod.SuggestionsControl[T] = js.native
@@ -38,15 +38,15 @@ class BaseFloatingPicker[T, P /* <: officeDashUiDashFabricDashReactLib.libCompon
   def componentWillUnmount_MBaseFloatingPicker(): scala.Unit = js.native
   def forceResolveSuggestion(): scala.Unit = js.native
   /* protected */ def onChange(item: T): scala.Unit = js.native
-  /* protected */ def onKeyDown(ev: reactLib.MouseEvent): scala.Unit = js.native
+  /* protected */ def onKeyDown(ev: reactLib.MouseEvent with stdLib.MouseEvent): scala.Unit = js.native
   /* protected */ def onSelectionChange(): scala.Unit = js.native
   /* protected */ def onSuggestionClick(
-    ev: reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent],
+    ev: reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement with stdLib.HTMLElement, reactLib.NativeMouseEvent],
     item: T,
     index: scala.Double
   ): scala.Unit = js.native
   /* protected */ def onSuggestionRemove(
-    ev: reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent],
+    ev: reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement with stdLib.HTMLElement, reactLib.NativeMouseEvent],
     item: T,
     index: scala.Double
   ): scala.Unit = js.native

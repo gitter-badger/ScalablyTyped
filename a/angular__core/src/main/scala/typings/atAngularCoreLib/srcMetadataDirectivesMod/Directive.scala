@@ -199,8 +199,8 @@ trait Directive extends js.Object {
     * View queries are set before the `ngAfterViewInit` callback is called.
     *
     */
-  var queries: /* import warning: ImportType.apply Failed type conversion: {indexed, indexed} */ js.UndefOr[
-    /* import warning: ImportType.apply Failed type conversion: {indexed, indexed} */ js.Any
+  var queries: /* import warning: ImportType.apply Failed type conversion: {[key: string] : any, [key: string] : any} */ js.UndefOr[
+    /* import warning: ImportType.apply Failed type conversion: {[key: string] : any, [key: string] : any} */ js.Any
   ] = js.undefined
   /**
     * The CSS selector that triggers the instantiation of a directive.

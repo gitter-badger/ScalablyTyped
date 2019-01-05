@@ -15,8 +15,8 @@ trait SelectionCheckboxAllProps[T] extends js.Object {
   var selections: js.UndefOr[js.Array[SelectionItem] | scala.Boolean] = js.native
   var store: antdLib.libTableCreateStoreMod.Store = js.native
   def getCheckboxPropsByItem(item: js.Any, index: scala.Double): js.Any = js.native
-  def getPopupContainer(): reactLib.HTMLElement = js.native
-  def getPopupContainer(triggerNode: reactLib.Element): reactLib.HTMLElement = js.native
+  def getPopupContainer(): reactLib.HTMLElement with stdLib.HTMLElement = js.native
+  def getPopupContainer(triggerNode: reactLib.Element with stdLib.Element): reactLib.HTMLElement with stdLib.HTMLElement = js.native
   def getRecordKey(record: js.Any): java.lang.String = js.native
   def getRecordKey(record: js.Any, index: scala.Double): java.lang.String = js.native
   def onSelect(key: java.lang.String, index: scala.Double, selectFunc: js.Any): scala.Unit = js.native

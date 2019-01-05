@@ -6,9 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_Warn extends js.Object {
-  var debug: js.Function1[/* repeated */ js.Any, scala.Unit]
-  var error: js.Function1[/* repeated */ js.Any, scala.Unit]
-  var info: js.Function1[/* repeated */ js.Any, scala.Unit]
-  var warn: js.Function1[/* repeated */ js.Any, scala.Unit]
+  def debug(args: js.Any*): scala.Unit
+  def error(args: js.Any*): scala.Unit
+  def info(args: js.Any*): scala.Unit
+  def warn(args: js.Any*): scala.Unit
 }
 

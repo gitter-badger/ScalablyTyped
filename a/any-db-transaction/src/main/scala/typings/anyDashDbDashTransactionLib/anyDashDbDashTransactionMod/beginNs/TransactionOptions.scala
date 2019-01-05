@@ -22,7 +22,11 @@ trait TransactionOptions extends js.Object {
     * Callback for transaction
     */
   var callback: js.UndefOr[
-    js.Function2[/* error */ nodeLib.Error, /* transaction */ Transaction, scala.Unit]
+    js.Function2[
+      /* error */ nodeLib.Error with stdLib.Error, 
+      /* transaction */ Transaction, 
+      scala.Unit
+    ]
   ] = js.undefined
   /**
     * SQL statement for committing a transaction, default 'COMMIT'

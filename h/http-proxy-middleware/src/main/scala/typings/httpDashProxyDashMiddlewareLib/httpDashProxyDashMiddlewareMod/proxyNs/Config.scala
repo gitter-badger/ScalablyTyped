@@ -37,7 +37,7 @@ trait Config extends js.Object {
   ] = js.undefined
   var onError: js.UndefOr[
     js.Function3[
-      /* err */ nodeLib.Error, 
+      /* err */ nodeLib.Error with stdLib.Error, 
       /* req */ nodeLib.httpMod.IncomingMessage, 
       /* res */ nodeLib.httpMod.ServerResponse, 
       scala.Unit

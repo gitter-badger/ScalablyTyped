@@ -16,7 +16,7 @@ class Spin protected ()
 @js.native
 object Spin extends js.Object {
   var defaultProps: antdLib.Anon_PrefixClsSpinning = js.native
-  var propTypes: antdLib.Anon_Size = js.native
+  var propTypes: antdLib.Anon_PrefixClsClassNameSpinning = js.native
   def setDefaultIndicator(indicator: reactLib.reactMod.ReactNs.ReactNode): scala.Unit = js.native
 }
 

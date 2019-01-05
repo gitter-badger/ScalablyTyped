@@ -24,6 +24,6 @@ class AutoCorrect protected () extends js.Object {
   def AddReplacement(What: java.lang.String, Replacement: java.lang.String): java.lang.String = js.native
   /** @returns The string to be replaced */
   def DeleteReplacement(What: java.lang.String): java.lang.String = js.native
-  def ReplacementList(Index: scala.Double): activexDashInteropLib.SafeArray[java.lang.String] = js.native
+  def ReplacementList(Index: scala.Double): activexDashInteropLib.SafeArray[java.lang.String] with stdLib.SafeArray[java.lang.String] = js.native
 }
 

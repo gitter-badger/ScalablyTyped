@@ -720,7 +720,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashMshtmlLib.MSHTMLNs.HTMLWindow2, 
-      /* parameter */ Anon_Url, 
+      /* parameter */ Anon_Description, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -743,7 +743,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashMshtmlLib.MSHTMLNs.HTMLWindowProxy, 
-      /* parameter */ Anon_Url, 
+      /* parameter */ Anon_Description, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -1026,7 +1026,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashMshtmlLib.MSHTMLNs.Scriptlet, 
-      /* parameter */ Anon_EventData, 
+      /* parameter */ Anon_Name, 
       scala.Unit
     ]
   ): scala.Unit = js.native

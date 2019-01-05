@@ -22,11 +22,11 @@ trait InstalledDetails extends js.Object {
     * @see enum OnInstalledReason
     */
   var reason: chromeDashAppsLib.chromeNs.ToStringLiteral[
-    chromeDashAppsLib.Anon_CHROMEUPDATE, 
+    chromeDashAppsLib.Anon_INSTALL, 
     java.lang.String, 
     stdLib.Exclude[
       java.lang.String, 
-      /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_CHROMEUPDATE[keyof chrome-apps.Anon_CHROMEUPDATE] */ js.Any
+      /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_INSTALL[keyof chrome-apps.Anon_INSTALL] */ js.Any
     ]
   ]
 }

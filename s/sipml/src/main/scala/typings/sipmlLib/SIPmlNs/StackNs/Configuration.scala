@@ -12,7 +12,7 @@ trait Configuration extends js.Object {
   var enable_early_ims: js.UndefOr[scala.Boolean] = js.undefined
   var enable_media_stream_cache: js.UndefOr[scala.Boolean] = js.undefined
   var enable_rtcweb_breaker: js.UndefOr[scala.Boolean] = js.undefined
-  var events_listener: js.UndefOr[sipmlLib.Anon_Events] = js.undefined
+  var events_listener: js.UndefOr[sipmlLib.Anon_EventsListener] = js.undefined
   var ice_servers: js.UndefOr[js.Array[js.Object]] = js.undefined
   var impi: js.UndefOr[java.lang.String] = js.undefined
   var impu: js.UndefOr[java.lang.String] = js.undefined

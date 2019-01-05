@@ -7,16 +7,16 @@ import scala.scalajs.js.annotation._
 
 trait State extends js.Object {
   var autoUpdate: scala.Boolean
-  var contentScrollSize: overlayscrollbarsLib.Anon_Height
+  var contentScrollSize: overlayscrollbarsLib.Anon_Width
   var documentMixed: scala.Boolean
-  var hasOverflow: overlayscrollbarsLib.Anon_YX
+  var hasOverflow: overlayscrollbarsLib.Anon_XYBoolean
   var heightAuto: scala.Boolean
-  var hideOverflow: overlayscrollbarsLib.Anon_Ys
-  var hostSize: overlayscrollbarsLib.Anon_Height
-  var overflowAmount: overlayscrollbarsLib.Anon_Y
-  var padding: overlayscrollbarsLib.Anon_TB
+  var hideOverflow: overlayscrollbarsLib.Anon_XYXs
+  var hostSize: overlayscrollbarsLib.Anon_Width
+  var overflowAmount: overlayscrollbarsLib.Anon_XYNumber
+  var padding: overlayscrollbarsLib.Anon_T
   var sleeping: scala.Boolean
-  var viewportSize: overlayscrollbarsLib.Anon_Height
+  var viewportSize: overlayscrollbarsLib.Anon_Width
   var widthAuto: scala.Boolean
 }
 

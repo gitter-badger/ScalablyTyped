@@ -13,11 +13,11 @@ object reactDashNativeDashDocDashViewerMod extends js.Object {
     callback: js.Function2[/* error */ java.lang.String, /* url */ java.lang.String, scala.Unit]
   ): scala.Unit = js.native
   def openDocBinaryinUrl(
-    files: js.Array[reactDashNativeDashDocDashViewerLib.Anon_UrlFileType],
+    files: js.Array[reactDashNativeDashDocDashViewerLib.Anon_UrlFileName],
     callback: js.Function2[/* error */ java.lang.String, /* url */ java.lang.String, scala.Unit]
   ): scala.Unit = js.native
   def openDocb64(
-    files: js.Array[reactDashNativeDashDocDashViewerLib.Anon_FileType],
+    files: js.Array[reactDashNativeDashDocDashViewerLib.Anon_Base64],
     callback: js.Function2[/* error */ java.lang.String, /* url */ java.lang.String, scala.Unit]
   ): scala.Unit = js.native
   def playMovie(

@@ -13,16 +13,16 @@ object TeeNsMembers extends js.Object {
   var Bubble: teechartLib.Anon_ValuesIBubble = js.native
   var Candle: teechartLib.Anon_ValuesICandle = js.native
   // TOOLS
-  var CursorTool: teechartLib.Anon_ChartICursorTool = js.native
+  var CursorTool: teechartLib.Anon_Chart = js.native
   var Donut: teechartLib.Anon_ValuesIPie = js.native
-  var DragTool: teechartLib.Anon_Chart = js.native
+  var DragTool: teechartLib.Anon_ChartIDragTool = js.native
   var Gantt: teechartLib.Anon_ValuesIGantt = js.native
   var HorizArea: teechartLib.Anon_ValuesIArea = js.native
   var HorizBar: teechartLib.Anon_ValuesICustomBar = js.native
   // SERIES
-  var Line: teechartLib.Anon_ValuesILine = js.native
+  var Line: teechartLib.Anon_Values = js.native
   var Pie: teechartLib.Anon_ValuesIPie = js.native
-  var PointXY: teechartLib.Anon_Values = js.native
+  var PointXY: teechartLib.Anon_ValuesICustomSeries = js.native
   var ToolTip: teechartLib.Anon_ChartIToolTip = js.native
   var Volume: teechartLib.Anon_ValuesICustomBar = js.native
 }

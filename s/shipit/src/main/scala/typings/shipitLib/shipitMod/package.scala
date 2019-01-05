@@ -12,7 +12,7 @@ package object shipitMod {
     /* options */ js.UndefOr[nodeLib.childUnderscoreProcessMod.ExecOptions], 
     /* callback */ js.UndefOr[
       js.Function3[
-        /* error */ nodeLib.Error, 
+        /* error */ nodeLib.Error with stdLib.Error, 
         /* stdout */ java.lang.String, 
         /* stderr */ java.lang.String, 
         scala.Unit

@@ -14,6 +14,8 @@ trait Number extends js.Object {
     * Non-standard.
     */
   @JSName(org.scalablytyped.runtime.Symbol.iterator)
-  var iterator: js.Function0[nodeLib.IterableIterator[scala.Double]]
+  var iterator: js.Function0[
+    nodeLib.IterableIterator[scala.Double] with stdLib.IterableIterator[scala.Double]
+  ]
 }
 

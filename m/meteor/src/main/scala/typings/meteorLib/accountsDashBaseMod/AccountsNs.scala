@@ -21,12 +21,12 @@ object AccountsNs extends js.Object {
   var emailTemplates: meteorLib.accountsDashBaseMod.EmailTemplates = js.native
   var ui: meteorLib.Anon_Config = js.native
   var urls: meteorLib.accountsDashBaseMod.URLS = js.native
-  def _hashPassword(password: java.lang.String): meteorLib.Anon_Algorithm = js.native
+  def _hashPassword(password: java.lang.String): meteorLib.Anon_Digest = js.native
   def addEmail(userId: java.lang.String, newEmail: java.lang.String): scala.Unit = js.native
   def addEmail(userId: java.lang.String, newEmail: java.lang.String, verified: scala.Boolean): scala.Unit = js.native
   def changePassword(oldPassword: java.lang.String, newPassword: java.lang.String): scala.Unit = js.native
   def changePassword(oldPassword: java.lang.String, newPassword: java.lang.String, callback: js.Function): scala.Unit = js.native
-  def config(options: meteorLib.Anon_PasswordEnrollTokenExpirationInDays): scala.Unit = js.native
+  def config(options: meteorLib.Anon_SendVerificationEmail): scala.Unit = js.native
   def createUser(options: meteorLib.Anon_Username): java.lang.String = js.native
   def createUser(options: meteorLib.Anon_Username, callback: js.Function): java.lang.String = js.native
   def findUserByEmail(email: java.lang.String): js.Object = js.native

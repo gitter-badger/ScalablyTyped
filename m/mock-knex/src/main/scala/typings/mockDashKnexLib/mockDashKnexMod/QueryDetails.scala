@@ -9,13 +9,13 @@ import scala.scalajs.js.annotation._
 trait QueryDetails
   extends knexLib.knexMod.KnexNs.Sql {
   var transacting: scala.Boolean = js.native
-  def reject(error: java.lang.String): scala.Unit = js.native
   /**
     * Function that needs to be called to mock database query result for knex.
     *
     * @param error The Error, string or instance of Error, which represents why the result was rejected
     */
-  def reject(error: nodeLib.Error): scala.Unit = js.native
+  def reject(error: nodeLib.Error with stdLib.Error): scala.Unit = js.native
+  def reject(error: java.lang.String): scala.Unit = js.native
   /**
     * Function that needs to be called to mock database query result for knex.
     *

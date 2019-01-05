@@ -6,23 +6,21 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_StoreUuid extends js.Object {
-  var remove: js.Function2[
-    /* uuid */ java.lang.String, 
-    /* callback */ js.Function2[
-      /* err */ nodeLib.Error, 
+  def remove(
+    uuid: java.lang.String,
+    callback: js.Function2[
+      /* err */ nodeLib.Error with stdLib.Error, 
       /* res */ uploadcareLib.uploadcareMod.UploadcareNs.File, 
       scala.Unit
-    ], 
-    scala.Unit
-  ]
-  var store: js.Function2[
-    /* uuid */ java.lang.String, 
-    /* callback */ js.Function2[
-      /* err */ nodeLib.Error, 
+    ]
+  ): scala.Unit
+  def store(
+    uuid: java.lang.String,
+    callback: js.Function2[
+      /* err */ nodeLib.Error with stdLib.Error, 
       /* res */ uploadcareLib.uploadcareMod.UploadcareNs.File, 
       scala.Unit
-    ], 
-    scala.Unit
-  ]
+    ]
+  ): scala.Unit
 }
 

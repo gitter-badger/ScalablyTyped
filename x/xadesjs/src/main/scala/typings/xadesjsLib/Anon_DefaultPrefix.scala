@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait Anon_DefaultPrefix extends js.Object {
   var AttributeNames: Anon_Id
   var DefaultPrefix: java.lang.String
-  var ElementNames: Anon_StateOrProvince
+  var ElementNames: Anon_Any
   var NamespaceURI: java.lang.String
   var SignedPropertiesType: java.lang.String
 }

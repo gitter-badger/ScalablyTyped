@@ -68,7 +68,7 @@ trait client extends js.Object {
   def githubLogin(): js.Promise[_] = js.native
   def githubLogin(options: Option): js.Promise[_] = js.native
   def handleVaultResponse(): js.Promise[_] = js.native
-  def handleVaultResponse(res: nodeDashVaultLib.Anon_Body): js.Promise[_] = js.native
+  def handleVaultResponse(res: nodeDashVaultLib.Anon_StatusCode): js.Promise[_] = js.native
   def health(): js.Promise[_] = js.native
   def health(options: Option): js.Promise[_] = js.native
   def help(path: java.lang.String): js.Promise[_] = js.native

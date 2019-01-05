@@ -161,7 +161,7 @@ trait IServerValidationManager extends js.Object {
   def subscribe(
     propertyAlias: java.lang.String,
     fieldName: java.lang.String,
-    callback: angularLib.angularMod.Global.Function
+    callback: angularLib.angularMod.Global.Function with js.Function
   ): scala.Unit
 }
 

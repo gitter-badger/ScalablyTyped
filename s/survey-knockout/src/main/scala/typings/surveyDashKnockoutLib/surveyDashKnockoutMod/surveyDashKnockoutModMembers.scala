@@ -17,15 +17,15 @@ object surveyDashKnockoutModMembers extends js.Object {
     /* desc */ js.Any, 
     js.Any
   ] = js.native
-  var defaultBootstrapCss: surveyDashKnockoutLib.Anon_Panel = js.native
-  var defaultBootstrapMaterialCss: surveyDashKnockoutLib.Anon_PanelQuestion = js.native
-  var defaultStandardCss: surveyDashKnockoutLib.Anon_PanelQuestionBody = js.native
-  var englishStrings: surveyDashKnockoutLib.Anon_AddPanel = js.native
+  var defaultBootstrapCss: surveyDashKnockoutLib.Anon_RootHeaderBody = js.native
+  var defaultBootstrapMaterialCss: surveyDashKnockoutLib.Anon_RootHeaderBodyFooter = js.native
+  var defaultStandardCss: surveyDashKnockoutLib.Anon_RootHeader = js.native
+  var englishStrings: surveyDashKnockoutLib.Anon_PagePrevText = js.native
   var koTemplate: js.Any = js.native
-  var matrixDropdownColumnTypes: surveyDashKnockoutLib.Anon_Text = js.native
+  var matrixDropdownColumnTypes: surveyDashKnockoutLib.Anon_Dropdown = js.native
   var surveyCss: js.Any = js.native
-  var surveyLocalization: surveyDashKnockoutLib.Anon_GetLocales = js.native
-  var surveyStrings: surveyDashKnockoutLib.Anon_AddPanel = js.native
+  var surveyLocalization: surveyDashKnockoutLib.Anon_CurrentLocaleValue = js.native
+  var surveyStrings: surveyDashKnockoutLib.Anon_PagePrevText = js.native
   var surveyTimerFunctions: surveyDashKnockoutLib.Anon_SetInterval = js.native
   def __extends(thisClass: js.Any, baseClass: js.Any): scala.Unit = js.native
 }

@@ -91,7 +91,7 @@ trait MultiSliderProps extends js.Object {
     * Slip displacement If finger leaves the marker measures distance before responder cuts out and changes are no
     * longer registered, if not given marker will be active until pressed released.
     */
-  var touchDimensions: js.UndefOr[reactDashNativeDashMultiDashSliderLib.Anon_BorderRadius] = js.undefined
+  var touchDimensions: js.UndefOr[reactDashNativeDashMultiDashSliderLib.Anon_Height] = js.undefined
   /**
     * Customise the track
     *

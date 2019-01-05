@@ -8,7 +8,11 @@ import scala.scalajs.js.annotation._
 @JSImport("react-router-navigation-core", "CardStack")
 @js.native
 class CardStack protected ()
-  extends reactLib.reactMod.PureComponent[CardStackProps, reactDashRouterDashNavigationDashCoreLib.Anon_Cards, js.Any] {
+  extends reactLib.reactMod.PureComponent[
+      CardStackProps, 
+      reactDashRouterDashNavigationDashCoreLib.Anon_KeyNavigationState, 
+      js.Any
+    ] {
   def this(props: CardStackProps) = this()
   def this(props: CardStackProps, context: js.Any) = this()
   def onListenHistory(

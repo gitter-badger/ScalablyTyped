@@ -14,7 +14,7 @@ trait NotifySettings extends js.Object {
   var icon_type: js.UndefOr[java.lang.String] = js.undefined
   var mouse_over: js.UndefOr[java.lang.String] = js.undefined
   var newest_on_top: js.UndefOr[scala.Boolean] = js.undefined
-  var offset: js.UndefOr[scala.Double | Anon_Y] = js.undefined
+  var offset: js.UndefOr[scala.Double | Anon_X] = js.undefined
   var onClose: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   var onClosed: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   var onShow: js.UndefOr[js.Function0[scala.Unit]] = js.undefined

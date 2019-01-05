@@ -11,9 +11,9 @@ class Resolver () extends js.Object {
   @JSName("getServers")
   var getServers_Original: js.Function0[js.Array[java.lang.String]] = js.native
   @JSName("resolve4")
-  var resolve4_Original: nodeLib.Anon_Hostname = js.native
+  var resolve4_Original: nodeLib.Anon_HostnameOptions = js.native
   @JSName("resolve6")
-  var resolve6_Original: nodeLib.Anon_Hostname = js.native
+  var resolve6_Original: nodeLib.Anon_HostnameOptions = js.native
   @JSName("resolveAny")
   var resolveAny_Original: (js.Function2[
     /* hostname */ java.lang.String, 
@@ -23,7 +23,7 @@ class Resolver () extends js.Object {
       scala.Unit
     ], 
     scala.Unit
-  ]) with nodeLib.Anon_PromisifyHostnameStringPromise = js.native
+  ]) with nodeLib.Anon_Promisify = js.native
   @JSName("resolveCname")
   var resolveCname_Original: (js.Function2[
     /* hostname */ java.lang.String, 
@@ -33,7 +33,7 @@ class Resolver () extends js.Object {
       scala.Unit
     ], 
     scala.Unit
-  ]) with nodeLib.Anon_PromisifyHostnameStringPromiseArray_1439860176 = js.native
+  ]) with nodeLib.Anon_PromisifyHostname = js.native
   @JSName("resolveMx")
   var resolveMx_Original: (js.Function2[
     /* hostname */ java.lang.String, 
@@ -53,7 +53,7 @@ class Resolver () extends js.Object {
       scala.Unit
     ], 
     scala.Unit
-  ]) with nodeLib.Anon_Promisify = js.native
+  ]) with nodeLib.Anon_PromisifyHostnameStringPromise = js.native
   @JSName("resolveNs")
   var resolveNs_Original: (js.Function2[
     /* hostname */ java.lang.String, 
@@ -63,7 +63,7 @@ class Resolver () extends js.Object {
       scala.Unit
     ], 
     scala.Unit
-  ]) with nodeLib.Anon_PromisifyHostnameStringPromiseArray_1439860176 = js.native
+  ]) with nodeLib.Anon_PromisifyHostname = js.native
   @JSName("resolvePtr")
   var resolvePtr_Original: (js.Function2[
     /* hostname */ java.lang.String, 
@@ -73,13 +73,13 @@ class Resolver () extends js.Object {
       scala.Unit
     ], 
     scala.Unit
-  ]) with nodeLib.Anon_PromisifyHostnameStringPromiseArray_1439860176 = js.native
+  ]) with nodeLib.Anon_PromisifyHostname = js.native
   @JSName("resolveSoa")
   var resolveSoa_Original: (js.Function2[
     /* hostname */ java.lang.String, 
     /* callback */ js.Function2[/* err */ nodeLib.NodeJSNs.ErrnoException, /* address */ SoaRecord, scala.Unit], 
     scala.Unit
-  ]) with nodeLib.Anon_PromisifyHostname = js.native
+  ]) with nodeLib.Anon_PromisifyHostnameStringPromiseSoaRecord = js.native
   @JSName("resolveSrv")
   var resolveSrv_Original: (js.Function2[
     /* hostname */ java.lang.String, 
@@ -89,7 +89,7 @@ class Resolver () extends js.Object {
       scala.Unit
     ], 
     scala.Unit
-  ]) with nodeLib.Anon_PromisifyHostnameStringPromiseArraySrvRecord = js.native
+  ]) with nodeLib.Anon_PromisifyHostnameStringPromiseArray = js.native
   @JSName("resolveTxt")
   var resolveTxt_Original: (js.Function2[
     /* hostname */ java.lang.String, 
@@ -99,7 +99,7 @@ class Resolver () extends js.Object {
       scala.Unit
     ], 
     scala.Unit
-  ]) with nodeLib.Anon_PromisifyHostnameStringPromiseArray = js.native
+  ]) with nodeLib.Anon_PromisifyHostnameStringPromiseArray_201810347 = js.native
   @JSName("resolve")
   var resolve_Original: nodeLib.Anon_HostnameRrtype = js.native
   @JSName("reverse")

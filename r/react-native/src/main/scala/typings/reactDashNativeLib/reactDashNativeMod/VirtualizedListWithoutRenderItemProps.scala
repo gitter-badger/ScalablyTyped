@@ -99,9 +99,7 @@ trait VirtualizedListWithoutRenderItemProps[ItemT] extends ScrollViewProps {
     * Recommended action is to either compute your own offset and `scrollTo` it, or scroll as far
     * as possible and then try again after more items have been rendered.
     */
-  var onScrollToIndexFailed: js.UndefOr[
-    js.Function1[/* info */ reactDashNativeLib.Anon_HighestMeasuredFrameIndex, scala.Unit]
-  ] = js.undefined
+  var onScrollToIndexFailed: js.UndefOr[js.Function1[/* info */ reactDashNativeLib.Anon_Index, scala.Unit]] = js.undefined
   /**
     * Called when the viewability of rows changes, as defined by the
     * `viewabilityConfig` prop.

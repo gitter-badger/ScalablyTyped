@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait ITooltipHostProps
   extends reactLib.reactMod.ReactNs.HTMLAttributes[
-      reactLib.HTMLDivElement | officeDashUiDashFabricDashReactLib.libComponentsTooltipTooltipHostDotBaseMod.TooltipHostBase
+      (reactLib.HTMLDivElement with stdLib.HTMLDivElement) | officeDashUiDashFabricDashReactLib.libComponentsTooltipTooltipHostDotBaseMod.TooltipHostBase
     ] {
   /**
     * Additional properties to pass through for Callout, reference detail properties in ICalloutProps

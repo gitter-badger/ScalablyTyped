@@ -10,6 +10,6 @@ trait CompileNgModuleSummary extends CompileTypeSummary {
   var exportedDirectives: js.Array[CompileIdentifierMetadata]
   var exportedPipes: js.Array[CompileIdentifierMetadata]
   var modules: js.Array[CompileTypeMetadata]
-  var providers: js.Array[atAngularCompilerLib.Anon_Module]
+  var providers: js.Array[atAngularCompilerLib.Anon_Provider]
 }
 

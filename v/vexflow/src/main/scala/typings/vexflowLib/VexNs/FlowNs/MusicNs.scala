@@ -16,7 +16,7 @@ object MusicNs extends js.Object {
   val roots: js.Array[java.lang.String] = js.native
   @js.native
   object diatonic_accidentals
-    extends /* diatonic_interval */ org.scalablytyped.runtime.StringDictionary[vexflowLib.Anon_Note]
+    extends /* diatonic_interval */ org.scalablytyped.runtime.StringDictionary[vexflowLib.Anon_NoteAccidentalNumber]
   
   @js.native
   object intervals
@@ -24,7 +24,7 @@ object MusicNs extends js.Object {
   
   @js.native
   object noteValues
-    extends /* value */ org.scalablytyped.runtime.StringDictionary[vexflowLib.Anon_Intval]
+    extends /* value */ org.scalablytyped.runtime.StringDictionary[vexflowLib.Anon_Rootindex]
   
   @js.native
   object root_indices

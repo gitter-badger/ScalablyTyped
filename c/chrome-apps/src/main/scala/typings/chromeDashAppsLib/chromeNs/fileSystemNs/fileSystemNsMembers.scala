@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object fileSystemNsMembers extends js.Object {
   /** @enum */
-  val ChildChangeType: chromeDashAppsLib.Anon_REMOVED = js.native
+  val ChildChangeType: chromeDashAppsLib.Anon_CREATED = js.native
   /**
     * **openFile**
     *  - Prompts the user to open an existing file and returns a FileEntry on success.

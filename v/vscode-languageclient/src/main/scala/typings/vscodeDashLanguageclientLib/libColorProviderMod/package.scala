@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 package object libColorProviderMod {
   type ProvideColorPresentationSignature = js.Function3[
     /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify VColor */ /* color */ js.Any, 
-    /* context */ vscodeDashLanguageclientLib.Anon_Range, 
+    /* context */ vscodeDashLanguageclientLib.Anon_Document, 
     /* token */ vscodeDashJsonrpcLib.libCancellationMod.CancellationToken, 
     /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify ProviderResult<Array<VColorPresentation>> */ js.Any
   ]

@@ -19,7 +19,7 @@ trait Request extends js.Object {
   var post_Original: arangodbLib.Anon_UrlOptions = js.native
   @JSName("put")
   var put_Original: arangodbLib.Anon_UrlOptions = js.native
-  def apply(options: arangodbLib.Anon_Url with RequestOptions): Response = js.native
+  def apply(options: arangodbLib.Anon_UrlMethod with RequestOptions): Response = js.native
   def delete(options: arangodbLib.Anon_UrlString with RequestOptions): Response = js.native
   def delete(url: java.lang.String): Response = js.native
   def delete(url: java.lang.String, options: RequestOptions): Response = js.native

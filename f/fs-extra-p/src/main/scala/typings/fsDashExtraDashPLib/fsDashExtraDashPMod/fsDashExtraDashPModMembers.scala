@@ -33,10 +33,10 @@ object fsDashExtraDashPModMembers extends js.Object {
   def createFileSync(file: java.lang.String): scala.Unit = js.native
   def createReadStream(path: nodeLib.fsMod.PathLike): nodeLib.fsMod.ReadStream = js.native
   def createReadStream(path: nodeLib.fsMod.PathLike, options: java.lang.String): nodeLib.fsMod.ReadStream = js.native
-  def createReadStream(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_AutoClose): nodeLib.fsMod.ReadStream = js.native
+  def createReadStream(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_Flags): nodeLib.fsMod.ReadStream = js.native
   def createWriteStream(path: nodeLib.fsMod.PathLike): nodeLib.fsMod.WriteStream = js.native
   def createWriteStream(path: nodeLib.fsMod.PathLike, options: java.lang.String): nodeLib.fsMod.WriteStream = js.native
-  def createWriteStream(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_AutoCloseFlags): nodeLib.fsMod.WriteStream = js.native
+  def createWriteStream(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_FlagsEncoding): nodeLib.fsMod.WriteStream = js.native
   def deleteFile(path: java.lang.String): js.Promise[_] = js.native
   def deleteFile(path: java.lang.String, ignoreIfNotExists: scala.Boolean): js.Promise[_] = js.native
   def emptyDir(path: java.lang.String): js.Promise[scala.Unit] = js.native
@@ -116,7 +116,7 @@ object fsDashExtraDashPModMembers extends js.Object {
     length: scala.Double,
     position: scala.Double,
     callback: js.Function3[
-      /* err */ nodeLib.Error, 
+      /* err */ nodeLib.Error with stdLib.Error, 
       /* bytesRead */ scala.Double, 
       /* buffer */ nodeLib.Buffer, 
       scala.Unit
@@ -179,7 +179,7 @@ object fsDashExtraDashPModMembers extends js.Object {
     length: scala.Double,
     position: scala.Double,
     callback: js.Function3[
-      /* err */ nodeLib.Error, 
+      /* err */ nodeLib.Error with stdLib.Error, 
       /* written */ scala.Double, 
       /* buffer */ nodeLib.Buffer, 
       scala.Unit

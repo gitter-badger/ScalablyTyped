@@ -22,14 +22,14 @@ trait ValuesResource extends js.Object {
     * row-wise), it does not influence what cell the data starts being written
     * to.
     */
-  def append(request: gapiDotClientDotSheetsLib.Anon_InsertDataOption): gapiDotClientLib.gapiNs.clientNs.Request[AppendValuesResponse]
+  def append(request: gapiDotClientDotSheetsLib.Anon_XgafvAccesstokenAltBearertoken): gapiDotClientLib.gapiNs.clientNs.Request[AppendValuesResponse]
   /**
     * Clears one or more ranges of values from a spreadsheet.
     * The caller must specify the spreadsheet ID and one or more ranges.
     * Only values are cleared -- all other properties of the cell (such as
     * formatting, data validation, etc..) are kept.
     */
-  def batchClear(request: gapiDotClientDotSheetsLib.Anon_Accesstoken): gapiDotClientLib.gapiNs.clientNs.Request[BatchClearValuesResponse]
+  def batchClear(request: gapiDotClientDotSheetsLib.Anon_XgafvAccesstoken): gapiDotClientLib.gapiNs.clientNs.Request[BatchClearValuesResponse]
   /**
     * Clears one or more ranges of values from a spreadsheet.
     * The caller must specify the spreadsheet ID and one or more
@@ -37,56 +37,52 @@ trait ValuesResource extends js.Object {
     * filters will be cleared.  Only values are cleared -- all other properties
     * of the cell (such as formatting, data validation, etc..) are kept.
     */
-  def batchClearByDataFilter(request: gapiDotClientDotSheetsLib.Anon_Accesstoken): gapiDotClientLib.gapiNs.clientNs.Request[BatchClearValuesByDataFilterResponse]
+  def batchClearByDataFilter(request: gapiDotClientDotSheetsLib.Anon_XgafvAccesstoken): gapiDotClientLib.gapiNs.clientNs.Request[BatchClearValuesByDataFilterResponse]
   /**
     * Returns one or more ranges of values from a spreadsheet.
     * The caller must specify the spreadsheet ID and one or more ranges.
     */
-  def batchGet(
-    request: gapiDotClientDotSheetsLib.Anon_AccesstokenPrettyPrintSpreadsheetIdBearertokenCallbackValueRenderOptionQuotaUser
-  ): gapiDotClientLib.gapiNs.clientNs.Request[BatchGetValuesResponse]
+  def batchGet(request: gapiDotClientDotSheetsLib.Anon_XgafvAccesstokenAltBearertokenCallback): gapiDotClientLib.gapiNs.clientNs.Request[BatchGetValuesResponse]
   /**
     * Returns one or more ranges of values that match the specified data filters.
     * The caller must specify the spreadsheet ID and one or more
     * DataFilters.  Ranges that match any of the data filters in
     * the request will be returned.
     */
-  def batchGetByDataFilter(request: gapiDotClientDotSheetsLib.Anon_Accesstoken): gapiDotClientLib.gapiNs.clientNs.Request[BatchGetValuesByDataFilterResponse]
+  def batchGetByDataFilter(request: gapiDotClientDotSheetsLib.Anon_XgafvAccesstoken): gapiDotClientLib.gapiNs.clientNs.Request[BatchGetValuesByDataFilterResponse]
   /**
     * Sets values in one or more ranges of a spreadsheet.
     * The caller must specify the spreadsheet ID,
     * a valueInputOption, and one or more
     * ValueRanges.
     */
-  def batchUpdate(request: gapiDotClientDotSheetsLib.Anon_Accesstoken): gapiDotClientLib.gapiNs.clientNs.Request[BatchUpdateValuesResponse]
+  def batchUpdate(request: gapiDotClientDotSheetsLib.Anon_XgafvAccesstoken): gapiDotClientLib.gapiNs.clientNs.Request[BatchUpdateValuesResponse]
   /**
     * Sets values in one or more ranges of a spreadsheet.
     * The caller must specify the spreadsheet ID,
     * a valueInputOption, and one or more
     * DataFilterValueRanges.
     */
-  def batchUpdateByDataFilter(request: gapiDotClientDotSheetsLib.Anon_Accesstoken): gapiDotClientLib.gapiNs.clientNs.Request[BatchUpdateValuesByDataFilterResponse]
+  def batchUpdateByDataFilter(request: gapiDotClientDotSheetsLib.Anon_XgafvAccesstoken): gapiDotClientLib.gapiNs.clientNs.Request[BatchUpdateValuesByDataFilterResponse]
   /**
     * Clears values from a spreadsheet.
     * The caller must specify the spreadsheet ID and range.
     * Only values are cleared -- all other properties of the cell (such as
     * formatting, data validation, etc..) are kept.
     */
-  def clear(request: gapiDotClientDotSheetsLib.Anon_AccesstokenPrettyPrintSpreadsheetIdBearertokenCallback): gapiDotClientLib.gapiNs.clientNs.Request[ClearValuesResponse]
+  def clear(request: gapiDotClientDotSheetsLib.Anon_XgafvAccesstokenAltBearertokenCallbackFields): gapiDotClientLib.gapiNs.clientNs.Request[ClearValuesResponse]
   /**
     * Returns a range of values from a spreadsheet.
     * The caller must specify the spreadsheet ID and a range.
     */
-  def get(
-    request: gapiDotClientDotSheetsLib.Anon_AccesstokenPrettyPrintSpreadsheetIdBearertokenCallbackValueRenderOption
-  ): gapiDotClientLib.gapiNs.clientNs.Request[ValueRange]
+  def get(request: gapiDotClientDotSheetsLib.Anon_XgafvAccesstokenAltBearertokenCallbackDateTimeRenderOption): gapiDotClientLib.gapiNs.clientNs.Request[ValueRange]
   /**
     * Sets values in a range of a spreadsheet.
     * The caller must specify the spreadsheet ID, range, and
     * a valueInputOption.
     */
   def update(
-    request: gapiDotClientDotSheetsLib.Anon_AccesstokenPrettyPrintSpreadsheetIdBearertokenCallbackQuotaUser
+    request: gapiDotClientDotSheetsLib.Anon_XgafvAccesstokenAltBearertokenCallbackFieldsIncludeValuesInResponse
   ): gapiDotClientLib.gapiNs.clientNs.Request[UpdateValuesResponse]
 }
 

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class DiscardMissingTileImagePolicy protected ()
   extends cesiumLib.cesiumMod.CesiumNs.DiscardMissingTileImagePolicy {
-  def this(options: cesiumLib.Anon_PixelsToCheck) = this()
+  def this(options: cesiumLib.Anon_MissingImageUrl) = this()
   /* CompleteClass */
   override def isReady(): scala.Boolean = js.native
   /* CompleteClass */

@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 trait Anon_OriginalEventItem extends js.Object {
   var item: this.type
-  var originalEvent: reactLib.Event
+  var originalEvent: reactLib.Event with stdLib.Event
 }
 

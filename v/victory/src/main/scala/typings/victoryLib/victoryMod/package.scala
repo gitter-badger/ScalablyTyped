@@ -11,7 +11,7 @@ package object victoryMod {
   /**
     * Category prop type
     */
-  type CategoryPropType = js.Array[java.lang.String] | victoryLib.Anon_YXArray
+  type CategoryPropType = js.Array[java.lang.String] | victoryLib.Anon_XYArray
   type ColorScalePropType = victoryLib.victoryLibStrings.greyscale | victoryLib.victoryLibStrings.qualitative | victoryLib.victoryLibStrings.heatmap | victoryLib.victoryLibStrings.warm | victoryLib.victoryLibStrings.cool | victoryLib.victoryLibStrings.red | victoryLib.victoryLibStrings.green | victoryLib.victoryLibStrings.blue | js.Array[java.lang.String]
   /**
     * Data getter property type
@@ -20,8 +20,8 @@ package object victoryMod {
   /**
     * Domain padding
     */
-  type DomainPaddingPropType = scala.Double | victoryLib.Anon_YXNumber
-  type DomainPropType = DomainTuple | victoryLib.Anon_Y | victoryLib.Anon_YX
+  type DomainPaddingPropType = scala.Double | victoryLib.Anon_XYNumber
+  type DomainPropType = DomainTuple | victoryLib.Anon_X | victoryLib.Anon_XY
   /**
     * Data domain type
     */
@@ -35,7 +35,7 @@ package object victoryMod {
   type ScalePropType = victoryLib.victoryLibStrings.linear | victoryLib.victoryLibStrings.time | victoryLib.victoryLibStrings.log | victoryLib.victoryLibStrings.sqrt
   type ScatterSymbolType = victoryLib.victoryLibStrings.circle | victoryLib.victoryLibStrings.diamond | victoryLib.victoryLibStrings.plus | victoryLib.victoryLibStrings.square | victoryLib.victoryLibStrings.star | victoryLib.victoryLibStrings.triangleDown | victoryLib.victoryLibStrings.triangleUp
   // Many victory components accept string or number or callback which returns string or number
-  type StringOrNumberOrCallback = java.lang.String | scala.Double | victoryLib.Anon_String
+  type StringOrNumberOrCallback = java.lang.String | scala.Double | victoryLib.Anon_StringNumber
   /**
     * Text anchor type
     */

@@ -32,7 +32,7 @@ trait TextBuffer extends js.Object {
   def addMarkerLayer(options: textDashBufferLib.Anon_MaintainHistory): MarkerLayer = js.native
   /** Append text to the end of the buffer. */
   def append(text: java.lang.String): Range = js.native
-  def append(text: java.lang.String, options: textDashBufferLib.Anon_Undo): Range = js.native
+  def append(text: java.lang.String, options: textDashBufferLib.Anon_NormalizeLineEndings): Range = js.native
   /**
     *  Scan regular expression matches in the entire buffer in reverse order,
     *  calling the given iterator function on each match.
@@ -125,7 +125,7 @@ trait TextBuffer extends js.Object {
     *  If the given checkpoint is no longer present in the undo history, this method
     *  will return an empty Array.
     */
-  def getChangesSinceCheckpoint(checkpoint: scala.Double): js.Array[textDashBufferLib.Anon_NewExtent] = js.native
+  def getChangesSinceCheckpoint(checkpoint: scala.Double): js.Array[textDashBufferLib.Anon_Start] = js.native
   /** Get the default MarkerLayer. */
   def getDefaultMarkerLayer(): MarkerLayer = js.native
   /** Returns the string encoding of this buffer. */
@@ -181,7 +181,11 @@ trait TextBuffer extends js.Object {
   def hasMultipleEditors(): scala.Boolean = js.native
   /** Insert text at the given position. */
   def insert(position: PointCompatible, text: java.lang.String): Range = js.native
-  def insert(position: PointCompatible, text: java.lang.String, options: textDashBufferLib.Anon_Undo): Range = js.native
+  def insert(
+    position: PointCompatible,
+    text: java.lang.String,
+    options: textDashBufferLib.Anon_NormalizeLineEndings
+  ): Range = js.native
   /** Returns whether or not the given buffer is alive. */
   def isAlive(): scala.Boolean = js.native
   /** Returns whether or not the given buffer has been destroyed. */
@@ -216,10 +220,10 @@ trait TextBuffer extends js.Object {
   def lineLengthForRow(row: scala.Double): scala.Double = js.native
   /** Create a marker at the given position with no tail in the default marker layer. */
   def markPosition(position: PointCompatible): Marker = js.native
-  def markPosition(position: PointCompatible, options: textDashBufferLib.Anon_ExclusiveInvalidate): Marker = js.native
+  def markPosition(position: PointCompatible, options: textDashBufferLib.Anon_Invalidate): Marker = js.native
   /** Create a marker with the given range in the default marker layer. */
   def markRange(range: RangeCompatible): Marker = js.native
-  def markRange(range: RangeCompatible, properties: textDashBufferLib.Anon_Exclusive): Marker = js.native
+  def markRange(range: RangeCompatible, properties: textDashBufferLib.Anon_ReversedInvalidate): Marker = js.native
   /**
     *  Given a row, find the next row that's not blank.
     *  Returns a number or null if there's no next non-blank row.
@@ -407,7 +411,11 @@ trait TextBuffer extends js.Object {
   def setText(text: java.lang.String): Range = js.native
   /** Set the text in the given range. */
   def setTextInRange(range: RangeCompatible, text: java.lang.String): Range = js.native
-  def setTextInRange(range: RangeCompatible, text: java.lang.String, options: textDashBufferLib.Anon_Undo): Range = js.native
+  def setTextInRange(
+    range: RangeCompatible,
+    text: java.lang.String,
+    options: textDashBufferLib.Anon_NormalizeLineEndings
+  ): Range = js.native
   /**
     *  Replace the current buffer contents by applying a diff based on the
     *  given text.

@@ -35,7 +35,7 @@ trait SelectProps extends js.Object {
   ] = js.undefined
   var onDeselect: js.UndefOr[js.Function2[/* value */ java.lang.String, /* option */ Option, scala.Unit]] = js.undefined
   var onFocus: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
-  var onInputKeyDown: js.UndefOr[js.Function1[/* e */ reactLib.Event, scala.Unit]] = js.undefined
+  var onInputKeyDown: js.UndefOr[js.Function1[/* e */ reactLib.Event with stdLib.Event, scala.Unit]] = js.undefined
   var onPopupScroll: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   var onSearch: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   var onSelect: js.UndefOr[js.Function2[/* value */ java.lang.String, /* ontion */ Option, scala.Unit]] = js.undefined

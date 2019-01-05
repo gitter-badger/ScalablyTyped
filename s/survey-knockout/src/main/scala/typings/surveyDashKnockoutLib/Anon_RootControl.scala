@@ -9,5 +9,6 @@ trait Anon_RootControl extends js.Object {
   var control: java.lang.String
   var other: java.lang.String
   var root: java.lang.String
+  var selectWrapper: java.lang.String
 }
 

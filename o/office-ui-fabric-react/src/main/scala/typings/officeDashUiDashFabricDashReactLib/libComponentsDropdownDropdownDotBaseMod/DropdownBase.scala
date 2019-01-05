@@ -110,7 +110,10 @@ class DropdownBase protected ()
   ): scala.Unit = js.native
   def focus(): scala.Unit = js.native
   def focus(shouldOpenOnFocus: scala.Boolean): scala.Unit = js.native
-  def setSelectedIndex(event: reactLib.reactMod.ReactNs.FormEvent[reactLib.HTMLDivElement], index: scala.Double): scala.Unit = js.native
+  def setSelectedIndex(
+    event: reactLib.reactMod.ReactNs.FormEvent[reactLib.HTMLDivElement with stdLib.HTMLDivElement],
+    index: scala.Double
+  ): scala.Unit = js.native
 }
 
 @JSImport("office-ui-fabric-react/lib/components/Dropdown/Dropdown.base", "DropdownBase")

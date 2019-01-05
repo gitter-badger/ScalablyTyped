@@ -1899,7 +1899,7 @@ object CloudFrontNs extends js.Object {
     def getSignedCookie(
       options: awsDashSdkLib.libCloudfrontSignerMod.SignerNs.SignerOptionsWithPolicy,
       callback: js.Function2[
-          /* err */ nodeLib.Error, 
+          /* err */ nodeLib.Error with stdLib.Error, 
           /* cookie */ awsDashSdkLib.libCloudfrontSignerMod.SignerNs.CustomPolicy, 
           scala.Unit
         ]
@@ -1914,7 +1914,7 @@ object CloudFrontNs extends js.Object {
     def getSignedCookie(
       options: awsDashSdkLib.libCloudfrontSignerMod.SignerNs.SignerOptionsWithoutPolicy,
       callback: js.Function2[
-          /* err */ nodeLib.Error, 
+          /* err */ nodeLib.Error with stdLib.Error, 
           /* cookie */ awsDashSdkLib.libCloudfrontSignerMod.SignerNs.CannedPolicy, 
           scala.Unit
         ]
@@ -1930,12 +1930,12 @@ object CloudFrontNs extends js.Object {
       */
     def getSignedUrl(
       options: awsDashSdkLib.libCloudfrontSignerMod.SignerNs.SignerOptionsWithPolicy,
-      callback: js.Function2[/* err */ nodeLib.Error, /* url */ java.lang.String, scala.Unit]
+      callback: js.Function2[/* err */ nodeLib.Error with stdLib.Error, /* url */ java.lang.String, scala.Unit]
     ): scala.Unit = js.native
     def getSignedUrl(options: awsDashSdkLib.libCloudfrontSignerMod.SignerNs.SignerOptionsWithoutPolicy): java.lang.String = js.native
     def getSignedUrl(
       options: awsDashSdkLib.libCloudfrontSignerMod.SignerNs.SignerOptionsWithoutPolicy,
-      callback: js.Function2[/* err */ nodeLib.Error, /* url */ java.lang.String, scala.Unit]
+      callback: js.Function2[/* err */ nodeLib.Error with stdLib.Error, /* url */ java.lang.String, scala.Unit]
     ): scala.Unit = js.native
   }
   

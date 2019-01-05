@@ -10,14 +10,14 @@ trait NativeSelectInputProps extends js.Object {
   var disabled: js.UndefOr[scala.Boolean] = js.undefined
   var inputRef: js.UndefOr[
     js.Function1[
-      /* ref */ reactLib.HTMLSelectElement | atMaterialDashUiCoreLib.Anon_Node, 
+      /* ref */ (reactLib.HTMLSelectElement with stdLib.HTMLSelectElement) | atMaterialDashUiCoreLib.Anon_Node, 
       scala.Unit
     ]
   ] = js.undefined
   var name: js.UndefOr[java.lang.String] = js.undefined
   var onChange: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.ChangeEvent[reactLib.HTMLSelectElement], 
+      /* event */ reactLib.reactMod.ReactNs.ChangeEvent[reactLib.HTMLSelectElement with stdLib.HTMLSelectElement], 
       /* child */ reactLib.reactMod.ReactNs.ReactNode, 
       scala.Unit
     ]

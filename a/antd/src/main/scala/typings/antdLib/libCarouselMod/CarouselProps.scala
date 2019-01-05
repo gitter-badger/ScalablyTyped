@@ -27,10 +27,10 @@ trait CarouselProps extends js.Object {
   var infinite: js.UndefOr[scala.Boolean] = js.undefined
   var initialSlide: js.UndefOr[scala.Double] = js.undefined
   var lazyLoad: js.UndefOr[scala.Boolean] = js.undefined
-  var nextArrow: js.UndefOr[reactLib.HTMLElement | js.Any] = js.undefined
+  var nextArrow: js.UndefOr[(reactLib.HTMLElement with stdLib.HTMLElement) | js.Any] = js.undefined
   var pauseOnHover: js.UndefOr[scala.Boolean] = js.undefined
   var prefixCls: js.UndefOr[java.lang.String] = js.undefined
-  var prevArrow: js.UndefOr[reactLib.HTMLElement | js.Any] = js.undefined
+  var prevArrow: js.UndefOr[(reactLib.HTMLElement with stdLib.HTMLElement) | js.Any] = js.undefined
   var rtl: js.UndefOr[scala.Boolean] = js.undefined
   var slickGoTo: js.UndefOr[scala.Double] = js.undefined
   var slide: js.UndefOr[java.lang.String] = js.undefined

@@ -25,7 +25,7 @@ object AccountsNs extends js.Object {
   def addEmail(userId: java.lang.String, newEmail: java.lang.String, verified: scala.Boolean): scala.Unit = js.native
   def changePassword(oldPassword: java.lang.String, newPassword: java.lang.String): scala.Unit = js.native
   def changePassword(oldPassword: java.lang.String, newPassword: java.lang.String, callback: js.Function): scala.Unit = js.native
-  def config(options: meteorDashTypingsLib.Anon_RestrictCreationByEmailDomain): scala.Unit = js.native
+  def config(options: meteorDashTypingsLib.Anon_SendVerificationEmail): scala.Unit = js.native
   def createUser(options: meteorDashTypingsLib.Anon_Username): java.lang.String = js.native
   def createUser(options: meteorDashTypingsLib.Anon_Username, callback: js.Function): java.lang.String = js.native
   def findUserByEmail(email: java.lang.String): js.Object = js.native

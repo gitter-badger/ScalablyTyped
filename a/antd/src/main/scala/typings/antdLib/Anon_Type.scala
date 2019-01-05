@@ -6,10 +6,20 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_Type extends js.Object {
-  var placement: js.UndefOr[
-    antdLib.antdLibStrings.bottomLeft | antdLib.antdLibStrings.bottomRight | antdLib.antdLibStrings.topLeft | antdLib.antdLibStrings.topCenter | antdLib.antdLibStrings.topRight | antdLib.antdLibStrings.bottomCenter
+  var block: propDashTypesLib.propDashTypesMod.Requireable[scala.Boolean]
+  var className: propDashTypesLib.propDashTypesMod.Requireable[java.lang.String]
+  var htmlType: propDashTypesLib.propDashTypesMod.Requireable[
+    antdLib.antdLibStrings.button | antdLib.antdLibStrings.reset | antdLib.antdLibStrings.submit
   ]
-  var prefixCls: java.lang.String
-  var `type`: antdLib.libDropdownDropdownDashButtonMod.DropdownButtonType
+  var icon: propDashTypesLib.propDashTypesMod.Requireable[java.lang.String]
+  var loading: propDashTypesLib.propDashTypesMod.Requireable[scala.Boolean | js.Object]
+  var onClick: propDashTypesLib.propDashTypesMod.Requireable[js.Function1[/* repeated */ _, _]]
+  var shape: propDashTypesLib.propDashTypesMod.Requireable[antdLib.antdLibStrings.circle | antdLib.antdLibStrings.`circle-outline`]
+  var size: propDashTypesLib.propDashTypesMod.Requireable[
+    antdLib.antdLibStrings.small | antdLib.antdLibStrings.default | antdLib.antdLibStrings.large
+  ]
+  var `type`: propDashTypesLib.propDashTypesMod.Requireable[
+    antdLib.antdLibStrings.default | antdLib.antdLibStrings.dashed | antdLib.antdLibStrings.primary | antdLib.antdLibStrings.ghost | antdLib.antdLibStrings.danger
+  ]
 }
 

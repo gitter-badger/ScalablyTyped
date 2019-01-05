@@ -9,7 +9,7 @@ package object aphroditeLib {
   type CSSProperties = (Omit[
     BaseCSSProperties, 
     aphroditeLib.aphroditeLibStrings.fontFamily | aphroditeLib.aphroditeLibStrings.transition | aphroditeLib.aphroditeLibStrings.animationName
-  ]) with Anon_AnimationName
+  ]) with Anon_FontFamily
   type FontFamily = js.Any
   type Omit[T, K /* <: java.lang.String */] = stdLib.Pick[T, stdLib.Exclude[java.lang.String, K]]
 }

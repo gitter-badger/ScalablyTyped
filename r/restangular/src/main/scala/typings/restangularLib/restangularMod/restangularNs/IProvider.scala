@@ -10,9 +10,9 @@ trait IProvider extends js.Object {
   def addElementTransformer(
     route: java.lang.String,
     isCollection: scala.Boolean,
-    transformer: angularLib.angularMod.Global.Function
+    transformer: angularLib.angularMod.Global.Function with js.Function
   ): IProvider = js.native
-  def addElementTransformer(route: java.lang.String, transformer: angularLib.angularMod.Global.Function): IProvider = js.native
+  def addElementTransformer(route: java.lang.String, transformer: angularLib.angularMod.Global.Function with js.Function): IProvider = js.native
   def addFullRequestInterceptor(
     requestInterceptor: js.Function7[
       /* element */ js.Any, 
@@ -22,7 +22,7 @@ trait IProvider extends js.Object {
       /* headers */ js.Any, 
       /* params */ js.Any, 
       /* httpConfig */ angularLib.angularMod.angularNs.IRequestShortcutConfig, 
-      restangularLib.Anon_HttpConfig
+      restangularLib.Anon_Headers
     ]
   ): IProvider = js.native
   def addRequestInterceptor(

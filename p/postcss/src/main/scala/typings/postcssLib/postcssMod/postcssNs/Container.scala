@@ -135,18 +135,22 @@ trait Container extends Node {
     * that will return a new value. The callback will receive the same
     * arguments as those passed to a function parameter of String#replace.
     */
-  def replaceValues(pattern: java.lang.String, options: postcssLib.Anon_Fast, callbackOrReplaceValue: java.lang.String): this.type = js.native
   def replaceValues(
     pattern: java.lang.String,
-    options: postcssLib.Anon_Fast,
+    options: postcssLib.Anon_Props,
+    callbackOrReplaceValue: java.lang.String
+  ): this.type = js.native
+  def replaceValues(
+    pattern: java.lang.String,
+    options: postcssLib.Anon_Props,
     callbackOrReplaceValue: postcssLib.Anon_Substring
   ): this.type = js.native
   def replaceValues(pattern: stdLib.RegExp, callbackOrReplaceValue: java.lang.String): this.type = js.native
   def replaceValues(pattern: stdLib.RegExp, callbackOrReplaceValue: postcssLib.Anon_Substring): this.type = js.native
-  def replaceValues(pattern: stdLib.RegExp, options: postcssLib.Anon_Fast, callbackOrReplaceValue: java.lang.String): this.type = js.native
+  def replaceValues(pattern: stdLib.RegExp, options: postcssLib.Anon_Props, callbackOrReplaceValue: java.lang.String): this.type = js.native
   def replaceValues(
     pattern: stdLib.RegExp,
-    options: postcssLib.Anon_Fast,
+    options: postcssLib.Anon_Props,
     callbackOrReplaceValue: postcssLib.Anon_Substring
   ): this.type = js.native
   /**

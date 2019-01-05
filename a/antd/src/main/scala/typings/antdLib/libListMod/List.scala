@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait List
   extends reactLib.reactMod.Component[ListProps, js.Object, js.Any] {
-  var defaultPaginationProps: antdLib.Anon_Total = js.native
+  var defaultPaginationProps: antdLib.Anon_Current = js.native
   var keys: js.Any = js.native
   @JSName("state")
   var state_List: antdLib.Anon_PaginationCurrent = js.native

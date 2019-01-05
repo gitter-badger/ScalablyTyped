@@ -45,7 +45,7 @@ class StreamMessageWriter protected ()
   override def onError(
     listener: js.Function1[
       /* e */ js.Tuple3[
-        nodeLib.Error, 
+        nodeLib.Error with stdLib.Error, 
         js.UndefOr[vscodeDashJsonrpcLib.libMessagesMod.Message], 
         js.UndefOr[scala.Double]
       ], 
@@ -56,7 +56,7 @@ class StreamMessageWriter protected ()
   override def onError(
     listener: js.Function1[
       /* e */ js.Tuple3[
-        nodeLib.Error, 
+        nodeLib.Error with stdLib.Error, 
         js.UndefOr[vscodeDashJsonrpcLib.libMessagesMod.Message], 
         js.UndefOr[scala.Double]
       ], 
@@ -68,7 +68,7 @@ class StreamMessageWriter protected ()
   override def onError(
     listener: js.Function1[
       /* e */ js.Tuple3[
-        nodeLib.Error, 
+        nodeLib.Error with stdLib.Error, 
         js.UndefOr[vscodeDashJsonrpcLib.libMessagesMod.Message], 
         js.UndefOr[scala.Double]
       ], 

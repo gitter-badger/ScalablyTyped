@@ -23,6 +23,6 @@ trait IFocusZone extends js.Object {
     * @returns True if focus could be set to an active element, false if no operation was taken.
     */
   def focusElement(): scala.Boolean = js.native
-  def focusElement(childElement: reactLib.HTMLElement): scala.Boolean = js.native
+  def focusElement(childElement: reactLib.HTMLElement with stdLib.HTMLElement): scala.Boolean = js.native
 }
 

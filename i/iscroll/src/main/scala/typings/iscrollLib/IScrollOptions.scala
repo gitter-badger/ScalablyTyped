@@ -9,7 +9,7 @@ trait IScrollOptions extends js.Object {
   var HWCompositing: js.UndefOr[scala.Boolean] = js.undefined
   var bounce: js.UndefOr[scala.Boolean] = js.undefined
   ///String or function
-  var bounceEasing: js.UndefOr[java.lang.String | Anon_Fn] = js.undefined
+  var bounceEasing: js.UndefOr[java.lang.String | Anon_Style] = js.undefined
   var bounceLock: js.UndefOr[scala.Boolean] = js.undefined
   var bounceTime: js.UndefOr[scala.Double] = js.undefined
   var checkDOMChanges: js.UndefOr[scala.Boolean] = js.undefined

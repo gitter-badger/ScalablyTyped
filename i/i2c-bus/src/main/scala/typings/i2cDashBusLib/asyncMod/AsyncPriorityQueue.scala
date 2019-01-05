@@ -13,7 +13,7 @@ trait AsyncPriorityQueue[T] extends js.Object {
   var started: scala.Boolean = js.native
   def drain(): js.Any = js.native
   def empty(): js.Any = js.native
-  def error(error: nodeLib.Error, data: js.Any): scala.Unit = js.native
+  def error(error: nodeLib.Error with stdLib.Error, data: js.Any): scala.Unit = js.native
   def idle(): scala.Boolean = js.native
   def kill(): scala.Unit = js.native
   def length(): scala.Double = js.native
@@ -26,6 +26,6 @@ trait AsyncPriorityQueue[T] extends js.Object {
   def running(): scala.Double = js.native
   def saturated(): js.Any = js.native
   def unsaturated(): scala.Unit = js.native
-  def workersList(): js.Array[i2cDashBusLib.Anon_Callback[T]] = js.native
+  def workersList(): js.Array[i2cDashBusLib.Anon_DataPriority[T]] = js.native
 }
 

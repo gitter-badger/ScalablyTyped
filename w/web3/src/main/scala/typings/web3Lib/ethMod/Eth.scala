@@ -17,7 +17,7 @@ trait Eth extends js.Object {
   var Iban: web3Lib.ethTypesMod.Iban = js.native
   var abi: web3Lib.ethAbiMod.ABI = js.native
   var accounts: web3Lib.ethAccountsMod.Accounts = js.native
-  var compile: web3Lib.Anon_Serpent = js.native
+  var compile: web3Lib.Anon_Solidity = js.native
   var currentProvider: web3Lib.providersMod.Provider = js.native
   var defaultAccount: java.lang.String = js.native
   var defaultBlock: web3Lib.ethTypesMod.BlockType = js.native

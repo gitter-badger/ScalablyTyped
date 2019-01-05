@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ViewerTouchEvent[T] extends js.Object {
-  var SVGViewer: reactLib.SVGSVGElement
+  var SVGViewer: reactLib.SVGSVGElement with stdLib.SVGSVGElement
   var changedPoints: js.Array[Point]
   var originalEvent: reactLib.reactMod.ReactNs.TouchEvent[T]
   var points: js.Array[Point]

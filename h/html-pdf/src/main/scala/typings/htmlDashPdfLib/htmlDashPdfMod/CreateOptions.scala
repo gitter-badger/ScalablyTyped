@@ -9,7 +9,7 @@ trait CreateOptions extends js.Object {
   // Rendering options
   var base: js.UndefOr[java.lang.String] = js.undefined
   // Page options
-  var border: js.UndefOr[java.lang.String | htmlDashPdfLib.Anon_Bottom] = js.undefined
+  var border: js.UndefOr[java.lang.String | htmlDashPdfLib.Anon_Top] = js.undefined
   // Export options
   var directory: js.UndefOr[java.lang.String] = js.undefined
   var footer: js.UndefOr[htmlDashPdfLib.Anon_HeightContents] = js.undefined

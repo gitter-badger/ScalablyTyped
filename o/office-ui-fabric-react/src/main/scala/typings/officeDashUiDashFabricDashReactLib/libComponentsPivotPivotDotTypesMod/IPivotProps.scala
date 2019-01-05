@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait IPivotProps
   extends reactLib.reactMod.ReactNs.ClassAttributes[officeDashUiDashFabricDashReactLib.libComponentsPivotPivotDotBaseMod.PivotBase]
-     with reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLDivElement] {
+     with reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLDivElement with stdLib.HTMLDivElement] {
   /**
     * Optional callback to access the IPivot interface. Use this instead of ref for accessing
     * the public methods and properties of the component.
@@ -53,7 +53,7 @@ trait IPivotProps
     js.Function2[
       /* item */ js.UndefOr[officeDashUiDashFabricDashReactLib.libComponentsPivotPivotItemMod.PivotItem], 
       /* ev */ js.UndefOr[
-        reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent]
+        reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement with stdLib.HTMLElement, reactLib.NativeMouseEvent]
       ], 
       scala.Unit
     ]

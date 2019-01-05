@@ -16,7 +16,7 @@ object ImageManipulatorNs extends js.Object {
   }
   
   trait Flip extends js.Object {
-    var flip: js.UndefOr[expoLib.Anon_Horizontal] = js.undefined
+    var flip: js.UndefOr[expoLib.Anon_Vertical] = js.undefined
   }
   
   trait ImageResult extends js.Object {
@@ -27,7 +27,7 @@ object ImageManipulatorNs extends js.Object {
   }
   
   trait Resize extends js.Object {
-    var resize: expoLib.Anon_HeightWidth
+    var resize: expoLib.Anon_WidthHeight
   }
   
   trait Rotate extends js.Object {

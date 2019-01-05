@@ -411,6 +411,6 @@ trait Anon_S1 extends js.Object {
     s25: gulpDashSequenceLib.gulpDashSequenceMod.seqNs.Step,
     done: gulpDashSequenceLib.gulpDashSequenceMod.seqNs.Done
   ): scala.Unit = js.native
-  def use(gulp: gulpLib.gulpMod.GulpClientNs.Gulp): /* import warning: ImportType.apply Failed type conversion: typeof gulp-sequence.gulp-sequence.seq */ js.Any = js.native
+  def use(gulp: gulpLib.gulpMod.GulpClientNs.Gulp): /* import warning: ImportType.apply Failed type conversion: typeof seq */ js.Any = js.native
 }
 

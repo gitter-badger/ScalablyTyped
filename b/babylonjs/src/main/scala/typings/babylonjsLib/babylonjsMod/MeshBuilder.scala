@@ -36,10 +36,10 @@ object MeshBuilder extends js.Object {
     * @param scene defines the hosting scene
     * @returns the box mesh
     */
-  def CreateBox(name: java.lang.String, options: babylonjsLib.Anon_Size): babylonjsLib.BABYLONNs.Mesh = js.native
+  def CreateBox(name: java.lang.String, options: babylonjsLib.Anon_SizeWidthHeight): babylonjsLib.BABYLONNs.Mesh = js.native
   def CreateBox(
     name: java.lang.String,
-    options: babylonjsLib.Anon_Size,
+    options: babylonjsLib.Anon_SizeWidthHeight,
     scene: babylonjsLib.BABYLONNs.Nullable[babylonjsLib.BABYLONNs.Scene]
   ): babylonjsLib.BABYLONNs.Mesh = js.native
   /**
@@ -69,7 +69,7 @@ object MeshBuilder extends js.Object {
     * @returns the cylinder mesh
     * @see http://doc.babylonjs.com/tutorials/Mesh_CreateXXX_Methods_With_Options_Parameter#cylinder-or-cone
     */
-  def CreateCylinder(name: java.lang.String, options: babylonjsLib.Anon_SubdivisionsTessellation, scene: js.Any): babylonjsLib.BABYLONNs.Mesh = js.native
+  def CreateCylinder(name: java.lang.String, options: babylonjsLib.Anon_HeightDiameterTop, scene: js.Any): babylonjsLib.BABYLONNs.Mesh = js.native
   /**
     * Creates a dashed line mesh
     * * A dashed line mesh is considered as a parametric shape since it has no predefined original shape. Its shape is determined by the passed array of points as an input parameter
@@ -87,10 +87,10 @@ object MeshBuilder extends js.Object {
     * @returns the dashed line mesh
     * @see http://doc.babylonjs.com/how_to/parametric_shapes#dashed-lines
     */
-  def CreateDashedLines(name: java.lang.String, options: babylonjsLib.Anon_GapSize): babylonjsLib.BABYLONNs.LinesMesh = js.native
+  def CreateDashedLines(name: java.lang.String, options: babylonjsLib.Anon_PointsDashSize): babylonjsLib.BABYLONNs.LinesMesh = js.native
   def CreateDashedLines(
     name: java.lang.String,
-    options: babylonjsLib.Anon_GapSize,
+    options: babylonjsLib.Anon_PointsDashSize,
     scene: babylonjsLib.BABYLONNs.Nullable[babylonjsLib.BABYLONNs.Scene]
   ): babylonjsLib.BABYLONNs.LinesMesh = js.native
   /**
@@ -110,7 +110,7 @@ object MeshBuilder extends js.Object {
   def CreateDecal(
     name: java.lang.String,
     sourceMesh: babylonjsLib.BABYLONNs.AbstractMesh,
-    options: babylonjsLib.Anon_Normal
+    options: babylonjsLib.Anon_Position
   ): babylonjsLib.BABYLONNs.Mesh = js.native
   /**
     * Creates a plane polygonal mesh.  By default, this is a disc
@@ -126,10 +126,10 @@ object MeshBuilder extends js.Object {
     * @returns the plane polygonal mesh
     * @see http://doc.babylonjs.com/how_to/set_shapes#disc-or-regular-polygon
     */
-  def CreateDisc(name: java.lang.String, options: babylonjsLib.Anon_Tessellation): babylonjsLib.BABYLONNs.Mesh = js.native
+  def CreateDisc(name: java.lang.String, options: babylonjsLib.Anon_RadiusTessellationArc): babylonjsLib.BABYLONNs.Mesh = js.native
   def CreateDisc(
     name: java.lang.String,
-    options: babylonjsLib.Anon_Tessellation,
+    options: babylonjsLib.Anon_RadiusTessellationArc,
     scene: babylonjsLib.BABYLONNs.Nullable[babylonjsLib.BABYLONNs.Scene]
   ): babylonjsLib.BABYLONNs.Mesh = js.native
   /**
@@ -143,7 +143,7 @@ object MeshBuilder extends js.Object {
     * @returns the ground mesh
     * @see http://doc.babylonjs.com/tutorials/Mesh_CreateXXX_Methods_With_Options_Parameter#plane
     */
-  def CreateGround(name: java.lang.String, options: babylonjsLib.Anon_SubdivisionsHeight, scene: js.Any): babylonjsLib.BABYLONNs.Mesh = js.native
+  def CreateGround(name: java.lang.String, options: babylonjsLib.Anon_WidthHeightSubdivisions, scene: js.Any): babylonjsLib.BABYLONNs.Mesh = js.native
   /**
     * Creates a ground mesh from a height map
     * * The parameter `url` sets the URL of the height map image resource.
@@ -166,7 +166,7 @@ object MeshBuilder extends js.Object {
   def CreateGroundFromHeightMap(
     name: java.lang.String,
     url: java.lang.String,
-    options: babylonjsLib.Anon_MinHeight,
+    options: babylonjsLib.Anon_WidthHeightSubdivisionsMinHeight,
     scene: babylonjsLib.BABYLONNs.Scene
   ): babylonjsLib.BABYLONNs.GroundMesh = js.native
   /**
@@ -186,7 +186,7 @@ object MeshBuilder extends js.Object {
     */
   def CreateIcoSphere(
     name: java.lang.String,
-    options: babylonjsLib.Anon_SubdivisionsRadiusX,
+    options: babylonjsLib.Anon_RadiusRadiusXRadiusY,
     scene: babylonjsLib.BABYLONNs.Scene
   ): babylonjsLib.BABYLONNs.Mesh = js.native
   /**
@@ -211,7 +211,7 @@ object MeshBuilder extends js.Object {
     */
   def CreateLathe(
     name: java.lang.String,
-    options: babylonjsLib.Anon_TessellationClosed,
+    options: babylonjsLib.Anon_ShapeRadius,
     scene: babylonjsLib.BABYLONNs.Scene
   ): babylonjsLib.BABYLONNs.Mesh = js.native
   /**
@@ -233,7 +233,7 @@ object MeshBuilder extends js.Object {
     */
   def CreateLineSystem(
     name: java.lang.String,
-    options: babylonjsLib.Anon_UseVertexAlphaInstance,
+    options: babylonjsLib.Anon_LinesUpdatable,
     scene: babylonjsLib.BABYLONNs.Nullable[babylonjsLib.BABYLONNs.Scene]
   ): babylonjsLib.BABYLONNs.LinesMesh = js.native
   /**
@@ -252,10 +252,10 @@ object MeshBuilder extends js.Object {
     * @param scene defines the hosting scene
     * @returns a new line mesh
     */
-  def CreateLines(name: java.lang.String, options: babylonjsLib.Anon_UseVertexAlpha): babylonjsLib.BABYLONNs.LinesMesh = js.native
+  def CreateLines(name: java.lang.String, options: babylonjsLib.Anon_PointsUpdatable): babylonjsLib.BABYLONNs.LinesMesh = js.native
   def CreateLines(
     name: java.lang.String,
-    options: babylonjsLib.Anon_UseVertexAlpha,
+    options: babylonjsLib.Anon_PointsUpdatable,
     scene: babylonjsLib.BABYLONNs.Nullable[babylonjsLib.BABYLONNs.Scene]
   ): babylonjsLib.BABYLONNs.LinesMesh = js.native
   /**
@@ -272,7 +272,11 @@ object MeshBuilder extends js.Object {
     * @returns the plane mesh
     * @see http://doc.babylonjs.com/tutorials/Mesh_CreateXXX_Methods_With_Options_Parameter#plane
     */
-  def CreatePlane(name: java.lang.String, options: babylonjsLib.Anon_SizeHeight, scene: babylonjsLib.BABYLONNs.Scene): babylonjsLib.BABYLONNs.Mesh = js.native
+  def CreatePlane(
+    name: java.lang.String,
+    options: babylonjsLib.Anon_SizeWidthHeightSideOrientation,
+    scene: babylonjsLib.BABYLONNs.Scene
+  ): babylonjsLib.BABYLONNs.Mesh = js.native
   /**
     * Creates a polygon mesh
     * The polygon's shape will depend on the input parameters and is constructed parallel to a ground mesh
@@ -286,7 +290,7 @@ object MeshBuilder extends js.Object {
     * @param scene defines the hosting scene
     * @returns the polygon mesh
     */
-  def CreatePolygon(name: java.lang.String, options: babylonjsLib.Anon_Holes, scene: babylonjsLib.BABYLONNs.Scene): babylonjsLib.BABYLONNs.Mesh = js.native
+  def CreatePolygon(name: java.lang.String, options: babylonjsLib.Anon_ShapeHoles, scene: babylonjsLib.BABYLONNs.Scene): babylonjsLib.BABYLONNs.Mesh = js.native
   /**
     * Creates a polyhedron mesh
     * * The parameter `type` (positive integer, max 14, default 0) sets the polyhedron type to build among the 15 embbeded types. Please refer to the type sheet in the tutorial to choose the wanted type
@@ -308,7 +312,7 @@ object MeshBuilder extends js.Object {
     */
   def CreatePolyhedron(
     name: java.lang.String,
-    options: babylonjsLib.Anon_SizeZCustom,
+    options: babylonjsLib.Anon_TypeSizeSizeX,
     scene: babylonjsLib.BABYLONNs.Scene
   ): babylonjsLib.BABYLONNs.Mesh = js.native
   /**
@@ -334,10 +338,10 @@ object MeshBuilder extends js.Object {
     * @see http://doc.babylonjs.com/tutorials/Ribbon_Tutorial
     * @see http://doc.babylonjs.com/tutorials/Parametric_Shapes
     */
-  def CreateRibbon(name: java.lang.String, options: babylonjsLib.Anon_Uvs): babylonjsLib.BABYLONNs.Mesh = js.native
+  def CreateRibbon(name: java.lang.String, options: babylonjsLib.Anon_PathArrayCloseArray): babylonjsLib.BABYLONNs.Mesh = js.native
   def CreateRibbon(
     name: java.lang.String,
-    options: babylonjsLib.Anon_Uvs,
+    options: babylonjsLib.Anon_PathArrayCloseArray,
     scene: babylonjsLib.BABYLONNs.Nullable[babylonjsLib.BABYLONNs.Scene]
   ): babylonjsLib.BABYLONNs.Mesh = js.native
   /**
@@ -356,7 +360,7 @@ object MeshBuilder extends js.Object {
     * @returns the sphere mesh
     * @see http://doc.babylonjs.com/tutorials/Mesh_CreateXXX_Methods_With_Options_Parameter#sphere
     */
-  def CreateSphere(name: java.lang.String, options: babylonjsLib.Anon_DiameterZ, scene: js.Any): babylonjsLib.BABYLONNs.Mesh = js.native
+  def CreateSphere(name: java.lang.String, options: babylonjsLib.Anon_SegmentsDiameter, scene: js.Any): babylonjsLib.BABYLONNs.Mesh = js.native
   /**
     * Creates a tiled ground mesh
     * * The parameters `xmin` and `xmax` (floats, default -1 and 1) set the ground minimum and maximum X coordinates
@@ -370,11 +374,7 @@ object MeshBuilder extends js.Object {
     * @returns the tiled ground mesh
     * @see http://doc.babylonjs.com/tutorials/Mesh_CreateXXX_Methods_With_Options_Parameter#tiled-ground
     */
-  def CreateTiledGround(
-    name: java.lang.String,
-    options: babylonjsLib.Anon_SubdivisionsPrecision,
-    scene: babylonjsLib.BABYLONNs.Scene
-  ): babylonjsLib.BABYLONNs.Mesh = js.native
+  def CreateTiledGround(name: java.lang.String, options: babylonjsLib.Anon_XminZmin, scene: babylonjsLib.BABYLONNs.Scene): babylonjsLib.BABYLONNs.Mesh = js.native
   /**
     * Creates a torus mesh
     * * The parameter `diameter` sets the diameter size (float) of the torus (default 1)
@@ -389,7 +389,7 @@ object MeshBuilder extends js.Object {
     * @returns the torus mesh
     * @see http://doc.babylonjs.com/tutorials/Mesh_CreateXXX_Methods_With_Options_Parameter#torus
     */
-  def CreateTorus(name: java.lang.String, options: babylonjsLib.Anon_TessellationFrontUVs, scene: js.Any): babylonjsLib.BABYLONNs.Mesh = js.native
+  def CreateTorus(name: java.lang.String, options: babylonjsLib.Anon_DiameterThickness, scene: js.Any): babylonjsLib.BABYLONNs.Mesh = js.native
   /**
     * Creates a torus knot mesh
     * * The parameter `radius` sets the global radius size (float) of the torus knot (default 2)
@@ -405,7 +405,7 @@ object MeshBuilder extends js.Object {
     * @returns the torus knot mesh
     * @see  http://doc.babylonjs.com/tutorials/Mesh_CreateXXX_Methods_With_Options_Parameter#torus-knot
     */
-  def CreateTorusKnot(name: java.lang.String, options: babylonjsLib.Anon_RadialSegments, scene: js.Any): babylonjsLib.BABYLONNs.Mesh = js.native
+  def CreateTorusKnot(name: java.lang.String, options: babylonjsLib.Anon_RadiusTubeRadialSegments, scene: js.Any): babylonjsLib.BABYLONNs.Mesh = js.native
   /**
     * Creates a tube mesh.
     * The tube is a parametric shape. It has no predefined shape. Its final shape will depend on the input parameters
@@ -438,7 +438,7 @@ object MeshBuilder extends js.Object {
     * @param scene defines the hosting scene
     * @returns the polygon mesh
     */
-  def ExtrudePolygon(name: java.lang.String, options: babylonjsLib.Anon_Holes, scene: babylonjsLib.BABYLONNs.Scene): babylonjsLib.BABYLONNs.Mesh = js.native
+  def ExtrudePolygon(name: java.lang.String, options: babylonjsLib.Anon_ShapeHoles, scene: babylonjsLib.BABYLONNs.Scene): babylonjsLib.BABYLONNs.Mesh = js.native
   /**
     * Creates an extruded shape mesh. The extrusion is a parametric shape. It has no predefined shape. Its final shape will depend on the input parameters.
     * * The parameter `shape` is a required array of successive Vector3. This array depicts the shape to be extruded in its local space : the shape must be designed in the xOy plane and will be extruded along the Z axis.
@@ -460,10 +460,10 @@ object MeshBuilder extends js.Object {
     * @see http://doc.babylonjs.com/how_to/parametric_shapes#extruded-shapes
     * @see http://doc.babylonjs.com/how_to/parametric_shapes#extruded-shapes
     */
-  def ExtrudeShape(name: java.lang.String, options: babylonjsLib.Anon_PathScale): babylonjsLib.BABYLONNs.Mesh = js.native
+  def ExtrudeShape(name: java.lang.String, options: babylonjsLib.Anon_Shape): babylonjsLib.BABYLONNs.Mesh = js.native
   def ExtrudeShape(
     name: java.lang.String,
-    options: babylonjsLib.Anon_PathScale,
+    options: babylonjsLib.Anon_Shape,
     scene: babylonjsLib.BABYLONNs.Nullable[babylonjsLib.BABYLONNs.Scene]
   ): babylonjsLib.BABYLONNs.Mesh = js.native
   /**
@@ -492,10 +492,6 @@ object MeshBuilder extends js.Object {
     * @see http://doc.babylonjs.com/tutorials/Parametric_Shapes
     * @see http://doc.babylonjs.com/how_to/parametric_shapes#extruded-shapes
     */
-  def ExtrudeShapeCustom(
-    name: java.lang.String,
-    options: babylonjsLib.Anon_PathInstance,
-    scene: babylonjsLib.BABYLONNs.Scene
-  ): babylonjsLib.BABYLONNs.Mesh = js.native
+  def ExtrudeShapeCustom(name: java.lang.String, options: babylonjsLib.Anon_ShapePath, scene: babylonjsLib.BABYLONNs.Scene): babylonjsLib.BABYLONNs.Mesh = js.native
 }
 

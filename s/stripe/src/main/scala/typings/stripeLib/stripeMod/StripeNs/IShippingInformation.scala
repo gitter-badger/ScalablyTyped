@@ -9,7 +9,7 @@ trait IShippingInformation extends js.Object {
   /**
     * Shipping address.
     */
-  var address: stripeLib.Anon_City
+  var address: stripeLib.Anon_Line1
   /**
     * The delivery service that shipped a physical product, such as Fedex, UPS, USPS, etc.
     */

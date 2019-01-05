@@ -1,0 +1,13 @@
+package typings
+package promiseDashSftpLib
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait Anon_User extends js.Object {
+  var group: java.lang.String
+  var other: java.lang.String
+  var user: java.lang.String
+}
+

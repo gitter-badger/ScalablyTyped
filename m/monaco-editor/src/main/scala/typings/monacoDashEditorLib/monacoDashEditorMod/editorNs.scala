@@ -48,7 +48,7 @@ object editorNs extends js.Object {
     val matchBrackets: scala.Boolean
     val occurrencesHighlight: scala.Boolean
     val parameterHints: InternalParameterHintOptions
-    val quickSuggestions: scala.Boolean | monacoDashEditorLib.Anon_Strings
+    val quickSuggestions: scala.Boolean | monacoDashEditorLib.Anon_Other
     val quickSuggestionsDelay: scala.Double
     val selectionClipboard: scala.Boolean
     val selectionHighlight: scala.Boolean
@@ -1470,7 +1470,7 @@ object editorNs extends js.Object {
       * Enable quick suggestions (shadow suggestions)
       * Defaults to true.
       */
-    var quickSuggestions: js.UndefOr[scala.Boolean | monacoDashEditorLib.Anon_Strings] = js.undefined
+    var quickSuggestions: js.UndefOr[scala.Boolean | monacoDashEditorLib.Anon_Other] = js.undefined
     /**
       * Quick suggestions show delay (in ms)
       * Defaults to 500 (ms)
@@ -1986,7 +1986,7 @@ object editorNs extends js.Object {
   }
   
   trait IModelTokensChangedEvent extends js.Object {
-    val ranges: js.Array[monacoDashEditorLib.Anon_ToLineNumber]
+    val ranges: js.Array[monacoDashEditorLib.Anon_FromLineNumber]
   }
   
   trait IMouseTarget extends js.Object {
@@ -2939,7 +2939,7 @@ object editorNs extends js.Object {
   def createWebWorker[T](opts: IWebWorkerOptions): MonacoWebWorker[T] = js.native
   def defineTheme(themeName: java.lang.String, themeData: IStandaloneThemeData): scala.Unit = js.native
   def getModel(uri: monacoDashEditorLib.monacoDashEditorMod.Uri): ITextModel | scala.Null = js.native
-  def getModelMarkers(filter: monacoDashEditorLib.Anon_Resource): js.Array[IMarker] = js.native
+  def getModelMarkers(filter: monacoDashEditorLib.Anon_Owner): js.Array[IMarker] = js.native
   def getModels(): js.Array[ITextModel] = js.native
   def onDidChangeModelLanguage(listener: js.Function1[/* e */ monacoDashEditorLib.Anon_Model, scala.Unit]): monacoDashEditorLib.monacoDashEditorMod.IDisposable = js.native
   def onDidCreateEditor(listener: js.Function1[/* codeEditor */ ICodeEditor, scala.Unit]): monacoDashEditorLib.monacoDashEditorMod.IDisposable = js.native

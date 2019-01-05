@@ -29,6 +29,6 @@ trait ICountrySpec
     * Lists the types of verification data needed to keep an account open. Includes 'minimum' fields, which every account must eventually
     * provide, as well as a 'additional' fields, which are only required for some merchants.
     */
-  var verification_fields: stripeLib.Anon_Company
+  var verification_fields: stripeLib.Anon_Individual
 }
 

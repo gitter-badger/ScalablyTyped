@@ -76,21 +76,23 @@ trait TypeaheadProps[T] extends js.Object {
   /* Provides the ability to specify a prefix before the user-entered text to indicate that the selection will be new. No-op unless allowNew={true}. */
   var newSelectionPrefix: js.UndefOr[java.lang.String] = js.undefined
   /* Invoked when the input is blurred. Receives an event. */
-  var onBlur: js.UndefOr[js.Function1[/* e */ reactLib.Event, _]] = js.undefined
+  var onBlur: js.UndefOr[js.Function1[/* e */ reactLib.Event with stdLib.Event, _]] = js.undefined
   /* Invoked whenever items are added or removed. Receives an array of the selected options. */
   var onChange: js.UndefOr[js.Function1[/* selected */ js.Array[T], _]] = js.undefined
   /* Invoked when the input is focused. Receives an event. */
-  var onFocus: js.UndefOr[js.Function1[/* e */ reactLib.Event, _]] = js.undefined
+  var onFocus: js.UndefOr[js.Function1[/* e */ reactLib.Event with stdLib.Event, _]] = js.undefined
   /* Invoked when the input value changes. Receives the string value of the input, as well as the original event. */
-  var onInputChange: js.UndefOr[js.Function2[/* input */ java.lang.String, /* e */ reactLib.Event, _]] = js.undefined
+  var onInputChange: js.UndefOr[
+    js.Function2[/* input */ java.lang.String, /* e */ reactLib.Event with stdLib.Event, _]
+  ] = js.undefined
   /* Invoked when a key is pressed. Receives an event. */
-  var onKeyDown: js.UndefOr[js.Function1[/* e */ reactLib.Event, _]] = js.undefined
+  var onKeyDown: js.UndefOr[js.Function1[/* e */ reactLib.Event with stdLib.Event, _]] = js.undefined
   /* Invoked when the menu is hidden. */
-  var onMenuHide: js.UndefOr[js.Function1[/* e */ reactLib.Event, _]] = js.undefined
+  var onMenuHide: js.UndefOr[js.Function1[/* e */ reactLib.Event with stdLib.Event, _]] = js.undefined
   /* Invoked when the menu is shown. */
-  var onMenuShow: js.UndefOr[js.Function1[/* e */ reactLib.Event, _]] = js.undefined
+  var onMenuShow: js.UndefOr[js.Function1[/* e */ reactLib.Event with stdLib.Event, _]] = js.undefined
   /* Invoked when the pagination menu item is clicked. */
-  var onPaginate: js.UndefOr[js.Function1[/* e */ reactLib.Event, _]] = js.undefined
+  var onPaginate: js.UndefOr[js.Function1[/* e */ reactLib.Event with stdLib.Event, _]] = js.undefined
   /* Full set of options, including any pre-selected options. */
   var options: js.Array[T]
   /* Give user the ability to display additional results if the number of results exceeds maxResults. */

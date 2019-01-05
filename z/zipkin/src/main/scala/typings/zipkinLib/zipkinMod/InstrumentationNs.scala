@@ -11,7 +11,7 @@ object InstrumentationNs extends js.Object {
   @js.native
   class HttpClient protected ()
     extends zipkinLib.zipkinMod.zipkinNs.InstrumentationNs.HttpClient {
-    def this(args: zipkinLib.Anon_RemoteServiceName) = this()
+    def this(args: zipkinLib.Anon_TracerServiceName) = this()
     /* CompleteClass */
     override def recordError(traceId: zipkinLib.zipkinMod.zipkinNs.TraceId, error: stdLib.Error): scala.Unit = js.native
     /* CompleteClass */
@@ -23,7 +23,7 @@ object InstrumentationNs extends js.Object {
   @js.native
   class HttpServer protected ()
     extends zipkinLib.zipkinMod.zipkinNs.InstrumentationNs.HttpServer {
-    def this(args: zipkinLib.Anon_ServerTags) = this()
+    def this(args: zipkinLib.Anon_Tracer) = this()
   }
   
 }

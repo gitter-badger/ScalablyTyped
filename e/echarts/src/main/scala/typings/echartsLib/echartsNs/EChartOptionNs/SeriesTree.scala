@@ -53,7 +53,7 @@ trait SeriesTree extends js.Object {
   /**
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-tree.emphasis
     */
-  var emphasis: js.UndefOr[echartsLib.Anon_ItemStyleLineStyle] = js.undefined
+  var emphasis: js.UndefOr[echartsLib.Anon_ItemStyleLineStyleLabel] = js.undefined
   /**
     * Subtree collapses and expands interaction, `default true`.
     * As the drawing area is limited, and usually the nodes of a tree
@@ -123,7 +123,7 @@ trait SeriesTree extends js.Object {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-tree.itemStyle
     */
-  var itemStyle: js.UndefOr[echartsLib.Anon_ShadowOffsetXBorderTypeShadowBlurBorderWidth] = js.undefined
+  var itemStyle: js.UndefOr[echartsLib.Anon_ColorBorderColorBorderWidthBorderType] = js.undefined
   /**
     * `label` describes the style of the text corresponding to each
     * node.
@@ -131,9 +131,7 @@ trait SeriesTree extends js.Object {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-tree.label
     */
-  var label: js.UndefOr[
-    echartsLib.Anon_ShadowOffsetXBackgroundColorShowAlignTextBorderWidthVerticalAlign
-  ] = js.undefined
+  var label: js.UndefOr[echartsLib.Anon_ShowPositionDistanceRotateOffsetFormatter] = js.undefined
   /**
     * The layout of the tree, which can be `orthogonal` and `radial`
     * 。Here the `orthogonal` layout is what we usually refer to the
@@ -164,7 +162,7 @@ trait SeriesTree extends js.Object {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-tree.leaves
     */
-  var leaves: js.UndefOr[echartsLib.Anon_ItemStyleEmphasis] = js.undefined
+  var leaves: js.UndefOr[echartsLib.Anon_LabelItemStyleEmphasisAnonShowPosition] = js.undefined
   /**
     * Distance between tree component and the left side of the container.
     *
@@ -187,7 +185,7 @@ trait SeriesTree extends js.Object {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-tree.lineStyle
     */
-  var lineStyle: js.UndefOr[echartsLib.Anon_ShadowOffsetXShadowBlurColorShadowColorShadowOffsetYCurveness] = js.undefined
+  var lineStyle: js.UndefOr[echartsLib.Anon_ColorWidthCurveness] = js.undefined
   /**
     * Series name used for displaying in
     * [tooltip](https://ecomfe.github.io/echarts-doc/public/en/option.html#tooltip)
@@ -349,7 +347,7 @@ trait SeriesTree extends js.Object {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-tree.tooltip
     */
-  var tooltip: js.UndefOr[echartsLib.Anon_BackgroundColor] = js.undefined
+  var tooltip: js.UndefOr[echartsLib.Anon_Position] = js.undefined
   /**
     * Distance between tree component and the top side of the container.
     *

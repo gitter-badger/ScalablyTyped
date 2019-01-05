@@ -15,8 +15,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("BABYLON.MirrorTexture")
 @js.native
 class MirrorTexture protected () extends RenderTargetTexture {
-  def this(name: java.lang.String, size: babylonjsLib.Anon_Height, scene: Scene) = this()
   def this(name: java.lang.String, size: babylonjsLib.Anon_Ratio, scene: Scene) = this()
+  def this(name: java.lang.String, size: babylonjsLib.Anon_WidthHeightNumber, scene: Scene) = this()
   /**
     * Instantiates a Mirror Texture.
     * Mirror texture can be used to simulate the view from a mirror in a scene.
@@ -33,17 +33,17 @@ class MirrorTexture protected () extends RenderTargetTexture {
     * @param generateDepthBuffer
     */
   def this(name: java.lang.String, size: scala.Double, scene: Scene) = this()
-  def this(name: java.lang.String, size: babylonjsLib.Anon_Height, scene: Scene, generateMipMaps: scala.Boolean) = this()
   def this(name: java.lang.String, size: babylonjsLib.Anon_Ratio, scene: Scene, generateMipMaps: scala.Boolean) = this()
+  def this(name: java.lang.String, size: babylonjsLib.Anon_WidthHeightNumber, scene: Scene, generateMipMaps: scala.Boolean) = this()
   def this(name: java.lang.String, size: scala.Double, scene: Scene, generateMipMaps: scala.Boolean) = this()
-  def this(name: java.lang.String, size: babylonjsLib.Anon_Height, scene: Scene, generateMipMaps: scala.Boolean, `type`: scala.Double) = this()
   def this(name: java.lang.String, size: babylonjsLib.Anon_Ratio, scene: Scene, generateMipMaps: scala.Boolean, `type`: scala.Double) = this()
+  def this(name: java.lang.String, size: babylonjsLib.Anon_WidthHeightNumber, scene: Scene, generateMipMaps: scala.Boolean, `type`: scala.Double) = this()
   def this(name: java.lang.String, size: scala.Double, scene: Scene, generateMipMaps: scala.Boolean, `type`: scala.Double) = this()
-  def this(name: java.lang.String, size: babylonjsLib.Anon_Height, scene: Scene, generateMipMaps: scala.Boolean, `type`: scala.Double, samplingMode: scala.Double) = this()
   def this(name: java.lang.String, size: babylonjsLib.Anon_Ratio, scene: Scene, generateMipMaps: scala.Boolean, `type`: scala.Double, samplingMode: scala.Double) = this()
+  def this(name: java.lang.String, size: babylonjsLib.Anon_WidthHeightNumber, scene: Scene, generateMipMaps: scala.Boolean, `type`: scala.Double, samplingMode: scala.Double) = this()
   def this(name: java.lang.String, size: scala.Double, scene: Scene, generateMipMaps: scala.Boolean, `type`: scala.Double, samplingMode: scala.Double) = this()
-  def this(name: java.lang.String, size: babylonjsLib.Anon_Height, scene: Scene, generateMipMaps: scala.Boolean, `type`: scala.Double, samplingMode: scala.Double, generateDepthBuffer: scala.Boolean) = this()
   def this(name: java.lang.String, size: babylonjsLib.Anon_Ratio, scene: Scene, generateMipMaps: scala.Boolean, `type`: scala.Double, samplingMode: scala.Double, generateDepthBuffer: scala.Boolean) = this()
+  def this(name: java.lang.String, size: babylonjsLib.Anon_WidthHeightNumber, scene: Scene, generateMipMaps: scala.Boolean, `type`: scala.Double, samplingMode: scala.Double, generateDepthBuffer: scala.Boolean) = this()
   def this(name: java.lang.String, size: scala.Double, scene: Scene, generateMipMaps: scala.Boolean, `type`: scala.Double, samplingMode: scala.Double, generateDepthBuffer: scala.Boolean) = this()
   var _adaptiveBlurKernel: js.Any = js.native
   var _autoComputeBlurKernel: js.Any = js.native

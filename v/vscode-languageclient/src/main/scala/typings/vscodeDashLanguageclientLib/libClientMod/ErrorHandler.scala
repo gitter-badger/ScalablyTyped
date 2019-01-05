@@ -18,6 +18,10 @@ trait ErrorHandler extends js.Object {
     * @param count - a count indicating how often an error is received. Will
     *  be reset if a message got successfully send or received.
     */
-  def error(error: nodeLib.Error, message: vscodeDashJsonrpcLib.libMessagesMod.Message, count: scala.Double): ErrorAction
+  def error(
+    error: nodeLib.Error with stdLib.Error,
+    message: vscodeDashJsonrpcLib.libMessagesMod.Message,
+    count: scala.Double
+  ): ErrorAction
 }
 

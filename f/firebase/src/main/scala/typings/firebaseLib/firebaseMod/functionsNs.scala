@@ -19,7 +19,7 @@ object functionsNs extends js.Object {
   }
   
   trait HttpsError
-    extends nodeLib.Error {
+    extends stdLib.Error {
     val code: firebaseLib.firebaseMod.firebaseNs.functionsNs.ErrorStatus
     val details: js.UndefOr[js.Any] = js.undefined
   }

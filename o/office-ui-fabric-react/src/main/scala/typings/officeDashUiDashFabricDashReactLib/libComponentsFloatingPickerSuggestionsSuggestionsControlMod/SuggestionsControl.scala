@@ -16,11 +16,11 @@ class SuggestionsControl[T] protected ()
   var SuggestionsOfProperType: js.Any = js.native
   var _forceResolveButton: officeDashUiDashFabricDashReactLib.libComponentsButtonButtonDotTypesMod.IButton = js.native
   var _searchForMoreButton: officeDashUiDashFabricDashReactLib.libComponentsButtonButtonDotTypesMod.IButton = js.native
-  var _selectedElement: reactLib.HTMLDivElement = js.native
+  var _selectedElement: reactLib.HTMLDivElement with stdLib.HTMLDivElement = js.native
   var _suggestions: officeDashUiDashFabricDashReactLib.libComponentsFloatingPickerSuggestionsSuggestionsCoreMod.SuggestionsCore[T] = js.native
   val currentSuggestion: officeDashUiDashFabricDashReactLib.libComponentsPickersSuggestionsSuggestionsControllerMod.ISuggestionModel[T] = js.native
   val currentSuggestionIndex: scala.Double = js.native
-  val selectedElement: js.UndefOr[reactLib.HTMLDivElement] = js.native
+  val selectedElement: js.UndefOr[reactLib.HTMLDivElement with stdLib.HTMLDivElement] = js.native
   /* private */ def _getCurrentIndexForType(itemType: js.Any): js.Any = js.native
   /* private */ def _getNextItemSectionType(itemType: js.Any): js.Any = js.native
   /* private */ def _getPreviousItemSectionType(itemType: js.Any): js.Any = js.native

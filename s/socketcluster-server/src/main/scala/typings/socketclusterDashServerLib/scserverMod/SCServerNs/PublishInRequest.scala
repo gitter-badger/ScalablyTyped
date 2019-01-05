@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait PublishInRequest extends js.Object {
   var ackData: js.UndefOr[js.Any] = js.undefined
-  var authTokenExpiredError: js.UndefOr[nodeLib.Error] = js.undefined
+  var authTokenExpiredError: js.UndefOr[nodeLib.Error with stdLib.Error] = js.undefined
   var channel: js.UndefOr[java.lang.String] = js.undefined
   var data: js.UndefOr[js.Any] = js.undefined
   var socket: socketclusterDashServerLib.scserversocketMod.namespaced

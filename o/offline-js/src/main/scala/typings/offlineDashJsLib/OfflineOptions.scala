@@ -12,7 +12,7 @@ trait OfflineOptions extends js.Object {
   var checks: js.UndefOr[OfflineChecks] = js.undefined
   var game: js.UndefOr[scala.Boolean] = js.undefined
   var interceptRequests: js.UndefOr[scala.Boolean] = js.undefined
-  var reconnect: Anon_Delay
+  var reconnect: Anon_InitialDelay
   var requests: js.UndefOr[scala.Boolean] = js.undefined
 }
 

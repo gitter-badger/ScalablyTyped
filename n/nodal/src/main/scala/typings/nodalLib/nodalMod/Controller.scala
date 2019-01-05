@@ -37,6 +37,14 @@ class Controller ()
     * @return {boolean}
     */
   def notImplemented(msg: java.lang.String, details: js.Any): scala.Boolean = js.native
+  /**
+    * Using API formatting, generate an error or respond with model / object data.
+    * @param {Error|Object|Array|Nodal.Model|Nodal.ModelArray} data Object to be formatted for API response
+    * @param {optional Array} The interface to use for the data being returned, if not an error.
+    * @return {boolean}
+    */
+  def respond(data: nodeLib.Error with stdLib.Error): scala.Boolean = js.native
+  def respond(data: nodeLib.Error with stdLib.Error, arrInterface: js.Array[java.lang.String]): scala.Boolean = js.native
   def respond(data: js.Array[_]): scala.Boolean = js.native
   def respond(data: js.Array[_], arrInterface: js.Array[java.lang.String]): scala.Boolean = js.native
   def respond(data: js.Object): scala.Boolean = js.native
@@ -45,14 +53,6 @@ class Controller ()
   def respond(data: ModelArray[Model]): scala.Boolean = js.native
   def respond(data: ModelArray[Model], arrInterface: js.Array[java.lang.String]): scala.Boolean = js.native
   def respond(data: Model, arrInterface: js.Array[java.lang.String]): scala.Boolean = js.native
-  /**
-    * Using API formatting, generate an error or respond with model / object data.
-    * @param {Error|Object|Array|Nodal.Model|Nodal.ModelArray} data Object to be formatted for API response
-    * @param {optional Array} The interface to use for the data being returned, if not an error.
-    * @return {boolean}
-    */
-  def respond(data: nodeLib.Error): scala.Boolean = js.native
-  def respond(data: nodeLib.Error, arrInterface: js.Array[java.lang.String]): scala.Boolean = js.native
   /**
     * Using API formatting, send an http.ServerResponse indicating there were Too Many Requests (429) (i.e. the client is being rate limited)
     * @param {string} msg Error message to send

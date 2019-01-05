@@ -208,7 +208,7 @@ object fsNs extends js.Object {
     */
   def createReadStream(path: nodeLib.fsMod.PathLike): nodeLib.fsMod.ReadStream = js.native
   def createReadStream(path: nodeLib.fsMod.PathLike, options: java.lang.String): nodeLib.fsMod.ReadStream = js.native
-  def createReadStream(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_AutoClose): nodeLib.fsMod.ReadStream = js.native
+  def createReadStream(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_Flags): nodeLib.fsMod.ReadStream = js.native
   /**
     * Returns a new `WriteStream` object.
     * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
@@ -216,7 +216,7 @@ object fsNs extends js.Object {
     */
   def createWriteStream(path: nodeLib.fsMod.PathLike): nodeLib.fsMod.WriteStream = js.native
   def createWriteStream(path: nodeLib.fsMod.PathLike, options: java.lang.String): nodeLib.fsMod.WriteStream = js.native
-  def createWriteStream(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_AutoCloseFlags): nodeLib.fsMod.WriteStream = js.native
+  def createWriteStream(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_FlagsEncoding): nodeLib.fsMod.WriteStream = js.native
   /**
     * Asynchronously tests whether or not the given path exists by checking with the file system.
     * @deprecated
@@ -578,7 +578,7 @@ object fsNs extends js.Object {
     */
   def mkdtemp(
     prefix: java.lang.String,
-    options: nodeLib.Anon_EncodingStringNull,
+    options: nodeLib.Anon_EncodingString,
     callback: js.Function2[
       /* err */ nodeLib.NodeJSNs.ErrnoException, 
       /* folder */ java.lang.String | nodeLib.Buffer, 
@@ -608,7 +608,7 @@ object fsNs extends js.Object {
     * @param options The encoding (or an object specifying the encoding), used as the encoding of the result. If not provided, `'utf8'` is used.
     */
   def mkdtempSync(prefix: java.lang.String, options: nodeLib.Anon_EncodingBuffer_1560675869): nodeLib.Buffer = js.native
-  def mkdtempSync(prefix: java.lang.String, options: nodeLib.Anon_EncodingStringNull): java.lang.String | nodeLib.Buffer = js.native
+  def mkdtempSync(prefix: java.lang.String, options: nodeLib.Anon_EncodingString): java.lang.String | nodeLib.Buffer = js.native
   def mkdtempSync(prefix: java.lang.String, options: nodeLib.BufferEncoding): java.lang.String = js.native
   /**
     * Synchronously creates a unique temporary directory.
@@ -972,7 +972,21 @@ object fsNs extends js.Object {
     */
   def readdir(
     path: nodeLib.fsMod.PathLike,
-    options: nodeLib.Anon_WithFileTypesFalseEncoding,
+    options: nodeLib.Anon_EncodingBufferWithFileTypes,
+    callback: js.Function2[
+      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      /* files */ js.Array[nodeLib.Buffer], 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  /**
+    * Asynchronous readdir(3) - read a directory.
+    * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
+    * @param options The encoding (or an object specifying the encoding), used as the encoding of the result. If not provided, `'utf8'` is used.
+    */
+  def readdir(
+    path: nodeLib.fsMod.PathLike,
+    options: nodeLib.Anon_EncodingWithFileTypesFalse,
     callback: js.Function2[
       /* err */ nodeLib.NodeJSNs.ErrnoException, 
       /* files */ js.Array[java.lang.String] | js.Array[nodeLib.Buffer], 
@@ -986,10 +1000,10 @@ object fsNs extends js.Object {
     */
   def readdir(
     path: nodeLib.fsMod.PathLike,
-    options: nodeLib.Anon_WithFileTypesFalse,
+    options: nodeLib.Anon_EncodingWithFileTypes,
     callback: js.Function2[
       /* err */ nodeLib.NodeJSNs.ErrnoException, 
-      /* files */ js.Array[nodeLib.Buffer], 
+      /* files */ js.Array[java.lang.String], 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -1000,24 +1014,10 @@ object fsNs extends js.Object {
     */
   def readdir(
     path: nodeLib.fsMod.PathLike,
-    options: nodeLib.Anon_WithFileTypesTrue,
-    callback: js.Function2[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
-      /* files */ js.Array[nodeLib.fsMod.Dirent], 
-      scala.Unit
-    ]
-  ): scala.Unit = js.native
-  /**
-    * Asynchronous readdir(3) - read a directory.
-    * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
-    * @param options The encoding (or an object specifying the encoding), used as the encoding of the result. If not provided, `'utf8'` is used.
-    */
-  def readdir(
-    path: nodeLib.fsMod.PathLike,
     options: nodeLib.Anon_WithFileTypes,
     callback: js.Function2[
       /* err */ nodeLib.NodeJSNs.ErrnoException, 
-      /* files */ js.Array[java.lang.String], 
+      /* files */ js.Array[nodeLib.fsMod.Dirent], 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -1037,20 +1037,20 @@ object fsNs extends js.Object {
     */
   def readdirSync(path: nodeLib.fsMod.PathLike): js.Array[java.lang.String] = js.native
   def readdirSync(path: nodeLib.fsMod.PathLike, options: java.lang.String): js.Array[java.lang.String] | js.Array[nodeLib.Buffer] = js.native
-  def readdirSync(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_WithFileTypes): js.Array[java.lang.String] = js.native
   /**
     * Synchronous readdir(3) - read a directory.
     * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
     * @param options The encoding (or an object specifying the encoding), used as the encoding of the result. If not provided, `'utf8'` is used.
     */
-  def readdirSync(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_WithFileTypesFalse): js.Array[nodeLib.Buffer] = js.native
-  def readdirSync(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_WithFileTypesFalseEncoding): js.Array[java.lang.String] | js.Array[nodeLib.Buffer] = js.native
+  def readdirSync(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_EncodingBufferWithFileTypes): js.Array[nodeLib.Buffer] = js.native
+  def readdirSync(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_EncodingWithFileTypes): js.Array[java.lang.String] = js.native
+  def readdirSync(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_EncodingWithFileTypesFalse): js.Array[java.lang.String] | js.Array[nodeLib.Buffer] = js.native
   /**
     * Asynchronous readdir(3) - read a directory.
     * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
     * @param options If called with `withFileTypes: true` the result data will be an array of Dirent.
     */
-  def readdirSync(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_WithFileTypesTrue): js.Array[nodeLib.fsMod.Dirent] = js.native
+  def readdirSync(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_WithFileTypes): js.Array[nodeLib.fsMod.Dirent] = js.native
   def readdirSync(path: nodeLib.fsMod.PathLike, options: nodeLib.BufferEncoding): js.Array[java.lang.String] = js.native
   /**
     * Synchronous readdir(3) - read a directory.
@@ -1136,7 +1136,7 @@ object fsNs extends js.Object {
     */
   def readlink(
     path: nodeLib.fsMod.PathLike,
-    options: nodeLib.Anon_EncodingStringNull,
+    options: nodeLib.Anon_EncodingString,
     callback: js.Function2[
       /* err */ nodeLib.NodeJSNs.ErrnoException, 
       /* linkString */ java.lang.String | nodeLib.Buffer, 
@@ -1166,7 +1166,7 @@ object fsNs extends js.Object {
     * @param options The encoding (or an object specifying the encoding), used as the encoding of the result. If not provided, `'utf8'` is used.
     */
   def readlinkSync(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_EncodingBuffer_1560675869): nodeLib.Buffer = js.native
-  def readlinkSync(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_EncodingStringNull): java.lang.String | nodeLib.Buffer = js.native
+  def readlinkSync(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_EncodingString): java.lang.String | nodeLib.Buffer = js.native
   def readlinkSync(path: nodeLib.fsMod.PathLike, options: nodeLib.BufferEncoding): java.lang.String = js.native
   /**
     * Synchronous readlink(2) - read value of a symbolic link.
@@ -1252,7 +1252,7 @@ object fsNs extends js.Object {
     */
   def realpath(
     path: nodeLib.fsMod.PathLike,
-    options: nodeLib.Anon_EncodingStringNull,
+    options: nodeLib.Anon_EncodingString,
     callback: js.Function2[
       /* err */ nodeLib.NodeJSNs.ErrnoException, 
       /* resolvedPath */ java.lang.String | nodeLib.Buffer, 
@@ -1282,7 +1282,7 @@ object fsNs extends js.Object {
     * @param options The encoding (or an object specifying the encoding), used as the encoding of the result. If not provided, `'utf8'` is used.
     */
   def realpathSync(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_EncodingBuffer_1560675869): nodeLib.Buffer = js.native
-  def realpathSync(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_EncodingStringNull): java.lang.String | nodeLib.Buffer = js.native
+  def realpathSync(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_EncodingString): java.lang.String | nodeLib.Buffer = js.native
   def realpathSync(path: nodeLib.fsMod.PathLike, options: nodeLib.BufferEncoding): java.lang.String = js.native
   /**
     * Synchronous realpath(3) - return the canonicalized absolute pathname.
@@ -1554,30 +1554,35 @@ object fsNs extends js.Object {
     * If `persistent` is not supplied, the default of `true` is used.
     * If `recursive` is not supplied, the default of `false` is used.
     */
-  def watch(filename: nodeLib.fsMod.PathLike, options: nodeLib.Anon_Recursive): nodeLib.fsMod.FSWatcher = js.native
-  /**
-    * Watch for changes on `filename`, where `filename` is either a file or a directory, returning an `FSWatcher`.
-    * @param filename A path to a file or directory. If a URL is provided, it must use the `file:` protocol.
-    * URL support is _experimental_.
-    * @param options Either the encoding for the filename provided to the listener, or an object optionally specifying encoding, persistent, and recursive options.
-    * If `encoding` is not supplied, the default of `'utf8'` is used.
-    * If `persistent` is not supplied, the default of `true` is used.
-    * If `recursive` is not supplied, the default of `false` is used.
-    */
-  def watch(filename: nodeLib.fsMod.PathLike, options: nodeLib.Anon_RecursivePersistent): nodeLib.fsMod.FSWatcher = js.native
-  /**
-    * Watch for changes on `filename`, where `filename` is either a file or a directory, returning an `FSWatcher`.
-    * @param filename A path to a file or directory. If a URL is provided, it must use the `file:` protocol.
-    * URL support is _experimental_.
-    * @param options Either the encoding for the filename provided to the listener, or an object optionally specifying encoding, persistent, and recursive options.
-    * If `encoding` is not supplied, the default of `'utf8'` is used.
-    * If `persistent` is not supplied, the default of `true` is used.
-    * If `recursive` is not supplied, the default of `false` is used.
-    */
-  def watch(filename: nodeLib.fsMod.PathLike, options: nodeLib.Anon_RecursivePersistentEncoding): nodeLib.fsMod.FSWatcher = js.native
+  def watch(filename: nodeLib.fsMod.PathLike, options: nodeLib.Anon_EncodingBufferPersistent): nodeLib.fsMod.FSWatcher = js.native
   def watch(
     filename: nodeLib.fsMod.PathLike,
-    options: nodeLib.Anon_RecursivePersistentEncoding,
+    options: nodeLib.Anon_EncodingBufferPersistent,
+    listener: js.Function2[/* event */ java.lang.String, /* filename */ nodeLib.Buffer, scala.Unit]
+  ): nodeLib.fsMod.FSWatcher = js.native
+  /**
+    * Watch for changes on `filename`, where `filename` is either a file or a directory, returning an `FSWatcher`.
+    * @param filename A path to a file or directory. If a URL is provided, it must use the `file:` protocol.
+    * URL support is _experimental_.
+    * @param options Either the encoding for the filename provided to the listener, or an object optionally specifying encoding, persistent, and recursive options.
+    * If `encoding` is not supplied, the default of `'utf8'` is used.
+    * If `persistent` is not supplied, the default of `true` is used.
+    * If `recursive` is not supplied, the default of `false` is used.
+    */
+  def watch(filename: nodeLib.fsMod.PathLike, options: nodeLib.Anon_EncodingPersistent): nodeLib.fsMod.FSWatcher = js.native
+  /**
+    * Watch for changes on `filename`, where `filename` is either a file or a directory, returning an `FSWatcher`.
+    * @param filename A path to a file or directory. If a URL is provided, it must use the `file:` protocol.
+    * URL support is _experimental_.
+    * @param options Either the encoding for the filename provided to the listener, or an object optionally specifying encoding, persistent, and recursive options.
+    * If `encoding` is not supplied, the default of `'utf8'` is used.
+    * If `persistent` is not supplied, the default of `true` is used.
+    * If `recursive` is not supplied, the default of `false` is used.
+    */
+  def watch(filename: nodeLib.fsMod.PathLike, options: nodeLib.Anon_EncodingPersistentRecursive): nodeLib.fsMod.FSWatcher = js.native
+  def watch(
+    filename: nodeLib.fsMod.PathLike,
+    options: nodeLib.Anon_EncodingPersistentRecursive,
     listener: js.Function2[
       /* event */ java.lang.String, 
       /* filename */ java.lang.String | nodeLib.Buffer, 
@@ -1586,12 +1591,7 @@ object fsNs extends js.Object {
   ): nodeLib.fsMod.FSWatcher = js.native
   def watch(
     filename: nodeLib.fsMod.PathLike,
-    options: nodeLib.Anon_RecursivePersistent,
-    listener: js.Function2[/* event */ java.lang.String, /* filename */ nodeLib.Buffer, scala.Unit]
-  ): nodeLib.fsMod.FSWatcher = js.native
-  def watch(
-    filename: nodeLib.fsMod.PathLike,
-    options: nodeLib.Anon_Recursive,
+    options: nodeLib.Anon_EncodingPersistent,
     listener: js.Function2[/* event */ java.lang.String, /* filename */ java.lang.String, scala.Unit]
   ): nodeLib.fsMod.FSWatcher = js.native
   def watch(filename: nodeLib.fsMod.PathLike, options: nodeLib.BufferEncoding): nodeLib.fsMod.FSWatcher = js.native
@@ -2480,7 +2480,7 @@ object fsNs extends js.Object {
       * @param options The encoding (or an object specifying the encoding), used as the encoding of the result. If not provided, `'utf8'` is used.
       */
     def `__promisify__`(prefix: java.lang.String, options: nodeLib.Anon_EncodingBuffer_1560675869): js.Promise[nodeLib.Buffer] = js.native
-    def `__promisify__`(prefix: java.lang.String, options: nodeLib.Anon_EncodingStringNull): js.Promise[java.lang.String | nodeLib.Buffer] = js.native
+    def `__promisify__`(prefix: java.lang.String, options: nodeLib.Anon_EncodingString): js.Promise[java.lang.String | nodeLib.Buffer] = js.native
     def `__promisify__`(prefix: java.lang.String, options: nodeLib.BufferEncoding): js.Promise[java.lang.String] = js.native
     @JSName("__promisify__")
     def __promisify___buffer(prefix: java.lang.String, options: adoneLib.adoneLibStrings.buffer): js.Promise[nodeLib.Buffer] = js.native
@@ -2652,7 +2652,7 @@ object fsNs extends js.Object {
       * @param options The encoding (or an object specifying the encoding), used as the encoding of the result. If not provided, `'utf8'` is used.
       */
     def mkdtemp(prefix: java.lang.String, options: nodeLib.Anon_EncodingBuffer_1560675869): js.Promise[nodeLib.Buffer] = js.native
-    def mkdtemp(prefix: java.lang.String, options: nodeLib.Anon_EncodingStringNull): js.Promise[java.lang.String | nodeLib.Buffer] = js.native
+    def mkdtemp(prefix: java.lang.String, options: nodeLib.Anon_EncodingString): js.Promise[java.lang.String | nodeLib.Buffer] = js.native
     def mkdtemp(prefix: java.lang.String, options: nodeLib.BufferEncoding): js.Promise[java.lang.String] = js.native
     @JSName("mkdtemp")
     def mkdtemp_buffer(prefix: java.lang.String, options: adoneLib.adoneLibStrings.buffer): js.Promise[nodeLib.Buffer] = js.native
@@ -2677,48 +2677,48 @@ object fsNs extends js.Object {
       * @param position The offset from the beginning of the file from which data should be read. If
       * `null`, data will be read from the current position.
       */
-    def read[TBuffer /* <: nodeLib.Buffer | stdLib.Uint8Array */](handle: nodeLib.fsMod.promisesNs.FileHandle, buffer: TBuffer): js.Promise[nodeLib.Anon_BufferBytesRead[TBuffer]] = js.native
-    def read[TBuffer /* <: nodeLib.Buffer | stdLib.Uint8Array */](handle: nodeLib.fsMod.promisesNs.FileHandle, buffer: TBuffer, offset: scala.Double): js.Promise[nodeLib.Anon_BufferBytesRead[TBuffer]] = js.native
+    def read[TBuffer /* <: nodeLib.Buffer | stdLib.Uint8Array */](handle: nodeLib.fsMod.promisesNs.FileHandle, buffer: TBuffer): js.Promise[nodeLib.Anon_BytesReadBuffer[TBuffer]] = js.native
+    def read[TBuffer /* <: nodeLib.Buffer | stdLib.Uint8Array */](handle: nodeLib.fsMod.promisesNs.FileHandle, buffer: TBuffer, offset: scala.Double): js.Promise[nodeLib.Anon_BytesReadBuffer[TBuffer]] = js.native
     def read[TBuffer /* <: nodeLib.Buffer | stdLib.Uint8Array */](
       handle: nodeLib.fsMod.promisesNs.FileHandle,
       buffer: TBuffer,
       offset: scala.Double,
       length: scala.Double
-    ): js.Promise[nodeLib.Anon_BufferBytesRead[TBuffer]] = js.native
+    ): js.Promise[nodeLib.Anon_BytesReadBuffer[TBuffer]] = js.native
     def read[TBuffer /* <: nodeLib.Buffer | stdLib.Uint8Array */](
       handle: nodeLib.fsMod.promisesNs.FileHandle,
       buffer: TBuffer,
       offset: scala.Double,
       length: scala.Double,
       position: scala.Double
-    ): js.Promise[nodeLib.Anon_BufferBytesRead[TBuffer]] = js.native
+    ): js.Promise[nodeLib.Anon_BytesReadBuffer[TBuffer]] = js.native
     def read[TBuffer /* <: nodeLib.Buffer | stdLib.Uint8Array */](
       handle: nodeLib.fsMod.promisesNs.FileHandle,
       buffer: TBuffer,
       offset: scala.Double,
       length: scala.Null,
       position: scala.Double
-    ): js.Promise[nodeLib.Anon_BufferBytesRead[TBuffer]] = js.native
+    ): js.Promise[nodeLib.Anon_BytesReadBuffer[TBuffer]] = js.native
     def read[TBuffer /* <: nodeLib.Buffer | stdLib.Uint8Array */](
       handle: nodeLib.fsMod.promisesNs.FileHandle,
       buffer: TBuffer,
       offset: scala.Null,
       length: scala.Double
-    ): js.Promise[nodeLib.Anon_BufferBytesRead[TBuffer]] = js.native
+    ): js.Promise[nodeLib.Anon_BytesReadBuffer[TBuffer]] = js.native
     def read[TBuffer /* <: nodeLib.Buffer | stdLib.Uint8Array */](
       handle: nodeLib.fsMod.promisesNs.FileHandle,
       buffer: TBuffer,
       offset: scala.Null,
       length: scala.Double,
       position: scala.Double
-    ): js.Promise[nodeLib.Anon_BufferBytesRead[TBuffer]] = js.native
+    ): js.Promise[nodeLib.Anon_BytesReadBuffer[TBuffer]] = js.native
     def read[TBuffer /* <: nodeLib.Buffer | stdLib.Uint8Array */](
       handle: nodeLib.fsMod.promisesNs.FileHandle,
       buffer: TBuffer,
       offset: scala.Null,
       length: scala.Null,
       position: scala.Double
-    ): js.Promise[nodeLib.Anon_BufferBytesRead[TBuffer]] = js.native
+    ): js.Promise[nodeLib.Anon_BytesReadBuffer[TBuffer]] = js.native
     /**
       * Asynchronously reads the entire contents of a file.
       * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
@@ -2759,7 +2759,7 @@ object fsNs extends js.Object {
       * @param options The encoding (or an object specifying the encoding), used as the encoding of the result. If not provided, `'utf8'` is used.
       */
     def readdir(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_EncodingBuffer_1560675869): js.Promise[js.Array[nodeLib.Buffer]] = js.native
-    def readdir(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_EncodingStringNull): js.Promise[js.Array[java.lang.String] | js.Array[nodeLib.Buffer]] = js.native
+    def readdir(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_EncodingString): js.Promise[js.Array[java.lang.String] | js.Array[nodeLib.Buffer]] = js.native
     def readdir(path: nodeLib.fsMod.PathLike, options: nodeLib.BufferEncoding): js.Promise[js.Array[java.lang.String]] = js.native
     @JSName("readdir")
     def readdir_buffer(path: nodeLib.fsMod.PathLike, options: adoneLib.adoneLibStrings.buffer): js.Promise[js.Array[nodeLib.Buffer]] = js.native
@@ -2777,7 +2777,7 @@ object fsNs extends js.Object {
       * @param options The encoding (or an object specifying the encoding), used as the encoding of the result. If not provided, `'utf8'` is used.
       */
     def readlink(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_EncodingBuffer_1560675869): js.Promise[nodeLib.Buffer] = js.native
-    def readlink(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_EncodingStringNull): js.Promise[java.lang.String | nodeLib.Buffer] = js.native
+    def readlink(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_EncodingString): js.Promise[java.lang.String | nodeLib.Buffer] = js.native
     def readlink(path: nodeLib.fsMod.PathLike, options: nodeLib.BufferEncoding): js.Promise[java.lang.String] = js.native
     @JSName("readlink")
     def readlink_buffer(path: nodeLib.fsMod.PathLike, options: adoneLib.adoneLibStrings.buffer): js.Promise[nodeLib.Buffer] = js.native
@@ -2795,7 +2795,7 @@ object fsNs extends js.Object {
       * @param options The encoding (or an object specifying the encoding), used as the encoding of the result. If not provided, `'utf8'` is used.
       */
     def realpath(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_EncodingBuffer_1560675869): js.Promise[nodeLib.Buffer] = js.native
-    def realpath(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_EncodingStringNull): js.Promise[java.lang.String | nodeLib.Buffer] = js.native
+    def realpath(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_EncodingString): js.Promise[java.lang.String | nodeLib.Buffer] = js.native
     def realpath(path: nodeLib.fsMod.PathLike, options: nodeLib.BufferEncoding): js.Promise[java.lang.String] = js.native
     @JSName("realpath")
     def realpath_buffer(path: nodeLib.fsMod.PathLike, options: adoneLib.adoneLibStrings.buffer): js.Promise[nodeLib.Buffer] = js.native
@@ -2862,20 +2862,20 @@ object fsNs extends js.Object {
       * @param position The offset from the beginning of the file where this data should be written. If not supplied, defaults to the current position.
       * @param encoding The expected string encoding.
       */
-    def write(handle: nodeLib.fsMod.promisesNs.FileHandle, string: js.Any): js.Promise[nodeLib.Anon_BufferBytesWrittenString] = js.native
-    def write(handle: nodeLib.fsMod.promisesNs.FileHandle, string: js.Any, position: scala.Double): js.Promise[nodeLib.Anon_BufferBytesWrittenString] = js.native
+    def write(handle: nodeLib.fsMod.promisesNs.FileHandle, string: js.Any): js.Promise[nodeLib.Anon_BytesWrittenBuffer] = js.native
+    def write(handle: nodeLib.fsMod.promisesNs.FileHandle, string: js.Any, position: scala.Double): js.Promise[nodeLib.Anon_BytesWrittenBuffer] = js.native
     def write(
       handle: nodeLib.fsMod.promisesNs.FileHandle,
       string: js.Any,
       position: scala.Double,
       encoding: java.lang.String
-    ): js.Promise[nodeLib.Anon_BufferBytesWrittenString] = js.native
+    ): js.Promise[nodeLib.Anon_BytesWrittenBuffer] = js.native
     def write(
       handle: nodeLib.fsMod.promisesNs.FileHandle,
       string: js.Any,
       position: scala.Null,
       encoding: java.lang.String
-    ): js.Promise[nodeLib.Anon_BufferBytesWrittenString] = js.native
+    ): js.Promise[nodeLib.Anon_BytesWrittenBuffer] = js.native
     /**
       * Asynchronously writes `buffer` to the file referenced by the supplied `FileHandle`.
       * It is unsafe to call `fsPromises.write()` multiple times on the same file without waiting for the `Promise`
@@ -2886,48 +2886,48 @@ object fsNs extends js.Object {
       * @param length The number of bytes to write. If not supplied, defaults to `buffer.length - offset`.
       * @param position The offset from the beginning of the file where this data should be written. If not supplied, defaults to the current position.
       */
-    def write[TBuffer /* <: nodeLib.Buffer | stdLib.Uint8Array */](handle: nodeLib.fsMod.promisesNs.FileHandle, buffer: TBuffer): js.Promise[nodeLib.Anon_BufferBytesWritten[TBuffer]] = js.native
-    def write[TBuffer /* <: nodeLib.Buffer | stdLib.Uint8Array */](handle: nodeLib.fsMod.promisesNs.FileHandle, buffer: TBuffer, offset: scala.Double): js.Promise[nodeLib.Anon_BufferBytesWritten[TBuffer]] = js.native
+    def write[TBuffer /* <: nodeLib.Buffer | stdLib.Uint8Array */](handle: nodeLib.fsMod.promisesNs.FileHandle, buffer: TBuffer): js.Promise[nodeLib.Anon_BytesWrittenBufferNumber[TBuffer]] = js.native
+    def write[TBuffer /* <: nodeLib.Buffer | stdLib.Uint8Array */](handle: nodeLib.fsMod.promisesNs.FileHandle, buffer: TBuffer, offset: scala.Double): js.Promise[nodeLib.Anon_BytesWrittenBufferNumber[TBuffer]] = js.native
     def write[TBuffer /* <: nodeLib.Buffer | stdLib.Uint8Array */](
       handle: nodeLib.fsMod.promisesNs.FileHandle,
       buffer: TBuffer,
       offset: scala.Double,
       length: scala.Double
-    ): js.Promise[nodeLib.Anon_BufferBytesWritten[TBuffer]] = js.native
+    ): js.Promise[nodeLib.Anon_BytesWrittenBufferNumber[TBuffer]] = js.native
     def write[TBuffer /* <: nodeLib.Buffer | stdLib.Uint8Array */](
       handle: nodeLib.fsMod.promisesNs.FileHandle,
       buffer: TBuffer,
       offset: scala.Double,
       length: scala.Double,
       position: scala.Double
-    ): js.Promise[nodeLib.Anon_BufferBytesWritten[TBuffer]] = js.native
+    ): js.Promise[nodeLib.Anon_BytesWrittenBufferNumber[TBuffer]] = js.native
     def write[TBuffer /* <: nodeLib.Buffer | stdLib.Uint8Array */](
       handle: nodeLib.fsMod.promisesNs.FileHandle,
       buffer: TBuffer,
       offset: scala.Double,
       length: scala.Null,
       position: scala.Double
-    ): js.Promise[nodeLib.Anon_BufferBytesWritten[TBuffer]] = js.native
+    ): js.Promise[nodeLib.Anon_BytesWrittenBufferNumber[TBuffer]] = js.native
     def write[TBuffer /* <: nodeLib.Buffer | stdLib.Uint8Array */](
       handle: nodeLib.fsMod.promisesNs.FileHandle,
       buffer: TBuffer,
       offset: scala.Null,
       length: scala.Double
-    ): js.Promise[nodeLib.Anon_BufferBytesWritten[TBuffer]] = js.native
+    ): js.Promise[nodeLib.Anon_BytesWrittenBufferNumber[TBuffer]] = js.native
     def write[TBuffer /* <: nodeLib.Buffer | stdLib.Uint8Array */](
       handle: nodeLib.fsMod.promisesNs.FileHandle,
       buffer: TBuffer,
       offset: scala.Null,
       length: scala.Double,
       position: scala.Double
-    ): js.Promise[nodeLib.Anon_BufferBytesWritten[TBuffer]] = js.native
+    ): js.Promise[nodeLib.Anon_BytesWrittenBufferNumber[TBuffer]] = js.native
     def write[TBuffer /* <: nodeLib.Buffer | stdLib.Uint8Array */](
       handle: nodeLib.fsMod.promisesNs.FileHandle,
       buffer: TBuffer,
       offset: scala.Null,
       length: scala.Null,
       position: scala.Double
-    ): js.Promise[nodeLib.Anon_BufferBytesWritten[TBuffer]] = js.native
+    ): js.Promise[nodeLib.Anon_BytesWrittenBufferNumber[TBuffer]] = js.native
     /**
       * Asynchronously writes data to a file, replacing the file if it already exists.
       * It is unsafe to call `fsPromises.writeFile()` multiple times on the same file without waiting for the `Promise` to be resolved (or rejected).
@@ -2992,7 +2992,7 @@ object fsNs extends js.Object {
   @JSName("read")
   @js.native
   object readNs extends js.Object {
-    def `__promisify__`[TBuffer /* <: nodeLib.fsMod.BinaryData */](fd: scala.Double, buffer: TBuffer, offset: scala.Double, length: scala.Double): js.Promise[nodeLib.Anon_Buffer[TBuffer]] = js.native
+    def `__promisify__`[TBuffer /* <: nodeLib.fsMod.BinaryData */](fd: scala.Double, buffer: TBuffer, offset: scala.Double, length: scala.Double): js.Promise[nodeLib.Anon_BytesRead[TBuffer]] = js.native
     /**
       * @param fd A file descriptor.
       * @param buffer The buffer that the data will be written to.
@@ -3006,7 +3006,7 @@ object fsNs extends js.Object {
       offset: scala.Double,
       length: scala.Double,
       position: scala.Double
-    ): js.Promise[nodeLib.Anon_Buffer[TBuffer]] = js.native
+    ): js.Promise[nodeLib.Anon_BytesRead[TBuffer]] = js.native
   }
   
   // NOTE: This namespace provides design-time support for util.promisify. Exported members do not exist at runtime.
@@ -3020,15 +3020,15 @@ object fsNs extends js.Object {
       */
     def `__promisify__`(path: nodeLib.fsMod.PathLike): js.Promise[js.Array[java.lang.String]] = js.native
     def `__promisify__`(path: nodeLib.fsMod.PathLike, options: java.lang.String): js.Promise[js.Array[java.lang.String] | js.Array[nodeLib.Buffer]] = js.native
-    def `__promisify__`(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_WithFileTypes): js.Promise[js.Array[java.lang.String]] = js.native
-    def `__promisify__`(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_WithFileTypesFalse): js.Promise[js.Array[nodeLib.Buffer]] = js.native
-    def `__promisify__`(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_WithFileTypesFalseEncoding): js.Promise[js.Array[java.lang.String] | js.Array[nodeLib.Buffer]] = js.native
+    def `__promisify__`(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_EncodingBufferWithFileTypes): js.Promise[js.Array[nodeLib.Buffer]] = js.native
+    def `__promisify__`(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_EncodingWithFileTypes): js.Promise[js.Array[java.lang.String]] = js.native
+    def `__promisify__`(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_EncodingWithFileTypesFalse): js.Promise[js.Array[java.lang.String] | js.Array[nodeLib.Buffer]] = js.native
     /**
       * Asynchronous readdir(3) - read a directory.
       * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
       * @param options If called with `withFileTypes: true` the result data will be an array of Dirent
       */
-    def `__promisify__`(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_WithFileTypesTrue): js.Promise[js.Array[nodeLib.fsMod.Dirent]] = js.native
+    def `__promisify__`(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_WithFileTypes): js.Promise[js.Array[nodeLib.fsMod.Dirent]] = js.native
     def `__promisify__`(path: nodeLib.fsMod.PathLike, options: nodeLib.BufferEncoding): js.Promise[js.Array[java.lang.String]] = js.native
     /**
       * Asynchronous readdir(3) - read a directory.
@@ -3057,7 +3057,7 @@ object fsNs extends js.Object {
       * @param options The encoding (or an object specifying the encoding), used as the encoding of the result. If not provided, `'utf8'` is used.
       */
     def `__promisify__`(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_EncodingBuffer_1560675869): js.Promise[nodeLib.Buffer] = js.native
-    def `__promisify__`(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_EncodingStringNull): js.Promise[java.lang.String | nodeLib.Buffer] = js.native
+    def `__promisify__`(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_EncodingString): js.Promise[java.lang.String | nodeLib.Buffer] = js.native
     def `__promisify__`(path: nodeLib.fsMod.PathLike, options: nodeLib.BufferEncoding): js.Promise[java.lang.String] = js.native
     @JSName("__promisify__")
     def __promisify___buffer(path: nodeLib.fsMod.PathLike, options: adoneLib.adoneLibStrings.buffer): js.Promise[nodeLib.Buffer] = js.native
@@ -3081,7 +3081,7 @@ object fsNs extends js.Object {
       * @param options The encoding (or an object specifying the encoding), used as the encoding of the result. If not provided, `'utf8'` is used.
       */
     def `__promisify__`(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_EncodingBuffer_1560675869): js.Promise[nodeLib.Buffer] = js.native
-    def `__promisify__`(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_EncodingStringNull): js.Promise[java.lang.String | nodeLib.Buffer] = js.native
+    def `__promisify__`(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_EncodingString): js.Promise[java.lang.String | nodeLib.Buffer] = js.native
     def `__promisify__`(path: nodeLib.fsMod.PathLike, options: nodeLib.BufferEncoding): js.Promise[java.lang.String] = js.native
     @JSName("__promisify__")
     def __promisify___buffer(path: nodeLib.fsMod.PathLike, options: adoneLib.adoneLibStrings.buffer): js.Promise[nodeLib.Buffer] = js.native
@@ -3131,7 +3131,7 @@ object fsNs extends js.Object {
     ): scala.Unit = js.native
     def native(
       path: nodeLib.fsMod.PathLike,
-      options: nodeLib.Anon_EncodingStringNull,
+      options: nodeLib.Anon_EncodingString,
       callback: js.Function2[
           /* err */ nodeLib.NodeJSNs.ErrnoException, 
           /* resolvedPath */ java.lang.String | nodeLib.Buffer, 
@@ -3166,7 +3166,7 @@ object fsNs extends js.Object {
     def native(path: nodeLib.fsMod.PathLike, options: java.lang.String): java.lang.String | nodeLib.Buffer = js.native
     def native(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_EncodingBufferEncodingNull): java.lang.String = js.native
     def native(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_EncodingBuffer_1560675869): nodeLib.Buffer = js.native
-    def native(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_EncodingStringNull): java.lang.String | nodeLib.Buffer = js.native
+    def native(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_EncodingString): java.lang.String | nodeLib.Buffer = js.native
     def native(path: nodeLib.fsMod.PathLike, options: nodeLib.BufferEncoding): java.lang.String = js.native
     @JSName("native")
     def native_String(path: nodeLib.fsMod.PathLike): java.lang.String = js.native
@@ -3303,10 +3303,10 @@ object fsNs extends js.Object {
       * @param position The offset from the beginning of the file where this data should be written. If not supplied, defaults to the current position.
       * @param encoding The expected string encoding.
       */
-    def `__promisify__`(fd: scala.Double, string: js.Any): js.Promise[nodeLib.Anon_BufferBytesWrittenString] = js.native
-    def `__promisify__`(fd: scala.Double, string: js.Any, position: scala.Double): js.Promise[nodeLib.Anon_BufferBytesWrittenString] = js.native
-    def `__promisify__`(fd: scala.Double, string: js.Any, position: scala.Double, encoding: java.lang.String): js.Promise[nodeLib.Anon_BufferBytesWrittenString] = js.native
-    def `__promisify__`(fd: scala.Double, string: js.Any, position: scala.Null, encoding: java.lang.String): js.Promise[nodeLib.Anon_BufferBytesWrittenString] = js.native
+    def `__promisify__`(fd: scala.Double, string: js.Any): js.Promise[nodeLib.Anon_BytesWrittenBuffer] = js.native
+    def `__promisify__`(fd: scala.Double, string: js.Any, position: scala.Double): js.Promise[nodeLib.Anon_BytesWrittenBuffer] = js.native
+    def `__promisify__`(fd: scala.Double, string: js.Any, position: scala.Double, encoding: java.lang.String): js.Promise[nodeLib.Anon_BytesWrittenBuffer] = js.native
+    def `__promisify__`(fd: scala.Double, string: js.Any, position: scala.Null, encoding: java.lang.String): js.Promise[nodeLib.Anon_BytesWrittenBuffer] = js.native
     /**
       * Asynchronously writes `buffer` to the file referenced by the supplied file descriptor.
       * @param fd A file descriptor.
@@ -3314,17 +3314,17 @@ object fsNs extends js.Object {
       * @param length The number of bytes to write. If not supplied, defaults to `buffer.length - offset`.
       * @param position The offset from the beginning of the file where this data should be written. If not supplied, defaults to the current position.
       */
-    def `__promisify__`[TBuffer /* <: nodeLib.fsMod.BinaryData */](fd: scala.Double): js.Promise[nodeLib.Anon_BufferBytesWrittenTBuffer[TBuffer]] = js.native
-    def `__promisify__`[TBuffer /* <: nodeLib.fsMod.BinaryData */](fd: scala.Double, buffer: TBuffer): js.Promise[nodeLib.Anon_BufferBytesWrittenTBuffer[TBuffer]] = js.native
-    def `__promisify__`[TBuffer /* <: nodeLib.fsMod.BinaryData */](fd: scala.Double, buffer: TBuffer, offset: scala.Double): js.Promise[nodeLib.Anon_BufferBytesWrittenTBuffer[TBuffer]] = js.native
-    def `__promisify__`[TBuffer /* <: nodeLib.fsMod.BinaryData */](fd: scala.Double, buffer: TBuffer, offset: scala.Double, length: scala.Double): js.Promise[nodeLib.Anon_BufferBytesWrittenTBuffer[TBuffer]] = js.native
+    def `__promisify__`[TBuffer /* <: nodeLib.fsMod.BinaryData */](fd: scala.Double): js.Promise[nodeLib.Anon_BytesWritten[TBuffer]] = js.native
+    def `__promisify__`[TBuffer /* <: nodeLib.fsMod.BinaryData */](fd: scala.Double, buffer: TBuffer): js.Promise[nodeLib.Anon_BytesWritten[TBuffer]] = js.native
+    def `__promisify__`[TBuffer /* <: nodeLib.fsMod.BinaryData */](fd: scala.Double, buffer: TBuffer, offset: scala.Double): js.Promise[nodeLib.Anon_BytesWritten[TBuffer]] = js.native
+    def `__promisify__`[TBuffer /* <: nodeLib.fsMod.BinaryData */](fd: scala.Double, buffer: TBuffer, offset: scala.Double, length: scala.Double): js.Promise[nodeLib.Anon_BytesWritten[TBuffer]] = js.native
     def `__promisify__`[TBuffer /* <: nodeLib.fsMod.BinaryData */](
       fd: scala.Double,
       buffer: TBuffer,
       offset: scala.Double,
       length: scala.Double,
       position: scala.Double
-    ): js.Promise[nodeLib.Anon_BufferBytesWrittenTBuffer[TBuffer]] = js.native
+    ): js.Promise[nodeLib.Anon_BytesWritten[TBuffer]] = js.native
   }
   
 }

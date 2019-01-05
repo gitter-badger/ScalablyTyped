@@ -21,7 +21,7 @@ class EventDispatcher () extends js.Object {
     * Fire an event type.
     * @param type The type of event that gets fired.
     */
-  def dispatchEvent(event: threeLib.Anon_Attachment): scala.Unit = js.native
+  def dispatchEvent(event: threeLib.Anon_Type): scala.Unit = js.native
   /**
     * Checks if listener is added to an event type.
     * @param type The type of event to listen to.

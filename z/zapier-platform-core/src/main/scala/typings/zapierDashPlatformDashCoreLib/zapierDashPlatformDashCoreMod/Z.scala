@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Z extends js.Object {
   var JSON: stdLib.JSON = js.native
-  var console: nodeLib.Console = js.native
+  var console: nodeLib.Console with stdLib.Console = js.native
   var errors: zapierDashPlatformDashCoreLib.Anon_RefreshAuthError = js.native
   def dehydrate[T](callback: js.Function2[/* z */ this.type, /* bundle */ Bundle[T], _], inputData: T): java.lang.String = js.native
   def hash(alg: java.lang.String, data: java.lang.String): js.Any = js.native

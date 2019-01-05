@@ -11,7 +11,7 @@ trait IPortalProps
     * The HTML element that children will be mounted to.
     * @default document.body
     */
-  var container: js.UndefOr[reactLib.HTMLElement] = js.undefined
+  var container: js.UndefOr[reactLib.HTMLElement with stdLib.HTMLElement] = js.undefined
   /**
     * Callback invoked when the children of this `Portal` have been added to the DOM.
     */

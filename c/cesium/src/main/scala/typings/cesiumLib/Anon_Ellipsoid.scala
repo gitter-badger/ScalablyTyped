@@ -7,6 +7,8 @@ import scala.scalajs.js.annotation._
 
 trait Anon_Ellipsoid extends js.Object {
   var ellipsoid: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.Ellipsoid] = js.undefined
-  var tilingScheme: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.TilingScheme] = js.undefined
+  var numberOfLevelZeroTilesX: js.UndefOr[scala.Double] = js.undefined
+  var numberOfLevelZeroTilesY: js.UndefOr[scala.Double] = js.undefined
+  var rectangle: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.Rectangle] = js.undefined
 }
 

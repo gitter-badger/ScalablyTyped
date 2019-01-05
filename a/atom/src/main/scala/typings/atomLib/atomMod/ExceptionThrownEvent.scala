@@ -9,7 +9,7 @@ trait ExceptionThrownEvent extends js.Object {
   var column: scala.Double
   var line: scala.Double
   var message: java.lang.String
-  var originalError: nodeLib.Error
+  var originalError: nodeLib.Error with stdLib.Error
   var url: java.lang.String
 }
 

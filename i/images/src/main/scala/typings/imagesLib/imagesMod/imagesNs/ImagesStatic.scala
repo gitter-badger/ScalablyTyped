@@ -26,7 +26,7 @@ trait ImagesStatic extends js.Object {
   def save(file: java.lang.String, `type`: SupportType, config: ImagesConfig): scala.Unit = js.native
   def setGCThreshold(value: scala.Double): scala.Unit = js.native
   def setLimit(width: scala.Double, height: scala.Double): scala.Unit = js.native
-  def size(): imagesLib.Anon_Height = js.native
+  def size(): imagesLib.Anon_Width = js.native
   def size(width: scala.Double): ImagesStatic = js.native
   def size(width: scala.Double, height: scala.Double): ImagesStatic = js.native
   def width(): scala.Double = js.native

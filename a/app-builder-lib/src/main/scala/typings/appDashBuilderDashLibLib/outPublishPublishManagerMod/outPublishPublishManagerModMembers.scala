@@ -29,7 +29,7 @@ object outPublishPublishManagerModMembers extends js.Object {
     packager: appDashBuilderDashLibLib.outPlatformPackagerMod.PlatformPackager[_],
     arch: builderDashUtilLib.outArchMod.Arch,
     errorIfCannot: scala.Boolean
-  ): js.Promise[appDashBuilderDashLibLib.Anon_PublishAutoUpdate | scala.Null] = js.native
+  ): js.Promise[appDashBuilderDashLibLib.Anon_UpdaterCacheDirName | scala.Null] = js.native
   def getPublishConfigs(
     platformPackager: appDashBuilderDashLibLib.outPlatformPackagerMod.PlatformPackager[_],
     targetSpecificOptions: /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify PlatformSpecificBuildOptions */ js.Any,

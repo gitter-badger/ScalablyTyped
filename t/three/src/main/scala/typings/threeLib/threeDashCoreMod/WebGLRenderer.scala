@@ -133,7 +133,7 @@ class WebGLRenderer () extends Renderer {
     */
   def getCurrentRenderTarget(): RenderTarget = js.native
   def getCurrentViewport(): Vector4 = js.native
-  def getDrawingBufferSize(): threeLib.Anon_Height = js.native
+  def getDrawingBufferSize(): threeLib.Anon_Width = js.native
   /**
     * @deprecated Use {@link WebGLCapabilities#getMaxAnisotropy .capabilities.getMaxAnisotropy()} instead.
     */
@@ -144,7 +144,7 @@ class WebGLRenderer () extends Renderer {
     */
   def getPrecision(): java.lang.String = js.native
   def getRenderTarget(): RenderTarget = js.native
-  def getSize(): threeLib.Anon_Height = js.native
+  def getSize(): threeLib.Anon_Width = js.native
   def readRenderTargetPixels(
     renderTarget: RenderTarget,
     x: scala.Double,

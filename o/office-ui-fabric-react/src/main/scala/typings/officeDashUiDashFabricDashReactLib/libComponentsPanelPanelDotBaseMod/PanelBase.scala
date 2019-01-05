@@ -33,7 +33,9 @@ class PanelBase protected ()
   def componentDidUpdate_MPanelBase(previousProps: officeDashUiDashFabricDashReactLib.libComponentsPanelPanelDotTypesMod.IPanelProps): scala.Unit = js.native
   @JSName("componentWillReceiveProps")
   def componentWillReceiveProps_MPanelBase(newProps: officeDashUiDashFabricDashReactLib.libComponentsPanelPanelDotTypesMod.IPanelProps): scala.Unit = js.native
-  def dismiss(ev: reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.HTMLElement, reactLib.Event]): scala.Unit = js.native
+  def dismiss(
+    ev: reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.HTMLElement with stdLib.HTMLElement, reactLib.Event]
+  ): scala.Unit = js.native
 }
 
 @JSImport("office-ui-fabric-react/lib/components/Panel/Panel.base", "PanelBase")

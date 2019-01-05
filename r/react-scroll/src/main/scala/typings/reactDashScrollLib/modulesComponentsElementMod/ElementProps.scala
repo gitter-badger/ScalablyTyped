@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ElementProps
-  extends reactLib.reactMod.ReactNs.HTMLProps[reactLib.HTMLDivElement] {
+  extends reactLib.reactMod.ReactNs.HTMLProps[reactLib.HTMLDivElement with stdLib.HTMLDivElement] {
   @JSName("name")
   var name_ElementProps: java.lang.String
 }

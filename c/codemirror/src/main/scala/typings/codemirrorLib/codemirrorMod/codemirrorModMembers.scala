@@ -85,7 +85,7 @@ object codemirrorModMembers extends js.Object {
     */
   def getMode[T](config: codemirrorLib.codemirrorMod.CodeMirrorNs.EditorConfiguration, mode: js.Any): codemirrorLib.codemirrorMod.CodeMirrorNs.Mode[T] = js.native
   /** Given a state object, returns a {state, mode} object with the inner mode and its state for the current position. */
-  def innerMode(mode: codemirrorLib.codemirrorMod.CodeMirrorNs.Mode[_], state: js.Any): codemirrorLib.Anon_StateMode = js.native
+  def innerMode(mode: codemirrorLib.codemirrorMod.CodeMirrorNs.Mode[_], state: js.Any): codemirrorLib.Anon_State = js.native
   def off(element: js.Any, eventName: java.lang.String, handler: js.Function): scala.Unit = js.native
   @JSName("off")
   def off_beforeChange(
@@ -109,7 +109,7 @@ object codemirrorModMembers extends js.Object {
     eventName: codemirrorLib.codemirrorLibStrings.beforeSelectionChange,
     handler: js.Function2[
       /* instance */ codemirrorLib.codemirrorMod.CodeMirrorNs.Editor, 
-      /* selection */ codemirrorLib.Anon_Anchor, 
+      /* selection */ codemirrorLib.Anon_Head, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -196,7 +196,7 @@ object codemirrorModMembers extends js.Object {
     eventName: codemirrorLib.codemirrorLibStrings.beforeSelectionChange,
     handler: js.Function2[
       /* instance */ codemirrorLib.codemirrorMod.CodeMirrorNs.Editor, 
-      /* selection */ codemirrorLib.Anon_Anchor, 
+      /* selection */ codemirrorLib.Anon_Head, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -300,7 +300,7 @@ object codemirrorModMembers extends js.Object {
     text: java.lang.String,
     modespec: js.Any,
     callback: js.Function2[/* text */ java.lang.String, /* style */ java.lang.String | scala.Null, scala.Unit],
-    options: codemirrorLib.Anon_State
+    options: codemirrorLib.Anon_TabSize
   ): scala.Unit = js.native
   /**
     * Runs a CodeMirror mode over text without opening an editor instance.
@@ -318,7 +318,7 @@ object codemirrorModMembers extends js.Object {
     text: java.lang.String,
     modespec: js.Any,
     callback: stdLib.HTMLElement,
-    options: codemirrorLib.Anon_State
+    options: codemirrorLib.Anon_TabSize
   ): scala.Unit = js.native
   /** Provides a framework for showing autocompletion hints. Defines editor.showHint, which takes an optional
     options object, and pops up a widget that allows the user to select a completion. Finding hints is done with

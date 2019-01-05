@@ -15,6 +15,6 @@ class ProgressIndicatorBase protected ()
 @JSImport("office-ui-fabric-react", "ProgressIndicatorBase")
 @js.native
 object ProgressIndicatorBase extends js.Object {
-  var defaultProps: officeDashUiDashFabricDashReactLib.Anon_Description = js.native
+  var defaultProps: officeDashUiDashFabricDashReactLib.Anon_Label = js.native
 }
 

@@ -9,6 +9,6 @@ trait SegmentedControlProps extends js.Object {
   var items: js.Array[reactLib.reactMod.ReactNs.ReactNode]
   var selectedItemIndex: scala.Double
   var size: js.UndefOr[gestaltLib.gestaltLibStrings.md | gestaltLib.gestaltLibStrings.lg] = js.undefined
-  def onChange(args: gestaltLib.Anon_ActiveIndex): scala.Unit
+  def onChange(args: gestaltLib.Anon_EventActiveIndex): scala.Unit
 }
 

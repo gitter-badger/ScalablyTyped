@@ -90,7 +90,7 @@ trait Options
       /* id */ java.lang.String, 
       /* opts */ browserDashResolveLib.browserDashResolveMod.browserResolveNs.SyncOpts, 
       /* cb */ js.Function4[
-        /* err */ js.UndefOr[nodeLib.Error | scala.Null], 
+        /* err */ js.UndefOr[(nodeLib.Error with stdLib.Error) | scala.Null], 
         /* file */ js.UndefOr[java.lang.String], 
         /* pkg */ js.UndefOr[PackageObject], 
         /* fakePath */ js.UndefOr[js.Any], 

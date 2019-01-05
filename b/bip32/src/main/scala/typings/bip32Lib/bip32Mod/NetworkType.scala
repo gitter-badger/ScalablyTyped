@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait NetworkType extends js.Object {
    // UInt8
-  var bip32: bip32Lib.Anon_Private
+  var bip32: bip32Lib.Anon_Public
   var wif: scala.Double
 }
 

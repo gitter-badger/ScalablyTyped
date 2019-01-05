@@ -18,7 +18,7 @@ class LookupTable protected ()
     fieldKey: java.lang.String,
     newValue: js.Any,
     bIsLocalized: scala.Boolean,
-    fnCallback: js.Function1[/* args */ sharepointLib.Anon_DataValue, scala.Unit],
+    fnCallback: js.Function1[/* args */ sharepointLib.Anon_IsValid, scala.Unit],
     fnError: js.Any
   ): scala.Unit = js.native
   /* CompleteClass */
@@ -30,7 +30,7 @@ class LookupTable protected ()
   /* CompleteClass */
   override def GetItems(fnCallback: js.Any): scala.Unit = js.native
   /* CompleteClass */
-  override def GetSerializableLookupPropType(): sharepointLib.Anon_BLimitToList = js.native
+  override def GetSerializableLookupPropType(): sharepointLib.Anon_Items = js.native
   /* CompleteClass */
   override def GetStyleId(dataValue: js.Any): java.lang.String = js.native
   /* CompleteClass */

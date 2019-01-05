@@ -241,7 +241,7 @@ trait Nightmare extends js.Object {
     cb: js.Function1[/* targetUrl */ java.lang.String, scala.Unit]
   ): Nightmare = js.native
   def path(): java.lang.String = js.native
-  def pdf(cb: js.Function2[/* err */ nodeLib.Error, /* data */ nodeLib.Buffer, scala.Unit]): Nightmare = js.native
+  def pdf(cb: js.Function2[/* err */ nodeLib.Error with stdLib.Error, /* data */ nodeLib.Buffer, scala.Unit]): Nightmare = js.native
   def pdf(path: java.lang.String): Nightmare = js.native
   def pdf(path: java.lang.String, options: js.Object): Nightmare = js.native
   def refresh(): Nightmare = js.native
@@ -339,17 +339,17 @@ trait Nightmare extends js.Object {
   def run(): Nightmare = js.native
   def run(cb: js.Function2[/* err */ js.Any, /* nightmare */ this.type, scala.Unit]): Nightmare = js.native
   def screenshot(): Nightmare = js.native
-  def screenshot(clip: nightmareLib.Anon_Y): Nightmare = js.native
+  def screenshot(clip: nightmareLib.Anon_X): Nightmare = js.native
   def screenshot(
-    clip: nightmareLib.Anon_Y,
+    clip: nightmareLib.Anon_X,
     done: js.Function2[/* err */ js.Any, /* buffer */ nodeLib.Buffer, scala.Unit]
   ): Nightmare = js.native
   def screenshot(done: js.Function2[/* err */ js.Any, /* buffer */ nodeLib.Buffer, scala.Unit]): Nightmare = js.native
   def screenshot(path: java.lang.String): Nightmare = js.native
-  def screenshot(path: java.lang.String, clip: nightmareLib.Anon_Y): Nightmare = js.native
+  def screenshot(path: java.lang.String, clip: nightmareLib.Anon_X): Nightmare = js.native
   def screenshot(
     path: java.lang.String,
-    clip: nightmareLib.Anon_Y,
+    clip: nightmareLib.Anon_X,
     done: js.Function1[/* err */ js.Any, scala.Unit]
   ): Nightmare = js.native
   def screenshot(path: java.lang.String, done: js.Function1[/* err */ js.Any, scala.Unit]): Nightmare = js.native

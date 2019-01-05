@@ -74,7 +74,7 @@ class WebTheme protected ()
   @JSName("setOption")
   def setOption_version(key: atFrctlFractalLib.atFrctlFractalLibStrings.version, value: java.lang.String): this.type = js.native
   def setRedirectView(view: java.lang.String): scala.Unit = js.native
-  def static(): js.Array[atFrctlFractalLib.Anon_MountPath] = js.native
+  def static(): js.Array[atFrctlFractalLib.Anon_Path] = js.native
   def urlFromRoute(handle: java.lang.String, params: js.Any): java.lang.String | scala.Null = js.native
   def urlFromRoute(handle: java.lang.String, params: js.Any, noRedirect: scala.Boolean): java.lang.String | scala.Null = js.native
 }

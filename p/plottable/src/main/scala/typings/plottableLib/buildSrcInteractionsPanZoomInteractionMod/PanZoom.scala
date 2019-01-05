@@ -303,13 +303,13 @@ class PanZoom ()
     * @param {boolean} [constrained] Whether to respect the zoom extents and min/max
     * values. Default true.
     */
-  def zoom(zoomAmount: scala.Double): plottableLib.Anon_CenterValue = js.native
-  def zoom(zoomAmount: scala.Double, centerValue: plottableLib.buildSrcCoreInterfacesMod.Point): plottableLib.Anon_CenterValue = js.native
+  def zoom(zoomAmount: scala.Double): plottableLib.Anon_ZoomAmount = js.native
+  def zoom(zoomAmount: scala.Double, centerValue: plottableLib.buildSrcCoreInterfacesMod.Point): plottableLib.Anon_ZoomAmount = js.native
   def zoom(
     zoomAmount: scala.Double,
     centerValue: plottableLib.buildSrcCoreInterfacesMod.Point,
     constrained: scala.Boolean
-  ): plottableLib.Anon_CenterValue = js.native
+  ): plottableLib.Anon_ZoomAmount = js.native
 }
 
 @JSImport("plottable/build/src/interactions/panZoomInteraction", "PanZoom")
@@ -323,6 +323,6 @@ object PanZoom extends js.Object {
   def centerPoint(
     point1: plottableLib.buildSrcCoreInterfacesMod.Point,
     point2: plottableLib.buildSrcCoreInterfacesMod.Point
-  ): plottableLib.Anon_Y = js.native
+  ): plottableLib.Anon_X = js.native
 }
 

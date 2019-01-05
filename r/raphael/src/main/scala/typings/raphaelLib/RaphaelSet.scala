@@ -115,7 +115,7 @@ trait RaphaelSet
   def getBBox(): BoundingBox = js.native
   def getBBox(isWithoutTransform: scala.Boolean): BoundingBox = js.native
   def glow(): RaphaelSet = js.native
-  def glow(glow: Anon_Color): RaphaelSet = js.native
+  def glow(glow: Anon_Width): RaphaelSet = js.native
   def hide(): RaphaelSet = js.native
   def hover(f_in: js.Function, f_out: js.Function): RaphaelSet = js.native
   def hover(f_in: js.Function, f_out: js.Function, icontext: js.Any): RaphaelSet = js.native

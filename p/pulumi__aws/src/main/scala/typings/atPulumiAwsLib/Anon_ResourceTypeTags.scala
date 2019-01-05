@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_ResourceTypeTags extends js.Object {
-  var resourceType: js.UndefOr[java.lang.String] = js.undefined
-  var tags: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
+  var resourceType: java.lang.String
+  var tags: org.scalablytyped.runtime.StringDictionary[js.Any]
 }
 

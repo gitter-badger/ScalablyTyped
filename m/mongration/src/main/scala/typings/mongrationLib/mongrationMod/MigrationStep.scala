@@ -9,11 +9,14 @@ trait MigrationStep extends js.Object {
   var down: js.UndefOr[
     js.Function2[
       /* db */ mongodbLib.mongodbMod.Db, 
-      /* cb */ js.Function1[/* err */ js.UndefOr[nodeLib.Error], scala.Unit], 
+      /* cb */ js.Function1[/* err */ js.UndefOr[nodeLib.Error with stdLib.Error], scala.Unit], 
       scala.Unit
     ]
   ] = js.undefined
   var id: java.lang.String
-  def up(db: mongodbLib.mongodbMod.Db, cb: js.Function1[/* err */ js.UndefOr[nodeLib.Error], scala.Unit]): scala.Unit
+  def up(
+    db: mongodbLib.mongodbMod.Db,
+    cb: js.Function1[/* err */ js.UndefOr[nodeLib.Error with stdLib.Error], scala.Unit]
+  ): scala.Unit
 }
 

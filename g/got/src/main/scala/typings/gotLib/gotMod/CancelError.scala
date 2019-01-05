@@ -6,6 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait CancelError extends StdError {
-  var name: gotLib.gotLibStrings.CancelError
+  @JSName("name")
+  var name_CancelError: gotLib.gotLibStrings.CancelError
 }
 

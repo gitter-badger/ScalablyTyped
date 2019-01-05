@@ -10,10 +10,10 @@ import scala.scalajs.js.annotation._
 object braceModMembers extends js.Object {
   var Anchor: braceLib.Anon_Doc = js.native
   var BackgroundTokenizer: braceLib.Anon_Tokenizer = js.native
-  var Document: braceLib.Anon_TextDocument = js.native
-  var EditSession: braceLib.Anon_Text = js.native
+  var Document: braceLib.Anon_Text = js.native
+  var EditSession: braceLib.Anon_TextMode = js.native
   var Editor: braceLib.Anon_Renderer = js.native
-  var PlaceHolder: braceLib.Anon_SessionLength = js.native
+  var PlaceHolder: braceLib.Anon_Session = js.native
   /**
     * Creates a new `Range` object with the given starting and ending row and column points.
     * @param startRow The starting row
@@ -21,14 +21,14 @@ object braceModMembers extends js.Object {
     * @param endRow The ending row
     * @param endColumn The ending column
     **/
-  var Range: braceLib.Anon_StartRow = js.native
+  var Range: braceLib.Anon_FromPoints = js.native
   var RangeList: braceLib.Anon_IRangeList = js.native
   var RenderLoop: braceLib.Anon_RenderLoop = js.native
   var ScrollBar: braceLib.Anon_Parent = js.native
   var Search: braceLib.Anon_Search = js.native
   var Selection: braceLib.Anon_SessionIEditSession = js.native
   var Split: braceLib.Anon_Split = js.native
-  var TokenIterator: braceLib.Anon_Session = js.native
+  var TokenIterator: braceLib.Anon_SessionInitialRow = js.native
   var Tokenizer: braceLib.Anon_Rules = js.native
   var UndoManager: braceLib.Anon_UndoManager = js.native
   var VirtualRenderer: braceLib.Anon_Container = js.native

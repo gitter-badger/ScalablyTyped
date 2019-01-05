@@ -42,7 +42,7 @@ object inspectedWindowNsMembers extends js.Object {
     * @param [options] The options parameter can contain one or more options.
     */
   def eval(expression: java.lang.String): js.Promise[js.UndefOr[js.Object]] = js.native
-  def eval(expression: java.lang.String, options: firefoxDashWebextDashBrowserLib.Anon_ContextSecurityOrigin): js.Promise[js.UndefOr[js.Object]] = js.native
+  def eval(expression: java.lang.String, options: firefoxDashWebextDashBrowserLib.Anon_FrameURL): js.Promise[js.UndefOr[js.Object]] = js.native
   /**
     * Retrieves the list of resources from the inspected page.
     * @deprecated Unsupported on Firefox at this time.
@@ -50,6 +50,6 @@ object inspectedWindowNsMembers extends js.Object {
   def getResources(): js.Promise[js.Array[Resource]] = js.native
   /** Reloads the inspected page. */
   def reload(): scala.Unit = js.native
-  def reload(reloadOptions: firefoxDashWebextDashBrowserLib.Anon_PreprocessorScript): scala.Unit = js.native
+  def reload(reloadOptions: firefoxDashWebextDashBrowserLib.Anon_IgnoreCache): scala.Unit = js.native
 }
 

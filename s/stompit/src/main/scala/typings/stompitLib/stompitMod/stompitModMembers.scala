@@ -12,7 +12,7 @@ object stompitModMembers extends js.Object {
   def connect(
     optionsOrPath: java.lang.String,
     connectionListener: js.Function2[
-      /* err */ nodeLib.Error | scala.Null, 
+      /* err */ (nodeLib.Error with stdLib.Error) | scala.Null, 
       /* client */ stompitLib.libClientMod.namespaced, 
       scala.Unit
     ]
@@ -21,7 +21,7 @@ object stompitModMembers extends js.Object {
   def connect(
     optionsOrPath: stompitLib.libConnectMod.connectNs.ConnectOptions,
     connectionListener: js.Function2[
-      /* err */ nodeLib.Error | scala.Null, 
+      /* err */ (nodeLib.Error with stdLib.Error) | scala.Null, 
       /* client */ stompitLib.libClientMod.namespaced, 
       scala.Unit
     ]
@@ -32,7 +32,7 @@ object stompitModMembers extends js.Object {
     port: scala.Double,
     host: java.lang.String,
     connectionListener: js.Function2[
-      /* err */ nodeLib.Error | scala.Null, 
+      /* err */ (nodeLib.Error with stdLib.Error) | scala.Null, 
       /* client */ stompitLib.libClientMod.namespaced, 
       scala.Unit
     ]

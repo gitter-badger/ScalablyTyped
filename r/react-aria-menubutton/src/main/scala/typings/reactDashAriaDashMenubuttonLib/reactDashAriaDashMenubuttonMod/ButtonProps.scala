@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ButtonProps[T /* <: reactLib.HTMLElement */]
+trait ButtonProps[T /* <: reactLib.HTMLElement with stdLib.HTMLElement */]
   extends reactLib.reactMod.ReactNs.HTMLAttributes[T] {
   /**
   	 * If true, the element is disabled

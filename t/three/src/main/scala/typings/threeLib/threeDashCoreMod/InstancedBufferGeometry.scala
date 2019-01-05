@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class InstancedBufferGeometry () extends BufferGeometry {
   @JSName("groups")
-  var groups_InstancedBufferGeometry: js.Array[threeLib.Anon_CountInstances] = js.native
+  var groups_InstancedBufferGeometry: js.Array[threeLib.Anon_StartCountInstances] = js.native
   var maxInstancedCount: scala.Double = js.native
 }
 

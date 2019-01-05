@@ -24,9 +24,9 @@ class Companies () extends js.Object {
   ): scala.Unit = js.native
   def list(): js.Promise[ApiResponse[intercomDashClientLib.companyMod.List]] = js.native
   def list(cb: callback[ApiResponse[intercomDashClientLib.companyMod.List]]): scala.Unit = js.native
-  def listBy(params: intercomDashClientLib.Anon_Segmentid): js.Promise[ApiResponse[intercomDashClientLib.companyMod.List]] = js.native
+  def listBy(params: intercomDashClientLib.Anon_Tagid): js.Promise[ApiResponse[intercomDashClientLib.companyMod.List]] = js.native
   def listBy(
-    params: intercomDashClientLib.Anon_Segmentid,
+    params: intercomDashClientLib.Anon_Tagid,
     cb: callback[ApiResponse[intercomDashClientLib.companyMod.List]]
   ): scala.Unit = js.native
   def update(

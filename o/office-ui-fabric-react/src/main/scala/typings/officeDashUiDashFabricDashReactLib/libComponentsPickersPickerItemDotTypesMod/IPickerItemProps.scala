@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait IPickerItemProps[T]
-  extends reactLib.reactMod.ReactNs.AllHTMLAttributes[reactLib.HTMLElement] {
+  extends reactLib.reactMod.ReactNs.AllHTMLAttributes[reactLib.HTMLElement with stdLib.HTMLElement] {
   var componentRef: js.UndefOr[atUifabricUtilitiesLib.libCreateRefMod.IRefObject[js.Object]] = js.undefined
   var index: scala.Double
   var item: T

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait DownfileParams extends js.Object {
   var complete: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
-  var fail: js.UndefOr[js.Function1[/* res */ wegameDashApiLib.Anon_ErrMsgString, scala.Unit]] = js.undefined
+  var fail: js.UndefOr[js.Function1[/* res */ wegameDashApiLib.Anon_ErrMsg, scala.Unit]] = js.undefined
   /**
     * 在指定filePath之后success回调中将不会有res.tempFilePath路径值，下载的文件会直接写入filePath指定的路径（有写入权限的情况下，根目录请使用wx.env.USER_DATA_PATH，路径文件夹必须存在，否则写入失败）
     */

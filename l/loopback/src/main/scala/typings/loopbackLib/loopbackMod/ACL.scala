@@ -108,7 +108,7 @@ object ACL extends js.Object {
     *   READ, REPLICATE, WRITE, or EXECUTE.
     * @param {() => void} callback Callback functio
     */
-  def checkAccessForContext(context: loopbackLib.Anon_AccessType, callback: js.Function0[scala.Unit]): scala.Unit = js.native
+  def checkAccessForContext(context: loopbackLib.Anon_Principals, callback: js.Function0[scala.Unit]): scala.Unit = js.native
   /**
     * Check if the given access token can invoke the method
     * @param {AccessToken} token The access token
@@ -124,7 +124,11 @@ object ACL extends js.Object {
     model: java.lang.String,
     modelId: js.Any,
     method: java.lang.String,
-    callback: js.Function2[/* err */ java.lang.String | nodeLib.Error, /* allowed */ scala.Boolean, scala.Unit]
+    callback: js.Function2[
+      /* err */ java.lang.String | (nodeLib.Error with stdLib.Error), 
+      /* allowed */ scala.Boolean, 
+      scala.Unit
+    ]
   ): scala.Unit = js.native
   /**
     * Check if the given principal is allowed to access the model/property
@@ -144,7 +148,7 @@ object ACL extends js.Object {
     property: java.lang.String,
     accessType: java.lang.String,
     callback: js.Function2[
-      /* err */ java.lang.String | nodeLib.Error, 
+      /* err */ java.lang.String | (nodeLib.Error with stdLib.Error), 
       /* result */ loopbackLib.loopbackMod.lNs.AccessRequest, 
       scala.Unit
     ]

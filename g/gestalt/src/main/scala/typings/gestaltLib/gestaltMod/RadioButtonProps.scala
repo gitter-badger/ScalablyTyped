@@ -12,6 +12,6 @@ trait RadioButtonProps extends js.Object {
   var name: js.UndefOr[java.lang.String] = js.undefined
   var size: js.UndefOr[gestaltLib.gestaltLibStrings.sm | gestaltLib.gestaltLibStrings.md] = js.undefined
   var value: js.UndefOr[java.lang.String] = js.undefined
-  def onChange(args: gestaltLib.Anon_Checked): scala.Unit
+  def onChange(args: gestaltLib.Anon_EventChecked): scala.Unit
 }
 

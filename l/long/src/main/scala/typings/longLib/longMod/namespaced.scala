@@ -91,7 +91,7 @@ object namespaced extends js.Object {
   def fromString(str: java.lang.String, unsigned: scala.Double): longLib.longMod.Long = js.native
   def fromString(str: java.lang.String, unsigned: scala.Double, radix: scala.Double): longLib.longMod.Long = js.native
   def fromValue(`val`: java.lang.String): longLib.longMod.Long = js.native
-  def fromValue(`val`: longLib.Anon_High): longLib.longMod.Long = js.native
+  def fromValue(`val`: longLib.Anon_Low): longLib.longMod.Long = js.native
   /**
     * Converts the specified value to a Long.
     */

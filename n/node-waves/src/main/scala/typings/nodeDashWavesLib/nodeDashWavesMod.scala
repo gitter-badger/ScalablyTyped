@@ -13,8 +13,8 @@ object nodeDashWavesMod extends js.Object {
   def attach(elements: nodeDashWavesLib.ElementSelector, classes: js.Array[java.lang.String]): scala.Unit = js.native
   def calm(elements: nodeDashWavesLib.ElementSelector): scala.Unit = js.native
   def init(): scala.Unit = js.native
-  def init(config: nodeDashWavesLib.Anon_Delay): scala.Unit = js.native
+  def init(config: nodeDashWavesLib.Anon_Duration): scala.Unit = js.native
   def ripple(elements: nodeDashWavesLib.ElementSelector): scala.Unit = js.native
-  def ripple(elements: nodeDashWavesLib.ElementSelector, option: nodeDashWavesLib.Anon_Position): scala.Unit = js.native
+  def ripple(elements: nodeDashWavesLib.ElementSelector, option: nodeDashWavesLib.Anon_Wait): scala.Unit = js.native
 }
 

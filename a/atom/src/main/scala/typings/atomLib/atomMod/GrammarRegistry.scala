@@ -65,7 +65,7 @@ trait GrammarRegistry extends js.Object {
   def loadGrammar(
     grammarPath: java.lang.String,
     callback: js.Function2[
-      /* error */ nodeLib.Error | scala.Null, 
+      /* error */ (nodeLib.Error with stdLib.Error) | scala.Null, 
       /* grammar */ js.UndefOr[Grammar], 
       scala.Unit
     ]
@@ -113,7 +113,7 @@ trait GrammarRegistry extends js.Object {
   def readGrammar(
     grammarPath: java.lang.String,
     callback: js.Function2[
-      /* error */ nodeLib.Error | scala.Null, 
+      /* error */ (nodeLib.Error with stdLib.Error) | scala.Null, 
       /* grammar */ js.UndefOr[Grammar], 
       scala.Unit
     ]

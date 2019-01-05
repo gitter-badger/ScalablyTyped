@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class PrimitiveCollection ()
   extends cesiumLib.cesiumMod.CesiumNs.PrimitiveCollection {
-  def this(options: cesiumLib.Anon_DestroyPrimitives) = this()
+  def this(options: cesiumLib.Anon_ShowDestroyPrimitives) = this()
 }
 

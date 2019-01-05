@@ -6,6 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object tablebodyTableBodyMod {
-  type TableBodyBaseProps = reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLTableSectionElement]
+  type TableBodyBaseProps = reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLTableSectionElement with stdLib.HTMLTableSectionElement]
   type TableBodyClassKey = atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.root
 }

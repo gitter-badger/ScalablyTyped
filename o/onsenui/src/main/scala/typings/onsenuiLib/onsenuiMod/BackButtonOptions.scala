@@ -17,6 +17,6 @@ trait BackButtonOptions extends js.Object {
   /**
     * @description Function that is called when the transition has ended.
     */
-  var callback: js.UndefOr[coreDashJsLib.Function] = js.undefined
+  var callback: js.UndefOr[coreDashJsLib.Function with js.Function] = js.undefined
 }
 

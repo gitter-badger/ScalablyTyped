@@ -44,13 +44,13 @@ trait Range extends js.Object {
   val Font: Font = js.native
   @JSName("FormatConditions")
   val FormatConditions_Original: FormatConditions = js.native
-  var Formula: java.lang.String | activexDashInteropLib.SafeArray[java.lang.String] = js.native
-  var FormulaArray: java.lang.String | activexDashInteropLib.SafeArray[java.lang.String] | scala.Null = js.native
+  var Formula: java.lang.String | (activexDashInteropLib.SafeArray[java.lang.String] with stdLib.SafeArray[java.lang.String]) = js.native
+  var FormulaArray: java.lang.String | (activexDashInteropLib.SafeArray[java.lang.String] with stdLib.SafeArray[java.lang.String]) | scala.Null = js.native
   var FormulaHidden: scala.Boolean | scala.Null = js.native
   var FormulaLabel: XlFormulaLabel = js.native
-  var FormulaLocal: java.lang.String | activexDashInteropLib.SafeArray[java.lang.String] = js.native
-  var FormulaR1C1: java.lang.String | activexDashInteropLib.SafeArray[java.lang.String] = js.native
-  var FormulaR1C1Local: java.lang.String | activexDashInteropLib.SafeArray[java.lang.String] = js.native
+  var FormulaLocal: java.lang.String | (activexDashInteropLib.SafeArray[java.lang.String] with stdLib.SafeArray[java.lang.String]) = js.native
+  var FormulaR1C1: java.lang.String | (activexDashInteropLib.SafeArray[java.lang.String] with stdLib.SafeArray[java.lang.String]) = js.native
+  var FormulaR1C1Local: java.lang.String | (activexDashInteropLib.SafeArray[java.lang.String] with stdLib.SafeArray[java.lang.String]) = js.native
   val HasArray: scala.Boolean = js.native
   val HasFormula: scala.Boolean | scala.Null = js.native
   var Height: scala.Double = js.native
@@ -177,7 +177,9 @@ trait Range extends js.Object {
   def AllocateChanges(): scala.Unit = js.native
   /** @param Order [Order=1] */
   def ApplyNames(
-    Names: js.UndefOr[activexDashInteropLib.SafeArray[java.lang.String]],
+    Names: js.UndefOr[
+      activexDashInteropLib.SafeArray[java.lang.String] with stdLib.SafeArray[java.lang.String]
+    ],
     IgnoreRelativeAbsolute: js.UndefOr[scala.Boolean],
     UseRowColumnNames: js.UndefOr[scala.Boolean],
     OmitColumn: js.UndefOr[scala.Boolean],
@@ -273,21 +275,24 @@ trait Range extends js.Object {
   def Columns(RowIndex: scala.Double): Range = js.native
   def Columns(RowIndex: scala.Double, ColumnIndex: scala.Double): Range = js.native
   def Consolidate(): js.Any = js.native
-  def Consolidate(Sources: activexDashInteropLib.SafeArray[java.lang.String]): js.Any = js.native
-  def Consolidate(Sources: activexDashInteropLib.SafeArray[java.lang.String], Function: XlConsolidationFunction): js.Any = js.native
+  def Consolidate(Sources: activexDashInteropLib.SafeArray[java.lang.String] with stdLib.SafeArray[java.lang.String]): js.Any = js.native
   def Consolidate(
-    Sources: activexDashInteropLib.SafeArray[java.lang.String],
+    Sources: activexDashInteropLib.SafeArray[java.lang.String] with stdLib.SafeArray[java.lang.String],
+    Function: XlConsolidationFunction
+  ): js.Any = js.native
+  def Consolidate(
+    Sources: activexDashInteropLib.SafeArray[java.lang.String] with stdLib.SafeArray[java.lang.String],
     Function: XlConsolidationFunction,
     TopRow: scala.Boolean
   ): js.Any = js.native
   def Consolidate(
-    Sources: activexDashInteropLib.SafeArray[java.lang.String],
+    Sources: activexDashInteropLib.SafeArray[java.lang.String] with stdLib.SafeArray[java.lang.String],
     Function: XlConsolidationFunction,
     TopRow: scala.Boolean,
     LeftColumn: scala.Boolean
   ): js.Any = js.native
   def Consolidate(
-    Sources: activexDashInteropLib.SafeArray[java.lang.String],
+    Sources: activexDashInteropLib.SafeArray[java.lang.String] with stdLib.SafeArray[java.lang.String],
     Function: XlConsolidationFunction,
     TopRow: scala.Boolean,
     LeftColumn: scala.Boolean,
@@ -464,7 +469,7 @@ trait Range extends js.Object {
     Start: js.Any,
     End: js.Any,
     By: scala.Double,
-    Periods: activexDashInteropLib.SafeArray[scala.Boolean]
+    Periods: activexDashInteropLib.SafeArray[scala.Boolean] with stdLib.SafeArray[scala.Boolean]
   ): js.Any = js.native
   def Hyperlinks(Index: java.lang.String): Hyperlink = js.native
   def Hyperlinks(Index: scala.Double): Hyperlink = js.native
@@ -539,8 +544,11 @@ trait Range extends js.Object {
   def Range(Cell1: java.lang.String, Cell2: Range): Range = js.native
   def Range(Cell1: java.lang.String, Cell2: java.lang.String): Range = js.native
   /** @param Header [Header=2] */
-  def RemoveDuplicates(Columns: activexDashInteropLib.SafeArray[scala.Double]): scala.Unit = js.native
-  def RemoveDuplicates(Columns: activexDashInteropLib.SafeArray[scala.Double], Header: XlYesNoGuess): scala.Unit = js.native
+  def RemoveDuplicates(Columns: activexDashInteropLib.SafeArray[scala.Double] with stdLib.SafeArray[scala.Double]): scala.Unit = js.native
+  def RemoveDuplicates(
+    Columns: activexDashInteropLib.SafeArray[scala.Double] with stdLib.SafeArray[scala.Double],
+    Header: XlYesNoGuess
+  ): scala.Unit = js.native
   def RemoveSubtotal(): js.Any = js.native
   def Replace(
     What: java.lang.String,
@@ -688,14 +696,14 @@ trait Range extends js.Object {
   def Subtotal(
     GroupBy: scala.Double,
     Function: XlConsolidationFunction,
-    TotalList: activexDashInteropLib.SafeArray[scala.Double],
+    TotalList: activexDashInteropLib.SafeArray[scala.Double] with stdLib.SafeArray[scala.Double],
     Replace: scala.Boolean,
     PageBreaks: scala.Boolean
   ): js.Any = js.native
   def Subtotal(
     GroupBy: scala.Double,
     Function: XlConsolidationFunction,
-    TotalList: activexDashInteropLib.SafeArray[scala.Double],
+    TotalList: activexDashInteropLib.SafeArray[scala.Double] with stdLib.SafeArray[scala.Double],
     Replace: scala.Boolean,
     PageBreaks: scala.Boolean,
     SummaryBelowData: XlSummaryRow
@@ -718,7 +726,7 @@ trait Range extends js.Object {
     Space: js.UndefOr[scala.Boolean],
     Other: js.UndefOr[scala.Boolean],
     OtherChar: js.UndefOr[java.lang.String],
-    FieldInfo: js.UndefOr[activexDashInteropLib.SafeArray[_]],
+    FieldInfo: js.UndefOr[activexDashInteropLib.SafeArray[_] with stdLib.SafeArray[_]],
     DecimalSeparator: js.UndefOr[java.lang.String],
     ThousandsSeparator: js.UndefOr[java.lang.String],
     TrailingMinusNumbers: js.UndefOr[js.Any]

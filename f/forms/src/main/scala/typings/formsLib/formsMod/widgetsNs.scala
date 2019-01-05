@@ -37,6 +37,6 @@ object widgetsNs extends js.Object {
   def text(): formsLib.formsMod.Widget = js.native
   def text(params: formsLib.formsMod.WidgetParameters): formsLib.formsMod.Widget = js.native
   def textarea(): formsLib.formsMod.Widget = js.native
-  def textarea(params: formsLib.formsMod.WidgetParameters with formsLib.Anon_Cols): formsLib.formsMod.Widget = js.native
+  def textarea(params: formsLib.formsMod.WidgetParameters with formsLib.Anon_Rows): formsLib.formsMod.Widget = js.native
 }
 

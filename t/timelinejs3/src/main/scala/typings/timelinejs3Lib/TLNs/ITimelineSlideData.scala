@@ -18,7 +18,7 @@ trait ITimelineSlideData extends js.Object {
     * url: the fully-qualified URL pointing to an image which will be used as the background
     * color: a CSS color, in hexadecimal (e.g. #0f9bd1) or a valid CSS color keyword.
     */
-  var background: js.UndefOr[timelinejs3Lib.Anon_Color] = js.undefined
+  var background: js.UndefOr[timelinejs3Lib.Anon_Url] = js.undefined
   /*
     * A string which will be used when Timeline displays the date for this. If used, override's display_date
     * values set on the start or end date for this event, which is useful if you want to control how the two

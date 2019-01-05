@@ -22,14 +22,14 @@ trait AnimatePropTypeInterface extends js.Object {
   /**
     * Animation enter transition configuration
     */
-  var onEnter: js.UndefOr[victoryLib.Anon_After] = js.undefined
+  var onEnter: js.UndefOr[victoryLib.Anon_DurationBefore] = js.undefined
   /**
     * Animation exit transition configuration
     */
-  var onExit: js.UndefOr[victoryLib.Anon_Before] = js.undefined
+  var onExit: js.UndefOr[victoryLib.Anon_Duration] = js.undefined
   /**
     * Animation load transition configuration
     */
-  var onLoad: js.UndefOr[victoryLib.Anon_After] = js.undefined
+  var onLoad: js.UndefOr[victoryLib.Anon_DurationBefore] = js.undefined
 }
 

@@ -28,7 +28,7 @@ trait Conflict extends js.Object {
     */
   def changes(
     callback: js.Function3[
-      /* err */ nodeLib.Error, 
+      /* err */ nodeLib.Error with stdLib.Error, 
       /* sourceChange */ Change, 
       /* targetChange */ Change, 
       scala.Unit
@@ -43,7 +43,7 @@ trait Conflict extends js.Object {
     */
   def models(
     callback: js.Function3[
-      /* err */ nodeLib.Error, 
+      /* err */ nodeLib.Error with stdLib.Error, 
       /* source */ PersistedModel, 
       /* target */ PersistedModel, 
       scala.Unit
@@ -59,7 +59,7 @@ trait Conflict extends js.Object {
     * @callback {() => void} callback
     * @param {Error} err
     */
-  def resolve(callback: js.Function1[/* err */ nodeLib.Error, scala.Unit]): scala.Unit
+  def resolve(callback: js.Function1[/* err */ nodeLib.Error with stdLib.Error, scala.Unit]): scala.Unit
   /**
     * Resolve the conflict using the supplied instance data
     * @param {any} data The set of changes to apply on the model
@@ -67,19 +67,19 @@ trait Conflict extends js.Object {
     * @callback {() => void} callback
     * @param {Error} err
     */
-  def resolveManually(data: js.Any, callback: js.Function1[/* err */ nodeLib.Error, scala.Unit]): scala.Unit
+  def resolveManually(data: js.Any, callback: js.Function1[/* err */ nodeLib.Error with stdLib.Error, scala.Unit]): scala.Unit
   /**
     * Resolve the conflict using the instance data in the source model
     * @callback {() => void} callback
     * @param {Error} err
     */
-  def resolveUsingSource(callback: js.Function1[/* err */ nodeLib.Error, scala.Unit]): scala.Unit
+  def resolveUsingSource(callback: js.Function1[/* err */ nodeLib.Error with stdLib.Error, scala.Unit]): scala.Unit
   /**
     * Resolve the conflict using the instance data in the target model
     * @callback {() => void} callback
     * @param {Error} err
     */
-  def resolveUsingTarget(callback: js.Function1[/* err */ nodeLib.Error, scala.Unit]): scala.Unit
+  def resolveUsingTarget(callback: js.Function1[/* err */ nodeLib.Error with stdLib.Error, scala.Unit]): scala.Unit
   /**
     * Return a new Conflict instance with swapped Source and Target models
     * This is useful when resolving a conflict in one-way
@@ -103,6 +103,8 @@ trait Conflict extends js.Object {
     * @param {Error} err
     * @param {string} type The conflict type
     */
-  def `type`(callback: js.Function2[/* err */ nodeLib.Error, /* type */ java.lang.String, scala.Unit]): scala.Unit
+  def `type`(
+    callback: js.Function2[/* err */ nodeLib.Error with stdLib.Error, /* type */ java.lang.String, scala.Unit]
+  ): scala.Unit
 }
 

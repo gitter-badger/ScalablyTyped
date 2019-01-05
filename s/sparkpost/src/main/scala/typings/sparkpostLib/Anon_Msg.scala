@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 trait Anon_Msg extends js.Object {
   var msg: java.lang.String
-  var response: Anon_Body
+  var response: Anon_Status
 }
 

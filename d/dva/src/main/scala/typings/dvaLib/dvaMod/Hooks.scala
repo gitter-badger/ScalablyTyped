@@ -11,7 +11,11 @@ trait Hooks extends js.Object {
   var onAction: js.UndefOr[onActionFunc | js.Array[onActionFunc]] = js.undefined
   var onEffect: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   var onError: js.UndefOr[
-    js.Function2[/* e */ nodeLib.Error, /* dispatch */ reduxLib.reduxMod.Dispatch[_], scala.Unit]
+    js.Function2[
+      /* e */ nodeLib.Error with stdLib.Error, 
+      /* dispatch */ reduxLib.reduxMod.Dispatch[_], 
+      scala.Unit
+    ]
   ] = js.undefined
   var onHmr: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   var onReducer: js.UndefOr[ReducerEnhancer] = js.undefined

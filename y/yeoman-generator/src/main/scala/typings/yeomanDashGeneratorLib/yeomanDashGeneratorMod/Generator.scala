@@ -44,7 +44,7 @@ trait Generator
   def composeWith(
     namespace: java.lang.String,
     options: org.scalablytyped.runtime.StringDictionary[js.Any],
-    settings: yeomanDashGeneratorLib.Anon_Link
+    settings: yeomanDashGeneratorLib.Anon_Local
   ): this.type = js.native
   def desc(description: java.lang.String): this.type = js.native
   def destinationPath(path: java.lang.String*): java.lang.String = js.native

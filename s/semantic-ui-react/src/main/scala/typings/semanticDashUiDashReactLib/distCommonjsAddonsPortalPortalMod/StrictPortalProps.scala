@@ -42,7 +42,7 @@ trait StrictPortalProps extends js.Object {
     */
   var onClose: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent], 
+      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement with stdLib.HTMLElement, reactLib.NativeMouseEvent], 
       /* data */ PortalProps, 
       scala.Unit
     ]
@@ -62,7 +62,7 @@ trait StrictPortalProps extends js.Object {
     */
   var onOpen: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent], 
+      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement with stdLib.HTMLElement, reactLib.NativeMouseEvent], 
       /* data */ PortalProps, 
       scala.Unit
     ]
@@ -89,6 +89,8 @@ trait StrictPortalProps extends js.Object {
     *
     * @param {HTMLElement} node - Referred node.
     */
-  var triggerRef: js.UndefOr[js.Function1[/* node */ reactLib.HTMLElement, scala.Unit]] = js.undefined
+  var triggerRef: js.UndefOr[
+    js.Function1[/* node */ reactLib.HTMLElement with stdLib.HTMLElement, scala.Unit]
+  ] = js.undefined
 }
 

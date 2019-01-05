@@ -42,7 +42,10 @@ trait BrowserSyncInstance extends js.Object {
     */
   def init(): BrowserSyncInstance = js.native
   def init(config: Options): BrowserSyncInstance = js.native
-  def init(config: Options, callback: js.Function2[/* err */ nodeLib.Error, /* bs */ js.Object, _]): BrowserSyncInstance = js.native
+  def init(
+    config: Options,
+    callback: js.Function2[/* err */ nodeLib.Error with stdLib.Error, /* bs */ js.Object, _]
+  ): BrowserSyncInstance = js.native
   /**
     * Helper method for browser notifications
     * @param message Can be a simple message such as 'Connected' or HTML
@@ -97,9 +100,9 @@ trait BrowserSyncInstance extends js.Object {
     * @param {object} options The
     * @param {any} cb A callback function that will return any errors.
     */
-  def use(module: browserDashSyncLib.Anon_Plugin): scala.Unit = js.native
-  def use(module: browserDashSyncLib.Anon_Plugin, options: js.Object): scala.Unit = js.native
-  def use(module: browserDashSyncLib.Anon_Plugin, options: js.Object, cb: js.Any): scala.Unit = js.native
+  def use(module: browserDashSyncLib.Anon_Pluginname): scala.Unit = js.native
+  def use(module: browserDashSyncLib.Anon_Pluginname, options: js.Object): scala.Unit = js.native
+  def use(module: browserDashSyncLib.Anon_Pluginname, options: js.Object, cb: js.Any): scala.Unit = js.native
   /**
     * Stand alone file-watcher. Use this along with Browsersync to create your own, minimal build system
     */

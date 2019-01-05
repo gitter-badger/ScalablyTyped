@@ -94,7 +94,7 @@ object AnnotationNs extends js.Object {
   @js.native
   class ServerAddr protected ()
     extends zipkinLib.zipkinMod.zipkinNs.AnnotationNs.ServerAddr {
-    def this(args: zipkinLib.Anon_ServiceName) = this()
+    def this(args: zipkinLib.Anon_ServiceNameHost) = this()
     /* CompleteClass */
     override val annotationType: java.lang.String = js.native
     /* CompleteClass */

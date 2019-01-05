@@ -121,7 +121,7 @@ object SplitView extends js.Object {
   /**
     * Placement options for a SplitView's pane.
     **/
-  var PanePlacement: winjsLib.Anon_Bottom = js.native
+  var PanePlacement: winjsLib.Anon_Left = js.native
   /**
     * Indicates that the object is compatibile with declarative processing.
     **/

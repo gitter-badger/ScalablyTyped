@@ -11,7 +11,7 @@ trait EventLog extends js.Object {
   var blockNumber: scala.Double
   var event: java.lang.String
   var logIndex: scala.Double
-  var raw: js.UndefOr[web3Lib.Anon_Data] = js.undefined
+  var raw: js.UndefOr[web3Lib.Anon_DataTopics] = js.undefined
   var returnValues: js.Any
   var transactionHash: java.lang.String
   var transactionIndex: scala.Double

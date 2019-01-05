@@ -11,7 +11,7 @@ class Schema () extends js.Object {
   def this(`_`: adoneLib.Anon_Include) = this()
   var compiledExplicit: js.Array[adoneLib.adoneNs.dataNs.yamlNs.typeNs.Type[_]] = js.native
   var compiledImplicit: js.Array[adoneLib.adoneNs.dataNs.yamlNs.typeNs.Type[_]] = js.native
-  var compiledTypeMap: adoneLib.Anon_Fallback = js.native
+  var compiledTypeMap: adoneLib.Anon_Scalar = js.native
   var explicit: js.Array[adoneLib.adoneNs.dataNs.yamlNs.typeNs.Type[_]] = js.native
   var `implicit`: js.Array[adoneLib.adoneNs.dataNs.yamlNs.typeNs.Type[_]] = js.native
   var include: js.Array[Schema] = js.native

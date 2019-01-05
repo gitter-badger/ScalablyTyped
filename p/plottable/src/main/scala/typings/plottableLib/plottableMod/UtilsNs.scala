@@ -73,7 +73,7 @@ object UtilsNs extends js.Object {
     def elementWidth(elementOrSelection: d3DashSelectionLib.d3DashSelectionMod.Selection[stdLib.Element, _, _, _]): scala.Double = js.native
     def elementWidth(elementOrSelection: stdLib.Element): scala.Double = js.native
     def entityBounds(element: stdLib.Element): plottableLib.buildSrcCoreInterfacesMod.IEntityBounds = js.native
-    def expandRect(rect: stdLib.ClientRect, amount: scala.Double): plottableLib.Anon_BottomLeft = js.native
+    def expandRect(rect: stdLib.ClientRect, amount: scala.Double): plottableLib.Anon_LeftTop = js.native
     def getElementTransform(elem: stdLib.Element): plottableLib.buildSrcUtilsMathUtilsMod.ICssTransformMatrix | scala.Null = js.native
     def getHtmlElementAncestors(elem: stdLib.Element): js.Array[stdLib.HTMLElement] = js.native
     def getRotate(el: plottableLib.buildSrcCoreInterfacesMod.SimpleSelection[_]): scala.Double = js.native
@@ -350,7 +350,7 @@ object UtilsNs extends js.Object {
       keyAccessor: plottableLib.buildSrcCoreInterfacesMod.IAccessor[_],
       filter: plottableLib.buildSrcCoreInterfacesMod.IAccessor[scala.Boolean]
     ): js.Array[scala.Double] = js.native
-    def stackedExtents[D](stackingResult: plottableLib.buildSrcUtilsStackingUtilsMod.GenericStackingResult[D]): plottableLib.Anon_MinimumExtents[D] = js.native
+    def stackedExtents[D](stackingResult: plottableLib.buildSrcUtilsStackingUtilsMod.GenericStackingResult[D]): plottableLib.Anon_MaximumExtents[D] = js.native
   }
   
   @js.native

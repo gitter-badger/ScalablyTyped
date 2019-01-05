@@ -30,18 +30,29 @@ package object reduxDashSagaLib {
     /* repeated */ js.Any, 
     js.Any
   ]
-  type Saga0 = js.Function0[nodeLib.Iterator[js.Any]]
-  type Saga1[T1] = js.Function1[/* arg1 */ T1, nodeLib.Iterator[js.Any]]
-  type Saga2[T1, T2] = js.Function2[/* arg1 */ T1, /* arg2 */ T2, nodeLib.Iterator[js.Any]]
-  type Saga3[T1, T2, T3] = js.Function3[/* arg1 */ T1, /* arg2 */ T2, /* arg3 */ T3, nodeLib.Iterator[js.Any]]
-  type Saga4[T1, T2, T3, T4] = js.Function4[/* arg1 */ T1, /* arg2 */ T2, /* arg3 */ T3, /* arg4 */ T4, nodeLib.Iterator[js.Any]]
+  type Saga0 = js.Function0[nodeLib.Iterator[_] with stdLib.Iterator[_]]
+  type Saga1[T1] = js.Function1[/* arg1 */ T1, nodeLib.Iterator[_] with stdLib.Iterator[_]]
+  type Saga2[T1, T2] = js.Function2[/* arg1 */ T1, /* arg2 */ T2, nodeLib.Iterator[_] with stdLib.Iterator[_]]
+  type Saga3[T1, T2, T3] = js.Function3[
+    /* arg1 */ T1, 
+    /* arg2 */ T2, 
+    /* arg3 */ T3, 
+    nodeLib.Iterator[_] with stdLib.Iterator[_]
+  ]
+  type Saga4[T1, T2, T3, T4] = js.Function4[
+    /* arg1 */ T1, 
+    /* arg2 */ T2, 
+    /* arg3 */ T3, 
+    /* arg4 */ T4, 
+    nodeLib.Iterator[_] with stdLib.Iterator[_]
+  ]
   type Saga5[T1, T2, T3, T4, T5] = js.Function5[
     /* arg1 */ T1, 
     /* arg2 */ T2, 
     /* arg3 */ T3, 
     /* arg4 */ T4, 
     /* arg5 */ T5, 
-    nodeLib.Iterator[js.Any]
+    nodeLib.Iterator[_] with stdLib.Iterator[_]
   ]
   type Saga6Rest[T1, T2, T3, T4, T5, T6] = js.Function7[
     /* arg1 */ T1, 
@@ -51,7 +62,7 @@ package object reduxDashSagaLib {
     /* arg5 */ T5, 
     /* arg6 */ T6, 
     /* repeated */ js.Any, 
-    nodeLib.Iterator[js.Any]
+    nodeLib.Iterator[_] with stdLib.Iterator[_]
   ]
   type Subscribe[T] = js.Function1[
     /* cb */ js.Function1[

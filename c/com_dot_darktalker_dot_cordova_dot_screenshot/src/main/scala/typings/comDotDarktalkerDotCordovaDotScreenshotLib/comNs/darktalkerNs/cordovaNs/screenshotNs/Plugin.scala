@@ -39,14 +39,14 @@ trait Plugin extends js.Object {
   def save(
     saveCallback: js.Function2[
       /* errorMessage */ java.lang.String, 
-      /* successObject */ comDotDarktalkerDotCordovaDotScreenshotLib.Anon_FilePath, 
+      /* successObject */ comDotDarktalkerDotCordovaDotScreenshotLib.Anon_Success, 
       scala.Unit
     ]
   ): scala.Unit = js.native
   def save(
     saveCallback: js.Function2[
       /* errorMessage */ java.lang.String, 
-      /* successObject */ comDotDarktalkerDotCordovaDotScreenshotLib.Anon_FilePath, 
+      /* successObject */ comDotDarktalkerDotCordovaDotScreenshotLib.Anon_Success, 
       scala.Unit
     ],
     format: java.lang.String
@@ -54,7 +54,7 @@ trait Plugin extends js.Object {
   def save(
     saveCallback: js.Function2[
       /* errorMessage */ java.lang.String, 
-      /* successObject */ comDotDarktalkerDotCordovaDotScreenshotLib.Anon_FilePath, 
+      /* successObject */ comDotDarktalkerDotCordovaDotScreenshotLib.Anon_Success, 
       scala.Unit
     ],
     format: java.lang.String,
@@ -63,7 +63,7 @@ trait Plugin extends js.Object {
   def save(
     saveCallback: js.Function2[
       /* errorMessage */ java.lang.String, 
-      /* successObject */ comDotDarktalkerDotCordovaDotScreenshotLib.Anon_FilePath, 
+      /* successObject */ comDotDarktalkerDotCordovaDotScreenshotLib.Anon_Success, 
       scala.Unit
     ],
     format: java.lang.String,

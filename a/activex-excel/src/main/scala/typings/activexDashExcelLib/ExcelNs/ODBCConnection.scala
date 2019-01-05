@@ -18,7 +18,7 @@ class ODBCConnection protected () extends js.Object {
   var EnableRefresh: scala.Boolean = js.native
   var `Excel.ODBCConnection_typekey`: ODBCConnection = js.native
   val Parent: js.Any = js.native
-  val RefreshDate: activexDashInteropLib.VarDate = js.native
+  val RefreshDate: activexDashInteropLib.VarDate with stdLib.VarDate = js.native
   var RefreshOnFileOpen: scala.Boolean = js.native
   var RefreshPeriod: scala.Double = js.native
   val Refreshing: scala.Boolean = js.native
@@ -27,7 +27,7 @@ class ODBCConnection protected () extends js.Object {
   var ServerCredentialsMethod: XlCredentialsMethod = js.native
   var ServerSSOApplicationID: java.lang.String = js.native
   var SourceConnectionFile: java.lang.String = js.native
-  var SourceData: java.lang.String | activexDashInteropLib.SafeArray[java.lang.String] | PivotTable = js.native
+  var SourceData: java.lang.String | (activexDashInteropLib.SafeArray[java.lang.String] with stdLib.SafeArray[java.lang.String]) | PivotTable = js.native
   var SourceDataFile: java.lang.String = js.native
   def CancelRefresh(): scala.Unit = js.native
   def Refresh(): scala.Unit = js.native

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Interceptor extends js.Object {
   def basicAuth(options: nockLib.Anon_User): this.type = js.native
-  def delay(opts: nockLib.Anon_BodyHead): this.type = js.native
+  def delay(opts: nockLib.Anon_Head): this.type = js.native
   def delay(opts: scala.Double): this.type = js.native
   def delayBody(timeMs: scala.Double): this.type = js.native
   def delayConnection(timeMs: scala.Double): this.type = js.native

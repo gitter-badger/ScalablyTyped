@@ -38,7 +38,7 @@ package object DomainNs {
     ], 
     scala.Unit | java.lang.String | stdLib.Error
   ]
-  type defineEventStreamsToLoadHandler = js.Function1[/* cmd */ js.Any, js.Array[cqrsDashDomainLib.Anon_Aggregate]]
+  type defineEventStreamsToLoadHandler = js.Function1[/* cmd */ js.Any, js.Array[cqrsDashDomainLib.Anon_Context]]
   /**
     * @param loadingTime is the loading time in ms of the eventstore data
     * @param events are all loaded events in an array

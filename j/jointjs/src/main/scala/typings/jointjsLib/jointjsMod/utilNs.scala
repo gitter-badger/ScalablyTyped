@@ -10,22 +10,22 @@ import scala.scalajs.js.annotation._
 object utilNs extends js.Object {
   trait DOMJSONDocument extends js.Object {
     var fragment: stdLib.DocumentFragment
-    var groupSelectors: org.scalablytyped.runtime.StringDictionary[js.Array[underscoreLib.underscoreMod.Global.Element]]
-    var selectors: org.scalablytyped.runtime.StringDictionary[underscoreLib.underscoreMod.Global.Element]
+    var groupSelectors: org.scalablytyped.runtime.StringDictionary[js.Array[underscoreLib.underscoreMod.Global.Element with stdLib.Element]]
+    var selectors: org.scalablytyped.runtime.StringDictionary[underscoreLib.underscoreMod.Global.Element with stdLib.Element]
   }
   
   var shapePerimeterConnectionPoint: jointjsLib.jointjsMod.diaNs.LinkViewNs.GetConnectionPoint = js.native
   def assign(destinationObject: js.Object, sourceObjects: js.Object*): js.Object = js.native
   def bindAll(`object`: js.Object, methodNames: js.Array[PropertyPath]): js.Object = js.native
-  def breakText(text: java.lang.String, size: jointjsLib.Anon_Height): java.lang.String = js.native
+  def breakText(text: java.lang.String, size: jointjsLib.Anon_Width): java.lang.String = js.native
   def breakText(
     text: java.lang.String,
-    size: jointjsLib.Anon_Height,
+    size: jointjsLib.Anon_Width,
     attrs: jointjsLib.jointjsMod.attributesNs.NativeSVGAttributes
   ): java.lang.String = js.native
   def breakText(
     text: java.lang.String,
-    size: jointjsLib.Anon_Height,
+    size: jointjsLib.Anon_Width,
     attrs: jointjsLib.jointjsMod.attributesNs.NativeSVGAttributes,
     opt: jointjsLib.Anon_SvgDocument
   ): java.lang.String = js.native
@@ -67,7 +67,7 @@ object utilNs extends js.Object {
     path: js.Array[java.lang.String],
     delim: java.lang.String
   ): js.Any = js.native
-  def getElementBBox(el: underscoreLib.underscoreMod.Global.Element): jointjsLib.jointjsMod.diaNs.BBox = js.native
+  def getElementBBox(el: underscoreLib.underscoreMod.Global.Element with stdLib.Element): jointjsLib.jointjsMod.diaNs.BBox = js.native
   def groupBy(collection: Collection): js.Object = js.native
   def groupBy(collection: Collection, iteratee: Iteratee): js.Object = js.native
   def guid(): java.lang.String = js.native
@@ -148,7 +148,7 @@ object utilNs extends js.Object {
   def result(`object`: js.Object, propertyPath: PropertyPath, defaultValue: js.Any): js.Any = js.native
   def sanitizeHTML(html: java.lang.String): java.lang.String = js.native
   def setAttributesBySelector(
-    el: underscoreLib.underscoreMod.Global.Element,
+    el: underscoreLib.underscoreMod.Global.Element with stdLib.Element,
     attrs: org.scalablytyped.runtime.StringDictionary[org.scalablytyped.runtime.StringDictionary[js.Any]]
   ): scala.Unit = js.native
   def setByPath(
@@ -177,27 +177,27 @@ object utilNs extends js.Object {
   def sortElements(
     elements: java.lang.String,
     comparator: js.Function2[
-      /* a */ underscoreLib.underscoreMod.Global.Element, 
-      /* b */ underscoreLib.underscoreMod.Global.Element, 
+      /* a */ underscoreLib.underscoreMod.Global.Element with stdLib.Element, 
+      /* b */ underscoreLib.underscoreMod.Global.Element with stdLib.Element, 
       scala.Double
     ]
-  ): js.Array[underscoreLib.underscoreMod.Global.Element] = js.native
+  ): js.Array[underscoreLib.underscoreMod.Global.Element with stdLib.Element] = js.native
   def sortElements(
     elements: jqueryLib.JQuery[stdLib.HTMLElement],
     comparator: js.Function2[
-      /* a */ underscoreLib.underscoreMod.Global.Element, 
-      /* b */ underscoreLib.underscoreMod.Global.Element, 
+      /* a */ underscoreLib.underscoreMod.Global.Element with stdLib.Element, 
+      /* b */ underscoreLib.underscoreMod.Global.Element with stdLib.Element, 
       scala.Double
     ]
-  ): js.Array[underscoreLib.underscoreMod.Global.Element] = js.native
+  ): js.Array[underscoreLib.underscoreMod.Global.Element with stdLib.Element] = js.native
   def sortElements(
-    elements: js.Array[underscoreLib.underscoreMod.Global.Element],
+    elements: js.Array[underscoreLib.underscoreMod.Global.Element with stdLib.Element],
     comparator: js.Function2[
-      /* a */ underscoreLib.underscoreMod.Global.Element, 
-      /* b */ underscoreLib.underscoreMod.Global.Element, 
+      /* a */ underscoreLib.underscoreMod.Global.Element with stdLib.Element, 
+      /* b */ underscoreLib.underscoreMod.Global.Element with stdLib.Element, 
       scala.Double
     ]
-  ): js.Array[underscoreLib.underscoreMod.Global.Element] = js.native
+  ): js.Array[underscoreLib.underscoreMod.Global.Element with stdLib.Element] = js.native
   def sortedIndex(sortedArray: js.Array[_], valueToInsert: js.Any): scala.Double = js.native
   def sortedIndex(sortedArray: js.Array[_], valueToInsert: js.Any, iteratee: Iteratee): scala.Double = js.native
   def supplement(destinationObject: js.Object, sourceObjects: js.Object*): js.Object = js.native
@@ -205,7 +205,7 @@ object utilNs extends js.Object {
   def toArray(value: js.Any): js.Array[_] = js.native
   def toKebabCase(str: java.lang.String): java.lang.String = js.native
   def toggleFullScreen(): scala.Unit = js.native
-  def toggleFullScreen(el: underscoreLib.underscoreMod.Global.Element): scala.Unit = js.native
+  def toggleFullScreen(el: underscoreLib.underscoreMod.Global.Element with stdLib.Element): scala.Unit = js.native
   def union(arrays: js.Array[_]*): js.Array[_] = js.native
   def uniq(array: js.Array[_]): js.Array[_] = js.native
   def uniq(array: js.Array[_], iteratee: Iteratee): js.Array[_] = js.native
@@ -229,15 +229,15 @@ object utilNs extends js.Object {
   @js.native
   object filterNs extends js.Object {
     trait FilterArgumentsMap extends js.Object {
-      var blur: jointjsLib.Anon_Y
+      var blur: jointjsLib.Anon_XY
       var brightness: jointjsLib.Anon_Amount
       var contrast: jointjsLib.Anon_Amount
-      var dropShadow: jointjsLib.Anon_Dy
+      var dropShadow: jointjsLib.Anon_Dx
       var grayscale: jointjsLib.Anon_Amount
-      var highlight: jointjsLib.Anon_OpacityColor
+      var highlight: jointjsLib.Anon_ColorBlur
       var hueRotate: jointjsLib.Anon_Angle
       var invert: jointjsLib.Anon_Amount
-      var outline: jointjsLib.Anon_Opacity
+      var outline: jointjsLib.Anon_Color
       var saturate: jointjsLib.Anon_Amount
       var sepia: jointjsLib.Anon_Amount
     }
@@ -273,7 +273,7 @@ object utilNs extends js.Object {
     def number(specifier: java.lang.String, value: scala.Double): java.lang.String = js.native
     def number(specifier: java.lang.String, value: scala.Double, locale: NumberLocale): java.lang.String = js.native
     def precision(value: scala.Double, precision: scala.Double): scala.Double = js.native
-    def prefix(value: scala.Double, precision: scala.Double): js.UndefOr[jointjsLib.Anon_Symbol] = js.native
+    def prefix(value: scala.Double, precision: scala.Double): js.UndefOr[jointjsLib.Anon_Scale] = js.native
     def round(value: scala.Double): scala.Double = js.native
     def round(value: scala.Double, precision: scala.Double): scala.Double = js.native
     def string(str: java.lang.String, value: java.lang.String): java.lang.String = js.native

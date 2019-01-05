@@ -26,7 +26,7 @@ object graphqlModMembers extends js.Object {
   val Kind: graphqlLib.languageKindsMod._Kind = js.native
   val SchemaMetaFieldDef: graphqlLib.typeDefinitionMod.GraphQLField[js.Any, js.Any, org.scalablytyped.runtime.StringDictionary[js.Any]] = js.native
   val TokenKind: graphqlLib.languageLexerMod._TokenKind = js.native
-  val TypeKind: graphqlLib.Anon_ENUM = js.native
+  val TypeKind: graphqlLib.Anon_SCALAR = js.native
   val TypeMetaFieldDef: graphqlLib.typeDefinitionMod.GraphQLField[js.Any, js.Any, org.scalablytyped.runtime.StringDictionary[js.Any]] = js.native
   val TypeNameMetaFieldDef: graphqlLib.typeDefinitionMod.GraphQLField[js.Any, js.Any, org.scalablytyped.runtime.StringDictionary[js.Any]] = js.native
   val __Directive: graphqlLib.typeDefinitionMod.GraphQLObjectType = js.native
@@ -464,7 +464,7 @@ object graphqlModMembers extends js.Object {
   ): java.lang.String = js.native
   def responsePathAsArray(path: graphqlLib.typeDefinitionMod.ResponsePath): js.Array[java.lang.String | scala.Double] = js.native
   def separateOperations(documentAST: graphqlLib.languageAstMod.DocumentNode): org.scalablytyped.runtime.StringDictionary[graphqlLib.languageAstMod.DocumentNode] = js.native
-  def subscribe[TData](args: graphqlLib.Anon_FieldResolver): js.Promise[
+  def subscribe[TData](args: graphqlLib.Anon_Schema): js.Promise[
     stdLib.AsyncIterator[graphqlLib.executionExecuteMod.ExecutionResult[TData]] | graphqlLib.executionExecuteMod.ExecutionResult[TData]
   ] = js.native
   def subscribe[TData](

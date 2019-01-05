@@ -16,7 +16,7 @@ package object editNs {
   type beginCellEditHandler[TEntity] = js.Function3[
     /* rowEntity */ TEntity, 
     /* colDef */ uiDashGridLib.uiDashGridMod.uiGridNs.IColumnDefOf[TEntity], 
-    /* triggerEvent */ angularLib.JQueryEventObject, 
+    /* triggerEvent */ angularLib.JQueryEventObject with jqueryLib.JQueryEventObject, 
     scala.Unit
   ]
   type cancelCellEditHandler[TEntity] = js.Function2[

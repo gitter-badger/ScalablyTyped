@@ -51,7 +51,7 @@ object publicUnderscoreApiModMembers extends js.Object {
   val ViewChild: atAngularCoreLib.srcMetadataDiMod.ViewChildDecorator = js.native
   val ViewChildren: atAngularCoreLib.srcMetadataDiMod.ViewChildrenDecorator = js.native
   val ɵALLOW_MULTIPLE_PLATFORMS: atAngularCoreLib.srcDiMod.InjectionToken[scala.Boolean] = js.native
-  val ɵAPP_ID_RANDOM_PROVIDER: atAngularCoreLib.Anon_Deps = js.native
+  val ɵAPP_ID_RANDOM_PROVIDER: atAngularCoreLib.Anon_Provide = js.native
   val ɵAPP_ROOT: atAngularCoreLib.srcDiInjectionUnderscoreTokenMod.InjectionToken[scala.Boolean] = js.native
   val ɵEMPTY_ARRAY: js.Array[js.Any] = js.native
   val ɵNO_CHANGE: atAngularCoreLib.srcRender3TokensMod.NO_CHANGE = js.native
@@ -84,15 +84,15 @@ object publicUnderscoreApiModMembers extends js.Object {
     scala.Unit
   ] = js.native
   val `ɵSWITCH_ELEMENT_REF_FACTORY__POST_R3__`: js.Function1[
-    /* import warning: ImportType.apply Failed type conversion: typeof @angular/core.@angular/core/src/linker/element_ref.ElementRef */ /* ElementRefToken */ js.Any, 
+    /* import warning: ImportType.apply Failed type conversion: typeof ViewEngine_ElementRef */ /* ElementRefToken */ js.Any, 
     atAngularCoreLib.srcLinkerElementUnderscoreRefMod.ElementRef[js.Any]
   ] = js.native
   val `ɵSWITCH_IVY_ENABLED__POST_R3__`: /* true */ scala.Boolean = js.native
   val `ɵSWITCH_RENDERER2_FACTORY__POST_R3__`: js.Function0[atAngularCoreLib.srcRenderApiMod.Renderer2] = js.native
   val `ɵSWITCH_TEMPLATE_REF_FACTORY__POST_R3__`: atAngularCoreLib.Anon_TemplateRefToken = js.native
   val `ɵSWITCH_VIEW_CONTAINER_REF_FACTORY__POST_R3__`: js.Function2[
-    /* import warning: ImportType.apply Failed type conversion: typeof @angular/core.@angular/core/src/linker/view_container_ref.ViewContainerRef */ /* ViewContainerRefToken */ js.Any, 
-    /* import warning: ImportType.apply Failed type conversion: typeof @angular/core.@angular/core/src/linker/element_ref.ElementRef */ /* ElementRefToken */ js.Any, 
+    /* import warning: ImportType.apply Failed type conversion: typeof ViewEngine_ViewContainerRef */ /* ViewContainerRefToken */ js.Any, 
+    /* import warning: ImportType.apply Failed type conversion: typeof ViewEngine_ElementRef */ /* ElementRefToken */ js.Any, 
     atAngularCoreLib.srcLinkerViewUnderscoreContainerUnderscoreRefMod.ViewContainerRef
   ] = js.native
   val ɵWRAP_RENDERER_FACTORY2: atAngularCoreLib.srcDiInjectionUnderscoreTokenMod.InjectionToken[
@@ -153,8 +153,8 @@ object publicUnderscoreApiModMembers extends js.Object {
     /* extraProviders */ js.UndefOr[js.Array[atAngularCoreLib.srcDiProviderMod.StaticProvider]], 
     atAngularCoreLib.srcApplicationUnderscoreRefMod.PlatformRef
   ] = js.native
-  def defineInjectable[T](opts: atAngularCoreLib.Anon_FactoryProvidedIn[T]): scala.Nothing = js.native
-  def defineInjector(options: atAngularCoreLib.Anon_Imports): scala.Nothing = js.native
+  def defineInjectable[T](opts: atAngularCoreLib.Anon_ProvidedIn[T]): scala.Nothing = js.native
+  def defineInjector(options: atAngularCoreLib.Anon_Factory): scala.Nothing = js.native
   def destroyPlatform(): scala.Unit = js.native
   def enableProdMode(): scala.Unit = js.native
   def forwardRef(forwardRefFn: atAngularCoreLib.srcDiForwardUnderscoreRefMod.ForwardRefFn): atAngularCoreLib.srcTypeMod.Type[_] = js.native
@@ -402,14 +402,14 @@ object publicUnderscoreApiModMembers extends js.Object {
   def ɵcontainer(index: scala.Double): scala.Unit = js.native
   def ɵcontainerRefreshEnd(): scala.Unit = js.native
   def ɵcontainerRefreshStart(index: scala.Double): scala.Unit = js.native
-  def ɵcrt(values: atAngularCoreLib.Anon_Encapsulation): atAngularCoreLib.srcRenderApiMod.RendererType2 = js.native
-  def ɵdefineBase[T](baseDefinition: atAngularCoreLib.Anon_Outputs[T]): atAngularCoreLib.srcRender3InterfacesDefinitionMod.BaseDef[T] = js.native
-  def ɵdefineComponent[T](componentDefinition: atAngularCoreLib.Anon_Directives[T]): scala.Nothing = js.native
-  def ɵdefineDirective[T](directiveDefinition: atAngularCoreLib.Anon_Features[T]): scala.Nothing = js.native
+  def ɵcrt(values: atAngularCoreLib.Anon_Styles): atAngularCoreLib.srcRenderApiMod.RendererType2 = js.native
+  def ɵdefineBase[T](baseDefinition: atAngularCoreLib.Anon_Inputs[T]): atAngularCoreLib.srcRender3InterfacesDefinitionMod.BaseDef[T] = js.native
+  def ɵdefineComponent[T](componentDefinition: atAngularCoreLib.Anon_Type[T]): scala.Nothing = js.native
+  def ɵdefineDirective[T](directiveDefinition: atAngularCoreLib.Anon_TypeSelectors[T]): scala.Nothing = js.native
   def ɵdefineNgModule[T](
     `def`: atAngularCoreLib.Anon_TypeT[T] with stdLib.Partial[atAngularCoreLib.srcMetadataNgUnderscoreModuleMod.NgModuleDef[T]]
   ): scala.Nothing = js.native
-  def ɵdefinePipe[T](pipeDef: atAngularCoreLib.Anon_Type[T]): scala.Nothing = js.native
+  def ɵdefinePipe[T](pipeDef: atAngularCoreLib.Anon_Name[T]): scala.Nothing = js.native
   def ɵdetectChanges[T](component: T): scala.Unit = js.native
   def ɵdevModeEqual(a: js.Any, b: js.Any): scala.Boolean = js.native
   def ɵdid(
@@ -619,6 +619,24 @@ object publicUnderscoreApiModMembers extends js.Object {
   def ɵelementStyleProp(
     index: scala.Double,
     styleIndex: scala.Double,
+    value: (nodeLib.String with java.lang.String) | java.lang.String
+  ): scala.Unit = js.native
+  def ɵelementStyleProp(
+    index: scala.Double,
+    styleIndex: scala.Double,
+    value: (nodeLib.String with java.lang.String) | java.lang.String,
+    suffix: java.lang.String
+  ): scala.Unit = js.native
+  def ɵelementStyleProp(
+    index: scala.Double,
+    styleIndex: scala.Double,
+    value: (nodeLib.String with java.lang.String) | java.lang.String,
+    suffix: java.lang.String,
+    directiveIndex: scala.Double
+  ): scala.Unit = js.native
+  def ɵelementStyleProp(
+    index: scala.Double,
+    styleIndex: scala.Double,
     value: atAngularCoreLib.srcRender3InterfacesPlayerMod.PlayerFactory
   ): scala.Unit = js.native
   def ɵelementStyleProp(
@@ -631,24 +649,6 @@ object publicUnderscoreApiModMembers extends js.Object {
     index: scala.Double,
     styleIndex: scala.Double,
     value: atAngularCoreLib.srcRender3InterfacesPlayerMod.PlayerFactory,
-    suffix: java.lang.String,
-    directiveIndex: scala.Double
-  ): scala.Unit = js.native
-  def ɵelementStyleProp(index: scala.Double, styleIndex: scala.Double, value: java.lang.String): scala.Unit = js.native
-  def ɵelementStyleProp(index: scala.Double, styleIndex: scala.Double, value: java.lang.String, suffix: java.lang.String): scala.Unit = js.native
-  def ɵelementStyleProp(
-    index: scala.Double,
-    styleIndex: scala.Double,
-    value: java.lang.String,
-    suffix: java.lang.String,
-    directiveIndex: scala.Double
-  ): scala.Unit = js.native
-  def ɵelementStyleProp(index: scala.Double, styleIndex: scala.Double, value: nodeLib.String): scala.Unit = js.native
-  def ɵelementStyleProp(index: scala.Double, styleIndex: scala.Double, value: nodeLib.String, suffix: java.lang.String): scala.Unit = js.native
-  def ɵelementStyleProp(
-    index: scala.Double,
-    styleIndex: scala.Double,
-    value: nodeLib.String,
     suffix: java.lang.String,
     directiveIndex: scala.Double
   ): scala.Unit = js.native

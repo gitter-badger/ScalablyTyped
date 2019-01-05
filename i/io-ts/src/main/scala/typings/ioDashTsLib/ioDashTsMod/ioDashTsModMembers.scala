@@ -30,14 +30,14 @@ object ioDashTsModMembers extends js.Object {
   def appendContext(c: Context, key: java.lang.String, `type`: Decoder[_, _]): Context = js.native
   def array[RT /* <: Mixed */](`type`: RT): ArrayType[
     RT, 
-    fpDashTsLib.libArrayMod.Global.Array[/* import warning: ImportType.apply Failed type conversion: RT['_A'] */ js.Any], 
-    fpDashTsLib.libArrayMod.Global.Array[/* import warning: ImportType.apply Failed type conversion: RT['_O'] */ js.Any], 
+    (fpDashTsLib.libArrayMod.Global.Array[/* import warning: ImportType.apply Failed type conversion: RT['_A'] */ js.Any]) with (js.Array[/* import warning: ImportType.apply Failed type conversion: RT['_A'] */ js.Any]), 
+    (fpDashTsLib.libArrayMod.Global.Array[/* import warning: ImportType.apply Failed type conversion: RT['_O'] */ js.Any]) with (js.Array[/* import warning: ImportType.apply Failed type conversion: RT['_O'] */ js.Any]), 
     _
   ] = js.native
   def array[RT /* <: Mixed */](`type`: RT, name: java.lang.String): ArrayType[
     RT, 
-    fpDashTsLib.libArrayMod.Global.Array[/* import warning: ImportType.apply Failed type conversion: RT['_A'] */ js.Any], 
-    fpDashTsLib.libArrayMod.Global.Array[/* import warning: ImportType.apply Failed type conversion: RT['_O'] */ js.Any], 
+    (fpDashTsLib.libArrayMod.Global.Array[/* import warning: ImportType.apply Failed type conversion: RT['_A'] */ js.Any]) with (js.Array[/* import warning: ImportType.apply Failed type conversion: RT['_A'] */ js.Any]), 
+    (fpDashTsLib.libArrayMod.Global.Array[/* import warning: ImportType.apply Failed type conversion: RT['_O'] */ js.Any]) with (js.Array[/* import warning: ImportType.apply Failed type conversion: RT['_O'] */ js.Any]), 
     _
   ] = js.native
   def clean[A, O, I](`type`: Type[A, O, I]): Type[A, O, I] = js.native
@@ -161,14 +161,14 @@ object ioDashTsModMembers extends js.Object {
   def strict[P /* <: Props */](props: P): StrictType[P, TypeOfProps[P], OutputOfProps[P], _] = js.native
   def strict[P /* <: Props */](props: P, name: java.lang.String): StrictType[P, TypeOfProps[P], OutputOfProps[P], _] = js.native
   def success[T](value: T): fpDashTsLib.libEitherMod.Either[Errors, T] = js.native
-  def taggedUnion[Tag /* <: java.lang.String */, RTS /* <: fpDashTsLib.libArrayMod.Global.Array[Tagged[Tag, _, _]] */](tag: Tag, types: RTS): TaggedUnionType[
+  def taggedUnion[Tag /* <: java.lang.String */, RTS /* <: (fpDashTsLib.libArrayMod.Global.Array[Tagged[Tag, _, _]]) with (js.Array[Tagged[Tag, _, _]]) */](tag: Tag, types: RTS): TaggedUnionType[
     Tag, 
     RTS, 
     /* import warning: ImportType.apply Failed type conversion: RTS[number]['_A'] */ js.Any, 
     /* import warning: ImportType.apply Failed type conversion: RTS[number]['_O'] */ js.Any, 
     _
   ] = js.native
-  def taggedUnion[Tag /* <: java.lang.String */, RTS /* <: fpDashTsLib.libArrayMod.Global.Array[Tagged[Tag, _, _]] */](tag: Tag, types: RTS, name: java.lang.String): TaggedUnionType[
+  def taggedUnion[Tag /* <: java.lang.String */, RTS /* <: (fpDashTsLib.libArrayMod.Global.Array[Tagged[Tag, _, _]]) with (js.Array[Tagged[Tag, _, _]]) */](tag: Tag, types: RTS, name: java.lang.String): TaggedUnionType[
     Tag, 
     RTS, 
     /* import warning: ImportType.apply Failed type conversion: RTS[number]['_A'] */ js.Any, 
@@ -227,13 +227,13 @@ object ioDashTsModMembers extends js.Object {
   ] = js.native
   def `type`[P /* <: Props */](props: P): InterfaceType[P, TypeOfProps[P], OutputOfProps[P], _] = js.native
   def `type`[P /* <: Props */](props: P, name: java.lang.String): InterfaceType[P, TypeOfProps[P], OutputOfProps[P], _] = js.native
-  def union[RTS /* <: fpDashTsLib.libArrayMod.Global.Array[Mixed] */](types: RTS): UnionType[
+  def union[RTS /* <: fpDashTsLib.libArrayMod.Global.Array[Mixed] with js.Array[Mixed] */](types: RTS): UnionType[
     RTS, 
     /* import warning: ImportType.apply Failed type conversion: RTS[number]['_A'] */ js.Any, 
     /* import warning: ImportType.apply Failed type conversion: RTS[number]['_O'] */ js.Any, 
     _
   ] = js.native
-  def union[RTS /* <: fpDashTsLib.libArrayMod.Global.Array[Mixed] */](types: RTS, name: java.lang.String): UnionType[
+  def union[RTS /* <: fpDashTsLib.libArrayMod.Global.Array[Mixed] with js.Array[Mixed] */](types: RTS, name: java.lang.String): UnionType[
     RTS, 
     /* import warning: ImportType.apply Failed type conversion: RTS[number]['_A'] */ js.Any, 
     /* import warning: ImportType.apply Failed type conversion: RTS[number]['_O'] */ js.Any, 

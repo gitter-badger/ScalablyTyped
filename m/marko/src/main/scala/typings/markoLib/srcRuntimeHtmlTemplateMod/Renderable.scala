@@ -28,7 +28,11 @@ trait Renderable extends js.Object {
   def renderToString(data: js.Any): java.lang.String = js.native
   def renderToString(
     data: js.Any,
-    callback: js.Function2[/* err */ nodeLib.Error | scala.Null, /* result */ java.lang.String, scala.Unit]
+    callback: js.Function2[
+      /* err */ (nodeLib.Error with stdLib.Error) | scala.Null, 
+      /* result */ java.lang.String, 
+      scala.Unit
+    ]
   ): js.UndefOr[scala.Nothing] = js.native
 }
 

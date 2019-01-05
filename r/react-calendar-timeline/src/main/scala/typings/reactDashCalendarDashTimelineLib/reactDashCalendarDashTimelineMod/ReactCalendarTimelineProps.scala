@@ -36,7 +36,7 @@ trait ReactCalendarTimelineProps extends js.Object {
   ] = js.undefined
   var itemTouchSendsClick: js.UndefOr[scala.Boolean] = js.undefined
   var items: js.Array[TimelineItem]
-  var keys: js.UndefOr[reactDashCalendarDashTimelineLib.Anon_ItemIdKey] = js.undefined
+  var keys: js.UndefOr[reactDashCalendarDashTimelineLib.Anon_GroupIdKey] = js.undefined
   var lineHeight: js.UndefOr[scala.Double] = js.undefined
   var maxZoom: js.UndefOr[scala.Double] = js.undefined
   var minResizeWidth: js.UndefOr[scala.Double] = js.undefined

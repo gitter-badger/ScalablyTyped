@@ -42,7 +42,7 @@ trait Change extends PersistedModel {
     * However, if this setting is true, then errors will not throw exceptions.
     */
   @JSName("settings")
-  var settings_Change: loopbackLib.Anon_HashAlgorithm = js.native
+  var settings_Change: loopbackLib.Anon_HttpAclsHashAlgorithm = js.native
   /**
     * Does this change conflict with the given change.
     * @param  {Change} change
@@ -55,7 +55,9 @@ trait Change extends PersistedModel {
     * @param {Error} err
     * @param {string} rev The current revisio
     */
-  def currentRevision(callback: js.Function2[/* err */ nodeLib.Error, /* rev */ java.lang.String, scala.Unit]): scala.Unit = js.native
+  def currentRevision(
+    callback: js.Function2[/* err */ nodeLib.Error with stdLib.Error, /* rev */ java.lang.String, scala.Unit]
+  ): scala.Unit = js.native
   /**
     * Compare two changes.
     * @param  {Change} change
@@ -77,7 +79,9 @@ trait Change extends PersistedModel {
     * @param {Error} err
     * @param {Change} chang
     */
-  def rectify(callback: js.Function2[/* err */ nodeLib.Error, /* change */ this.type, scala.Unit]): scala.Unit = js.native
+  def rectify(
+    callback: js.Function2[/* err */ nodeLib.Error with stdLib.Error, /* change */ this.type, scala.Unit]
+  ): scala.Unit = js.native
   /**
     * Get a change's type. Returns one of
     * - `Change.UPDATE`

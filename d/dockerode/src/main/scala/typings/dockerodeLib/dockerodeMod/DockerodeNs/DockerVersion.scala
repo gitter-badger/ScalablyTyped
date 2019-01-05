@@ -15,7 +15,7 @@ trait DockerVersion extends js.Object {
   var KernelVersion: java.lang.String
   var MinAPIVersion: java.lang.String
   var Os: java.lang.String
-  var Platform: dockerodeLib.Anon_Name
+  var Platform: dockerodeLib.Anon_NameString
   var Version: java.lang.String
 }
 

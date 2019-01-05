@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_Type extends js.Object {
-  var point: baidumapDashWebDashSdkLib.BMapNs.Point
+  var isOpen: scala.Boolean
   var target: js.Any
   var `type`: java.lang.String
 }

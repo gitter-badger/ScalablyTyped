@@ -1,32 +1,32 @@
 organization := "org.scalablytyped"
 name := "react-apollo"
-version := "2.3.3-999c8a"
-scalaVersion := "2.12.7"
+version := "2.3.3-2eba83"
+scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "apollo-cache" % "1.1.22-2a3c2e",
-  "org.scalablytyped" %%% "apollo-client" % "2.4.8-6fc0b7",
-  "org.scalablytyped" %%% "apollo-link" % "1.2.6-b691e2",
-  "org.scalablytyped" %%% "apollo-link-dedup" % "1.0.13-0f584c",
-  "org.scalablytyped" %%% "apollo-utilities" % "1.0.27-8fb33a",
-  "org.scalablytyped" %%% "csstype" % "2.5.8-a13970",
-  "org.scalablytyped" %%% "fast-json-stable-stringify" % "2.0-dt-20181224Z-353ee5",
-  "org.scalablytyped" %%% "graphql" % "14.0-dt-20181231Z-54489a",
-  "org.scalablytyped" %%% "hoist-non-react-statics" % "3.0-dt-20180806Z-0ae6f5",
-  "org.scalablytyped" %%% "invariant" % "2.2.0-dt-20180214Z-656266",
-  "org.scalablytyped" %%% "lodash" % "4.14-dt-20181203Z-0a02fb",
-  "org.scalablytyped" %%% "lodash_dot_flowright" % "3.5-dt-20180723Z-2e51a7",
-  "org.scalablytyped" %%% "lodash_dot_isequal" % "4.5-dt-20180723Z-f4d4fc",
-  "org.scalablytyped" %%% "node" % "10.12-dt-20181219Z-77ce7e",
-  "org.scalablytyped" %%% "prop-types" % "15.5-dt-20181212Z-89199d",
-  "org.scalablytyped" %%% "react" % "16.7-dt-20181220Z-3dff88",
-  "org.scalablytyped" %%% "react-dom" % "16.0-dt-20181127Z-8054fe",
-  "org.scalablytyped" %%% "std" % "3.2.2-9ed5ff",
-  "org.scalablytyped" %%% "symbol-observable" % "1.2.0-dc48cb",
-  "org.scalablytyped" %%% "zen-observable" % "0.8-dt-20180618Z-9c6819",
-  "org.scalablytyped" %%% "zen-observable-ts" % "0.8.13-80038a")
+  "org.scalablytyped" %%% "apollo-cache" % "1.1.22-370b80",
+  "org.scalablytyped" %%% "apollo-client" % "2.4.8-5cca52",
+  "org.scalablytyped" %%% "apollo-link" % "1.2.6-e5c089",
+  "org.scalablytyped" %%% "apollo-link-dedup" % "1.0.13-7e5a53",
+  "org.scalablytyped" %%% "apollo-utilities" % "1.0.27-e442b0",
+  "org.scalablytyped" %%% "csstype" % "2.5.8-c53c8c",
+  "org.scalablytyped" %%% "fast-json-stable-stringify" % "2.0-dt-20181224Z-acc0be",
+  "org.scalablytyped" %%% "graphql" % "14.0-dt-20181231Z-71fd40",
+  "org.scalablytyped" %%% "hoist-non-react-statics" % "3.0-dt-20180806Z-9daabc",
+  "org.scalablytyped" %%% "invariant" % "2.2.0-dt-20180214Z-890639",
+  "org.scalablytyped" %%% "lodash" % "4.14-dt-20181203Z-8f83bf",
+  "org.scalablytyped" %%% "lodash_dot_flowright" % "3.5-dt-20180723Z-9efe8e",
+  "org.scalablytyped" %%% "lodash_dot_isequal" % "4.5-dt-20180723Z-512f66",
+  "org.scalablytyped" %%% "node" % "10.12-dt-20181219Z-d5e59c",
+  "org.scalablytyped" %%% "prop-types" % "15.5-dt-20181212Z-8f2b50",
+  "org.scalablytyped" %%% "react" % "16.7-dt-20181220Z-9a2db2",
+  "org.scalablytyped" %%% "react-dom" % "16.0-dt-20181127Z-ba2fb9",
+  "org.scalablytyped" %%% "std" % "3.2.2-3b2f2a",
+  "org.scalablytyped" %%% "symbol-observable" % "1.2.0-22c53e",
+  "org.scalablytyped" %%% "zen-observable" % "0.8-dt-20180618Z-19c81d",
+  "org.scalablytyped" %%% "zen-observable-ts" % "0.8.13-408a22")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

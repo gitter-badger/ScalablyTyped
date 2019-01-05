@@ -17,6 +17,8 @@ trait SetOptions extends js.Object {
     * paths. Any field path that is not specified is ignored and remains
     * untouched.
     */
-  val mergeFields: js.UndefOr[coreDashJsLib.Array[java.lang.String | FieldPath]] = js.undefined
+  val mergeFields: js.UndefOr[
+    (coreDashJsLib.Array[java.lang.String | FieldPath]) with (js.Array[java.lang.String | FieldPath])
+  ] = js.undefined
 }
 

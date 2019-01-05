@@ -13,6 +13,6 @@ trait KnockoutVirtualElements extends js.Object {
   def insertAfter(container: KnockoutVirtualElement, nodeToInsert: stdLib.Node, insertAfter: stdLib.Node): scala.Unit
   def nextSibling(node: KnockoutVirtualElement): stdLib.Node
   def prepend(node: KnockoutVirtualElement, toInsert: stdLib.Node): scala.Unit
-  def setDomNodeChildren(node: KnockoutVirtualElement, newChildren: Anon_Index): scala.Unit
+  def setDomNodeChildren(node: KnockoutVirtualElement, newChildren: Anon_Length): scala.Unit
 }
 

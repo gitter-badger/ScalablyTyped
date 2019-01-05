@@ -27,7 +27,7 @@ object ServerNs extends js.Object {
     var data_attr: org.scalablytyped.runtime.StringDictionary[java.lang.String] = js.native
     @JSName("effects")
     var effects_Original: CallCollectionFunction[EffectRecord] = js.native
-    var flags: stellarDashSdkLib.Anon_Authrevocable = js.native
+    var flags: stellarDashSdkLib.Anon_Authrequired = js.native
     var id: java.lang.String = js.native
     @JSName("offers")
     var offers_Original: CallCollectionFunction[OfferRecord] = js.native
@@ -37,9 +37,9 @@ object ServerNs extends js.Object {
     @JSName("payments")
     var payments_Original: CallCollectionFunction[PaymentOperationRecord] = js.native
     var sequence: scala.Double = js.native
-    var signers: js.Array[stellarDashSdkLib.Anon_Weight] = js.native
+    var signers: js.Array[stellarDashSdkLib.Anon_Publickey] = js.native
     var subentry_count: scala.Double = js.native
-    var thresholds: stellarDashSdkLib.Anon_Medthreshold = js.native
+    var thresholds: stellarDashSdkLib.Anon_Lowthreshold = js.native
     @JSName("trades")
     var trades_Original: CallCollectionFunction[TradeRecord] = js.native
     def data(options: stellarDashSdkLib.Anon_Value): js.Promise[stellarDashSdkLib.Anon_Value] = js.native
@@ -85,7 +85,7 @@ object ServerNs extends js.Object {
     var asset_code: java.lang.String
     var asset_issuer: java.lang.String
     var asset_type: stellarDashSdkLib.stellarDashSdkMod.StellarBaseNs.ASSET_TYPE
-    var flags: stellarDashSdkLib.Anon_Authrevocable
+    var flags: stellarDashSdkLib.Anon_Authrequired
     var num_accounts: scala.Double
     var paging_token: java.lang.String
   }
@@ -153,7 +153,7 @@ object ServerNs extends js.Object {
     @JSName("order")
     def order_desc(direction: stellarDashSdkLib.stellarDashSdkLibStrings.desc): this.type = js.native
     def stream(): js.Function0[scala.Unit] = js.native
-    def stream(options: stellarDashSdkLib.Anon_Onerror[T]): js.Function0[scala.Unit] = js.native
+    def stream(options: stellarDashSdkLib.Anon_Onmessage[T]): js.Function0[scala.Unit] = js.native
   }
   
   trait CallFunctionTemplateOptions extends js.Object {
@@ -316,8 +316,8 @@ object ServerNs extends js.Object {
   abstract class OrderbookCallBuilder () extends CallBuilder[OrderbookRecord]
   
   trait OrderbookRecord extends Record {
-    var asks: js.Array[stellarDashSdkLib.Anon_Price]
-    var bids: js.Array[stellarDashSdkLib.Anon_Price]
+    var asks: js.Array[stellarDashSdkLib.Anon_Pricer]
+    var bids: js.Array[stellarDashSdkLib.Anon_Pricer]
     var buying: stellarDashSdkLib.stellarDashSdkMod.Asset
     var selling: stellarDashSdkLib.stellarDashSdkMod.Asset
   }

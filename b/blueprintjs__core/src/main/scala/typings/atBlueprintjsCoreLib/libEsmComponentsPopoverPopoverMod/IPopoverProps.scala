@@ -8,7 +8,9 @@ import scala.scalajs.js.annotation._
 trait IPopoverProps
   extends atBlueprintjsCoreLib.libEsmComponentsPopoverPopoverSharedPropsMod.IPopoverSharedProps {
   /** HTML props for the backdrop element. Can be combined with `backdropClassName`. */
-  var backdropProps: js.UndefOr[reactLib.reactMod.ReactNs.HTMLProps[reactLib.HTMLDivElement]] = js.undefined
+  var backdropProps: js.UndefOr[
+    reactLib.reactMod.ReactNs.HTMLProps[reactLib.HTMLDivElement with stdLib.HTMLDivElement]
+  ] = js.undefined
   /**
     * The content displayed inside the popover. This can instead be provided as
     * the _second_ element in `children` (first is `target`).
@@ -38,7 +40,12 @@ trait IPopoverProps
   /**
     * Ref supplied to the `Classes.POPOVER` element.
     */
-  var popoverRef: js.UndefOr[js.Function1[/* ref */ reactLib.HTMLDivElement | scala.Null, scala.Unit]] = js.undefined
+  var popoverRef: js.UndefOr[
+    js.Function1[
+      /* ref */ (reactLib.HTMLDivElement with stdLib.HTMLDivElement) | scala.Null, 
+      scala.Unit
+    ]
+  ] = js.undefined
   /**
     * The target to which the popover content is attached. This can instead be
     * provided as the _first_ element in `children`.

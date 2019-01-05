@@ -104,12 +104,12 @@ class Directory protected () extends js.Object {
     * Searches all nested files and directories
     */
   def find(): js.Promise[js.Array[File | Directory | SymbolicLinkFile | SymbolicLinkDirectory]] = js.native
-  def find(options: adoneLib.Anon_Dirs): js.Promise[js.Array[File | Directory | SymbolicLinkFile | SymbolicLinkDirectory]] = js.native
+  def find(options: adoneLib.Anon_Files): js.Promise[js.Array[File | Directory | SymbolicLinkFile | SymbolicLinkDirectory]] = js.native
   /**
     * Searches all nested files and directories synchronously
     */
   def findSync(): js.Array[File | Directory | SymbolicLinkFile | SymbolicLinkDirectory] = js.native
-  def findSync(options: adoneLib.Anon_Dirs): js.Array[File | Directory | SymbolicLinkFile | SymbolicLinkDirectory] = js.native
+  def findSync(options: adoneLib.Anon_Files): js.Array[File | Directory | SymbolicLinkFile | SymbolicLinkDirectory] = js.native
   /**
     * Returns directory relative to this directory
     */

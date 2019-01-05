@@ -17,6 +17,6 @@ trait ScriptsResource extends js.Object {
     * authentication token, open the project in the script editor, then select
     * &#42;&#42;File > Project properties&#42;&#42; and click the &#42;&#42;Scopes&#42;&#42; tab.
     */
-  def run(request: gapiDotClientDotScriptLib.Anon_Accesstoken): gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+  def run(request: gapiDotClientDotScriptLib.Anon_Xgafv): gapiDotClientLib.gapiNs.clientNs.Request[Operation]
 }
 

@@ -14,7 +14,7 @@ object utilsNs extends js.Object {
   def isPromise(value: js.Any): /* is std.PromiseLike<any> */ scala.Boolean = js.native
   def isPromise[T](value: T): /* is std.PromiseLike<T> */ scala.Boolean = js.native
   def isPromise[T](value: js.Thenable[T]): /* is std.PromiseLike<T> */ scala.Boolean = js.native
-  def lang(filePath: java.lang.String): atFrctlFractalLib.Anon_Color = js.native
+  def lang(filePath: java.lang.String): atFrctlFractalLib.Anon_Name = js.native
   def md5(str: java.lang.String): java.lang.String = js.native
   def mergeProp(prop: js.Any, upstream: js.Any): js.Any = js.native
   def parseArgv(): atFrctlFractalLib.Anon_Command = js.native

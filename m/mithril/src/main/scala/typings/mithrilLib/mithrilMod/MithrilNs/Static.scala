@@ -39,11 +39,11 @@ trait Static extends Hyperscript {
   def request[T](url: java.lang.String, options: RequestOptions[T]): js.Promise[T] = js.native
   /** Creates application routes and mounts Components and/or RouteResolvers to a DOM element. */
   def route(element: stdLib.Element, defaultRoute: java.lang.String, routes: RouteDefs): scala.Unit = js.native
-  def withAttr(name: java.lang.String, callback: js.Function1[/* value */ js.Any, _]): js.Function1[/* e */ mithrilLib.Anon_P, scala.Unit] = js.native
+  def withAttr(name: java.lang.String, callback: js.Function1[/* value */ js.Any, _]): js.Function1[/* e */ mithrilLib.Anon_CurrentTarget, scala.Unit] = js.native
   def withAttr[T](
     name: java.lang.String,
     callback: js.ThisFunction1[/* this */ T, /* value */ js.Any, _],
     thisArg: T
-  ): js.Function1[/* e */ mithrilLib.Anon_P, scala.Unit] = js.native
+  ): js.Function1[/* e */ mithrilLib.Anon_CurrentTarget, scala.Unit] = js.native
 }
 

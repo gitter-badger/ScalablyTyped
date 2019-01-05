@@ -30,11 +30,11 @@ trait TransferInfo extends js.Object {
     * @see Recipient
     */
   var recipient: chromeDashAppsLib.chromeNs.ToStringLiteral[
-    chromeDashAppsLib.Anon_OTHER, 
+    chromeDashAppsLib.Anon_DEVICE, 
     java.lang.String, 
     stdLib.Exclude[
       java.lang.String, 
-      /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_OTHER[keyof chrome-apps.Anon_OTHER] */ js.Any
+      /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_DEVICE[keyof chrome-apps.Anon_DEVICE] */ js.Any
     ]
   ]
   /** The bRequest field, see *Universal Serial Bus Specification Revision 1.1 § 9.3.* */

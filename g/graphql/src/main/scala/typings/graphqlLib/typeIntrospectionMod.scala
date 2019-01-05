@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object typeIntrospectionMod extends js.Object {
   val SchemaMetaFieldDef: graphqlLib.typeDefinitionMod.GraphQLField[js.Any, js.Any, org.scalablytyped.runtime.StringDictionary[js.Any]] = js.native
-  val TypeKind: graphqlLib.Anon_ENUM = js.native
+  val TypeKind: graphqlLib.Anon_SCALAR = js.native
   val TypeMetaFieldDef: graphqlLib.typeDefinitionMod.GraphQLField[js.Any, js.Any, org.scalablytyped.runtime.StringDictionary[js.Any]] = js.native
   val TypeNameMetaFieldDef: graphqlLib.typeDefinitionMod.GraphQLField[js.Any, js.Any, org.scalablytyped.runtime.StringDictionary[js.Any]] = js.native
   val __Directive: graphqlLib.typeDefinitionMod.GraphQLObjectType = js.native

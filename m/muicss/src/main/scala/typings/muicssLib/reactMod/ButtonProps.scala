@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ButtonProps
-  extends reactLib.reactMod.ReactNs.ButtonHTMLAttributes[reactLib.HTMLButtonElement] {
+  extends reactLib.reactMod.ReactNs.ButtonHTMLAttributes[reactLib.HTMLButtonElement with stdLib.HTMLButtonElement] {
   var size: js.UndefOr[java.lang.String] = js.undefined
   var variant: js.UndefOr[java.lang.String] = js.undefined
 }

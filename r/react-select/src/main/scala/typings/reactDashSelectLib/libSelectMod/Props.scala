@@ -123,7 +123,7 @@ trait Props[OptionType] extends js.Object {
     when there isn't enough space below the control. */
   var menuPlacement: js.UndefOr[reactDashSelectLib.libTypesMod.MenuPlacement] = js.undefined
   /* Whether the menu should use a portal, and where it should attach */
-  var menuPortalTarget: js.UndefOr[reactLib.HTMLElement | scala.Null] = js.undefined
+  var menuPortalTarget: js.UndefOr[(reactLib.HTMLElement with stdLib.HTMLElement) | scala.Null] = js.undefined
   /* The CSS position value of the menu, when "fixed" extra layout management is required */
   var menuPosition: js.UndefOr[reactDashSelectLib.libTypesMod.MenuPosition] = js.undefined
   /* Whether to block scroll events when the menu is open */
@@ -167,14 +167,14 @@ trait Props[OptionType] extends js.Object {
   /* Fired when the user scrolls to the bottom of the menu */
   var onMenuScrollToBottom: js.UndefOr[
     js.Function1[
-      /* event */ reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.HTMLElement, reactLib.Event], 
+      /* event */ reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.HTMLElement with stdLib.HTMLElement, reactLib.Event], 
       scala.Unit
     ]
   ] = js.undefined
   /* Fired when the user scrolls to the top of the menu */
   var onMenuScrollToTop: js.UndefOr[
     js.Function1[
-      /* event */ reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.HTMLElement, reactLib.Event], 
+      /* event */ reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.HTMLElement with stdLib.HTMLElement, reactLib.Event], 
       scala.Unit
     ]
   ] = js.undefined

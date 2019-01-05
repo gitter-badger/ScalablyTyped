@@ -150,7 +150,7 @@ trait VictoryAxisProps extends VictoryCommonProps {
     * @example {axis: {stroke: "#756f6a"}, grid: {stroke: "grey"}, ticks: {stroke: "grey"},
     * tickLabels: {fontSize: 10, padding: 5}, axisLabel: {fontSize: 16, padding: 20}}
     */
-  var style: js.UndefOr[victoryLib.Anon_AxisLabelParent] = js.undefined
+  var style: js.UndefOr[victoryLib.Anon_Parent] = js.undefined
   /**
     * The tickComponent prop takes in an entire component which will be used
     * to create tick lines. The new element created from the passed tickComponent

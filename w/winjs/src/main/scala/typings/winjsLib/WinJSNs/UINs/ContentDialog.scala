@@ -116,7 +116,7 @@ object ContentDialog extends js.Object {
   /**
     * Specifies the result of dismissing the ContentDialog.
     **/
-  var DismissalResult: winjsLib.Anon_None = js.native
+  var DismissalResult: winjsLib.Anon_NonePrimary = js.native
   /**
     * Indicates that the object is compatibile with declarative processing.
     **/

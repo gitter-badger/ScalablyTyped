@@ -22,7 +22,7 @@ object findNs extends js.Object {
     * @param [params] Search parameters.
     */
   def find(queryphrase: java.lang.String): js.Promise[firefoxDashWebextDashBrowserLib.Anon_Count] = js.native
-  def find(queryphrase: java.lang.String, params: firefoxDashWebextDashBrowserLib.Anon_TabIdIncludeRangeData): js.Promise[firefoxDashWebextDashBrowserLib.Anon_Count] = js.native
+  def find(queryphrase: java.lang.String, params: firefoxDashWebextDashBrowserLib.Anon_TabIdCaseSensitive): js.Promise[firefoxDashWebextDashBrowserLib.Anon_Count] = js.native
   /**
     * Highlight a range
     * @param [params] highlightResults parameters

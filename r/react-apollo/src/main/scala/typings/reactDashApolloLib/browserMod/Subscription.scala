@@ -15,7 +15,7 @@ class Subscription[TData, TVariables] protected ()
 @JSImport("react-apollo/browser", "Subscription")
 @js.native
 object Subscription extends js.Object {
-  var contextTypes: reactDashApolloLib.Anon_Client = js.native
-  var propTypes: reactDashApolloLib.Anon_Children = js.native
+  var contextTypes: reactDashApolloLib.Anon_ClientPropsPropName = js.native
+  var propTypes: reactDashApolloLib.Anon_Subscription = js.native
 }
 

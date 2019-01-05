@@ -56,7 +56,7 @@ trait VictoryCommonProps extends js.Object {
     * and right.
     * @default 50
     */
-  var padding: js.UndefOr[scala.Double | victoryLib.Anon_Bottom] = js.undefined
+  var padding: js.UndefOr[scala.Double | victoryLib.Anon_Top] = js.undefined
   /**
     * The scale prop determines which scales your chart should use. This prop can be
     * given as a string specifying a supported scale ("linear", "time", "log", "sqrt"),
@@ -64,7 +64,7 @@ trait VictoryCommonProps extends js.Object {
     * @example d3Scale.time(), {x: "linear", y: "log"}
     * @default "linear"
     */
-  var scale: js.UndefOr[ScalePropType | D3Scale | victoryLib.Anon_YXScalePropType] = js.undefined
+  var scale: js.UndefOr[ScalePropType | D3Scale | victoryLib.Anon_XYScalePropType] = js.undefined
   /**
     * The standalone prop determines whether the component will render a standalone svg
     * or a <g> tag that will be included in an external svg. Set standalone to false to

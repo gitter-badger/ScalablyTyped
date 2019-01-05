@@ -10,7 +10,7 @@ trait MultiSamlConfig
   def getSamlOptions(
     req: expressLib.expressMod.eNs.Request,
     callback: js.Function2[
-      /* err */ nodeLib.Error | scala.Null, 
+      /* err */ (nodeLib.Error with stdLib.Error) | scala.Null, 
       /* samlOptions */ passportDashSamlLib.passportDashSamlMod.SamlConfig, 
       scala.Unit
     ]

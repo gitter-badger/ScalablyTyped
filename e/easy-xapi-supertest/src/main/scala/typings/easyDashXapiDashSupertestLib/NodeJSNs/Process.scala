@@ -23,7 +23,7 @@ trait Process extends EventEmitter {
   var stdout: WritableStream = js.native
   var title: java.lang.String = js.native
   var version: java.lang.String = js.native
-  var versions: easyDashXapiDashSupertestLib.Anon_Uv = js.native
+  var versions: easyDashXapiDashSupertestLib.Anon_Httpparser = js.native
   def abort(): scala.Unit = js.native
   def chdir(directory: java.lang.String): scala.Unit = js.native
   def cwd(): java.lang.String = js.native
@@ -35,7 +35,7 @@ trait Process extends EventEmitter {
   def hrtime(time: js.Array[scala.Double]): js.Array[scala.Double] = js.native
   def kill(pid: scala.Double): scala.Unit = js.native
   def kill(pid: scala.Double, signal: java.lang.String): scala.Unit = js.native
-  def memoryUsage(): easyDashXapiDashSupertestLib.Anon_HeapTotal = js.native
+  def memoryUsage(): easyDashXapiDashSupertestLib.Anon_Rss = js.native
   def nextTick(callback: js.Function): scala.Unit = js.native
   def setgid(id: java.lang.String): scala.Unit = js.native
   def setgid(id: scala.Double): scala.Unit = js.native

@@ -47,7 +47,7 @@ class SoundManager protected () extends js.Object {
     * @param {Number} [options.volume] The volume to playback at, between 0 and 1.
     * @param {Boolean} [options.loop] Whether to loop the sound when it reaches the end.
     */
-  /* private */ def playSound(sound: Sound, options: playcanvasLib.Anon_LoopVolume): Channel = js.native
+  /* private */ def playSound(sound: Sound, options: playcanvasLib.Anon_VolumeLoop): Channel = js.native
   /**
     * @private
     * @function
@@ -59,6 +59,6 @@ class SoundManager protected () extends js.Object {
     * @param {Number} [options.volume] The volume to playback at, between 0 and 1.
     * @param {Boolean} [options.loop] Whether to loop the sound when it reaches the end.
     */
-  /* private */ def playSound3d(sound: Sound, position: Vec3, options: playcanvasLib.Anon_LoopVolume): Channel3d = js.native
+  /* private */ def playSound3d(sound: Sound, position: Vec3, options: playcanvasLib.Anon_VolumeLoop): Channel3d = js.native
 }
 

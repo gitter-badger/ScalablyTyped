@@ -15,8 +15,8 @@ package object expoMod {
   type BarCodeReadCallback = js.Function1[/* params */ expoLib.Anon_Type, scala.Unit]
   type Md5 = java.lang.String
   type Orientation = expoLib.expoLibStrings.portrait | expoLib.expoLibStrings.landscape
-  type PlaybackSource = RequireSource | expoLib.Anon_UriHeaders | Asset
-  type PlaybackStatus = expoLib.Anon_AndroidImplementation | expoLib.Anon_Rate
+  type PlaybackSource = RequireSource | expoLib.Anon_Uri | Asset
+  type PlaybackStatus = expoLib.Anon_IsLoaded | expoLib.Anon_IsLoadedTrue
   type RequireSource = reactDashNativeLib.reactDashNativeMod.ImageRequireSource
   type ResizeModeContain = expoLib.expoLibStrings.contain
   type ResizeModeCover = expoLib.expoLibStrings.cover

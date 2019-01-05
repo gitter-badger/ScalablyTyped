@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
   */
 trait IContentPickerOptions extends js.Object {
   /*callback function*/
-  var callback: angularLib.angularMod.Global.Function
+  var callback: angularLib.angularMod.Global.Function with js.Function
   /*should the picker return one or multiple items*/
   var multipicker: scala.Boolean
 }

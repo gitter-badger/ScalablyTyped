@@ -5,7 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Anon_Default extends js.Object {
-  var default: ClassNamesFn
+  @JSName("default")
+  var default_Original: ClassNamesFn = js.native
+  def default(classes: ClassValue*): java.lang.String = js.native
 }
 

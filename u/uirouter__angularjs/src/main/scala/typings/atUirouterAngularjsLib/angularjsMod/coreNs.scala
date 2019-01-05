@@ -376,7 +376,7 @@ object coreNs extends js.Object {
   val forEach: js.Any = js.native
   val fromJson: js.Any = js.native
   val hostRegex: stdLib.RegExp = js.native
-  val inArray: atUirouterCoreLib.Anon_ArrayObj = js.native
+  val inArray: atUirouterCoreLib.Anon_Array = js.native
   val isDefined: atUirouterCoreLib.libCommonCommonMod.Predicate[js.Any] = js.native
   val isNullOrUndefined: atUirouterCoreLib.libCommonCommonMod.Predicate[js.Any] = js.native
   var mapObj: js.Function3[
@@ -389,7 +389,7 @@ object coreNs extends js.Object {
   ] = js.native
   val propEq: js.Function = js.native
   val pushTo: atUirouterCoreLib.Anon_Arr = js.native
-  val removeFrom: atUirouterCoreLib.Anon_Array = js.native
+  val removeFrom: atUirouterCoreLib.Anon_ArrayObj = js.native
   var resolvePolicies: atUirouterCoreLib.Anon_When = js.native
   val root: js.Any = js.native
   val services: atUirouterCoreLib.libCommonCoreservicesMod.CoreServices = js.native
@@ -504,7 +504,7 @@ object coreNs extends js.Object {
     configurationClass: atUirouterCoreLib.Anon_UiRouterIsHtml5
   ): js.Function1[
     /* uiRouter */ atUirouterCoreLib.libRouterMod.UIRouter, 
-    atUirouterCoreLib.Anon_Dispose
+    atUirouterCoreLib.Anon_Name
   ] = js.native
   def makeEvent(
     registry: atUirouterCoreLib.libTransitionInterfaceMod.IHookRegistry,
@@ -549,7 +549,7 @@ object coreNs extends js.Object {
   def padString(length: scala.Double, str: java.lang.String): java.lang.String = js.native
   def pairs(obj: atUirouterCoreLib.libCommonCommonMod.Obj): js.Array[js.Array[_]] = js.native
   def parse(name: java.lang.String): js.Any = js.native
-  def parseUrl(url: java.lang.String): atUirouterCoreLib.Anon_Hash = js.native
+  def parseUrl(url: java.lang.String): atUirouterCoreLib.Anon_Path = js.native
   def pattern(struct: js.Array[js.Array[js.Function]]): js.Function = js.native
   def pick(obj: atUirouterCoreLib.libCommonCommonMod.Obj, propNames: js.Array[java.lang.String]): atUirouterCoreLib.libCommonCommonMod.Obj = js.native
   def pipe(funcs: js.Function*): js.Function1[/* obj */ js.Any, _] = js.native
@@ -1024,12 +1024,7 @@ object coreNs extends js.Object {
   @js.native
   object Transition extends js.Object {
     /** @hidden */
-    var diToken: org.scalablytyped.runtime.Instantiable3[
-        /* fromPath */ js.Array[atUirouterCoreLib.libPathPathNodeMod.PathNode], 
-        /* targetState */ atUirouterCoreLib.libStateTargetStateMod.TargetState, 
-        /* router */ atUirouterCoreLib.libRouterMod.UIRouter, 
-        atUirouterCoreLib.libTransitionTransitionMod.Transition
-      ] = js.native
+    var diToken: atUirouterCoreLib.Anon_DiToken = js.native
   }
   
   @js.native

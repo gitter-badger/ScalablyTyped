@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation._
   * @param items The items to add.
   */
 class Stage[T /* <: js.Function */] protected ()
-  extends stdLib.Array[babylonjsLib.Anon_Action[T]] {
+  extends stdLib.Array[babylonjsLib.Anon_Index[T]] {
   /**
     * Clears all the steps from the stage.
     */

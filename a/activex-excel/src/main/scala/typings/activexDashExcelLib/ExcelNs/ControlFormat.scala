@@ -29,7 +29,7 @@ class ControlFormat protected () extends js.Object {
   var _Default: scala.Double = js.native
   def AddItem(Text: java.lang.String): scala.Unit = js.native
   def AddItem(Text: java.lang.String, Index: scala.Double): scala.Unit = js.native
-  def List(): activexDashInteropLib.SafeArray[java.lang.String] = js.native
+  def List(): activexDashInteropLib.SafeArray[java.lang.String] with stdLib.SafeArray[java.lang.String] = js.native
   def List(Index: scala.Double): java.lang.String = js.native
   def RemoveAllItems(): scala.Unit = js.native
   def RemoveItem(Index: scala.Double): scala.Unit = js.native

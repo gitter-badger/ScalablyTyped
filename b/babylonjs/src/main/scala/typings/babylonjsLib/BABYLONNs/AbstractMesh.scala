@@ -592,12 +592,12 @@ class AbstractMesh protected ()
     * @param predicate defines a callback function that can be customize to filter what meshes should be included in the list used to compute the bounding vectors
     * @returns the new bounding vectors
     */
-  def getHierarchyBoundingVectors(): babylonjsLib.Anon_Max = js.native
-  def getHierarchyBoundingVectors(includeDescendants: scala.Boolean): babylonjsLib.Anon_Max = js.native
+  def getHierarchyBoundingVectors(): babylonjsLib.Anon_Min = js.native
+  def getHierarchyBoundingVectors(includeDescendants: scala.Boolean): babylonjsLib.Anon_Min = js.native
   def getHierarchyBoundingVectors(
     includeDescendants: scala.Boolean,
     predicate: Nullable[js.Function1[/* abstractMesh */ this.type, scala.Boolean]]
-  ): babylonjsLib.Anon_Max = js.native
+  ): babylonjsLib.Anon_Min = js.native
   /**
     * Returns the mesh itself by default. Implemented by child classes
     * @param camera defines the camera to use to pick the right LOD level

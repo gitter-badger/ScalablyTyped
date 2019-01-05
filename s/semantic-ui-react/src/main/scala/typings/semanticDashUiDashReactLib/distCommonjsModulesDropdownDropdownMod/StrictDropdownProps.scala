@@ -93,7 +93,7 @@ trait StrictDropdownProps extends js.Object {
     */
   var onAddItem: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.KeyboardEvent[reactLib.HTMLElement], 
+      /* event */ reactLib.reactMod.ReactNs.KeyboardEvent[reactLib.HTMLElement with stdLib.HTMLElement], 
       /* data */ DropdownProps, 
       scala.Unit
     ]
@@ -106,7 +106,7 @@ trait StrictDropdownProps extends js.Object {
     */
   var onBlur: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.KeyboardEvent[reactLib.HTMLElement], 
+      /* event */ reactLib.reactMod.ReactNs.KeyboardEvent[reactLib.HTMLElement with stdLib.HTMLElement], 
       /* data */ DropdownProps, 
       scala.Unit
     ]
@@ -119,7 +119,7 @@ trait StrictDropdownProps extends js.Object {
     */
   var onChange: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.HTMLElement, reactLib.Event], 
+      /* event */ reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.HTMLElement with stdLib.HTMLElement, reactLib.Event], 
       /* data */ DropdownProps, 
       scala.Unit
     ]
@@ -132,7 +132,7 @@ trait StrictDropdownProps extends js.Object {
     */
   var onClick: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.KeyboardEvent[reactLib.HTMLElement], 
+      /* event */ reactLib.reactMod.ReactNs.KeyboardEvent[reactLib.HTMLElement with stdLib.HTMLElement], 
       /* data */ DropdownProps, 
       scala.Unit
     ]
@@ -145,7 +145,7 @@ trait StrictDropdownProps extends js.Object {
     */
   var onClose: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.HTMLElement, reactLib.Event], 
+      /* event */ reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.HTMLElement with stdLib.HTMLElement, reactLib.Event], 
       /* data */ DropdownProps, 
       scala.Unit
     ]
@@ -158,7 +158,7 @@ trait StrictDropdownProps extends js.Object {
     */
   var onFocus: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.HTMLElement, reactLib.Event], 
+      /* event */ reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.HTMLElement with stdLib.HTMLElement, reactLib.Event], 
       /* data */ DropdownProps, 
       scala.Unit
     ]
@@ -171,7 +171,7 @@ trait StrictDropdownProps extends js.Object {
     */
   var onLabelClick: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent], 
+      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement with stdLib.HTMLElement, reactLib.NativeMouseEvent], 
       /* data */ semanticDashUiDashReactLib.distCommonjsElementsLabelLabelMod.LabelProps, 
       scala.Unit
     ]
@@ -184,7 +184,7 @@ trait StrictDropdownProps extends js.Object {
     */
   var onMouseDown: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent], 
+      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement with stdLib.HTMLElement, reactLib.NativeMouseEvent], 
       /* data */ DropdownProps, 
       scala.Unit
     ]
@@ -197,7 +197,7 @@ trait StrictDropdownProps extends js.Object {
     */
   var onOpen: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.HTMLElement, reactLib.Event], 
+      /* event */ reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.HTMLElement with stdLib.HTMLElement, reactLib.Event], 
       /* data */ DropdownProps, 
       scala.Unit
     ]
@@ -210,7 +210,7 @@ trait StrictDropdownProps extends js.Object {
     */
   var onSearchChange: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.HTMLElement, reactLib.Event], 
+      /* event */ reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.HTMLElement with stdLib.HTMLElement, reactLib.Event], 
       /* data */ DropdownOnSearchChangeData, 
       scala.Unit
     ]

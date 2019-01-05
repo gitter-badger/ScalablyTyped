@@ -13,7 +13,7 @@ class Quaternion () extends js.Object {
   def this(x: scala.Double, y: scala.Double, z: scala.Double) = this()
   def this(x: scala.Double, y: scala.Double, z: scala.Double, w: scala.Double) = this()
   var angleAxis: math3dLib.Anon_Axis = js.native
-  var eulerAngles: math3dLib.Anon_Z = js.native
+  var eulerAngles: math3dLib.Anon_X = js.native
   var w: scala.Double = js.native
   var x: scala.Double = js.native
   var y: scala.Double = js.native

@@ -12,7 +12,7 @@ trait ConnectFailoverOptions extends js.Object {
       /* options */ stompitLib.libConnectMod.connectNs.ConnectOptions, 
       /* connectionListener */ js.UndefOr[
         js.Function2[
-          /* err */ nodeLib.Error | scala.Null, 
+          /* err */ (nodeLib.Error with stdLib.Error) | scala.Null, 
           /* client */ stompitLib.libClientMod.namespaced, 
           scala.Unit
         ]

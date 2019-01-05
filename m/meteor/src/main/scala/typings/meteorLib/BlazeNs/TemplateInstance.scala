@@ -13,8 +13,8 @@ trait TemplateInstance extends js.Object {
   @JSName("$")
   def $(selector: java.lang.String): js.Any
   def autorun(runFunc: js.Function1[/* computation */ meteorLib.TrackerNs.Computation, scala.Unit]): meteorLib.TrackerNs.Computation
-  def find(selector: java.lang.String): reactLib.HTMLElement
-  def findAll(selector: java.lang.String): js.Array[reactLib.HTMLElement]
+  def find(selector: java.lang.String): reactLib.HTMLElement with stdLib.HTMLElement
+  def findAll(selector: java.lang.String): js.Array[reactLib.HTMLElement with stdLib.HTMLElement]
   def subscribe(name: java.lang.String, args: js.Any*): meteorLib.MeteorNs.SubscriptionHandle
   def subscriptionsReady(): scala.Boolean
 }

@@ -18,7 +18,7 @@ trait InfiniteScrollProps
   /**
     * Override method to return a different scroll listener if it's not the immediate parent of InfiniteScroll.
     */
-  var getScrollParent: js.UndefOr[js.Function0[reactLib.HTMLElement | scala.Null]] = js.undefined
+  var getScrollParent: js.UndefOr[js.Function0[(reactLib.HTMLElement with stdLib.HTMLElement) | scala.Null]] = js.undefined
   /**
     * Whether there are more items to be loaded. Event listeners are removed if false.
     * Defaults to false.

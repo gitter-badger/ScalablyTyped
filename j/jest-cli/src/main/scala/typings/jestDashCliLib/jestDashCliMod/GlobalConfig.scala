@@ -59,7 +59,7 @@ trait GlobalConfig extends js.Object {
   var verbose: js.UndefOr[scala.Boolean] = js.undefined
   var watch: scala.Boolean
   var watchAll: scala.Boolean
-  var watchPlugins: js.UndefOr[js.Array[jestDashCliLib.Anon_Config]] = js.undefined
+  var watchPlugins: js.UndefOr[js.Array[jestDashCliLib.Anon_Path]] = js.undefined
   var watchman: scala.Boolean
 }
 

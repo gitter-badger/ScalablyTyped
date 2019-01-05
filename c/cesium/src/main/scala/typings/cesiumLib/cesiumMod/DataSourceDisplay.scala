@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class DataSourceDisplay protected ()
   extends cesiumLib.cesiumMod.CesiumNs.DataSourceDisplay {
-  def this(options: cesiumLib.Anon_DataSourceCollection) = this()
+  def this(options: cesiumLib.Anon_Scene) = this()
   /* CompleteClass */
   override var dataSources: cesiumLib.cesiumMod.CesiumNs.DataSourceCollection = js.native
   /* CompleteClass */

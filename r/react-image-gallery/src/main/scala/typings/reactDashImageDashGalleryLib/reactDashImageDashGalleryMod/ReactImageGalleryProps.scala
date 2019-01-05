@@ -18,66 +18,68 @@ trait ReactImageGalleryProps extends js.Object {
   var lazyLoad: js.UndefOr[scala.Boolean] = js.undefined
   var onClick: js.UndefOr[
     js.Function1[
-      /* event */ reactLib.reactMod.ReactNs.MouseEventHandler[reactLib.HTMLDivElement], 
+      /* event */ reactLib.reactMod.ReactNs.MouseEventHandler[reactLib.HTMLDivElement with stdLib.HTMLDivElement], 
       scala.Unit
     ]
   ] = js.undefined
   var onImageError: js.UndefOr[
     js.Function1[
-      /* event */ reactLib.reactMod.ReactNs.ReactEventHandler[reactLib.HTMLImageElement], 
+      /* event */ reactLib.reactMod.ReactNs.ReactEventHandler[reactLib.HTMLImageElement with stdLib.HTMLImageElement], 
       scala.Unit
     ]
   ] = js.undefined
   var onImageLoad: js.UndefOr[
     js.Function1[
-      /* event */ reactLib.reactMod.ReactNs.ReactEventHandler[reactLib.HTMLImageElement], 
+      /* event */ reactLib.reactMod.ReactNs.ReactEventHandler[reactLib.HTMLImageElement with stdLib.HTMLImageElement], 
       scala.Unit
     ]
   ] = js.undefined
   var onMouseLeave: js.UndefOr[
     js.Function1[
-      /* event */ reactLib.reactMod.ReactNs.MouseEventHandler[reactLib.HTMLDivElement], 
+      /* event */ reactLib.reactMod.ReactNs.MouseEventHandler[reactLib.HTMLDivElement with stdLib.HTMLDivElement], 
       scala.Unit
     ]
   ] = js.undefined
   var onMouseOver: js.UndefOr[
     js.Function1[
-      /* event */ reactLib.reactMod.ReactNs.MouseEventHandler[reactLib.HTMLDivElement], 
+      /* event */ reactLib.reactMod.ReactNs.MouseEventHandler[reactLib.HTMLDivElement with stdLib.HTMLDivElement], 
       scala.Unit
     ]
   ] = js.undefined
   var onPause: js.UndefOr[js.Function1[/* currentIndex */ scala.Double, scala.Unit]] = js.undefined
   var onPlay: js.UndefOr[js.Function1[/* currentIndex */ scala.Double, scala.Unit]] = js.undefined
-  var onScreenChange: js.UndefOr[js.Function1[/* fullScreenElement */ reactLib.Element, scala.Unit]] = js.undefined
+  var onScreenChange: js.UndefOr[
+    js.Function1[/* fullScreenElement */ reactLib.Element with stdLib.Element, scala.Unit]
+  ] = js.undefined
   var onSlide: js.UndefOr[js.Function1[/* currentIndex */ scala.Double, scala.Unit]] = js.undefined
   var onThumbnailClick: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.MouseEventHandler[reactLib.HTMLAnchorElement], 
+      /* event */ reactLib.reactMod.ReactNs.MouseEventHandler[reactLib.HTMLAnchorElement with stdLib.HTMLAnchorElement], 
       /* index */ scala.Double, 
       scala.Unit
     ]
   ] = js.undefined
   var onThumbnailError: js.UndefOr[
     js.Function1[
-      /* event */ reactLib.reactMod.ReactNs.ReactEventHandler[reactLib.HTMLImageElement], 
+      /* event */ reactLib.reactMod.ReactNs.ReactEventHandler[reactLib.HTMLImageElement with stdLib.HTMLImageElement], 
       scala.Unit
     ]
   ] = js.undefined
   var onTouchEnd: js.UndefOr[
     js.Function1[
-      /* event */ reactLib.reactMod.ReactNs.TouchEventHandler[reactLib.HTMLDivElement], 
+      /* event */ reactLib.reactMod.ReactNs.TouchEventHandler[reactLib.HTMLDivElement with stdLib.HTMLDivElement], 
       scala.Unit
     ]
   ] = js.undefined
   var onTouchMove: js.UndefOr[
     js.Function1[
-      /* event */ reactLib.reactMod.ReactNs.TouchEventHandler[reactLib.HTMLDivElement], 
+      /* event */ reactLib.reactMod.ReactNs.TouchEventHandler[reactLib.HTMLDivElement with stdLib.HTMLDivElement], 
       scala.Unit
     ]
   ] = js.undefined
   var onTouchStart: js.UndefOr[
     js.Function1[
-      /* event */ reactLib.reactMod.ReactNs.TouchEventHandler[reactLib.HTMLDivElement], 
+      /* event */ reactLib.reactMod.ReactNs.TouchEventHandler[reactLib.HTMLDivElement with stdLib.HTMLDivElement], 
       scala.Unit
     ]
   ] = js.undefined
@@ -85,7 +87,7 @@ trait ReactImageGalleryProps extends js.Object {
   var renderCustomControls: js.UndefOr[js.Function0[reactLib.reactMod.ReactNs.ReactNode]] = js.undefined
   var renderFullscreenButton: js.UndefOr[
     js.Function2[
-      /* onClick */ reactLib.reactMod.ReactNs.MouseEventHandler[reactLib.HTMLElement], 
+      /* onClick */ reactLib.reactMod.ReactNs.MouseEventHandler[reactLib.HTMLElement with stdLib.HTMLElement], 
       /* isFullscreen */ scala.Boolean, 
       reactLib.reactMod.ReactNs.ReactNode
     ]
@@ -95,21 +97,21 @@ trait ReactImageGalleryProps extends js.Object {
   ] = js.undefined
   var renderLeftNav: js.UndefOr[
     js.Function2[
-      /* onClick */ reactLib.reactMod.ReactNs.MouseEventHandler[reactLib.HTMLElement], 
+      /* onClick */ reactLib.reactMod.ReactNs.MouseEventHandler[reactLib.HTMLElement with stdLib.HTMLElement], 
       /* isDisabled */ scala.Boolean, 
       reactLib.reactMod.ReactNs.ReactNode
     ]
   ] = js.undefined
   var renderPlayPauseButton: js.UndefOr[
     js.Function2[
-      /* onClick */ reactLib.reactMod.ReactNs.MouseEventHandler[reactLib.HTMLElement], 
+      /* onClick */ reactLib.reactMod.ReactNs.MouseEventHandler[reactLib.HTMLElement with stdLib.HTMLElement], 
       /* isPlaying */ scala.Boolean, 
       reactLib.reactMod.ReactNs.ReactNode
     ]
   ] = js.undefined
   var renderRightNav: js.UndefOr[
     js.Function2[
-      /* onClick */ reactLib.reactMod.ReactNs.MouseEventHandler[reactLib.HTMLElement], 
+      /* onClick */ reactLib.reactMod.ReactNs.MouseEventHandler[reactLib.HTMLElement with stdLib.HTMLElement], 
       /* isDisabled */ scala.Boolean, 
       reactLib.reactMod.ReactNs.ReactNode
     ]

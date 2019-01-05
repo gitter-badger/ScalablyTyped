@@ -6,6 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait HelmetHTMLBodyDatum extends js.Object {
-  def toComponent(): reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLBodyElement]
+  def toComponent(): reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLBodyElement with stdLib.HTMLBodyElement]
 }
 

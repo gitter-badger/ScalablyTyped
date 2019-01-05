@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Anon_MetadataHashCallback extends js.Object {
-  def apply(metadataHash: webgmeLib.GmeCommonNs.MetadataHash): js.Promise[stdLib.JSON] = js.native
+  def apply(metadataHash: webgmeLib.GmeCommonNs.MetadataHash): js.Promise[webgmeLib.GmeClassesNs.Artifact] = js.native
   def apply(
     metadataHash: webgmeLib.GmeCommonNs.MetadataHash,
-    callback: webgmeLib.GmeCommonNs.ResultCallback[stdLib.JSON]
+    callback: webgmeLib.GmeCommonNs.ResultCallback[webgmeLib.GmeClassesNs.Artifact]
   ): scala.Unit = js.native
 }
 

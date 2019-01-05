@@ -58,7 +58,7 @@ trait ZeroClipboardCommon extends js.Object {
     * Retrieves a copy of the map of registered listener functions/objects for ALL event types.
     * @return {Object}
     */
-  def handlers(): zeroclipboardLib.Anon_AftercopyReady = js.native
+  def handlers(): zeroclipboardLib.Anon_ReadyBeforecopy = js.native
   /**
     * Retrieves a copy of the registered listener functions/objects for the given eventType.
     * @param  {string} eventType
@@ -87,7 +87,7 @@ trait ZeroClipboardCommon extends js.Object {
     * Remove a set of eventType to listener function/object mappings.
     * @param {EventListener<ZeroClipboardErrorEvent>} listenerObj
     */
-  def off(listenerObj: zeroclipboardLib.Anon_Aftercopy): scala.Unit = js.native
+  def off(listenerObj: zeroclipboardLib.Anon_Ready): scala.Unit = js.native
   @JSName("off")
   def off_aftercopy(eventType: zeroclipboardLib.zeroclipboardLibStrings.aftercopy): scala.Unit = js.native
   @JSName("off")
@@ -148,7 +148,7 @@ trait ZeroClipboardCommon extends js.Object {
     * Add a set of eventType to listener function/object mappings.
     * @param {EventListener<ZeroClipboardErrorEvent>} listenerObj
     */
-  def on(listenerObj: zeroclipboardLib.Anon_Aftercopy): scala.Unit = js.native
+  def on(listenerObj: zeroclipboardLib.Anon_Ready): scala.Unit = js.native
   /**
     * The aftercopy event is fired when the text is copied [or failed to copy] to the clipboard.
     * @param {"aftercopy"} eventType

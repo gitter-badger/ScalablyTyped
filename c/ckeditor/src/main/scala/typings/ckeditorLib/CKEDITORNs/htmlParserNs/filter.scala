@@ -18,7 +18,7 @@ class filter () extends js.Object {
   var rootRules: filterRulesGroup = js.native
   var textRules: filterRulesGroup = js.native
   def addRules(rules: filterRulesDefinition): scala.Unit = js.native
-  def addRules(rules: filterRulesDefinition, options: ckeditorLib.Anon_ApplyToAll): scala.Unit = js.native
+  def addRules(rules: filterRulesDefinition, options: ckeditorLib.Anon_Priority): scala.Unit = js.native
   def addRules(rules: filterRulesDefinition, options: scala.Double): scala.Unit = js.native
   def applyTo(node: node): scala.Unit = js.native
 }

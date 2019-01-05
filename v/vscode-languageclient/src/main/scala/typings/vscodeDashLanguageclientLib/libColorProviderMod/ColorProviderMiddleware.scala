@@ -10,7 +10,7 @@ trait ColorProviderMiddleware extends js.Object {
     js.ThisFunction4[
       /* this */ scala.Unit, 
       /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify VColor */ /* color */ js.Any, 
-      /* context */ vscodeDashLanguageclientLib.Anon_Range, 
+      /* context */ vscodeDashLanguageclientLib.Anon_Document, 
       /* token */ vscodeDashJsonrpcLib.libCancellationMod.CancellationToken, 
       /* next */ ProvideColorPresentationSignature, 
       /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify ProviderResult<Array<VColorPresentation>> */ _

@@ -11,7 +11,7 @@ trait CompileOptions extends js.Object {
   var data: js.UndefOr[scala.Boolean] = js.undefined
   var explicitPartialContext: js.UndefOr[scala.Boolean] = js.undefined
   var ignoreStandalone: js.UndefOr[scala.Boolean] = js.undefined
-  var knownHelpers: js.UndefOr[Anon_BlockHelperMissing] = js.undefined
+  var knownHelpers: js.UndefOr[Anon_HelperMissing] = js.undefined
   var knownHelpersOnly: js.UndefOr[scala.Boolean] = js.undefined
   var noEscape: js.UndefOr[scala.Boolean] = js.undefined
   var preventIndent: js.UndefOr[scala.Boolean] = js.undefined

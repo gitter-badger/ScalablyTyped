@@ -15,19 +15,19 @@ object asn1NsMembers extends js.Object {
     * @param inputData Input ASN.1 object tree
     * @param inputSchema Input ASN.1 schema to compare with
     */
-  def compareSchema(root: js.Any, inputData: js.Any, inputSchema: js.Any): adoneLib.Anon_Result = js.native
+  def compareSchema(root: js.Any, inputData: js.Any, inputSchema: js.Any): adoneLib.Anon_Verified = js.native
   /**
     * Major function for decoding ASN.1 BER array into internal library structuries
     *
     * @param inputBuffer ASN.1 BER encoded array of bytes
     */
-  def fromBER(inputBuffer: stdLib.ArrayBuffer): adoneLib.Anon_ResultOffset = js.native
+  def fromBER(inputBuffer: stdLib.ArrayBuffer): adoneLib.Anon_Offset = js.native
   /**
     * ASN.1 schema verification for ArrayBuffer data
     *
     * @param inputBuffer Input BER-encoded ASN.1 data
     * @param inputSchema Input ASN.1 schema to verify against to
     */
-  def verifySchema(inputBuffer: stdLib.ArrayBuffer, inputSchema: js.Any): adoneLib.Anon_Result = js.native
+  def verifySchema(inputBuffer: stdLib.ArrayBuffer, inputSchema: js.Any): adoneLib.Anon_Verified = js.native
 }
 

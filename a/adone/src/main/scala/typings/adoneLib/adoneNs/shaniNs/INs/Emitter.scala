@@ -11,7 +11,7 @@ trait Emitter
   def on(
     event: EndHookEvent | StartHookEvent,
     listener: js.Function1[
-      (/* event */ adoneLib.Anon_Hook) | (/* event */ adoneLib.Anon_HookBlock), 
+      (/* event */ adoneLib.Anon_BlockTestHook) | (/* event */ adoneLib.Anon_BlockTestHookMeta), 
       scala.Unit
     ]
   ): this.type = js.native
@@ -20,7 +20,7 @@ trait Emitter
   @JSName("on")
   def `on_end test`(
     event: adoneLib.adoneLibStrings.`end test`,
-    listener: js.Function1[/* event */ adoneLib.Anon_BlockMeta, scala.Unit]
+    listener: js.Function1[/* event */ adoneLib.Anon_BlockTestMeta, scala.Unit]
   ): this.type = js.native
   @JSName("on")
   def `on_enter block`(
@@ -37,7 +37,7 @@ trait Emitter
   @JSName("on")
   def `on_skip test`(
     event: adoneLib.adoneLibStrings.`skip test`,
-    listener: js.Function1[/* event */ adoneLib.Anon_BlockRuntime, scala.Unit]
+    listener: js.Function1[/* event */ adoneLib.Anon_BlockTestRuntime, scala.Unit]
   ): this.type = js.native
   @JSName("on")
   def `on_start test`(

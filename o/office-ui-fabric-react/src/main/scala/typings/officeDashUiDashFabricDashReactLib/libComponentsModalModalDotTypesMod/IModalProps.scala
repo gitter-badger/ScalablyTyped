@@ -49,7 +49,10 @@ trait IModalProps
   var onDismiss: js.UndefOr[
     js.Function1[
       /* ev */ js.UndefOr[
-        reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLButtonElement, reactLib.NativeMouseEvent]
+        reactLib.reactMod.ReactNs.MouseEvent[
+          reactLib.HTMLButtonElement with stdLib.HTMLButtonElement, 
+          reactLib.NativeMouseEvent
+        ]
       ], 
       _
     ]

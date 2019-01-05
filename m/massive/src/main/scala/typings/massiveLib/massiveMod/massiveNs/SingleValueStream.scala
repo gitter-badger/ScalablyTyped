@@ -10,7 +10,7 @@ trait SingleValueStream extends js.Object {
   /* private */ def _transform(
     obj: AnyObject[_],
     encoding: java.lang.String,
-    cb: js.Function1[/* err */ js.UndefOr[nodeLib.Error], scala.Unit]
+    cb: js.Function1[/* err */ js.UndefOr[nodeLib.Error with stdLib.Error], scala.Unit]
   ): scala.Unit
   /** Converts a single-key object into its value. */
   def singleValue(obj: AnyObject[_]): js.Any

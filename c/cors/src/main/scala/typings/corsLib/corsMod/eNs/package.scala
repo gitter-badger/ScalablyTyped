@@ -9,7 +9,7 @@ package object eNs {
   type CorsOptionsDelegate = js.Function2[
     /* req */ expressLib.expressMod.eNs.Request, 
     /* callback */ js.Function2[
-      /* err */ nodeLib.Error | scala.Null, 
+      /* err */ (nodeLib.Error with stdLib.Error) | scala.Null, 
       /* options */ js.UndefOr[CorsOptions], 
       scala.Unit
     ], 

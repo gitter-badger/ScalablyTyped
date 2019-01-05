@@ -27,7 +27,7 @@ class TextBuffer () extends js.Object {
   // Markers
   /** Create a layer to contain a set of related markers. */
   def addMarkerLayer(): MarkerLayer = js.native
-  def addMarkerLayer(options: atomLib.Anon_Role): MarkerLayer = js.native
+  def addMarkerLayer(options: atomLib.Anon_MaintainHistoryPersistentRole): MarkerLayer = js.native
   /** Append text to the end of the buffer. */
   def append(text: java.lang.String): Range = js.native
   def append(text: java.lang.String, options: TextEditOptions): Range = js.native
@@ -105,7 +105,7 @@ class TextBuffer () extends js.Object {
     *  If the given checkpoint is no longer present in the undo history, this method
     *  will return an empty Array.
     */
-  def getChangesSinceCheckpoint(checkpoint: scala.Double): js.Array[atomLib.Anon_NewExtent] = js.native
+  def getChangesSinceCheckpoint(checkpoint: scala.Double): js.Array[atomLib.Anon_Start] = js.native
   /** Get the default MarkerLayer. */
   def getDefaultMarkerLayer(): MarkerLayer = js.native
   /** Returns the string encoding of this buffer. */
@@ -217,10 +217,10 @@ class TextBuffer () extends js.Object {
   def lineLengthForRow(row: scala.Double): scala.Double = js.native
   /** Create a marker at the given position with no tail in the default marker layer. */
   def markPosition(position: PointCompatible): Marker = js.native
-  def markPosition(position: PointCompatible, options: atomLib.Anon_ExclusiveInvalidate): Marker = js.native
+  def markPosition(position: PointCompatible, options: atomLib.Anon_InvalidateNever): Marker = js.native
   /** Create a marker with the given range in the default marker layer. */
   def markRange(range: RangeCompatible): Marker = js.native
-  def markRange(range: RangeCompatible, properties: atomLib.Anon_Exclusive): Marker = js.native
+  def markRange(range: RangeCompatible, properties: atomLib.Anon_ReversedInvalidateNever): Marker = js.native
   /**
     *  Given a row, find the next row that's not blank.
     *  Returns a number or null if there's no next non-blank row.

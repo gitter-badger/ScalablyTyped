@@ -9,7 +9,9 @@ trait CommonShareButtonProps extends js.Object {
   /**
     * An object to pass any additional properties, such as `aria-*` attributes.
     */
-  var additionalProps: js.UndefOr[reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLDivElement]] = js.undefined
+  var additionalProps: js.UndefOr[
+    reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLDivElement with stdLib.HTMLDivElement]
+  ] = js.undefined
   /**
     *  Takes a function that returns a Promise to be fulfilled before calling
     * `onClick`. If you do not return promise, `onClick` is called immediately.
@@ -21,7 +23,9 @@ trait CommonShareButtonProps extends js.Object {
     * Style when button is disabled
     * @default { opacity: 0.6 }
     */
-  var disabledStyle: js.UndefOr[reactLib.reactMod.ReactNs.StyleHTMLAttributes[reactLib.HTMLDivElement]] = js.undefined
+  var disabledStyle: js.UndefOr[
+    reactLib.reactMod.ReactNs.StyleHTMLAttributes[reactLib.HTMLDivElement with stdLib.HTMLDivElement]
+  ] = js.undefined
   /**
     * Takes a function to be called after closing share dialog.
     */

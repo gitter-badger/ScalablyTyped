@@ -81,7 +81,7 @@ object builderDashUtilModMembers extends js.Object {
   def replaceDefault(inList: js.UndefOr[scala.Nothing], defaultList: js.Array[java.lang.String]): js.Array[java.lang.String] = js.native
   def replaceDefault(inList: scala.Null, defaultList: js.Array[java.lang.String]): js.Array[java.lang.String] = js.native
   def safeStringifyJson(data: js.Any): java.lang.String = js.native
-  def safeStringifyJson(data: js.Any, skippedNames: nodeLib.Set[java.lang.String]): java.lang.String = js.native
+  def safeStringifyJson(data: js.Any, skippedNames: nodeLib.Set[java.lang.String] with stdLib.Set[java.lang.String]): java.lang.String = js.native
   def serializeToYaml(`object`: js.Object): java.lang.String = js.native
   def serializeToYaml(`object`: js.Object, skipInvalid: scala.Boolean): java.lang.String = js.native
   def serializeToYaml(`object`: js.Object, skipInvalid: scala.Boolean, noRefs: scala.Boolean): java.lang.String = js.native

@@ -34,7 +34,7 @@ object xmldsigjsModMembers extends js.Object {
   val SHA512: /* SHA-512 */ java.lang.String = js.native
   val SHA512_NAMESPACE: /* http://www.w3.org/2001/04/xmlenc#sha512 */ java.lang.String = js.native
   val Select: xmlDashCoreLib.xmlDashCoreMod.XmlCoreNs.SelectNodes = js.native
-  val XmlSignature: xmldsigjsLib.Anon_AlgorithmNamespaces = js.native
+  val XmlSignature: xmldsigjsLib.Anon_DefaultCanonMethod = js.native
   def Parse(xmlString: java.lang.String): stdLib.Document = js.native
   def Stringify(target: stdLib.Node): java.lang.String = js.native
 }

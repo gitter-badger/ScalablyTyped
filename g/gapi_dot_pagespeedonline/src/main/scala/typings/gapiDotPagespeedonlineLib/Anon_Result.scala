@@ -9,10 +9,10 @@ trait Anon_Result extends js.Object {
   /**
     * List of entries that provide additional details about a single URL. Optional.
     */
-  var details: js.Array[Anon_Args]
+  var details: js.Array[Anon_Format]
   /**
     * A format string that gives information about the URL, and a list of arguments for that format string.
     */
-  var result: Anon_Args
+  var result: Anon_Format
 }
 

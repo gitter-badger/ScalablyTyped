@@ -10,7 +10,7 @@ trait TinySliderProps extends js.Object {
     js.Function3[
       /* slideClicked */ scala.Double, 
       /* info */ java.lang.String, 
-      /* event */ reactLib.Event, 
+      /* event */ reactLib.Event with stdLib.Event, 
       scala.Unit
     ]
   ] = js.undefined

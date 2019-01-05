@@ -13,7 +13,11 @@ trait Options extends js.Object {
     js.Function3[
       /* req */ multerLib.multerMod.Global.ExpressNs.Request, 
       /* file */ multerLib.multerMod.Global.ExpressNs.MulterNs.File, 
-      /* callback */ js.Function2[/* error */ nodeLib.Error | scala.Null, /* acceptFile */ scala.Boolean, scala.Unit], 
+      /* callback */ js.Function2[
+        /* error */ (nodeLib.Error with stdLib.Error) | scala.Null, 
+        /* acceptFile */ scala.Boolean, 
+        scala.Unit
+      ], 
       scala.Unit
     ]
   ] = js.undefined

@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait SearchState extends js.Object {
-  var configure: js.UndefOr[reactDashInstantsearchDashCoreLib.Anon_Key] = js.undefined
+  var configure: js.UndefOr[reactDashInstantsearchDashCoreLib.Anon_AroundLatLng] = js.undefined
   var hierarchicalMenu: js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.undefined
   var hitsPerPage: js.UndefOr[scala.Double] = js.undefined
   var indices: js.UndefOr[
@@ -17,7 +17,7 @@ trait SearchState extends js.Object {
   var page: js.UndefOr[scala.Double] = js.undefined
   var query: js.UndefOr[java.lang.String] = js.undefined
   var range: js.UndefOr[
-    org.scalablytyped.runtime.StringDictionary[reactDashInstantsearchDashCoreLib.Anon_Max]
+    org.scalablytyped.runtime.StringDictionary[reactDashInstantsearchDashCoreLib.Anon_Min]
   ] = js.undefined
   var refinementList: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Array[java.lang.String]]] = js.undefined
   var sortBy: js.UndefOr[java.lang.String] = js.undefined

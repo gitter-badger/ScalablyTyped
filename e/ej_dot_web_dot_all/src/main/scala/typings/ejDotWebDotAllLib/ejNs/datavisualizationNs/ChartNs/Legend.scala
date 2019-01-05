@@ -49,7 +49,7 @@ trait Legend extends js.Object {
     * **custom** as value to this property.
     * @Default {Bottom. See Position}
     */
-  var position: js.UndefOr[Position | java.lang.String] = js.undefined
+  var position: js.UndefOr[(Position with stdLib.Position) | java.lang.String] = js.undefined
   /** Number of rows to arrange the legend items.
     * @Default {null}
     */

@@ -9,13 +9,13 @@ package object expressDashWinstonMod {
   type DynamicLevelFunction = js.Function3[
     /* req */ expressLib.expressMod.eNs.Request, 
     /* res */ expressLib.expressMod.eNs.Response, 
-    /* err */ nodeLib.Error, 
+    /* err */ nodeLib.Error with stdLib.Error, 
     java.lang.String
   ]
   type DynamicMetaFunction = js.Function3[
     /* req */ expressLib.expressMod.eNs.Request, 
     /* res */ expressLib.expressMod.eNs.Response, 
-    /* err */ nodeLib.Error, 
+    /* err */ nodeLib.Error with stdLib.Error, 
     js.Object
   ]
   type ErrorLoggerOptions = ErrorLoggerOptionsWithTransports | ErrorLoggerOptionsWithWinstonInstance

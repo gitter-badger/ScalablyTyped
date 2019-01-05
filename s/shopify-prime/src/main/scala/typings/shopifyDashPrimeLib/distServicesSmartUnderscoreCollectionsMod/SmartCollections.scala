@@ -17,7 +17,7 @@ class SmartCollections protected ()
     */
   def count(): js.Promise[scala.Double] = js.native
   def count(
-    options: shopifyDashPrimeLib.Anon_Productid with shopifyDashPrimeLib.distOptionsBaseMod.DateOptions with shopifyDashPrimeLib.distOptionsBaseMod.PublishedOptions
+    options: shopifyDashPrimeLib.Anon_Title with shopifyDashPrimeLib.distOptionsBaseMod.DateOptions with shopifyDashPrimeLib.distOptionsBaseMod.PublishedOptions
   ): js.Promise[scala.Double] = js.native
   /**
     * Create a new smart collection.

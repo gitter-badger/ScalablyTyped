@@ -20,7 +20,8 @@ trait Anon_Template extends js.Object {
   /**
     * The repeater method used to rendering iterable template data.
     */
-  var repeater: Anon_Element = js.native
+  @JSName("repeater")
+  var repeater_Original: Anon_Element = js.native
   /**
     * This method parses a string and an optoinal variable name and returns a parsed template in the form of a function. You can then pass this function data to get rendered nodes.
     *
@@ -29,5 +30,23 @@ trait Anon_Template extends js.Object {
     */
   def apply(template: java.lang.String): js.Function = js.native
   def apply(template: java.lang.String, variable: java.lang.String): js.Function = js.native
+  /**
+    * Use this method to render declarative temlate repeaters. This expects a "data-repeater" attribute whose value points to data stored on $.template.data.
+    */
+  /**
+    * The repeater method used to rendering iterable template data.
+    */
+  def repeater(): scala.Unit = js.native
+  /**
+    * A method to repeated output a template.
+    *
+    * @param element The target container into which the content will be inserted.
+    * @param template A string of markup.
+    * @param data The iterable data the template will consume.
+    */
+  /**
+    * The repeater method used to rendering iterable template data.
+    */
+  def repeater(element: ChocolateChipElementArray, template: java.lang.String, data: js.Any): scala.Unit = js.native
 }
 

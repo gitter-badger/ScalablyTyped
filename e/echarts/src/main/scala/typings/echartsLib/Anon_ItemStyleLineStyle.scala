@@ -8,16 +8,20 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Anon_ItemStyleLineStyle extends js.Object {
   /**
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-tree.emphasis.itemStyle
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-graph.emphasis.edgeLabel
     */
-  var itemStyle: js.UndefOr[Anon_ShadowOffsetXBorderType] = js.native
+  var edgeLabel: js.UndefOr[Anon_ShowPositionFormatterColorFontStyle] = js.native
   /**
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-tree.emphasis.label
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-graph.emphasis.itemStyle
     */
-  var label: js.UndefOr[Anon_ShadowOffsetXBackgroundColorShowAlign] = js.native
+  var itemStyle: js.UndefOr[Anon_ColorBorderColor] = js.native
   /**
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-tree.emphasis.lineStyle
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-graph.emphasis.label
     */
-  var lineStyle: js.UndefOr[Anon_ShadowOffsetXShadowBlurColorShadowColorShadowOffsetY] = js.native
+  var label: js.UndefOr[Anon_ShowPositionDistanceRotate] = js.native
+  /**
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-graph.emphasis.lineStyle
+    */
+  var lineStyle: js.UndefOr[Anon_ColorWidthType] = js.native
 }
 

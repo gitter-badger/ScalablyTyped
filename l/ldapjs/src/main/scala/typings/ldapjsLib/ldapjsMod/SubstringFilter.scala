@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("ldapjs", "SubstringFilter")
 @js.native
 class SubstringFilter protected () extends Filter {
-  def this(options: ldapjsLib.Anon_Any) = this()
+  def this(options: ldapjsLib.Anon_AttributeInitial) = this()
   /* CompleteClass */
   override var `type`: java.lang.String = js.native
   /* CompleteClass */

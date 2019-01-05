@@ -15,7 +15,7 @@ class namespaced[TValue] protected ()
 @JSImport("json-editor", JSImport.Namespace)
 @js.native
 object namespaced extends js.Object {
-  var defaults: jsonDashEditorLib.Anon_Customvalidators = js.native
-  var plugins: jsonDashEditorLib.Anon_Ace = js.native
+  var defaults: jsonDashEditorLib.Anon_OptionsEditors = js.native
+  var plugins: jsonDashEditorLib.Anon_Sceditor = js.native
 }
 

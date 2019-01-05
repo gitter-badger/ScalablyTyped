@@ -86,7 +86,10 @@ class default () extends PeriodSelector {
     * user clicks on one of the predefined period buttons.
     */
   /* CompleteClass */
-  override def addListener(`type`: java.lang.String, handler: js.Function1[/* e */ amchartsLib.Anon_Count, scala.Unit]): scala.Unit = js.native
+  override def addListener(
+    `type`: java.lang.String,
+    handler: js.Function1[/* e */ amchartsLib.Anon_TypeStartDate, scala.Unit]
+  ): scala.Unit = js.native
   /**
     * Removes event listener from chart object.
     */

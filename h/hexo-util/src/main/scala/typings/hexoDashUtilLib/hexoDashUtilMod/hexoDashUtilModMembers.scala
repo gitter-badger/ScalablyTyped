@@ -29,7 +29,7 @@ object hexoDashUtilModMembers extends js.Object {
   def htmlTag(tag: java.lang.String, attrs: stdLib.ArrayLike[java.lang.String]): java.lang.String = js.native
   def htmlTag(tag: java.lang.String, attrs: stdLib.ArrayLike[java.lang.String], text: java.lang.String): java.lang.String = js.native
   def slugize(str: java.lang.String): java.lang.String = js.native
-  def slugize(str: java.lang.String, options: hexoDashUtilLib.Anon_Transform): java.lang.String = js.native
+  def slugize(str: java.lang.String, options: hexoDashUtilLib.Anon_Separator): java.lang.String = js.native
   def spawn(command: java.lang.String): js.Promise[java.lang.String] = js.native
   def spawn(command: java.lang.String, args: js.Array[java.lang.String]): js.Promise[java.lang.String] = js.native
   def spawn(

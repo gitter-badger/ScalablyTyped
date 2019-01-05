@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Anon_ElementOptions
-  extends org.scalablytyped.runtime.Instantiable1[/* element */ JQuery, foundationDashSitesLib.FoundationSitesNs.Magellan]
+  extends org.scalablytyped.runtime.Instantiable1[/* element */ JQuery, foundationDashSitesLib.FoundationSitesNs.Accordion]
      with org.scalablytyped.runtime.Instantiable2[
       /* element */ JQuery, 
-      /* options */ foundationDashSitesLib.FoundationSitesNs.IMagellanOptions, 
-      foundationDashSitesLib.FoundationSitesNs.Magellan
+      /* options */ foundationDashSitesLib.FoundationSitesNs.IAccordionOptions, 
+      foundationDashSitesLib.FoundationSitesNs.Accordion
     ]
 

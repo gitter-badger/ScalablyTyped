@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait IFocusZoneProps
   extends reactLib.reactMod.ReactNs.HTMLAttributes[
-      reactLib.HTMLElement | officeDashUiDashFabricDashReactLib.libComponentsFocusZoneFocusZoneMod.FocusZone
+      (reactLib.HTMLElement with stdLib.HTMLElement) | officeDashUiDashFabricDashReactLib.libComponentsFocusZoneFocusZoneMod.FocusZone
     ] {
   /** Allow focus to move to root */
   var allowFocusRoot: js.UndefOr[scala.Boolean] = js.undefined
@@ -78,7 +78,7 @@ trait IFocusZoneProps
     */
   var isInnerZoneKeystroke: js.UndefOr[
     js.Function1[
-      /* ev */ reactLib.reactMod.ReactNs.KeyboardEvent[reactLib.HTMLElement], 
+      /* ev */ reactLib.reactMod.ReactNs.KeyboardEvent[reactLib.HTMLElement with stdLib.HTMLElement], 
       scala.Boolean
     ]
   ] = js.undefined
@@ -88,8 +88,10 @@ trait IFocusZoneProps
     */
   var onActiveElementChanged: js.UndefOr[
     js.Function2[
-      /* element */ js.UndefOr[reactLib.HTMLElement], 
-      /* ev */ js.UndefOr[reactLib.reactMod.ReactNs.FocusEvent[reactLib.HTMLElement]], 
+      /* element */ js.UndefOr[reactLib.HTMLElement with stdLib.HTMLElement], 
+      /* ev */ js.UndefOr[
+        reactLib.reactMod.ReactNs.FocusEvent[reactLib.HTMLElement with stdLib.HTMLElement]
+      ], 
       scala.Unit
     ]
   ] = js.undefined
@@ -98,7 +100,12 @@ trait IFocusZoneProps
     * @param element - The child element within the zone to focus.
     * @returns True if focus should be set to the given element, false to avoid setting focus.
     */
-  var onBeforeFocus: js.UndefOr[js.Function1[/* childElement */ js.UndefOr[reactLib.HTMLElement], scala.Boolean]] = js.undefined
+  var onBeforeFocus: js.UndefOr[
+    js.Function1[
+      /* childElement */ js.UndefOr[reactLib.HTMLElement with stdLib.HTMLElement], 
+      scala.Boolean
+    ]
+  ] = js.undefined
   /**
     * Callback to notify creators that focus has been set on the FocusZone
     */
@@ -107,12 +114,19 @@ trait IFocusZoneProps
     * Deprecated at v1.12.1. DIV props provided to the FocusZone will be mixed into the root element.
     * @deprecated DIV props provided to the FocusZone will be mixed into the root element.
     */
-  var rootProps: js.UndefOr[reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLDivElement]] = js.undefined
+  var rootProps: js.UndefOr[
+    reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLDivElement with stdLib.HTMLDivElement]
+  ] = js.undefined
   /**
     * A callback method to determine if the input element should lose focus on arrow keys
     *  @param inputElement - The input element which is to loose focus.
     *  @returns True if input element should loose focus or false otherwise.
     */
-  var shouldInputLoseFocusOnArrowKey: js.UndefOr[js.Function1[/* inputElement */ reactLib.HTMLInputElement, scala.Boolean]] = js.undefined
+  var shouldInputLoseFocusOnArrowKey: js.UndefOr[
+    js.Function1[
+      /* inputElement */ reactLib.HTMLInputElement with stdLib.HTMLInputElement, 
+      scala.Boolean
+    ]
+  ] = js.undefined
 }
 

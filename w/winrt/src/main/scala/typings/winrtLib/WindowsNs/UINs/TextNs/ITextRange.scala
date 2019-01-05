@@ -34,7 +34,7 @@ trait ITextRange extends js.Object {
     verticalAlign: VerticalCharacterAlignment,
     options: PointOptions
   ): winrtLib.WindowsNs.FoundationNs.Point
-  def getRect(options: PointOptions): winrtLib.Anon_Hit
+  def getRect(options: PointOptions): winrtLib.Anon_Rect
   def getText(options: TextGetOptions): java.lang.String
   def getTextViaStream(options: TextGetOptions, value: winrtLib.WindowsNs.StorageNs.StreamsNs.IRandomAccessStream): scala.Unit
   def inRange(range: ITextRange): scala.Boolean

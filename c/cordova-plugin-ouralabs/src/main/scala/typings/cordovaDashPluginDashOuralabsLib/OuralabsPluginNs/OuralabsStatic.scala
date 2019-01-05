@@ -11,7 +11,7 @@ trait OuralabsStatic extends js.Object {
     * Log levels designate the severity of the log; used with the log() function.
     * Log levels are ordered from least severe to most severe.
     */
-  var LogLevel: cordovaDashPluginDashOuralabsLib.Anon_DEBUG = js.native
+  var LogLevel: cordovaDashPluginDashOuralabsLib.Anon_TRACE = js.native
   /**
     * Initialize the Ourlabs plugin with the given channel ID string value.
     * You can obtain your channel ID from the Ouralabs dashboard.

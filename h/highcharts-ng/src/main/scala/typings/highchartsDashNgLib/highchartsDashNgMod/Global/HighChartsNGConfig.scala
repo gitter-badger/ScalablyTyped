@@ -20,13 +20,13 @@ trait HighChartsNGConfig extends js.Object {
   //Series object (optional) - a list of series using normal highcharts series options.
   var series: js.UndefOr[js.Array[highchartsLib.highchartsMod.HighchartsNs.IndividualSeriesOptions]] = js.undefined
   //size (optional) if left out the chart will default to size of the div or something sensible.
-  var size: js.UndefOr[highchartsDashNgLib.Anon_Height] = js.undefined
+  var size: js.UndefOr[highchartsDashNgLib.Anon_Width] = js.undefined
   //Title configuration (optional)
   var title: js.UndefOr[highchartsDashNgLib.Anon_Text] = js.undefined
   //Whether to use HighStocks instead of HighCharts (optional). Defaults to false.
   var useHighStocks: js.UndefOr[scala.Boolean] = js.undefined
   //Configuration for the xAxis (optional). Currently only one x axis can be dynamically controlled.
   //properties currentMin and currentMax provied 2-way binding to the chart's maximimum and minimum
-  var xAxis: js.UndefOr[highchartsDashNgLib.Anon_CurrentMax] = js.undefined
+  var xAxis: js.UndefOr[highchartsDashNgLib.Anon_CurrentMin] = js.undefined
 }
 

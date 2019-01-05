@@ -5,11 +5,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveDifficultInheritance: 
-- Lifted 1 members from Set(std.Pick<react.react.InputHTMLAttributes<react.HTMLInputElement>, std.Exclude<keyof react.react.InputHTMLAttributes<react.HTMLInputElement>, 'size' | 'prefix'>>) */ trait InputProps extends js.Object {
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
+- Dropped {[ P in std.Exclude<keyof react.react.InputHTMLAttributes<react.HTMLInputElement & std.HTMLInputElement>, 'size' | 'prefix'> ]: react.react.InputHTMLAttributes<react.HTMLInputElement & std.HTMLInputElement>[P]} */ trait InputProps extends js.Object {
   var addonAfter: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
   var addonBefore: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
-  var onPressEnter: js.UndefOr[reactLib.reactMod.ReactNs.KeyboardEventHandler[reactLib.HTMLInputElement]] = js.undefined
+  var onPressEnter: js.UndefOr[
+    reactLib.reactMod.ReactNs.KeyboardEventHandler[reactLib.HTMLInputElement with stdLib.HTMLInputElement]
+  ] = js.undefined
   var prefix: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
   var prefixCls: js.UndefOr[java.lang.String] = js.undefined
   var size: /* import warning: ImportType.apply Failed type conversion: ['small', 'default', 'large'][number] */ js.UndefOr[

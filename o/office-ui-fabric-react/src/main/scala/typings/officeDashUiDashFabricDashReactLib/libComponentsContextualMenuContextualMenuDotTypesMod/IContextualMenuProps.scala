@@ -157,7 +157,7 @@ trait IContextualMenuProps
   var onItemClick: js.UndefOr[
     js.Function2[
       /* ev */ js.UndefOr[
-        (reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent]) | reactLib.reactMod.ReactNs.KeyboardEvent[reactLib.HTMLElement]
+        (reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement with stdLib.HTMLElement, reactLib.NativeMouseEvent]) | (reactLib.reactMod.ReactNs.KeyboardEvent[reactLib.HTMLElement with stdLib.HTMLElement])
       ], 
       /* item */ js.UndefOr[IContextualMenuItem], 
       scala.Boolean | scala.Unit
@@ -207,7 +207,7 @@ trait IContextualMenuProps
     * or a MouseEvent. If MouseEvent is given then the origin point of the event will be used.
     */
   var target: js.UndefOr[
-    reactLib.Element | java.lang.String | reactLib.MouseEvent | atUifabricUtilitiesLib.libIPointMod.IPoint | scala.Null
+    (reactLib.Element with stdLib.Element) | java.lang.String | (reactLib.MouseEvent with stdLib.MouseEvent) | atUifabricUtilitiesLib.libIPointMod.IPoint | scala.Null
   ] = js.undefined
   /**
     * Theme provided by High-Order Component.

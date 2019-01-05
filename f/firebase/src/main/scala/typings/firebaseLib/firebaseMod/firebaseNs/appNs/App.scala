@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait App extends js.Object {
   var name: java.lang.String = js.native
-  var options: coreDashJsLib.Object = js.native
+  var options: coreDashJsLib.Object with js.Object = js.native
   def auth(): firebaseLib.firebaseMod.firebaseNs.authNs.Auth = js.native
   def database(): firebaseLib.firebaseMod.firebaseNs.databaseNs.Database = js.native
   def database(url: java.lang.String): firebaseLib.firebaseMod.firebaseNs.databaseNs.Database = js.native

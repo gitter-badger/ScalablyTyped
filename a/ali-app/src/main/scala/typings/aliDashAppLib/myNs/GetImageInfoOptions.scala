@@ -15,6 +15,6 @@ trait GetImageInfoOptions
   		 */
   var src: java.lang.String
   @JSName("success")
-  var success_GetImageInfoOptions: js.UndefOr[js.Function1[/* res */ aliDashAppLib.Anon_Height, scala.Unit]] = js.undefined
+  var success_GetImageInfoOptions: js.UndefOr[js.Function1[/* res */ aliDashAppLib.Anon_Width, scala.Unit]] = js.undefined
 }
 

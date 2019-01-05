@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait MessageBoxesOptions extends MessageBoxesDefault {
   var bodyClass: js.UndefOr[java.lang.String] = js.undefined
-  var buttons: js.UndefOr[lobiboxLib.Anon_Cancel | js.Any] = js.undefined
+  var buttons: js.UndefOr[lobiboxLib.Anon_Ok | js.Any] = js.undefined
   @JSName("buttonsAlign")
   var buttonsAlign_MessageBoxesOptions: js.UndefOr[js.Any] = js.undefined
   var callback: js.UndefOr[
@@ -18,6 +18,6 @@ trait MessageBoxesOptions extends MessageBoxesDefault {
       scala.Unit
     ]
   ] = js.undefined
-  var modalClasses: js.UndefOr[lobiboxLib.Anon_Window] = js.undefined
+  var modalClasses: js.UndefOr[lobiboxLib.Anon_Error] = js.undefined
 }
 

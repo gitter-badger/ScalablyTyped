@@ -69,7 +69,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.Application, 
-      /* parameter */ Anon_Cancel, 
+      /* parameter */ Anon_FolderToShare, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -92,7 +92,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.Application, 
-      /* parameter */ Anon_Folder, 
+      /* parameter */ Anon_CommandBarFolder, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -240,7 +240,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.AppointmentItem, 
-      /* parameter */ Anon_CancelAttachment, 
+      /* parameter */ Anon_AttachmentCancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -253,7 +253,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.AppointmentItem, 
-      /* parameter */ Anon_CancelAttachment, 
+      /* parameter */ Anon_AttachmentCancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -266,7 +266,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.AppointmentItem, 
-      /* parameter */ Anon_CancelAttachment, 
+      /* parameter */ Anon_AttachmentCancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -279,7 +279,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.AppointmentItem, 
-      /* parameter */ Anon_CancelAttachment, 
+      /* parameter */ Anon_AttachmentCancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -292,7 +292,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.AppointmentItem, 
-      /* parameter */ Anon_CancelAttachment, 
+      /* parameter */ Anon_AttachmentCancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -302,7 +302,7 @@ trait ActiveXObject extends js.Object {
     argNames: js.Array[activexDashOutlookLib.activexDashOutlookLibStrings.Cancel],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.AppointmentItem, 
-      /* parameter */ Anon_CancelBoolean, 
+      /* parameter */ Anon_Cancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -312,7 +312,7 @@ trait ActiveXObject extends js.Object {
     argNames: js.Array[activexDashOutlookLib.activexDashOutlookLibStrings.Cancel],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.AppointmentItem, 
-      /* parameter */ Anon_CancelBoolean, 
+      /* parameter */ Anon_Cancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -335,7 +335,7 @@ trait ActiveXObject extends js.Object {
     argNames: js.Array[activexDashOutlookLib.activexDashOutlookLibStrings.Cancel],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.AppointmentItem, 
-      /* parameter */ Anon_CancelBoolean, 
+      /* parameter */ Anon_Cancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -382,7 +382,7 @@ trait ActiveXObject extends js.Object {
     argNames: js.Array[activexDashOutlookLib.activexDashOutlookLibStrings.Cancel],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.AppointmentItem, 
-      /* parameter */ Anon_CancelBoolean, 
+      /* parameter */ Anon_Cancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -405,7 +405,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.AppointmentItem, 
-      /* parameter */ Anon_CancelResponse, 
+      /* parameter */ Anon_Response, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -418,7 +418,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.AppointmentItem, 
-      /* parameter */ Anon_CancelResponse, 
+      /* parameter */ Anon_Response, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -428,7 +428,7 @@ trait ActiveXObject extends js.Object {
     argNames: js.Array[activexDashOutlookLib.activexDashOutlookLibStrings.Cancel],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.AppointmentItem, 
-      /* parameter */ Anon_CancelBoolean, 
+      /* parameter */ Anon_Cancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -438,7 +438,7 @@ trait ActiveXObject extends js.Object {
     argNames: js.Array[activexDashOutlookLib.activexDashOutlookLibStrings.Cancel],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.AppointmentItem, 
-      /* parameter */ Anon_CancelBoolean, 
+      /* parameter */ Anon_Cancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -481,7 +481,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.ContactItem, 
-      /* parameter */ Anon_CancelAttachment, 
+      /* parameter */ Anon_AttachmentCancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -494,7 +494,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.ContactItem, 
-      /* parameter */ Anon_CancelAttachment, 
+      /* parameter */ Anon_AttachmentCancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -507,7 +507,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.ContactItem, 
-      /* parameter */ Anon_CancelAttachment, 
+      /* parameter */ Anon_AttachmentCancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -520,7 +520,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.ContactItem, 
-      /* parameter */ Anon_CancelAttachment, 
+      /* parameter */ Anon_AttachmentCancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -533,7 +533,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.ContactItem, 
-      /* parameter */ Anon_CancelAttachment, 
+      /* parameter */ Anon_AttachmentCancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -543,7 +543,7 @@ trait ActiveXObject extends js.Object {
     argNames: js.Array[activexDashOutlookLib.activexDashOutlookLibStrings.Cancel],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.ContactItem, 
-      /* parameter */ Anon_CancelBoolean, 
+      /* parameter */ Anon_Cancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -553,7 +553,7 @@ trait ActiveXObject extends js.Object {
     argNames: js.Array[activexDashOutlookLib.activexDashOutlookLibStrings.Cancel],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.ContactItem, 
-      /* parameter */ Anon_CancelBoolean, 
+      /* parameter */ Anon_Cancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -576,7 +576,7 @@ trait ActiveXObject extends js.Object {
     argNames: js.Array[activexDashOutlookLib.activexDashOutlookLibStrings.Cancel],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.ContactItem, 
-      /* parameter */ Anon_CancelBoolean, 
+      /* parameter */ Anon_Cancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -623,7 +623,7 @@ trait ActiveXObject extends js.Object {
     argNames: js.Array[activexDashOutlookLib.activexDashOutlookLibStrings.Cancel],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.ContactItem, 
-      /* parameter */ Anon_CancelBoolean, 
+      /* parameter */ Anon_Cancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -646,7 +646,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.ContactItem, 
-      /* parameter */ Anon_CancelResponse, 
+      /* parameter */ Anon_Response, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -659,7 +659,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.ContactItem, 
-      /* parameter */ Anon_CancelResponse, 
+      /* parameter */ Anon_Response, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -669,7 +669,7 @@ trait ActiveXObject extends js.Object {
     argNames: js.Array[activexDashOutlookLib.activexDashOutlookLibStrings.Cancel],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.ContactItem, 
-      /* parameter */ Anon_CancelBoolean, 
+      /* parameter */ Anon_Cancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -679,7 +679,7 @@ trait ActiveXObject extends js.Object {
     argNames: js.Array[activexDashOutlookLib.activexDashOutlookLibStrings.Cancel],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.ContactItem, 
-      /* parameter */ Anon_CancelBoolean, 
+      /* parameter */ Anon_Cancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -722,7 +722,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.DistListItem, 
-      /* parameter */ Anon_CancelAttachment, 
+      /* parameter */ Anon_AttachmentCancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -735,7 +735,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.DistListItem, 
-      /* parameter */ Anon_CancelAttachment, 
+      /* parameter */ Anon_AttachmentCancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -748,7 +748,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.DistListItem, 
-      /* parameter */ Anon_CancelAttachment, 
+      /* parameter */ Anon_AttachmentCancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -761,7 +761,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.DistListItem, 
-      /* parameter */ Anon_CancelAttachment, 
+      /* parameter */ Anon_AttachmentCancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -774,7 +774,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.DistListItem, 
-      /* parameter */ Anon_CancelAttachment, 
+      /* parameter */ Anon_AttachmentCancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -784,7 +784,7 @@ trait ActiveXObject extends js.Object {
     argNames: js.Array[activexDashOutlookLib.activexDashOutlookLibStrings.Cancel],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.DistListItem, 
-      /* parameter */ Anon_CancelBoolean, 
+      /* parameter */ Anon_Cancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -794,7 +794,7 @@ trait ActiveXObject extends js.Object {
     argNames: js.Array[activexDashOutlookLib.activexDashOutlookLibStrings.Cancel],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.DistListItem, 
-      /* parameter */ Anon_CancelBoolean, 
+      /* parameter */ Anon_Cancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -817,7 +817,7 @@ trait ActiveXObject extends js.Object {
     argNames: js.Array[activexDashOutlookLib.activexDashOutlookLibStrings.Cancel],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.DistListItem, 
-      /* parameter */ Anon_CancelBoolean, 
+      /* parameter */ Anon_Cancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -864,7 +864,7 @@ trait ActiveXObject extends js.Object {
     argNames: js.Array[activexDashOutlookLib.activexDashOutlookLibStrings.Cancel],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.DistListItem, 
-      /* parameter */ Anon_CancelBoolean, 
+      /* parameter */ Anon_Cancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -887,7 +887,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.DistListItem, 
-      /* parameter */ Anon_CancelResponse, 
+      /* parameter */ Anon_Response, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -900,7 +900,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.DistListItem, 
-      /* parameter */ Anon_CancelResponse, 
+      /* parameter */ Anon_Response, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -910,7 +910,7 @@ trait ActiveXObject extends js.Object {
     argNames: js.Array[activexDashOutlookLib.activexDashOutlookLibStrings.Cancel],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.DistListItem, 
-      /* parameter */ Anon_CancelBoolean, 
+      /* parameter */ Anon_Cancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -920,7 +920,7 @@ trait ActiveXObject extends js.Object {
     argNames: js.Array[activexDashOutlookLib.activexDashOutlookLibStrings.Cancel],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.DistListItem, 
-      /* parameter */ Anon_CancelBoolean, 
+      /* parameter */ Anon_Cancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -963,7 +963,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.DocumentItem, 
-      /* parameter */ Anon_CancelAttachment, 
+      /* parameter */ Anon_AttachmentCancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -976,7 +976,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.DocumentItem, 
-      /* parameter */ Anon_CancelAttachment, 
+      /* parameter */ Anon_AttachmentCancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -989,7 +989,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.DocumentItem, 
-      /* parameter */ Anon_CancelAttachment, 
+      /* parameter */ Anon_AttachmentCancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -1002,7 +1002,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.DocumentItem, 
-      /* parameter */ Anon_CancelAttachment, 
+      /* parameter */ Anon_AttachmentCancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -1015,7 +1015,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.DocumentItem, 
-      /* parameter */ Anon_CancelAttachment, 
+      /* parameter */ Anon_AttachmentCancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -1025,7 +1025,7 @@ trait ActiveXObject extends js.Object {
     argNames: js.Array[activexDashOutlookLib.activexDashOutlookLibStrings.Cancel],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.DocumentItem, 
-      /* parameter */ Anon_CancelBoolean, 
+      /* parameter */ Anon_Cancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -1035,7 +1035,7 @@ trait ActiveXObject extends js.Object {
     argNames: js.Array[activexDashOutlookLib.activexDashOutlookLibStrings.Cancel],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.DocumentItem, 
-      /* parameter */ Anon_CancelBoolean, 
+      /* parameter */ Anon_Cancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -1058,7 +1058,7 @@ trait ActiveXObject extends js.Object {
     argNames: js.Array[activexDashOutlookLib.activexDashOutlookLibStrings.Cancel],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.DocumentItem, 
-      /* parameter */ Anon_CancelBoolean, 
+      /* parameter */ Anon_Cancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -1105,7 +1105,7 @@ trait ActiveXObject extends js.Object {
     argNames: js.Array[activexDashOutlookLib.activexDashOutlookLibStrings.Cancel],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.DocumentItem, 
-      /* parameter */ Anon_CancelBoolean, 
+      /* parameter */ Anon_Cancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -1128,7 +1128,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.DocumentItem, 
-      /* parameter */ Anon_CancelResponse, 
+      /* parameter */ Anon_Response, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -1141,7 +1141,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.DocumentItem, 
-      /* parameter */ Anon_CancelResponse, 
+      /* parameter */ Anon_Response, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -1151,7 +1151,7 @@ trait ActiveXObject extends js.Object {
     argNames: js.Array[activexDashOutlookLib.activexDashOutlookLibStrings.Cancel],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.DocumentItem, 
-      /* parameter */ Anon_CancelBoolean, 
+      /* parameter */ Anon_Cancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -1161,7 +1161,7 @@ trait ActiveXObject extends js.Object {
     argNames: js.Array[activexDashOutlookLib.activexDashOutlookLibStrings.Cancel],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.DocumentItem, 
-      /* parameter */ Anon_CancelBoolean, 
+      /* parameter */ Anon_Cancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -1174,7 +1174,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.Explorer, 
-      /* parameter */ Anon_CancelNewFolder, 
+      /* parameter */ Anon_NewFolder, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -1184,7 +1184,7 @@ trait ActiveXObject extends js.Object {
     argNames: js.Array[activexDashOutlookLib.activexDashOutlookLibStrings.Cancel],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.Explorer, 
-      /* parameter */ Anon_CancelBoolean, 
+      /* parameter */ Anon_Cancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -1194,7 +1194,7 @@ trait ActiveXObject extends js.Object {
     argNames: js.Array[activexDashOutlookLib.activexDashOutlookLibStrings.Cancel],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.Explorer, 
-      /* parameter */ Anon_CancelBoolean, 
+      /* parameter */ Anon_Cancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -1218,7 +1218,7 @@ trait ActiveXObject extends js.Object {
     argNames: js.Array[activexDashOutlookLib.activexDashOutlookLibStrings.Cancel],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.Explorer, 
-      /* parameter */ Anon_CancelBoolean, 
+      /* parameter */ Anon_Cancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -1228,7 +1228,7 @@ trait ActiveXObject extends js.Object {
     argNames: js.Array[activexDashOutlookLib.activexDashOutlookLibStrings.Cancel],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.Explorer, 
-      /* parameter */ Anon_CancelBoolean, 
+      /* parameter */ Anon_Cancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -1238,7 +1238,7 @@ trait ActiveXObject extends js.Object {
     argNames: js.Array[activexDashOutlookLib.activexDashOutlookLibStrings.Cancel],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.Explorer, 
-      /* parameter */ Anon_CancelBoolean, 
+      /* parameter */ Anon_Cancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -1248,7 +1248,7 @@ trait ActiveXObject extends js.Object {
     argNames: js.Array[activexDashOutlookLib.activexDashOutlookLibStrings.Cancel],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.Explorer, 
-      /* parameter */ Anon_CancelBoolean, 
+      /* parameter */ Anon_Cancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -1261,7 +1261,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.Explorer, 
-      /* parameter */ Anon_CancelNewView, 
+      /* parameter */ Anon_NewView, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -1284,7 +1284,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.Folder, 
-      /* parameter */ Anon_CancelMoveTo, 
+      /* parameter */ Anon_MoveTo, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -1298,7 +1298,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.Folder, 
-      /* parameter */ Anon_ItemCancelMoveTo, 
+      /* parameter */ Anon_ItemMoveTo, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -1308,7 +1308,7 @@ trait ActiveXObject extends js.Object {
     argNames: js.Array[activexDashOutlookLib.activexDashOutlookLibStrings.Folder],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.Folders, 
-      /* parameter */ Anon_Folder_512740366, 
+      /* parameter */ Anon_Folder, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -1318,7 +1318,7 @@ trait ActiveXObject extends js.Object {
     argNames: js.Array[activexDashOutlookLib.activexDashOutlookLibStrings.Folder],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.Folders, 
-      /* parameter */ Anon_Folder_512740366, 
+      /* parameter */ Anon_Folder, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -1338,7 +1338,7 @@ trait ActiveXObject extends js.Object {
     argNames: js.Array[activexDashOutlookLib.activexDashOutlookLibStrings.Cancel],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.Inspector, 
-      /* parameter */ Anon_CancelBoolean, 
+      /* parameter */ Anon_Cancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -1348,7 +1348,7 @@ trait ActiveXObject extends js.Object {
     argNames: js.Array[activexDashOutlookLib.activexDashOutlookLibStrings.Cancel],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.Inspector, 
-      /* parameter */ Anon_CancelBoolean, 
+      /* parameter */ Anon_Cancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -1358,7 +1358,7 @@ trait ActiveXObject extends js.Object {
     argNames: js.Array[activexDashOutlookLib.activexDashOutlookLibStrings.Cancel],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.Inspector, 
-      /* parameter */ Anon_CancelBoolean, 
+      /* parameter */ Anon_Cancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -1368,7 +1368,7 @@ trait ActiveXObject extends js.Object {
     argNames: js.Array[activexDashOutlookLib.activexDashOutlookLibStrings.Cancel],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.Inspector, 
-      /* parameter */ Anon_CancelBoolean, 
+      /* parameter */ Anon_Cancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -1451,7 +1451,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.JournalItem, 
-      /* parameter */ Anon_CancelAttachment, 
+      /* parameter */ Anon_AttachmentCancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -1464,7 +1464,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.JournalItem, 
-      /* parameter */ Anon_CancelAttachment, 
+      /* parameter */ Anon_AttachmentCancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -1477,7 +1477,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.JournalItem, 
-      /* parameter */ Anon_CancelAttachment, 
+      /* parameter */ Anon_AttachmentCancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -1490,7 +1490,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.JournalItem, 
-      /* parameter */ Anon_CancelAttachment, 
+      /* parameter */ Anon_AttachmentCancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -1503,7 +1503,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.JournalItem, 
-      /* parameter */ Anon_CancelAttachment, 
+      /* parameter */ Anon_AttachmentCancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -1513,7 +1513,7 @@ trait ActiveXObject extends js.Object {
     argNames: js.Array[activexDashOutlookLib.activexDashOutlookLibStrings.Cancel],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.JournalItem, 
-      /* parameter */ Anon_CancelBoolean, 
+      /* parameter */ Anon_Cancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -1523,7 +1523,7 @@ trait ActiveXObject extends js.Object {
     argNames: js.Array[activexDashOutlookLib.activexDashOutlookLibStrings.Cancel],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.JournalItem, 
-      /* parameter */ Anon_CancelBoolean, 
+      /* parameter */ Anon_Cancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -1546,7 +1546,7 @@ trait ActiveXObject extends js.Object {
     argNames: js.Array[activexDashOutlookLib.activexDashOutlookLibStrings.Cancel],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.JournalItem, 
-      /* parameter */ Anon_CancelBoolean, 
+      /* parameter */ Anon_Cancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -1593,7 +1593,7 @@ trait ActiveXObject extends js.Object {
     argNames: js.Array[activexDashOutlookLib.activexDashOutlookLibStrings.Cancel],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.JournalItem, 
-      /* parameter */ Anon_CancelBoolean, 
+      /* parameter */ Anon_Cancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -1616,7 +1616,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.JournalItem, 
-      /* parameter */ Anon_CancelResponse, 
+      /* parameter */ Anon_Response, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -1629,7 +1629,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.JournalItem, 
-      /* parameter */ Anon_CancelResponse, 
+      /* parameter */ Anon_Response, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -1639,7 +1639,7 @@ trait ActiveXObject extends js.Object {
     argNames: js.Array[activexDashOutlookLib.activexDashOutlookLibStrings.Cancel],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.JournalItem, 
-      /* parameter */ Anon_CancelBoolean, 
+      /* parameter */ Anon_Cancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -1649,7 +1649,7 @@ trait ActiveXObject extends js.Object {
     argNames: js.Array[activexDashOutlookLib.activexDashOutlookLibStrings.Cancel],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.JournalItem, 
-      /* parameter */ Anon_CancelBoolean, 
+      /* parameter */ Anon_Cancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -1692,7 +1692,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.MailItem, 
-      /* parameter */ Anon_CancelAttachment, 
+      /* parameter */ Anon_AttachmentCancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -1705,7 +1705,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.MailItem, 
-      /* parameter */ Anon_CancelAttachment, 
+      /* parameter */ Anon_AttachmentCancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -1718,7 +1718,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.MailItem, 
-      /* parameter */ Anon_CancelAttachment, 
+      /* parameter */ Anon_AttachmentCancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -1731,7 +1731,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.MailItem, 
-      /* parameter */ Anon_CancelAttachment, 
+      /* parameter */ Anon_AttachmentCancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -1744,7 +1744,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.MailItem, 
-      /* parameter */ Anon_CancelAttachment, 
+      /* parameter */ Anon_AttachmentCancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -1754,7 +1754,7 @@ trait ActiveXObject extends js.Object {
     argNames: js.Array[activexDashOutlookLib.activexDashOutlookLibStrings.Cancel],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.MailItem, 
-      /* parameter */ Anon_CancelBoolean, 
+      /* parameter */ Anon_Cancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -1764,7 +1764,7 @@ trait ActiveXObject extends js.Object {
     argNames: js.Array[activexDashOutlookLib.activexDashOutlookLibStrings.Cancel],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.MailItem, 
-      /* parameter */ Anon_CancelBoolean, 
+      /* parameter */ Anon_Cancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -1787,7 +1787,7 @@ trait ActiveXObject extends js.Object {
     argNames: js.Array[activexDashOutlookLib.activexDashOutlookLibStrings.Cancel],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.MailItem, 
-      /* parameter */ Anon_CancelBoolean, 
+      /* parameter */ Anon_Cancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -1834,7 +1834,7 @@ trait ActiveXObject extends js.Object {
     argNames: js.Array[activexDashOutlookLib.activexDashOutlookLibStrings.Cancel],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.MailItem, 
-      /* parameter */ Anon_CancelBoolean, 
+      /* parameter */ Anon_Cancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -1857,7 +1857,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.MailItem, 
-      /* parameter */ Anon_CancelResponse, 
+      /* parameter */ Anon_Response, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -1870,7 +1870,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.MailItem, 
-      /* parameter */ Anon_CancelResponse, 
+      /* parameter */ Anon_Response, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -1880,7 +1880,7 @@ trait ActiveXObject extends js.Object {
     argNames: js.Array[activexDashOutlookLib.activexDashOutlookLibStrings.Cancel],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.MailItem, 
-      /* parameter */ Anon_CancelBoolean, 
+      /* parameter */ Anon_Cancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -1890,7 +1890,7 @@ trait ActiveXObject extends js.Object {
     argNames: js.Array[activexDashOutlookLib.activexDashOutlookLibStrings.Cancel],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.MailItem, 
-      /* parameter */ Anon_CancelBoolean, 
+      /* parameter */ Anon_Cancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -1933,7 +1933,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.MeetingItem, 
-      /* parameter */ Anon_CancelAttachment, 
+      /* parameter */ Anon_AttachmentCancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -1946,7 +1946,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.MeetingItem, 
-      /* parameter */ Anon_CancelAttachment, 
+      /* parameter */ Anon_AttachmentCancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -1959,7 +1959,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.MeetingItem, 
-      /* parameter */ Anon_CancelAttachment, 
+      /* parameter */ Anon_AttachmentCancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -1972,7 +1972,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.MeetingItem, 
-      /* parameter */ Anon_CancelAttachment, 
+      /* parameter */ Anon_AttachmentCancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -1985,7 +1985,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.MeetingItem, 
-      /* parameter */ Anon_CancelAttachment, 
+      /* parameter */ Anon_AttachmentCancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -1995,7 +1995,7 @@ trait ActiveXObject extends js.Object {
     argNames: js.Array[activexDashOutlookLib.activexDashOutlookLibStrings.Cancel],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.MeetingItem, 
-      /* parameter */ Anon_CancelBoolean, 
+      /* parameter */ Anon_Cancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -2005,7 +2005,7 @@ trait ActiveXObject extends js.Object {
     argNames: js.Array[activexDashOutlookLib.activexDashOutlookLibStrings.Cancel],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.MeetingItem, 
-      /* parameter */ Anon_CancelBoolean, 
+      /* parameter */ Anon_Cancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -2028,7 +2028,7 @@ trait ActiveXObject extends js.Object {
     argNames: js.Array[activexDashOutlookLib.activexDashOutlookLibStrings.Cancel],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.MeetingItem, 
-      /* parameter */ Anon_CancelBoolean, 
+      /* parameter */ Anon_Cancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -2075,7 +2075,7 @@ trait ActiveXObject extends js.Object {
     argNames: js.Array[activexDashOutlookLib.activexDashOutlookLibStrings.Cancel],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.MeetingItem, 
-      /* parameter */ Anon_CancelBoolean, 
+      /* parameter */ Anon_Cancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -2098,7 +2098,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.MeetingItem, 
-      /* parameter */ Anon_CancelResponse, 
+      /* parameter */ Anon_Response, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -2111,7 +2111,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.MeetingItem, 
-      /* parameter */ Anon_CancelResponse, 
+      /* parameter */ Anon_Response, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -2121,7 +2121,7 @@ trait ActiveXObject extends js.Object {
     argNames: js.Array[activexDashOutlookLib.activexDashOutlookLibStrings.Cancel],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.MeetingItem, 
-      /* parameter */ Anon_CancelBoolean, 
+      /* parameter */ Anon_Cancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -2131,7 +2131,7 @@ trait ActiveXObject extends js.Object {
     argNames: js.Array[activexDashOutlookLib.activexDashOutlookLibStrings.Cancel],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.MeetingItem, 
-      /* parameter */ Anon_CancelBoolean, 
+      /* parameter */ Anon_Cancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -2174,7 +2174,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.MobileItem, 
-      /* parameter */ Anon_CancelAttachment, 
+      /* parameter */ Anon_AttachmentCancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -2187,7 +2187,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.MobileItem, 
-      /* parameter */ Anon_CancelAttachment, 
+      /* parameter */ Anon_AttachmentCancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -2200,7 +2200,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.MobileItem, 
-      /* parameter */ Anon_CancelAttachment, 
+      /* parameter */ Anon_AttachmentCancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -2213,7 +2213,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.MobileItem, 
-      /* parameter */ Anon_CancelAttachment, 
+      /* parameter */ Anon_AttachmentCancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -2226,7 +2226,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.MobileItem, 
-      /* parameter */ Anon_CancelAttachment, 
+      /* parameter */ Anon_AttachmentCancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -2236,7 +2236,7 @@ trait ActiveXObject extends js.Object {
     argNames: js.Array[activexDashOutlookLib.activexDashOutlookLibStrings.Cancel],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.MobileItem, 
-      /* parameter */ Anon_CancelBoolean, 
+      /* parameter */ Anon_Cancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -2246,7 +2246,7 @@ trait ActiveXObject extends js.Object {
     argNames: js.Array[activexDashOutlookLib.activexDashOutlookLibStrings.Cancel],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.MobileItem, 
-      /* parameter */ Anon_CancelBoolean, 
+      /* parameter */ Anon_Cancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -2269,7 +2269,7 @@ trait ActiveXObject extends js.Object {
     argNames: js.Array[activexDashOutlookLib.activexDashOutlookLibStrings.Cancel],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.MobileItem, 
-      /* parameter */ Anon_CancelBoolean, 
+      /* parameter */ Anon_Cancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -2316,7 +2316,7 @@ trait ActiveXObject extends js.Object {
     argNames: js.Array[activexDashOutlookLib.activexDashOutlookLibStrings.Cancel],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.MobileItem, 
-      /* parameter */ Anon_CancelBoolean, 
+      /* parameter */ Anon_Cancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -2339,7 +2339,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.MobileItem, 
-      /* parameter */ Anon_CancelResponse, 
+      /* parameter */ Anon_Response, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -2352,7 +2352,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.MobileItem, 
-      /* parameter */ Anon_CancelResponse, 
+      /* parameter */ Anon_Response, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -2362,7 +2362,7 @@ trait ActiveXObject extends js.Object {
     argNames: js.Array[activexDashOutlookLib.activexDashOutlookLibStrings.Cancel],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.MobileItem, 
-      /* parameter */ Anon_CancelBoolean, 
+      /* parameter */ Anon_Cancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -2372,7 +2372,7 @@ trait ActiveXObject extends js.Object {
     argNames: js.Array[activexDashOutlookLib.activexDashOutlookLibStrings.Cancel],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.MobileItem, 
-      /* parameter */ Anon_CancelBoolean, 
+      /* parameter */ Anon_Cancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -2385,7 +2385,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.NameSpace, 
-      /* parameter */ Anon_FolderPages, 
+      /* parameter */ Anon_PagesFolder, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -2430,7 +2430,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.OlkBusinessCardControl, 
-      /* parameter */ Anon_Y, 
+      /* parameter */ Anon_Button, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -2445,7 +2445,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.OlkBusinessCardControl, 
-      /* parameter */ Anon_Y, 
+      /* parameter */ Anon_Button, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -2460,7 +2460,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.OlkBusinessCardControl, 
-      /* parameter */ Anon_Y, 
+      /* parameter */ Anon_Button, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -2470,7 +2470,7 @@ trait ActiveXObject extends js.Object {
     argNames: js.Array[activexDashOutlookLib.activexDashOutlookLibStrings.Cancel],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.OlkCategory, 
-      /* parameter */ Anon_CancelBoolean_1343446035, 
+      /* parameter */ Anon_CancelBoolean, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -2521,7 +2521,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.OlkCategory, 
-      /* parameter */ Anon_Y, 
+      /* parameter */ Anon_Button, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -2536,7 +2536,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.OlkCategory, 
-      /* parameter */ Anon_Y, 
+      /* parameter */ Anon_Button, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -2551,7 +2551,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.OlkCategory, 
-      /* parameter */ Anon_Y, 
+      /* parameter */ Anon_Button, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -2561,7 +2561,7 @@ trait ActiveXObject extends js.Object {
     argNames: js.Array[activexDashOutlookLib.activexDashOutlookLibStrings.Cancel],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.OlkCheckBox, 
-      /* parameter */ Anon_CancelBoolean_1343446035, 
+      /* parameter */ Anon_CancelBoolean, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -2571,7 +2571,7 @@ trait ActiveXObject extends js.Object {
     argNames: js.Array[activexDashOutlookLib.activexDashOutlookLibStrings.Cancel],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.OlkCheckBox, 
-      /* parameter */ Anon_CancelBoolean_1343446035, 
+      /* parameter */ Anon_CancelBoolean, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -2622,7 +2622,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.OlkCheckBox, 
-      /* parameter */ Anon_Y, 
+      /* parameter */ Anon_Button, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -2637,7 +2637,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.OlkCheckBox, 
-      /* parameter */ Anon_Y, 
+      /* parameter */ Anon_Button, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -2652,7 +2652,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.OlkCheckBox, 
-      /* parameter */ Anon_Y, 
+      /* parameter */ Anon_Button, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -2662,7 +2662,7 @@ trait ActiveXObject extends js.Object {
     argNames: js.Array[activexDashOutlookLib.activexDashOutlookLibStrings.Cancel],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.OlkComboBox, 
-      /* parameter */ Anon_CancelBoolean_1343446035, 
+      /* parameter */ Anon_CancelBoolean, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -2672,7 +2672,7 @@ trait ActiveXObject extends js.Object {
     argNames: js.Array[activexDashOutlookLib.activexDashOutlookLibStrings.Cancel],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.OlkComboBox, 
-      /* parameter */ Anon_CancelBoolean_1343446035, 
+      /* parameter */ Anon_CancelBoolean, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -2723,7 +2723,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.OlkComboBox, 
-      /* parameter */ Anon_Y, 
+      /* parameter */ Anon_Button, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -2738,7 +2738,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.OlkComboBox, 
-      /* parameter */ Anon_Y, 
+      /* parameter */ Anon_Button, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -2753,7 +2753,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.OlkComboBox, 
-      /* parameter */ Anon_Y, 
+      /* parameter */ Anon_Button, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -2763,7 +2763,7 @@ trait ActiveXObject extends js.Object {
     argNames: js.Array[activexDashOutlookLib.activexDashOutlookLibStrings.Cancel],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.OlkCommandButton, 
-      /* parameter */ Anon_CancelBoolean_1343446035, 
+      /* parameter */ Anon_CancelBoolean, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -2773,7 +2773,7 @@ trait ActiveXObject extends js.Object {
     argNames: js.Array[activexDashOutlookLib.activexDashOutlookLibStrings.Cancel],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.OlkCommandButton, 
-      /* parameter */ Anon_CancelBoolean_1343446035, 
+      /* parameter */ Anon_CancelBoolean, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -2824,7 +2824,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.OlkCommandButton, 
-      /* parameter */ Anon_Y, 
+      /* parameter */ Anon_Button, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -2839,7 +2839,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.OlkCommandButton, 
-      /* parameter */ Anon_Y, 
+      /* parameter */ Anon_Button, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -2854,7 +2854,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.OlkCommandButton, 
-      /* parameter */ Anon_Y, 
+      /* parameter */ Anon_Button, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -2864,7 +2864,7 @@ trait ActiveXObject extends js.Object {
     argNames: js.Array[activexDashOutlookLib.activexDashOutlookLibStrings.Cancel],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.OlkContactPhoto, 
-      /* parameter */ Anon_CancelBoolean_1343446035, 
+      /* parameter */ Anon_CancelBoolean, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -2915,7 +2915,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.OlkContactPhoto, 
-      /* parameter */ Anon_Y, 
+      /* parameter */ Anon_Button, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -2930,7 +2930,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.OlkContactPhoto, 
-      /* parameter */ Anon_Y, 
+      /* parameter */ Anon_Button, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -2945,7 +2945,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.OlkContactPhoto, 
-      /* parameter */ Anon_Y, 
+      /* parameter */ Anon_Button, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -2955,7 +2955,7 @@ trait ActiveXObject extends js.Object {
     argNames: js.Array[activexDashOutlookLib.activexDashOutlookLibStrings.Cancel],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.OlkDateControl, 
-      /* parameter */ Anon_CancelBoolean_1343446035, 
+      /* parameter */ Anon_CancelBoolean, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -2965,7 +2965,7 @@ trait ActiveXObject extends js.Object {
     argNames: js.Array[activexDashOutlookLib.activexDashOutlookLibStrings.Cancel],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.OlkDateControl, 
-      /* parameter */ Anon_CancelBoolean_1343446035, 
+      /* parameter */ Anon_CancelBoolean, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -3016,7 +3016,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.OlkDateControl, 
-      /* parameter */ Anon_Y, 
+      /* parameter */ Anon_Button, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -3031,7 +3031,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.OlkDateControl, 
-      /* parameter */ Anon_Y, 
+      /* parameter */ Anon_Button, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -3046,7 +3046,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.OlkDateControl, 
-      /* parameter */ Anon_Y, 
+      /* parameter */ Anon_Button, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -3061,7 +3061,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.OlkInfoBar, 
-      /* parameter */ Anon_Y, 
+      /* parameter */ Anon_Button, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -3076,7 +3076,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.OlkInfoBar, 
-      /* parameter */ Anon_Y, 
+      /* parameter */ Anon_Button, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -3091,7 +3091,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.OlkInfoBar, 
-      /* parameter */ Anon_Y, 
+      /* parameter */ Anon_Button, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -3106,7 +3106,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.OlkLabel, 
-      /* parameter */ Anon_Y, 
+      /* parameter */ Anon_Button, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -3121,7 +3121,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.OlkLabel, 
-      /* parameter */ Anon_Y, 
+      /* parameter */ Anon_Button, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -3136,7 +3136,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.OlkLabel, 
-      /* parameter */ Anon_Y, 
+      /* parameter */ Anon_Button, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -3146,7 +3146,7 @@ trait ActiveXObject extends js.Object {
     argNames: js.Array[activexDashOutlookLib.activexDashOutlookLibStrings.Cancel],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.OlkListBox, 
-      /* parameter */ Anon_CancelBoolean_1343446035, 
+      /* parameter */ Anon_CancelBoolean, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -3156,7 +3156,7 @@ trait ActiveXObject extends js.Object {
     argNames: js.Array[activexDashOutlookLib.activexDashOutlookLibStrings.Cancel],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.OlkListBox, 
-      /* parameter */ Anon_CancelBoolean_1343446035, 
+      /* parameter */ Anon_CancelBoolean, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -3207,7 +3207,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.OlkListBox, 
-      /* parameter */ Anon_Y, 
+      /* parameter */ Anon_Button, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -3222,7 +3222,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.OlkListBox, 
-      /* parameter */ Anon_Y, 
+      /* parameter */ Anon_Button, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -3237,7 +3237,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.OlkListBox, 
-      /* parameter */ Anon_Y, 
+      /* parameter */ Anon_Button, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -3247,7 +3247,7 @@ trait ActiveXObject extends js.Object {
     argNames: js.Array[activexDashOutlookLib.activexDashOutlookLibStrings.Cancel],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.OlkOptionButton, 
-      /* parameter */ Anon_CancelBoolean_1343446035, 
+      /* parameter */ Anon_CancelBoolean, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -3257,7 +3257,7 @@ trait ActiveXObject extends js.Object {
     argNames: js.Array[activexDashOutlookLib.activexDashOutlookLibStrings.Cancel],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.OlkOptionButton, 
-      /* parameter */ Anon_CancelBoolean_1343446035, 
+      /* parameter */ Anon_CancelBoolean, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -3308,7 +3308,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.OlkOptionButton, 
-      /* parameter */ Anon_Y, 
+      /* parameter */ Anon_Button, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -3323,7 +3323,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.OlkOptionButton, 
-      /* parameter */ Anon_Y, 
+      /* parameter */ Anon_Button, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -3338,7 +3338,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.OlkOptionButton, 
-      /* parameter */ Anon_Y, 
+      /* parameter */ Anon_Button, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -3353,7 +3353,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.OlkSenderPhoto, 
-      /* parameter */ Anon_Y, 
+      /* parameter */ Anon_Button, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -3368,7 +3368,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.OlkSenderPhoto, 
-      /* parameter */ Anon_Y, 
+      /* parameter */ Anon_Button, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -3383,7 +3383,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.OlkSenderPhoto, 
-      /* parameter */ Anon_Y, 
+      /* parameter */ Anon_Button, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -3393,7 +3393,7 @@ trait ActiveXObject extends js.Object {
     argNames: js.Array[activexDashOutlookLib.activexDashOutlookLibStrings.Cancel],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.OlkTextBox, 
-      /* parameter */ Anon_CancelBoolean_1343446035, 
+      /* parameter */ Anon_CancelBoolean, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -3403,7 +3403,7 @@ trait ActiveXObject extends js.Object {
     argNames: js.Array[activexDashOutlookLib.activexDashOutlookLibStrings.Cancel],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.OlkTextBox, 
-      /* parameter */ Anon_CancelBoolean_1343446035, 
+      /* parameter */ Anon_CancelBoolean, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -3454,7 +3454,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.OlkTextBox, 
-      /* parameter */ Anon_Y, 
+      /* parameter */ Anon_Button, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -3469,7 +3469,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.OlkTextBox, 
-      /* parameter */ Anon_Y, 
+      /* parameter */ Anon_Button, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -3484,7 +3484,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.OlkTextBox, 
-      /* parameter */ Anon_Y, 
+      /* parameter */ Anon_Button, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -3494,7 +3494,7 @@ trait ActiveXObject extends js.Object {
     argNames: js.Array[activexDashOutlookLib.activexDashOutlookLibStrings.Cancel],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.OlkTimeControl, 
-      /* parameter */ Anon_CancelBoolean_1343446035, 
+      /* parameter */ Anon_CancelBoolean, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -3504,7 +3504,7 @@ trait ActiveXObject extends js.Object {
     argNames: js.Array[activexDashOutlookLib.activexDashOutlookLibStrings.Cancel],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.OlkTimeControl, 
-      /* parameter */ Anon_CancelBoolean_1343446035, 
+      /* parameter */ Anon_CancelBoolean, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -3555,7 +3555,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.OlkTimeControl, 
-      /* parameter */ Anon_Y, 
+      /* parameter */ Anon_Button, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -3570,7 +3570,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.OlkTimeControl, 
-      /* parameter */ Anon_Y, 
+      /* parameter */ Anon_Button, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -3585,7 +3585,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.OlkTimeControl, 
-      /* parameter */ Anon_Y, 
+      /* parameter */ Anon_Button, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -3595,7 +3595,7 @@ trait ActiveXObject extends js.Object {
     argNames: js.Array[activexDashOutlookLib.activexDashOutlookLibStrings.Cancel],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.OlkTimeZoneControl, 
-      /* parameter */ Anon_CancelBoolean_1343446035, 
+      /* parameter */ Anon_CancelBoolean, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -3605,7 +3605,7 @@ trait ActiveXObject extends js.Object {
     argNames: js.Array[activexDashOutlookLib.activexDashOutlookLibStrings.Cancel],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.OlkTimeZoneControl, 
-      /* parameter */ Anon_CancelBoolean_1343446035, 
+      /* parameter */ Anon_CancelBoolean, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -3656,7 +3656,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.OlkTimeZoneControl, 
-      /* parameter */ Anon_Y, 
+      /* parameter */ Anon_Button, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -3671,7 +3671,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.OlkTimeZoneControl, 
-      /* parameter */ Anon_Y, 
+      /* parameter */ Anon_Button, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -3686,7 +3686,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.OlkTimeZoneControl, 
-      /* parameter */ Anon_Y, 
+      /* parameter */ Anon_Button, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -3696,7 +3696,7 @@ trait ActiveXObject extends js.Object {
     argNames: js.Array[activexDashOutlookLib.activexDashOutlookLibStrings.Cancel],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.OutlookBarGroups, 
-      /* parameter */ Anon_CancelBoolean, 
+      /* parameter */ Anon_Cancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -3709,7 +3709,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.OutlookBarGroups, 
-      /* parameter */ Anon_CancelGroup, 
+      /* parameter */ Anon_Group, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -3745,7 +3745,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.OutlookBarPane, 
-      /* parameter */ Anon_CancelShortcut, 
+      /* parameter */ Anon_Shortcut, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -3755,7 +3755,7 @@ trait ActiveXObject extends js.Object {
     argNames: js.Array[activexDashOutlookLib.activexDashOutlookLibStrings.Cancel],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.OutlookBarShortcuts, 
-      /* parameter */ Anon_CancelBoolean, 
+      /* parameter */ Anon_Cancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -3768,7 +3768,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.OutlookBarShortcuts, 
-      /* parameter */ Anon_CancelShortcut, 
+      /* parameter */ Anon_Shortcut, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -3821,7 +3821,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.PostItem, 
-      /* parameter */ Anon_CancelAttachment, 
+      /* parameter */ Anon_AttachmentCancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -3834,7 +3834,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.PostItem, 
-      /* parameter */ Anon_CancelAttachment, 
+      /* parameter */ Anon_AttachmentCancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -3847,7 +3847,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.PostItem, 
-      /* parameter */ Anon_CancelAttachment, 
+      /* parameter */ Anon_AttachmentCancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -3860,7 +3860,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.PostItem, 
-      /* parameter */ Anon_CancelAttachment, 
+      /* parameter */ Anon_AttachmentCancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -3873,7 +3873,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.PostItem, 
-      /* parameter */ Anon_CancelAttachment, 
+      /* parameter */ Anon_AttachmentCancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -3883,7 +3883,7 @@ trait ActiveXObject extends js.Object {
     argNames: js.Array[activexDashOutlookLib.activexDashOutlookLibStrings.Cancel],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.PostItem, 
-      /* parameter */ Anon_CancelBoolean, 
+      /* parameter */ Anon_Cancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -3893,7 +3893,7 @@ trait ActiveXObject extends js.Object {
     argNames: js.Array[activexDashOutlookLib.activexDashOutlookLibStrings.Cancel],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.PostItem, 
-      /* parameter */ Anon_CancelBoolean, 
+      /* parameter */ Anon_Cancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -3916,7 +3916,7 @@ trait ActiveXObject extends js.Object {
     argNames: js.Array[activexDashOutlookLib.activexDashOutlookLibStrings.Cancel],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.PostItem, 
-      /* parameter */ Anon_CancelBoolean, 
+      /* parameter */ Anon_Cancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -3963,7 +3963,7 @@ trait ActiveXObject extends js.Object {
     argNames: js.Array[activexDashOutlookLib.activexDashOutlookLibStrings.Cancel],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.PostItem, 
-      /* parameter */ Anon_CancelBoolean, 
+      /* parameter */ Anon_Cancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -3986,7 +3986,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.PostItem, 
-      /* parameter */ Anon_CancelResponse, 
+      /* parameter */ Anon_Response, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -3999,7 +3999,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.PostItem, 
-      /* parameter */ Anon_CancelResponse, 
+      /* parameter */ Anon_Response, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -4009,7 +4009,7 @@ trait ActiveXObject extends js.Object {
     argNames: js.Array[activexDashOutlookLib.activexDashOutlookLibStrings.Cancel],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.PostItem, 
-      /* parameter */ Anon_CancelBoolean, 
+      /* parameter */ Anon_Cancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -4019,7 +4019,7 @@ trait ActiveXObject extends js.Object {
     argNames: js.Array[activexDashOutlookLib.activexDashOutlookLibStrings.Cancel],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.PostItem, 
-      /* parameter */ Anon_CancelBoolean, 
+      /* parameter */ Anon_Cancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -4029,7 +4029,7 @@ trait ActiveXObject extends js.Object {
     argNames: js.Array[activexDashOutlookLib.activexDashOutlookLibStrings.Cancel],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.Reminders, 
-      /* parameter */ Anon_CancelBoolean, 
+      /* parameter */ Anon_Cancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -4112,7 +4112,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.RemoteItem, 
-      /* parameter */ Anon_CancelAttachment, 
+      /* parameter */ Anon_AttachmentCancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -4125,7 +4125,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.RemoteItem, 
-      /* parameter */ Anon_CancelAttachment, 
+      /* parameter */ Anon_AttachmentCancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -4138,7 +4138,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.RemoteItem, 
-      /* parameter */ Anon_CancelAttachment, 
+      /* parameter */ Anon_AttachmentCancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -4151,7 +4151,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.RemoteItem, 
-      /* parameter */ Anon_CancelAttachment, 
+      /* parameter */ Anon_AttachmentCancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -4164,7 +4164,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.RemoteItem, 
-      /* parameter */ Anon_CancelAttachment, 
+      /* parameter */ Anon_AttachmentCancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -4174,7 +4174,7 @@ trait ActiveXObject extends js.Object {
     argNames: js.Array[activexDashOutlookLib.activexDashOutlookLibStrings.Cancel],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.RemoteItem, 
-      /* parameter */ Anon_CancelBoolean, 
+      /* parameter */ Anon_Cancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -4184,7 +4184,7 @@ trait ActiveXObject extends js.Object {
     argNames: js.Array[activexDashOutlookLib.activexDashOutlookLibStrings.Cancel],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.RemoteItem, 
-      /* parameter */ Anon_CancelBoolean, 
+      /* parameter */ Anon_Cancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -4207,7 +4207,7 @@ trait ActiveXObject extends js.Object {
     argNames: js.Array[activexDashOutlookLib.activexDashOutlookLibStrings.Cancel],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.RemoteItem, 
-      /* parameter */ Anon_CancelBoolean, 
+      /* parameter */ Anon_Cancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -4254,7 +4254,7 @@ trait ActiveXObject extends js.Object {
     argNames: js.Array[activexDashOutlookLib.activexDashOutlookLibStrings.Cancel],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.RemoteItem, 
-      /* parameter */ Anon_CancelBoolean, 
+      /* parameter */ Anon_Cancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -4277,7 +4277,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.RemoteItem, 
-      /* parameter */ Anon_CancelResponse, 
+      /* parameter */ Anon_Response, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -4290,7 +4290,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.RemoteItem, 
-      /* parameter */ Anon_CancelResponse, 
+      /* parameter */ Anon_Response, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -4300,7 +4300,7 @@ trait ActiveXObject extends js.Object {
     argNames: js.Array[activexDashOutlookLib.activexDashOutlookLibStrings.Cancel],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.RemoteItem, 
-      /* parameter */ Anon_CancelBoolean, 
+      /* parameter */ Anon_Cancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -4310,7 +4310,7 @@ trait ActiveXObject extends js.Object {
     argNames: js.Array[activexDashOutlookLib.activexDashOutlookLibStrings.Cancel],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.RemoteItem, 
-      /* parameter */ Anon_CancelBoolean, 
+      /* parameter */ Anon_Cancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -4353,7 +4353,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.ReportItem, 
-      /* parameter */ Anon_CancelAttachment, 
+      /* parameter */ Anon_AttachmentCancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -4366,7 +4366,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.ReportItem, 
-      /* parameter */ Anon_CancelAttachment, 
+      /* parameter */ Anon_AttachmentCancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -4379,7 +4379,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.ReportItem, 
-      /* parameter */ Anon_CancelAttachment, 
+      /* parameter */ Anon_AttachmentCancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -4392,7 +4392,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.ReportItem, 
-      /* parameter */ Anon_CancelAttachment, 
+      /* parameter */ Anon_AttachmentCancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -4405,7 +4405,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.ReportItem, 
-      /* parameter */ Anon_CancelAttachment, 
+      /* parameter */ Anon_AttachmentCancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -4415,7 +4415,7 @@ trait ActiveXObject extends js.Object {
     argNames: js.Array[activexDashOutlookLib.activexDashOutlookLibStrings.Cancel],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.ReportItem, 
-      /* parameter */ Anon_CancelBoolean, 
+      /* parameter */ Anon_Cancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -4425,7 +4425,7 @@ trait ActiveXObject extends js.Object {
     argNames: js.Array[activexDashOutlookLib.activexDashOutlookLibStrings.Cancel],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.ReportItem, 
-      /* parameter */ Anon_CancelBoolean, 
+      /* parameter */ Anon_Cancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -4448,7 +4448,7 @@ trait ActiveXObject extends js.Object {
     argNames: js.Array[activexDashOutlookLib.activexDashOutlookLibStrings.Cancel],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.ReportItem, 
-      /* parameter */ Anon_CancelBoolean, 
+      /* parameter */ Anon_Cancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -4495,7 +4495,7 @@ trait ActiveXObject extends js.Object {
     argNames: js.Array[activexDashOutlookLib.activexDashOutlookLibStrings.Cancel],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.ReportItem, 
-      /* parameter */ Anon_CancelBoolean, 
+      /* parameter */ Anon_Cancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -4518,7 +4518,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.ReportItem, 
-      /* parameter */ Anon_CancelResponse, 
+      /* parameter */ Anon_Response, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -4531,7 +4531,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.ReportItem, 
-      /* parameter */ Anon_CancelResponse, 
+      /* parameter */ Anon_Response, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -4541,7 +4541,7 @@ trait ActiveXObject extends js.Object {
     argNames: js.Array[activexDashOutlookLib.activexDashOutlookLibStrings.Cancel],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.ReportItem, 
-      /* parameter */ Anon_CancelBoolean, 
+      /* parameter */ Anon_Cancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -4551,7 +4551,7 @@ trait ActiveXObject extends js.Object {
     argNames: js.Array[activexDashOutlookLib.activexDashOutlookLibStrings.Cancel],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.ReportItem, 
-      /* parameter */ Anon_CancelBoolean, 
+      /* parameter */ Anon_Cancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -4614,7 +4614,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.SharingItem, 
-      /* parameter */ Anon_CancelAttachment, 
+      /* parameter */ Anon_AttachmentCancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -4627,7 +4627,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.SharingItem, 
-      /* parameter */ Anon_CancelAttachment, 
+      /* parameter */ Anon_AttachmentCancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -4640,7 +4640,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.SharingItem, 
-      /* parameter */ Anon_CancelAttachment, 
+      /* parameter */ Anon_AttachmentCancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -4653,7 +4653,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.SharingItem, 
-      /* parameter */ Anon_CancelAttachment, 
+      /* parameter */ Anon_AttachmentCancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -4666,7 +4666,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.SharingItem, 
-      /* parameter */ Anon_CancelAttachment, 
+      /* parameter */ Anon_AttachmentCancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -4676,7 +4676,7 @@ trait ActiveXObject extends js.Object {
     argNames: js.Array[activexDashOutlookLib.activexDashOutlookLibStrings.Cancel],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.SharingItem, 
-      /* parameter */ Anon_CancelBoolean, 
+      /* parameter */ Anon_Cancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -4686,7 +4686,7 @@ trait ActiveXObject extends js.Object {
     argNames: js.Array[activexDashOutlookLib.activexDashOutlookLibStrings.Cancel],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.SharingItem, 
-      /* parameter */ Anon_CancelBoolean, 
+      /* parameter */ Anon_Cancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -4709,7 +4709,7 @@ trait ActiveXObject extends js.Object {
     argNames: js.Array[activexDashOutlookLib.activexDashOutlookLibStrings.Cancel],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.SharingItem, 
-      /* parameter */ Anon_CancelBoolean, 
+      /* parameter */ Anon_Cancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -4756,7 +4756,7 @@ trait ActiveXObject extends js.Object {
     argNames: js.Array[activexDashOutlookLib.activexDashOutlookLibStrings.Cancel],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.SharingItem, 
-      /* parameter */ Anon_CancelBoolean, 
+      /* parameter */ Anon_Cancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -4779,7 +4779,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.SharingItem, 
-      /* parameter */ Anon_CancelResponse, 
+      /* parameter */ Anon_Response, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -4792,7 +4792,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.SharingItem, 
-      /* parameter */ Anon_CancelResponse, 
+      /* parameter */ Anon_Response, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -4802,7 +4802,7 @@ trait ActiveXObject extends js.Object {
     argNames: js.Array[activexDashOutlookLib.activexDashOutlookLibStrings.Cancel],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.SharingItem, 
-      /* parameter */ Anon_CancelBoolean, 
+      /* parameter */ Anon_Cancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -4812,7 +4812,7 @@ trait ActiveXObject extends js.Object {
     argNames: js.Array[activexDashOutlookLib.activexDashOutlookLibStrings.Cancel],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.SharingItem, 
-      /* parameter */ Anon_CancelBoolean, 
+      /* parameter */ Anon_Cancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -4825,7 +4825,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.Stores, 
-      /* parameter */ Anon_CancelStore, 
+      /* parameter */ Anon_Store, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -4835,7 +4835,7 @@ trait ActiveXObject extends js.Object {
     argNames: js.Array[activexDashOutlookLib.activexDashOutlookLibStrings.Store],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.Stores, 
-      /* parameter */ Anon_Store, 
+      /* parameter */ Anon_Store_791027923, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -4848,7 +4848,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.SyncObject, 
-      /* parameter */ Anon_Description, 
+      /* parameter */ Anon_Code, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -4863,7 +4863,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.SyncObject, 
-      /* parameter */ Anon_Value, 
+      /* parameter */ Anon_State, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -4906,7 +4906,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.TaskItem, 
-      /* parameter */ Anon_CancelAttachment, 
+      /* parameter */ Anon_AttachmentCancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -4919,7 +4919,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.TaskItem, 
-      /* parameter */ Anon_CancelAttachment, 
+      /* parameter */ Anon_AttachmentCancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -4932,7 +4932,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.TaskItem, 
-      /* parameter */ Anon_CancelAttachment, 
+      /* parameter */ Anon_AttachmentCancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -4945,7 +4945,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.TaskItem, 
-      /* parameter */ Anon_CancelAttachment, 
+      /* parameter */ Anon_AttachmentCancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -4958,7 +4958,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.TaskItem, 
-      /* parameter */ Anon_CancelAttachment, 
+      /* parameter */ Anon_AttachmentCancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -4968,7 +4968,7 @@ trait ActiveXObject extends js.Object {
     argNames: js.Array[activexDashOutlookLib.activexDashOutlookLibStrings.Cancel],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.TaskItem, 
-      /* parameter */ Anon_CancelBoolean, 
+      /* parameter */ Anon_Cancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -4978,7 +4978,7 @@ trait ActiveXObject extends js.Object {
     argNames: js.Array[activexDashOutlookLib.activexDashOutlookLibStrings.Cancel],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.TaskItem, 
-      /* parameter */ Anon_CancelBoolean, 
+      /* parameter */ Anon_Cancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -5001,7 +5001,7 @@ trait ActiveXObject extends js.Object {
     argNames: js.Array[activexDashOutlookLib.activexDashOutlookLibStrings.Cancel],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.TaskItem, 
-      /* parameter */ Anon_CancelBoolean, 
+      /* parameter */ Anon_Cancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -5048,7 +5048,7 @@ trait ActiveXObject extends js.Object {
     argNames: js.Array[activexDashOutlookLib.activexDashOutlookLibStrings.Cancel],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.TaskItem, 
-      /* parameter */ Anon_CancelBoolean, 
+      /* parameter */ Anon_Cancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -5071,7 +5071,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.TaskItem, 
-      /* parameter */ Anon_CancelResponse, 
+      /* parameter */ Anon_Response, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -5084,7 +5084,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.TaskItem, 
-      /* parameter */ Anon_CancelResponse, 
+      /* parameter */ Anon_Response, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -5094,7 +5094,7 @@ trait ActiveXObject extends js.Object {
     argNames: js.Array[activexDashOutlookLib.activexDashOutlookLibStrings.Cancel],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.TaskItem, 
-      /* parameter */ Anon_CancelBoolean, 
+      /* parameter */ Anon_Cancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -5104,7 +5104,7 @@ trait ActiveXObject extends js.Object {
     argNames: js.Array[activexDashOutlookLib.activexDashOutlookLibStrings.Cancel],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.TaskItem, 
-      /* parameter */ Anon_CancelBoolean, 
+      /* parameter */ Anon_Cancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -5147,7 +5147,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.TaskRequestAcceptItem, 
-      /* parameter */ Anon_CancelAttachment, 
+      /* parameter */ Anon_AttachmentCancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -5160,7 +5160,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.TaskRequestAcceptItem, 
-      /* parameter */ Anon_CancelAttachment, 
+      /* parameter */ Anon_AttachmentCancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -5173,7 +5173,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.TaskRequestAcceptItem, 
-      /* parameter */ Anon_CancelAttachment, 
+      /* parameter */ Anon_AttachmentCancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -5186,7 +5186,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.TaskRequestAcceptItem, 
-      /* parameter */ Anon_CancelAttachment, 
+      /* parameter */ Anon_AttachmentCancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -5199,7 +5199,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.TaskRequestAcceptItem, 
-      /* parameter */ Anon_CancelAttachment, 
+      /* parameter */ Anon_AttachmentCancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -5209,7 +5209,7 @@ trait ActiveXObject extends js.Object {
     argNames: js.Array[activexDashOutlookLib.activexDashOutlookLibStrings.Cancel],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.TaskRequestAcceptItem, 
-      /* parameter */ Anon_CancelBoolean, 
+      /* parameter */ Anon_Cancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -5219,7 +5219,7 @@ trait ActiveXObject extends js.Object {
     argNames: js.Array[activexDashOutlookLib.activexDashOutlookLibStrings.Cancel],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.TaskRequestAcceptItem, 
-      /* parameter */ Anon_CancelBoolean, 
+      /* parameter */ Anon_Cancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -5242,7 +5242,7 @@ trait ActiveXObject extends js.Object {
     argNames: js.Array[activexDashOutlookLib.activexDashOutlookLibStrings.Cancel],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.TaskRequestAcceptItem, 
-      /* parameter */ Anon_CancelBoolean, 
+      /* parameter */ Anon_Cancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -5289,7 +5289,7 @@ trait ActiveXObject extends js.Object {
     argNames: js.Array[activexDashOutlookLib.activexDashOutlookLibStrings.Cancel],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.TaskRequestAcceptItem, 
-      /* parameter */ Anon_CancelBoolean, 
+      /* parameter */ Anon_Cancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -5312,7 +5312,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.TaskRequestAcceptItem, 
-      /* parameter */ Anon_CancelResponse, 
+      /* parameter */ Anon_Response, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -5325,7 +5325,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.TaskRequestAcceptItem, 
-      /* parameter */ Anon_CancelResponse, 
+      /* parameter */ Anon_Response, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -5335,7 +5335,7 @@ trait ActiveXObject extends js.Object {
     argNames: js.Array[activexDashOutlookLib.activexDashOutlookLibStrings.Cancel],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.TaskRequestAcceptItem, 
-      /* parameter */ Anon_CancelBoolean, 
+      /* parameter */ Anon_Cancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -5345,7 +5345,7 @@ trait ActiveXObject extends js.Object {
     argNames: js.Array[activexDashOutlookLib.activexDashOutlookLibStrings.Cancel],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.TaskRequestAcceptItem, 
-      /* parameter */ Anon_CancelBoolean, 
+      /* parameter */ Anon_Cancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -5388,7 +5388,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.TaskRequestDeclineItem, 
-      /* parameter */ Anon_CancelAttachment, 
+      /* parameter */ Anon_AttachmentCancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -5401,7 +5401,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.TaskRequestDeclineItem, 
-      /* parameter */ Anon_CancelAttachment, 
+      /* parameter */ Anon_AttachmentCancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -5414,7 +5414,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.TaskRequestDeclineItem, 
-      /* parameter */ Anon_CancelAttachment, 
+      /* parameter */ Anon_AttachmentCancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -5427,7 +5427,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.TaskRequestDeclineItem, 
-      /* parameter */ Anon_CancelAttachment, 
+      /* parameter */ Anon_AttachmentCancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -5440,7 +5440,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.TaskRequestDeclineItem, 
-      /* parameter */ Anon_CancelAttachment, 
+      /* parameter */ Anon_AttachmentCancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -5450,7 +5450,7 @@ trait ActiveXObject extends js.Object {
     argNames: js.Array[activexDashOutlookLib.activexDashOutlookLibStrings.Cancel],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.TaskRequestDeclineItem, 
-      /* parameter */ Anon_CancelBoolean, 
+      /* parameter */ Anon_Cancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -5460,7 +5460,7 @@ trait ActiveXObject extends js.Object {
     argNames: js.Array[activexDashOutlookLib.activexDashOutlookLibStrings.Cancel],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.TaskRequestDeclineItem, 
-      /* parameter */ Anon_CancelBoolean, 
+      /* parameter */ Anon_Cancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -5483,7 +5483,7 @@ trait ActiveXObject extends js.Object {
     argNames: js.Array[activexDashOutlookLib.activexDashOutlookLibStrings.Cancel],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.TaskRequestDeclineItem, 
-      /* parameter */ Anon_CancelBoolean, 
+      /* parameter */ Anon_Cancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -5530,7 +5530,7 @@ trait ActiveXObject extends js.Object {
     argNames: js.Array[activexDashOutlookLib.activexDashOutlookLibStrings.Cancel],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.TaskRequestDeclineItem, 
-      /* parameter */ Anon_CancelBoolean, 
+      /* parameter */ Anon_Cancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -5553,7 +5553,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.TaskRequestDeclineItem, 
-      /* parameter */ Anon_CancelResponse, 
+      /* parameter */ Anon_Response, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -5566,7 +5566,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.TaskRequestDeclineItem, 
-      /* parameter */ Anon_CancelResponse, 
+      /* parameter */ Anon_Response, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -5576,7 +5576,7 @@ trait ActiveXObject extends js.Object {
     argNames: js.Array[activexDashOutlookLib.activexDashOutlookLibStrings.Cancel],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.TaskRequestDeclineItem, 
-      /* parameter */ Anon_CancelBoolean, 
+      /* parameter */ Anon_Cancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -5586,7 +5586,7 @@ trait ActiveXObject extends js.Object {
     argNames: js.Array[activexDashOutlookLib.activexDashOutlookLibStrings.Cancel],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.TaskRequestDeclineItem, 
-      /* parameter */ Anon_CancelBoolean, 
+      /* parameter */ Anon_Cancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -5629,7 +5629,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.TaskRequestItem, 
-      /* parameter */ Anon_CancelAttachment, 
+      /* parameter */ Anon_AttachmentCancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -5642,7 +5642,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.TaskRequestItem, 
-      /* parameter */ Anon_CancelAttachment, 
+      /* parameter */ Anon_AttachmentCancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -5655,7 +5655,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.TaskRequestItem, 
-      /* parameter */ Anon_CancelAttachment, 
+      /* parameter */ Anon_AttachmentCancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -5668,7 +5668,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.TaskRequestItem, 
-      /* parameter */ Anon_CancelAttachment, 
+      /* parameter */ Anon_AttachmentCancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -5681,7 +5681,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.TaskRequestItem, 
-      /* parameter */ Anon_CancelAttachment, 
+      /* parameter */ Anon_AttachmentCancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -5691,7 +5691,7 @@ trait ActiveXObject extends js.Object {
     argNames: js.Array[activexDashOutlookLib.activexDashOutlookLibStrings.Cancel],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.TaskRequestItem, 
-      /* parameter */ Anon_CancelBoolean, 
+      /* parameter */ Anon_Cancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -5701,7 +5701,7 @@ trait ActiveXObject extends js.Object {
     argNames: js.Array[activexDashOutlookLib.activexDashOutlookLibStrings.Cancel],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.TaskRequestItem, 
-      /* parameter */ Anon_CancelBoolean, 
+      /* parameter */ Anon_Cancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -5724,7 +5724,7 @@ trait ActiveXObject extends js.Object {
     argNames: js.Array[activexDashOutlookLib.activexDashOutlookLibStrings.Cancel],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.TaskRequestItem, 
-      /* parameter */ Anon_CancelBoolean, 
+      /* parameter */ Anon_Cancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -5771,7 +5771,7 @@ trait ActiveXObject extends js.Object {
     argNames: js.Array[activexDashOutlookLib.activexDashOutlookLibStrings.Cancel],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.TaskRequestItem, 
-      /* parameter */ Anon_CancelBoolean, 
+      /* parameter */ Anon_Cancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -5794,7 +5794,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.TaskRequestItem, 
-      /* parameter */ Anon_CancelResponse, 
+      /* parameter */ Anon_Response, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -5807,7 +5807,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.TaskRequestItem, 
-      /* parameter */ Anon_CancelResponse, 
+      /* parameter */ Anon_Response, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -5817,7 +5817,7 @@ trait ActiveXObject extends js.Object {
     argNames: js.Array[activexDashOutlookLib.activexDashOutlookLibStrings.Cancel],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.TaskRequestItem, 
-      /* parameter */ Anon_CancelBoolean, 
+      /* parameter */ Anon_Cancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -5827,7 +5827,7 @@ trait ActiveXObject extends js.Object {
     argNames: js.Array[activexDashOutlookLib.activexDashOutlookLibStrings.Cancel],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.TaskRequestItem, 
-      /* parameter */ Anon_CancelBoolean, 
+      /* parameter */ Anon_Cancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -5870,7 +5870,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.TaskRequestUpdateItem, 
-      /* parameter */ Anon_CancelAttachment, 
+      /* parameter */ Anon_AttachmentCancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -5883,7 +5883,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.TaskRequestUpdateItem, 
-      /* parameter */ Anon_CancelAttachment, 
+      /* parameter */ Anon_AttachmentCancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -5896,7 +5896,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.TaskRequestUpdateItem, 
-      /* parameter */ Anon_CancelAttachment, 
+      /* parameter */ Anon_AttachmentCancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -5909,7 +5909,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.TaskRequestUpdateItem, 
-      /* parameter */ Anon_CancelAttachment, 
+      /* parameter */ Anon_AttachmentCancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -5922,7 +5922,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.TaskRequestUpdateItem, 
-      /* parameter */ Anon_CancelAttachment, 
+      /* parameter */ Anon_AttachmentCancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -5932,7 +5932,7 @@ trait ActiveXObject extends js.Object {
     argNames: js.Array[activexDashOutlookLib.activexDashOutlookLibStrings.Cancel],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.TaskRequestUpdateItem, 
-      /* parameter */ Anon_CancelBoolean, 
+      /* parameter */ Anon_Cancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -5942,7 +5942,7 @@ trait ActiveXObject extends js.Object {
     argNames: js.Array[activexDashOutlookLib.activexDashOutlookLibStrings.Cancel],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.TaskRequestUpdateItem, 
-      /* parameter */ Anon_CancelBoolean, 
+      /* parameter */ Anon_Cancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -5965,7 +5965,7 @@ trait ActiveXObject extends js.Object {
     argNames: js.Array[activexDashOutlookLib.activexDashOutlookLibStrings.Cancel],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.TaskRequestUpdateItem, 
-      /* parameter */ Anon_CancelBoolean, 
+      /* parameter */ Anon_Cancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -6012,7 +6012,7 @@ trait ActiveXObject extends js.Object {
     argNames: js.Array[activexDashOutlookLib.activexDashOutlookLibStrings.Cancel],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.TaskRequestUpdateItem, 
-      /* parameter */ Anon_CancelBoolean, 
+      /* parameter */ Anon_Cancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -6035,7 +6035,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.TaskRequestUpdateItem, 
-      /* parameter */ Anon_CancelResponse, 
+      /* parameter */ Anon_Response, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -6048,7 +6048,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.TaskRequestUpdateItem, 
-      /* parameter */ Anon_CancelResponse, 
+      /* parameter */ Anon_Response, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -6058,7 +6058,7 @@ trait ActiveXObject extends js.Object {
     argNames: js.Array[activexDashOutlookLib.activexDashOutlookLibStrings.Cancel],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.TaskRequestUpdateItem, 
-      /* parameter */ Anon_CancelBoolean, 
+      /* parameter */ Anon_Cancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -6068,7 +6068,7 @@ trait ActiveXObject extends js.Object {
     argNames: js.Array[activexDashOutlookLib.activexDashOutlookLibStrings.Cancel],
     handler: js.ThisFunction1[
       /* this */ activexDashOutlookLib.OutlookNs.TaskRequestUpdateItem, 
-      /* parameter */ Anon_CancelBoolean, 
+      /* parameter */ Anon_Cancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native

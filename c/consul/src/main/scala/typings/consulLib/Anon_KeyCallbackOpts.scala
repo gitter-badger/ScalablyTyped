@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation._
 trait Anon_KeyCallbackOpts extends js.Object {
   def apply[TData](key: java.lang.String): consulLib.consulMod.ConsulNs.Thenable[TData] = js.native
   def apply[TData](key: java.lang.String, callback: consulLib.consulMod.ConsulNs.Callback[TData]): scala.Unit = js.native
-  def apply[TData](opts: consulLib.consulMod.ConsulNs.KvNs.GetOptions): consulLib.consulMod.ConsulNs.Thenable[TData] = js.native
+  def apply[TData](opts: consulLib.consulMod.ConsulNs.KvNs.DelOptions): consulLib.consulMod.ConsulNs.Thenable[TData] = js.native
   def apply[TData](
-    opts: consulLib.consulMod.ConsulNs.KvNs.GetOptions,
+    opts: consulLib.consulMod.ConsulNs.KvNs.DelOptions,
     callback: consulLib.consulMod.ConsulNs.Callback[TData]
   ): scala.Unit = js.native
 }

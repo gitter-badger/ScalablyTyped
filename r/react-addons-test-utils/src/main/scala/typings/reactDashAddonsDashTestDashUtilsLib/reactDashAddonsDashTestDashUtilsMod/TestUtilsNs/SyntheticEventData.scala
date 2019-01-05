@@ -9,11 +9,11 @@ trait SyntheticEventData extends OptionalEventProperties {
   var altKey: js.UndefOr[scala.Boolean] = js.undefined
   var button: js.UndefOr[scala.Double] = js.undefined
   var buttons: js.UndefOr[scala.Double] = js.undefined
-  var changedTouches: js.UndefOr[reactLib.TouchList] = js.undefined
+  var changedTouches: js.UndefOr[reactLib.TouchList with stdLib.TouchList] = js.undefined
   var charCode: js.UndefOr[scala.Boolean] = js.undefined
   var clientX: js.UndefOr[scala.Double] = js.undefined
   var clientY: js.UndefOr[scala.Double] = js.undefined
-  var clipboardData: js.UndefOr[reactLib.DataTransfer] = js.undefined
+  var clipboardData: js.UndefOr[reactLib.DataTransfer with stdLib.DataTransfer] = js.undefined
   var ctrlKey: js.UndefOr[scala.Boolean] = js.undefined
   var deltaMode: js.UndefOr[scala.Double] = js.undefined
   var deltaX: js.UndefOr[scala.Double] = js.undefined
@@ -28,13 +28,13 @@ trait SyntheticEventData extends OptionalEventProperties {
   var metaKey: js.UndefOr[scala.Boolean] = js.undefined
   var pageX: js.UndefOr[scala.Double] = js.undefined
   var pageY: js.UndefOr[scala.Double] = js.undefined
-  var relatedTarget: js.UndefOr[reactLib.EventTarget] = js.undefined
+  var relatedTarget: js.UndefOr[reactLib.EventTarget with stdLib.EventTarget] = js.undefined
   var repeat: js.UndefOr[scala.Boolean] = js.undefined
   var screenX: js.UndefOr[scala.Double] = js.undefined
   var screenY: js.UndefOr[scala.Double] = js.undefined
   var shiftKey: js.UndefOr[scala.Boolean] = js.undefined
-  var targetTouches: js.UndefOr[reactLib.TouchList] = js.undefined
-  var touches: js.UndefOr[reactLib.TouchList] = js.undefined
+  var targetTouches: js.UndefOr[reactLib.TouchList with stdLib.TouchList] = js.undefined
+  var touches: js.UndefOr[reactLib.TouchList with stdLib.TouchList] = js.undefined
   var view: js.UndefOr[reactLib.reactMod.ReactNs.AbstractView] = js.undefined
   var which: js.UndefOr[scala.Double] = js.undefined
 }

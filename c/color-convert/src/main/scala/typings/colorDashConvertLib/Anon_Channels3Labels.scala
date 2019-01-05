@@ -7,11 +7,10 @@ import scala.scalajs.js.annotation._
 
 trait Anon_Channels3Labels extends js.Object {
   val channels: colorDashConvertLib.colorDashConvertLibNumbers.`3`
-  val labels: js.Tuple3[
-    colorDashConvertLib.colorDashConvertLibStrings.r16, 
-    colorDashConvertLib.colorDashConvertLibStrings.g16, 
-    colorDashConvertLib.colorDashConvertLibStrings.b16
-  ]
-  def rgb(apple: colorDashConvertLib.conversionsMod.APPLE): colorDashConvertLib.conversionsMod.RGB
+  val labels: colorDashConvertLib.colorDashConvertLibStrings.hsv
+  def ansi16(hsv: colorDashConvertLib.conversionsMod.HSV): colorDashConvertLib.conversionsMod.ANSI16
+  def hcg(hsv: colorDashConvertLib.conversionsMod.HSV): colorDashConvertLib.conversionsMod.HCG
+  def hsl(hsv: colorDashConvertLib.conversionsMod.HSV): colorDashConvertLib.conversionsMod.HSL
+  def rgb(hsv: colorDashConvertLib.conversionsMod.HSV): colorDashConvertLib.conversionsMod.RGB
 }
 

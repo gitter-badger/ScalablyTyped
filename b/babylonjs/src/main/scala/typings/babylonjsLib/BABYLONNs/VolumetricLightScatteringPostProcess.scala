@@ -36,7 +36,7 @@ class VolumetricLightScatteringPostProcess protected () extends PostProcess {
   /**
     * If not undefined, the mesh position is computed from the attached node position
     */
-  var attachedNode: babylonjsLib.Anon_Position = js.native
+  var attachedNode: babylonjsLib.Anon_PositionVector3 = js.native
   /**
     * Custom position of the mesh. Used if "useCustomMeshPosition" is set to "true"
     */

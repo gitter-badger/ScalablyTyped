@@ -22,7 +22,7 @@ trait ChocolateChipStatic extends js.Object {
     * data: this is used by $(element).data() to store data.
     * events: this is used by the event system.
     */
-  var chch_cache: Anon_Events = js.native
+  var chch_cache: Anon_Data = js.native
   /**
     * The base for extending ChocolateChipJS collections, which are arrays of elements.
     */
@@ -316,7 +316,7 @@ trait ChocolateChipStatic extends js.Object {
     * @param options And object literal of properties: {timeout? number, callbackName?: string, clear?: boolean}
     */
   def jsonp(url: java.lang.String): js.Any = js.native
-  def jsonp(url: java.lang.String, options: Anon_CallbackName): js.Any = js.native
+  def jsonp(url: java.lang.String, options: Anon_Timeout): js.Any = js.native
   /**
     * Create a ChocolateChip collection object by creating elements from an HTML string.
     */

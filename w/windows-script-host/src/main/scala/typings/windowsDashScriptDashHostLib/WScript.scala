@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("WScript")
 @js.native
 object WScript extends js.Object {
-  var Arguments: windowsDashScriptDashHostLib.WshArguments = js.native
+  @JSName("Arguments")
+  var Arguments_Original: windowsDashScriptDashHostLib.WshArguments = js.native
   /**
     * The Windows Script Host build version number.
     */
@@ -56,6 +57,7 @@ object WScript extends js.Object {
     * Windows Script Host version
     */
   var Version: java.lang.String = js.native
+  def Arguments(index: scala.Double): java.lang.String = js.native
   /**
     * Connects a COM object's event sources to functions named with a given prefix, in the form prefix_event.
     */
@@ -65,8 +67,8 @@ object WScript extends js.Object {
     * @param strProgiID
     * @param strPrefix Function names in the form prefix_event will be bound to this object's COM events.
     */
-  def CreateObject[K /* <: java.lang.String */](strProgID: K): /* import warning: ImportType.apply Failed type conversion: activex-interop.ActiveXObjectNameMap[K] */ js.Any = js.native
-  def CreateObject[K /* <: java.lang.String */](strProgID: K, strPrefix: java.lang.String): /* import warning: ImportType.apply Failed type conversion: activex-interop.ActiveXObjectNameMap[K] */ js.Any = js.native
+  def CreateObject[K /* <: java.lang.String */](strProgID: K): /* import warning: ImportType.apply Failed type conversion: activex-interop.ActiveXObjectNameMap & activex-iwshruntimelibrary.ActiveXObjectNameMap[K] */ js.Any = js.native
+  def CreateObject[K /* <: java.lang.String */](strProgID: K, strPrefix: java.lang.String): /* import warning: ImportType.apply Failed type conversion: activex-interop.ActiveXObjectNameMap & activex-iwshruntimelibrary.ActiveXObjectNameMap[K] */ js.Any = js.native
   /**
     * Disconnects a COM object from its event sources.
     */
@@ -87,8 +89,8 @@ object WScript extends js.Object {
     * @param strProgID
     * @param strPrefix Function names in the form prefix_event will be bound to this object's COM events.
     */
-  def GetObject[K /* <: java.lang.String */](strPathname: java.lang.String, strProgID: K): /* import warning: ImportType.apply Failed type conversion: activex-interop.ActiveXObjectNameMap[K] */ js.Any = js.native
-  def GetObject[K /* <: java.lang.String */](strPathname: java.lang.String, strProgID: K, strPrefix: java.lang.String): /* import warning: ImportType.apply Failed type conversion: activex-interop.ActiveXObjectNameMap[K] */ js.Any = js.native
+  def GetObject[K /* <: java.lang.String */](strPathname: java.lang.String, strProgID: K): /* import warning: ImportType.apply Failed type conversion: activex-interop.ActiveXObjectNameMap & activex-iwshruntimelibrary.ActiveXObjectNameMap[K] */ js.Any = js.native
+  def GetObject[K /* <: java.lang.String */](strPathname: java.lang.String, strProgID: K, strPrefix: java.lang.String): /* import warning: ImportType.apply Failed type conversion: activex-interop.ActiveXObjectNameMap & activex-iwshruntimelibrary.ActiveXObjectNameMap[K] */ js.Any = js.native
   /**
     * Forces the script to stop immediately, with an optional exit code.
     */

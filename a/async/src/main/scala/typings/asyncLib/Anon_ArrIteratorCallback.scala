@@ -14,7 +14,7 @@ trait Anon_ArrIteratorCallback extends js.Object {
   def apply[T, E](
     arr: asyncLib.asyncMod.IterableCollection[T],
     iterator: asyncLib.asyncMod.AsyncBooleanIterator[T, E],
-    callback: asyncLib.asyncMod.AsyncBooleanResultCallback[E]
+    callback: asyncLib.asyncMod.AsyncResultArrayCallback[T, E]
   ): scala.Unit = js.native
 }
 

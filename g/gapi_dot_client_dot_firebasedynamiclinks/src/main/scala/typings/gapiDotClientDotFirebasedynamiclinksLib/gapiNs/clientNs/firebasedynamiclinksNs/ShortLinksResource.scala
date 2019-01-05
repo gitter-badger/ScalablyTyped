@@ -17,6 +17,6 @@ trait ShortLinksResource extends js.Object {
     * The Dynamic Link domain in the request must be owned by requester's
     * Firebase project.
     */
-  def create(request: gapiDotClientDotFirebasedynamiclinksLib.Anon_Accesstoken): gapiDotClientLib.gapiNs.clientNs.Request[CreateShortDynamicLinkResponse]
+  def create(request: gapiDotClientDotFirebasedynamiclinksLib.Anon_Xgafv): gapiDotClientLib.gapiNs.clientNs.Request[CreateShortDynamicLinkResponse]
 }
 

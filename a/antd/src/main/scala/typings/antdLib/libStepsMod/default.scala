@@ -14,6 +14,6 @@ class default () extends Steps
 object default extends js.Object {
   var Step: js.Any = js.native
   var defaultProps: antdLib.Anon_PrefixClsIconPrefix = js.native
-  var propTypes: antdLib.Anon_PrefixCls = js.native
+  var propTypes: antdLib.Anon_PrefixClsIconPrefixCurrent = js.native
 }
 

@@ -11,12 +11,12 @@ trait Anon_Projection extends js.Object {
     */
   var fields: js.UndefOr[java.lang.String] = js.undefined
   /**
-    * Additional information to return. ANALYTICS_CLICKS, ANALYTICS_TOP_STRINGS, FULL
+    * Additional information to return. ANALYTICS_CLICKS, FULL
     */
   var projection: js.UndefOr[java.lang.String] = js.undefined
   /**
-    * The short URL, including the protocol.
+    * Token for requesting successive pages of results.
     */
-  var shortUrl: java.lang.String
+  var `start-token`: js.UndefOr[java.lang.String] = js.undefined
 }
 

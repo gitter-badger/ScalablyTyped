@@ -17,21 +17,21 @@ trait IDragDropEvents extends js.Object {
   var onDragEnd: js.UndefOr[
     js.Function2[
       /* item */ js.UndefOr[js.Any], 
-      /* event */ js.UndefOr[reactLib.DragEvent], 
+      /* event */ js.UndefOr[reactLib.DragEvent with stdLib.DragEvent], 
       scala.Unit
     ]
   ] = js.undefined
   var onDragEnter: js.UndefOr[
     js.Function2[
       /* item */ js.UndefOr[js.Any], 
-      /* event */ js.UndefOr[reactLib.DragEvent], 
+      /* event */ js.UndefOr[reactLib.DragEvent with stdLib.DragEvent], 
       java.lang.String
     ]
   ] = js.undefined
   var onDragLeave: js.UndefOr[
     js.Function2[
       /* item */ js.UndefOr[js.Any], 
-      /* event */ js.UndefOr[reactLib.DragEvent], 
+      /* event */ js.UndefOr[reactLib.DragEvent with stdLib.DragEvent], 
       scala.Unit
     ]
   ] = js.undefined
@@ -40,14 +40,14 @@ trait IDragDropEvents extends js.Object {
       /* item */ js.UndefOr[js.Any], 
       /* itemIndex */ js.UndefOr[scala.Double], 
       /* selectedItems */ js.UndefOr[js.Array[_]], 
-      /* event */ js.UndefOr[reactLib.MouseEvent], 
+      /* event */ js.UndefOr[reactLib.MouseEvent with stdLib.MouseEvent], 
       scala.Unit
     ]
   ] = js.undefined
   var onDrop: js.UndefOr[
     js.Function2[
       /* item */ js.UndefOr[js.Any], 
-      /* event */ js.UndefOr[reactLib.DragEvent], 
+      /* event */ js.UndefOr[reactLib.DragEvent with stdLib.DragEvent], 
       scala.Unit
     ]
   ] = js.undefined

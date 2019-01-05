@@ -9,7 +9,7 @@ trait Anon_OnRefRefComponent[T, P] extends js.Object {
   var onRef: js.UndefOr[
     reactLib.reactMod.ReactNs.Ref[
       reactLib.reactMod.Component[
-        T with reactDashNavigationLib.reactDashNavigationMod.NavigationInjectedProps[P], 
+        T with reactDashNavigationLib.reactDashNavigationMod.NavigationFocusInjectedProps[P], 
         js.Object, 
         _
       ]

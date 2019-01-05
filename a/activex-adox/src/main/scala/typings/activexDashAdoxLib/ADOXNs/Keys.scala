@@ -17,17 +17,21 @@ trait Keys extends js.Object {
     */
   def Append(Item: Key): scala.Unit = js.native
   def Append(Item: Key, Type: KeyTypeEnum): scala.Unit = js.native
-  def Append(Item: Key, Type: KeyTypeEnum, Column: activexDashInteropLib.SafeArray[java.lang.String]): scala.Unit = js.native
   def Append(
     Item: Key,
     Type: KeyTypeEnum,
-    Column: activexDashInteropLib.SafeArray[java.lang.String],
+    Column: activexDashInteropLib.SafeArray[java.lang.String] with stdLib.SafeArray[java.lang.String]
+  ): scala.Unit = js.native
+  def Append(
+    Item: Key,
+    Type: KeyTypeEnum,
+    Column: activexDashInteropLib.SafeArray[java.lang.String] with stdLib.SafeArray[java.lang.String],
     RelatedTable: java.lang.String
   ): scala.Unit = js.native
   def Append(
     Item: Key,
     Type: KeyTypeEnum,
-    Column: activexDashInteropLib.SafeArray[java.lang.String],
+    Column: activexDashInteropLib.SafeArray[java.lang.String] with stdLib.SafeArray[java.lang.String],
     RelatedTable: java.lang.String,
     RelatedColumn: java.lang.String
   ): scala.Unit = js.native
@@ -45,18 +49,18 @@ trait Keys extends js.Object {
   def Append(
     Item: java.lang.String,
     Type: KeyTypeEnum,
-    Column: activexDashInteropLib.SafeArray[java.lang.String]
+    Column: activexDashInteropLib.SafeArray[java.lang.String] with stdLib.SafeArray[java.lang.String]
   ): scala.Unit = js.native
   def Append(
     Item: java.lang.String,
     Type: KeyTypeEnum,
-    Column: activexDashInteropLib.SafeArray[java.lang.String],
+    Column: activexDashInteropLib.SafeArray[java.lang.String] with stdLib.SafeArray[java.lang.String],
     RelatedTable: java.lang.String
   ): scala.Unit = js.native
   def Append(
     Item: java.lang.String,
     Type: KeyTypeEnum,
-    Column: activexDashInteropLib.SafeArray[java.lang.String],
+    Column: activexDashInteropLib.SafeArray[java.lang.String] with stdLib.SafeArray[java.lang.String],
     RelatedTable: java.lang.String,
     RelatedColumn: java.lang.String
   ): scala.Unit = js.native

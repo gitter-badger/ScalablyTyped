@@ -128,7 +128,7 @@ trait IPositioningContainerProps
     * or a MouseEvent. If MouseEvent is given then the origin point of the event will be used.
     */
   var target: js.UndefOr[
-    reactLib.HTMLElement | java.lang.String | reactLib.MouseEvent | atUifabricUtilitiesLib.libIPointMod.IPoint | scala.Null
+    (reactLib.HTMLElement with stdLib.HTMLElement) | java.lang.String | (reactLib.MouseEvent with stdLib.MouseEvent) | atUifabricUtilitiesLib.libIPointMod.IPoint | scala.Null
   ] = js.undefined
   /**
     * Point used to position the positioningContainer.

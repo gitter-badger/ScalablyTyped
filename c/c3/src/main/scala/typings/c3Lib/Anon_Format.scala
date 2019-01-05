@@ -5,7 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Anon_Format extends js.Object {
-  var format: c3Lib.c3Mod.FormatFunction
+  @JSName("format")
+  var format_Original: c3Lib.c3Mod.FormatFunction = js.native
+  def format(v: js.Any, id: java.lang.String, i: scala.Double, j: scala.Double): scala.Unit = js.native
 }
 

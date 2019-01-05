@@ -380,18 +380,18 @@ trait ObservableStatic extends js.Object {
     * @param [thisArg] The context to use calling the mapFn if provided.
     * @param [scheduler] Optional scheduler to use for scheduling.  If not provided, defaults to Scheduler.currentThread.
     */
-  def from[T](array: rxDashLiteLib.Anon_Index[T]): Observable[T] = js.native
+  def from[T](array: rxDashLiteLib.Anon_Length[T]): Observable[T] = js.native
   def from[T](
-    array: rxDashLiteLib.Anon_Index[T],
+    array: rxDashLiteLib.Anon_Length[T],
     mapFn: js.Function2[/* value */ T, /* index */ scala.Double, T]
   ): Observable[T] = js.native
   def from[T](
-    array: rxDashLiteLib.Anon_Index[T],
+    array: rxDashLiteLib.Anon_Length[T],
     mapFn: js.Function2[/* value */ T, /* index */ scala.Double, T],
     thisArg: js.Any
   ): Observable[T] = js.native
   def from[T](
-    array: rxDashLiteLib.Anon_Index[T],
+    array: rxDashLiteLib.Anon_Length[T],
     mapFn: js.Function2[/* value */ T, /* index */ scala.Double, T],
     thisArg: js.Any,
     scheduler: IScheduler
@@ -418,8 +418,8 @@ trait ObservableStatic extends js.Object {
   ): Observable[T] = js.native
   def fromArray[T](array: js.Array[T]): Observable[T] = js.native
   def fromArray[T](array: js.Array[T], scheduler: IScheduler): Observable[T] = js.native
-  def fromArray[T](array: rxDashLiteLib.Anon_Index[T]): Observable[T] = js.native
-  def fromArray[T](array: rxDashLiteLib.Anon_Index[T], scheduler: IScheduler): Observable[T] = js.native
+  def fromArray[T](array: rxDashLiteLib.Anon_Length[T]): Observable[T] = js.native
+  def fromArray[T](array: rxDashLiteLib.Anon_Length[T], scheduler: IScheduler): Observable[T] = js.native
   // with any function without selector
   def fromCallback[TResult](func: js.Function): js.Function1[/* repeated */ js.Any, Observable[TResult]] = js.native
   // with single result callback without selector
@@ -681,18 +681,18 @@ trait ObservableStatic extends js.Object {
     */
   @JSName("from")
   def from_TTResult[T, TResult](
-    array: rxDashLiteLib.Anon_Index[T],
+    array: rxDashLiteLib.Anon_Length[T],
     mapFn: js.Function2[/* value */ T, /* index */ scala.Double, TResult]
   ): Observable[TResult] = js.native
   @JSName("from")
   def from_TTResult[T, TResult](
-    array: rxDashLiteLib.Anon_Index[T],
+    array: rxDashLiteLib.Anon_Length[T],
     mapFn: js.Function2[/* value */ T, /* index */ scala.Double, TResult],
     thisArg: js.Any
   ): Observable[TResult] = js.native
   @JSName("from")
   def from_TTResult[T, TResult](
-    array: rxDashLiteLib.Anon_Index[T],
+    array: rxDashLiteLib.Anon_Length[T],
     mapFn: js.Function2[/* value */ T, /* index */ scala.Double, TResult],
     thisArg: js.Any,
     scheduler: IScheduler

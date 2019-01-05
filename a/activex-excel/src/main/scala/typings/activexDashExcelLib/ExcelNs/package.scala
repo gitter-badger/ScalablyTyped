@@ -12,16 +12,16 @@ package object ExcelNs {
   type InternationalResult[T] = scala.Boolean | scala.Double | java.lang.String
   type LineStyle = XlLineStyle | Constants
   type PivotFieldsResult = PivotFields with (js.Function1[/* Index */ scala.Double | java.lang.String, PivotField]) with (js.Function1[
-    /* Indexes */ activexDashInteropLib.SafeArray[scala.Double | java.lang.String], 
+    /* Indexes */ (activexDashInteropLib.SafeArray[scala.Double | java.lang.String]) with (stdLib.SafeArray[scala.Double | java.lang.String]), 
     PivotFields
   ])
   type PivotItemsResult = PivotItems with (js.Function1[/* Index */ scala.Double | java.lang.String, PivotItem]) with (js.Function1[
-    /* Indexes */ activexDashInteropLib.SafeArray[scala.Double | java.lang.String], 
+    /* Indexes */ (activexDashInteropLib.SafeArray[scala.Double | java.lang.String]) with (stdLib.SafeArray[scala.Double | java.lang.String]), 
     PivotItems
   ])
   type PivotTableWizardAutoPage[TSourceType] = js.UndefOr[scala.Boolean]
   type PivotTableWizardSourceData[TSourceType] = js.UndefOr[
-    Range | activexDashInteropLib.SafeArray[Range] | java.lang.String | activexDashInteropLib.SafeArray[java.lang.String]
+    Range | (activexDashInteropLib.SafeArray[Range] with stdLib.SafeArray[Range]) | java.lang.String | (activexDashInteropLib.SafeArray[java.lang.String] with stdLib.SafeArray[java.lang.String])
   ]
   type PrintToFileName[T] = js.UndefOr[java.lang.String]
   type Sheet = Worksheet | Chart | DialogSheet

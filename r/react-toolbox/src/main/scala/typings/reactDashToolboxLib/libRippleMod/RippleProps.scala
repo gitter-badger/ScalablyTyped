@@ -22,7 +22,7 @@ trait RippleProps
   /**
     * Function that will be called when the ripple animation ends.
     */
-  var onRippleEnded: js.UndefOr[coreDashJsLib.Function] = js.undefined
+  var onRippleEnded: js.UndefOr[coreDashJsLib.Function with js.Function] = js.undefined
   /**
     * Factor to indicate how much should the ripple spread under the component.
     * @default 2

@@ -10,6 +10,6 @@ import scala.scalajs.js.annotation._
 class DodecahedronGeometry () extends Geometry {
   def this(radius: scala.Double) = this()
   def this(radius: scala.Double, detail: scala.Double) = this()
-  var parameters: threeLib.Anon_Detail = js.native
+  var parameters: threeLib.Anon_RadiusDetail = js.native
 }
 

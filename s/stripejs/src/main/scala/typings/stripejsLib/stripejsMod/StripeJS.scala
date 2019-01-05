@@ -83,6 +83,6 @@ trait StripeJS extends js.Object {
     *
     * @return an object containing the generated Source or an error
     */
-  def retrieveSource(hasIdClient_secret: stripejsLib.Anon_Clientsecret): js.Promise[stripejsLib.sourceMod.SourceResult] = js.native
+  def retrieveSource(hasIdClient_secret: stripejsLib.Anon_Id): js.Promise[stripejsLib.sourceMod.SourceResult] = js.native
 }
 

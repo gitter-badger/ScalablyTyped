@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class IonImageryProvider protected ()
   extends cesiumLib.cesiumMod.CesiumNs.IonImageryProvider {
-  def this(options: cesiumLib.Anon_AccessToken) = this()
+  def this(options: cesiumLib.Anon_AssetId) = this()
   /* CompleteClass */
   override var credit: cesiumLib.cesiumMod.CesiumNs.Credit = js.native
   /* CompleteClass */

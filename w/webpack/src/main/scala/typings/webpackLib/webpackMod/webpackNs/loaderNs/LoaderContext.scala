@@ -151,6 +151,19 @@ trait LoaderContext extends js.Object {
   def cacheable(): scala.Unit = js.native
   def cacheable(flag: scala.Boolean): scala.Unit = js.native
   def callback(): scala.Unit = js.native
+  def callback(err: nodeLib.Error with stdLib.Error): scala.Unit = js.native
+  def callback(err: nodeLib.Error with stdLib.Error, content: java.lang.String): scala.Unit = js.native
+  def callback(
+    err: nodeLib.Error with stdLib.Error,
+    content: java.lang.String,
+    sourceMap: sourceDashMapLib.sourceDashMapMod.RawSourceMap
+  ): scala.Unit = js.native
+  def callback(err: nodeLib.Error with stdLib.Error, content: nodeLib.Buffer): scala.Unit = js.native
+  def callback(
+    err: nodeLib.Error with stdLib.Error,
+    content: nodeLib.Buffer,
+    sourceMap: sourceDashMapLib.sourceDashMapMod.RawSourceMap
+  ): scala.Unit = js.native
   def callback(err: js.UndefOr[scala.Nothing], content: java.lang.String): scala.Unit = js.native
   def callback(
     err: js.UndefOr[scala.Nothing],
@@ -160,19 +173,6 @@ trait LoaderContext extends js.Object {
   def callback(err: js.UndefOr[scala.Nothing], content: nodeLib.Buffer): scala.Unit = js.native
   def callback(
     err: js.UndefOr[scala.Nothing],
-    content: nodeLib.Buffer,
-    sourceMap: sourceDashMapLib.sourceDashMapMod.RawSourceMap
-  ): scala.Unit = js.native
-  def callback(err: nodeLib.Error): scala.Unit = js.native
-  def callback(err: nodeLib.Error, content: java.lang.String): scala.Unit = js.native
-  def callback(
-    err: nodeLib.Error,
-    content: java.lang.String,
-    sourceMap: sourceDashMapLib.sourceDashMapMod.RawSourceMap
-  ): scala.Unit = js.native
-  def callback(err: nodeLib.Error, content: nodeLib.Buffer): scala.Unit = js.native
-  def callback(
-    err: nodeLib.Error,
     content: nodeLib.Buffer,
     sourceMap: sourceDashMapLib.sourceDashMapMod.RawSourceMap
   ): scala.Unit = js.native
@@ -198,21 +198,21 @@ trait LoaderContext extends js.Object {
     * Then, it sets the url's for those attributes as dependencies of the html file that is parsed.
     */
   def dependency(file: java.lang.String): scala.Unit = js.native
+  def emitError(message: nodeLib.Error with stdLib.Error): scala.Unit = js.native
   /**
     * Emit a error.
     */
   def emitError(message: java.lang.String): scala.Unit = js.native
-  def emitError(message: nodeLib.Error): scala.Unit = js.native
   def emitFile(name: java.lang.String, content: java.lang.String, sourceMap: js.Any): scala.Unit = js.native
   /**
     * Emit a file. This is webpack-specific.
     */
   def emitFile(name: java.lang.String, content: nodeLib.Buffer, sourceMap: js.Any): scala.Unit = js.native
+  def emitWarning(message: nodeLib.Error with stdLib.Error): scala.Unit = js.native
   /**
     * Emit a warning.
     */
   def emitWarning(message: java.lang.String): scala.Unit = js.native
-  def emitWarning(message: nodeLib.Error): scala.Unit = js.native
   /**
     * Execute some code fragment like a module.
     *
@@ -229,7 +229,7 @@ trait LoaderContext extends js.Object {
   def loadModule(
     request: java.lang.String,
     callback: js.Function4[
-      /* err */ nodeLib.Error | scala.Null, 
+      /* err */ (nodeLib.Error with stdLib.Error) | scala.Null, 
       /* source */ java.lang.String, 
       /* sourceMap */ sourceDashMapLib.sourceDashMapMod.RawSourceMap, 
       /* module */ webpackLib.webpackMod.webpackNs.Module, 
@@ -242,7 +242,7 @@ trait LoaderContext extends js.Object {
   def resolve(
     context: java.lang.String,
     request: java.lang.String,
-    callback: js.Function2[/* err */ nodeLib.Error, /* result */ java.lang.String, scala.Unit]
+    callback: js.Function2[/* err */ nodeLib.Error with stdLib.Error, /* result */ java.lang.String, scala.Unit]
   ): js.Any = js.native
   /**
     * Resolve a request like a require expression.

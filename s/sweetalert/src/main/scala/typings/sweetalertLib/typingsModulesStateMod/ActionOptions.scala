@@ -6,5 +6,5 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ActionOptions
-  extends /* buttonNamespace */ org.scalablytyped.runtime.StringDictionary[sweetalertLib.Anon_CloseModalValue]
+  extends /* buttonNamespace */ org.scalablytyped.runtime.StringDictionary[sweetalertLib.Anon_ValueCloseModal]
 

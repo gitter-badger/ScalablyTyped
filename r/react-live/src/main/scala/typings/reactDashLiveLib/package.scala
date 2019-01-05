@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 package object reactDashLiveLib {
   // React union type
   type Component[P] = /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify ComponentClass<P> */ js.Any
-  type Diff[T /* <: KeyType */, U /* <: KeyType */] = /* import warning: ImportType.apply Failed type conversion: react-live.Anon_X<T, U>[T] */ js.Any
+  type Diff[T /* <: KeyType */, U /* <: KeyType */] = /* import warning: ImportType.apply Failed type conversion: {[ P in T ]: P} & {[ P in U ]: never} & {[x: string] : never}[T] */ js.Any
   // React Element Props
   type DivProps = /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify HTMLProps<HTMLDivElement> */ js.Any
   // Helper types

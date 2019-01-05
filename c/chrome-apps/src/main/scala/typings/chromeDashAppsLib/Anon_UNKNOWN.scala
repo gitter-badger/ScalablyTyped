@@ -6,8 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_UNKNOWN extends js.Object {
-  var AVAILABLE: chromeDashAppsLib.chromeDashAppsLibStrings.available
-  var ENABLED: chromeDashAppsLib.chromeDashAppsLibStrings.enabled
+  var PERMISSIONS_INCREASE: chromeDashAppsLib.chromeDashAppsLibStrings.permissions_increase
   var UNKNOWN: chromeDashAppsLib.chromeDashAppsLibStrings.unknown
 }
 

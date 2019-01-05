@@ -48,7 +48,7 @@ trait _Middleware extends js.Object {
       /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify VPosition */ /* position */ js.Any, 
       /* token */ vscodeDashJsonrpcLib.libCancellationMod.CancellationToken, 
       /* next */ PrepareRenameSignature, 
-      /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify ProviderResult<VRange | {   range  :VRange,    placeholder  :string}> */ _
+      /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify ProviderResult<VRange | {  range  :VRange,   placeholder  :string}> */ _
     ]
   ] = js.undefined
   var provideCodeActions: js.UndefOr[

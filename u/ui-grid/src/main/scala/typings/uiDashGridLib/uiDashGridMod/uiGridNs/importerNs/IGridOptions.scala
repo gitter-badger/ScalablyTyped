@@ -68,7 +68,7 @@ trait IGridOptions[TEntity] extends js.Object {
     * Defaults to a vanilla javascript object
     * @default {}
     */
-  var importerNewObject: js.UndefOr[angularLib.angularMod.Global.Function] = js.undefined
+  var importerNewObject: js.UndefOr[angularLib.angularMod.Global.Function with js.Function] = js.undefined
   /**
     * A callback that massages the data for each object.
     * For example, you might have data stored as a code value, but display the decode.

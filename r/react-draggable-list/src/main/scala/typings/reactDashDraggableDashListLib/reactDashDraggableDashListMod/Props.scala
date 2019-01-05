@@ -10,7 +10,9 @@ trait Props[I, C, T] extends js.Object {
   var autoScrollRegionSize: js.UndefOr[scala.Double] = js.undefined
   var commonProps: js.UndefOr[C] = js.undefined
   var constrainDrag: js.UndefOr[scala.Boolean] = js.undefined
-  var container: js.UndefOr[js.Function0[js.UndefOr[reactLib.HTMLElement | scala.Null]]] = js.undefined
+  var container: js.UndefOr[
+    js.Function0[js.UndefOr[(reactLib.HTMLElement with stdLib.HTMLElement) | scala.Null]]
+  ] = js.undefined
   var itemKey: java.lang.String | (js.Function1[/* item */ I, java.lang.String])
   var list: js.Array[I]
   var onMoveEnd: js.UndefOr[

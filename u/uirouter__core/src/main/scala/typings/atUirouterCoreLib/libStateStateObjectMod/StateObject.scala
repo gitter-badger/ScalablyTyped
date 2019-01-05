@@ -116,7 +116,7 @@ class StateObject () extends js.Object {
     * @param opts options
     */
   def parameter(id: java.lang.String): atUirouterCoreLib.libParamsParamMod.Param = js.native
-  def parameter(id: java.lang.String, opts: atUirouterCoreLib.Anon_Inherit): atUirouterCoreLib.libParamsParamMod.Param = js.native
+  def parameter(id: java.lang.String, opts: atUirouterCoreLib.Anon_InheritBoolean): atUirouterCoreLib.libParamsParamMod.Param = js.native
   /**
     * Gets the state's `Param` objects
     *
@@ -127,7 +127,7 @@ class StateObject () extends js.Object {
     * @param opts options
     */
   def parameters(): js.Array[atUirouterCoreLib.libParamsParamMod.Param] = js.native
-  def parameters(opts: atUirouterCoreLib.Anon_InheritMatchingKeys): js.Array[atUirouterCoreLib.libParamsParamMod.Param] = js.native
+  def parameters(opts: atUirouterCoreLib.Anon_Inherit): js.Array[atUirouterCoreLib.libParamsParamMod.Param] = js.native
   /**
     * Returns the root node of this state's tree.
     *

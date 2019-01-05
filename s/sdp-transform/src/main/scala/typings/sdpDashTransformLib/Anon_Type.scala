@@ -6,8 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_Type extends js.Object {
-  var payload: scala.Double
-  var subtype: js.UndefOr[java.lang.String] = js.undefined
+  var payloads: js.UndefOr[java.lang.String] = js.undefined
+  var port: scala.Double
+  var protocol: java.lang.String
   var `type`: java.lang.String
 }
 

@@ -29,18 +29,13 @@ class Model protected () extends js.Object {
   var _validations: IAnyObject = js.native
   var _validationsList: js.Array[_] = js.native
   var _verificationsList: js.Any = js.native
-  var aggregateBy: nodalLib.Anon_Createdat = js.native
-  var constructor: org.scalablytyped.runtime.Instantiable3[
-    /* modelData */ js.Object, 
-    /* fromStorage */ js.UndefOr[/* fromStorage */ scala.Boolean], 
-    /* fromSeed */ js.UndefOr[/* fromSeed */ scala.Boolean], 
-    Model
-  ] = js.native
+  var aggregateBy: nodalLib.Anon_Id = js.native
+  var constructor: nodalLib.Anon_RelationshipCacheFind = js.native
   var data: js.Any = js.native
   var db: Database | js.Any = js.native
   var externalInterface: js.Array[java.lang.String] = js.native
   var formatters: IAnyObject = js.native
-  var schema: nodalLib.Anon_Columns = js.native
+  var schema: nodalLib.Anon_Table = js.native
   /**
     * Destroys model reference in database
     * @param {function} callback Method to execute upon completion, returns error if failed
@@ -209,7 +204,7 @@ class Model protected () extends js.Object {
     */
   def include(
     callback: js.Function2[
-      /* err */ nodeLib.Error, 
+      /* err */ nodeLib.Error with stdLib.Error, 
       /* repeated */ this.type | ModelArray[this.type], 
       scala.Unit
     ]
@@ -404,15 +399,7 @@ object Model extends js.Object {
     *   "as": What to display the name of the child as when joined to the parent (default to camelCase of child name)
     *   "multiple": Whether the child exists in multiples for the parent (defaults to false)
     */
-  def joinsTo(
-    modelClass: org.scalablytyped.runtime.Instantiable3[
-      /* modelData */ js.Object, 
-      /* fromStorage */ js.UndefOr[/* fromStorage */ scala.Boolean], 
-      /* fromSeed */ js.UndefOr[/* fromSeed */ scala.Boolean], 
-      nodalLib.nodalMod.Model
-    ],
-    options: nodalLib.Anon_Multiple
-  ): nodalLib.nodalMod.RelationshipEdge | scala.Null = js.native
+  def joinsTo(modelClass: nodalLib.Anon_RelationshipCacheFind, options: nodalLib.Anon_NameVia): nodalLib.nodalMod.RelationshipEdge | scala.Null = js.native
   /**
     * Creates a new Composer (ORM) instance to begin a new query.
     * @param {optional Nodal.Database} db Deprecated - provide a database to query from. Set the model's db in its constructor file, instead.
@@ -437,7 +424,7 @@ object Model extends js.Object {
     * Set the schema to be used for this model
     * @param {Object} schema
     */
-  def setSchema(schema: nodalLib.Anon_Columns): scala.Unit = js.native
+  def setSchema(schema: nodalLib.Anon_Table): scala.Unit = js.native
   /**
     * Get the model's table name
     * @return {string}

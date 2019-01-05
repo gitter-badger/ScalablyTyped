@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 package object ConsulNs {
   type Callback[TData] = js.Function3[
-    /* err */ js.UndefOr[nodeLib.Error], 
+    /* err */ js.UndefOr[nodeLib.Error with stdLib.Error], 
     /* data */ js.UndefOr[TData], 
     /* res */ js.UndefOr[Response], 
     js.Any

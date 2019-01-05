@@ -63,7 +63,10 @@ class ListObject protected () extends js.Object {
   def ListColumns(Index: scala.Double): ListColumn = js.native
   def ListRows(Index: java.lang.String): ListRow = js.native
   def ListRows(Index: scala.Double): ListRow = js.native
-  def Publish(Target: activexDashInteropLib.SafeArray[java.lang.String], LinkSource: scala.Boolean): java.lang.String = js.native
+  def Publish(
+    Target: activexDashInteropLib.SafeArray[java.lang.String] with stdLib.SafeArray[java.lang.String],
+    LinkSource: scala.Boolean
+  ): java.lang.String = js.native
   def Range(Address: java.lang.String): Range = js.native
   def Range(RowIndex: scala.Double): Range = js.native
   def Range(RowIndex: scala.Double, ColumnIndex: scala.Double): Range = js.native

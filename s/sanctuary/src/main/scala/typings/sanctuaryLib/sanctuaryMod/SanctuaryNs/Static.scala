@@ -153,8 +153,8 @@ trait Static extends js.Object {
   def last(xs: java.lang.String): sanctuaryLib.sanctuaryMod.Maybe[java.lang.String] = js.native
   def last[A](xs: js.Array[A]): sanctuaryLib.sanctuaryMod.Maybe[A] = js.native
   def lefts[A](p: js.Array[sanctuaryLib.sanctuaryMod.Either[A, _]]): js.Array[A] = js.native
-  def lift2[A, B, C](f: sanctuaryLib.Fn2[A, B, C]): sanctuaryLib.Anon_XY[A, B, C] = js.native
-  def lift3[A, B, C, D](f: sanctuaryLib.Fn3[A, B, C, D]): sanctuaryLib.Anon_X[A, B, C, D] = js.native
+  def lift2[A, B, C](f: sanctuaryLib.Fn2[A, B, C]): sanctuaryLib.Anon_X[A, B, C] = js.native
+  def lift3[A, B, C, D](f: sanctuaryLib.Fn3[A, B, C, D]): sanctuaryLib.Anon_XY[A, B, C, D] = js.native
   def lines(s: java.lang.String): js.Array[java.lang.String] = js.native
   def lt[A](x: sanctuaryLib.sanctuaryMod.Ord[A]): js.Function1[/* y */ sanctuaryLib.sanctuaryMod.Ord[A], scala.Boolean] = js.native
   def lte[A](x: sanctuaryLib.sanctuaryMod.Ord[A]): js.Function1[/* y */ sanctuaryLib.sanctuaryMod.Ord[A], scala.Boolean] = js.native

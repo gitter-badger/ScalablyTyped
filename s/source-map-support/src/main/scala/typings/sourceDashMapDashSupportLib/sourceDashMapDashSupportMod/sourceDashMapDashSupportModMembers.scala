@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("source-map-support", JSImport.Namespace)
 @js.native
 object sourceDashMapDashSupportModMembers extends js.Object {
-  def getErrorSource(error: nodeLib.Error): java.lang.String | scala.Null = js.native
+  def getErrorSource(error: nodeLib.Error with stdLib.Error): java.lang.String | scala.Null = js.native
   def install(): scala.Unit = js.native
   def install(options: Options): scala.Unit = js.native
   def mapSourcePosition(position: Position): Position = js.native

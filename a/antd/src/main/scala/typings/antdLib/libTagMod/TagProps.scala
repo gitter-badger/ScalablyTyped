@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait TagProps
-  extends reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLDivElement] {
+  extends reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLDivElement with stdLib.HTMLDivElement] {
   var afterClose: js.UndefOr[js.Function] = js.undefined
   var closable: js.UndefOr[scala.Boolean] = js.undefined
   var onClose: js.UndefOr[js.Function] = js.undefined

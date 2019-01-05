@@ -23,7 +23,7 @@ object readlinkNs extends js.Object {
     * @param options The encoding (or an object specifying the encoding), used as the encoding of the result. If not provided, `'utf8'` is used.
     */
   def `__promisify__`(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_EncodingBuffer_1560675869): js.Promise[nodeLib.Buffer] = js.native
-  def `__promisify__`(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_EncodingStringNull): js.Promise[java.lang.String | nodeLib.Buffer] = js.native
+  def `__promisify__`(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_EncodingString): js.Promise[java.lang.String | nodeLib.Buffer] = js.native
   def `__promisify__`(path: nodeLib.fsMod.PathLike, options: nodeLib.BufferEncoding): js.Promise[java.lang.String] = js.native
   @JSName("__promisify__")
   def __promisify___buffer(path: nodeLib.fsMod.PathLike, options: electronLib.electronLibStrings.buffer): js.Promise[nodeLib.Buffer] = js.native

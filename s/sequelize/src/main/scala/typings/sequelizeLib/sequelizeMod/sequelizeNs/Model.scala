@@ -221,10 +221,10 @@ trait Model[TInstance, TAttributes]
     * without
     * profiles will be counted
     */
-  def findAndCount[TCustomAttributes](): bluebirdLib.bluebirdMod.namespaced[sequelizeLib.Anon_Count[TInstance]] = js.native
-  def findAndCount[TCustomAttributes](options: FindOptions[TAttributes with TCustomAttributes]): bluebirdLib.bluebirdMod.namespaced[sequelizeLib.Anon_Count[TInstance]] = js.native
-  def findAndCountAll[TCustomAttributes](): bluebirdLib.bluebirdMod.namespaced[sequelizeLib.Anon_Count[TInstance]] = js.native
-  def findAndCountAll[TCustomAttributes](options: FindOptions[TAttributes with TCustomAttributes]): bluebirdLib.bluebirdMod.namespaced[sequelizeLib.Anon_Count[TInstance]] = js.native
+  def findAndCount[TCustomAttributes](): bluebirdLib.bluebirdMod.namespaced[sequelizeLib.Anon_Rows[TInstance]] = js.native
+  def findAndCount[TCustomAttributes](options: FindOptions[TAttributes with TCustomAttributes]): bluebirdLib.bluebirdMod.namespaced[sequelizeLib.Anon_Rows[TInstance]] = js.native
+  def findAndCountAll[TCustomAttributes](): bluebirdLib.bluebirdMod.namespaced[sequelizeLib.Anon_Rows[TInstance]] = js.native
+  def findAndCountAll[TCustomAttributes](options: FindOptions[TAttributes with TCustomAttributes]): bluebirdLib.bluebirdMod.namespaced[sequelizeLib.Anon_Rows[TInstance]] = js.native
   /**
     * Search for a single instance by its primary key. This applies LIMIT 1, so the listener will
     * always be called with a single instance.
@@ -294,7 +294,7 @@ trait Model[TInstance, TAttributes]
   def insertOrUpdate(values: TAttributes): bluebirdLib.bluebirdMod.namespaced[scala.Boolean] = js.native
   def insertOrUpdate(
     values: TAttributes,
-    options: UpsertOptions with (sequelizeLib.Anon_Returning | sequelizeLib.Anon_ReturningTrue)
+    options: UpsertOptions with (sequelizeLib.Anon_ReturningFalse | sequelizeLib.Anon_ReturningTrue)
   ): bluebirdLib.bluebirdMod.namespaced[scala.Boolean] = js.native
   /**
     * Find the maximum value of field
@@ -429,7 +429,7 @@ trait Model[TInstance, TAttributes]
   def upsert(values: TAttributes): bluebirdLib.bluebirdMod.namespaced[scala.Boolean] = js.native
   def upsert(
     values: TAttributes,
-    options: UpsertOptions with (sequelizeLib.Anon_ReturningFalse | sequelizeLib.Anon_ReturningTrue)
+    options: UpsertOptions with (sequelizeLib.Anon_Returning | sequelizeLib.Anon_ReturningTrue)
   ): bluebirdLib.bluebirdMod.namespaced[scala.Boolean] = js.native
 }
 

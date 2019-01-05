@@ -30,7 +30,7 @@ object IntegrationNs extends js.Object {
   def jasmine(): scala.Unit = js.native
   def jasmine(params: jshamcrestLib.Anon_Scope): scala.Unit = js.native
   def jsUnity(): scala.Unit = js.native
-  def jsUnity(params: jshamcrestLib.Anon_AttachAssertions): scala.Unit = js.native
+  def jsUnity(params: jshamcrestLib.Anon_ScopeAttachAssertions): scala.Unit = js.native
   def screwunit(): scala.Unit = js.native
   def screwunit(params: jshamcrestLib.Anon_Scope): scala.Unit = js.native
 }

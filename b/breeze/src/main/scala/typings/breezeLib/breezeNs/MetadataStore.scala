@@ -51,7 +51,7 @@ class MetadataStore () extends js.Object {
   ): scala.Unit = js.native
   def setEntityTypeForResourceName(resourceName: java.lang.String, entityTypeName: java.lang.String): scala.Unit = js.native
   def setEntityTypeForResourceName(resourceName: java.lang.String, entityType: EntityType): scala.Unit = js.native
-  def setProperties(config: breezeLib.Anon_Name): scala.Unit = js.native
+  def setProperties(config: breezeLib.Anon_NameSerializerFn): scala.Unit = js.native
   def trackUnmappedType(entityCtor: js.Function): scala.Unit = js.native
   def trackUnmappedType(entityCtor: js.Function, interceptor: js.Function): scala.Unit = js.native
 }

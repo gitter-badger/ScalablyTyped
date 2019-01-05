@@ -11,7 +11,7 @@ trait LayoutProps
     * Children to pass through the component.
     */
   var children: js.UndefOr[
-    reactLib.reactMod.Global.JSXNs.Element | coreDashJsLib.Array[reactLib.reactMod.Global.JSXNs.Element]
+    reactLib.reactMod.Global.JSXNs.Element | (coreDashJsLib.Array[reactLib.reactMod.Global.JSXNs.Element] with js.Array[reactLib.reactMod.Global.JSXNs.Element])
   ] = js.undefined
   /**
     * Classnames object defining the component style.

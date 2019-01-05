@@ -24,7 +24,7 @@ object MetricsNs extends js.Object {
   }
   
   trait All extends js.Object {
-    var entries: chartmogulDashNodeLib.Anon_Customerchurnrate
+    var entries: chartmogulDashNodeLib.Anon_Date
   }
   
   trait CustomerChurnRate extends js.Object {

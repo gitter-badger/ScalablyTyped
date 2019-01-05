@@ -9,20 +9,20 @@ import scala.scalajs.js.annotation._
 trait Anon_Ptr
   extends org.scalablytyped.runtime.Instantiable3[
       /* ptr */ Buffer, 
-      (/* ret */ java.lang.String) | (/* ret */ refDashNapiLib.refDashNapiMod.Type), 
-      /* fixedArgs */ js.Array[js.Any], 
-      ffiDashNapiLib.ffiDashNapiMod.VariadicForeignFunction
+      (/* retType */ java.lang.String) | (/* retType */ refDashNapiLib.refDashNapiMod.Type), 
+      /* argTypes */ js.Array[js.Any], 
+      ffiDashNapiLib.ffiDashNapiMod.ForeignFunction
     ]
      with org.scalablytyped.runtime.Instantiable4[
       /* ptr */ Buffer, 
-      (/* ret */ java.lang.String) | (/* ret */ refDashNapiLib.refDashNapiMod.Type), 
-      /* fixedArgs */ js.Array[js.Any], 
+      (/* retType */ java.lang.String) | (/* retType */ refDashNapiLib.refDashNapiMod.Type), 
+      /* argTypes */ js.Array[js.Any], 
       /* abi */ scala.Double, 
-      ffiDashNapiLib.ffiDashNapiMod.VariadicForeignFunction
+      ffiDashNapiLib.ffiDashNapiMod.ForeignFunction
     ] {
-  def apply(ptr: Buffer, ret: java.lang.String, fixedArgs: js.Array[_]): ffiDashNapiLib.ffiDashNapiMod.VariadicForeignFunction = js.native
-  def apply(ptr: Buffer, ret: java.lang.String, fixedArgs: js.Array[_], abi: scala.Double): ffiDashNapiLib.ffiDashNapiMod.VariadicForeignFunction = js.native
-  def apply(ptr: Buffer, ret: refDashNapiLib.refDashNapiMod.Type, fixedArgs: js.Array[_]): ffiDashNapiLib.ffiDashNapiMod.VariadicForeignFunction = js.native
-  def apply(ptr: Buffer, ret: refDashNapiLib.refDashNapiMod.Type, fixedArgs: js.Array[_], abi: scala.Double): ffiDashNapiLib.ffiDashNapiMod.VariadicForeignFunction = js.native
+  def apply(ptr: Buffer, retType: java.lang.String, argTypes: js.Array[_]): ffiDashNapiLib.ffiDashNapiMod.ForeignFunction = js.native
+  def apply(ptr: Buffer, retType: java.lang.String, argTypes: js.Array[_], abi: scala.Double): ffiDashNapiLib.ffiDashNapiMod.ForeignFunction = js.native
+  def apply(ptr: Buffer, retType: refDashNapiLib.refDashNapiMod.Type, argTypes: js.Array[_]): ffiDashNapiLib.ffiDashNapiMod.ForeignFunction = js.native
+  def apply(ptr: Buffer, retType: refDashNapiLib.refDashNapiMod.Type, argTypes: js.Array[_], abi: scala.Double): ffiDashNapiLib.ffiDashNapiMod.ForeignFunction = js.native
 }
 

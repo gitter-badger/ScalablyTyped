@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Anon_Obj extends js.Object {
-  def apply(): adoneLib.adoneNs.shaniNs.utilNs.INs.Expectation = js.native
-  def apply(obj: js.Any): adoneLib.adoneNs.shaniNs.utilNs.INs.Mock = js.native
+  def apply(): adoneLib.adoneNs.shaniNs.utilNs.INs.Stub = js.native
+  def apply(obj: js.Any): adoneLib.adoneNs.shaniNs.utilNs.INs.Stub = js.native
+  def apply[T](obj: T, method: java.lang.String): adoneLib.adoneNs.shaniNs.utilNs.INs.Stub = js.native
 }
 

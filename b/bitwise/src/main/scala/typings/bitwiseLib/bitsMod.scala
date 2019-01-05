@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("bitwise/bits", JSImport.Namespace)
 @js.native
 object bitsMod extends js.Object {
-  val default: bitwiseLib.Anon_Xnor = js.native
+  val default: bitwiseLib.Anon_And = js.native
   def and(bits1: js.Array[bitwiseLib.typesMod.Bit], bits2: js.Array[bitwiseLib.typesMod.Bit]): js.Array[bitwiseLib.typesMod.Bit] = js.native
   def nand(bits1: js.Array[bitwiseLib.typesMod.Bit], bits2: js.Array[bitwiseLib.typesMod.Bit]): js.Array[bitwiseLib.typesMod.Bit] = js.native
   def nor(bits1: js.Array[bitwiseLib.typesMod.Bit], bits2: js.Array[bitwiseLib.typesMod.Bit]): js.Array[bitwiseLib.typesMod.Bit] = js.native

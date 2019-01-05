@@ -114,7 +114,7 @@ trait CollectionBuildingFiltering[TIn, TOut] extends js.Object {
   def and(eles: CollectionArgument): CollectionReturnValue = js.native
   def and(eles: Selector): CollectionReturnValue = js.native
   def complement(): CollectionReturnValue = js.native
-  def diff(selector: CollectionArgument): cytoscapeLib.Anon_Both = js.native
+  def diff(selector: CollectionArgument): cytoscapeLib.Anon_Left = js.native
   /**
     * Perform a traditional left/right diff on the two collections.
     *
@@ -127,7 +127,7 @@ trait CollectionBuildingFiltering[TIn, TOut] extends js.Object {
     * both - is the set of elements in both collections.
     * http://js.cytoscape.org/#eles.diff
     */
-  def diff(selector: Selector): cytoscapeLib.Anon_Both = js.native
+  def diff(selector: Selector): cytoscapeLib.Anon_Left = js.native
   /**
     * Get a new collection, resulting from the collection without some specified elements.
     * http://js.cytoscape.org/#eles.difference
@@ -195,11 +195,11 @@ trait CollectionBuildingFiltering[TIn, TOut] extends js.Object {
     *
     * http://js.cytoscape.org/#eles.max
     */
-  def max[T](fn: js.Function3[/* ele */ TIn, /* i */ scala.Double, /* eles */ CollectionArgument, T]): cytoscapeLib.Anon_Ele[T] = js.native
+  def max[T](fn: js.Function3[/* ele */ TIn, /* i */ scala.Double, /* eles */ CollectionArgument, T]): cytoscapeLib.Anon_Value[T] = js.native
   def max[T](
     fn: js.Function3[/* ele */ TIn, /* i */ scala.Double, /* eles */ CollectionArgument, T],
     thisArg: js.Any
-  ): cytoscapeLib.Anon_Ele[T] = js.native
+  ): cytoscapeLib.Anon_Value[T] = js.native
   /**
     * Perform a in-place merge of the given elements into the calling collection.
     * @param eles The elements to merge in-place or a selector representing the elements to merge.
@@ -236,11 +236,11 @@ trait CollectionBuildingFiltering[TIn, TOut] extends js.Object {
     *
     * http://js.cytoscape.org/#eles.min
     */
-  def min[T](fn: js.Function3[/* ele */ TIn, /* i */ scala.Double, /* eles */ CollectionArgument, T]): cytoscapeLib.Anon_Ele[T] = js.native
+  def min[T](fn: js.Function3[/* ele */ TIn, /* i */ scala.Double, /* eles */ CollectionArgument, T]): cytoscapeLib.Anon_Value[T] = js.native
   def min[T](
     fn: js.Function3[/* ele */ TIn, /* i */ scala.Double, /* eles */ CollectionArgument, T],
     thisArg: js.Any
-  ): cytoscapeLib.Anon_Ele[T] = js.native
+  ): cytoscapeLib.Anon_Value[T] = js.native
   def n(eles: CollectionArgument): CollectionReturnValue = js.native
   def n(eles: Selector): CollectionReturnValue = js.native
   /**

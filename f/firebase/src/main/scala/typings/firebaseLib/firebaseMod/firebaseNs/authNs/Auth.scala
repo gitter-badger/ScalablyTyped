@@ -16,17 +16,17 @@ trait Auth extends js.Object {
   def confirmPasswordReset(code: java.lang.String, newPassword: java.lang.String): js.Promise[scala.Unit] = js.native
   def createUserAndRetrieveDataWithEmailAndPassword(email: java.lang.String, password: java.lang.String): js.Promise[UserCredential] = js.native
   def createUserWithEmailAndPassword(email: java.lang.String, password: java.lang.String): js.Promise[UserCredential] = js.native
-  def fetchProvidersForEmail(email: java.lang.String): js.Promise[coreDashJsLib.Array[java.lang.String]] = js.native
-  def fetchSignInMethodsForEmail(email: java.lang.String): js.Promise[coreDashJsLib.Array[java.lang.String]] = js.native
+  def fetchProvidersForEmail(email: java.lang.String): js.Promise[coreDashJsLib.Array[java.lang.String] with js.Array[java.lang.String]] = js.native
+  def fetchSignInMethodsForEmail(email: java.lang.String): js.Promise[coreDashJsLib.Array[java.lang.String] with js.Array[java.lang.String]] = js.native
   def getRedirectResult(): js.Promise[UserCredential] = js.native
   def isSignInWithEmailLink(emailLink: java.lang.String): scala.Boolean = js.native
-  def onAuthStateChanged(nextOrObserver: firebaseLib.firebaseMod.firebaseNs.Observer[_, nodeLib.Error]): firebaseLib.firebaseMod.firebaseNs.Unsubscribe = js.native
+  def onAuthStateChanged(nextOrObserver: firebaseLib.firebaseMod.firebaseNs.Observer[_, nodeLib.Error with stdLib.Error]): firebaseLib.firebaseMod.firebaseNs.Unsubscribe = js.native
   def onAuthStateChanged(
-    nextOrObserver: firebaseLib.firebaseMod.firebaseNs.Observer[_, nodeLib.Error],
+    nextOrObserver: firebaseLib.firebaseMod.firebaseNs.Observer[_, nodeLib.Error with stdLib.Error],
     error: js.Function1[/* a */ Error, _]
   ): firebaseLib.firebaseMod.firebaseNs.Unsubscribe = js.native
   def onAuthStateChanged(
-    nextOrObserver: firebaseLib.firebaseMod.firebaseNs.Observer[_, nodeLib.Error],
+    nextOrObserver: firebaseLib.firebaseMod.firebaseNs.Observer[_, nodeLib.Error with stdLib.Error],
     error: js.Function1[/* a */ Error, _],
     completed: firebaseLib.firebaseMod.firebaseNs.Unsubscribe
   ): firebaseLib.firebaseMod.firebaseNs.Unsubscribe = js.native
@@ -40,13 +40,13 @@ trait Auth extends js.Object {
     error: js.Function1[/* a */ Error, _],
     completed: firebaseLib.firebaseMod.firebaseNs.Unsubscribe
   ): firebaseLib.firebaseMod.firebaseNs.Unsubscribe = js.native
-  def onIdTokenChanged(nextOrObserver: firebaseLib.firebaseMod.firebaseNs.Observer[_, nodeLib.Error]): firebaseLib.firebaseMod.firebaseNs.Unsubscribe = js.native
+  def onIdTokenChanged(nextOrObserver: firebaseLib.firebaseMod.firebaseNs.Observer[_, nodeLib.Error with stdLib.Error]): firebaseLib.firebaseMod.firebaseNs.Unsubscribe = js.native
   def onIdTokenChanged(
-    nextOrObserver: firebaseLib.firebaseMod.firebaseNs.Observer[_, nodeLib.Error],
+    nextOrObserver: firebaseLib.firebaseMod.firebaseNs.Observer[_, nodeLib.Error with stdLib.Error],
     error: js.Function1[/* a */ Error, _]
   ): firebaseLib.firebaseMod.firebaseNs.Unsubscribe = js.native
   def onIdTokenChanged(
-    nextOrObserver: firebaseLib.firebaseMod.firebaseNs.Observer[_, nodeLib.Error],
+    nextOrObserver: firebaseLib.firebaseMod.firebaseNs.Observer[_, nodeLib.Error with stdLib.Error],
     error: js.Function1[/* a */ Error, _],
     completed: firebaseLib.firebaseMod.firebaseNs.Unsubscribe
   ): firebaseLib.firebaseMod.firebaseNs.Unsubscribe = js.native

@@ -50,7 +50,7 @@ class Timeline protected () extends js.Object {
   /**
     * Get the range of all the items as an object containing min date and max date
     */
-  def getItemRange(): visLib.Anon_Max = js.native
+  def getItemRange(): visLib.Anon_Min = js.native
   /**
     * Get an array with the ids of the currently selected items
     */
@@ -121,7 +121,7 @@ class Timeline protected () extends js.Object {
     * This is a convenience method for individually calling both setItems(items) and setGroups(groups).
     * Both items and groups can be an Array with Objects, a DataSet (offering 2 way data binding), or a DataView (offering 1 way data binding).
     */
-  def setData(data: visLib.Anon_Items): scala.Unit = js.native
+  def setData(data: visLib.Anon_Groups): scala.Unit = js.native
   /**
     * Set a data set with groups for the Timeline.
     */
@@ -139,12 +139,12 @@ class Timeline protected () extends js.Object {
     */
   def setOptions(options: TimelineOptions): scala.Unit = js.native
   def setSelection(ids: js.Array[IdType]): scala.Unit = js.native
-  def setSelection(ids: js.Array[IdType], options: visLib.Anon_Animation): scala.Unit = js.native
+  def setSelection(ids: js.Array[IdType], options: visLib.Anon_Focus): scala.Unit = js.native
   /**
     * Select one or multiple items by their id. The currently selected items will be unselected. To unselect all selected items, call `setSelection([])`.
     */
   def setSelection(ids: IdType): scala.Unit = js.native
-  def setSelection(ids: IdType, options: visLib.Anon_Animation): scala.Unit = js.native
+  def setSelection(ids: IdType, options: visLib.Anon_Focus): scala.Unit = js.native
   def setWindow(start: js.Any, date: js.Any): scala.Unit = js.native
   /**
     * Set the current visible window.

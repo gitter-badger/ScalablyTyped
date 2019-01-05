@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_PropsStyle extends js.Object {
-  var props: Anon_ColorScale
+  var props: Anon_WidthHeight
   var style: victoryLib.victoryMod.VictoryStyleInterface
 }
 

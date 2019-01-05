@@ -9,11 +9,11 @@ import scala.scalajs.js.annotation._
 @js.native
 class SObject[T] () extends js.Object {
   @JSName("approvalLayouts$")
-  var approvalLayouts$_Original: jsforceLib.Anon_CallbackClearApprovalLayoutInfo = js.native
+  var approvalLayouts$_Original: jsforceLib.Anon_CallbackClear = js.native
   @JSName("compactLayouts$")
-  var compactLayouts$_Original: jsforceLib.Anon_Callback = js.native
+  var compactLayouts$_Original: jsforceLib.Anon_CallbackClearCompactLayoutInfo = js.native
   @JSName("describe$")
-  var describe$_Original: jsforceLib.Anon_CallbackClear = js.native
+  var describe$_Original: jsforceLib.Anon_CallbackClearDescribeSObjectResult = js.native
   /** Returns a value from the cache if it exists, otherwise calls SObject.layouts */
   @JSName("layouts$")
   var layouts$_Original: jsforceLib.Anon_LayoutName = js.native

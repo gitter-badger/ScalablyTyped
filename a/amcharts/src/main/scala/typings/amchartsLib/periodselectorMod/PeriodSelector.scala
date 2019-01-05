@@ -72,7 +72,10 @@ trait PeriodSelector extends js.Object {
     * @param handler - Dispatched when dates in period selector input fields are changed or
     * user clicks on one of the predefined period buttons.
     */
-  def addListener(`type`: java.lang.String, handler: js.Function1[/* e */ amchartsLib.Anon_Count, scala.Unit]): scala.Unit
+  def addListener(
+    `type`: java.lang.String,
+    handler: js.Function1[/* e */ amchartsLib.Anon_TypeStartDate, scala.Unit]
+  ): scala.Unit
   /**
     * Removes event listener from chart object.
     */

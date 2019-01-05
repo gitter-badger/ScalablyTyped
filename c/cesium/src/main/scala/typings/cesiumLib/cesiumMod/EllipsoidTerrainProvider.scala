@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class EllipsoidTerrainProvider ()
   extends cesiumLib.cesiumMod.CesiumNs.EllipsoidTerrainProvider {
-  def this(options: cesiumLib.Anon_Ellipsoid) = this()
+  def this(options: cesiumLib.Anon_TilingScheme) = this()
 }
 

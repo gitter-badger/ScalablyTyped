@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 package object routerMod {
   type AnchorProps = Omit[
     reactLib.reactMod.ReactNs.DetailedHTMLProps[
-      reactLib.reactMod.ReactNs.AnchorHTMLAttributes[reactLib.HTMLAnchorElement], 
-      reactLib.HTMLAnchorElement
+      reactLib.reactMod.ReactNs.AnchorHTMLAttributes[reactLib.HTMLAnchorElement with stdLib.HTMLAnchorElement], 
+      reactLib.HTMLAnchorElement with stdLib.HTMLAnchorElement
     ], 
     atReachRouterLib.atReachRouterLibStrings.href
   ]
@@ -25,6 +25,6 @@ package object routerMod {
     scala.Unit
   ]
   type Omit[T, K] = stdLib.Pick[T, stdLib.Exclude[java.lang.String, K]]
-  type RouteComponentProps[TParams] = stdLib.Partial[TParams] with atReachRouterLib.Anon_Location
+  type RouteComponentProps[TParams] = stdLib.Partial[TParams] with atReachRouterLib.Anon_Path
   type WindowLocation = stdLib.Location with historyLib.historyMod.Location[historyLib.historyMod.LocationState]
 }

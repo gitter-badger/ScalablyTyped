@@ -243,7 +243,7 @@ class Player protected () extends js.Object {
   		 *
   		 * @param args   Settings to play the video.
   		 */
-  def loadVideoByUrl(args: youtubeLib.Anon_EndSeconds): scala.Unit = js.native
+  def loadVideoByUrl(args: youtubeLib.Anon_MediaContentUrl): scala.Unit = js.native
   /**
   		 * Loads a video by media content URL.
   		 *

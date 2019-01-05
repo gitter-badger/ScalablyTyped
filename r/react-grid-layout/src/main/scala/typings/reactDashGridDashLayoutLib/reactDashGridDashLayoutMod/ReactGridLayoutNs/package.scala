@@ -12,8 +12,8 @@ package object ReactGridLayoutNs {
     /* oldItem */ Layout, 
     /* newItem */ Layout, 
     /* placeholder */ Layout, 
-    /* event */ reactLib.MouseEvent, 
-    /* element */ reactLib.HTMLElement, 
+    /* event */ reactLib.MouseEvent with stdLib.MouseEvent, 
+    /* element */ reactLib.HTMLElement with stdLib.HTMLElement, 
     scala.Unit
   ]
   type Layouts = reactDashGridDashLayoutLib.reactDashGridDashLayoutLibStrings.Layouts with js.Any

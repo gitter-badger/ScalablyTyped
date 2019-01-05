@@ -5,8 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveDifficultInheritance: 
-- Lifted 3 members from Set(std.Pick<react.react.HTMLAttributes<react.HTMLDivElement>, std.Exclude<keyof react.react.HTMLAttributes<react.HTMLDivElement>, 'classes' | 'onChange' | 'onKeyUp' | 'onKeyDown' | 'defaultValue'>>, @material-ui/core.@material-ui/core.StandardProps<react.react.HTMLAttributes<react.HTMLDivElement>, @material-ui/core.@material-ui/core/InputBase/InputBase.InputBaseClassKey, 'onChange' | 'onKeyUp' | 'onKeyDown' | 'defaultValue'>) */ trait InputBaseProps
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
+- Dropped {[ P in std.Exclude<keyof react.react.HTMLAttributes<react.HTMLDivElement & std.HTMLDivElement>, 'classes' | 'onChange' | 'onKeyUp' | 'onKeyDown' | 'defaultValue'> ]: react.react.HTMLAttributes<react.HTMLDivElement & std.HTMLDivElement>[P]}
+- Lifted 2 members from Set(@material-ui/core.@material-ui/core.StandardProps<react.react.HTMLAttributes<react.HTMLDivElement & std.HTMLDivElement>, @material-ui/core.@material-ui/core/InputBase/InputBase.InputBaseClassKey, 'onChange' | 'onKeyUp' | 'onKeyDown' | 'defaultValue'>) */ trait InputBaseProps
   extends atMaterialDashUiCoreLib.stylesWithStylesMod.StyledComponentProps[InputBaseClassKey] {
   var autoComplete: js.UndefOr[java.lang.String] = js.undefined
   var autoFocus: js.UndefOr[scala.Boolean] = js.undefined
@@ -36,20 +37,26 @@ import scala.scalajs.js.annotation._
     * So these can just be inherited from the native `<div>`.
     */
   var onChange: js.UndefOr[
-    reactLib.reactMod.ReactNs.ChangeEventHandler[reactLib.HTMLTextAreaElement | reactLib.HTMLInputElement]
+    reactLib.reactMod.ReactNs.ChangeEventHandler[
+      (reactLib.HTMLTextAreaElement with stdLib.HTMLTextAreaElement) | (reactLib.HTMLInputElement with stdLib.HTMLInputElement)
+    ]
   ] = js.undefined
   var onFilled: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   var onKeyDown: js.UndefOr[
-    reactLib.reactMod.ReactNs.KeyboardEventHandler[reactLib.HTMLTextAreaElement | reactLib.HTMLInputElement]
+    reactLib.reactMod.ReactNs.KeyboardEventHandler[
+      (reactLib.HTMLTextAreaElement with stdLib.HTMLTextAreaElement) | (reactLib.HTMLInputElement with stdLib.HTMLInputElement)
+    ]
   ] = js.undefined
   var onKeyUp: js.UndefOr[
-    reactLib.reactMod.ReactNs.KeyboardEventHandler[reactLib.HTMLTextAreaElement | reactLib.HTMLInputElement]
+    reactLib.reactMod.ReactNs.KeyboardEventHandler[
+      (reactLib.HTMLTextAreaElement with stdLib.HTMLTextAreaElement) | (reactLib.HTMLInputElement with stdLib.HTMLInputElement)
+    ]
   ] = js.undefined
   var placeholder: js.UndefOr[java.lang.String] = js.undefined
   var readOnly: js.UndefOr[scala.Boolean] = js.undefined
   var renderPrefix: js.UndefOr[
     js.Function1[
-      /* state */ atMaterialDashUiCoreLib.Anon_Margin, 
+      /* state */ atMaterialDashUiCoreLib.Anon_Disabled, 
       reactLib.reactMod.ReactNs.ReactNode
     ]
   ] = js.undefined

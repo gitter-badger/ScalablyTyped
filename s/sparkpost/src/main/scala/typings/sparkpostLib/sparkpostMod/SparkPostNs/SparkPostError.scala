@@ -6,9 +6,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait SparkPostError
-  extends nodeLib.Error {
+  extends stdLib.Error {
   var errors: js.Array[ErrorWithDescription] | js.Array[ErrorWithParam]
-  var name: sparkpostLib.sparkpostLibStrings.SparkPostError
+  @JSName("name")
+  var name_SparkPostError: sparkpostLib.sparkpostLibStrings.SparkPostError
   var statusCode: scala.Double
 }
 

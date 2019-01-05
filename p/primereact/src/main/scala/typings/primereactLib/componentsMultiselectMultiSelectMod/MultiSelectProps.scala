@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait MultiSelectProps extends js.Object {
-  var appendTo: js.UndefOr[reactLib.HTMLElement] = js.undefined
+  var appendTo: js.UndefOr[reactLib.HTMLElement with stdLib.HTMLElement] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined
   var dataKey: js.UndefOr[java.lang.String] = js.undefined
   var defaultLabel: js.UndefOr[java.lang.String] = js.undefined
@@ -16,7 +16,7 @@ trait MultiSelectProps extends js.Object {
   var itemTemplate: js.UndefOr[
     js.Function1[/* item */ js.Any, js.UndefOr[reactLib.reactMod.Global.JSXNs.Element]]
   ] = js.undefined
-  var onChange: js.UndefOr[js.Function1[/* e */ primereactLib.Anon_OriginalEvent, scala.Unit]] = js.undefined
+  var onChange: js.UndefOr[js.Function1[/* e */ primereactLib.Anon_OriginalEventValue, scala.Unit]] = js.undefined
   var optionLabel: js.UndefOr[java.lang.String] = js.undefined
   var options: js.UndefOr[js.Array[_]] = js.undefined
   var scrollHeight: js.UndefOr[java.lang.String] = js.undefined

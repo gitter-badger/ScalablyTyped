@@ -14,8 +14,8 @@ object libEsmComponentsHotkeysHotkeyParserModMembers extends js.Object {
   val Modifiers: IKeyCodeTable = js.native
   val ShiftKeys: IKeyMap = js.native
   def comboMatches(a: IKeyCombo, b: IKeyCombo): scala.Boolean = js.native
-  def getKeyCombo(e: reactLib.KeyboardEvent): IKeyCombo = js.native
-  def getKeyComboString(e: reactLib.KeyboardEvent): java.lang.String = js.native
+  def getKeyCombo(e: reactLib.KeyboardEvent with stdLib.KeyboardEvent): IKeyCombo = js.native
+  def getKeyComboString(e: reactLib.KeyboardEvent with stdLib.KeyboardEvent): java.lang.String = js.native
   def normalizeKeyCombo(combo: java.lang.String): js.Array[java.lang.String] = js.native
   def normalizeKeyCombo(combo: java.lang.String, platformOverride: java.lang.String): js.Array[java.lang.String] = js.native
   def parseKeyCombo(combo: java.lang.String): IKeyCombo = js.native

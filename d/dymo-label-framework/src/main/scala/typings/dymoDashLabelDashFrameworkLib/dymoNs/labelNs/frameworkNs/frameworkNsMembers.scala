@@ -23,7 +23,7 @@ object frameworkNsMembers extends js.Object {
     errorCallback: AddPrinterUriCallback
   ): scala.Unit = js.native
   /** Checks that the browser enviroment is suitable for the Framework. */
-  def checkEnvironment(): dymoDashLabelDashFrameworkLib.Anon_ErrorDetails = js.native
+  def checkEnvironment(): dymoDashLabelDashFrameworkLib.Anon_IsBrowserSupported = js.native
   /**
   	 * Creates an XML string suitable to pass to the dymo.label.framework.renderLabel function
   	 * as renderParamsXml parameter. Returns an XML string.

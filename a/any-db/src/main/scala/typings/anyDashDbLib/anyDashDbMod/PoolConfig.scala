@@ -27,7 +27,7 @@ trait PoolConfig extends js.Object {
   var onConnect: js.UndefOr[
     js.Function2[
       /* connection */ Connection, 
-      /* ready */ js.Function2[/* error */ nodeLib.Error, /* result */ Connection, scala.Unit], 
+      /* ready */ js.Function2[/* error */ nodeLib.Error with stdLib.Error, /* result */ Connection, scala.Unit], 
       scala.Unit
     ]
   ] = js.undefined
@@ -48,7 +48,7 @@ trait PoolConfig extends js.Object {
   var reset: js.UndefOr[
     js.Function2[
       /* connection */ Connection, 
-      /* done */ js.Function1[/* error */ nodeLib.Error, scala.Unit], 
+      /* done */ js.Function1[/* error */ nodeLib.Error with stdLib.Error, scala.Unit], 
       scala.Unit
     ]
   ] = js.undefined
@@ -57,6 +57,6 @@ trait PoolConfig extends js.Object {
     * by pool.query or emitted by an idle connection. If shouldDestroyConnection(error)
     * is truthy the connection will be destroyed, otherwise it will be reset.
     */
-  var shouldDestroyConnection: js.UndefOr[js.Function1[/* error */ nodeLib.Error, scala.Boolean]] = js.undefined
+  var shouldDestroyConnection: js.UndefOr[js.Function1[/* error */ nodeLib.Error with stdLib.Error, scala.Boolean]] = js.undefined
 }
 

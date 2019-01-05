@@ -9,11 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object srcRender3ModMembers extends js.Object {
   val NO_CHANGE: atAngularCoreLib.srcRender3TokensMod.NO_CHANGE = js.native
-  val QueryList: org.scalablytyped.runtime.Instantiable0[
-    atAngularCoreLib.srcLinkerQueryUnderscoreListMod.QueryList[
-      /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for T */ js.Any
-    ]
-  ] = js.native
+  val QueryList: org.scalablytyped.runtime.Instantiable0[atAngularCoreLib.srcLinkerQueryUnderscoreListMod.QueryList[js.Object]] = js.native
   val WRAP_RENDERER_FACTORY2: atAngularCoreLib.srcDiInjectionUnderscoreTokenMod.InjectionToken[
     js.Function1[
       /* rf */ atAngularCoreLib.srcRenderApiMod.RendererFactory2, 
@@ -39,13 +35,13 @@ object srcRender3ModMembers extends js.Object {
   def container(index: scala.Double): scala.Unit = js.native
   def containerRefreshEnd(): scala.Unit = js.native
   def containerRefreshStart(index: scala.Double): scala.Unit = js.native
-  def defineBase[T](baseDefinition: atAngularCoreLib.Anon_Outputs[T]): atAngularCoreLib.srcRender3InterfacesDefinitionMod.BaseDef[T] = js.native
-  def defineComponent[T](componentDefinition: atAngularCoreLib.Anon_Directives[T]): scala.Nothing = js.native
-  def defineDirective[T](directiveDefinition: atAngularCoreLib.Anon_Features[T]): scala.Nothing = js.native
+  def defineBase[T](baseDefinition: atAngularCoreLib.Anon_Inputs[T]): atAngularCoreLib.srcRender3InterfacesDefinitionMod.BaseDef[T] = js.native
+  def defineComponent[T](componentDefinition: atAngularCoreLib.Anon_Type[T]): scala.Nothing = js.native
+  def defineDirective[T](directiveDefinition: atAngularCoreLib.Anon_TypeSelectors[T]): scala.Nothing = js.native
   def defineNgModule[T](
     `def`: atAngularCoreLib.Anon_TypeT[T] with stdLib.Partial[atAngularCoreLib.srcMetadataNgUnderscoreModuleMod.NgModuleDef[T]]
   ): scala.Nothing = js.native
-  def definePipe[T](pipeDef: atAngularCoreLib.Anon_Type[T]): scala.Nothing = js.native
+  def definePipe[T](pipeDef: atAngularCoreLib.Anon_Name[T]): scala.Nothing = js.native
   def detectChanges[T](component: T): scala.Unit = js.native
   def directiveInject[T](token: atAngularCoreLib.srcDiInjectionUnderscoreTokenMod.InjectionToken[T]): T = js.native
   def directiveInject[T](
@@ -146,6 +142,24 @@ object srcRender3ModMembers extends js.Object {
   def elementStyleProp(
     index: scala.Double,
     styleIndex: scala.Double,
+    value: (nodeLib.String with java.lang.String) | java.lang.String
+  ): scala.Unit = js.native
+  def elementStyleProp(
+    index: scala.Double,
+    styleIndex: scala.Double,
+    value: (nodeLib.String with java.lang.String) | java.lang.String,
+    suffix: java.lang.String
+  ): scala.Unit = js.native
+  def elementStyleProp(
+    index: scala.Double,
+    styleIndex: scala.Double,
+    value: (nodeLib.String with java.lang.String) | java.lang.String,
+    suffix: java.lang.String,
+    directiveIndex: scala.Double
+  ): scala.Unit = js.native
+  def elementStyleProp(
+    index: scala.Double,
+    styleIndex: scala.Double,
     value: atAngularCoreLib.srcRender3InterfacesPlayerMod.PlayerFactory
   ): scala.Unit = js.native
   def elementStyleProp(
@@ -158,24 +172,6 @@ object srcRender3ModMembers extends js.Object {
     index: scala.Double,
     styleIndex: scala.Double,
     value: atAngularCoreLib.srcRender3InterfacesPlayerMod.PlayerFactory,
-    suffix: java.lang.String,
-    directiveIndex: scala.Double
-  ): scala.Unit = js.native
-  def elementStyleProp(index: scala.Double, styleIndex: scala.Double, value: java.lang.String): scala.Unit = js.native
-  def elementStyleProp(index: scala.Double, styleIndex: scala.Double, value: java.lang.String, suffix: java.lang.String): scala.Unit = js.native
-  def elementStyleProp(
-    index: scala.Double,
-    styleIndex: scala.Double,
-    value: java.lang.String,
-    suffix: java.lang.String,
-    directiveIndex: scala.Double
-  ): scala.Unit = js.native
-  def elementStyleProp(index: scala.Double, styleIndex: scala.Double, value: nodeLib.String): scala.Unit = js.native
-  def elementStyleProp(index: scala.Double, styleIndex: scala.Double, value: nodeLib.String, suffix: java.lang.String): scala.Unit = js.native
-  def elementStyleProp(
-    index: scala.Double,
-    styleIndex: scala.Double,
-    value: nodeLib.String,
     suffix: java.lang.String,
     directiveIndex: scala.Double
   ): scala.Unit = js.native

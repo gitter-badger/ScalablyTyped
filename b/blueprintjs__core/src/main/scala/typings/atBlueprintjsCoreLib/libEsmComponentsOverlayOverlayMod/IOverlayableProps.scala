@@ -42,7 +42,9 @@ trait IOverlayableProps extends IOverlayLifecycleProps {
     */
   var onClose: js.UndefOr[
     js.Function1[
-      /* event */ js.UndefOr[reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.HTMLElement, reactLib.Event]], 
+      /* event */ js.UndefOr[
+        reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.HTMLElement with stdLib.HTMLElement, reactLib.Event]
+      ], 
       scala.Unit
     ]
   ] = js.undefined
@@ -56,7 +58,7 @@ trait IOverlayableProps extends IOverlayLifecycleProps {
     * This prop is ignored if `usePortal` is `false`.
     * @default document.body
     */
-  var portalContainer: js.UndefOr[reactLib.HTMLElement] = js.undefined
+  var portalContainer: js.UndefOr[reactLib.HTMLElement with stdLib.HTMLElement] = js.undefined
   /**
     * Indicates how long (in milliseconds) the overlay's enter/leave transition takes.
     * This is used by React `CSSTransition` to know when a transition completes and must match

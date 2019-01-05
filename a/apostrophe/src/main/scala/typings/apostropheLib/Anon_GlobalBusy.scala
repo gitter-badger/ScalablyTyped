@@ -5,14 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Anon_GlobalBusy extends js.Object {
-  var globalBusy: js.Function1[/* state */ js.Any, _]
-  var link: js.Function4[
-    /* sel */ java.lang.String, 
-    /* verb */ java.lang.String, 
-    /* object */ js.Object, 
-    /* callback */ js.UndefOr[js.Function0[_]], 
-    _
-  ]
+  def globalBusy(state: js.Any): js.Any = js.native
+  def link(sel: java.lang.String, verb: java.lang.String, `object`: js.Object): js.Any = js.native
+  def link(sel: java.lang.String, verb: java.lang.String, `object`: js.Object, callback: js.Function0[_]): js.Any = js.native
 }
 

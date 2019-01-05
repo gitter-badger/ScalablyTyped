@@ -5,14 +5,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Anon_NonceAmount extends js.Object {
-  var addFrame: js.Function2[
-    /* err */ js.UndefOr[braintreeDashWebLib.braintreeDashWebMod.braintreeNs.BraintreeError], 
-    /* iframe */ js.UndefOr[stdLib.HTMLIFrameElement], 
-    scala.Unit
-  ]
-  var amount: scala.Double
-  var nonce: java.lang.String
-  var removeFrame: js.Function0[scala.Unit]
+  var amount: scala.Double = js.native
+  var nonce: java.lang.String = js.native
+  var removeFrame: js.UndefOr[js.Function0[scala.Unit]] = js.native
+  def addFrame(): scala.Unit = js.native
+  def addFrame(err: braintreeDashWebLib.braintreeDashWebMod.braintreeNs.BraintreeError): scala.Unit = js.native
+  def addFrame(
+    err: braintreeDashWebLib.braintreeDashWebMod.braintreeNs.BraintreeError,
+    iframe: stdLib.HTMLIFrameElement
+  ): scala.Unit = js.native
 }
 

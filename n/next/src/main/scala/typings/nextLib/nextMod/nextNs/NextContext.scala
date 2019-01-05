@@ -17,7 +17,7 @@ trait NextContext[Q /* <: nextDashServerLib.routerMod.DefaultQuery */] extends j
   /** String of the actual path (including the query) shows in the browser */
   var asPath: java.lang.String
   /** Error object if any error is encountered during the rendering */
-  var err: js.UndefOr[nodeLib.Error] = js.undefined
+  var err: js.UndefOr[nodeLib.Error with stdLib.Error] = js.undefined
   /** Fetch Response object (client only) - from https://developer.mozilla.org/en-US/docs/Web/API/Response */
   var jsonPageRes: js.UndefOr[nodeDashFetchLib.nodeDashFetchMod.Response] = js.undefined
   /** path section of URL */

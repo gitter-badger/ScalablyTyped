@@ -19,7 +19,17 @@ trait ISuggestionItemProps[T] extends js.Object {
   var suggestionModel: officeDashUiDashFabricDashReactLib.libComponentsPickersSuggestionsSuggestionsControllerMod.ISuggestionModel[T] = js.native
   def RenderSuggestion(item: T): reactLib.reactMod.Global.JSXNs.Element = js.native
   def RenderSuggestion(item: T, suggestionItemProps: ISuggestionItemProps[T]): reactLib.reactMod.Global.JSXNs.Element = js.native
-  def onClick(ev: reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLButtonElement, reactLib.NativeMouseEvent]): scala.Unit = js.native
-  def onRemoveItem(ev: reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLButtonElement, reactLib.NativeMouseEvent]): scala.Unit = js.native
+  def onClick(
+    ev: reactLib.reactMod.ReactNs.MouseEvent[
+      reactLib.HTMLButtonElement with stdLib.HTMLButtonElement, 
+      reactLib.NativeMouseEvent
+    ]
+  ): scala.Unit = js.native
+  def onRemoveItem(
+    ev: reactLib.reactMod.ReactNs.MouseEvent[
+      reactLib.HTMLButtonElement with stdLib.HTMLButtonElement, 
+      reactLib.NativeMouseEvent
+    ]
+  ): scala.Unit = js.native
 }
 

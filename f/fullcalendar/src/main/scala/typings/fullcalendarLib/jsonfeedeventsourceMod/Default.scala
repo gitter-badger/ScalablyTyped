@@ -26,14 +26,14 @@ class default () extends Default
 @JSImport("fullcalendar/JsonFeedEventSource", "Default")
 @js.native
 object Default extends js.Object {
-  var AJAX_DEFAULTS: fullcalendarLib.Anon_Cache = js.native
+  var AJAX_DEFAULTS: fullcalendarLib.Anon_DataType = js.native
   def parse(rawInput: js.Any, calendar: js.Any): js.Any = js.native
 }
 
 @JSImport("fullcalendar/JsonFeedEventSource", JSImport.Default)
 @js.native
 object default extends js.Object {
-  var AJAX_DEFAULTS: fullcalendarLib.Anon_Cache = js.native
+  var AJAX_DEFAULTS: fullcalendarLib.Anon_DataType = js.native
   def parse(rawInput: js.Any, calendar: js.Any): js.Any = js.native
 }
 

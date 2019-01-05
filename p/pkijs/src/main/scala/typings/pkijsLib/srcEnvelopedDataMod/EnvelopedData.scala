@@ -22,7 +22,7 @@ trait EnvelopedData extends js.Object {
     */
   def addRecipientByCertificate(
     certificate: pkijsLib.srcCertificateMod.default,
-    parameters: pkijsLib.Anon_KekEncryptionLength,
+    parameters: pkijsLib.Anon_OaepHashAlgorithm,
     variant: scala.Double
   ): scala.Boolean
   /**
@@ -31,18 +31,14 @@ trait EnvelopedData extends js.Object {
     * @param {*} parameters Additional parameters neccessary for "fine tunning" of encryption process
     * @param {number} variant Variant = 1 for pre-defined "key encryption key" (KEK). Variant = 2 for password-based encryption.
     */
-  def addRecipientByPreDefinedData(
-    preDefinedData: stdLib.ArrayBuffer,
-    parameters: pkijsLib.Anon_KeyEncryptionAlgorithmParams,
-    variant: scala.Double
-  ): scala.Boolean
+  def addRecipientByPreDefinedData(preDefinedData: stdLib.ArrayBuffer, parameters: pkijsLib.Anon_KeyIdentifier, variant: scala.Double): scala.Boolean
   /**
     * Decrypt existing CMS Enveloped Data content
     * @param {number} recipientIndex Index of recipient
     * @param {*} parameters Additional parameters
     * @returns {Promise}
     */
-  def decrypt(recipientIndex: scala.Double, parameters: pkijsLib.Anon_RecipientPrivateKey): js.Thenable[stdLib.ArrayBuffer]
+  def decrypt(recipientIndex: scala.Double, parameters: pkijsLib.Anon_RecipientCertificate): js.Thenable[stdLib.ArrayBuffer]
   /**
     * Create a new CMS Enveloped Data content with encrypted data
     * @param {Algorithm} contentEncryptionAlgorithm WebCrypto algorithm. For the moment here could be only "AES-CBC" or "AES-GCM" algorithms.

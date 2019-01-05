@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait PaginationToolbarProps extends js.Object {
-  var iconProps: reactDashDatagridLib.Anon_DisabledStyle
+  var iconProps: reactDashDatagridLib.Anon_Style
   var iconSize: scala.Double
   /**
     * Available page sizes.

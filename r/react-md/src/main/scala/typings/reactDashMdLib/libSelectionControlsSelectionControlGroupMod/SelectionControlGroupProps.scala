@@ -12,7 +12,7 @@ trait SelectionControlGroupProps
   var component: js.UndefOr[reactLib.reactMod.ReactNs.ReactType[_]] = js.undefined
   var controlClassName: js.UndefOr[java.lang.String] = js.undefined
   var controlStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
-  var controls: js.Array[reactDashMdLib.Anon_Key]
+  var controls: js.Array[reactDashMdLib.Anon_KeyLabel]
   var defaultValue: js.UndefOr[scala.Double | java.lang.String] = js.undefined
   var disabled: js.UndefOr[scala.Boolean] = js.undefined
   var id: js.UndefOr[reactDashMdLib.libMod.IdPropType] = js.undefined
@@ -21,7 +21,11 @@ trait SelectionControlGroupProps
   var labelComponent: js.UndefOr[reactLib.reactMod.ReactNs.ReactType[_]] = js.undefined
   var name: js.UndefOr[java.lang.String | scala.Double] = js.undefined
   var onChange: js.UndefOr[
-    js.Function2[/* value */ java.lang.String, /* event */ reactLib.Event, scala.Unit]
+    js.Function2[
+      /* value */ java.lang.String, 
+      /* event */ reactLib.Event with stdLib.Event, 
+      scala.Unit
+    ]
   ] = js.undefined
   var selectionControl: js.UndefOr[reactLib.reactMod.ReactNs.ReactType[_]] = js.undefined
   var `type`: reactDashMdLib.reactDashMdLibStrings.checkbox | reactDashMdLib.reactDashMdLibStrings.radio

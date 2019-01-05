@@ -5,7 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait CertificateParseError
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- stdLib.Error because var conflicts: stack. Inlined message, name */ trait CertificateParseError
   extends nodeLib.Error {
   var message: java.lang.String
   var name: java.lang.String

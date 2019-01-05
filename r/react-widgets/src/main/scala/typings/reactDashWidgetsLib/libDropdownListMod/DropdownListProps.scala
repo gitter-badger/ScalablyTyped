@@ -109,11 +109,15 @@ trait DropdownListProps
   /**
     * The native onKeyDown event, called preventDefault will prevent any custom behavior, included keyboard shortcuts.
     */
-  var onKeyDown: js.UndefOr[js.Function1[/* event */ reactLib.KeyboardEvent, scala.Unit]] = js.undefined
+  var onKeyDown: js.UndefOr[
+    js.Function1[/* event */ reactLib.KeyboardEvent with stdLib.KeyboardEvent, scala.Unit]
+  ] = js.undefined
   /**
     * The native onKeyPress event, called preventDefault will stop any custom behavior.
     */
-  var onKeyPress: js.UndefOr[js.Function1[/* event */ reactLib.KeyboardEvent, scala.Unit]] = js.undefined
+  var onKeyPress: js.UndefOr[
+    js.Function1[/* event */ reactLib.KeyboardEvent with stdLib.KeyboardEvent, scala.Unit]
+  ] = js.undefined
   /**
     * Called when the value of the filter input changes either from typing or a pasted value.
     * onSearch should be used when the searchTerm prop is set.

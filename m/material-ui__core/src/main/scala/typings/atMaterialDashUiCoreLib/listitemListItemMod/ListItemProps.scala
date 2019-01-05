@@ -5,13 +5,18 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveDifficultInheritance: 
-- Lifted 3 members from Set(std.Pick<@material-ui/core.@material-ui/core/ButtonBase.ButtonBaseProps & react.react.LiHTMLAttributes<react.HTMLElement>, std.Exclude<keyof @material-ui/core.@material-ui/core/ButtonBase.ButtonBaseProps & react.react.LiHTMLAttributes<react.HTMLElement>, 'classes' | 'component'>>, @material-ui/core.@material-ui/core.StandardProps<@material-ui/core.@material-ui/core/ButtonBase.ButtonBaseProps & react.react.LiHTMLAttributes<react.HTMLElement>, @material-ui/core.@material-ui/core/ListItem/ListItem.ListItemClassKey, 'component'>) */ trait ListItemProps
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
+- Dropped {[ P in std.Exclude<keyof @material-ui/core.@material-ui/core/ButtonBase.ButtonBaseProps & react.react.LiHTMLAttributes<react.HTMLElement & std.HTMLElement>, 'classes' | 'component'> ]: @material-ui/core.@material-ui/core/ButtonBase.ButtonBaseProps & react.react.LiHTMLAttributes<react.HTMLElement & std.HTMLElement>[P]}
+- Lifted 2 members from Set(@material-ui/core.@material-ui/core.StandardProps<@material-ui/core.@material-ui/core/ButtonBase.ButtonBaseProps & react.react.LiHTMLAttributes<react.HTMLElement & std.HTMLElement>, @material-ui/core.@material-ui/core/ListItem/ListItem.ListItemClassKey, 'component'>) */ trait ListItemProps
   extends atMaterialDashUiCoreLib.stylesWithStylesMod.StyledComponentProps[ListItemClassKey] {
   var ContainerComponent: js.UndefOr[
-    reactLib.reactMod.ReactNs.ReactType[reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLDivElement]]
+    reactLib.reactMod.ReactNs.ReactType[
+      reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLDivElement with stdLib.HTMLDivElement]
+    ]
   ] = js.undefined
-  var ContainerProps: js.UndefOr[reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLDivElement]] = js.undefined
+  var ContainerProps: js.UndefOr[
+    reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLDivElement with stdLib.HTMLDivElement]
+  ] = js.undefined
   var button: js.UndefOr[scala.Boolean] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined
   var component: js.UndefOr[reactLib.reactMod.ReactNs.ReactType[ListItemProps]] = js.undefined

@@ -6,6 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_DeserializerInput extends js.Object {
-  var deserializer: atPulumiPulumiLib.resourceMod.Input[Anon_OpenXJsonSerDeHiveJsonSerDe]
+  var deserializer: atPulumiPulumiLib.resourceMod.Input[Anon_HiveJsonSerDeOpenXJsonSerDe]
 }
 

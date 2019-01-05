@@ -21,7 +21,7 @@ trait NpmModule extends js.Object {
   var prepare: js.UndefOr[
     js.Function2[
       /* config */ EngineConfigurationObject, 
-      /* next */ js.Function1[/* err */ js.UndefOr[nodeLib.Error], scala.Unit], 
+      /* next */ js.Function1[/* err */ js.UndefOr[nodeLib.Error with stdLib.Error], scala.Unit], 
       scala.Unit
     ]
   ] = js.undefined

@@ -18,7 +18,7 @@ class HyperLink ()
     fieldKey: java.lang.String,
     newValue: js.Any,
     bIsLocalized: scala.Boolean,
-    fnCallback: js.Function1[/* args */ sharepointLib.Anon_DataValue, scala.Unit],
+    fnCallback: js.Function1[/* args */ sharepointLib.Anon_IsValid, scala.Unit],
     fnError: js.Any
   ): scala.Unit = js.native
   def DataToLocalized(dataValue: js.Any): java.lang.String = js.native

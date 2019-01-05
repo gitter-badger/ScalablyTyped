@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 trait KnockoutStatic extends js.Object {
   var bindingHandlers: KnockoutBindingHandlers = js.native
   /////////////////////////////////
-  var bindingProvider: Anon_Instance = js.native
+  var bindingProvider: Anon_InstanceKnockoutBindingProvider = js.native
   var components: KnockoutComponents = js.native
   var computedContext: KnockoutComputedContext = js.native
   @JSName("computed")
@@ -25,7 +25,7 @@ trait KnockoutStatic extends js.Object {
   //////////////////////////////////
   // nativeTemplateEngine.js
   //////////////////////////////////
-  var nativeTemplateEngine: Anon_InstanceKnockoutNativeTemplateEngine = js.native
+  var nativeTemplateEngine: Anon_Instance = js.native
   @JSName("observableArray")
   var observableArray_Original: KnockoutObservableArrayStatic = js.native
   @JSName("observable")
@@ -43,7 +43,7 @@ trait KnockoutStatic extends js.Object {
   //////////////////////////////////
   // templateRewriting.js
   //////////////////////////////////
-  var templateRewriting: Anon_ApplyMemoizedBindingsToNextSibling = js.native
+  var templateRewriting: Anon_EnsureTemplateIsRewritten = js.native
   //////////////////////////////////
   // templateSources.js
   //////////////////////////////////

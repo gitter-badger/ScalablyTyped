@@ -23,6 +23,6 @@ class ODataAdaptor () extends UrlAdaptor {
   def onSelect(e: js.Any): java.lang.String = js.native
   def onSortBy(e: js.Any): java.lang.String = js.native
   def onWhere(filters: js.Array[java.lang.String]): java.lang.String = js.native
-  def processResponse(data: js.Any, ds: js.Any, query: Query, xhr: js.Any, request: js.Any, changes: Changes): ejDotWebDotAllLib.Anon_Count = js.native
+  def processResponse(data: js.Any, ds: js.Any, query: Query, xhr: js.Any, request: js.Any, changes: Changes): ejDotWebDotAllLib.Anon_Result = js.native
 }
 

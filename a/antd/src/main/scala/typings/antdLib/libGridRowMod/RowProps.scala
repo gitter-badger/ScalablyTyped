@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait RowProps
-  extends reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLDivElement] {
+  extends reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLDivElement with stdLib.HTMLDivElement] {
   var align: /* import warning: ImportType.apply Failed type conversion: ['top', 'middle', 'bottom'][number] */ js.UndefOr[
     /* import warning: ImportType.apply Failed type conversion: ['top', 'middle', 'bottom'][number] */ js.Any
   ] = js.undefined

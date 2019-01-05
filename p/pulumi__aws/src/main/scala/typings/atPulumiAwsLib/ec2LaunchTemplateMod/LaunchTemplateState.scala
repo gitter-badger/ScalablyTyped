@@ -17,7 +17,7 @@ trait LaunchTemplateState extends js.Object {
   val blockDeviceMappings: js.UndefOr[
     atPulumiPulumiLib.resourceMod.Input[
       js.Array[
-        atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_EbsDeviceNameNoDeviceVirtualName]
+        atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_DeviceNameEbsNoDeviceVirtualName]
       ]
     ]
   ] = js.undefined
@@ -25,13 +25,13 @@ trait LaunchTemplateState extends js.Object {
     * Targeting for EC2 capacity reservations. See Capacity Reservation Specification below for more details.
     */
   val capacityReservationSpecification: js.UndefOr[
-    atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_CapacityReservationTargetCapacityReservationPreference]
+    atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_CapacityReservationPreferenceCapacityReservationTarget]
   ] = js.undefined
   /**
     * Customize the credit specification of the instance. See Credit
     * Specification below for more details.
     */
-  val creditSpecification: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_CpuCredits]] = js.undefined
+  val creditSpecification: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_CpuCreditsInput]] = js.undefined
   /**
     * The default version of the launch template.
     */
@@ -122,7 +122,7 @@ trait LaunchTemplateState extends js.Object {
   val networkInterfaces: js.UndefOr[
     atPulumiPulumiLib.resourceMod.Input[
       js.Array[
-        atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_Ipv4AddressesDescriptionSubnetId]
+        atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_AssociatePublicIpAddressDeleteOnTerminationDescription]
       ]
     ]
   ] = js.undefined
@@ -148,7 +148,9 @@ trait LaunchTemplateState extends js.Object {
     */
   val tagSpecifications: js.UndefOr[
     atPulumiPulumiLib.resourceMod.Input[
-      js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_ResourceTypeTagsKey]]
+      js.Array[
+        atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_ResourceTypeTagsKeyInput]
+      ]
     ]
   ] = js.undefined
   /**

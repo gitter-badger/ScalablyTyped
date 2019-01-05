@@ -53,11 +53,15 @@ trait NumberPickerProps
   /**
     * The native onKeyDown event, called preventDefault will prevent any custom behavior, included keyboard shortcuts.
     */
-  var onKeyDown: js.UndefOr[js.Function1[/* event */ reactLib.KeyboardEvent, scala.Unit]] = js.undefined
+  var onKeyDown: js.UndefOr[
+    js.Function1[/* event */ reactLib.KeyboardEvent with stdLib.KeyboardEvent, scala.Unit]
+  ] = js.undefined
   /**
     * The native onKeyPress event, called preventDefault will stop any custom behavior.
     */
-  var onKeyPress: js.UndefOr[js.Function1[/* event */ reactLib.KeyboardEvent, scala.Unit]] = js.undefined
+  var onKeyPress: js.UndefOr[
+    js.Function1[/* event */ reactLib.KeyboardEvent with stdLib.KeyboardEvent, scala.Unit]
+  ] = js.undefined
   /**
     * Controls the visibility of the NumberPicker popup. Use defaultOpen to set an initial value for uncontrolled widgets.
     * @default false

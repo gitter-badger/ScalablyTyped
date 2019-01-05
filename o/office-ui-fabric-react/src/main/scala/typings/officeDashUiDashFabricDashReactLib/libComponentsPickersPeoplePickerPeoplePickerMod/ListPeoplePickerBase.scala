@@ -13,6 +13,6 @@ class ListPeoplePickerBase () extends MemberListPeoplePicker
 @js.native
 object ListPeoplePickerBase extends js.Object {
   /** Default props for ListPeoplePicker. */
-  var defaultProps: officeDashUiDashFabricDashReactLib.Anon_CreateGenericItem = js.native
+  var defaultProps: officeDashUiDashFabricDashReactLib.Anon_OnRenderItem = js.native
 }
 

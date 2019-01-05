@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait ILinkProps
   extends ILinkHTMLAttributes[
-      reactLib.HTMLAnchorElement | reactLib.HTMLButtonElement | reactLib.HTMLElement | officeDashUiDashFabricDashReactLib.libComponentsLinkLinkDotBaseMod.LinkBase
+      (reactLib.HTMLAnchorElement with stdLib.HTMLAnchorElement) | (reactLib.HTMLButtonElement with stdLib.HTMLButtonElement) | (reactLib.HTMLElement with stdLib.HTMLElement) | officeDashUiDashFabricDashReactLib.libComponentsLinkLinkDotBaseMod.LinkBase
     ] {
   /**
     * A component that should be used as the root element of the link returned from the Link component.

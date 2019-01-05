@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveMultipleInheritance: Dropped parents List(atBlueprintjsCoreLib.libEsmCommonPropsMod.IProps because Would inherit conflicting mutable fields List(className))*/
-trait IControlProps
-  extends reactLib.reactMod.ReactNs.InputHTMLAttributes[reactLib.HTMLInputElement] {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- atBlueprintjsCoreLib.libEsmCommonPropsMod.IProps because var conflicts: className. Inlined  */ trait IControlProps
+  extends reactLib.reactMod.ReactNs.InputHTMLAttributes[reactLib.HTMLInputElement with stdLib.HTMLInputElement] {
   /**
     * Alignment of the indicator within container.
     * @default Alignment.LEFT
@@ -16,7 +16,9 @@ trait IControlProps
   /** Whether the control should appear as an inline element. */
   var `inline`: js.UndefOr[scala.Boolean] = js.undefined
   /** Ref handler that receives HTML `<input>` element backing this component. */
-  var inputRef: js.UndefOr[js.Function1[/* ref */ reactLib.HTMLInputElement | scala.Null, _]] = js.undefined
+  var inputRef: js.UndefOr[
+    js.Function1[/* ref */ (reactLib.HTMLInputElement with stdLib.HTMLInputElement) | scala.Null, _]
+  ] = js.undefined
   /**
     * Text label for the control.
     *

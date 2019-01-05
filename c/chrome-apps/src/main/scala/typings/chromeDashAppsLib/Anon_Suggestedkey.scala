@@ -19,6 +19,6 @@ trait Anon_Suggestedkey extends js.Object {
     *     'mac': 'Command+Shift+Y'
     * },
     */
-  var suggested_key: js.UndefOr[Anon_Mac] = js.undefined
+  var suggested_key: js.UndefOr[Anon_Default] = js.undefined
 }
 

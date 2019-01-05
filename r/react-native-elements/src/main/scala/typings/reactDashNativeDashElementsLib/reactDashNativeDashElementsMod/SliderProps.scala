@@ -106,7 +106,7 @@ trait SliderProps extends js.Object {
     *
     * @default "{width: 40, height: 40}"
     */
-  var thumbTouchSize: js.UndefOr[reactDashNativeDashElementsLib.Anon_Height] = js.undefined
+  var thumbTouchSize: js.UndefOr[reactDashNativeDashElementsLib.Anon_Width] = js.undefined
   /**
     * The style applied to the track
     */

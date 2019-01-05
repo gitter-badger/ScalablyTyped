@@ -7,17 +7,35 @@ import scala.scalajs.js.annotation._
 
 trait Anon_Title extends js.Object {
   /**
-    * Enable or disable expanding pie pieces.
+    * Set format for the name of each data in tooltip. Specified function receives name, ratio, id and index of the data point to show. ratio will be undefined if the chart is not
+    * donut/pie/gauge.
     */
-  var expand: js.UndefOr[scala.Boolean] = js.undefined
-  var label: js.UndefOr[Anon_Threshold] = js.undefined
+  var name: js.UndefOr[
+    js.Function4[
+      /* name */ java.lang.String, 
+      /* ratio */ scala.Double, 
+      /* id */ java.lang.String, 
+      /* index */ scala.Double, 
+      java.lang.String
+    ]
+  ] = js.undefined
   /**
-    * Set title of donut chart.
+    * Set format for the title of tooltip. Specified function receives x of the data point to show.
     */
-  var title: js.UndefOr[java.lang.String] = js.undefined
+  var title: js.UndefOr[js.Function1[/* x */ js.Any, java.lang.String]] = js.undefined
   /**
-    * Set width of donut chart.
+    * Set format for the value of each data in tooltip.
+    * Specified function receives name, ratio, id and index of the data point to show. ratio will be undefined if the chart is not donut/pie/gauge.
+    * If undefined returned, the row of that value will be skipped.
     */
-  var width: js.UndefOr[scala.Double] = js.undefined
+  var value: js.UndefOr[
+    js.Function4[
+      /* value */ js.Any, 
+      /* ratio */ scala.Double, 
+      /* id */ java.lang.String, 
+      /* index */ scala.Double, 
+      java.lang.String
+    ]
+  ] = js.undefined
 }
 

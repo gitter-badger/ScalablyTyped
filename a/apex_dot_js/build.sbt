@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "apex_dot_js"
-version := "2.0-dt-20180214Z-363a7d"
-scalaVersion := "2.12.7"
+version := "2.0-dt-20180214Z-7e41ab"
+scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "aws-lambda" % "8.10-dt-20181220Z-5e0566",
-  "org.scalablytyped" %%% "std" % "3.2.2-9ed5ff")
+  "org.scalablytyped" %%% "aws-lambda" % "8.10-dt-20181220Z-dd72b9",
+  "org.scalablytyped" %%% "std" % "3.2.2-3b2f2a")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

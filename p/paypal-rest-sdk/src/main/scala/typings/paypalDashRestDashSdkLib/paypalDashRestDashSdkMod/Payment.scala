@@ -14,7 +14,7 @@ trait Payment extends js.Object {
   val links: js.UndefOr[js.Array[Link]] = js.undefined
   var note_to_payer: js.UndefOr[java.lang.String] = js.undefined
   var payer: paypalDashRestDashSdkLib.Anon_Paymentmethod
-  var redirect_urls: js.UndefOr[paypalDashRestDashSdkLib.Anon_Cancelurl] = js.undefined
+  var redirect_urls: js.UndefOr[paypalDashRestDashSdkLib.Anon_Returnurl] = js.undefined
   val state: js.UndefOr[java.lang.String] = js.undefined
   var transactions: js.Array[Transaction]
   val update_time: js.UndefOr[java.lang.String] = js.undefined

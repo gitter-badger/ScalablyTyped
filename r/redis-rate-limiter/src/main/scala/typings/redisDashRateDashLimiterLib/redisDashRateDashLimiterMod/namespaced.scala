@@ -15,7 +15,7 @@ object namespaced extends js.Object {
   def create(options: redisDashRateDashLimiterLib.redisDashRateDashLimiterMod.RedisRateLimiterNs.Options): js.Function2[
     /* req */ expressLib.expressMod.eNs.Request, 
     /* callback */ js.Function2[
-      /* err */ nodeLib.Error, 
+      /* err */ nodeLib.Error with stdLib.Error, 
       /* res */ redisDashRateDashLimiterLib.redisDashRateDashLimiterMod.RedisRateLimiterNs.Response, 
       scala.Unit
     ], 

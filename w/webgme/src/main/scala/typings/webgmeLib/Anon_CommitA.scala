@@ -11,7 +11,7 @@ trait Anon_CommitA extends js.Object {
   def apply(
     commitA: webgmeLib.GmeStorageNs.CommitHash,
     commitB: webgmeLib.GmeStorageNs.CommitHash,
-    callback: webgmeLib.GmeStorageNs.CommitHashCallback
+    callback: webgmeLib.GmeCommonNs.ResultCallback[webgmeLib.GmeStorageNs.CommitHash]
   ): scala.Unit = js.native
 }
 

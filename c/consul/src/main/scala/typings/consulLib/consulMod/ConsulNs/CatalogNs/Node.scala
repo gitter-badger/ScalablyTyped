@@ -17,7 +17,7 @@ trait Node extends js.Object {
     * Lists the services provided by a node
     */
   @JSName("services")
-  var services_Original: consulLib.Anon_NodeCallbackOptsTData = js.native
+  var services_Original: consulLib.Anon_NodeCallback = js.native
   /**
     * Lists nodes in a given DC
     */

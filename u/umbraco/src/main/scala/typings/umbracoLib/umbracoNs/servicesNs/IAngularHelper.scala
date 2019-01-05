@@ -71,6 +71,9 @@ trait IAngularHelper extends js.Object {
     * @description
     * This checks if a digest/apply is already occuring, if not it will force an apply call
     */
-  def safeApply(scope: angularLib.angularMod.angularNs.IScope, fn: angularLib.angularMod.Global.Function): scala.Unit
+  def safeApply(
+    scope: angularLib.angularMod.angularNs.IScope,
+    fn: angularLib.angularMod.Global.Function with js.Function
+  ): scala.Unit
 }
 

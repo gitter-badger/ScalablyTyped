@@ -9,7 +9,7 @@ trait ColumnDefinition extends js.Object {
   var dataType: js.UndefOr[java.lang.String] = js.undefined
   var notNull: js.UndefOr[scala.Boolean] = js.undefined
   var primaryKey: js.UndefOr[scala.Boolean] = js.undefined
-  var references: js.UndefOr[anydbDashSqlLib.Anon_Column] = js.undefined
+  var references: js.UndefOr[anydbDashSqlLib.Anon_Table] = js.undefined
   var unique: js.UndefOr[scala.Boolean] = js.undefined
 }
 

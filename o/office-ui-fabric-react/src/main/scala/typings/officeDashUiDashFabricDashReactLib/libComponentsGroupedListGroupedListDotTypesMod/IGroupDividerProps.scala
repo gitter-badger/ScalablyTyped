@@ -10,7 +10,9 @@ trait IGroupDividerProps extends js.Object {
   var compact: js.UndefOr[scala.Boolean] = js.undefined
   var componentRef: js.UndefOr[atUifabricUtilitiesLib.libCreateRefMod.IRefObject[js.Object]] = js.undefined
   /** Props for expand/collapse button */
-  var expandButtonProps: js.UndefOr[reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLButtonElement]] = js.undefined
+  var expandButtonProps: js.UndefOr[
+    reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLButtonElement with stdLib.HTMLButtonElement]
+  ] = js.undefined
   /** Text to display for the group footer. */
   var footerText: js.UndefOr[java.lang.String] = js.undefined
   /** The group to be rendered by the header. */

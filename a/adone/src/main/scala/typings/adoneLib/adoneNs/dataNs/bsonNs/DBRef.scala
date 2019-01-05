@@ -23,6 +23,6 @@ class DBRef protected ()
   override var _bsontype: java.lang.String = js.native
   @JSName("_bsontype")
   var _bsontype_DBRef: adoneLib.adoneLibStrings.DBRef = js.native
-  def toJSON(): adoneLib.Anon_Db = js.native
+  def toJSON(): adoneLib.Anon_Ref = js.native
 }
 

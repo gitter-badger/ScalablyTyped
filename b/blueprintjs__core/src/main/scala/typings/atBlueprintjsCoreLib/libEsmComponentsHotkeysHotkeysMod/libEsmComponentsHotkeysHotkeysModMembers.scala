@@ -10,13 +10,13 @@ import scala.scalajs.js.annotation._
 object libEsmComponentsHotkeysHotkeysModMembers extends js.Object {
   def HotkeysTarget[T /* <: atBlueprintjsCoreLib.libEsmCommonConstructorMod.IConstructor[
     atBlueprintjsCoreLib.libEsmComponentsHotkeysHotkeysTargetMod.IHotkeysTargetComponent
-  ] */](WrappedComponent: T): atBlueprintjsCoreLib.Anon_DisplayName with T = js.native
+  ] */](WrappedComponent: T): atBlueprintjsCoreLib.Anon_ArgsDisplayName with T = js.native
   def comboMatches(
     a: atBlueprintjsCoreLib.libEsmComponentsHotkeysHotkeyParserMod.IKeyCombo,
     b: atBlueprintjsCoreLib.libEsmComponentsHotkeysHotkeyParserMod.IKeyCombo
   ): scala.Boolean = js.native
-  def getKeyCombo(e: reactLib.KeyboardEvent): atBlueprintjsCoreLib.libEsmComponentsHotkeysHotkeyParserMod.IKeyCombo = js.native
-  def getKeyComboString(e: reactLib.KeyboardEvent): java.lang.String = js.native
+  def getKeyCombo(e: reactLib.KeyboardEvent with stdLib.KeyboardEvent): atBlueprintjsCoreLib.libEsmComponentsHotkeysHotkeyParserMod.IKeyCombo = js.native
+  def getKeyComboString(e: reactLib.KeyboardEvent with stdLib.KeyboardEvent): java.lang.String = js.native
   def hideHotkeysDialog(): scala.Unit = js.native
   def parseKeyCombo(combo: java.lang.String): atBlueprintjsCoreLib.libEsmComponentsHotkeysHotkeyParserMod.IKeyCombo = js.native
   def setHotkeysDialogProps(

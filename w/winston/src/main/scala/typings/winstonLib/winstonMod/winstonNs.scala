@@ -29,11 +29,11 @@ object winstonNs extends js.Object {
     var catcher: js.Function | scala.Boolean = js.native
     var handlers: stdLib.Map[_, _] = js.native
     var logger: Logger = js.native
+    def getAllInfo(err: nodeLib.Error with stdLib.Error): js.Object = js.native
     def getAllInfo(err: java.lang.String): js.Object = js.native
-    def getAllInfo(err: nodeLib.Error): js.Object = js.native
     def getOsInfo(): js.Object = js.native
     def getProcessInfo(): js.Object = js.native
-    def getTrace(err: nodeLib.Error): js.Object = js.native
+    def getTrace(err: nodeLib.Error with stdLib.Error): js.Object = js.native
     def handle(transports: winstonDashTransportLib.winstonDashTransportMod.namespaced*): scala.Unit = js.native
     def unhandle(transports: winstonDashTransportLib.winstonDashTransportMod.namespaced*): scala.Unit = js.native
   }
@@ -255,7 +255,7 @@ object winstonNs extends js.Object {
     def query(options: QueryOptions): js.Any = js.native
     def query(
       options: QueryOptions,
-      callback: js.Function2[/* err */ nodeLib.Error, /* results */ js.Any, scala.Unit]
+      callback: js.Function2[/* err */ nodeLib.Error with stdLib.Error, /* results */ js.Any, scala.Unit]
     ): js.Any = js.native
     def remove(transport: winstonDashTransportLib.winstonDashTransportMod.namespaced): Logger = js.native
     /* InferMemberOverrides */
@@ -367,9 +367,9 @@ object winstonNs extends js.Object {
       
       trait Config extends js.Object {
         var allColors: winstonLib.libWinstonConfigMod.winstonNs.AbstractConfigSetColors
-        var cli: winstonLib.Anon_LevelsColorsCliConfigSetLevels
+        var cli: winstonLib.Anon_Levels
         var npm: winstonLib.Anon_LevelsColors
-        var syslog: winstonLib.Anon_Levels
+        var syslog: winstonLib.Anon_LevelsColorsSyslogConfigSetLevels
         def addColors(colors: winstonLib.libWinstonConfigMod.winstonNs.AbstractConfigSetColors): scala.Unit
       }
       

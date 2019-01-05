@@ -6,8 +6,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_Length extends js.Object {
-  var geometry: cesiumLib.cesiumMod.CesiumNs.Geometry
-  var length: js.UndefOr[scala.Double] = js.undefined
-  var modelMatrix: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.Matrix4] = js.undefined
+  var bottomRadius: scala.Double
+  var length: scala.Double
+  var slices: js.UndefOr[scala.Double] = js.undefined
+  var topRadius: scala.Double
+  var vertexFormat: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.VertexFormat] = js.undefined
 }
 

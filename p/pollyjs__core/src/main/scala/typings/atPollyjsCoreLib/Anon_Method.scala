@@ -17,6 +17,6 @@ trait Anon_Method extends js.Object {
     scala.Boolean | (atPollyjsCoreLib.coreMod.MatchBy[java.lang.String, java.lang.String])
   ] = js.undefined
   var order: js.UndefOr[scala.Boolean] = js.undefined
-  var url: js.UndefOr[Anon_Hostname] = js.undefined
+  var url: js.UndefOr[Anon_Protocol] = js.undefined
 }
 

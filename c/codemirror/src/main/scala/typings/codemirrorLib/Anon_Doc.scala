@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_Doc extends js.Object {
-  var changed: js.UndefOr[Anon_FromTo] = js.undefined
+  var changed: js.UndefOr[Anon_FromToPosition] = js.undefined
   var doc: codemirrorLib.codemirrorMod.CodeMirrorNs.Doc
   var name: java.lang.String
 }

@@ -5,8 +5,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Anon_Completed extends js.Object {
-  var completed: winrtLib.WindowsNs.FoundationNs.AsyncOperationCompletedHandler[scala.Double]
-  def getResults(): scala.Double
+@js.native
+trait Anon_Completed[TResult] extends js.Object {
+  @JSName("completed")
+  var completed_Original: winrtLib.WindowsNs.FoundationNs.AsyncOperationCompletedHandler[TResult] = js.native
+  def completed(
+    asyncInfo: winrtLib.WindowsNs.FoundationNs.IAsyncOperation[TResult],
+    asyncStatus: winrtLib.WindowsNs.FoundationNs.AsyncStatus
+  ): scala.Unit = js.native
+  def getResults(): TResult = js.native
 }
 

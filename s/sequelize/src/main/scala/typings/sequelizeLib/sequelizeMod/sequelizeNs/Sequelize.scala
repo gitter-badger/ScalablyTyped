@@ -224,8 +224,8 @@ trait Sequelize
     */
   def query(sql: java.lang.String): bluebirdLib.bluebirdMod.namespaced[_] = js.native
   def query(sql: java.lang.String, options: QueryOptions): bluebirdLib.bluebirdMod.namespaced[_] = js.native
-  def query(sql: sequelizeLib.Anon_ValuesQuery): bluebirdLib.bluebirdMod.namespaced[_] = js.native
-  def query(sql: sequelizeLib.Anon_ValuesQuery, options: QueryOptions): bluebirdLib.bluebirdMod.namespaced[_] = js.native
+  def query(sql: sequelizeLib.Anon_Query): bluebirdLib.bluebirdMod.namespaced[_] = js.native
+  def query(sql: sequelizeLib.Anon_Query, options: QueryOptions): bluebirdLib.bluebirdMod.namespaced[_] = js.native
   /**
     * Get the fn for random based on the dialect
     */

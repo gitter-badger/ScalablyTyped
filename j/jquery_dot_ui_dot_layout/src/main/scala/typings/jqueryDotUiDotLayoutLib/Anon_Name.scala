@@ -13,6 +13,6 @@ trait Anon_Name extends js.Object {
     state: jqueryDotUiDotLayoutLib.JQueryUILayoutNs.PaneState,
     options: jqueryDotUiDotLayoutLib.JQueryUILayoutNs.PaneOptions,
     layout_name: java.lang.String
-  ): scala.Unit = js.native
+  ): scala.Boolean | scala.Unit = js.native
 }
 

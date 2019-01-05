@@ -20,11 +20,11 @@ trait Shape extends js.Object {
   /**
     * Dimension related options
     */
-  var dimension: js.UndefOr[svgDashSpriteLib.Anon_Attributes] = js.undefined
+  var dimension: js.UndefOr[svgDashSpriteLib.Anon_MaxWidth] = js.undefined
   /**
     * SVG shape ID related options
     */
-  var id: js.UndefOr[svgDashSpriteLib.Anon_Pseudo] = js.undefined
+  var id: js.UndefOr[svgDashSpriteLib.Anon_Separator] = js.undefined
   /**
     * Path to YAML file with meta / accessibility data
     */

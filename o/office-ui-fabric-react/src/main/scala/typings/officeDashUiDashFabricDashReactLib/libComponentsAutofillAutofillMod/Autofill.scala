@@ -38,7 +38,7 @@ class Autofill protected ()
     * The current input element.
     */
   /* CompleteClass */
-  override var inputElement: reactLib.HTMLInputElement | scala.Null = js.native
+  override var inputElement: (reactLib.HTMLInputElement with stdLib.HTMLInputElement) | scala.Null = js.native
   /**
     * A boolean for whether or not there is a value selected in the input area.
     */

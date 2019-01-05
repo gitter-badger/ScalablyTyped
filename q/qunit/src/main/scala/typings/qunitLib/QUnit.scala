@@ -241,7 +241,7 @@ trait QUnit extends js.Object {
     *
     * @param callback Callback to execute
     */
-  def testDone(callback: js.Function1[/* details */ Anon_Module, scala.Unit]): scala.Unit = js.native
+  def testDone(callback: js.Function1[/* details */ Anon_Name, scala.Unit]): scala.Unit = js.native
   /**
     * Register a callback to fire whenever a test begins.
     *

@@ -36,7 +36,7 @@ trait IBaseFloatingPickerProps[T]
   /**
     * The input element to listen on events
     */
-  var inputElement: js.UndefOr[reactLib.HTMLInputElement | scala.Null] = js.native
+  var inputElement: js.UndefOr[(reactLib.HTMLInputElement with stdLib.HTMLInputElement) | scala.Null] = js.native
   /**
     * A callback for when a suggestion is clicked
     */

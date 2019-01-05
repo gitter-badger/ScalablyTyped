@@ -24,10 +24,10 @@ object vinylDashFsModMembers extends js.Object {
   ): nodeLib.NodeJSNs.ReadWriteStream = js.native
   def watch(globs: java.lang.String): nodeLib.eventsMod.EventEmitter = js.native
   def watch(globs: java.lang.String, cb: js.Function1[/* outEvt */ vinylDashFsLib.Anon_Type, scala.Unit]): nodeLib.eventsMod.EventEmitter = js.native
-  def watch(globs: java.lang.String, opt: vinylDashFsLib.Anon_DebounceDelay): nodeLib.eventsMod.EventEmitter = js.native
+  def watch(globs: java.lang.String, opt: vinylDashFsLib.Anon_Interval): nodeLib.eventsMod.EventEmitter = js.native
   def watch(
     globs: java.lang.String,
-    opt: vinylDashFsLib.Anon_DebounceDelay,
+    opt: vinylDashFsLib.Anon_Interval,
     cb: js.Function1[/* outEvt */ vinylDashFsLib.Anon_Type, scala.Unit]
   ): nodeLib.eventsMod.EventEmitter = js.native
   def watch(globs: js.Array[java.lang.String]): nodeLib.eventsMod.EventEmitter = js.native
@@ -35,10 +35,10 @@ object vinylDashFsModMembers extends js.Object {
     globs: js.Array[java.lang.String],
     cb: js.Function1[/* outEvt */ vinylDashFsLib.Anon_Type, scala.Unit]
   ): nodeLib.eventsMod.EventEmitter = js.native
-  def watch(globs: js.Array[java.lang.String], opt: vinylDashFsLib.Anon_DebounceDelay): nodeLib.eventsMod.EventEmitter = js.native
+  def watch(globs: js.Array[java.lang.String], opt: vinylDashFsLib.Anon_Interval): nodeLib.eventsMod.EventEmitter = js.native
   def watch(
     globs: js.Array[java.lang.String],
-    opt: vinylDashFsLib.Anon_DebounceDelay,
+    opt: vinylDashFsLib.Anon_Interval,
     cb: js.Function1[/* outEvt */ vinylDashFsLib.Anon_Type, scala.Unit]
   ): nodeLib.eventsMod.EventEmitter = js.native
 }

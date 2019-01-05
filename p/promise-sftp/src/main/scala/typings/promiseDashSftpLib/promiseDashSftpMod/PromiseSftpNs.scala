@@ -19,7 +19,7 @@ object PromiseSftpNs extends js.Object {
     /** The user name or ID that this entry belongs to. *NIX only */
     var owner: js.UndefOr[java.lang.String] = js.undefined
     /** The various permissions for this entry. *NIX only */
-    var rights: js.UndefOr[promiseDashSftpLib.Anon_Group] = js.undefined
+    var rights: js.UndefOr[promiseDashSftpLib.Anon_User] = js.undefined
     /** True if the sticky bit is set for this entry */
     var sticky: js.UndefOr[scala.Boolean] = js.undefined
     /** For symlink entries, this is the symlink's target. *NIX only */
@@ -291,6 +291,6 @@ object PromiseSftpNs extends js.Object {
   /**
     * Options for SftpPromise#connect()
     */
-  type Options = ssh2Lib.ssh2Mod.ConnectConfig with promiseDashSftpLib.Anon_ConnTimeout
+  type Options = ssh2Lib.ssh2Mod.ConnectConfig with promiseDashSftpLib.Anon_ChangePassword
 }
 

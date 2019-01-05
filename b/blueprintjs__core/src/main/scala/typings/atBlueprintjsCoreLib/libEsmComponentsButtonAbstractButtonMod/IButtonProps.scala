@@ -22,7 +22,9 @@ trait IButtonProps
     */
   var alignText: js.UndefOr[atBlueprintjsCoreLib.libEsmCommonAlignmentMod.Alignment] = js.undefined
   /** A ref handler that receives the native HTML element backing this component. */
-  var elementRef: js.UndefOr[js.Function1[/* ref */ reactLib.HTMLElement | scala.Null, _]] = js.undefined
+  var elementRef: js.UndefOr[
+    js.Function1[/* ref */ (reactLib.HTMLElement with stdLib.HTMLElement) | scala.Null, _]
+  ] = js.undefined
   /** Whether this button should expand to fill its container. */
   var fill: js.UndefOr[scala.Boolean] = js.undefined
   /** Whether this button should use large styles. */

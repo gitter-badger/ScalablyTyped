@@ -64,7 +64,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashMsformsLib.MSFormsNs.CheckBox, 
-      /* parameter */ Anon_Y, 
+      /* parameter */ Anon_Button, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -79,7 +79,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashMsformsLib.MSFormsNs.CheckBox, 
-      /* parameter */ Anon_Y, 
+      /* parameter */ Anon_Button, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -94,7 +94,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashMsformsLib.MSFormsNs.CheckBox, 
-      /* parameter */ Anon_Y, 
+      /* parameter */ Anon_Button, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -155,7 +155,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashMsformsLib.MSFormsNs.ComboBox, 
-      /* parameter */ Anon_Y, 
+      /* parameter */ Anon_Button, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -170,7 +170,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashMsformsLib.MSFormsNs.ComboBox, 
-      /* parameter */ Anon_Y, 
+      /* parameter */ Anon_Button, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -185,7 +185,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashMsformsLib.MSFormsNs.ComboBox, 
-      /* parameter */ Anon_Y, 
+      /* parameter */ Anon_Button, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -246,7 +246,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashMsformsLib.MSFormsNs.CommandButton, 
-      /* parameter */ Anon_Y, 
+      /* parameter */ Anon_Button, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -261,7 +261,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashMsformsLib.MSFormsNs.CommandButton, 
-      /* parameter */ Anon_Y, 
+      /* parameter */ Anon_Button, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -276,7 +276,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashMsformsLib.MSFormsNs.CommandButton, 
-      /* parameter */ Anon_Y, 
+      /* parameter */ Anon_Button, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -365,7 +365,11 @@ trait ActiveXObject extends js.Object {
       activexDashMsformsLib.activexDashMsformsLibStrings.X, 
       activexDashMsformsLib.activexDashMsformsLibStrings.Y
     ],
-    handler: js.ThisFunction1[/* this */ activexDashMsformsLib.MSFormsNs.Frame, /* parameter */ Anon_Y, scala.Unit]
+    handler: js.ThisFunction1[
+      /* this */ activexDashMsformsLib.MSFormsNs.Frame, 
+      /* parameter */ Anon_Button, 
+      scala.Unit
+    ]
   ): scala.Unit = js.native
   def on(
     obj: activexDashMsformsLib.MSFormsNs.Frame,
@@ -376,7 +380,11 @@ trait ActiveXObject extends js.Object {
       activexDashMsformsLib.activexDashMsformsLibStrings.X, 
       activexDashMsformsLib.activexDashMsformsLibStrings.Y
     ],
-    handler: js.ThisFunction1[/* this */ activexDashMsformsLib.MSFormsNs.Frame, /* parameter */ Anon_Y, scala.Unit]
+    handler: js.ThisFunction1[
+      /* this */ activexDashMsformsLib.MSFormsNs.Frame, 
+      /* parameter */ Anon_Button, 
+      scala.Unit
+    ]
   ): scala.Unit = js.native
   def on(
     obj: activexDashMsformsLib.MSFormsNs.Frame,
@@ -387,7 +395,11 @@ trait ActiveXObject extends js.Object {
       activexDashMsformsLib.activexDashMsformsLibStrings.X, 
       activexDashMsformsLib.activexDashMsformsLibStrings.Y
     ],
-    handler: js.ThisFunction1[/* this */ activexDashMsformsLib.MSFormsNs.Frame, /* parameter */ Anon_Y, scala.Unit]
+    handler: js.ThisFunction1[
+      /* this */ activexDashMsformsLib.MSFormsNs.Frame, 
+      /* parameter */ Anon_Button, 
+      scala.Unit
+    ]
   ): scala.Unit = js.native
   def on(
     obj: activexDashMsformsLib.MSFormsNs.Frame,
@@ -428,7 +440,11 @@ trait ActiveXObject extends js.Object {
       activexDashMsformsLib.activexDashMsformsLibStrings.X, 
       activexDashMsformsLib.activexDashMsformsLibStrings.Y
     ],
-    handler: js.ThisFunction1[/* this */ activexDashMsformsLib.MSFormsNs.Image, /* parameter */ Anon_Y, scala.Unit]
+    handler: js.ThisFunction1[
+      /* this */ activexDashMsformsLib.MSFormsNs.Image, 
+      /* parameter */ Anon_Button, 
+      scala.Unit
+    ]
   ): scala.Unit = js.native
   def on(
     obj: activexDashMsformsLib.MSFormsNs.Image,
@@ -439,7 +455,11 @@ trait ActiveXObject extends js.Object {
       activexDashMsformsLib.activexDashMsformsLibStrings.X, 
       activexDashMsformsLib.activexDashMsformsLibStrings.Y
     ],
-    handler: js.ThisFunction1[/* this */ activexDashMsformsLib.MSFormsNs.Image, /* parameter */ Anon_Y, scala.Unit]
+    handler: js.ThisFunction1[
+      /* this */ activexDashMsformsLib.MSFormsNs.Image, 
+      /* parameter */ Anon_Button, 
+      scala.Unit
+    ]
   ): scala.Unit = js.native
   def on(
     obj: activexDashMsformsLib.MSFormsNs.Image,
@@ -450,7 +470,11 @@ trait ActiveXObject extends js.Object {
       activexDashMsformsLib.activexDashMsformsLibStrings.X, 
       activexDashMsformsLib.activexDashMsformsLibStrings.Y
     ],
-    handler: js.ThisFunction1[/* this */ activexDashMsformsLib.MSFormsNs.Image, /* parameter */ Anon_Y, scala.Unit]
+    handler: js.ThisFunction1[
+      /* this */ activexDashMsformsLib.MSFormsNs.Image, 
+      /* parameter */ Anon_Button, 
+      scala.Unit
+    ]
   ): scala.Unit = js.native
   def on(
     obj: activexDashMsformsLib.MSFormsNs.Label,
@@ -471,7 +495,11 @@ trait ActiveXObject extends js.Object {
       activexDashMsformsLib.activexDashMsformsLibStrings.X, 
       activexDashMsformsLib.activexDashMsformsLibStrings.Y
     ],
-    handler: js.ThisFunction1[/* this */ activexDashMsformsLib.MSFormsNs.Label, /* parameter */ Anon_Y, scala.Unit]
+    handler: js.ThisFunction1[
+      /* this */ activexDashMsformsLib.MSFormsNs.Label, 
+      /* parameter */ Anon_Button, 
+      scala.Unit
+    ]
   ): scala.Unit = js.native
   def on(
     obj: activexDashMsformsLib.MSFormsNs.Label,
@@ -482,7 +510,11 @@ trait ActiveXObject extends js.Object {
       activexDashMsformsLib.activexDashMsformsLibStrings.X, 
       activexDashMsformsLib.activexDashMsformsLibStrings.Y
     ],
-    handler: js.ThisFunction1[/* this */ activexDashMsformsLib.MSFormsNs.Label, /* parameter */ Anon_Y, scala.Unit]
+    handler: js.ThisFunction1[
+      /* this */ activexDashMsformsLib.MSFormsNs.Label, 
+      /* parameter */ Anon_Button, 
+      scala.Unit
+    ]
   ): scala.Unit = js.native
   def on(
     obj: activexDashMsformsLib.MSFormsNs.Label,
@@ -493,7 +525,11 @@ trait ActiveXObject extends js.Object {
       activexDashMsformsLib.activexDashMsformsLibStrings.X, 
       activexDashMsformsLib.activexDashMsformsLibStrings.Y
     ],
-    handler: js.ThisFunction1[/* this */ activexDashMsformsLib.MSFormsNs.Label, /* parameter */ Anon_Y, scala.Unit]
+    handler: js.ThisFunction1[
+      /* this */ activexDashMsformsLib.MSFormsNs.Label, 
+      /* parameter */ Anon_Button, 
+      scala.Unit
+    ]
   ): scala.Unit = js.native
   def on(
     obj: activexDashMsformsLib.MSFormsNs.ListBox,
@@ -552,7 +588,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashMsformsLib.MSFormsNs.ListBox, 
-      /* parameter */ Anon_Y, 
+      /* parameter */ Anon_Button, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -567,7 +603,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashMsformsLib.MSFormsNs.ListBox, 
-      /* parameter */ Anon_Y, 
+      /* parameter */ Anon_Button, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -582,7 +618,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashMsformsLib.MSFormsNs.ListBox, 
-      /* parameter */ Anon_Y, 
+      /* parameter */ Anon_Button, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -595,7 +631,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashMsformsLib.MSFormsNs.MultiPage, 
-      /* parameter */ Anon_ControlIndex, 
+      /* parameter */ Anon_Index, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -605,7 +641,7 @@ trait ActiveXObject extends js.Object {
     argNames: js.Array[activexDashMsformsLib.activexDashMsformsLibStrings.Index],
     handler: js.ThisFunction1[
       /* this */ activexDashMsformsLib.MSFormsNs.MultiPage, 
-      /* parameter */ Anon_Index, 
+      /* parameter */ Anon_IndexNumber, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -618,7 +654,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashMsformsLib.MSFormsNs.MultiPage, 
-      /* parameter */ Anon_CancelIndex, 
+      /* parameter */ Anon_IndexCancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -664,7 +700,7 @@ trait ActiveXObject extends js.Object {
     argNames: js.Array[activexDashMsformsLib.activexDashMsformsLibStrings.Index],
     handler: js.ThisFunction1[
       /* this */ activexDashMsformsLib.MSFormsNs.MultiPage, 
-      /* parameter */ Anon_Index, 
+      /* parameter */ Anon_IndexNumber, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -680,7 +716,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashMsformsLib.MSFormsNs.MultiPage, 
-      /* parameter */ Anon_X, 
+      /* parameter */ Anon_IndexButton, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -696,7 +732,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashMsformsLib.MSFormsNs.MultiPage, 
-      /* parameter */ Anon_X, 
+      /* parameter */ Anon_IndexButton, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -712,7 +748,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashMsformsLib.MSFormsNs.MultiPage, 
-      /* parameter */ Anon_X, 
+      /* parameter */ Anon_IndexButton, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -725,7 +761,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashMsformsLib.MSFormsNs.MultiPage, 
-      /* parameter */ Anon_ControlIndex, 
+      /* parameter */ Anon_Index, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -738,7 +774,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashMsformsLib.MSFormsNs.MultiPage, 
-      /* parameter */ Anon_PercentIndex, 
+      /* parameter */ Anon_IndexPercent, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -799,7 +835,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashMsformsLib.MSFormsNs.OptionButton, 
-      /* parameter */ Anon_Y, 
+      /* parameter */ Anon_Button, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -814,7 +850,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashMsformsLib.MSFormsNs.OptionButton, 
-      /* parameter */ Anon_Y, 
+      /* parameter */ Anon_Button, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -829,7 +865,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashMsformsLib.MSFormsNs.OptionButton, 
-      /* parameter */ Anon_Y, 
+      /* parameter */ Anon_Button, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -911,7 +947,7 @@ trait ActiveXObject extends js.Object {
     argNames: js.Array[activexDashMsformsLib.activexDashMsformsLibStrings.Index],
     handler: js.ThisFunction1[
       /* this */ activexDashMsformsLib.MSFormsNs.TabStrip, 
-      /* parameter */ Anon_Index, 
+      /* parameter */ Anon_IndexNumber, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -924,7 +960,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashMsformsLib.MSFormsNs.TabStrip, 
-      /* parameter */ Anon_CancelIndex, 
+      /* parameter */ Anon_IndexCancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -976,7 +1012,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashMsformsLib.MSFormsNs.TabStrip, 
-      /* parameter */ Anon_X, 
+      /* parameter */ Anon_IndexButton, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -992,7 +1028,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashMsformsLib.MSFormsNs.TabStrip, 
-      /* parameter */ Anon_X, 
+      /* parameter */ Anon_IndexButton, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -1008,7 +1044,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashMsformsLib.MSFormsNs.TabStrip, 
-      /* parameter */ Anon_X, 
+      /* parameter */ Anon_IndexButton, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -1069,7 +1105,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashMsformsLib.MSFormsNs.TextBox, 
-      /* parameter */ Anon_Y, 
+      /* parameter */ Anon_Button, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -1084,7 +1120,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashMsformsLib.MSFormsNs.TextBox, 
-      /* parameter */ Anon_Y, 
+      /* parameter */ Anon_Button, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -1099,7 +1135,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashMsformsLib.MSFormsNs.TextBox, 
-      /* parameter */ Anon_Y, 
+      /* parameter */ Anon_Button, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -1160,7 +1196,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashMsformsLib.MSFormsNs.ToggleButton, 
-      /* parameter */ Anon_Y, 
+      /* parameter */ Anon_Button, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -1175,7 +1211,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashMsformsLib.MSFormsNs.ToggleButton, 
-      /* parameter */ Anon_Y, 
+      /* parameter */ Anon_Button, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -1190,7 +1226,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashMsformsLib.MSFormsNs.ToggleButton, 
-      /* parameter */ Anon_Y, 
+      /* parameter */ Anon_Button, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -1261,7 +1297,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashMsformsLib.MSFormsNs.UserForm, 
-      /* parameter */ Anon_Y, 
+      /* parameter */ Anon_Button, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -1276,7 +1312,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashMsformsLib.MSFormsNs.UserForm, 
-      /* parameter */ Anon_Y, 
+      /* parameter */ Anon_Button, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -1291,7 +1327,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashMsformsLib.MSFormsNs.UserForm, 
-      /* parameter */ Anon_Y, 
+      /* parameter */ Anon_Button, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -2238,7 +2274,7 @@ trait ActiveXObject extends js.Object {
     obj: activexDashMsformsLib.MSFormsNs.ComboBox,
     propertyName: activexDashMsformsLib.activexDashMsformsLibStrings.Column,
     parameterTypes: js.Array[scala.Double],
-    newValue: activexDashInteropLib.SafeArray[_]
+    newValue: activexDashInteropLib.SafeArray[_] with stdLib.SafeArray[_]
   ): scala.Unit = js.native
   @JSName("set")
   def set_Column(
@@ -2259,7 +2295,7 @@ trait ActiveXObject extends js.Object {
     obj: activexDashMsformsLib.MSFormsNs.ListBox,
     propertyName: activexDashMsformsLib.activexDashMsformsLibStrings.Column,
     parameterTypes: js.Array[scala.Double],
-    newValue: activexDashInteropLib.SafeArray[_]
+    newValue: activexDashInteropLib.SafeArray[_] with stdLib.SafeArray[_]
   ): scala.Unit = js.native
   @JSName("set")
   def set_Column(
@@ -2280,7 +2316,7 @@ trait ActiveXObject extends js.Object {
     obj: activexDashMsformsLib.MSFormsNs.ComboBox,
     propertyName: activexDashMsformsLib.activexDashMsformsLibStrings.List,
     parameterTypes: js.Array[scala.Double],
-    newValue: activexDashInteropLib.SafeArray[_]
+    newValue: activexDashInteropLib.SafeArray[_] with stdLib.SafeArray[_]
   ): scala.Unit = js.native
   @JSName("set")
   def set_List(
@@ -2301,7 +2337,7 @@ trait ActiveXObject extends js.Object {
     obj: activexDashMsformsLib.MSFormsNs.ListBox,
     propertyName: activexDashMsformsLib.activexDashMsformsLibStrings.List,
     parameterTypes: js.Array[scala.Double],
-    newValue: activexDashInteropLib.SafeArray[_]
+    newValue: activexDashInteropLib.SafeArray[_] with stdLib.SafeArray[_]
   ): scala.Unit = js.native
   @JSName("set")
   def set_List(

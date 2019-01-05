@@ -29,7 +29,7 @@ abstract class GpioController () extends js.Object {
     * @param pinNumber The pin number of the GPIO pin that you want to open. Some pins may not be available in user mode. For information about how the pin numbers correspond to physical pins, see the documentation for your circuit board.
     * @param sharingMode The mode in which you want to open the GPIO pin, which determines whether other connections to the pin can be opened while you have the pin open.
     */
-  def tryOpenPin(pinNumber: scala.Double, sharingMode: GpioSharingMode): winrtDashUwpLib.Anon_OpenStatus = js.native
+  def tryOpenPin(pinNumber: scala.Double, sharingMode: GpioSharingMode): winrtDashUwpLib.Anon_Pin = js.native
 }
 
 /** Represents the default general-purpose I/O (GPIO) controller for the system. */

@@ -10,7 +10,7 @@ trait FileResource extends js.Object {
   var appDataContents: scala.Boolean
   var canComment: scala.Boolean
   var canReadRevisions: scala.Boolean
-  var capabilities: gapiDotDriveLib.Anon_CanUntrash
+  var capabilities: gapiDotDriveLib.Anon_CanAddChildren
   var copyable: scala.Boolean
   var createdDate: stdLib.Date
   // openWithLinks
@@ -30,13 +30,13 @@ trait FileResource extends js.Object {
   var headRevisionId: java.lang.String
   var iconLink: java.lang.String
   var id: java.lang.String
-  var imageMediaMetadata: gapiDotDriveLib.Anon_MaxApertureValue
+  var imageMediaMetadata: gapiDotDriveLib.Anon_Width
   // exportLinks
   var indexableText: gapiDotDriveLib.Anon_Text
   var isAppAuthorized: scala.Boolean
   var kind: gapiDotDriveLib.gapiDotDriveLibStrings.`drive#file`
-  var labels: gapiDotDriveLib.Anon_Trashed
-  var lastModifyingUser: gapiDotDriveLib.Anon_DisplayName
+  var labels: gapiDotDriveLib.Anon_Starred
+  var lastModifyingUser: gapiDotDriveLib.Anon_Kind
   var lastModifyingUserName: java.lang.String
   var lastViewedByMeDate: stdLib.Date
   var markedViewedByMeDate: stdLib.Date
@@ -47,7 +47,7 @@ trait FileResource extends js.Object {
   var originalFilename: java.lang.String
   var ownedByMe: scala.Boolean
   var ownerNames: js.Array[java.lang.String]
-  var owners: js.Array[gapiDotDriveLib.Anon_DisplayName]
+  var owners: js.Array[gapiDotDriveLib.Anon_Kind]
   var parents: js.Array[ParentResource]
   var permissions: js.Array[PermissionResource]
   var properties: js.Array[PropertiesResource]
@@ -56,17 +56,17 @@ trait FileResource extends js.Object {
   var shareable: scala.Boolean
   var shared: scala.Boolean
   var sharedWithMeDate: stdLib.Date
-  var sharingUser: gapiDotDriveLib.Anon_DisplayName
+  var sharingUser: gapiDotDriveLib.Anon_Kind
   var spaces: js.Array[java.lang.String]
   var teamDriveId: java.lang.String
-  var thumbnail: gapiDotDriveLib.Anon_MimType
+  var thumbnail: gapiDotDriveLib.Anon_Image
   var thumbnailLink: java.lang.String
   var title: java.lang.String
   var trashedDate: stdLib.Date
-  var trashingUser: gapiDotDriveLib.Anon_DisplayName
+  var trashingUser: gapiDotDriveLib.Anon_Kind
   var userPermission: PermissionResource
   var version: scala.Double
-  var videoMediaMetadata: gapiDotDriveLib.Anon_DurationMillis
+  var videoMediaMetadata: gapiDotDriveLib.Anon_WidthHeight
   var webContentLink: java.lang.String
   var webViewLink: java.lang.String
   var writersCanShare: scala.Boolean

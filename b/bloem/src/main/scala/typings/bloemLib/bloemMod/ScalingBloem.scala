@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class ScalingBloem protected () extends js.Object {
   def this(error_rate: scala.Double) = this()
-  def this(error_rate: scala.Double, options: bloemLib.Anon_Initialcapacity) = this()
+  def this(error_rate: scala.Double, options: bloemLib.Anon_Ratio) = this()
   def add(key: nodeLib.Buffer): scala.Unit = js.native
   def has(key: nodeLib.Buffer): scala.Boolean = js.native
 }

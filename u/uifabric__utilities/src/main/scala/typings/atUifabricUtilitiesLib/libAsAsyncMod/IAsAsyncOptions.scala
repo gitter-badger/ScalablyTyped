@@ -9,7 +9,7 @@ trait IAsAsyncOptions[TProps] extends js.Object {
   /**
     * Callback when async loading fails.
     */
-  var onError: js.UndefOr[js.Function1[/* error */ nodeLib.Error, scala.Unit]] = js.undefined
+  var onError: js.UndefOr[js.Function1[/* error */ nodeLib.Error with stdLib.Error, scala.Unit]] = js.undefined
   /**
     * Callback executed when async loading is complete.
     */

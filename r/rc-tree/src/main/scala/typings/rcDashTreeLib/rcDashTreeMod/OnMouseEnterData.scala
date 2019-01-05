@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait OnMouseEnterData extends js.Object {
-  var event: reactLib.Event
+  var event: reactLib.Event with stdLib.Event
   var node: InternalTreeNode
 }
 

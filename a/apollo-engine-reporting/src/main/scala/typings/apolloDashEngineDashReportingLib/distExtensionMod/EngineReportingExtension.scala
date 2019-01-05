@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveDifficultInheritance: 
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
 - Dropped any */ @JSImport("apollo-engine-reporting/dist/extension", "EngineReportingExtension")
 @js.native
 class EngineReportingExtension[TContext] protected () extends js.Object {
@@ -27,13 +27,17 @@ class EngineReportingExtension[TContext] protected () extends js.Object {
   var startHrTime: js.Any = js.native
   var trace: apolloDashEngineDashReportingDashProtobufLib.apolloDashEngineDashReportingDashProtobufMod.Trace = js.native
   def executionDidStart(o: apolloDashEngineDashReportingLib.Anon_ExecutionArgs): scala.Unit = js.native
-  def requestDidStart(o: apolloDashEngineDashReportingLib.Anon_ParsedQuery[TContext]): js.Any = js.native
+  def requestDidStart(o: apolloDashEngineDashReportingLib.Anon_Request[TContext]): js.Any = js.native
   def willResolveField(
     _source: js.Any,
     _args: org.scalablytyped.runtime.StringDictionary[js.Any],
     _context: TContext,
     info: graphqlLib.typeDefinitionMod.GraphQLResolveInfo
-  ): (js.Function2[/* error */ nodeLib.Error | scala.Null, /* result */ js.Any, scala.Unit]) | scala.Unit = js.native
+  ): (js.Function2[
+    /* error */ (nodeLib.Error with stdLib.Error) | scala.Null, 
+    /* result */ js.Any, 
+    scala.Unit
+  ]) | scala.Unit = js.native
   def willSendResponse(o: apolloDashEngineDashReportingLib.Anon_GraphqlResponse): scala.Unit = js.native
 }
 

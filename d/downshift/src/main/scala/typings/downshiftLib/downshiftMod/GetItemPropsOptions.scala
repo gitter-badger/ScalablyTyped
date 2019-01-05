@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait GetItemPropsOptions[Item]
-  extends reactLib.reactMod.ReactNs.HTMLProps[reactLib.HTMLElement] {
+  extends reactLib.reactMod.ReactNs.HTMLProps[reactLib.HTMLElement with stdLib.HTMLElement] {
   var index: js.UndefOr[scala.Double] = js.undefined
   var isSelected: js.UndefOr[scala.Boolean] = js.undefined
   var item: Item

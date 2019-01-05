@@ -6,5 +6,5 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait GetToggleButtonPropsOptions
-  extends reactLib.reactMod.ReactNs.HTMLProps[reactLib.HTMLButtonElement]
+  extends reactLib.reactMod.ReactNs.HTMLProps[reactLib.HTMLButtonElement with stdLib.HTMLButtonElement]
 

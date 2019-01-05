@@ -557,7 +557,7 @@ trait Static extends js.Object {
   def divide(a: scala.Double): js.Function1[/* b */ scala.Double, scala.Double] = js.native
   def divide(a: scala.Double, b: scala.Double): scala.Double = js.native
   def drop(n: scala.Double, xs: java.lang.String): java.lang.String = js.native
-  def drop[T](n: scala.Double): ramdaLib.Anon_XsString[T] = js.native
+  def drop[T](n: scala.Double): ramdaLib.Anon_Xs[T] = js.native
   /**
     * Returns a new list containing all but the first n elements of the given list.
     */
@@ -1974,7 +1974,7 @@ trait Static extends js.Object {
     */
   def set[T, U](lens: Lens, a: U, obj: T): T = js.native
   def slice(a: scala.Double): ramdaLib.Anon_B = js.native
-  def slice(a: scala.Double, b: scala.Double): ramdaLib.Anon_ListStringT = js.native
+  def slice(a: scala.Double, b: scala.Double): ramdaLib.Anon_List = js.native
   /**
     * Returns the elements from `xs` starting at `a` and ending at `b - 1`.
     */
@@ -2005,7 +2005,7 @@ trait Static extends js.Object {
   def split(sep: java.lang.String, str: java.lang.String): js.Array[java.lang.String] = js.native
   def split(sep: stdLib.RegExp): js.Function1[/* str */ java.lang.String, js.Array[java.lang.String]] = js.native
   def split(sep: stdLib.RegExp, str: java.lang.String): js.Array[java.lang.String] = js.native
-  def splitAt(index: scala.Double): ramdaLib.Anon_List = js.native
+  def splitAt(index: scala.Double): ramdaLib.Anon_ListT = js.native
   def splitAt(index: scala.Double, list: java.lang.String): js.Tuple2[java.lang.String, java.lang.String] = js.native
   /**
     * Splits a given list or string at a given index.
@@ -2062,13 +2062,13 @@ trait Static extends js.Object {
     */
   def tail[T](list: js.Array[T]): js.Array[T] = js.native
   def take(n: scala.Double, xs: java.lang.String): java.lang.String = js.native
-  def take[T](n: scala.Double): ramdaLib.Anon_XsString[T] = js.native
+  def take[T](n: scala.Double): ramdaLib.Anon_Xs[T] = js.native
   /**
     * Returns a new list containing the first `n` elements of the given list.  If
     * `n > * list.length`, returns a list of `list.length` elements.
     */
   def take[T](n: scala.Double, xs: js.Array[T]): js.Array[T] = js.native
-  def takeLast(n: scala.Double): ramdaLib.Anon_Xs = js.native
+  def takeLast(n: scala.Double): ramdaLib.Anon_XsT = js.native
   def takeLast(n: scala.Double, xs: java.lang.String): java.lang.String = js.native
   /**
     * Returns a new list containing the last n elements of the given list. If n > list.length,

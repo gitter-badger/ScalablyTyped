@@ -19,7 +19,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashFaxcomexlibLib.FAXCOMEXLibNs.FaxAccount, 
-      /* parameter */ Anon_Rgdispid, 
+      /* parameter */ Anon_Riid, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -43,7 +43,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashFaxcomexlibLib.FAXCOMEXLibNs.FaxAccount, 
-      /* parameter */ Anon_Lcid, 
+      /* parameter */ Anon_Itinfo, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -56,7 +56,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashFaxcomexlibLib.FAXCOMEXLibNs.FaxAccount, 
-      /* parameter */ Anon_BstrJobId, 
+      /* parameter */ Anon_PFaxAccount, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -70,7 +70,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashFaxcomexlibLib.FAXCOMEXLibNs.FaxAccount, 
-      /* parameter */ Anon_PJobStatus, 
+      /* parameter */ Anon_PFaxAccountBstrJobId, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -83,7 +83,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashFaxcomexlibLib.FAXCOMEXLibNs.FaxAccount, 
-      /* parameter */ Anon_BstrJobId, 
+      /* parameter */ Anon_PFaxAccount, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -97,7 +97,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashFaxcomexlibLib.FAXCOMEXLibNs.FaxAccount, 
-      /* parameter */ Anon_PFaxAccount, 
+      /* parameter */ Anon_PFaxAccountBstrMessageId, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -111,7 +111,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashFaxcomexlibLib.FAXCOMEXLibNs.FaxAccount, 
-      /* parameter */ Anon_PFaxAccountBstrMessageId, 
+      /* parameter */ Anon_PFaxAccountBstrMessageIdFRemovedFromReceiveFolder, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -124,7 +124,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashFaxcomexlibLib.FAXCOMEXLibNs.FaxAccount, 
-      /* parameter */ Anon_BstrJobId, 
+      /* parameter */ Anon_PFaxAccount, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -138,7 +138,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashFaxcomexlibLib.FAXCOMEXLibNs.FaxAccount, 
-      /* parameter */ Anon_PJobStatus, 
+      /* parameter */ Anon_PFaxAccountBstrJobId, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -151,7 +151,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashFaxcomexlibLib.FAXCOMEXLibNs.FaxAccount, 
-      /* parameter */ Anon_BstrJobId, 
+      /* parameter */ Anon_PFaxAccount, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -200,7 +200,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashFaxcomexlibLib.FAXCOMEXLibNs.FaxAccount, 
-      /* parameter */ Anon_PpvObj, 
+      /* parameter */ Anon_RiidPpvObj, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -226,7 +226,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashFaxcomexlibLib.FAXCOMEXLibNs.FaxServer, 
-      /* parameter */ Anon_Rgdispid, 
+      /* parameter */ Anon_Riid, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -250,7 +250,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashFaxcomexlibLib.FAXCOMEXLibNs.FaxServer, 
-      /* parameter */ Anon_Lcid, 
+      /* parameter */ Anon_Itinfo, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -277,7 +277,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashFaxcomexlibLib.FAXCOMEXLibNs.FaxServer, 
-      /* parameter */ Anon_PJobStatusPFaxServer, 
+      /* parameter */ Anon_PFaxServerBstrJobIdPJobStatus, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -331,7 +331,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashFaxcomexlibLib.FAXCOMEXLibNs.FaxServer, 
-      /* parameter */ Anon_LCallId, 
+      /* parameter */ Anon_PFaxServerLCallId, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -358,7 +358,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashFaxcomexlibLib.FAXCOMEXLibNs.FaxServer, 
-      /* parameter */ Anon_PJobStatusPFaxServer, 
+      /* parameter */ Anon_PFaxServerBstrJobIdPJobStatus, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -412,7 +412,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashFaxcomexlibLib.FAXCOMEXLibNs.FaxServer, 
-      /* parameter */ Anon_BOutgoingQueueBlocked, 
+      /* parameter */ Anon_PFaxServerBOutgoingQueueBlocked, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -428,7 +428,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashFaxcomexlibLib.FAXCOMEXLibNs.FaxServer, 
-      /* parameter */ Anon_LIncomingMessages, 
+      /* parameter */ Anon_PFaxServerLIncomingMessages, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -441,7 +441,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashFaxcomexlibLib.FAXCOMEXLibNs.FaxServer, 
-      /* parameter */ Anon_PpvObj, 
+      /* parameter */ Anon_RiidPpvObj, 
       scala.Unit
     ]
   ): scala.Unit = js.native

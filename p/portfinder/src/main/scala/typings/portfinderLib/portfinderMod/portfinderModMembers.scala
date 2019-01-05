@@ -16,7 +16,11 @@ object portfinderModMembers extends js.Object {
   def getPorts(
     count: scala.Double,
     options: PortFinderOptions,
-    callback: js.Function2[/* err */ nodeLib.Error, /* ports */ js.Array[scala.Double], scala.Unit]
+    callback: js.Function2[
+      /* err */ nodeLib.Error with stdLib.Error, 
+      /* ports */ js.Array[scala.Double], 
+      scala.Unit
+    ]
   ): scala.Unit = js.native
 }
 

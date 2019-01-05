@@ -49,7 +49,7 @@ class TemplateFactory ()
     config: atUirouterAngularjsLib.libInterfaceMod.Ng1ViewDeclaration,
     params: js.Any,
     context: atUirouterCoreLib.coreMod.ResolveContext
-  ): js.Promise[atUirouterAngularjsLib.Anon_Component] = js.native
+  ): js.Promise[atUirouterAngularjsLib.Anon_Template] = js.native
   /**
     * Creates a template by invoking an injectable provider function.
     *
@@ -63,9 +63,9 @@ class TemplateFactory ()
     params: js.Any,
     context: atUirouterCoreLib.coreMod.ResolveContext
   ): js.Promise[_] = js.native
-  def fromString(template: angularLib.angularMod.Global.Function): js.Any = js.native
+  def fromString(template: angularLib.angularMod.Global.Function with js.Function): js.Any = js.native
   def fromString(
-    template: angularLib.angularMod.Global.Function,
+    template: angularLib.angularMod.Global.Function with js.Function,
     params: atUirouterCoreLib.libParamsInterfaceMod.RawParams
   ): js.Any = js.native
   /**
@@ -79,7 +79,7 @@ class TemplateFactory ()
     */
   def fromString(template: java.lang.String): js.Any = js.native
   def fromString(template: java.lang.String, params: atUirouterCoreLib.libParamsInterfaceMod.RawParams): js.Any = js.native
-  def fromUrl(url: angularLib.angularMod.Global.Function, params: js.Any): js.Any = js.native
+  def fromUrl(url: angularLib.angularMod.Global.Function with js.Function, params: js.Any): js.Any = js.native
   /**
     * Loads a template from the a URL via `$http` and `$templateCache`.
     *

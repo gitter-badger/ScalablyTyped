@@ -11,6 +11,10 @@ trait Anon_PathStat extends js.Object {
     */
   var path: java.lang.String
   /**
+    * Pattern index
+    */
+  var patternIndex: scala.Double
+  /**
     * File stats
     */
   var stat: adoneLib.adoneNs.fsNs.INs.Stats

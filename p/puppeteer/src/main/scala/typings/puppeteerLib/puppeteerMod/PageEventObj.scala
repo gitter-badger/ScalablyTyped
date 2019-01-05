@@ -19,7 +19,7 @@ trait PageEventObj extends js.Object {
     */
   var dialog: Dialog
   /** Emitted when the page crashes. */
-  var error: nodeLib.Error
+  var error: nodeLib.Error with stdLib.Error
   /** Emitted when a frame is attached. */
   var frameattached: Frame
   /** Emitted when a frame is detached. */
@@ -32,9 +32,9 @@ trait PageEventObj extends js.Object {
     * Emitted when the JavaScript code makes a call to `console.timeStamp`.
     * For the list of metrics see `page.metrics`.
     */
-  var metrics: puppeteerLib.Anon_Metrics
+  var metrics: puppeteerLib.Anon_Title
   /** Emitted when an uncaught exception happens within the page. */
-  var pageerror: nodeLib.Error
+  var pageerror: nodeLib.Error with stdLib.Error
   /**
     * Emitted when a page issues a request. The request object is read-only.
     * In order to intercept and mutate requests, see page.setRequestInterceptionEnabled.

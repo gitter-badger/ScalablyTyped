@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Anon_Service extends js.Object {
-  def apply[TData](opts: consulLib.consulMod.ConsulNs.HealthNs.ServiceOptions): consulLib.consulMod.ConsulNs.Thenable[TData] = js.native
+  def apply[TData](opts: consulLib.consulMod.ConsulNs.CatalogNs.ServiceNs.NodesOptions): consulLib.consulMod.ConsulNs.Thenable[TData] = js.native
   def apply[TData](
-    opts: consulLib.consulMod.ConsulNs.HealthNs.ServiceOptions,
+    opts: consulLib.consulMod.ConsulNs.CatalogNs.ServiceNs.NodesOptions,
     callback: consulLib.consulMod.ConsulNs.Callback[TData]
   ): scala.Unit = js.native
   def apply[TData](service: java.lang.String): consulLib.consulMod.ConsulNs.Thenable[TData] = js.native

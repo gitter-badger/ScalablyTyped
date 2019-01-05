@@ -17,7 +17,7 @@ trait LifecyclePolicyState extends js.Object {
   /**
     * See the `policy_details` configuration block. Max of 1.
     */
-  val policyDetails: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_Schedules]] = js.undefined
+  val policyDetails: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_ResourceTypesSchedules]] = js.undefined
   /**
     * Whether the lifecycle policy should be enabled or disabled. `ENABLED` or `DISABLED` are valid values. Defaults to `ENABLED`.
     */

@@ -417,10 +417,10 @@ org.scalablytyped.runtime.Instantiable0[T]
   def findOneAndDelete(): (DocumentQuery[T | scala.Null, T, js.Object]) with QueryHelpers = js.native
   def findOneAndDelete(conditions: js.Any): (DocumentQuery[T | scala.Null, T, js.Object]) with QueryHelpers = js.native
   def findOneAndDelete(conditions: js.Any, callback: js.Function2[/* err */ js.Any, /* res */ T | scala.Null, scala.Unit]): (DocumentQuery[T | scala.Null, T, js.Object]) with QueryHelpers = js.native
-  def findOneAndDelete(conditions: js.Any, options: mongooseLib.Anon_Strict): (DocumentQuery[T | scala.Null, T, js.Object]) with QueryHelpers = js.native
+  def findOneAndDelete(conditions: js.Any, options: mongooseLib.Anon_SortMaxTimeMSSelect): (DocumentQuery[T | scala.Null, T, js.Object]) with QueryHelpers = js.native
   def findOneAndDelete(
     conditions: js.Any,
-    options: mongooseLib.Anon_Strict,
+    options: mongooseLib.Anon_SortMaxTimeMSSelect,
     callback: js.Function2[/* err */ js.Any, /* res */ T | scala.Null, scala.Unit]
   ): (DocumentQuery[T | scala.Null, T, js.Object]) with QueryHelpers = js.native
   /**
@@ -474,10 +474,10 @@ org.scalablytyped.runtime.Instantiable0[T]
     * @param options for the geoSearch, some (near, maxDistance) are required
     * @param callback optional callback
     */
-  def geoSearch(conditions: js.Any, options: mongooseLib.Anon_Limit): (DocumentQuery[js.Array[T], T, js.Object]) with QueryHelpers = js.native
+  def geoSearch(conditions: js.Any, options: mongooseLib.Anon_Near): (DocumentQuery[js.Array[T], T, js.Object]) with QueryHelpers = js.native
   def geoSearch(
     conditions: js.Any,
-    options: mongooseLib.Anon_Limit,
+    options: mongooseLib.Anon_Near,
     callback: js.Function2[/* err */ js.Any, /* res */ js.Array[T], scala.Unit]
   ): (DocumentQuery[js.Array[T], T, js.Object]) with QueryHelpers = js.native
   /**
@@ -498,10 +498,10 @@ org.scalablytyped.runtime.Instantiable0[T]
   def init(callback: js.Function1[/* err */ js.Any, scala.Unit]): js.Promise[T] = js.native
   def insertMany(doc: js.Any): js.Promise[T] = js.native
   def insertMany(doc: js.Any, callback: js.Function2[/* error */ js.Any, /* doc */ T, scala.Unit]): js.Promise[T] = js.native
-  def insertMany(doc: js.Any, options: mongooseLib.Anon_RawResult with ModelOptions): js.Promise[T] = js.native
+  def insertMany(doc: js.Any, options: mongooseLib.Anon_Ordered with ModelOptions): js.Promise[T] = js.native
   def insertMany(
     doc: js.Any,
-    options: mongooseLib.Anon_RawResult with ModelOptions,
+    options: mongooseLib.Anon_Ordered with ModelOptions,
     callback: js.Function2[/* error */ js.Any, /* doc */ T, scala.Unit]
   ): js.Promise[T] = js.native
   /**
@@ -520,10 +520,10 @@ org.scalablytyped.runtime.Instantiable0[T]
     */
   def insertMany(docs: js.Array[_]): js.Promise[js.Array[T]] = js.native
   def insertMany(docs: js.Array[_], callback: js.Function2[/* error */ js.Any, /* docs */ js.Array[T], scala.Unit]): js.Promise[js.Array[T]] = js.native
-  def insertMany(docs: js.Array[_], options: mongooseLib.Anon_RawResult with ModelOptions): js.Promise[js.Array[T]] = js.native
+  def insertMany(docs: js.Array[_], options: mongooseLib.Anon_Ordered with ModelOptions): js.Promise[js.Array[T]] = js.native
   def insertMany(
     docs: js.Array[_],
-    options: mongooseLib.Anon_RawResult with ModelOptions,
+    options: mongooseLib.Anon_Ordered with ModelOptions,
     callback: js.Function2[/* error */ js.Any, /* docs */ js.Array[T], scala.Unit]
   ): js.Promise[js.Array[T]] = js.native
   /**

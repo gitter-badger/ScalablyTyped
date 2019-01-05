@@ -10,13 +10,13 @@ package object reactDashNativeDashTabDashViewMod {
   type IndicatorProps[T /* <: RouteBase */] = SceneRendererProps[T] with reactDashNativeDashTabDashViewLib.Anon_Width
   type PageScrollState = reactDashNativeDashTabDashViewLib.reactDashNativeDashTabDashViewLibStrings.dragging | reactDashNativeDashTabDashViewLib.reactDashNativeDashTabDashViewLibStrings.settling | reactDashNativeDashTabDashViewLib.reactDashNativeDashTabDashViewLibStrings.idle
   type PagerAndroidProps[T /* <: RouteBase */] = SceneRendererProps[T] with reactDashNativeDashTabDashViewLib.Anon_AnimationEnabled
-  type PagerPanProps[T /* <: RouteBase */] = SceneRendererProps[T] with reactDashNativeDashTabDashViewLib.Anon_Children
+  type PagerPanProps[T /* <: RouteBase */] = SceneRendererProps[T] with reactDashNativeDashTabDashViewLib.Anon_ConfigureTransition
   type PagerScrollProps[T /* <: RouteBase */] = SceneRendererProps[T] with reactDashNativeDashTabDashViewLib.Anon_AnimationEnabled
   type Route[T /* <: RouteBase */] = T
   type RouteBase = Key with reactDashNativeDashTabDashViewLib.Anon_TestID
   type SubscriptionName = reactDashNativeDashTabDashViewLib.reactDashNativeDashTabDashViewLibStrings.reset | reactDashNativeDashTabDashViewLib.reactDashNativeDashTabDashViewLibStrings.position
-  type TabBarProps[T /* <: RouteBase */] = SceneRendererProps[T] with reactDashNativeDashTabDashViewLib.Anon_RenderLabel[T]
-  type TabViewProps[T /* <: RouteBase */] = PagerProps with reactDashNativeDashTabDashViewLib.Anon_InitialLayout[T]
+  type TabBarProps[T /* <: RouteBase */] = SceneRendererProps[T] with reactDashNativeDashTabDashViewLib.Anon_ScrollEnabled[T]
+  type TabViewProps[T /* <: RouteBase */] = PagerProps with reactDashNativeDashTabDashViewLib.Anon_NavigationState[T]
   type TransitionConfigurator = js.Function2[
     /* currentTransitionProps */ TransitionProps, 
     /* nextTransitionProps */ TransitionProps, 

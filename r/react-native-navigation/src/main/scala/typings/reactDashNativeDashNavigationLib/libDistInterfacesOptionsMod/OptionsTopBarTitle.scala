@@ -20,7 +20,7 @@ trait OptionsTopBarTitle extends js.Object {
   /**
     * Custom component as the title view
     */
-  var component: js.UndefOr[reactDashNativeDashNavigationLib.Anon_Alignment] = js.undefined
+  var component: js.UndefOr[reactDashNativeDashNavigationLib.Anon_Id] = js.undefined
   /**
     * Title font family
     *

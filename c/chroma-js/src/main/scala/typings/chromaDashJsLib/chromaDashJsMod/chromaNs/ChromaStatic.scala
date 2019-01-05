@@ -11,7 +11,7 @@ trait ChromaStatic extends js.Object {
     * chroma.brewer is an map of ColorBrewer scales that are included in chroma.js for convenience.
     * chroma.scale uses the colors to construct.
     */
-  var brewer: chromaDashJsLib.Anon_YlGnBu = js.native
+  var brewer: chromaDashJsLib.Anon_OrRd = js.native
   /**
     * Create a color in the specified color space using a, b and c as values.
     *

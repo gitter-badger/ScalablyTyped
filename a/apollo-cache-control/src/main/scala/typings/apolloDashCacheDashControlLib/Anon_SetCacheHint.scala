@@ -7,9 +7,6 @@ import scala.scalajs.js.annotation._
 
 trait Anon_SetCacheHint extends js.Object {
   var cacheHint: apolloDashCacheDashControlLib.apolloDashCacheDashControlMod.CacheHint
-  var setCacheHint: js.Function1[
-    /* hint */ apolloDashCacheDashControlLib.apolloDashCacheDashControlMod.CacheHint, 
-    scala.Unit
-  ]
+  def setCacheHint(hint: apolloDashCacheDashControlLib.apolloDashCacheDashControlMod.CacheHint): scala.Unit
 }
 

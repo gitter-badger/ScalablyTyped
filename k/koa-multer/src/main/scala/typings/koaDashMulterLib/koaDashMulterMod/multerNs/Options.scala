@@ -13,7 +13,11 @@ trait Options extends js.Object {
     js.Function3[
       /* req */ nodeLib.httpMod.IncomingMessage, 
       /* file */ File, 
-      /* callback */ js.Function2[/* error */ nodeLib.Error | scala.Null, /* acceptFile */ scala.Boolean, scala.Unit], 
+      /* callback */ js.Function2[
+        /* error */ (nodeLib.Error with stdLib.Error) | scala.Null, 
+        /* acceptFile */ scala.Boolean, 
+        scala.Unit
+      ], 
       scala.Unit
     ]
   ] = js.undefined

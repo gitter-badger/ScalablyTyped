@@ -12,6 +12,6 @@ class default () extends TimelineItem
 @JSImport("antd/lib/timeline/TimelineItem", JSImport.Default)
 @js.native
 object default extends js.Object {
-  var defaultProps: antdLib.Anon_Pending = js.native
+  var defaultProps: antdLib.Anon_PrefixClsColor = js.native
 }
 

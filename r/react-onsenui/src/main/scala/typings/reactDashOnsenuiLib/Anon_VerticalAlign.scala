@@ -9,5 +9,6 @@ trait Anon_VerticalAlign extends js.Object {
   var verticalAlign: js.UndefOr[
     reactDashOnsenuiLib.reactDashOnsenuiLibStrings.top | reactDashOnsenuiLib.reactDashOnsenuiLibStrings.bottom | reactDashOnsenuiLib.reactDashOnsenuiLibStrings.center
   ] = js.undefined
+  var width: js.UndefOr[java.lang.String] = js.undefined
 }
 

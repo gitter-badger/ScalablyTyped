@@ -66,7 +66,7 @@ trait FancytreeOptions
   @JSName("rtl")
   var rtl_FancytreeOptions: js.UndefOr[jqueryDotFancytreeLib.jqueryDotFancytreeLibNumbers.`false`] = js.undefined
   /** optional margins for node.scrollIntoView() (default: {top: 0, bottom: 0}) */
-  var scrollOfs: js.UndefOr[jqueryDotFancytreeLib.Anon_Bottom] = js.undefined
+  var scrollOfs: js.UndefOr[jqueryDotFancytreeLib.Anon_Top] = js.undefined
   /** scrollable container for node.scrollIntoView() (default: $container) */
   var scrollParent: js.UndefOr[jqueryDotFancytreeLib.JQuery | scala.Null] = js.undefined
   /** default: multi_hier */

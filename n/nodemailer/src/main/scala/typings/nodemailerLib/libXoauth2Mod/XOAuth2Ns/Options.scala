@@ -24,7 +24,7 @@ trait Options extends js.Object {
       /* user */ java.lang.String, 
       /* renew */ scala.Boolean, 
       /* callback */ js.Function3[
-        /* err */ nodeLib.Error | scala.Null, 
+        /* err */ (nodeLib.Error with stdLib.Error) | scala.Null, 
         /* accessToken */ java.lang.String, 
         /* expires */ scala.Double, 
         scala.Unit

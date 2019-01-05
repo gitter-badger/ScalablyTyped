@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object signaleModMembers
   extends org.scalablytyped.runtime.TopLevel[
-      signaleLib.signaleMod.signaleNs.Signale[signaleLib.signaleMod.signaleNs.DefaultMethods] with signaleLib.Anon_DefaultMethods
+      signaleLib.signaleMod.signaleNs.Signale[signaleLib.signaleMod.signaleNs.DefaultMethods] with signaleLib.Anon_Signale
     ]
 

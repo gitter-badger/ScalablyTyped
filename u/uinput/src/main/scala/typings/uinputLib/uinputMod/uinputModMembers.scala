@@ -685,28 +685,32 @@ object uinputModMembers extends js.Object {
   def create(
     stream: nodeLib.fsMod.WriteStream,
     options: CreateOptions,
-    callback: js.Function1[/* err */ nodeLib.Error, scala.Unit]
+    callback: js.Function1[/* err */ nodeLib.Error with stdLib.Error, scala.Unit]
   ): scala.Unit = js.native
   def emit_combo(
     stream: nodeLib.fsMod.WriteStream,
     codes: js.Array[scala.Double],
-    callback: js.Function1[/* err */ nodeLib.Error, scala.Unit]
+    callback: js.Function1[/* err */ nodeLib.Error with stdLib.Error, scala.Unit]
   ): scala.Unit = js.native
   def key_event(
     stream: nodeLib.fsMod.WriteStream,
     code: scala.Double,
-    callback: js.Function1[/* err */ nodeLib.Error, scala.Unit]
+    callback: js.Function1[/* err */ nodeLib.Error with stdLib.Error, scala.Unit]
   ): scala.Unit = js.native
   def send_event(
     stream: nodeLib.fsMod.WriteStream,
     typeParam: scala.Double,
     code: scala.Double,
     value: scala.Double,
-    callback: js.Function1[/* err */ nodeLib.Error, scala.Unit]
+    callback: js.Function1[/* err */ nodeLib.Error with stdLib.Error, scala.Unit]
   ): scala.Unit = js.native
   def setup(
     options: SetupOptions,
-    callback: js.Function2[/* err */ nodeLib.Error, /* stream */ nodeLib.fsMod.WriteStream, scala.Unit]
+    callback: js.Function2[
+      /* err */ nodeLib.Error with stdLib.Error, 
+      /* stream */ nodeLib.fsMod.WriteStream, 
+      scala.Unit
+    ]
   ): scala.Unit = js.native
 }
 

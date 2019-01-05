@@ -11,13 +11,13 @@ object usbNsMembers extends js.Object {
   /** Direction, Recipient, RequestType, and TransferType all map to their namesakes within the USB specification. */
   val Direction: chromeDashAppsLib.Anon_IN = js.native
   /** Direction, Recipient, RequestType, and TransferType all map to their namesakes within the USB specification. */
-  val Recipient: chromeDashAppsLib.Anon_OTHER = js.native
+  val Recipient: chromeDashAppsLib.Anon_DEVICE = js.native
   /** Direction, Recipient, RequestType, and TransferType all map to their namesakes within the USB specification. */
   val RequestType: chromeDashAppsLib.Anon_STANDARD = js.native
-  val SynchronizationType: chromeDashAppsLib.Anon_ADAPTIVE = js.native
+  val SynchronizationType: chromeDashAppsLib.Anon_ASYNCHRONOUS = js.native
   /** Direction, Recipient, RequestType, and TransferType all map to their namesakes within the USB specification. */
-  val TransferType: chromeDashAppsLib.Anon_ISOCHRONOUS = js.native
-  val UsageType: chromeDashAppsLib.Anon_PERIODIC = js.native
+  val TransferType: chromeDashAppsLib.Anon_CONTROL = js.native
+  val UsageType: chromeDashAppsLib.Anon_DATA = js.native
   /**
     * Event generated when a device is added to the system.
     * Events are only broadcast to apps that have permission to access the device.
@@ -130,7 +130,7 @@ object usbNsMembers extends js.Object {
     * @param callback
     */
   def getDevices(
-    options: chromeDashAppsLib.Anon_Filters,
+    options: chromeDashAppsLib.Anon_FiltersArray,
     callback: js.Function1[/* devices */ js.Array[Device], scala.Unit]
   ): scala.Unit = js.native
   /**

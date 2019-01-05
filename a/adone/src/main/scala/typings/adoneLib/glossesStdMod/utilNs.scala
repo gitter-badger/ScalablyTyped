@@ -12,7 +12,7 @@ object utilNs extends js.Object {
   class TextDecoder ()
     extends nodeLib.utilMod.TextDecoder {
     def this(encoding: java.lang.String) = this()
-    def this(encoding: java.lang.String, options: nodeLib.Anon_IgnoreBOM) = this()
+    def this(encoding: java.lang.String, options: nodeLib.Anon_Fatal) = this()
   }
   
   @js.native

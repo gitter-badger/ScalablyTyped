@@ -16,6 +16,7 @@ trait Anon_Src extends js.Object {
     markedLib.markedMod.markedNs.Renderer
   ] = js.native
   var Slugger: org.scalablytyped.runtime.Instantiable0[markedLib.markedMod.markedNs.Slugger] = js.native
+  val TokensNs: js.Any = js.native
   def apply(src: java.lang.String): java.lang.String = js.native
   def apply(
     src: java.lang.String,
@@ -82,6 +83,6 @@ trait Anon_Src extends js.Object {
     *
     * @param options Hash of options
     */
-  def setOptions(options: markedLib.markedMod.markedNs.MarkedOptions): /* import warning: ImportType.apply Failed type conversion: typeof marked.marked.marked */ js.Any = js.native
+  def setOptions(options: markedLib.markedMod.markedNs.MarkedOptions): /* import warning: ImportType.apply Failed type conversion: typeof marked */ js.Any = js.native
 }
 

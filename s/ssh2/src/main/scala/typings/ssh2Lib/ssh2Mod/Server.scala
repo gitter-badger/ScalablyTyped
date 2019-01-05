@@ -22,7 +22,7 @@ class Server protected ()
     * Returns the bound address, the address family name, and port of the server as reported
     * by the operating system.
     */
-  def address(): ssh2Lib.Anon_Address = js.native
+  def address(): ssh2Lib.Anon_Port = js.native
   /**
     * Stops the server from accepting new connections and keeps existing connections. This
     * function is asynchronous, the server is finally closed when all connections are ended
@@ -33,11 +33,13 @@ class Server protected ()
     *      server was not open when it was closed.
     */
   def close(): this.type = js.native
-  def close(callback: js.Function1[/* err */ nodeLib.Error, scala.Unit]): this.type = js.native
+  def close(callback: js.Function1[/* err */ nodeLib.Error with stdLib.Error, scala.Unit]): this.type = js.native
   /**
     * Asynchronously get the number of concurrent connections on the server.
     */
-  def getConnections(callback: js.Function2[/* err */ nodeLib.Error, /* count */ scala.Double, scala.Unit]): scala.Unit = js.native
+  def getConnections(
+    callback: js.Function2[/* err */ nodeLib.Error with stdLib.Error, /* count */ scala.Double, scala.Unit]
+  ): scala.Unit = js.native
   /**
     * Begin accepting connections on a random port.
     *
@@ -140,7 +142,10 @@ class Server protected ()
     * Emitted when an error occurs.
     */
   @JSName("on")
-  def on_error(event: ssh2Lib.ssh2LibStrings.error, listener: js.Function1[/* err */ nodeLib.Error, scala.Unit]): this.type = js.native
+  def on_error(
+    event: ssh2Lib.ssh2LibStrings.error,
+    listener: js.Function1[/* err */ nodeLib.Error with stdLib.Error, scala.Unit]
+  ): this.type = js.native
   /**
     * Emitted when the server has been bound after calling `server.listen()`.
     */

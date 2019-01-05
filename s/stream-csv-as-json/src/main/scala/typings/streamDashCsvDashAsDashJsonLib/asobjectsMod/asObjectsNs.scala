@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("stream-csv-as-json/AsObjects", "asObjects")
 @js.native
 object asObjectsNs extends js.Object {
-  val Constructor: streamDashCsvDashAsDashJsonLib.Anon_AsObjects with (org.scalablytyped.runtime.Instantiable1[
+  val Constructor: streamDashCsvDashAsDashJsonLib.Anon_Make with (org.scalablytyped.runtime.Instantiable1[
     /* options */ js.UndefOr[
       /* options */ streamDashCsvDashAsDashJsonLib.asobjectsMod.AsObjectsNs.AsObjectOptions
     ], 

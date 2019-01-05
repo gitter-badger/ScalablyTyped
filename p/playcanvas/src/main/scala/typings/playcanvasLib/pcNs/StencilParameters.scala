@@ -20,7 +20,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("pc.StencilParameters")
 @js.native
 class StencilParameters () extends js.Object {
-  def this(options: playcanvasLib.Anon_Fail) = this()
+  def this(options: playcanvasLib.Anon_Func) = this()
   var fail: scala.Double = js.native
   var func: scala.Double = js.native
   var readMask: scala.Double = js.native

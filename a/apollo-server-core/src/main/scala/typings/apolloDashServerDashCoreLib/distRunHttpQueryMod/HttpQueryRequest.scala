@@ -13,7 +13,7 @@ trait HttpQueryRequest extends js.Object {
       apolloDashServerDashCoreLib.distGraphqlOptionsMod.GraphQLServerOptions[stdLib.Record[java.lang.String, _], _]
     ]) | (apolloDashServerDashCoreLib.distGraphqlOptionsMod.GraphQLServerOptions[stdLib.Record[java.lang.String, _], _])
   ])
-  var query: (stdLib.Record[java.lang.String, _]) | (apolloDashEnvLib.libPolyfillsArrayMod.Global.Array[stdLib.Record[java.lang.String, _]])
+  var query: (stdLib.Record[java.lang.String, _]) | ((apolloDashEnvLib.libPolyfillsArrayMod.Global.Array[stdLib.Record[java.lang.String, _]]) with (coreDashJsLib.Array[stdLib.Record[java.lang.String, _]]) with (js.Array[stdLib.Record[java.lang.String, _]]))
   var request: stdLib.Pick[
     apolloDashServerDashEnvLib.apolloDashServerDashEnvMod.Request, 
     apolloDashServerDashCoreLib.apolloDashServerDashCoreLibStrings.url | apolloDashServerDashCoreLib.apolloDashServerDashCoreLibStrings.method | apolloDashServerDashCoreLib.apolloDashServerDashCoreLibStrings.headers

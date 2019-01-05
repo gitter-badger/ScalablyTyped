@@ -20,13 +20,7 @@ object Model extends js.Object {
   var JoinEagerAlgorithm: objectionLib.objectionMod.ObjectionNs.EagerAlgorithm = js.native
   var ManyToManyRelation: objectionLib.objectionMod.ObjectionNs.Relation = js.native
   var NaiveEagerAlgorithm: objectionLib.objectionMod.ObjectionNs.EagerAlgorithm = js.native
-  var QueryBuilder: org.scalablytyped.runtime.Instantiable0[
-    objectionLib.objectionMod.ObjectionNs.QueryBuilder[
-      objectionLib.objectionMod.ObjectionNs.Model, 
-      js.Array[objectionLib.objectionMod.ObjectionNs.Model], 
-      js.Array[objectionLib.objectionMod.ObjectionNs.Model]
-    ]
-  ] = js.native
+  var QueryBuilder: objectionLib.Anon_ForClass = js.native
   var WhereInEagerAlgorithm: objectionLib.objectionMod.ObjectionNs.EagerAlgorithm = js.native
   var columnNameMappers: objectionLib.objectionMod.ObjectionNs.ColumnNameMappers = js.native
   var dbRefProp: java.lang.String = js.native
@@ -50,8 +44,8 @@ object Model extends js.Object {
   var virtualAttributes: js.Array[java.lang.String] = js.native
   def bindKnex[M](`this`: M, knex: knexLib.knexMod.Knex): M = js.native
   def bindTransaction[M](`this`: M, transaction: objectionLib.objectionMod.ObjectionNs.Transaction): M = js.native
-  def createNotFoundError(): nodeLib.Error = js.native
-  def createValidationError(args: objectionLib.objectionMod.ObjectionNs.CreateValidationErrorArgs): nodeLib.Error = js.native
+  def createNotFoundError(): nodeLib.Error with stdLib.Error = js.native
+  def createValidationError(args: objectionLib.objectionMod.ObjectionNs.CreateValidationErrorArgs): nodeLib.Error with stdLib.Error = js.native
   def createValidator(): objectionLib.objectionMod.ObjectionNs.Validator = js.native
   def fetchTableMetadata(): js.Promise[objectionLib.objectionMod.ObjectionNs.TableMetadata] = js.native
   def fetchTableMetadata(opt: objectionLib.objectionMod.ObjectionNs.FetchTableMetadataOptions): js.Promise[objectionLib.objectionMod.ObjectionNs.TableMetadata] = js.native
@@ -140,12 +134,12 @@ object Model extends js.Object {
   def tableMetadata(): objectionLib.objectionMod.ObjectionNs.TableMetadata = js.native
   def tableMetadata(opt: objectionLib.objectionMod.ObjectionNs.TableMetadataOptions): objectionLib.objectionMod.ObjectionNs.TableMetadata = js.native
   def traverse(
-    filterConstructor: org.scalablytyped.runtime.Instantiable0[objectionLib.objectionMod.ObjectionNs.Model],
+    filterConstructor: objectionLib.Anon_TableName,
     models: js.Array[objectionLib.objectionMod.ObjectionNs.Model],
     traverser: objectionLib.objectionMod.ObjectionNs.TraverserFunction
   ): scala.Unit = js.native
   def traverse(
-    filterConstructor: org.scalablytyped.runtime.Instantiable0[objectionLib.objectionMod.ObjectionNs.Model],
+    filterConstructor: objectionLib.Anon_TableName,
     models: objectionLib.objectionMod.ObjectionNs.Model,
     traverser: objectionLib.objectionMod.ObjectionNs.TraverserFunction
   ): scala.Unit = js.native

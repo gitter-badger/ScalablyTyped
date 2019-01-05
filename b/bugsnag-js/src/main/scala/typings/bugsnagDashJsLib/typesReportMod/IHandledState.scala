@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait IHandledState extends js.Object {
   var severity: java.lang.String
-  var severityReason: bugsnagDashJsLib.Anon_KeyType
+  var severityReason: bugsnagDashJsLib.Anon_Type
   var unhandled: scala.Boolean
 }
 

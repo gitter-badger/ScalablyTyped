@@ -16,8 +16,8 @@ trait Options extends js.Object {
   var handleFetch: js.UndefOr[scala.Boolean] = js.undefined
   var ignoreUrlParametersMatching: js.UndefOr[js.Array[stdLib.RegExp]] = js.undefined
   var importScripts: js.UndefOr[js.Array[java.lang.String]] = js.undefined
-  var logger: js.UndefOr[
-    js.Function0[scala.Unit] | (js.Function2[/* message */ js.Any, /* repeated */ js.Any, scala.Unit])
+  var logger: /* import warning: ImportType.apply Failed type conversion: node.Console & std.Console['log'] */ js.UndefOr[
+    /* import warning: ImportType.apply Failed type conversion: node.Console & std.Console['log'] */ js.Any
   ] = js.undefined
   var maximumFileSizeToCacheInBytes: js.UndefOr[scala.Double] = js.undefined
   var navigateFallback: js.UndefOr[java.lang.String] = js.undefined

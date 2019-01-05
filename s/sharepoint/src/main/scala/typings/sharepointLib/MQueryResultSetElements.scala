@@ -77,8 +77,8 @@ trait MQueryResultSetElements
   def mouseup(): MQueryResultSetElements = js.native
   def mouseup(handler: js.Function1[/* eventObject */ MQueryEvent, _]): MQueryResultSetElements = js.native
   def not(selector: java.lang.String): MQueryResultSetElements = js.native
-  def offset(): Anon_Top = js.native
-  def offset(coordinates: Anon_TopLeft): MQueryResultSetElements = js.native
+  def offset(): Anon_LeftTop = js.native
+  def offset(coordinates: Anon_LeftTopAny): MQueryResultSetElements = js.native
   def offsetParent(): MQueryResultSetElements = js.native
   def offsetParent(selector: java.lang.String): MQueryResultSetElements = js.native
   def one(eventType: java.lang.String, handler: js.Function1[/* eventObject */ MQueryEvent, _]): MQueryResultSetElements = js.native

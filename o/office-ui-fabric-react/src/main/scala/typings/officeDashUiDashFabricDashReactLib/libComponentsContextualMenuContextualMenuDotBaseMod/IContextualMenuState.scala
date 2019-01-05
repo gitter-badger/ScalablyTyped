@@ -11,7 +11,7 @@ trait IContextualMenuState extends js.Object {
       officeDashUiDashFabricDashReactLib.libComponentsContextualMenuContextualMenuDotTypesMod.IContextualMenuItem
     ]
   ] = js.undefined
-  var contextualMenuTarget: js.UndefOr[reactLib.Element] = js.undefined
+  var contextualMenuTarget: js.UndefOr[reactLib.Element with stdLib.Element] = js.undefined
   var dismissedMenuItemKey: js.UndefOr[java.lang.String] = js.undefined
   var expandedByMouseClick: js.UndefOr[scala.Boolean] = js.undefined
   var expandedMenuItemKey: js.UndefOr[java.lang.String] = js.undefined
@@ -19,6 +19,6 @@ trait IContextualMenuState extends js.Object {
   var slideDirectionalClassName: js.UndefOr[java.lang.String] = js.undefined
   var subMenuId: js.UndefOr[java.lang.String] = js.undefined
   var submenuDirection: js.UndefOr[officeDashUiDashFabricDashReactLib.libCommonDirectionalHintMod.DirectionalHint] = js.undefined
-  var submenuTarget: js.UndefOr[reactLib.Element] = js.undefined
+  var submenuTarget: js.UndefOr[reactLib.Element with stdLib.Element] = js.undefined
 }
 

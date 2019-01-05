@@ -10,7 +10,7 @@ trait ITimepickerOptions extends js.Object {
   var arrowBehaviour: js.UndefOr[java.lang.String] = js.undefined
   var autoclose: js.UndefOr[scala.Boolean] = js.undefined
   var container: js.UndefOr[java.lang.String | scala.Boolean] = js.undefined
-  var delay: js.UndefOr[scala.Double | angularDashStrapLib.Anon_Hide] = js.undefined
+  var delay: js.UndefOr[scala.Double | angularDashStrapLib.Anon_Show] = js.undefined
   var hourStep: js.UndefOr[scala.Double] = js.undefined
   var html: js.UndefOr[scala.Boolean] = js.undefined
   var iconDown: js.UndefOr[java.lang.String] = js.undefined

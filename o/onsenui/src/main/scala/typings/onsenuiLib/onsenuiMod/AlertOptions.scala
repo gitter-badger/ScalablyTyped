@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait AlertOptions extends js.Object {
   var animation: js.UndefOr[java.lang.String] = js.undefined
   var buttonLabel: js.UndefOr[java.lang.String] = js.undefined
-  var buttonLabels: js.UndefOr[coreDashJsLib.Array[java.lang.String]] = js.undefined
+  var buttonLabels: js.UndefOr[coreDashJsLib.Array[java.lang.String] with js.Array[java.lang.String]] = js.undefined
   var callback: js.UndefOr[js.Any] = js.undefined
   var cancelable: js.UndefOr[scala.Boolean] = js.undefined
   var id: js.UndefOr[java.lang.String] = js.undefined

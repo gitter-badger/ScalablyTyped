@@ -6,6 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_VariablesKeyString extends js.Object {
-  var variables: js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.undefined
+  var variables: org.scalablytyped.runtime.StringDictionary[java.lang.String]
 }
 

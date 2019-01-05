@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait WrapperProps[T /* <: reactLib.HTMLElement */]
+trait WrapperProps[T /* <: reactLib.HTMLElement with stdLib.HTMLElement */]
   extends reactLib.reactMod.ReactNs.HTMLAttributes[T] {
   /**
   	 * By default, it does automatically close.

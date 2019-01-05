@@ -56,7 +56,7 @@ trait TreeProps extends js.Object {
   /** 单击树节点触发 */
   var onClick: js.UndefOr[
     js.Function2[
-      /* e */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent], 
+      /* e */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement with stdLib.HTMLElement, reactLib.NativeMouseEvent], 
       /* node */ AntTreeNode, 
       scala.Unit
     ]
@@ -64,7 +64,7 @@ trait TreeProps extends js.Object {
   /** 双击树节点触发 */
   var onDoubleClick: js.UndefOr[
     js.Function2[
-      /* e */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent], 
+      /* e */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement with stdLib.HTMLElement, reactLib.NativeMouseEvent], 
       /* node */ AntTreeNode, 
       scala.Unit
     ]
@@ -90,7 +90,7 @@ trait TreeProps extends js.Object {
   var onLoaded: js.UndefOr[
     js.Function2[
       /* loadedKeys */ js.Array[java.lang.String], 
-      /* info */ antdLib.Anon_Node, 
+      /* info */ antdLib.Anon_Event, 
       scala.Unit
     ]
   ] = js.undefined

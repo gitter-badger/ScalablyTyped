@@ -39,18 +39,18 @@ object MongoNs extends js.Object {
     def deny(options: meteorDashTypingsLib.Anon_Insert[T]): scala.Boolean = js.native
     def find(): Cursor[T] = js.native
     def find(selector: java.lang.String): Cursor[T] = js.native
-    def find(selector: java.lang.String, options: meteorDashTypingsLib.Anon_ReactiveSkipFields): Cursor[T] = js.native
+    def find(selector: java.lang.String, options: meteorDashTypingsLib.Anon_SortSkipLimit): Cursor[T] = js.native
     def find(selector: ObjectID): Cursor[T] = js.native
-    def find(selector: ObjectID, options: meteorDashTypingsLib.Anon_ReactiveSkipFields): Cursor[T] = js.native
+    def find(selector: ObjectID, options: meteorDashTypingsLib.Anon_SortSkipLimit): Cursor[T] = js.native
     def find(selector: Selector): Cursor[T] = js.native
-    def find(selector: Selector, options: meteorDashTypingsLib.Anon_ReactiveSkipFields): Cursor[T] = js.native
+    def find(selector: Selector, options: meteorDashTypingsLib.Anon_SortSkipLimit): Cursor[T] = js.native
     def findOne(): T = js.native
     def findOne(selector: java.lang.String): T = js.native
-    def findOne(selector: java.lang.String, options: meteorDashTypingsLib.Anon_ReactiveSkipFieldsSort): T = js.native
+    def findOne(selector: java.lang.String, options: meteorDashTypingsLib.Anon_SortSkipFields): T = js.native
     def findOne(selector: ObjectID): T = js.native
-    def findOne(selector: ObjectID, options: meteorDashTypingsLib.Anon_ReactiveSkipFieldsSort): T = js.native
+    def findOne(selector: ObjectID, options: meteorDashTypingsLib.Anon_SortSkipFields): T = js.native
     def findOne(selector: Selector): T = js.native
-    def findOne(selector: Selector, options: meteorDashTypingsLib.Anon_ReactiveSkipFieldsSort): T = js.native
+    def findOne(selector: Selector, options: meteorDashTypingsLib.Anon_SortSkipFields): T = js.native
     def insert(doc: T): java.lang.String = js.native
     def insert(doc: T, callback: js.Function): java.lang.String = js.native
     def rawCollection(): js.Any = js.native
@@ -117,7 +117,7 @@ object MongoNs extends js.Object {
        with org.scalablytyped.runtime.Instantiable0[Collection[js.Object]]
        with org.scalablytyped.runtime.Instantiable2[
           (/* name */ scala.Null) | (/* name */ java.lang.String), 
-          /* options */ meteorDashTypingsLib.Anon_Transform, 
+          /* options */ meteorDashTypingsLib.Anon_Connection, 
           Collection[js.Object]
         ]
   

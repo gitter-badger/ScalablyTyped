@@ -25,12 +25,12 @@ class Polyline protected () extends Overlay {
   def getStrokeStyle(): java.lang.String = js.native
   def getStrokeWeight(): scala.Double = js.native
   def onclick(event: baidumapDashWebDashSdkLib.Anon_TypeTarget): scala.Unit = js.native
-  def ondblclick(event: baidumapDashWebDashSdkLib.Anon_TypeTargetPixel): scala.Unit = js.native
+  def ondblclick(event: baidumapDashWebDashSdkLib.Anon_TypeTargetPointPixel): scala.Unit = js.native
   def onlineupdate(event: baidumapDashWebDashSdkLib.Anon_TypeTarget): scala.Unit = js.native
-  def onmousedown(event: baidumapDashWebDashSdkLib.Anon_TypeTargetPixel): scala.Unit = js.native
-  def onmouseout(event: baidumapDashWebDashSdkLib.Anon_TypeTargetPixel): scala.Unit = js.native
-  def onmouseover(event: baidumapDashWebDashSdkLib.Anon_TypeTargetPixel): scala.Unit = js.native
-  def onmouseup(event: baidumapDashWebDashSdkLib.Anon_TypeTargetPixel): scala.Unit = js.native
+  def onmousedown(event: baidumapDashWebDashSdkLib.Anon_TypeTargetPointPixel): scala.Unit = js.native
+  def onmouseout(event: baidumapDashWebDashSdkLib.Anon_TypeTargetPointPixel): scala.Unit = js.native
+  def onmouseover(event: baidumapDashWebDashSdkLib.Anon_TypeTargetPointPixel): scala.Unit = js.native
+  def onmouseup(event: baidumapDashWebDashSdkLib.Anon_TypeTargetPointPixel): scala.Unit = js.native
   def onremove(event: baidumapDashWebDashSdkLib.Anon_TypeTarget): scala.Unit = js.native
   def removeEventListener(event: java.lang.String, handler: js.Function): scala.Unit = js.native
   def setFillColor(color: java.lang.String): scala.Unit = js.native

@@ -59,7 +59,12 @@ trait TableProps[T] extends js.Object {
   ] = js.undefined
   var onRow: js.UndefOr[js.Function2[/* record */ T, /* index */ scala.Double, _]] = js.undefined
   var onRowClick: js.UndefOr[
-    js.Function3[/* record */ T, /* index */ scala.Double, /* event */ reactLib.Event, scala.Unit]
+    js.Function3[
+      /* record */ T, 
+      /* index */ scala.Double, 
+      /* event */ reactLib.Event with stdLib.Event, 
+      scala.Unit
+    ]
   ] = js.undefined
   var pagination: js.UndefOr[
     antdLib.libPaginationPaginationMod.PaginationConfig | antdLib.antdLibNumbers.`false`
@@ -70,7 +75,7 @@ trait TableProps[T] extends js.Object {
     java.lang.String | (js.Function2[/* record */ T, /* index */ scala.Double, java.lang.String])
   ] = js.undefined
   var rowSelection: js.UndefOr[TableRowSelection[T]] = js.undefined
-  var scroll: js.UndefOr[antdLib.Anon_Y] = js.undefined
+  var scroll: js.UndefOr[antdLib.Anon_X] = js.undefined
   var showHeader: js.UndefOr[scala.Boolean] = js.undefined
   var size: js.UndefOr[TableSize] = js.undefined
   var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined

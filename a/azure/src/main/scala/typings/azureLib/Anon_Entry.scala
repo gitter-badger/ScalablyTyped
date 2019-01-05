@@ -6,6 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_Entry extends js.Object {
-  var entry: Anon_Author
+  var entry: Anon_Id
 }
 

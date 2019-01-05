@@ -59,7 +59,7 @@ trait Layer extends js.Object {
   /** Specifies the selection mode of the map. Accepted selection mode values are Default and Multiple.
     * @Default {default}
     */
-  var selectionMode: js.UndefOr[SelectionMode | java.lang.String] = js.undefined
+  var selectionMode: js.UndefOr[(SelectionMode with stdLib.SelectionMode) | java.lang.String] = js.undefined
   /** Specifies the shape data for the shape layer
     */
   var shapeData: js.UndefOr[js.Any] = js.undefined

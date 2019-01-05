@@ -9,12 +9,12 @@ import scala.scalajs.js.annotation._
 @js.native
 object geoDashViewportModMembers extends js.Object {
   def bounds(
-    viewport: atMapboxGeoDashViewportLib.Anon_Lat,
+    viewport: atMapboxGeoDashViewportLib.Anon_Lon,
     zoom: scala.Double,
     dimensions: js.Tuple2[scala.Double, scala.Double]
   ): BoundingBox = js.native
   def bounds(
-    viewport: atMapboxGeoDashViewportLib.Anon_Lat,
+    viewport: atMapboxGeoDashViewportLib.Anon_Lon,
     zoom: scala.Double,
     dimensions: js.Tuple2[scala.Double, scala.Double],
     tileSize: scala.Double

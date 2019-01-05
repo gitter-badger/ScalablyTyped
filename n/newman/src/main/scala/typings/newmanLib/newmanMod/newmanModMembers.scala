@@ -11,7 +11,11 @@ object newmanModMembers extends js.Object {
   def run(options: NewmanRunOptions): nodeLib.eventsMod.EventEmitter = js.native
   def run(
     options: NewmanRunOptions,
-    callback: js.Function2[/* err */ nodeLib.Error | scala.Null, /* summary */ NewmanRunSummary, scala.Unit]
+    callback: js.Function2[
+      /* err */ (nodeLib.Error with stdLib.Error) | scala.Null, 
+      /* summary */ NewmanRunSummary, 
+      scala.Unit
+    ]
   ): nodeLib.eventsMod.EventEmitter = js.native
 }
 

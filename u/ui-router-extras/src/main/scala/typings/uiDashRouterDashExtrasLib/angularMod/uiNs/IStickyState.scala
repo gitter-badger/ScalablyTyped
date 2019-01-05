@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 /**
   * Sticky state
   */
-/* RemoveDifficultInheritance: 
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
 - Dropped any */ trait IStickyState extends js.Object {
   /*
     * The most-recently-activate substate of the DSR marked state is remembered.

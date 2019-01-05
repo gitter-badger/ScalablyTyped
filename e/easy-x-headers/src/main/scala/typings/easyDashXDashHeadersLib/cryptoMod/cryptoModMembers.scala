@@ -26,7 +26,11 @@ object cryptoModMembers extends js.Object {
     salt: java.lang.String,
     iterations: scala.Double,
     keylen: scala.Double,
-    callback: js.Function2[/* err */ nodeLib.Error, /* derivedKey */ easyDashXDashHeadersLib.Buffer, _]
+    callback: js.Function2[
+      /* err */ nodeLib.Error with stdLib.Error, 
+      /* derivedKey */ easyDashXDashHeadersLib.Buffer, 
+      _
+    ]
   ): scala.Unit = js.native
   def pbkdf2(
     password: java.lang.String,
@@ -34,7 +38,11 @@ object cryptoModMembers extends js.Object {
     iterations: scala.Double,
     keylen: scala.Double,
     digest: java.lang.String,
-    callback: js.Function2[/* err */ nodeLib.Error, /* derivedKey */ easyDashXDashHeadersLib.Buffer, _]
+    callback: js.Function2[
+      /* err */ nodeLib.Error with stdLib.Error, 
+      /* derivedKey */ easyDashXDashHeadersLib.Buffer, 
+      _
+    ]
   ): scala.Unit = js.native
   def pbkdf2Sync(password: java.lang.String, salt: java.lang.String, iterations: scala.Double, keylen: scala.Double): easyDashXDashHeadersLib.Buffer = js.native
   def pbkdf2Sync(
@@ -47,12 +55,20 @@ object cryptoModMembers extends js.Object {
   def pseudoRandomBytes(size: scala.Double): easyDashXDashHeadersLib.Buffer = js.native
   def pseudoRandomBytes(
     size: scala.Double,
-    callback: js.Function2[/* err */ nodeLib.Error, /* buf */ easyDashXDashHeadersLib.Buffer, scala.Unit]
+    callback: js.Function2[
+      /* err */ nodeLib.Error with stdLib.Error, 
+      /* buf */ easyDashXDashHeadersLib.Buffer, 
+      scala.Unit
+    ]
   ): scala.Unit = js.native
   def randomBytes(size: scala.Double): easyDashXDashHeadersLib.Buffer = js.native
   def randomBytes(
     size: scala.Double,
-    callback: js.Function2[/* err */ nodeLib.Error, /* buf */ easyDashXDashHeadersLib.Buffer, scala.Unit]
+    callback: js.Function2[
+      /* err */ nodeLib.Error with stdLib.Error, 
+      /* buf */ easyDashXDashHeadersLib.Buffer, 
+      scala.Unit
+    ]
   ): scala.Unit = js.native
 }
 

@@ -14,6 +14,6 @@ trait TabsProps extends TabBarProps {
     ]
   ] = js.undefined
   // <Tabs /> only:
-  var initialLayout: js.UndefOr[reactDashRouterDashNavigationLib.Anon_Height] = js.undefined
+  var initialLayout: js.UndefOr[reactDashRouterDashNavigationLib.Anon_Width] = js.undefined
 }
 

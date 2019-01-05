@@ -80,7 +80,7 @@ trait ITeachingBubbleProps
   /**
     * Element to anchor the TeachingBubble to.
     */
-  var targetElement: js.UndefOr[reactLib.HTMLElement] = js.undefined
+  var targetElement: js.UndefOr[reactLib.HTMLElement with stdLib.HTMLElement] = js.undefined
   /**
     * Theme provided by High-Order Component.
     */

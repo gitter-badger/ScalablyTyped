@@ -71,7 +71,7 @@ trait User extends PersistedModel {
     * settings.caseSensitiveEmail Enable case sensitive email.
     */
   @JSName("settings")
-  var settings_User: loopbackLib.Anon_RealmDelimiter = js.native
+  var settings_User: loopbackLib.Anon_HttpAclsEmailVerificationRequired = js.native
   /** The property is not used by LoopBack, you are free to use it for your own purposes. */
   var status: java.lang.String = js.native
   /** Must be unique. */
@@ -92,7 +92,11 @@ trait User extends PersistedModel {
   def createAccessToken(
     ttl: scala.Double,
     options: js.Any,
-    callback: js.Function2[/* err */ java.lang.String | nodeLib.Error, /* token */ AccessToken, scala.Unit]
+    callback: js.Function2[
+      /* err */ java.lang.String | (nodeLib.Error with stdLib.Error), 
+      /* token */ AccessToken, 
+      scala.Unit
+    ]
   ): js.Promise[AccessToken] | scala.Unit = js.native
   /**
     * Compare the given `password` with the users hashed password
@@ -104,7 +108,7 @@ trait User extends PersistedModel {
   def hasPassword(password: java.lang.String): js.Promise[scala.Boolean] | scala.Unit = js.native
   def hasPassword(
     password: java.lang.String,
-    callback: js.Function2[/* err */ nodeLib.Error, /* isMatch */ scala.Boolean, scala.Unit]
+    callback: js.Function2[/* err */ nodeLib.Error with stdLib.Error, /* isMatch */ scala.Boolean, scala.Unit]
   ): js.Promise[scala.Boolean] | scala.Unit = js.native
   /**
     * Verify a user's identity by sending them a confirmation email
@@ -137,6 +141,6 @@ trait User extends PersistedModel {
     *  object, instead simply execute the callback with the token! User saving
     *  and email sending will be handled in the `verify()` method
     */
-  def verify(options: loopbackLib.Anon_SubjectRedirect): scala.Unit = js.native
+  def verify(options: loopbackLib.Anon_Type): scala.Unit = js.native
 }
 

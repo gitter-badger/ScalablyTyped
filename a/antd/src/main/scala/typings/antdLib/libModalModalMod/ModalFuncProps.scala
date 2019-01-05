@@ -13,7 +13,10 @@ trait ModalFuncProps extends js.Object {
   var className: js.UndefOr[java.lang.String] = js.undefined
   var content: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
   var getContainer: js.UndefOr[
-    js.Function1[/* instance */ reactLib.reactMod.ReactNs.ReactInstance, reactLib.HTMLElement]
+    js.Function1[
+      /* instance */ reactLib.reactMod.ReactNs.ReactInstance, 
+      reactLib.HTMLElement with stdLib.HTMLElement
+    ]
   ] = js.undefined
   var iconClassName: js.UndefOr[java.lang.String] = js.undefined
   var iconType: js.UndefOr[java.lang.String] = js.undefined

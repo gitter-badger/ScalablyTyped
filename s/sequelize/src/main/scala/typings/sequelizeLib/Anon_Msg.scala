@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_Msg extends js.Object {
-  var args: scala.Boolean
+  var args: java.lang.String | (js.Array[java.lang.String | stdLib.RegExp]) | stdLib.RegExp
   var msg: java.lang.String
 }
 

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait ProcessImageProps extends js.Object {
    /* should be 0 - 1 */ var blur: js.UndefOr[scala.Double] = js.undefined
   var brightness: js.UndefOr[scala.Double] = js.undefined
-  var colors: js.UndefOr[reactDashImgproLib.Anon_Tint] = js.undefined
+  var colors: js.UndefOr[reactDashImgproLib.Anon_Lighten] = js.undefined
   var contain: js.UndefOr[Size] = js.undefined
    /* should be -1 to 1 */ var contrast: js.UndefOr[scala.Double] = js.undefined
    /* should be 0 - 100 */ var cover: js.UndefOr[Size] = js.undefined
@@ -29,7 +29,7 @@ trait ProcessImageProps extends js.Object {
   var resize: js.UndefOr[Shape] = js.undefined
   var rotate: js.UndefOr[reactDashImgproLib.Anon_Degree] = js.undefined
   var scale: js.UndefOr[scala.Boolean] = js.undefined
-  var scaleToFitImage: js.UndefOr[reactDashImgproLib.Anon_Height] = js.undefined
+  var scaleToFitImage: js.UndefOr[reactDashImgproLib.Anon_Width] = js.undefined
   var sepia: js.UndefOr[scala.Boolean] = js.undefined
   var storage: js.UndefOr[scala.Boolean] = js.undefined
   def onProcessFinish(): scala.Unit

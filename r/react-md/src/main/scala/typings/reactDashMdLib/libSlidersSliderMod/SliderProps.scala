@@ -21,12 +21,14 @@ trait SliderProps
   var leftIcon: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined
   var max: js.UndefOr[scala.Double] = js.undefined
   var min: js.UndefOr[scala.Double] = js.undefined
-  var onChange: js.UndefOr[js.Function2[/* value */ scala.Double, /* event */ reactLib.Event, scala.Unit]] = js.undefined
+  var onChange: js.UndefOr[
+    js.Function2[/* value */ scala.Double, /* event */ reactLib.Event with stdLib.Event, scala.Unit]
+  ] = js.undefined
   var onDragChange: js.UndefOr[
     js.Function3[
       /* dragPercentage */ scala.Double, 
       /* value */ scala.Double, 
-      /* event */ reactLib.Event, 
+      /* event */ reactLib.Event with stdLib.Event, 
       scala.Unit
     ]
   ] = js.undefined

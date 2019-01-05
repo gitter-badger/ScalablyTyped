@@ -41,7 +41,7 @@ object compileNs extends js.Object {
     var sourceRoot: js.UndefOr[java.lang.String] = js.undefined
     var suppressImplicitAnyIndexErrors: js.UndefOr[scala.Boolean] = js.undefined
     var target: js.UndefOr[java.lang.String | typescriptLib.typescriptMod.tsNs.ScriptTarget] = js.undefined
-    var typescript: js.UndefOr[gulpDashTypescriptLib.Anon_CreateFunctionExpression] = js.undefined
+    var typescript: js.UndefOr[gulpDashTypescriptLib.Anon_VersionMajorMinor] = js.undefined
   }
   
   @JSName("reporter")
@@ -66,7 +66,7 @@ object compileNs extends js.Object {
       var error: js.UndefOr[
             js.Function2[
               /* error */ gulpDashTypescriptLib.releaseReporterMod.TypeScriptError, 
-              /* typescript */ gulpDashTypescriptLib.Anon_CreateFunctionExpression, 
+              /* typescript */ gulpDashTypescriptLib.Anon_VersionMajorMinor, 
               scala.Unit
             ]
           ] = js.undefined
@@ -79,7 +79,7 @@ object compileNs extends js.Object {
     }
     
     trait TypeScriptError
-      extends nodeLib.Error {
+      extends stdLib.Error {
       var diagnostic: typescriptLib.typescriptMod.tsNs.Diagnostic
       var endPosition: js.UndefOr[gulpDashTypescriptLib.Anon_Position] = js.undefined
       var file: js.UndefOr[gulpDashTypescriptLib.releaseTypesMod.VinylFile] = js.undefined

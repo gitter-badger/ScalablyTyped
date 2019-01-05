@@ -11,11 +11,11 @@ class DigitalGauge protected ()
   extends ejDotWebDotAllLib.ejNs.Widget {
   def this(element: ejDotWebDotAllLib.JQuery) = this()
   def this(element: stdLib.Element) = this()
-  def this(element: ejDotWebDotAllLib.JQuery, options: ejDotWebDotAllLib.ejNs.Model) = this()
-  def this(element: stdLib.Element, options: ejDotWebDotAllLib.ejNs.Model) = this()
-  var defaults: ejDotWebDotAllLib.ejNs.Model = js.native
+  def this(element: ejDotWebDotAllLib.JQuery, options: ejDotWebDotAllLib.ejNs.Model with ejDotWebDotAllLib.ejNs.datavisualizationNs.DigitalGaugeNs.Model) = this()
+  def this(element: stdLib.Element, options: ejDotWebDotAllLib.ejNs.Model with ejDotWebDotAllLib.ejNs.datavisualizationNs.DigitalGaugeNs.Model) = this()
+  var defaults: ejDotWebDotAllLib.ejNs.Model with ejDotWebDotAllLib.ejNs.datavisualizationNs.DigitalGaugeNs.Model = js.native
   @JSName("model")
-  var model_DigitalGauge: ejDotWebDotAllLib.ejNs.Model = js.native
+  var model_DigitalGauge: ejDotWebDotAllLib.ejNs.Model with ejDotWebDotAllLib.ejNs.datavisualizationNs.DigitalGaugeNs.Model = js.native
   /** To export Digital Gauge as Image
     * @param {string} fileName for the Image
     * @param {string} fileType for the Image

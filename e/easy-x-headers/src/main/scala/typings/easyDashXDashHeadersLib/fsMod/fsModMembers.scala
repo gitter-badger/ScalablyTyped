@@ -78,7 +78,7 @@ object fsModMembers extends js.Object {
   def createReadStream(path: java.lang.String, options: easyDashXDashHeadersLib.Anon_Flags): ReadStream = js.native
   def createReadStream(path: java.lang.String, options: easyDashXDashHeadersLib.Anon_FlagsEncoding): ReadStream = js.native
   def createWriteStream(path: java.lang.String): WriteStream = js.native
-  def createWriteStream(path: java.lang.String, options: easyDashXDashHeadersLib.Anon_EncodingString): WriteStream = js.native
+  def createWriteStream(path: java.lang.String, options: easyDashXDashHeadersLib.Anon_FlagsEncodingString): WriteStream = js.native
   def exists(path: java.lang.String): scala.Unit = js.native
   def exists(path: java.lang.String, callback: js.Function1[/* exists */ scala.Boolean, scala.Unit]): scala.Unit = js.native
   def existsSync(path: java.lang.String): scala.Boolean = js.native
@@ -262,7 +262,7 @@ object fsModMembers extends js.Object {
   ): scala.Unit = js.native
   def readFile(
     filename: java.lang.String,
-    options: easyDashXDashHeadersLib.Anon_EncodingFlag,
+    options: easyDashXDashHeadersLib.Anon_Encoding,
     callback: js.Function2[
       /* err */ easyDashXDashHeadersLib.NodeJSNs.ErrnoException, 
       /* data */ java.lang.String, 
@@ -280,7 +280,7 @@ object fsModMembers extends js.Object {
   ): scala.Unit = js.native
   def readFileSync(filename: java.lang.String): easyDashXDashHeadersLib.Buffer = js.native
   def readFileSync(filename: java.lang.String, encoding: java.lang.String): java.lang.String = js.native
-  def readFileSync(filename: java.lang.String, options: easyDashXDashHeadersLib.Anon_EncodingFlag): java.lang.String = js.native
+  def readFileSync(filename: java.lang.String, options: easyDashXDashHeadersLib.Anon_Encoding): java.lang.String = js.native
   def readFileSync(filename: java.lang.String, options: easyDashXDashHeadersLib.Anon_Flag): easyDashXDashHeadersLib.Buffer = js.native
   def readSync(
     fd: scala.Double,
@@ -400,16 +400,16 @@ object fsModMembers extends js.Object {
     filename: java.lang.String,
     listener: js.Function2[/* event */ java.lang.String, /* filename */ java.lang.String, _]
   ): FSWatcher = js.native
-  def watch(filename: java.lang.String, options: easyDashXDashHeadersLib.Anon_Persistent): FSWatcher = js.native
+  def watch(filename: java.lang.String, options: easyDashXDashHeadersLib.Anon_PersistentBoolean): FSWatcher = js.native
   def watch(
     filename: java.lang.String,
-    options: easyDashXDashHeadersLib.Anon_Persistent,
+    options: easyDashXDashHeadersLib.Anon_PersistentBoolean,
     listener: js.Function2[/* event */ java.lang.String, /* filename */ java.lang.String, _]
   ): FSWatcher = js.native
   def watchFile(filename: java.lang.String, listener: js.Function2[/* curr */ Stats, /* prev */ Stats, scala.Unit]): scala.Unit = js.native
   def watchFile(
     filename: java.lang.String,
-    options: easyDashXDashHeadersLib.Anon_PersistentInterval,
+    options: easyDashXDashHeadersLib.Anon_Persistent,
     listener: js.Function2[/* curr */ Stats, /* prev */ Stats, scala.Unit]
   ): scala.Unit = js.native
   def write(

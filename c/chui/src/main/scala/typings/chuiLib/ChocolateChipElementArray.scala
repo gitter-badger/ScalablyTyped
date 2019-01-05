@@ -20,7 +20,7 @@ trait ChocolateChipElementArray extends js.Object {
     * @return void
     */
   def UIBusy(): scala.Unit = js.native
-  def UIBusy(options: Anon_Color): scala.Unit = js.native
+  def UIBusy(options: Anon_Size): scala.Unit = js.native
   /**
     * Center an element to the screen.
     */
@@ -58,7 +58,7 @@ trait ChocolateChipElementArray extends js.Object {
     * @return void
     */
   def UISegmented(): scala.Unit = js.native
-  def UISegmented(options: Anon_CallbackSelected): scala.Unit = js.native
+  def UISegmented(options: Anon_Selected): scala.Unit = js.native
   /**
     * Convert a simple list into a selection list. This converts the list into a radio button group, meaning only one can be selected at any time.
     * You can name the radios buttons using the options name. Options: {name: "selectedNamesGroup", selected: 2, callback: function() {alert('hi');}}
@@ -66,13 +66,13 @@ trait ChocolateChipElementArray extends js.Object {
     * @return void
     */
   def UISelectList(): scala.Unit = js.native
-  def UISelectList(options: Anon_Callback): scala.Unit = js.native
+  def UISelectList(options: Anon_Name): scala.Unit = js.native
   /**
     * Create a stepper control by executing it on a span with the class "stepper". Possible options: {start: 0, end: 10, defaultValue: 3}.
     *
     * @return void
     */
-  def UIStepper(options: Anon_DefaultValue): scala.Unit = js.native
+  def UIStepper(options: Anon_Start): scala.Unit = js.native
   /**
     * Initialize any existing switch controls: $('.switch').UISwitch();
     *

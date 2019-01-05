@@ -14,6 +14,6 @@ trait StartSoterAuthenticationOptions
   var requestAuthModes: js.Array[AuthModes]
    // 验证描述，即识别过程中显示在界面上的对话框提示内容
   @JSName("success")
-  var success_StartSoterAuthenticationOptions: js.UndefOr[js.Function1[/* res */ weixinDashAppLib.Anon_AuthMode, scala.Unit]] = js.undefined
+  var success_StartSoterAuthenticationOptions: js.UndefOr[js.Function1[/* res */ weixinDashAppLib.Anon_ErrCode, scala.Unit]] = js.undefined
 }
 

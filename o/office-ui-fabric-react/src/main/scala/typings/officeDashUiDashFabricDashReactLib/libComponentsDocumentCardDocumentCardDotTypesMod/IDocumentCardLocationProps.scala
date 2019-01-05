@@ -31,7 +31,7 @@ trait IDocumentCardLocationProps
   var onClick: js.UndefOr[
     js.Function1[
       /* ev */ js.UndefOr[
-        reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent]
+        reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement with stdLib.HTMLElement, reactLib.NativeMouseEvent]
       ], 
       scala.Unit
     ]

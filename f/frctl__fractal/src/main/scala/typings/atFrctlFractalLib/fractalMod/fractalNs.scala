@@ -51,7 +51,7 @@ object fractalNs extends js.Object {
       trait AssetSourceCollection
         extends atFrctlFractalLib.fractalMod.fractalNs.coreNs.mixinsNs.ConfigurableEmitter[js.Any] {
         @JSName(org.scalablytyped.runtime.Symbol.iterator)
-        var iterator: js.Function0[nodeLib.IterableIterator[AssetSource]] = js.native
+        var iterator: js.Function0[nodeLib.IterableIterator[AssetSource] with stdLib.IterableIterator[AssetSource]] = js.native
         val label: java.lang.String = js.native
         val title: java.lang.String = js.native
         def add(name: java.lang.String, config: js.Any): AssetSource = js.native
@@ -153,7 +153,7 @@ object fractalNs extends js.Object {
         def components(): js.Array[Component] = js.native
         def find(): js.Any = js.native
         def findFile(filePath: java.lang.String): js.UndefOr[atFrctlFractalLib.fractalMod.fractalNs.apiNs.filesNs.File] = js.native
-        def getReferencesOf(target: atFrctlFractalLib.Anon_Alias): js.Array[_] = js.native
+        def getReferencesOf(target: atFrctlFractalLib.Anon_Id): js.Array[_] = js.native
         def render(entity: atFrctlFractalLib.fractalMod.fractalNs.coreNs.entitiesNs.Entity, context: js.Any): js.Promise[java.lang.String] = js.native
         def render(
           entity: atFrctlFractalLib.fractalMod.fractalNs.coreNs.entitiesNs.Entity,
@@ -192,9 +192,11 @@ object fractalNs extends js.Object {
           files: atFrctlFractalLib.fractalMod.fractalNs.apiNs.filesNs.FileCollection,
           resources: atFrctlFractalLib.fractalMod.fractalNs.apiNs.assetsNs.AssetCollection,
           parent: atFrctlFractalLib.fractalMod.fractalNs.coreNs.entitiesNs.Entity
-        ): nodeLib.IterableIterator[
+        ): (nodeLib.IterableIterator[
                 js.Object | atFrctlFractalLib.fractalMod.fractalNs.apiNs.variantsNs.VariantCollection | atFrctlFractalLib.fractalMod.fractalNs.apiNs.componentsNs.Component
-              ] = js.native
+              ]) with (stdLib.IterableIterator[
+                js.Object | atFrctlFractalLib.fractalMod.fractalNs.apiNs.variantsNs.VariantCollection | atFrctlFractalLib.fractalMod.fractalNs.apiNs.componentsNs.Component
+              ]) = js.native
       }
       
       type Collator = js.Function2[
@@ -506,8 +508,8 @@ object fractalNs extends js.Object {
       def debug(text: java.lang.String, data: js.Any): this.type = js.native
       def debugMode(status: scala.Boolean): scala.Unit = js.native
       def dump(data: js.Any): scala.Unit = js.native
-      def error(err: java.lang.String, data: nodeLib.Error): this.type = js.native
-      def error(err: nodeLib.Error): this.type = js.native
+      def error(err: nodeLib.Error with stdLib.Error): this.type = js.native
+      def error(err: java.lang.String, data: nodeLib.Error with stdLib.Error): this.type = js.native
       def isSlogging(): scala.Boolean = js.native
       def log(text: java.lang.String): this.type = js.native
       def persist(): this.type = js.native
@@ -523,7 +525,7 @@ object fractalNs extends js.Object {
     
     @js.native
     class Notifier () extends js.Object {
-      def updateAvailable(details: atFrctlFractalLib.Anon_Latest): scala.Unit = js.native
+      def updateAvailable(details: atFrctlFractalLib.Anon_Current): scala.Unit = js.native
       def versionMismatch(details: atFrctlFractalLib.Anon_Cli): scala.Unit = js.native
     }
     
@@ -591,7 +593,7 @@ object fractalNs extends js.Object {
         val isVariant: js.UndefOr[scala.Nothing] = js.native
         val items: js.Array[T] = js.native
         @JSName(org.scalablytyped.runtime.Symbol.iterator)
-        var iterator: js.Function0[nodeLib.IterableIterator[T]] = js.native
+        var iterator: js.Function0[nodeLib.IterableIterator[T] with stdLib.IterableIterator[T]] = js.native
         val size: scala.Double = js.native
         def collections(): this.type = js.native
         def each(fn: js.Function1[/* item */ T, scala.Unit]): this.type = js.native
@@ -645,8 +647,8 @@ object fractalNs extends js.Object {
       /**
         * Combined EventEmitter and Configurable mixins
         */
-      /* RemoveMultipleInheritance: Dropped parents List(atFrctlFractalLib.fractalMod.fractalNs.coreNs.mixinsNs.Configurable because Inheritance from two classes)*/
-      @js.native
+      /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+      - atFrctlFractalLib.fractalMod.fractalNs.coreNs.mixinsNs.Configurable because Inheritance from two classes */ @js.native
       abstract class ConfigurableEmitter[T] ()
         extends nodeLib.eventsMod.EventEmitter
       
@@ -710,9 +712,9 @@ object fractalNs extends js.Object {
       extends nodeLib.eventsMod.EventEmitter {
       val isSynced: scala.Boolean = js.native
       val port: js.UndefOr[scala.Double] = js.native
-      val ports: atFrctlFractalLib.Anon_SyncServer = js.native
+      val ports: atFrctlFractalLib.Anon_Sync = js.native
       val url: js.UndefOr[java.lang.String] = js.native
-      val urls: atFrctlFractalLib.Anon_Sync = js.native
+      val urls: atFrctlFractalLib.Anon_SyncServer = js.native
       def start(): js.Promise[nodeLib.httpMod.Server] = js.native
       def start(sync: scala.Boolean): js.Promise[nodeLib.httpMod.Server] = js.native
       def stop(): scala.Unit = js.native

@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 trait Anon_OS extends js.Object {
   var OS: reactDashSketchappLib.reactDashSketchappLibStrings.sketch
   var Version: reactDashSketchappLib.reactDashSketchappLibNumbers.`1`
-  var select: js.Function1[/* obj */ js.Any, _]
+  def select(obj: js.Any): js.Any
 }
 

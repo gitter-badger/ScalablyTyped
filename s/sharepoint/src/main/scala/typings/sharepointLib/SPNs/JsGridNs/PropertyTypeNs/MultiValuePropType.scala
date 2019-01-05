@@ -23,11 +23,11 @@ class MultiValuePropType ()
     fieldKey: java.lang.String,
     newValue: js.Any,
     bIsLocalized: scala.Boolean,
-    fnCallback: js.Function1[/* args */ sharepointLib.Anon_DataValue, scala.Unit],
+    fnCallback: js.Function1[/* args */ sharepointLib.Anon_IsValid, scala.Unit],
     fnError: js.Any
   ): scala.Unit = js.native
   /* CompleteClass */
-  override def GetSerializableMultiValuePropType(): sharepointLib.Anon_BDelayInit = js.native
+  override def GetSerializableMultiValuePropType(): sharepointLib.Anon_SingleValuePropTypeID = js.native
   /* CompleteClass */
   override def InitSingleValuePropType(): scala.Unit = js.native
   /* CompleteClass */

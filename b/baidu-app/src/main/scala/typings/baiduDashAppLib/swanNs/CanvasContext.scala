@@ -224,7 +224,7 @@ trait CanvasContext extends js.Object {
   		 * 测量文本尺寸信息，目前仅返回文本宽度。同步接口。
   		 * @param text 要测量的文本
   		 */
-  def measureText(text: java.lang.String): baiduDashAppLib.Anon_Width = js.native
+  def measureText(text: java.lang.String): baiduDashAppLib.Anon_WidthString = js.native
   /**
   		 * 把路径移动到画布中的指定点，但不创建线条。
   		 *

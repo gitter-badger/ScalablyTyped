@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait IResizeGroupProps
   extends reactLib.reactMod.ReactNs.HTMLAttributes[
-      officeDashUiDashFabricDashReactLib.libComponentsResizeGroupResizeGroupDotBaseMod.ResizeGroupBase | reactLib.HTMLElement
+      officeDashUiDashFabricDashReactLib.libComponentsResizeGroupResizeGroupDotBaseMod.ResizeGroupBase | (reactLib.HTMLElement with stdLib.HTMLElement)
     ] {
   /**
     * Optional callback to access the IResizeGroup interface. Use this instead of ref for accessing

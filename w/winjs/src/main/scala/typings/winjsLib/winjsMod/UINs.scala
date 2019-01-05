@@ -962,7 +962,7 @@ object UINs extends js.Object {
       currentPreferredAnimation: java.lang.String,
       nextPreferredAnimation: java.lang.String,
       movingBackwards: scala.Boolean
-    ): winjsLib.Anon_EntranceExit = js.native
+    ): winjsLib.Anon_Exit = js.native
     /**
       * Creates an object that performs a peek animation.
       * @param element Element or elements involved in the peek.
@@ -1260,11 +1260,11 @@ object UINs extends js.Object {
     /**
       * Display options for the AppBar when closed.
       **/
-    var ClosedDisplayMode: winjsLib.Anon_NoneMinimal = js.native
+    var ClosedDisplayMode: winjsLib.Anon_None = js.native
     /**
       * Display options for AppBar placement in relation to the main view.
       */
-    var Placement: winjsLib.Anon_BottomTop = js.native
+    var Placement: winjsLib.Anon_Top = js.native
     /**
       * Indicates that the object is compatibile with declarative processing.
       **/
@@ -1547,7 +1547,7 @@ object UINs extends js.Object {
     /**
       * Specifies the result of dismissing the ContentDialog.
       **/
-    var DismissalResult: winjsLib.Anon_None = js.native
+    var DismissalResult: winjsLib.Anon_NonePrimary = js.native
     /**
       * Indicates that the object is compatibile with declarative processing.
       **/
@@ -2136,7 +2136,7 @@ object UINs extends js.Object {
     /**
       * Placement options for a SplitView's pane.
       **/
-    var PanePlacement: winjsLib.Anon_Bottom = js.native
+    var PanePlacement: winjsLib.Anon_Left = js.native
     /**
       * Indicates that the object is compatibile with declarative processing.
       **/
@@ -2328,7 +2328,7 @@ object UINs extends js.Object {
     trait XYFocusEvent
       extends stdLib.CustomEvent[js.Any] {
       @JSName("detail")
-      var detail_XYFocusEvent: winjsLib.Anon_PreviousFocusElement = js.native
+      var detail_XYFocusEvent: winjsLib.Anon_NextFocusElement = js.native
     }
     
     trait XYFocusOptions extends js.Object {
@@ -2351,7 +2351,7 @@ object UINs extends js.Object {
     }
     
     var focusRoot: stdLib.HTMLElement = js.native
-    var keyCodeMap: winjsLib.Anon_Down = js.native
+    var keyCodeMap: winjsLib.Anon_Accept = js.native
     def addEventListener(`type`: java.lang.String, handler: stdLib.EventListener): scala.Unit = js.native
     def dispatchEvent(`type`: java.lang.String, eventProperties: js.Any): scala.Boolean = js.native
     def findNextFocusElement(direction: java.lang.String): stdLib.HTMLElement = js.native

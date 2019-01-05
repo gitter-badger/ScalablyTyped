@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object authenticationDashJwtModMembers extends js.Object {
   val ExtractJWT: atFeathersjsAuthenticationDashJwtLib.Anon_FromHeader = js.native
-  val defaults: atFeathersjsAuthenticationDashJwtLib.Anon_BodyKey = js.native
+  val defaults: atFeathersjsAuthenticationDashJwtLib.Anon_Name = js.native
   def default(): js.Function0[scala.Unit] = js.native
   def default(options: stdLib.Partial[FeathersAuthenticationJWTOptions]): js.Function0[scala.Unit] = js.native
 }

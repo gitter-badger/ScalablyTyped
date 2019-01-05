@@ -44,7 +44,7 @@ trait Step extends OverridableProps {
   /**
     * The target for the step. It can be a CSS selector or an HtmlElement directly (but using refs created in the same render would required an additional render afterwards).
     */
-  var target: reactLib.HTMLElement | java.lang.String
+  var target: (reactLib.HTMLElement with stdLib.HTMLElement) | java.lang.String
   /**
     * The tooltip's title.
     */

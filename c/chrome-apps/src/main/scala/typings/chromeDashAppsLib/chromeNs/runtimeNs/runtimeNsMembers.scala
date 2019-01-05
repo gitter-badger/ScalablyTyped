@@ -8,12 +8,12 @@ import scala.scalajs.js.annotation._
 @JSGlobal("chrome.runtime")
 @js.native
 object runtimeNsMembers extends js.Object {
-  val OnInstalledReason: chromeDashAppsLib.Anon_CHROMEUPDATE = js.native
+  val OnInstalledReason: chromeDashAppsLib.Anon_INSTALL = js.native
   val OnRestartRequiredReason: chromeDashAppsLib.Anon_APPUPDATE = js.native
-  val PlatformArch: chromeDashAppsLib.Anon_MIPS = js.native
-  val PlatformNaclArch: chromeDashAppsLib.Anon_MIPS = js.native
-  val PlatformOs: chromeDashAppsLib.Anon_MAC = js.native
-  val RequestUpdateCheckStatus: chromeDashAppsLib.Anon_NOUPDATE = js.native
+  val PlatformArch: chromeDashAppsLib.Anon_ARM = js.native
+  val PlatformNaclArch: chromeDashAppsLib.Anon_ARM = js.native
+  val PlatformOs: chromeDashAppsLib.Anon_ANDROID = js.native
+  val RequestUpdateCheckStatus: chromeDashAppsLib.Anon_THROTTLED = js.native
   /** The ID of the app. */
   val id: java.lang.String = js.native
   /** This will be defined during an API method callback if there was an error */
@@ -155,11 +155,11 @@ object runtimeNsMembers extends js.Object {
   def requestUpdateCheck(
     callback: js.Function2[
       /* status */ chromeDashAppsLib.chromeNs.ToStringLiteral[
-        chromeDashAppsLib.Anon_NOUPDATE, 
+        chromeDashAppsLib.Anon_THROTTLED, 
         java.lang.String, 
         stdLib.Exclude[
           java.lang.String, 
-          /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_NOUPDATE[keyof chrome-apps.Anon_NOUPDATE] */ js.Any
+          /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_THROTTLED[keyof chrome-apps.Anon_THROTTLED] */ js.Any
         ]
       ], 
       /* details */ js.UndefOr[UpdateCheckDetails], 

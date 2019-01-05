@@ -78,7 +78,7 @@ trait ISuggestionsProps[T]
   var onSuggestionRemove: js.UndefOr[
     js.Function3[
       /* ev */ js.UndefOr[
-        reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent]
+        reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement with stdLib.HTMLElement, reactLib.NativeMouseEvent]
       ], 
       /* item */ js.UndefOr[
         officeDashUiDashFabricDashReactLib.libComponentsPersonaPersonaDotTypesMod.IPersonaProps
@@ -168,13 +168,15 @@ trait ISuggestionsProps[T]
     * What should occur when a suggestion is clicked
     */
   def onSuggestionClick(): scala.Unit = js.native
-  def onSuggestionClick(ev: reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent]): scala.Unit = js.native
   def onSuggestionClick(
-    ev: reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent],
+    ev: reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement with stdLib.HTMLElement, reactLib.NativeMouseEvent]
+  ): scala.Unit = js.native
+  def onSuggestionClick(
+    ev: reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement with stdLib.HTMLElement, reactLib.NativeMouseEvent],
     item: js.Any
   ): scala.Unit = js.native
   def onSuggestionClick(
-    ev: reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent],
+    ev: reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement with stdLib.HTMLElement, reactLib.NativeMouseEvent],
     item: js.Any,
     index: scala.Double
   ): scala.Unit = js.native

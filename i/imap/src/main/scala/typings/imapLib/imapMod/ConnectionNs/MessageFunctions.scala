@@ -7,26 +7,42 @@ import scala.scalajs.js.annotation._
 
 trait MessageFunctions extends js.Object {
   /** Adds flag(s) to message(s). */
-  def addFlags(source: js.Any, flags: js.Any, callback: js.Function1[/* error */ nodeLib.Error, scala.Unit]): scala.Unit
+  def addFlags(
+    source: js.Any,
+    flags: js.Any,
+    callback: js.Function1[/* error */ nodeLib.Error with stdLib.Error, scala.Unit]
+  ): scala.Unit
   /** Adds keyword(s) to message(s). keywords is either a single keyword or an array of keywords. */
-  def addKeywords(source: js.Any, keywords: js.Any, callback: js.Function1[/* error */ nodeLib.Error, scala.Unit]): scala.Unit
+  def addKeywords(
+    source: js.Any,
+    keywords: js.Any,
+    callback: js.Function1[/* error */ nodeLib.Error with stdLib.Error, scala.Unit]
+  ): scala.Unit
   /** Copies message(s) in the currently open mailbox to another mailbox. */
   def copy(
     source: js.Any,
     mailboxName: java.lang.String,
-    callback: js.Function1[/* error */ nodeLib.Error, scala.Unit]
+    callback: js.Function1[/* error */ nodeLib.Error with stdLib.Error, scala.Unit]
   ): scala.Unit
   /** Removes flag(s) from message(s). */
-  def delFlags(source: js.Any, flags: js.Any, callback: js.Function1[/* error */ nodeLib.Error, scala.Unit]): scala.Unit
+  def delFlags(
+    source: js.Any,
+    flags: js.Any,
+    callback: js.Function1[/* error */ nodeLib.Error with stdLib.Error, scala.Unit]
+  ): scala.Unit
   /** Removes keyword(s) from message(s). keywords is either a single keyword or an array of keywords. */
-  def delKeywords(source: js.Any, keywords: js.Any, callback: js.Function1[/* error */ nodeLib.Error, scala.Unit]): scala.Unit
+  def delKeywords(
+    source: js.Any,
+    keywords: js.Any,
+    callback: js.Function1[/* error */ nodeLib.Error with stdLib.Error, scala.Unit]
+  ): scala.Unit
   /** Fetches message(s) in the currently open mailbox; source can be a single message identifier, a message identifier range (e.g. '2504:2507' or '*' or '2504:*'), an array of message identifiers, or an array of message identifier ranges. */
   def fetch(source: js.Any, options: FetchOptions): ImapFetch
   /** Moves message(s) in the currently open mailbox to another mailbox. Note: The message(s) in the destination mailbox will have a new message UID. */
   def move(
     source: js.Any,
     mailboxName: java.lang.String,
-    callback: js.Function1[/* error */ nodeLib.Error, scala.Unit]
+    callback: js.Function1[/* error */ nodeLib.Error with stdLib.Error, scala.Unit]
   ): scala.Unit
   /** Searches the currently open mailbox for messages using given criteria. criteria is a list describing what you want to find. For criteria types that require arguments, use an array instead of just the string criteria type name (e.g. ['FROM', 'foo@bar.com']). Prefix criteria types with an "!" to negate.
     The following message flags are valid types that do not have arguments:
@@ -69,13 +85,25 @@ trait MessageFunctions extends js.Object {
     */
   def search(
     criteria: js.Array[_],
-    callback: js.Function2[/* error */ nodeLib.Error, /* uids */ js.Array[scala.Double], scala.Unit]
+    callback: js.Function2[
+      /* error */ nodeLib.Error with stdLib.Error, 
+      /* uids */ js.Array[scala.Double], 
+      scala.Unit
+    ]
   ): scala.Unit
   /** Checks if the server supports the specified capability. */
   def serverSupports(capability: java.lang.String): scala.Boolean
   /** Sets the flag(s) for message(s). */
-  def setFlags(source: js.Any, flags: js.Any, callback: js.Function1[/* error */ nodeLib.Error, scala.Unit]): scala.Unit
+  def setFlags(
+    source: js.Any,
+    flags: js.Any,
+    callback: js.Function1[/* error */ nodeLib.Error with stdLib.Error, scala.Unit]
+  ): scala.Unit
   /** Sets keyword(s) for message(s). keywords is either a single keyword or an array of keywords. */
-  def setKeywords(source: js.Any, keywords: js.Any, callback: js.Function1[/* error */ nodeLib.Error, scala.Unit]): scala.Unit
+  def setKeywords(
+    source: js.Any,
+    keywords: js.Any,
+    callback: js.Function1[/* error */ nodeLib.Error with stdLib.Error, scala.Unit]
+  ): scala.Unit
 }
 

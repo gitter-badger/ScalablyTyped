@@ -9,7 +9,7 @@ trait Anon_TotalText extends js.Object {
   /**
   		 * The default list of page change buttons.
   		 */
-  var pageList: reactLib.HTMLUListElement
+  var pageList: reactLib.HTMLUListElement with stdLib.HTMLUListElement
   /**
   		 * Default sizePerPageDropdown component.
   		 */

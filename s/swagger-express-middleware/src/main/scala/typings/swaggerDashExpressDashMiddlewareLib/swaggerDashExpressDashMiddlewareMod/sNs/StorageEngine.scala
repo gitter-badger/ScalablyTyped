@@ -14,7 +14,7 @@ trait StorageEngine extends js.Object {
   def _removeFile(
     req: expressLib.expressMod.eNs.Request,
     file: File,
-    callback: js.Function1[/* error */ nodeLib.Error, scala.Unit]
+    callback: js.Function1[/* error */ nodeLib.Error with stdLib.Error, scala.Unit]
   ): scala.Unit
 }
 

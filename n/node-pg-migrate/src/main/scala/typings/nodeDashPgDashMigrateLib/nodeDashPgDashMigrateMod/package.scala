@@ -13,7 +13,7 @@ package object nodeDashPgDashMigrateMod {
   type DropIndexOptions = DropIndexOptionsEn with DropOptions
   type DropOptions = IfExistsOption with CascadeOption
   type FunctionParam = java.lang.String | FunctionParamType
-  type Name = java.lang.String | nodeDashPgDashMigrateLib.Anon_Name
+  type Name = java.lang.String | nodeDashPgDashMigrateLib.Anon_Schema
   type SequenceOptionsAlter = SequenceOptionsAlterEn with SequenceOptions
   type SequenceOptionsCreate = SequenceOptionsCreateEn with SequenceOptions
   type TriggerOptions = TriggerOptionsEn with FunctionOptions

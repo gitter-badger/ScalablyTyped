@@ -7,6 +7,8 @@ import scala.scalajs.js.annotation._
 
 trait AdditionalCellProps
   extends /* name */ org.scalablytyped.runtime.StringDictionary[js.Any] {
-  var onClick: js.UndefOr[reactLib.reactMod.ReactNs.MouseEventHandler[reactLib.HTMLElement]] = js.undefined
+  var onClick: js.UndefOr[
+    reactLib.reactMod.ReactNs.MouseEventHandler[reactLib.HTMLElement with stdLib.HTMLElement]
+  ] = js.undefined
 }
 

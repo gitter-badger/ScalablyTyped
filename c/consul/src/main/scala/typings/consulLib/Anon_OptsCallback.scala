@@ -7,11 +7,9 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Anon_OptsCallback extends js.Object {
-  def apply[TData](): consulLib.consulMod.ConsulNs.Thenable[TData] = js.native
-  def apply[TData](callback: consulLib.consulMod.ConsulNs.Callback[TData]): scala.Unit = js.native
-  def apply[TData](opts: consulLib.consulMod.ConsulNs.SessionNs.ListOptions): consulLib.consulMod.ConsulNs.Thenable[TData] = js.native
+  def apply[TData](opts: consulLib.consulMod.ConsulNs.AclNs.UpdateOptions): consulLib.consulMod.ConsulNs.Thenable[TData] = js.native
   def apply[TData](
-    opts: consulLib.consulMod.ConsulNs.SessionNs.ListOptions,
+    opts: consulLib.consulMod.ConsulNs.AclNs.UpdateOptions,
     callback: consulLib.consulMod.ConsulNs.Callback[TData]
   ): scala.Unit = js.native
 }

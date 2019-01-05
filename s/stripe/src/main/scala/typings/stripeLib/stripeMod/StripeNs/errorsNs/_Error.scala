@@ -6,7 +6,5 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait _Error
-  extends nodeLib.Error {
-  val message: java.lang.String
-}
+  extends stdLib.Error
 

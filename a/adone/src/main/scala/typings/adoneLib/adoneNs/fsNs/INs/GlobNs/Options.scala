@@ -13,7 +13,9 @@ trait Options extends js.Object {
   /**
     * Pass in a previously generated cache object to save some fs calls
     */
-  var cache: js.UndefOr[lodashLib.lodashMod.Global.Map[java.lang.String, java.lang.String]] = js.undefined
+  var cache: js.UndefOr[
+    (lodashLib.lodashMod.Global.Map[java.lang.String, java.lang.String]) with (stdLib.Map[java.lang.String, java.lang.String])
+  ] = js.undefined
   /**
     * The current working directory in which to search. Defaults to process.cwd()
     */
@@ -88,7 +90,9 @@ trait Options extends js.Object {
   /**
     * A cache of results of filesystem information, to prevent unnecessary realpath calls
     */
-  var realpathCache: js.UndefOr[lodashLib.lodashMod.Global.Map[java.lang.String, java.lang.String]] = js.undefined
+  var realpathCache: js.UndefOr[
+    (lodashLib.lodashMod.Global.Map[java.lang.String, java.lang.String]) with (stdLib.Map[java.lang.String, java.lang.String])
+  ] = js.undefined
   /**
     * The place where patterns starting with / will be mounted onto
     */
@@ -106,7 +110,7 @@ trait Options extends js.Object {
     * A cache of results of filesystem information, to prevent unnecessary stat calls
     */
   var statCache: js.UndefOr[
-    lodashLib.lodashMod.Global.Map[java.lang.String, adoneLib.adoneNs.fsNs.INs.Stats]
+    (lodashLib.lodashMod.Global.Map[java.lang.String, adoneLib.adoneNs.fsNs.INs.Stats]) with (stdLib.Map[java.lang.String, adoneLib.adoneNs.fsNs.INs.Stats])
   ] = js.undefined
   /**
     * When an unusual error is encountered when attempting to read a directory,

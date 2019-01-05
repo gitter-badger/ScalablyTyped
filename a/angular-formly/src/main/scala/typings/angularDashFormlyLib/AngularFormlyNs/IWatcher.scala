@@ -23,7 +23,7 @@ trait IWatcher extends js.Object {
     newValue: js.Any,
     oldValue: js.Any,
     scope: ITemplateScope,
-    stopWatching: angularLib.angularMod.Global.Function
+    stopWatching: angularLib.angularMod.Global.Function with js.Function
   ): scala.Unit
 }
 

@@ -8,13 +8,15 @@ import scala.scalajs.js.annotation._
 trait SelectInputProps extends js.Object {
   var IconComponent: js.UndefOr[reactLib.reactMod.ReactNs.ReactType[_]] = js.undefined
   var MenuProps: js.UndefOr[stdLib.Partial[atMaterialDashUiCoreLib.menuMenuMod.MenuProps]] = js.undefined
-  var SelectDisplayProps: js.UndefOr[reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLDivElement]] = js.undefined
+  var SelectDisplayProps: js.UndefOr[
+    reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLDivElement with stdLib.HTMLDivElement]
+  ] = js.undefined
   var autoFocus: js.UndefOr[scala.Boolean] = js.undefined
   var autoWidth: scala.Boolean
   var disabled: js.UndefOr[scala.Boolean] = js.undefined
   var inputRef: js.UndefOr[
     js.Function1[
-      /* ref */ reactLib.HTMLSelectElement | atMaterialDashUiCoreLib.Anon_NodeValue, 
+      /* ref */ (reactLib.HTMLSelectElement with stdLib.HTMLSelectElement) | atMaterialDashUiCoreLib.Anon_NodeValue, 
       scala.Unit
     ]
   ] = js.undefined
@@ -24,7 +26,7 @@ trait SelectInputProps extends js.Object {
   var onBlur: js.UndefOr[reactLib.reactMod.ReactNs.FocusEventHandler[_]] = js.undefined
   var onChange: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.ChangeEvent[reactLib.HTMLSelectElement], 
+      /* event */ reactLib.reactMod.ReactNs.ChangeEvent[reactLib.HTMLSelectElement with stdLib.HTMLSelectElement], 
       /* child */ reactLib.reactMod.ReactNs.ReactNode, 
       scala.Unit
     ]

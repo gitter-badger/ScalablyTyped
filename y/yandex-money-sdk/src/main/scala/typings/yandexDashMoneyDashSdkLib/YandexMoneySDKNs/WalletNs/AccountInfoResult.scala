@@ -11,8 +11,8 @@ trait AccountInfoResult extends js.Object {
   var account_type: java.lang.String
   var avatar: js.UndefOr[yandexDashMoneyDashSdkLib.Anon_Url] = js.undefined
   var balance: scala.Double
-  var balance_details: js.UndefOr[yandexDashMoneyDashSdkLib.Anon_Debt] = js.undefined
-  var cards_linked: js.UndefOr[js.Array[yandexDashMoneyDashSdkLib.Anon_TypePanfragment]] = js.undefined
+  var balance_details: js.UndefOr[yandexDashMoneyDashSdkLib.Anon_Total] = js.undefined
+  var cards_linked: js.UndefOr[js.Array[yandexDashMoneyDashSdkLib.Anon_Panfragment]] = js.undefined
   var currency: java.lang.String
 }
 

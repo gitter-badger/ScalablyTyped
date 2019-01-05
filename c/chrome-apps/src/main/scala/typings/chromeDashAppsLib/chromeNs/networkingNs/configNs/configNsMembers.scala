@@ -15,7 +15,7 @@ object configNsMembers extends js.Object {
     * **'rejected':** - The extension handled this network, tried to authenticate, however was rejected by the server.
     * **'failed':** - The extension handled this network, tried to authenticate, however failed due to an unspecified error.
     */
-  val AuthenticationResult: chromeDashAppsLib.Anon_FAILED = js.native
+  val AuthenticationResult: chromeDashAppsLib.Anon_UNHANDLED = js.native
   /** Indicator for the type of network used */
   val NetworkType: chromeDashAppsLib.Anon_WIFI = js.native
   /**
@@ -41,22 +41,22 @@ object configNsMembers extends js.Object {
   def finishAuthentication(
     GUID: java.lang.String,
     result: chromeDashAppsLib.chromeNs.ToStringLiteral[
-      chromeDashAppsLib.Anon_FAILED, 
+      chromeDashAppsLib.Anon_UNHANDLED, 
       java.lang.String, 
       stdLib.Exclude[
         java.lang.String, 
-        /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_FAILED[keyof chrome-apps.Anon_FAILED] */ js.Any
+        /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_UNHANDLED[keyof chrome-apps.Anon_UNHANDLED] */ js.Any
       ]
     ]
   ): scala.Unit = js.native
   def finishAuthentication(
     GUID: java.lang.String,
     result: chromeDashAppsLib.chromeNs.ToStringLiteral[
-      chromeDashAppsLib.Anon_FAILED, 
+      chromeDashAppsLib.Anon_UNHANDLED, 
       java.lang.String, 
       stdLib.Exclude[
         java.lang.String, 
-        /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_FAILED[keyof chrome-apps.Anon_FAILED] */ js.Any
+        /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_UNHANDLED[keyof chrome-apps.Anon_UNHANDLED] */ js.Any
       ]
     ],
     callback: js.Function0[scala.Unit]

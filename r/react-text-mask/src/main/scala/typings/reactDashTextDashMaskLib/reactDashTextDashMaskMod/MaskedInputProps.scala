@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait MaskedInputProps
-  extends reactLib.reactMod.ReactNs.InputHTMLAttributes[reactLib.HTMLInputElement] {
+  extends reactLib.reactMod.ReactNs.InputHTMLAttributes[reactLib.HTMLInputElement with stdLib.HTMLInputElement] {
   var guide: js.UndefOr[scala.Boolean] = js.undefined
   var keepCharPositions: js.UndefOr[scala.Boolean] = js.undefined
   var mask: js.UndefOr[maskArray | (js.Function1[/* value */ java.lang.String, maskArray])] = js.undefined
@@ -14,13 +14,13 @@ trait MaskedInputProps
     js.Function2[
       /* conformedValue */ java.lang.String, 
       /* config */ js.Any, 
-      reactDashTextDashMaskLib.reactDashTextDashMaskLibNumbers.`false` | java.lang.String | reactDashTextDashMaskLib.Anon_IndexesOfPipedChars
+      reactDashTextDashMaskLib.reactDashTextDashMaskLibNumbers.`false` | java.lang.String | reactDashTextDashMaskLib.Anon_Value
     ]
   ] = js.undefined
   var placeholderChar: js.UndefOr[java.lang.String] = js.undefined
   var render: js.UndefOr[
     js.Function2[
-      /* ref */ js.Function1[/* inputElement */ reactLib.HTMLElement, scala.Unit], 
+      /* ref */ js.Function1[/* inputElement */ reactLib.HTMLElement with stdLib.HTMLElement, scala.Unit], 
       /* props */ js.Any, 
       _
     ]

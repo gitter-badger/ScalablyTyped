@@ -22,20 +22,18 @@ trait DataObject extends js.Object {
   /**
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-lines.data.emphasis
     */
-  var emphasis: js.UndefOr[echartsLib.Anon_LineStyleLabelAnonShadowOffsetXShadowBlur] = js.undefined
+  var emphasis: js.UndefOr[echartsLib.Anon_LineStyleLabel] = js.undefined
   /**
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-lines.data.label
     */
-  var label: js.UndefOr[
-    echartsLib.Anon_ShadowOffsetXBackgroundColorShowAlignTextBorderWidthVerticalAlignShadowBlurHeightBorderWidth
-  ] = js.undefined
+  var label: js.UndefOr[echartsLib.Anon_ShowPositionFormatterColor] = js.undefined
   /**
     * The line style of this data item.
     *
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-lines.data.lineStyle
     */
-  var lineStyle: js.UndefOr[echartsLib.Anon_ShadowOffsetXShadowBlurColorShadowColorOpacityShadowOffsetYType] = js.undefined
+  var lineStyle: js.UndefOr[echartsLib.Anon_ColorWidthTypeShadowBlurShadowColorShadowOffsetXShadowOffsetY] = js.undefined
   /**
     * the name of data.
     *

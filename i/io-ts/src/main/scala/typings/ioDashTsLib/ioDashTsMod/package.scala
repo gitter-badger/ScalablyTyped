@@ -11,7 +11,7 @@ package object ioDashTsMod {
   type Context = js.Array[ContextEntry]
   type Decode[I, A] = js.Function1[/* i */ I, Validation[A]]
   type Encode[A, O] = js.Function1[/* a */ A, O]
-  type Errors = fpDashTsLib.libArrayMod.Global.Array[ValidationError]
+  type Errors = js.Array[ValidationError]
   type Exact[T, X /* <: T */] = T with ioDashTsLib.ioDashTsLibStrings.Exact with js.Any
   type HasProps = HasPropsRefinement | HasPropsReadonly | HasPropsIntersection | (InterfaceType[js.Any, js.Any, js.Any, js.Any]) | (StrictType[js.Any, js.Any, js.Any, js.Any]) | (PartialType[js.Any, js.Any, js.Any, js.Any])
   type InputOf[RT /* <: Any */] = /* import warning: ImportType.apply Failed type conversion: RT['_I'] */ js.Any

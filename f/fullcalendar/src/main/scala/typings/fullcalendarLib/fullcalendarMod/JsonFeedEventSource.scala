@@ -13,7 +13,7 @@ class JsonFeedEventSource ()
 @JSImport("fullcalendar", "JsonFeedEventSource")
 @js.native
 object JsonFeedEventSource extends js.Object {
-  var AJAX_DEFAULTS: fullcalendarLib.Anon_Cache = js.native
+  var AJAX_DEFAULTS: fullcalendarLib.Anon_DataType = js.native
   def parse(rawInput: js.Any, calendar: js.Any): js.Any = js.native
 }
 

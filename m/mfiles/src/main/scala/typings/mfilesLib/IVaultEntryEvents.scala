@@ -10,7 +10,7 @@ trait IVaultEntryEvents extends IEvents {
     js.Function2[
       /* objVer */ IObjVer, 
       /* sourceObjectFile */ ISourceObjectFile, 
-      scala.Null | scala.Boolean | Anon_OnSuccessObjectVersionObjectFile
+      scala.Null | scala.Boolean | Anon_OnSuccess
     ]
   ] = js.undefined
   var OnAddObjectToFavorites: js.UndefOr[
@@ -33,13 +33,15 @@ trait IVaultEntryEvents extends IEvents {
     js.Function2[
       /* objVers */ IObjVers, 
       /* propertyValues */ IPropertyValues, 
-      scala.Null | scala.Boolean | Anon_OnSuccess
+      scala.Null | scala.Boolean | Anon_OnSuccessObjectVersions
     ]
   ] = js.undefined
   var OnCheckOutObject: js.UndefOr[
     js.Function1[/* objID */ IObjID, scala.Null | scala.Boolean | Anon_OnSuccessObjectVersion]
   ] = js.undefined
-  var OnCheckOutObjects: js.UndefOr[js.Function1[/* objIDs */ IObjIDs, scala.Null | scala.Boolean | Anon_OnSuccess]] = js.undefined
+  var OnCheckOutObjects: js.UndefOr[
+    js.Function1[/* objIDs */ IObjIDs, scala.Null | scala.Boolean | Anon_OnSuccessObjectVersions]
+  ] = js.undefined
   var OnCreateObject: js.UndefOr[
     js.Function6[
       /* objectType */ scala.Double, 
@@ -137,7 +139,9 @@ trait IVaultEntryEvents extends IEvents {
   var OnRemoveObjectOfflineAvailability: js.UndefOr[
     js.Function1[/* objID */ IObjID, scala.Null | scala.Boolean | Anon_OnSuccessOnError]
   ] = js.undefined
-  var OnRemoveObjects: js.UndefOr[js.Function1[/* objIDs */ IObjIDs, scala.Null | scala.Boolean | Anon_OnSuccess]] = js.undefined
+  var OnRemoveObjects: js.UndefOr[
+    js.Function1[/* objIDs */ IObjIDs, scala.Null | scala.Boolean | Anon_OnSuccessObjectVersions]
+  ] = js.undefined
   var OnRemoveObjectsFromFavorites: js.UndefOr[
     js.Function1[/* objIDs */ IObjIDs, scala.Null | scala.Boolean | Anon_OnSuccessOnError]
   ] = js.undefined
@@ -147,7 +151,7 @@ trait IVaultEntryEvents extends IEvents {
       /* fileVer */ IFileVer, 
       /* newName */ scala.Null | ITypedValue, 
       /* newExtension */ scala.Null | ITypedValue, 
-      scala.Null | scala.Boolean | Anon_OnSuccessObjectVersionObjectFile
+      scala.Null | scala.Boolean | Anon_OnSuccess
     ]
   ] = js.undefined
   var OnRollBackObjectVersion: js.UndefOr[
@@ -184,7 +188,7 @@ trait IVaultEntryEvents extends IEvents {
       /* setPropertiesParamsOfMultipleObjects */ ISetPropertiesParamsOfMultipleObjects, 
       /* singlePropertyUpdate */ scala.Boolean, 
       /* singlePropertyRemove */ scala.Boolean, 
-      scala.Null | scala.Boolean | Anon_OnSuccess
+      scala.Null | scala.Boolean | Anon_OnSuccessObjectVersions
     ]
   ] = js.undefined
   var OnStarted: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
@@ -196,12 +200,14 @@ trait IVaultEntryEvents extends IEvents {
   var OnUndeleteObject: js.UndefOr[
     js.Function1[/* objID */ IObjID, scala.Null | scala.Boolean | Anon_OnSuccessObjectVersion]
   ] = js.undefined
-  var OnUndeleteObjects: js.UndefOr[js.Function1[/* objIDs */ IObjIDs, scala.Null | scala.Boolean | Anon_OnSuccess]] = js.undefined
+  var OnUndeleteObjects: js.UndefOr[
+    js.Function1[/* objIDs */ IObjIDs, scala.Null | scala.Boolean | Anon_OnSuccessObjectVersions]
+  ] = js.undefined
   var OnUndoObjectCheckout: js.UndefOr[
     js.Function1[/* objVer */ IObjVer, scala.Null | scala.Boolean | Anon_OnSuccessObjectVersion]
   ] = js.undefined
   var OnUndoObjectCheckouts: js.UndefOr[
-    js.Function1[/* objVers */ IObjVers, scala.Null | scala.Boolean | Anon_OnSuccess]
+    js.Function1[/* objVers */ IObjVers, scala.Null | scala.Boolean | Anon_OnSuccessObjectVersions]
   ] = js.undefined
   var OnVaultLanguageChanged: js.UndefOr[js.Function1[/* languageID */ scala.Double, scala.Unit]] = js.undefined
 }

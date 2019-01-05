@@ -59,7 +59,7 @@ trait Utils extends js.Object {
   /**
     * Format the given `err` with the given `options`.
     */
-  def formatException(err: nodeLib.Error, options: ExceptionOptions): nodeLib.Error = js.native
+  def formatException(err: nodeLib.Error with stdLib.Error, options: ExceptionOptions): nodeLib.Error with stdLib.Error = js.native
   /**
     * Attempt to lookup `path` within `paths` from tail to head.
     * Optionally a path to `ignore` may be passed.

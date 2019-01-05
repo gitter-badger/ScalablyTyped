@@ -82,7 +82,7 @@ class Video () extends js.Object {
   /**
     * 取消监听视频错误事件
     */
-  def offError(callback: js.Function1[/* res */ Anon_ErrMsgString, scala.Unit]): scala.Unit = js.native
+  def offError(callback: js.Function1[/* res */ Anon_ErrMsg, scala.Unit]): scala.Unit = js.native
   /**
     * 取消监听视频暂停事件
     */
@@ -110,7 +110,7 @@ class Video () extends js.Object {
     *                            MEDIA_ERR_DECODE  - 当解码时发生错误
     *                            MEDIA_ERR_SRC_NOT_SUPPORTED - video 的 src 属性是不支持的资源类型
     */
-  def onError(callback: js.Function1[/* res */ Anon_ErrMsgString, scala.Unit]): scala.Unit = js.native
+  def onError(callback: js.Function1[/* res */ Anon_ErrMsg, scala.Unit]): scala.Unit = js.native
   /**
     * 监听视频暂停事件
     */

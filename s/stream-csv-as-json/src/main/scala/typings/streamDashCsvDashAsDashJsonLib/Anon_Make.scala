@@ -7,9 +7,13 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Anon_Make extends js.Object {
-  def make(): streamDashCsvDashAsDashJsonLib.stringerMod.Stringer = js.native
-  def make(options: streamDashCsvDashAsDashJsonLib.stringerMod.StringerNs.StringerOptions): streamDashCsvDashAsDashJsonLib.stringerMod.Stringer = js.native
-  def stringer(): streamDashCsvDashAsDashJsonLib.stringerMod.Stringer = js.native
-  def stringer(options: streamDashCsvDashAsDashJsonLib.stringerMod.StringerNs.StringerOptions): streamDashCsvDashAsDashJsonLib.stringerMod.Stringer = js.native
+  val asObjectsNs: Anon_Constructor = js.native
+  val makeNs: Anon_Constructor = js.native
+  def asObjects(): streamDashCsvDashAsDashJsonLib.asobjectsMod.AsObjects = js.native
+  def asObjects(options: streamDashCsvDashAsDashJsonLib.asobjectsMod.AsObjectsNs.AsObjectOptions): streamDashCsvDashAsDashJsonLib.asobjectsMod.AsObjects = js.native
+  def make(): streamDashCsvDashAsDashJsonLib.asobjectsMod.AsObjects = js.native
+  def make(options: streamDashCsvDashAsDashJsonLib.asobjectsMod.AsObjectsNs.AsObjectOptions): streamDashCsvDashAsDashJsonLib.asobjectsMod.AsObjects = js.native
+  def withParser(): streamDashChainLib.streamDashChainMod.namespaced = js.native
+  def withParser(options: streamDashCsvDashAsDashJsonLib.asobjectsMod.AsObjectsNs.AsObjectOptions): streamDashChainLib.streamDashChainMod.namespaced = js.native
 }
 

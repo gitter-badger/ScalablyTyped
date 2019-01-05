@@ -43,7 +43,7 @@ trait NavigationScreenProp[S, P] extends js.Object {
   def goBack(): scala.Boolean = js.native
   def goBack(routeKey: java.lang.String): scala.Boolean = js.native
   def isFocused(): scala.Boolean = js.native
-  def navigate(options: reactDashNavigationLib.Anon_ActionKey): scala.Boolean = js.native
+  def navigate(options: reactDashNavigationLib.Anon_RouteNameParams): scala.Boolean = js.native
   def navigate(routeNameOrOptions: java.lang.String): scala.Boolean = js.native
   def navigate(routeNameOrOptions: java.lang.String, params: NavigationParams): scala.Boolean = js.native
   def navigate(routeNameOrOptions: java.lang.String, params: NavigationParams, action: NavigationAction): scala.Boolean = js.native

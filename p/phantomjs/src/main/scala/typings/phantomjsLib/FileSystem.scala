@@ -31,7 +31,7 @@ trait FileSystem extends js.Object {
   def move(source: java.lang.String, destination: java.lang.String): scala.Unit = js.native
   // File Functions
   def open(path: java.lang.String, mode: java.lang.String): Stream = js.native
-  def open(path: java.lang.String, options: Anon_Charset): Stream = js.native
+  def open(path: java.lang.String, options: Anon_Mode): Stream = js.native
   def read(path: java.lang.String): java.lang.String = js.native
   def readLink(path: java.lang.String): java.lang.String = js.native
   def remove(path: java.lang.String): scala.Unit = js.native

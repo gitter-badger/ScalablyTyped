@@ -11,11 +11,11 @@ class Chart protected ()
   extends ejDotWebDotAllLib.ejNs.Widget {
   def this(element: ejDotWebDotAllLib.JQuery) = this()
   def this(element: stdLib.Element) = this()
-  def this(element: ejDotWebDotAllLib.JQuery, options: ejDotWebDotAllLib.ejNs.Model) = this()
-  def this(element: stdLib.Element, options: ejDotWebDotAllLib.ejNs.Model) = this()
-  var defaults: ejDotWebDotAllLib.ejNs.Model = js.native
+  def this(element: ejDotWebDotAllLib.JQuery, options: ejDotWebDotAllLib.ejNs.Model with ejDotWebDotAllLib.ejNs.datavisualizationNs.ChartNs.Model) = this()
+  def this(element: stdLib.Element, options: ejDotWebDotAllLib.ejNs.Model with ejDotWebDotAllLib.ejNs.datavisualizationNs.ChartNs.Model) = this()
+  var defaults: ejDotWebDotAllLib.ejNs.Model with ejDotWebDotAllLib.ejNs.datavisualizationNs.ChartNs.Model = js.native
   @JSName("model")
-  var model_Chart: ejDotWebDotAllLib.ejNs.Model = js.native
+  var model_Chart: ejDotWebDotAllLib.ejNs.Model with ejDotWebDotAllLib.ejNs.datavisualizationNs.ChartNs.Model = js.native
   /** Animates the series and/or indicators in Chart. When parameter is not passed to this method, then all the series and indicators present in Chart are animated.
     * @param {any} If an array collection is passed as parameter, series and indicator objects passed in array collection are animated.ExampleIf a series or indicator object is passed
     * to this method, then the specific series or indicator is animated.Example,

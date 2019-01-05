@@ -12,13 +12,15 @@ trait TabsProps extends js.Object {
   var defaultFocus: js.UndefOr[scala.Boolean] = js.undefined
   var defaultIndex: js.UndefOr[scala.Double] = js.undefined
   var disabledTabClassName: js.UndefOr[java.lang.String] = js.undefined
-  var domRef: js.UndefOr[js.Function1[/* node */ js.UndefOr[reactLib.HTMLElement], scala.Unit]] = js.undefined
+  var domRef: js.UndefOr[
+    js.Function1[/* node */ js.UndefOr[reactLib.HTMLElement with stdLib.HTMLElement], scala.Unit]
+  ] = js.undefined
   var forceRenderTabPanel: js.UndefOr[scala.Boolean] = js.undefined
   var onSelect: js.UndefOr[
     js.Function3[
       /* index */ scala.Double, 
       /* last */ scala.Double, 
-      /* event */ reactLib.Event, 
+      /* event */ reactLib.Event with stdLib.Event, 
       scala.Boolean | scala.Unit
     ]
   ] = js.undefined

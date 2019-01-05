@@ -16,13 +16,13 @@ class Suggestions[T] protected ()
   var SuggestionsItemOfProperType: js.Any = js.native
   var _forceResolve: js.Any = js.native
   @JSName("_forceResolveButton")
-  var _forceResolveButton_Original: officeDashUiDashFabricDashReactLib.Anon_ComponentValueCurrentIButton = js.native
+  var _forceResolveButton_Original: officeDashUiDashFabricDashReactLib.Anon_ComponentCurrentValueIButton = js.native
   var _getMoreResults: js.Any = js.native
   var _onClickTypedSuggestionsItem: js.Any = js.native
   var _onRemoveTypedSuggestionsItem: js.Any = js.native
   var _refocusOnSuggestions: js.Any = js.native
   @JSName("_searchForMoreButton")
-  var _searchForMoreButton_Original: officeDashUiDashFabricDashReactLib.Anon_ComponentValueCurrentIButton = js.native
+  var _searchForMoreButton_Original: officeDashUiDashFabricDashReactLib.Anon_ComponentCurrentValueIButton = js.native
   @JSName("_selectedElement")
   var _selectedElement_Original: officeDashUiDashFabricDashReactLib.Anon_Component = js.native
   var _shouldShowForceResolve: js.Any = js.native
@@ -33,7 +33,7 @@ class Suggestions[T] protected ()
   /* protected */ def _searchForMoreButton(): scala.Unit = js.native
   /* protected */ def _searchForMoreButton(component: officeDashUiDashFabricDashReactLib.libComponentsButtonButtonDotTypesMod.IButton): scala.Unit = js.native
   /* protected */ def _selectedElement(): scala.Unit = js.native
-  /* protected */ def _selectedElement(component: reactLib.HTMLDivElement): scala.Unit = js.native
+  /* protected */ def _selectedElement(component: reactLib.HTMLDivElement with stdLib.HTMLDivElement): scala.Unit = js.native
   @JSName("componentDidMount")
   def componentDidMount_MSuggestions(): scala.Unit = js.native
   @JSName("componentDidUpdate")

@@ -5,8 +5,15 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Anon_ClearTimeout extends js.Object {
-  var clearTimeout: Anon_Handle
-  var setTimeout: Anon_Handler
+  @JSName("clearTimeout")
+  var clearTimeout_Original: Anon_Handle = js.native
+  @JSName("setTimeout")
+  var setTimeout_Original: Anon_Handler = js.native
+  def clearTimeout(): scala.Unit = js.native
+  def clearTimeout(handle: scala.Double): scala.Unit = js.native
+  def setTimeout(handler: stdLib.TimerHandler): scala.Double = js.native
+  def setTimeout(handler: stdLib.TimerHandler, timeout: scala.Double, arguments: js.Any*): scala.Double = js.native
 }
 

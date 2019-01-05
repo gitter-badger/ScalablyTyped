@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait CodePipelineCloudWatchPipelineEvent extends js.Object {
   var account: java.lang.String
-  var detail: awsDashLambdaLib.Anon_Executionid
+  var detail: awsDashLambdaLib.Anon_Pipeline
   var `detail-type`: awsDashLambdaLib.awsDashLambdaLibStrings.`CodePipeline Pipeline Execution State Change`
   var id: java.lang.String
   var region: java.lang.String

@@ -9,12 +9,12 @@ import scala.scalajs.js.annotation._
 @js.native
 class GLViewHeadless ()
   extends reactLib.reactMod.Component[GLViewHeadlessProps, js.Object, js.Any] {
-  var canvas: js.UndefOr[reactLib.HTMLCanvasElement] = js.native
-  var gl: js.UndefOr[reactLib.WebGLRenderingContext] = js.native
+  var canvas: js.UndefOr[reactLib.HTMLCanvasElement with stdLib.HTMLCanvasElement] = js.native
+  var gl: js.UndefOr[reactLib.WebGLRenderingContext with stdLib.WebGLRenderingContext] = js.native
   var webglContextAttributes: stdLib.WebGLContextAttributes = js.native
   def captureAsBlob(): js.Promise[stdLib.Blob] = js.native
   def captureAsDataURL(): java.lang.String = js.native
-  def onRef(ref: reactLib.HTMLCanvasElement): scala.Unit = js.native
+  def onRef(ref: reactLib.HTMLCanvasElement with stdLib.HTMLCanvasElement): scala.Unit = js.native
   def simulateContextLost(): scala.Unit = js.native
   def simulateContextRestored(): scala.Unit = js.native
 }

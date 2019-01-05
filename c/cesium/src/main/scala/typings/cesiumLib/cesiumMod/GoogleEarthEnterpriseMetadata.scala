@@ -36,7 +36,7 @@ class GoogleEarthEnterpriseMetadata protected ()
 @JSImport("cesium", "GoogleEarthEnterpriseMetadata")
 @js.native
 object GoogleEarthEnterpriseMetadata extends js.Object {
-  def quadKeyToTileXY(quadkey: java.lang.String): cesiumLib.Anon_Level = js.native
+  def quadKeyToTileXY(quadkey: java.lang.String): cesiumLib.Anon_X = js.native
   def tileXYToQuadKey(x: scala.Double, y: scala.Double, level: scala.Double): java.lang.String = js.native
 }
 

@@ -16,38 +16,53 @@ object runtimeNs extends js.Object {
   val unknownValue: /* 04da6b54-80e4-46f7-96ec-b56ff0331ba9 */ java.lang.String = js.native
   def allConfig(): org.scalablytyped.runtime.StringDictionary[java.lang.String] = js.native
   def computeCodePaths(): js.Promise[
-    lodashLib.lodashMod.Global.Map[
+    (lodashLib.lodashMod.Global.Map[
       java.lang.String, 
       atPulumiPulumiLib.assetMod.Asset | atPulumiPulumiLib.assetMod.Archive
-    ]
+    ]) with (stdLib.Map[
+      java.lang.String, 
+      atPulumiPulumiLib.assetMod.Asset | atPulumiPulumiLib.assetMod.Archive
+    ])
   ] = js.native
   def computeCodePaths(extraIncludePaths: js.Array[java.lang.String]): js.Promise[
-    lodashLib.lodashMod.Global.Map[
+    (lodashLib.lodashMod.Global.Map[
       java.lang.String, 
       atPulumiPulumiLib.assetMod.Asset | atPulumiPulumiLib.assetMod.Archive
-    ]
+    ]) with (stdLib.Map[
+      java.lang.String, 
+      atPulumiPulumiLib.assetMod.Asset | atPulumiPulumiLib.assetMod.Archive
+    ])
   ] = js.native
   def computeCodePaths(extraIncludePaths: js.Array[java.lang.String], extraIncludePackages: js.Array[java.lang.String]): js.Promise[
-    lodashLib.lodashMod.Global.Map[
+    (lodashLib.lodashMod.Global.Map[
       java.lang.String, 
       atPulumiPulumiLib.assetMod.Asset | atPulumiPulumiLib.assetMod.Archive
-    ]
+    ]) with (stdLib.Map[
+      java.lang.String, 
+      atPulumiPulumiLib.assetMod.Asset | atPulumiPulumiLib.assetMod.Archive
+    ])
   ] = js.native
   def computeCodePaths(
     extraIncludePaths: js.Array[java.lang.String],
     extraIncludePackages: js.Array[java.lang.String],
     extraExcludePackages: js.Array[java.lang.String]
   ): js.Promise[
-    lodashLib.lodashMod.Global.Map[
+    (lodashLib.lodashMod.Global.Map[
       java.lang.String, 
       atPulumiPulumiLib.assetMod.Asset | atPulumiPulumiLib.assetMod.Archive
-    ]
+    ]) with (stdLib.Map[
+      java.lang.String, 
+      atPulumiPulumiLib.assetMod.Asset | atPulumiPulumiLib.assetMod.Archive
+    ])
   ] = js.native
   def computeCodePaths(options: atPulumiPulumiLib.runtimeClosureCodePathsMod.CodePathOptions): js.Promise[
-    lodashLib.lodashMod.Global.Map[
+    (lodashLib.lodashMod.Global.Map[
       java.lang.String, 
       atPulumiPulumiLib.assetMod.Asset | atPulumiPulumiLib.assetMod.Archive
-    ]
+    ]) with (stdLib.Map[
+      java.lang.String, 
+      atPulumiPulumiLib.assetMod.Asset | atPulumiPulumiLib.assetMod.Archive
+    ])
   ] = js.native
   def deserializeProperties(outputsStruct: js.Any): js.Any = js.native
   def deserializeProperty(prop: js.Any): js.Any = js.native

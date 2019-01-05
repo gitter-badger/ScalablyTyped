@@ -7,20 +7,12 @@ import scala.scalajs.js.annotation._
 
 trait Anon_ServiceId extends js.Object {
   /**
-  				 * 蓝牙设备特征值的 uuid
+  				 * 该服务是否为主服务
   				 */
-  var characteristicId: java.lang.String
+  var isPrimary: scala.Boolean
   /**
-  				 * 该特征值支持的操作类型
-  				 */
-  var properties: js.Array[Anon_Notify]
-  /**
-  				 * 蓝牙设备特征值对应服务的 uuid
+  				 * 蓝牙设备服务的 uuid
   				 */
   var serviceId: java.lang.String
-  /**
-  				 * 蓝牙设备特征值对应的16进制值
-  				 */
-  var value: stdLib.ArrayBuffer
 }
 

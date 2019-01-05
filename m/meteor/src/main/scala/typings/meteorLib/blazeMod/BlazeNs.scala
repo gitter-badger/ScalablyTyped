@@ -25,8 +25,8 @@ object BlazeNs extends js.Object {
     var viewName: java.lang.String
     def constructView(): View
     def events(eventsMap: EventsMap): scala.Unit
-    def find(selector: java.lang.String): reactLib.HTMLElement
-    def findAll(selector: java.lang.String): js.Array[reactLib.HTMLElement]
+    def find(selector: java.lang.String): reactLib.HTMLElement with stdLib.HTMLElement
+    def findAll(selector: java.lang.String): js.Array[reactLib.HTMLElement with stdLib.HTMLElement]
     def helpers(helpersMap: HelpersMap): scala.Unit
     def onCreated(cb: js.Function): scala.Unit
     def onDestroyed(cb: js.Function): scala.Unit
@@ -41,8 +41,8 @@ object BlazeNs extends js.Object {
     @JSName("$")
     def $(selector: java.lang.String): js.Any
     def autorun(runFunc: js.Function1[/* computation */ meteorLib.TrackerNs.Computation, scala.Unit]): meteorLib.TrackerNs.Computation
-    def find(selector: java.lang.String): reactLib.HTMLElement
-    def findAll(selector: java.lang.String): js.Array[reactLib.HTMLElement]
+    def find(selector: java.lang.String): reactLib.HTMLElement with stdLib.HTMLElement
+    def findAll(selector: java.lang.String): js.Array[reactLib.HTMLElement with stdLib.HTMLElement]
     def subscribe(name: java.lang.String, args: js.Any*): meteorLib.MeteorNs.SubscriptionHandle
     def subscriptionsReady(): scala.Boolean
   }
@@ -99,10 +99,10 @@ object BlazeNs extends js.Object {
   def With(data: js.Function, contentFunc: js.Function): View = js.native
   def With(data: js.Object, contentFunc: js.Function): View = js.native
   def getData(): js.Object = js.native
+  def getData(elementOrView: reactLib.HTMLElement with stdLib.HTMLElement): js.Object = js.native
   def getData(elementOrView: View): js.Object = js.native
-  def getData(elementOrView: reactLib.HTMLElement): js.Object = js.native
   def getView(): View = js.native
-  def getView(element: reactLib.HTMLElement): View = js.native
+  def getView(element: reactLib.HTMLElement with stdLib.HTMLElement): View = js.native
   def isTemplate(value: js.Any): scala.Boolean = js.native
   def remove(renderedView: View): scala.Unit = js.native
   def render(templateOrView: Template, parentNode: stdLib.Node): View = js.native

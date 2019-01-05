@@ -99,7 +99,7 @@ trait DefineOptions[TInstance] extends js.Object {
   /**
     * Throws an error when no records found
     */
-  var rejectOnError: js.UndefOr[scala.Boolean | nodeLib.Error] = js.undefined
+  var rejectOnError: js.UndefOr[scala.Boolean | (nodeLib.Error with stdLib.Error)] = js.undefined
   /**
     * Change the database schema. PG only feature, but also works with other dialects.
     */

@@ -10,7 +10,7 @@ trait Plugin extends js.Object {
   var buildEnd: js.UndefOr[
     js.ThisFunction1[
       /* this */ PluginContext, 
-      /* err */ js.UndefOr[nodeLib.Error], 
+      /* err */ js.UndefOr[nodeLib.Error with stdLib.Error], 
       js.Promise[scala.Unit] | scala.Unit
     ]
   ] = js.undefined
@@ -59,7 +59,7 @@ trait Plugin extends js.Object {
   var renderError: js.UndefOr[
     js.ThisFunction1[
       /* this */ PluginContext, 
-      /* err */ js.UndefOr[nodeLib.Error], 
+      /* err */ js.UndefOr[nodeLib.Error with stdLib.Error], 
       js.Promise[scala.Unit] | scala.Unit
     ]
   ] = js.undefined

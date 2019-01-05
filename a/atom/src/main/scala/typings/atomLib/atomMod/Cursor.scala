@@ -20,10 +20,10 @@ trait Cursor extends js.Object {
   def compare(otherCursor: Cursor): scala.Double = js.native
   /** Retrieves the buffer position of where the current word starts. */
   def getBeginningOfCurrentWordBufferPosition(): Point = js.native
-  def getBeginningOfCurrentWordBufferPosition(options: atomLib.Anon_IncludeNonWordCharacters): Point = js.native
+  def getBeginningOfCurrentWordBufferPosition(options: atomLib.Anon_WordRegex): Point = js.native
   /** Retrieves the buffer position of where the next word starts. */
   def getBeginningOfNextWordBufferPosition(): Point = js.native
-  def getBeginningOfNextWordBufferPosition(options: atomLib.Anon_WordRegex): Point = js.native
+  def getBeginningOfNextWordBufferPosition(options: atomLib.Anon_WordRegexRegExp): Point = js.native
   /** Returns the cursor's current buffer column. */
   def getBufferColumn(): scala.Double = js.native
   /** Returns the current buffer position as an Array. */
@@ -42,12 +42,12 @@ trait Cursor extends js.Object {
   def getCurrentParagraphBufferRange(): Range = js.native
   /** Returns the buffer Range occupied by the word located under the cursor. */
   def getCurrentWordBufferRange(): Range = js.native
-  def getCurrentWordBufferRange(options: atomLib.Anon_WordRegex): Range = js.native
+  def getCurrentWordBufferRange(options: atomLib.Anon_WordRegexRegExp): Range = js.native
   /** Returns the characters preceding the cursor in the current word. */
   def getCurrentWordPrefix(): java.lang.String = js.native
   /** Retrieves the buffer position of where the current word ends. */
   def getEndOfCurrentWordBufferPosition(): Point = js.native
-  def getEndOfCurrentWordBufferPosition(options: atomLib.Anon_IncludeNonWordCharactersWordRegex): Point = js.native
+  def getEndOfCurrentWordBufferPosition(options: atomLib.Anon_WordRegexIncludeNonWordCharacters): Point = js.native
   /** Returns the indentation level of the current line. */
   def getIndentLevel(): scala.Double = js.native
   // Cursor Position Details
@@ -61,14 +61,14 @@ trait Cursor extends js.Object {
     *  word, or the previous word.
     */
   def getNextWordBoundaryBufferPosition(): Point = js.native
-  def getNextWordBoundaryBufferPosition(options: atomLib.Anon_WordRegex): Point = js.native
+  def getNextWordBoundaryBufferPosition(options: atomLib.Anon_WordRegexRegExp): Point = js.native
   // Local Positions and Ranges
   /**
     *  Returns buffer position of previous word boundary. It might be on the current
     *  word, or the previous word.
     */
   def getPreviousWordBoundaryBufferPosition(): Point = js.native
-  def getPreviousWordBoundaryBufferPosition(options: atomLib.Anon_WordRegex): Point = js.native
+  def getPreviousWordBoundaryBufferPosition(options: atomLib.Anon_WordRegexRegExp): Point = js.native
   /** Retrieves the scope descriptor for the cursor's current position. */
   def getScopeDescriptor(): ScopeDescriptor = js.native
   /** Returns the cursor's current screen column. */
@@ -90,7 +90,7 @@ trait Cursor extends js.Object {
   def isBetweenWordAndNonWord(): scala.Boolean = js.native
   /** Returns whether this cursor is between a word's start and end. */
   def isInsideWord(): scala.Boolean = js.native
-  def isInsideWord(options: atomLib.Anon_WordRegex): scala.Boolean = js.native
+  def isInsideWord(options: atomLib.Anon_WordRegexRegExp): scala.Boolean = js.native
   /**
     *  Identifies if this cursor is the last in the TextEditor.
     *  "Last" is defined as the most recently added cursor.
@@ -177,6 +177,6 @@ trait Cursor extends js.Object {
   def subwordRegExp(options: atomLib.Anon_Backwards): stdLib.RegExp = js.native
   /** Get the RegExp used by the cursor to determine what a "word" is. */
   def wordRegExp(): stdLib.RegExp = js.native
-  def wordRegExp(options: atomLib.Anon_IncludeNonWordCharactersBoolean): stdLib.RegExp = js.native
+  def wordRegExp(options: atomLib.Anon_IncludeNonWordCharacters): stdLib.RegExp = js.native
 }
 

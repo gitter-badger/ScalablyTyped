@@ -6,7 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait Anon_Input
-  extends org.scalablytyped.runtime.Instantiable1[/* input */ stdLib.RequestInfo, stdLib.Request]
-     with org.scalablytyped.runtime.Instantiable2[/* input */ stdLib.RequestInfo, /* init */ stdLib.RequestInit, stdLib.Request]
+trait Anon_Input extends js.Object {
+  def apply(input: stdLib.RequestInfo): js.Promise[stdLib.Response] = js.native
+  def apply(input: stdLib.RequestInfo, init: stdLib.RequestInit): js.Promise[stdLib.Response] = js.native
+}
 

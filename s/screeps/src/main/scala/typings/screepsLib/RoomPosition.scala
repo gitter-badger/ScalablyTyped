@@ -69,7 +69,7 @@ trait RoomPosition extends js.Object {
     * @returns One of the supplied objects
     */
   def findClosestByPath[T /* <: _HasRoomPosition | RoomPosition */](objects: js.Array[T]): T | scala.Null = js.native
-  def findClosestByPath[T /* <: _HasRoomPosition | RoomPosition */](objects: js.Array[T], opts: FindPathOpts with Anon_AlgorithmFilter): T | scala.Null = js.native
+  def findClosestByPath[T /* <: _HasRoomPosition | RoomPosition */](objects: js.Array[T], opts: FindPathOpts with Anon_Filter): T | scala.Null = js.native
   /**
     * Find the object with the shortest path from the given position. Uses A* search algorithm and Dijkstra's algorithm.
     * @param type Any of the FIND_* constants.
@@ -99,7 +99,7 @@ trait RoomPosition extends js.Object {
     * @param opts An object containing pathfinding options (see Room.findPath), or one of the following: filter, algorithm
     */
   def findClosestByRange[T /* <: _HasRoomPosition | RoomPosition */](objects: js.Array[T]): T | scala.Null = js.native
-  def findClosestByRange[T /* <: _HasRoomPosition | RoomPosition */](objects: js.Array[T], opts: Anon_Filter): T | scala.Null = js.native
+  def findClosestByRange[T /* <: _HasRoomPosition | RoomPosition */](objects: js.Array[T], opts: Anon_FilterAny): T | scala.Null = js.native
   /**
     * Find the object with the shortest linear distance from the given position.
     * @param type Any of the FIND_* constants.
@@ -120,7 +120,7 @@ trait RoomPosition extends js.Object {
     * @param opts See Room.find.
     */
   def findInRange[T /* <: _HasRoomPosition | RoomPosition */](objects: js.Array[T], range: scala.Double): js.Array[T] = js.native
-  def findInRange[T /* <: _HasRoomPosition | RoomPosition */](objects: js.Array[T], range: scala.Double, opts: Anon_FilterAny): js.Array[T] = js.native
+  def findInRange[T /* <: _HasRoomPosition | RoomPosition */](objects: js.Array[T], range: scala.Double, opts: Anon_FilterAnyString): js.Array[T] = js.native
   /**
     * Find all objects in the specified linear range.
     * @param type Any of the FIND_* constants.

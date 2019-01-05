@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait CustomError
-  extends nodeLib.Error {
+  extends stdLib.Error {
   var code: errors
 }
 

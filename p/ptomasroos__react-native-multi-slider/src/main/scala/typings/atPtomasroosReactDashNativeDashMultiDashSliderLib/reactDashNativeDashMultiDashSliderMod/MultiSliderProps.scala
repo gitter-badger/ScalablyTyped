@@ -31,7 +31,7 @@ trait MultiSliderProps extends js.Object {
   var sliderLength: js.UndefOr[scala.Double] = js.undefined
   var snapped: js.UndefOr[scala.Boolean] = js.undefined
   var step: js.UndefOr[scala.Double] = js.undefined
-  var touchDimensions: js.UndefOr[atPtomasroosReactDashNativeDashMultiDashSliderLib.Anon_BorderRadius] = js.undefined
+  var touchDimensions: js.UndefOr[atPtomasroosReactDashNativeDashMultiDashSliderLib.Anon_Height] = js.undefined
   var trackStyle: js.UndefOr[reactDashNativeLib.reactDashNativeMod.ViewStyle] = js.undefined
   var unselectedStyle: js.UndefOr[reactDashNativeLib.reactDashNativeMod.ViewStyle] = js.undefined
   var valuePrefix: js.UndefOr[java.lang.String] = js.undefined

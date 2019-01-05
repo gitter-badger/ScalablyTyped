@@ -7,6 +7,8 @@ import scala.scalajs.js.annotation._
 
 trait Anon_Height extends js.Object {
   var height: scala.Double
-  var width: scala.Double
+  var left_shift_ticks: scala.Double
+  var right_shift_ticks: scala.Double
+  var y_shift: scala.Double
 }
 

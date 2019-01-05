@@ -14,7 +14,7 @@ trait IColumnReorderHeaderProps
   var onColumnDragEnd: js.UndefOr[
     js.Function2[
       /* props */ officeDashUiDashFabricDashReactLib.Anon_DropLocation, 
-      /* event */ reactLib.MouseEvent, 
+      /* event */ reactLib.MouseEvent with stdLib.MouseEvent, 
       scala.Unit
     ]
   ] = js.undefined

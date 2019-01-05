@@ -16,8 +16,8 @@ trait SlideMenuProps extends js.Object {
   var id: js.UndefOr[java.lang.String] = js.undefined
   var menuWidth: js.UndefOr[scala.Double] = js.undefined
   var model: js.UndefOr[js.Array[primereactLib.componentsMenuitemMenuItemMod.MenuItem]] = js.undefined
-  var onHide: js.UndefOr[js.Function1[/* e */ reactLib.Event, scala.Unit]] = js.undefined
-  var onShow: js.UndefOr[js.Function1[/* e */ reactLib.Event, scala.Unit]] = js.undefined
+  var onHide: js.UndefOr[js.Function1[/* e */ reactLib.Event with stdLib.Event, scala.Unit]] = js.undefined
+  var onShow: js.UndefOr[js.Function1[/* e */ reactLib.Event with stdLib.Event, scala.Unit]] = js.undefined
   var popup: js.UndefOr[scala.Boolean] = js.undefined
   var style: js.UndefOr[js.Object] = js.undefined
   var viewportHeight: js.UndefOr[scala.Double] = js.undefined

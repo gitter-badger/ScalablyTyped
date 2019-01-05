@@ -12,7 +12,7 @@ trait Transport extends js.Object {
   var verify: js.UndefOr[
     (js.Function1[
       /* callback */ js.Function2[
-        /* err */ nodeLib.Error | scala.Null, 
+        /* err */ (nodeLib.Error with stdLib.Error) | scala.Null, 
         nodemailerLib.nodemailerLibNumbers.`true`, 
         scala.Unit
       ], 
@@ -22,7 +22,11 @@ trait Transport extends js.Object {
   var version: java.lang.String
   def send(
     mail: nodemailerLib.libMailerMailDashMessageMod.namespaced,
-    callback: js.Function2[/* err */ nodeLib.Error | scala.Null, /* info */ SentMessageInfo, scala.Unit]
+    callback: js.Function2[
+      /* err */ (nodeLib.Error with stdLib.Error) | scala.Null, 
+      /* info */ SentMessageInfo, 
+      scala.Unit
+    ]
   ): scala.Unit
 }
 

@@ -326,7 +326,7 @@ trait Options extends js.Object {
     * Set on any DOM element.
     * If you care about non responsive browser (like ie8) then use it on main wrapper. This will prevent from crazy resizing.
     */
-  var responsiveBaseElement: js.UndefOr[reactLib.Element] = js.undefined
+  var responsiveBaseElement: js.UndefOr[reactLib.Element with stdLib.Element] = js.undefined
   /**
     * Default: false
     * Optional helper class.

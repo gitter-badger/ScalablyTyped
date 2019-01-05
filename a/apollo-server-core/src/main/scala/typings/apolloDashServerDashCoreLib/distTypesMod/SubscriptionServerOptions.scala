@@ -9,7 +9,7 @@ trait SubscriptionServerOptions extends js.Object {
   var keepAlive: js.UndefOr[scala.Double] = js.undefined
   var onConnect: js.UndefOr[
     js.Function3[
-      /* connectionParams */ coreDashJsLib.Object, 
+      /* connectionParams */ coreDashJsLib.Object with js.Object, 
       /* websocket */ wsLib.wsMod.namespaced, 
       /* context */ subscriptionsDashTransportDashWsLib.distServerMod.ConnectionContext, 
       _

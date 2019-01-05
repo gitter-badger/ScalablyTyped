@@ -26,7 +26,7 @@ class TextEditor () extends js.Object {
   def addGutter(options: GutterOptions): Gutter = js.native
   /** Create a marker layer to group related markers. */
   def addMarkerLayer(): DisplayMarkerLayer = js.native
-  def addMarkerLayer(options: atomLib.Anon_MaintainHistory): DisplayMarkerLayer = js.native
+  def addMarkerLayer(options: atomLib.Anon_MaintainHistoryPersistent): DisplayMarkerLayer = js.native
   /** Add a selection for the given range in buffer coordinates. */
   def addSelectionForBufferRange(bufferRange: RangeCompatible): Selection = js.native
   def addSelectionForBufferRange(bufferRange: RangeCompatible, options: atomLib.Anon_ReversedPreserveFolds): Selection = js.native
@@ -53,7 +53,7 @@ class TextEditor () extends js.Object {
   ): scala.Unit = js.native
   /** Convert a position in screen-coordinates to buffer-coordinates. */
   def bufferPositionForScreenPosition(bufferPosition: PointCompatible): Point = js.native
-  def bufferPositionForScreenPosition(bufferPosition: PointCompatible, options: atomLib.Anon_ClipDirectionBackwardForward): Point = js.native
+  def bufferPositionForScreenPosition(bufferPosition: PointCompatible, options: atomLib.Anon_ClipDirectionBackward): Point = js.native
   /**
     *  Get the range in buffer coordinates of all tokens surrounding the cursor
     *  that match the given scope selector.
@@ -72,13 +72,13 @@ class TextEditor () extends js.Object {
   def clipBufferRange(range: RangeCompatible): Range = js.native
   /** Clip the given Point to a valid position on screen. */
   def clipScreenPosition(screenPosition: PointCompatible): Point = js.native
-  def clipScreenPosition(screenPosition: PointCompatible, options: atomLib.Anon_ClipDirectionBackwardForward): Point = js.native
+  def clipScreenPosition(screenPosition: PointCompatible, options: atomLib.Anon_ClipDirectionBackward): Point = js.native
   /**
     *  Clip the start and end of the given range to valid positions on screen.
     *  See ::clipScreenPosition for more information.
     */
   def clipScreenRange(range: RangeCompatible): Range = js.native
-  def clipScreenRange(range: RangeCompatible, options: atomLib.Anon_ClipDirectionBackwardForward): Range = js.native
+  def clipScreenRange(range: RangeCompatible, options: atomLib.Anon_ClipDirectionBackward): Range = js.native
   // Clipboard Operations
   /** For each selection, copy the selected text. */
   def copySelectedText(): scala.Unit = js.native
@@ -353,7 +353,7 @@ class TextEditor () extends js.Object {
   def getTitle(): java.lang.String = js.native
   /** Returns the word surrounding the most recently added cursor. */
   def getWordUnderCursor(): java.lang.String = js.native
-  def getWordUnderCursor(options: atomLib.Anon_IncludeNonWordCharacters): java.lang.String = js.native
+  def getWordUnderCursor(options: atomLib.Anon_WordRegex): java.lang.String = js.native
   /**
     *  Group all changes since the given checkpoint into a single transaction for purposes
     *  of undo/redo.
@@ -444,7 +444,7 @@ class TextEditor () extends js.Object {
     *  To group multiple markers together in their own private layer, see ::addMarkerLayer.
     */
   def markBufferPosition(bufferPosition: PointCompatible): DisplayMarker = js.native
-  def markBufferPosition(bufferPosition: PointCompatible, options: atomLib.Anon_Invalidate): DisplayMarker = js.native
+  def markBufferPosition(bufferPosition: PointCompatible, options: atomLib.Anon_InvalidateNeverSurround): DisplayMarker = js.native
   // Markers
   /**
     *  Create a marker on the default marker layer with the given range in buffer coordinates.
@@ -453,13 +453,13 @@ class TextEditor () extends js.Object {
     *  in the buffer changes.
     */
   def markBufferRange(range: RangeCompatible): DisplayMarker = js.native
-  def markBufferRange(range: RangeCompatible, properties: atomLib.Anon_MaintainHistoryInvalidate): DisplayMarker = js.native
+  def markBufferRange(range: RangeCompatible, properties: atomLib.Anon_MaintainHistory): DisplayMarker = js.native
   /**
     *  Create a marker on the default marker layer with the given screen position and no tail.
     *  To group multiple markers together in their own private layer, see ::addMarkerLayer.
     */
   def markScreenPosition(screenPosition: PointCompatible): DisplayMarker = js.native
-  def markScreenPosition(screenPosition: PointCompatible, options: atomLib.Anon_ClipDirectionBackwardForwardClosest): DisplayMarker = js.native
+  def markScreenPosition(screenPosition: PointCompatible, options: atomLib.Anon_InvalidateNeverSurroundOverlap): DisplayMarker = js.native
   /**
     *  Create a marker on the default marker layer with the given range in screen coordinates.
     *  This marker will maintain its logical location as the buffer is changed, so if you mark
@@ -467,7 +467,7 @@ class TextEditor () extends js.Object {
     *  the buffer changes.
     */
   def markScreenRange(range: RangeCompatible): DisplayMarker = js.native
-  def markScreenRange(range: RangeCompatible, properties: atomLib.Anon_MaintainHistoryInvalidate): DisplayMarker = js.native
+  def markScreenRange(range: RangeCompatible, properties: atomLib.Anon_MaintainHistory): DisplayMarker = js.native
   /** Move every cursor down one row in screen coordinates. */
   def moveDown(): scala.Unit = js.native
   def moveDown(lineCount: scala.Double): scala.Unit = js.native
@@ -679,7 +679,7 @@ class TextEditor () extends js.Object {
   // TextEditor Coordinates
   /** Convert a position in buffer-coordinates to screen-coordinates. */
   def screenPositionForBufferPosition(bufferPosition: PointCompatible): Point = js.native
-  def screenPositionForBufferPosition(bufferPosition: PointCompatible, options: atomLib.Anon_ClipDirectionBackwardForward): Point = js.native
+  def screenPositionForBufferPosition(bufferPosition: PointCompatible, options: atomLib.Anon_ClipDirectionBackward): Point = js.native
   /** Convert a range in buffer-coordinates to screen-coordinates. */
   def screenRangeForBufferRange(bufferRange: RangeCompatible): Range = js.native
   /** Scrolls the editor to the given buffer position. */
@@ -919,7 +919,7 @@ class TextEditor () extends js.Object {
   /** Toggle soft wrapping for this editor. */
   def toggleSoftWrapped(): scala.Boolean = js.native
   /** Undocumented: Get syntax token at buffer position */
-  def tokenForBufferPosition(pos: PointCompatible): atomLib.Anon_Scopes = js.native
+  def tokenForBufferPosition(pos: PointCompatible): atomLib.Anon_Value = js.native
   /**
     *  Batch multiple operations as a single undo/redo step.
     *  Any group of operations that are logically grouped from the perspective of undoing

@@ -16,8 +16,8 @@ trait Template extends js.Object {
   var viewName: java.lang.String
   def constructView(): View
   def events(eventsMap: EventsMap): scala.Unit
-  def find(selector: java.lang.String): reactLib.HTMLElement
-  def findAll(selector: java.lang.String): js.Array[reactLib.HTMLElement]
+  def find(selector: java.lang.String): reactLib.HTMLElement with stdLib.HTMLElement
+  def findAll(selector: java.lang.String): js.Array[reactLib.HTMLElement with stdLib.HTMLElement]
   def helpers(helpersMap: HelpersMap): scala.Unit
   def onCreated(cb: js.Function): scala.Unit
   def onDestroyed(cb: js.Function): scala.Unit

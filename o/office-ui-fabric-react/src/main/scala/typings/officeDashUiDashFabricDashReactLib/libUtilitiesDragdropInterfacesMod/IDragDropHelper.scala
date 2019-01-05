@@ -8,10 +8,10 @@ import scala.scalajs.js.annotation._
 trait IDragDropHelper extends js.Object {
   def dispose(): scala.Unit
   def subscribe(
-    root: reactLib.HTMLElement,
+    root: reactLib.HTMLElement with stdLib.HTMLElement,
     events: officeDashUiDashFabricDashReactLib.libUtilitiesMod.EventGroup,
     options: IDragDropOptions
-  ): officeDashUiDashFabricDashReactLib.Anon_KeyDisposeString
-  def unsubscribe(root: reactLib.HTMLElement, key: java.lang.String): scala.Unit
+  ): officeDashUiDashFabricDashReactLib.Anon_KeyDispose
+  def unsubscribe(root: reactLib.HTMLElement with stdLib.HTMLElement, key: java.lang.String): scala.Unit
 }
 

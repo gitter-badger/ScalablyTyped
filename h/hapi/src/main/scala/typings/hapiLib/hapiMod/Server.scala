@@ -35,7 +35,7 @@ class Server () extends js.Object {
     * modified directly, but only through server.decorate.
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-serverdecorations)
     */
-  val decorations: hapiLib.Anon_Server = js.native
+  val decorations: hapiLib.Anon_Request = js.native
   /**
     * Access: podium public interface.
     * The server events emitter. Utilizes the podium with support for event criteria validation, channels, and filters.
@@ -220,7 +220,7 @@ class Server () extends js.Object {
     `type`: hapiLib.hapiLibStrings.handler,
     property: DecorateName,
     method: HandlerDecorationMethod,
-    options: hapiLib.Anon_Extend
+    options: hapiLib.Anon_Apply
   ): scala.Unit = js.native
   @JSName("decorate")
   def decorate_request(`type`: hapiLib.hapiLibStrings.request, property: DecorateName, method: DecorationMethod[Request]): scala.Unit = js.native
@@ -229,14 +229,7 @@ class Server () extends js.Object {
     `type`: hapiLib.hapiLibStrings.request,
     property: DecorateName,
     method: DecorationMethod[Request],
-    options: hapiLib.Anon_Extend
-  ): scala.Unit = js.native
-  @JSName("decorate")
-  def decorate_request(
-    `type`: hapiLib.hapiLibStrings.request,
-    property: DecorateName,
-    method: js.Function1[/* request */ Request, DecorationMethod[Request]],
-    options: hapiLib.Anon_ExtendApply
+    options: hapiLib.Anon_Apply
   ): scala.Unit = js.native
   @JSName("decorate")
   def decorate_request(
@@ -246,7 +239,14 @@ class Server () extends js.Object {
       /* existing */ js.Function1[/* repeated */ js.Any, _], 
       js.Function1[/* request */ Request, DecorationMethod[Request]]
     ],
-    options: hapiLib.Anon_ExtendTrue
+    options: hapiLib.Anon_ApplyTrue
+  ): scala.Unit = js.native
+  @JSName("decorate")
+  def decorate_request(
+    `type`: hapiLib.hapiLibStrings.request,
+    property: DecorateName,
+    method: js.Function1[/* request */ Request, DecorationMethod[Request]],
+    options: hapiLib.Anon_ApplyTrueExtend
   ): scala.Unit = js.native
   @JSName("decorate")
   def decorate_server(`type`: hapiLib.hapiLibStrings.server, property: DecorateName, method: DecorationMethod[Server]): scala.Unit = js.native
@@ -255,14 +255,14 @@ class Server () extends js.Object {
     `type`: hapiLib.hapiLibStrings.server,
     property: DecorateName,
     method: DecorationMethod[Server],
-    options: hapiLib.Anon_Extend
+    options: hapiLib.Anon_Apply
   ): scala.Unit = js.native
   @JSName("decorate")
   def decorate_server(
     `type`: hapiLib.hapiLibStrings.server,
     property: DecorateName,
     method: js.Function1[/* existing */ js.Function1[/* repeated */ js.Any, _], DecorationMethod[this.type]],
-    options: hapiLib.Anon_ExtendTrueApply
+    options: hapiLib.Anon_ApplyExtend
   ): scala.Unit = js.native
   @JSName("decorate")
   def decorate_toolkit(
@@ -275,7 +275,7 @@ class Server () extends js.Object {
     `type`: hapiLib.hapiLibStrings.toolkit,
     property: DecorateName,
     method: DecorationMethod[ResponseToolkit],
-    options: hapiLib.Anon_Extend
+    options: hapiLib.Anon_Apply
   ): scala.Unit = js.native
   @JSName("decorate")
   def decorate_toolkit(
@@ -285,7 +285,7 @@ class Server () extends js.Object {
       /* existing */ js.Function1[/* repeated */ js.Any, _], 
       DecorationMethod[ResponseToolkit]
     ],
-    options: hapiLib.Anon_ExtendTrueApply
+    options: hapiLib.Anon_ApplyExtend
   ): scala.Unit = js.native
   /**
     * Used within a plugin to declare a required dependency on other plugins where:

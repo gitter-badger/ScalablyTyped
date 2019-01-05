@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 trait RequestError
   extends axiosLib.axiosMod.AxiosError {
-  var errors: js.Array[nodeLib.Error]
+  var errors: js.Array[nodeLib.Error with stdLib.Error]
 }
 

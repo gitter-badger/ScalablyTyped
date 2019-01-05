@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait InputTextareaProps
-  extends reactLib.reactMod.ReactNs.HTMLProps[reactLib.HTMLTextAreaElement]
+  extends reactLib.reactMod.ReactNs.HTMLProps[reactLib.HTMLTextAreaElement with stdLib.HTMLTextAreaElement]
      with /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var autoResize: js.UndefOr[scala.Boolean] = js.undefined
   var tooltip: js.UndefOr[js.Any] = js.undefined

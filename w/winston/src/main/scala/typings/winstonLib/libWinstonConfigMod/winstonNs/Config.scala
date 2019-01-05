@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation._
 
 trait Config extends js.Object {
   var allColors: AbstractConfigSetColors
-  var cli: winstonLib.Anon_LevelsColorsCliConfigSetLevels
+  var cli: winstonLib.Anon_Levels
   var npm: winstonLib.Anon_LevelsColors
-  var syslog: winstonLib.Anon_Levels
+  var syslog: winstonLib.Anon_LevelsColorsSyslogConfigSetLevels
   def addColors(colors: AbstractConfigSetColors): scala.Unit
 }
 

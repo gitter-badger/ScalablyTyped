@@ -12,7 +12,7 @@ class Revision protected () extends js.Object {
   val Author: java.lang.String = js.native
   val Cells: Cells = js.native
   val Creator: scala.Double = js.native
-  val Date: activexDashInteropLib.VarDate = js.native
+  val Date: activexDashInteropLib.VarDate with stdLib.VarDate = js.native
   val FormatDescription: java.lang.String = js.native
   val Index: scala.Double = js.native
   val MovedRange: Range = js.native

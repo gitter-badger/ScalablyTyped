@@ -57,8 +57,14 @@ package object uiGridNs {
   type filterChangedHandler[TEntity] = js.Function1[/* gridApi */ IGridApiOf[TEntity], scala.Unit]
   type rowsRenderedHandler[TEntity] = js.Function1[/* gridApi */ IGridApiOf[TEntity], scala.Unit]
   type rowsVisibleChangedHandler[TEntity] = js.Function1[/* gridApi */ IGridApiOf[TEntity], scala.Unit]
-  type scrollBeginHandler = js.Function1[/* scrollEvent */ angularLib.JQueryMouseEventObject, scala.Unit]
-  type scrollEndHandler = js.Function1[/* scrollEvent */ angularLib.JQueryMouseEventObject, scala.Unit]
+  type scrollBeginHandler = js.Function1[
+    /* scrollEvent */ angularLib.JQueryMouseEventObject with jqueryLib.JQueryMouseEventObject, 
+    scala.Unit
+  ]
+  type scrollEndHandler = js.Function1[
+    /* scrollEvent */ angularLib.JQueryMouseEventObject with jqueryLib.JQueryMouseEventObject, 
+    scala.Unit
+  ]
   type sortChangedHandler[TEntity] = js.Function2[
     /* grid */ IGridInstanceOf[TEntity], 
     /* columns */ js.Array[IGridColumnOf[TEntity]], 

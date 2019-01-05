@@ -110,7 +110,7 @@ trait FunctionState extends js.Object {
     * Provide this to allow your function to access your VPC. Fields documented below. See [Lambda in VPC][7]
     */
   val vpcConfig: js.UndefOr[
-    atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_VpcIdSecurityGroupIdsSubnetIdsInput]
+    atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_SecurityGroupIdsSubnetIdsVpcIdInput]
   ] = js.undefined
 }
 

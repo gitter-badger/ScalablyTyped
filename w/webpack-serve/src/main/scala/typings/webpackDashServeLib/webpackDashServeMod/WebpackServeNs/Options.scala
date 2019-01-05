@@ -20,7 +20,9 @@ trait Options extends js.Object {
   /** Custom instance of a webpack compiler */
   var compiler: js.UndefOr[webpackLib.webpackMod.Compiler] = js.undefined
   /** Webpack configuration for creating a new webpack compiler instance */
-  var config: js.UndefOr[webpackDashServeLib.webpackDashServeMod.webpackMod.Configuration] = js.undefined
+  var config: js.UndefOr[
+    webpackDashServeLib.webpackDashServeMod.webpackMod.Configuration with webpackLib.webpackMod.webpackNs.Configuration
+  ] = js.undefined
   /** A path or array of paths where content will be served from */
   var content: js.UndefOr[java.lang.String | js.Array[java.lang.String]] = js.undefined
   /** Options for webpack-dev-middleware */

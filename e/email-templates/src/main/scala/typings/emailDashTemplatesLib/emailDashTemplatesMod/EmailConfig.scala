@@ -33,7 +33,7 @@ trait EmailConfig extends js.Object {
   /**
     * Pass a custom render function if necessary
     */
-  var render: js.UndefOr[emailDashTemplatesLib.Anon_Locals] = js.undefined
+  var render: js.UndefOr[emailDashTemplatesLib.Anon_View] = js.undefined
   /**
     *     Do you really want to send, false for test or development
     */

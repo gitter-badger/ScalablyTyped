@@ -10,6 +10,6 @@ import scala.scalajs.js.annotation._
 trait GetCenterLocationOptions
   extends BaseOptions[js.Any, js.Any] {
   @JSName("success")
-  var success_GetCenterLocationOptions: js.UndefOr[js.Function1[/* res */ aliDashAppLib.Anon_Latitude, scala.Unit]] = js.undefined
+  var success_GetCenterLocationOptions: js.UndefOr[js.Function1[/* res */ aliDashAppLib.Anon_Longitude, scala.Unit]] = js.undefined
 }
 

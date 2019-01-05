@@ -14,7 +14,7 @@ trait ModuleDepsObject
   def _transform(row: InputRow, enc: java.lang.String, next: js.Function0[scala.Unit]): scala.Unit = js.native
   def _transform(row: InputTransform, enc: java.lang.String, next: js.Function0[scala.Unit]): scala.Unit = js.native
   def getTransforms(file: java.lang.String, pkg: PackageObject): nodeLib.NodeJSNs.ReadWriteStream = js.native
-  def getTransforms(file: java.lang.String, pkg: PackageObject, opts: moduleDashDepsLib.Anon_InNodeModules): nodeLib.NodeJSNs.ReadWriteStream = js.native
+  def getTransforms(file: java.lang.String, pkg: PackageObject, opts: moduleDashDepsLib.Anon_Builtin): nodeLib.NodeJSNs.ReadWriteStream = js.native
   def lookupPackage(
     file: java.lang.String,
     cb: js.Function3[/* a */ js.Any, /* b */ js.Any, /* c */ js.UndefOr[js.Any], _]
@@ -33,7 +33,7 @@ trait ModuleDepsObject
   @JSName("on")
   def on_missing(
     event: moduleDashDepsLib.moduleDashDepsLibStrings.missing,
-    listener: js.Function2[/* id */ java.lang.String, /* parent */ moduleDashDepsLib.Anon_Prop, _]
+    listener: js.Function2[/* id */ java.lang.String, /* parent */ moduleDashDepsLib.Anon_IdFilename, _]
   ): this.type = js.native
   /**
     * Every time a package is read, this event fires. The directory name of the package is available in pkg.__dirname.
@@ -59,7 +59,7 @@ trait ModuleDepsObject
     id: java.lang.String,
     parent: moduleDashDepsLib.Anon_Id,
     cb: js.Function4[
-      /* err */ nodeLib.Error | scala.Null, 
+      /* err */ (nodeLib.Error with stdLib.Error) | scala.Null, 
       /* file */ js.UndefOr[java.lang.String], 
       /* pkg */ js.UndefOr[PackageObject], 
       /* fakePath */ js.UndefOr[js.Any], 
@@ -70,16 +70,16 @@ trait ModuleDepsObject
     id: java.lang.String,
     parent: moduleDashDepsLib.Anon_Modules,
     cb: js.Function2[
-      /* err */ nodeLib.Error | scala.Null, 
+      /* err */ (nodeLib.Error with stdLib.Error) | scala.Null, 
       /* file */ js.UndefOr[java.lang.String], 
       scala.Unit
     ]
   ): scala.Unit = js.native
   def walk(
-    id: moduleDashDepsLib.Anon_SourceNoparse,
+    id: moduleDashDepsLib.Anon_File,
     parent: moduleDashDepsLib.Anon_Modules,
     cb: js.Function2[
-      /* err */ nodeLib.Error | scala.Null, 
+      /* err */ (nodeLib.Error with stdLib.Error) | scala.Null, 
       /* file */ js.UndefOr[java.lang.String], 
       scala.Unit
     ]

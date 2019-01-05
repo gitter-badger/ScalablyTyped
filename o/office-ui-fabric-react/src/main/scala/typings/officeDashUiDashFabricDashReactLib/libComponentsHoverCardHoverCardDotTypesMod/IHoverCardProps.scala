@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait IHoverCardProps
-  extends reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLDivElement] {
+  extends reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLDivElement with stdLib.HTMLDivElement] {
   /**
     * Length of card dismiss delay. A min number is necessary for pointer to hop between target and card
     * @defaultvalue 100
@@ -95,7 +95,7 @@ trait IHoverCardProps
     * If not provided and using HoverCard as a wrapper, don't set 'data-is-focusable=true' attribute to the root of the wrapped child.
     * When no target given, HoverCard will use it's root as a target and become the focusable element with a focus listener attached to it.
     */
-  var target: js.UndefOr[reactLib.HTMLElement | java.lang.String] = js.undefined
+  var target: js.UndefOr[(reactLib.HTMLElement with stdLib.HTMLElement) | java.lang.String] = js.undefined
   /**
     * Theme provided by higher order component.
     */

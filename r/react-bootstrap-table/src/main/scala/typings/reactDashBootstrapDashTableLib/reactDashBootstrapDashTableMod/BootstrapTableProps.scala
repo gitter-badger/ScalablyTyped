@@ -12,7 +12,7 @@ trait BootstrapTableProps
   	 * Is an object with three possible fields: sort, filter, search. Each field is a flag to specify whether that
   	 * action type should cause expanded rows to close. All three fields default to false.
   	 */
-  var autoCollapse: js.UndefOr[reactDashBootstrapDashTableLib.Anon_Filter] = js.undefined
+  var autoCollapse: js.UndefOr[reactDashBootstrapDashTableLib.Anon_Sort] = js.undefined
   /**
   	 * Add your own class names on the react-bs-container-body class
   	 */

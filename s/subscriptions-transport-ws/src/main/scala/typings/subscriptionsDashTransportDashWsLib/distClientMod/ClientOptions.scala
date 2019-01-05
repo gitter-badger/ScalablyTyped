@@ -7,7 +7,11 @@ import scala.scalajs.js.annotation._
 
 trait ClientOptions extends js.Object {
   var connectionCallback: js.UndefOr[
-    js.Function2[/* error */ js.Array[nodeLib.Error], /* result */ js.UndefOr[js.Any], scala.Unit]
+    js.Function2[
+      /* error */ js.Array[nodeLib.Error with stdLib.Error], 
+      /* result */ js.UndefOr[js.Any], 
+      scala.Unit
+    ]
   ] = js.undefined
   var connectionParams: js.UndefOr[ConnectionParamsOptions] = js.undefined
   var inactivityTimeout: js.UndefOr[scala.Double] = js.undefined

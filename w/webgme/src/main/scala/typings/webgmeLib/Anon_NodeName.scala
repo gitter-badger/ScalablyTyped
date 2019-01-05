@@ -5,20 +5,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
 trait Anon_NodeName extends js.Object {
-  def apply(
-    node: webgmeLib.CoreNs.Node,
-    name: webgmeLib.GmeCommonNs.Name,
-    libraryRootHash: webgmeLib.GmeCommonNs.MetadataHash,
-    libraryInfo: webgmeLib.GmeClassesNs.LibraryInfo
-  ): js.Promise[webgmeLib.CoreNs.DataObject] = js.native
-  def apply(
-    node: webgmeLib.CoreNs.Node,
-    name: webgmeLib.GmeCommonNs.Name,
-    libraryRootHash: webgmeLib.GmeCommonNs.MetadataHash,
-    libraryInfo: webgmeLib.GmeClassesNs.LibraryInfo,
-    callback: webgmeLib.GmeCommonNs.ResultCallback[webgmeLib.CoreNs.DataObject]
-  ): scala.Unit = js.native
+  /** the members of the set of the node in question. */
+  var members: js.UndefOr[js.Array[webgmeLib.CoreNs.Node]] = js.undefined
+  /** the name of the set. */
+  var name: webgmeLib.GmeCommonNs.Name
+  /** the node in question. */
+  var node: webgmeLib.CoreNs.Node
 }
 

@@ -28,11 +28,11 @@ trait AppBarProps
   /**
     * Called when the left icon is clicked
     */
-  var onLeftIconClick: js.UndefOr[coreDashJsLib.Function] = js.undefined
+  var onLeftIconClick: js.UndefOr[coreDashJsLib.Function with js.Function] = js.undefined
   /**
     * Called when the righticon is clicked
     */
-  var onRightIconClick: js.UndefOr[coreDashJsLib.Function] = js.undefined
+  var onRightIconClick: js.UndefOr[coreDashJsLib.Function with js.Function] = js.undefined
   /**
     * If it exists it is used as the AppBar right icon
     */

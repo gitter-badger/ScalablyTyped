@@ -13,7 +13,7 @@ package object DataTablesNs {
   type FunctionButtonAction = js.Function4[
     /* e */ js.Any, 
     /* dt */ Api, 
-    /* node */ datatablesDotNetLib.JQuery, 
+    /* node */ datatablesDotNetLib.JQuery with jqueryLib.JQuery[stdLib.HTMLElement], 
     /* config */ ButtonSettings, 
     scala.Unit
   ]
@@ -21,10 +21,15 @@ package object DataTablesNs {
   type FunctionButtonColvisColumnText = js.Function3[/* dt */ Api, /* i */ scala.Double, /* title */ java.lang.String, java.lang.String]
   type FunctionButtonCustomize = js.Function1[/* win */ stdLib.Window | java.lang.String, scala.Unit]
   type FunctionButtonCustomizeData = js.Function1[/* content */ js.Any, scala.Unit]
-  type FunctionButtonInit = js.Function3[/* dt */ Api, /* node */ datatablesDotNetLib.JQuery, /* config */ js.Any, scala.Unit]
+  type FunctionButtonInit = js.Function3[
+    /* dt */ Api, 
+    /* node */ datatablesDotNetLib.JQuery with jqueryLib.JQuery[stdLib.HTMLElement], 
+    /* config */ js.Any, 
+    scala.Unit
+  ]
   type FunctionButtonText = js.Function3[
     /* dt */ Api, 
-    /* node */ datatablesDotNetLib.JQuery, 
+    /* node */ datatablesDotNetLib.JQuery with jqueryLib.JQuery[stdLib.HTMLElement], 
     /* config */ js.Any, 
     java.lang.String
   ]

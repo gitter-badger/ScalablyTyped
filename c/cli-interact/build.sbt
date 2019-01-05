@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "cli-interact"
-version := "0.1-dt-20180925Z-79ae4b"
-scalaVersion := "2.12.7"
+version := "0.1-dt-20180925Z-857cbd"
+scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "readline-sync" % "1.4-dt-20180214Z-df02ab",
-  "org.scalablytyped" %%% "std" % "3.2.2-9ed5ff")
+  "org.scalablytyped" %%% "readline-sync" % "1.4-dt-20180214Z-c98135",
+  "org.scalablytyped" %%% "std" % "3.2.2-3b2f2a")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

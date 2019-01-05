@@ -12,6 +12,6 @@ trait CheckboxProps extends js.Object {
   var indeterminate: js.UndefOr[scala.Boolean] = js.undefined
   var name: js.UndefOr[java.lang.String] = js.undefined
   var size: js.UndefOr[gestaltLib.gestaltLibStrings.sm | gestaltLib.gestaltLibStrings.md] = js.undefined
-  def onChange(args: gestaltLib.Anon_Checked): scala.Unit
+  def onChange(args: gestaltLib.Anon_EventChecked): scala.Unit
 }
 

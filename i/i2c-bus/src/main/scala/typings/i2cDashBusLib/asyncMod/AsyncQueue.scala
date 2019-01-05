@@ -13,7 +13,7 @@ trait AsyncQueue[T] extends js.Object {
   var started: scala.Boolean = js.native
   def drain(): js.Any = js.native
   def empty(): js.Any = js.native
-  def error(error: nodeLib.Error, data: js.Any): scala.Unit = js.native
+  def error(error: nodeLib.Error with stdLib.Error, data: js.Any): scala.Unit = js.native
   def idle(): scala.Boolean = js.native
   def kill(): scala.Unit = js.native
   def length(): scala.Double = js.native
@@ -30,6 +30,6 @@ trait AsyncQueue[T] extends js.Object {
   def unshift[E](task: T, callback: ErrorCallback[E]): scala.Unit = js.native
   def unshift[E](task: js.Array[T]): scala.Unit = js.native
   def unshift[E](task: js.Array[T], callback: ErrorCallback[E]): scala.Unit = js.native
-  def workersList(): js.Array[i2cDashBusLib.Anon_CallbackData[T]] = js.native
+  def workersList(): js.Array[i2cDashBusLib.Anon_Data[T]] = js.native
 }
 

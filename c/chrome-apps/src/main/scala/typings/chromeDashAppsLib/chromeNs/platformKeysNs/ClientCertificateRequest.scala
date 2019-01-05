@@ -24,11 +24,11 @@ trait ClientCertificateRequest extends js.Object {
     */
   var certificateTypes: js.Array[
     chromeDashAppsLib.chromeNs.ToStringLiteral[
-      chromeDashAppsLib.Anon_ECDSASIGN, 
+      chromeDashAppsLib.Anon_RSASIGN, 
       java.lang.String, 
       stdLib.Exclude[
         java.lang.String, 
-        /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_ECDSASIGN[keyof chrome-apps.Anon_ECDSASIGN] */ js.Any
+        /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_RSASIGN[keyof chrome-apps.Anon_RSASIGN] */ js.Any
       ]
     ]
   ]

@@ -9,13 +9,13 @@ import scala.scalajs.js.annotation._
 @js.native
 object jakeNsMembers extends js.Object {
   var logger: Logger = js.native
-  var program: jakeLib.Anon_TaskArgs = js.native
+  var program: jakeLib.Anon_Opts = js.native
   def addListener(event: java.lang.String, listener: js.Function): nodeLib.NodeJSNs.EventEmitter = js.native
   def cpR(path: java.lang.String, destination: java.lang.String): scala.Unit = js.native
   def cpR(
     path: java.lang.String,
     destination: java.lang.String,
-    callback: js.Function1[/* err */ nodeLib.Error, scala.Unit]
+    callback: js.Function1[/* err */ nodeLib.Error with stdLib.Error, scala.Unit]
   ): scala.Unit = js.native
   def cpR(path: java.lang.String, destination: java.lang.String, opts: UtilOptions): scala.Unit = js.native
   def cpR(
@@ -40,12 +40,15 @@ object jakeNsMembers extends js.Object {
   def exec(cmds: js.Array[java.lang.String], callback: js.Function0[scala.Unit], opts: ExecOptions): scala.Unit = js.native
   def listeners(event: java.lang.String): js.Array[js.Function] = js.native
   def mkdirP(name: java.lang.String): scala.Unit = js.native
-  def mkdirP(name: java.lang.String, f: js.Function2[/* er */ nodeLib.Error, /* made */ js.Any, scala.Unit]): scala.Unit = js.native
+  def mkdirP(
+    name: java.lang.String,
+    f: js.Function2[/* er */ nodeLib.Error with stdLib.Error, /* made */ js.Any, scala.Unit]
+  ): scala.Unit = js.native
   def mkdirP(name: java.lang.String, mode: java.lang.String): scala.Unit = js.native
   def mkdirP(
     name: java.lang.String,
     mode: java.lang.String,
-    f: js.Function2[/* er */ nodeLib.Error, /* made */ js.Any, scala.Unit]
+    f: js.Function2[/* er */ nodeLib.Error with stdLib.Error, /* made */ js.Any, scala.Unit]
   ): scala.Unit = js.native
   def on(event: java.lang.String, listener: js.Function): nodeLib.NodeJSNs.EventEmitter = js.native
   def once(event: java.lang.String, listener: js.Function): nodeLib.NodeJSNs.EventEmitter = js.native

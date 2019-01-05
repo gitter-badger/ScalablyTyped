@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait IDropdownProps
-  extends officeDashUiDashFabricDashReactLib.libUtilitiesSelectableOptionSelectableDroppableTextDotTypesMod.ISelectableDroppableTextProps[IDropdown, reactLib.HTMLDivElement] {
+  extends officeDashUiDashFabricDashReactLib.libUtilitiesSelectableOptionSelectableDroppableTextDotTypesMod.ISelectableDroppableTextProps[IDropdown, reactLib.HTMLDivElement with stdLib.HTMLDivElement] {
   /**
     * Keys that will be initially used to set selected items.
     */
@@ -49,7 +49,7 @@ trait IDropdownProps
   @JSName("onChange")
   var onChange_IDropdownProps: js.UndefOr[
     js.Function3[
-      /* event */ reactLib.reactMod.ReactNs.FormEvent[reactLib.HTMLDivElement], 
+      /* event */ reactLib.reactMod.ReactNs.FormEvent[reactLib.HTMLDivElement with stdLib.HTMLDivElement], 
       /* option */ js.UndefOr[IDropdownOption], 
       /* index */ js.UndefOr[scala.Double], 
       scala.Unit

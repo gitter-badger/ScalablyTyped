@@ -112,7 +112,7 @@ class Curve protected () extends js.Object {
     *      type - the type of Bézier curve, possible values are: ‘line’, ‘quadratic’, ‘serpentine’, ‘cusp’, ‘loop’, ‘arch’
     *      roots - the curve-time parameters of the associated points of inflection for serpentine curves, loops, cusps, etc
     */
-  def classify(): paperLib.Anon_Roots = js.native
+  def classify(): paperLib.Anon_TypeRoots = js.native
   /**
     * Clears the curve’s handles by setting their coordinates to zero, turning the curve into a straight line.
     */

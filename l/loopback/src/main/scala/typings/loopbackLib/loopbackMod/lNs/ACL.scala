@@ -52,7 +52,7 @@ trait ACL extends PersistedModel {
   var property: java.lang.String = js.native
   /** settings Extends the `Model.settings` object. */
   @JSName("settings")
-  var settings_ACL: loopbackLib.Anon_Acls = js.native
+  var settings_ACL: loopbackLib.Anon_HttpAcls = js.native
   /**
     * Get matching score for the given `AccessRequest`.
     * @param {AccessRequest} req The request

@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait TokenError
-  extends nodeLib.Error {
+  extends stdLib.Error {
   var code: java.lang.String
   var status: scala.Double
   var uri: js.UndefOr[java.lang.String] = js.undefined

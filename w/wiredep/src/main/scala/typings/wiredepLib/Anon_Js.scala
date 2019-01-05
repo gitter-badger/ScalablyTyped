@@ -8,14 +8,14 @@ import scala.scalajs.js.annotation._
 trait Anon_Js extends js.Object {
   /**
     * @example:
-    *  '<link rel="stylesheet" href="{{filePath}}" />'
+    *  /-\s(.+css)/gi
     */
-  var css: java.lang.String
+  var css: stdLib.RegExp
   /**
     * @example:
-    *  '<script src="{{filePath}}"></script>'
+    *  /-\s(.+js)/gi
     */
   @JSName("js")
-  var `js_`: java.lang.String
+  var `js_`: stdLib.RegExp
 }
 

@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Anon_TypeArg
-  extends org.scalablytyped.runtime.Instantiable1[/* typeArg */ java.lang.String, stdLib.CompositionEvent]
+  extends org.scalablytyped.runtime.Instantiable1[/* typeArg */ java.lang.String, stdLib.CustomEvent[js.Object]]
      with org.scalablytyped.runtime.Instantiable2[
       /* typeArg */ java.lang.String, 
-      /* eventInitDict */ stdLib.CompositionEventInit, 
-      stdLib.CompositionEvent
+      /* eventInitDict */ stdLib.CustomEventInit[js.Object], 
+      stdLib.CustomEvent[js.Object]
     ]
 

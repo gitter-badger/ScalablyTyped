@@ -7,11 +7,6 @@ import scala.scalajs.js.annotation._
 
 package object mongooseMod {
   type CastError = Error
-  /*
-    * section error.js
-    * http://mongoosejs.com/docs/api.html#error-js
-    */
-  type Error = nodeLib.ErrorConstructor
   type HookAsyncCallback[T] = js.ThisFunction3[
     /* this */ T, 
     /* next */ HookNextFunction, 
@@ -33,9 +28,9 @@ package object mongooseMod {
     * Some mongoose classes have the same name as the native JS classes
     * Keep references to native classes using a "Native" prefix
     */
-  type NativeBuffer = nodeLib.Anon_IsEncoding
+  type NativeBuffer = nodeLib.Anon_Str
   type NativeDate = stdLib.DateConstructor
-  type NativeError = nodeLib.ErrorConstructor
+  type NativeError = stdLib.ErrorConstructor
   /*
     * section query.js
     * http://mongoosejs.com/docs/api.html#query-js

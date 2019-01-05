@@ -9,7 +9,7 @@ trait User extends js.Object {
   var anonymous: scala.Boolean
   var app_id: js.UndefOr[java.lang.String] = js.undefined
   var avatar: Avatar
-  var companies: intercomDashClientLib.Anon_Type
+  var companies: intercomDashClientLib.Anon_TypeCompanylist
   val created_at: scala.Double
   var custom_attributes: org.scalablytyped.runtime.StringDictionary[js.Any]
   var email: java.lang.String | scala.Null

@@ -44,7 +44,7 @@ trait Level extends js.Object {
   /** Specifies the position of the labels.
     * @Default {center}
     */
-  var labelPosition: js.UndefOr[Position | java.lang.String] = js.undefined
+  var labelPosition: js.UndefOr[(Position with stdLib.Position) | java.lang.String] = js.undefined
   /** Specifies the label template for tree map level.
     * @Default {null}
     */

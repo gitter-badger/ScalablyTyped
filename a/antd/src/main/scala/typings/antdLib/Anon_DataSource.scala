@@ -6,8 +6,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_DataSource extends js.Object {
+  var bordered: scala.Boolean
   var dataSource: js.Array[scala.Nothing]
-  var render: antdLib.libTransferMod.TransferRender
-  var showSearch: scala.Boolean
+  var loading: scala.Boolean
+  var pagination: js.UndefOr[
+    antdLib.antdLibNumbers.`false` | antdLib.libPaginationPaginationMod.PaginationConfig
+  ]
+  var prefixCls: java.lang.String
+  var split: scala.Boolean
 }
 

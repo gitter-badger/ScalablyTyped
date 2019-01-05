@@ -6,6 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait CodePipelineEvent extends js.Object {
-  var `CodePipeline.job`: awsDashLambdaLib.Anon_AccountId
+  var `CodePipeline.job`: awsDashLambdaLib.Anon_Id
 }
 

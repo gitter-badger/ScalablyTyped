@@ -16,7 +16,7 @@ trait Rule extends js.Object {
   /**
     * Consequence of the rule. At least one of the following must be used:
     */
-  var consequence: algoliasearchLib.Anon_UserData
+  var consequence: algoliasearchLib.Anon_Params
   /**
     * This field is intended for rule management purposes,
     * in particular to ease searching for rules and presenting them to human readers.

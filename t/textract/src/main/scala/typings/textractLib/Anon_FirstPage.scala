@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_FirstPage extends js.Object {
-  var crop: js.UndefOr[Anon_W] = js.undefined
+  var crop: js.UndefOr[Anon_X] = js.undefined
   /**
     * @default "UTF-8"
     */

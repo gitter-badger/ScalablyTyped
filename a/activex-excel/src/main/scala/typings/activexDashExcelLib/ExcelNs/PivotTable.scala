@@ -92,7 +92,7 @@ class PivotTable protected () extends js.Object {
   var PreserveFormatting: scala.Boolean = js.native
   var PrintDrillIndicators: scala.Boolean = js.native
   var PrintTitles: scala.Boolean = js.native
-  val RefreshDate: activexDashInteropLib.VarDate = js.native
+  val RefreshDate: activexDashInteropLib.VarDate with stdLib.VarDate = js.native
   val RefreshName: java.lang.String = js.native
   var RepeatItemsOnEachPrintedPage: scala.Boolean = js.native
   @JSName("RowFields")
@@ -140,77 +140,85 @@ class PivotTable protected () extends js.Object {
   def AddDataField(Field: js.Any, Caption: js.Any): PivotField = js.native
   def AddDataField(Field: js.Any, Caption: js.Any, Function: js.Any): PivotField = js.native
   def AddFields(): js.Any = js.native
-  def AddFields(RowFields: activexDashInteropLib.SafeArray[java.lang.String]): js.Any = js.native
   def AddFields(
-    RowFields: activexDashInteropLib.SafeArray[java.lang.String],
-    ColumnFields: activexDashInteropLib.SafeArray[java.lang.String]
+    RowFields: activexDashInteropLib.SafeArray[java.lang.String] with stdLib.SafeArray[java.lang.String]
   ): js.Any = js.native
   def AddFields(
-    RowFields: activexDashInteropLib.SafeArray[java.lang.String],
-    ColumnFields: activexDashInteropLib.SafeArray[java.lang.String],
-    PageFields: activexDashInteropLib.SafeArray[java.lang.String]
+    RowFields: activexDashInteropLib.SafeArray[java.lang.String] with stdLib.SafeArray[java.lang.String],
+    ColumnFields: activexDashInteropLib.SafeArray[java.lang.String] with stdLib.SafeArray[java.lang.String]
   ): js.Any = js.native
   def AddFields(
-    RowFields: activexDashInteropLib.SafeArray[java.lang.String],
-    ColumnFields: activexDashInteropLib.SafeArray[java.lang.String],
-    PageFields: activexDashInteropLib.SafeArray[java.lang.String],
+    RowFields: activexDashInteropLib.SafeArray[java.lang.String] with stdLib.SafeArray[java.lang.String],
+    ColumnFields: activexDashInteropLib.SafeArray[java.lang.String] with stdLib.SafeArray[java.lang.String],
+    PageFields: activexDashInteropLib.SafeArray[java.lang.String] with stdLib.SafeArray[java.lang.String]
+  ): js.Any = js.native
+  def AddFields(
+    RowFields: activexDashInteropLib.SafeArray[java.lang.String] with stdLib.SafeArray[java.lang.String],
+    ColumnFields: activexDashInteropLib.SafeArray[java.lang.String] with stdLib.SafeArray[java.lang.String],
+    PageFields: activexDashInteropLib.SafeArray[java.lang.String] with stdLib.SafeArray[java.lang.String],
     AddToTable: scala.Boolean
   ): js.Any = js.native
   def AddFields(
-    RowFields: activexDashInteropLib.SafeArray[java.lang.String],
-    ColumnFields: activexDashInteropLib.SafeArray[java.lang.String],
+    RowFields: activexDashInteropLib.SafeArray[java.lang.String] with stdLib.SafeArray[java.lang.String],
+    ColumnFields: activexDashInteropLib.SafeArray[java.lang.String] with stdLib.SafeArray[java.lang.String],
     PageFields: java.lang.String
   ): js.Any = js.native
   def AddFields(
-    RowFields: activexDashInteropLib.SafeArray[java.lang.String],
-    ColumnFields: activexDashInteropLib.SafeArray[java.lang.String],
+    RowFields: activexDashInteropLib.SafeArray[java.lang.String] with stdLib.SafeArray[java.lang.String],
+    ColumnFields: activexDashInteropLib.SafeArray[java.lang.String] with stdLib.SafeArray[java.lang.String],
     PageFields: java.lang.String,
     AddToTable: scala.Boolean
   ): js.Any = js.native
-  def AddFields(RowFields: activexDashInteropLib.SafeArray[java.lang.String], ColumnFields: java.lang.String): js.Any = js.native
   def AddFields(
-    RowFields: activexDashInteropLib.SafeArray[java.lang.String],
-    ColumnFields: java.lang.String,
-    PageFields: activexDashInteropLib.SafeArray[java.lang.String]
+    RowFields: activexDashInteropLib.SafeArray[java.lang.String] with stdLib.SafeArray[java.lang.String],
+    ColumnFields: java.lang.String
   ): js.Any = js.native
   def AddFields(
-    RowFields: activexDashInteropLib.SafeArray[java.lang.String],
+    RowFields: activexDashInteropLib.SafeArray[java.lang.String] with stdLib.SafeArray[java.lang.String],
     ColumnFields: java.lang.String,
-    PageFields: activexDashInteropLib.SafeArray[java.lang.String],
+    PageFields: activexDashInteropLib.SafeArray[java.lang.String] with stdLib.SafeArray[java.lang.String]
+  ): js.Any = js.native
+  def AddFields(
+    RowFields: activexDashInteropLib.SafeArray[java.lang.String] with stdLib.SafeArray[java.lang.String],
+    ColumnFields: java.lang.String,
+    PageFields: activexDashInteropLib.SafeArray[java.lang.String] with stdLib.SafeArray[java.lang.String],
     AddToTable: scala.Boolean
   ): js.Any = js.native
   def AddFields(
-    RowFields: activexDashInteropLib.SafeArray[java.lang.String],
+    RowFields: activexDashInteropLib.SafeArray[java.lang.String] with stdLib.SafeArray[java.lang.String],
     ColumnFields: java.lang.String,
     PageFields: java.lang.String
   ): js.Any = js.native
   def AddFields(
-    RowFields: activexDashInteropLib.SafeArray[java.lang.String],
+    RowFields: activexDashInteropLib.SafeArray[java.lang.String] with stdLib.SafeArray[java.lang.String],
     ColumnFields: java.lang.String,
     PageFields: java.lang.String,
     AddToTable: scala.Boolean
   ): js.Any = js.native
   def AddFields(RowFields: java.lang.String): js.Any = js.native
-  def AddFields(RowFields: java.lang.String, ColumnFields: activexDashInteropLib.SafeArray[java.lang.String]): js.Any = js.native
   def AddFields(
     RowFields: java.lang.String,
-    ColumnFields: activexDashInteropLib.SafeArray[java.lang.String],
-    PageFields: activexDashInteropLib.SafeArray[java.lang.String]
+    ColumnFields: activexDashInteropLib.SafeArray[java.lang.String] with stdLib.SafeArray[java.lang.String]
   ): js.Any = js.native
   def AddFields(
     RowFields: java.lang.String,
-    ColumnFields: activexDashInteropLib.SafeArray[java.lang.String],
-    PageFields: activexDashInteropLib.SafeArray[java.lang.String],
+    ColumnFields: activexDashInteropLib.SafeArray[java.lang.String] with stdLib.SafeArray[java.lang.String],
+    PageFields: activexDashInteropLib.SafeArray[java.lang.String] with stdLib.SafeArray[java.lang.String]
+  ): js.Any = js.native
+  def AddFields(
+    RowFields: java.lang.String,
+    ColumnFields: activexDashInteropLib.SafeArray[java.lang.String] with stdLib.SafeArray[java.lang.String],
+    PageFields: activexDashInteropLib.SafeArray[java.lang.String] with stdLib.SafeArray[java.lang.String],
     AddToTable: scala.Boolean
   ): js.Any = js.native
   def AddFields(
     RowFields: java.lang.String,
-    ColumnFields: activexDashInteropLib.SafeArray[java.lang.String],
+    ColumnFields: activexDashInteropLib.SafeArray[java.lang.String] with stdLib.SafeArray[java.lang.String],
     PageFields: java.lang.String
   ): js.Any = js.native
   def AddFields(
     RowFields: java.lang.String,
-    ColumnFields: activexDashInteropLib.SafeArray[java.lang.String],
+    ColumnFields: activexDashInteropLib.SafeArray[java.lang.String] with stdLib.SafeArray[java.lang.String],
     PageFields: java.lang.String,
     AddToTable: scala.Boolean
   ): js.Any = js.native
@@ -218,12 +226,12 @@ class PivotTable protected () extends js.Object {
   def AddFields(
     RowFields: java.lang.String,
     ColumnFields: java.lang.String,
-    PageFields: activexDashInteropLib.SafeArray[java.lang.String]
+    PageFields: activexDashInteropLib.SafeArray[java.lang.String] with stdLib.SafeArray[java.lang.String]
   ): js.Any = js.native
   def AddFields(
     RowFields: java.lang.String,
     ColumnFields: java.lang.String,
-    PageFields: activexDashInteropLib.SafeArray[java.lang.String],
+    PageFields: activexDashInteropLib.SafeArray[java.lang.String] with stdLib.SafeArray[java.lang.String],
     AddToTable: scala.Boolean
   ): js.Any = js.native
   def AddFields(RowFields: java.lang.String, ColumnFields: java.lang.String, PageFields: java.lang.String): js.Any = js.native
@@ -243,7 +251,9 @@ class PivotTable protected () extends js.Object {
   def ChangePivotCache(PivotCache: java.lang.String): scala.Unit = js.native
   def ClearAllFilters(): scala.Unit = js.native
   def ClearTable(): scala.Unit = js.native
-  def ColumnFields(Indexes: activexDashInteropLib.SafeArray[scala.Double | java.lang.String]): PivotFields = js.native
+  def ColumnFields(
+    Indexes: (activexDashInteropLib.SafeArray[scala.Double | java.lang.String]) with (stdLib.SafeArray[scala.Double | java.lang.String])
+  ): PivotFields = js.native
   def ColumnFields(Index: java.lang.String): PivotField = js.native
   def ColumnFields(Index: scala.Double): PivotField = js.native
   def ColumnRange(Address: java.lang.String): Range = js.native
@@ -252,23 +262,34 @@ class PivotTable protected () extends js.Object {
   def CommitChanges(): scala.Unit = js.native
   def ConvertToFormulas(ConvertFilters: scala.Boolean): scala.Unit = js.native
   def CreateCubeFile(File: java.lang.String): java.lang.String = js.native
-  def CreateCubeFile(File: java.lang.String, Measures: activexDashInteropLib.SafeArray[java.lang.String]): java.lang.String = js.native
   def CreateCubeFile(
     File: java.lang.String,
-    Measures: activexDashInteropLib.SafeArray[java.lang.String],
-    Levels: activexDashInteropLib.SafeArray[java.lang.String]
+    Measures: activexDashInteropLib.SafeArray[java.lang.String] with stdLib.SafeArray[java.lang.String]
   ): java.lang.String = js.native
   def CreateCubeFile(
     File: java.lang.String,
-    Measures: activexDashInteropLib.SafeArray[java.lang.String],
-    Levels: activexDashInteropLib.SafeArray[java.lang.String],
-    Members: activexDashInteropLib.SafeArray[activexDashInteropLib.SafeArray[java.lang.String]]
+    Measures: activexDashInteropLib.SafeArray[java.lang.String] with stdLib.SafeArray[java.lang.String],
+    Levels: activexDashInteropLib.SafeArray[java.lang.String] with stdLib.SafeArray[java.lang.String]
   ): java.lang.String = js.native
   def CreateCubeFile(
     File: java.lang.String,
-    Measures: activexDashInteropLib.SafeArray[java.lang.String],
-    Levels: activexDashInteropLib.SafeArray[java.lang.String],
-    Members: activexDashInteropLib.SafeArray[activexDashInteropLib.SafeArray[java.lang.String]],
+    Measures: activexDashInteropLib.SafeArray[java.lang.String] with stdLib.SafeArray[java.lang.String],
+    Levels: activexDashInteropLib.SafeArray[java.lang.String] with stdLib.SafeArray[java.lang.String],
+    Members: (activexDashInteropLib.SafeArray[
+      activexDashInteropLib.SafeArray[java.lang.String] with stdLib.SafeArray[java.lang.String]
+    ]) with (stdLib.SafeArray[
+      activexDashInteropLib.SafeArray[java.lang.String] with stdLib.SafeArray[java.lang.String]
+    ])
+  ): java.lang.String = js.native
+  def CreateCubeFile(
+    File: java.lang.String,
+    Measures: activexDashInteropLib.SafeArray[java.lang.String] with stdLib.SafeArray[java.lang.String],
+    Levels: activexDashInteropLib.SafeArray[java.lang.String] with stdLib.SafeArray[java.lang.String],
+    Members: (activexDashInteropLib.SafeArray[
+      activexDashInteropLib.SafeArray[java.lang.String] with stdLib.SafeArray[java.lang.String]
+    ]) with (stdLib.SafeArray[
+      activexDashInteropLib.SafeArray[java.lang.String] with stdLib.SafeArray[java.lang.String]
+    ]),
     Properties: scala.Boolean
   ): java.lang.String = js.native
   def CubeFields(Index: java.lang.String): CubeField = js.native
@@ -276,7 +297,9 @@ class PivotTable protected () extends js.Object {
   def DataBodyRange(Address: java.lang.String): Range = js.native
   def DataBodyRange(RowIndex: scala.Double): Range = js.native
   def DataBodyRange(RowIndex: scala.Double, ColumnIndex: scala.Double): Range = js.native
-  def DataFields(Indexes: activexDashInteropLib.SafeArray[scala.Double | java.lang.String]): PivotFields = js.native
+  def DataFields(
+    Indexes: (activexDashInteropLib.SafeArray[scala.Double | java.lang.String]) with (stdLib.SafeArray[scala.Double | java.lang.String])
+  ): PivotFields = js.native
   def DataFields(Index: java.lang.String): PivotField = js.native
   def DataFields(Index: scala.Double): PivotField = js.native
   def DataLabelRange(Address: java.lang.String): Range = js.native
@@ -348,11 +371,15 @@ class PivotTable protected () extends js.Object {
     Field14: js.UndefOr[java.lang.String],
     Item14: js.UndefOr[java.lang.String]
   ): Range = js.native
-  def HiddenFields(Indexes: activexDashInteropLib.SafeArray[scala.Double | java.lang.String]): PivotFields = js.native
+  def HiddenFields(
+    Indexes: (activexDashInteropLib.SafeArray[scala.Double | java.lang.String]) with (stdLib.SafeArray[scala.Double | java.lang.String])
+  ): PivotFields = js.native
   def HiddenFields(Index: java.lang.String): PivotField = js.native
   def HiddenFields(Index: scala.Double): PivotField = js.native
   def ListFormulas(): scala.Unit = js.native
-  def PageFields(Indexes: activexDashInteropLib.SafeArray[scala.Double | java.lang.String]): PivotFields = js.native
+  def PageFields(
+    Indexes: (activexDashInteropLib.SafeArray[scala.Double | java.lang.String]) with (stdLib.SafeArray[scala.Double | java.lang.String])
+  ): PivotFields = js.native
   def PageFields(Index: java.lang.String): PivotField = js.native
   def PageFields(Index: scala.Double): PivotField = js.native
   def PageRange(Address: java.lang.String): Range = js.native
@@ -362,7 +389,9 @@ class PivotTable protected () extends js.Object {
   def PageRangeCells(RowIndex: scala.Double): Range = js.native
   def PageRangeCells(RowIndex: scala.Double, ColumnIndex: scala.Double): Range = js.native
   def PivotCache(): PivotCache = js.native
-  def PivotFields(Indexes: activexDashInteropLib.SafeArray[scala.Double | java.lang.String]): PivotFields = js.native
+  def PivotFields(
+    Indexes: (activexDashInteropLib.SafeArray[scala.Double | java.lang.String]) with (stdLib.SafeArray[scala.Double | java.lang.String])
+  ): PivotFields = js.native
   def PivotFields(Index: java.lang.String): PivotField = js.native
   def PivotFields(Index: scala.Double): PivotField = js.native
   def PivotFormulas(Index: java.lang.String): PivotFormula = js.native
@@ -394,7 +423,9 @@ class PivotTable protected () extends js.Object {
   def RefreshTable(): scala.Boolean = js.native
   def RepeatAllLabels(Repeat: XlPivotFieldRepeatLabels): scala.Unit = js.native
   def RowAxisLayout(RowLayout: XlLayoutRowType): scala.Unit = js.native
-  def RowFields(Indexes: activexDashInteropLib.SafeArray[scala.Double | java.lang.String]): PivotFields = js.native
+  def RowFields(
+    Indexes: (activexDashInteropLib.SafeArray[scala.Double | java.lang.String]) with (stdLib.SafeArray[scala.Double | java.lang.String])
+  ): PivotFields = js.native
   def RowFields(Index: java.lang.String): PivotField = js.native
   def RowFields(Index: scala.Double): PivotField = js.native
   def RowRange(Address: java.lang.String): Range = js.native
@@ -412,7 +443,9 @@ class PivotTable protected () extends js.Object {
   def TableRange2(RowIndex: scala.Double): Range = js.native
   def TableRange2(RowIndex: scala.Double, ColumnIndex: scala.Double): Range = js.native
   def Update(): scala.Unit = js.native
-  def VisibleFields(Indexes: activexDashInteropLib.SafeArray[scala.Double | java.lang.String]): PivotFields = js.native
+  def VisibleFields(
+    Indexes: (activexDashInteropLib.SafeArray[scala.Double | java.lang.String]) with (stdLib.SafeArray[scala.Double | java.lang.String])
+  ): PivotFields = js.native
   def VisibleFields(Index: java.lang.String): PivotField = js.native
   def VisibleFields(Index: scala.Double): PivotField = js.native
   /** @param Mode [Mode=0] */

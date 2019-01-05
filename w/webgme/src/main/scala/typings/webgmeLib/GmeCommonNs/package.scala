@@ -19,7 +19,7 @@ package object GmeCommonNs {
   type CrosscutsInfo = Registry
   type DataObject = webgmeLib.CoreNs.Node
   type DefObject = DefStringObject | DefIntegerObject | DefFloatObject | DefBoolObject | DefAssetObject
-  type ErrorOnlyCallback = js.Function1[/* err */ nodeLib.Error | scala.Null, scala.Unit]
+  type ErrorOnlyCallback = js.Function1[/* err */ (nodeLib.Error with stdLib.Error) | scala.Null, scala.Unit]
   type ErrorStr = java.lang.String
   type ISO8601 = java.lang.String
   type InAttr = RegObj | Primitive | scala.Null
@@ -43,7 +43,7 @@ package object GmeCommonNs {
   type ProjectStart = java.lang.String | webgmeLib.GmeStorageNs.CommitHash | js.Array[java.lang.String] | js.Array[webgmeLib.GmeStorageNs.CommitHash]
   type Registry = js.Any
   type RelId = java.lang.String
-  type ResultCallback[T] = js.Function2[/* err */ nodeLib.Error | scala.Null, /* result */ T, scala.Unit]
+  type ResultCallback[T] = js.Function2[/* err */ (nodeLib.Error with stdLib.Error) | scala.Null, /* result */ T, scala.Unit]
   type SetId = java.lang.String
   type ThenCallback = VoidCallback
   type VoidCallback = js.Function0[scala.Unit]

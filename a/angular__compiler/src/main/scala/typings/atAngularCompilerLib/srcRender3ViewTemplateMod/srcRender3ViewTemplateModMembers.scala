@@ -14,13 +14,13 @@ object srcRender3ViewTemplateModMembers extends js.Object {
     templateUrl: java.lang.String,
     options: atAngularCompilerLib.Anon_PreserveWhitespaces,
     relativeContextFilePath: java.lang.String
-  ): atAngularCompilerLib.Anon_RelativeContextFilePath = js.native
+  ): atAngularCompilerLib.Anon_Errors = js.native
   def parseTemplate(
     template: java.lang.String,
     templateUrl: java.lang.String,
     options: js.UndefOr[scala.Nothing],
     relativeContextFilePath: java.lang.String
-  ): atAngularCompilerLib.Anon_RelativeContextFilePath = js.native
+  ): atAngularCompilerLib.Anon_Errors = js.native
   def renderFlagCheckIfStmt(
     flags: atAngularCompilerLib.srcCoreMod.RenderFlags,
     statements: js.Array[atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Statement]

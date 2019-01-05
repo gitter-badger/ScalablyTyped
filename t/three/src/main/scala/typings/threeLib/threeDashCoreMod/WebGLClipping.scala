@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class WebGLClipping () extends js.Object {
   var numPlanes: scala.Double = js.native
-  var uniform: threeLib.Anon_NeedsUpdate = js.native
+  var uniform: threeLib.Anon_ValueNeedsUpdate = js.native
   def beginShadows(): scala.Unit = js.native
   def endShadows(): scala.Unit = js.native
   def init(planes: js.Array[_], enableLocalClipping: scala.Boolean, camera: Camera): scala.Boolean = js.native

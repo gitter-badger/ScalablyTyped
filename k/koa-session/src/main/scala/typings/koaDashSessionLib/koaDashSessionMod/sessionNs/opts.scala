@@ -17,7 +17,7 @@ trait opts extends js.Object {
     */
   var beforeSave: js.UndefOr[
     js.Function2[
-      /* ctx */ koaDashSessionLib.koaDashSessionMod.koaMod.Context, 
+      /* ctx */ koaDashSessionLib.koaDashSessionMod.koaMod.Context with koaLib.koaMod.ApplicationNs.Context, 
       /* session */ Session, 
       scala.Unit
     ]
@@ -73,7 +73,7 @@ trait opts extends js.Object {
     */
   var valid: js.UndefOr[
     js.Function2[
-      /* ctx */ koaDashSessionLib.koaDashSessionMod.koaMod.Context, 
+      /* ctx */ koaDashSessionLib.koaDashSessionMod.koaMod.Context with koaLib.koaMod.ApplicationNs.Context, 
       /* session */ stdLib.Partial[Session], 
       scala.Unit
     ]

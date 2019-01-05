@@ -6,10 +6,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_LEFT extends js.Object {
-  var DOWN: java.lang.String
-  var LEFT: java.lang.String
-  var NONE: java.lang.String
-  var RIGHT: java.lang.String
-  var UP: java.lang.String
+  var DOWN: scala.Double
+  var LEFT: scala.Double
+  var PG_DOWN: scala.Double
+  var PG_UP: scala.Double
+  var RIGHT: scala.Double
+  var UP: scala.Double
 }
 

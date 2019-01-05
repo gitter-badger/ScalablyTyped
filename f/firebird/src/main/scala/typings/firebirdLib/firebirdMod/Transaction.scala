@@ -25,7 +25,7 @@ trait Transaction extends js.Object {
     *
     * @param callback function(err), where err is error object in case of error.
     */
-  def commit(callback: js.Function1[/* err */ nodeLib.Error | scala.Null, scala.Unit]): scala.Unit
+  def commit(callback: js.Function1[/* err */ (nodeLib.Error with stdLib.Error) | scala.Null, scala.Unit]): scala.Unit
   /**
     * Synchronously commits this transaction.
     *
@@ -51,7 +51,11 @@ trait Transaction extends js.Object {
     */
   def query(
     sql: java.lang.String,
-    callback: js.Function2[/* err */ nodeLib.Error | scala.Null, /* res */ FBResult, scala.Unit]
+    callback: js.Function2[
+      /* err */ (nodeLib.Error with stdLib.Error) | scala.Null, 
+      /* res */ FBResult, 
+      scala.Unit
+    ]
   ): scala.Unit
   /**
     * Executes SQL query in context of this transaction. Returns FBResult object in case of success. Raises error otherwise.
@@ -67,7 +71,7 @@ trait Transaction extends js.Object {
     *
     * @param callback function(err), where err is error object in case of error.
     */
-  def rollback(callback: js.Function1[/* err */ nodeLib.Error | scala.Null, scala.Unit]): scala.Unit
+  def rollback(callback: js.Function1[/* err */ (nodeLib.Error with stdLib.Error) | scala.Null, scala.Unit]): scala.Unit
   /**
     * Synchronously rollbacks transaction.
     *
@@ -83,7 +87,7 @@ trait Transaction extends js.Object {
     *
     * @param callback function(err), where err is error object in case of error.
     */
-  def start(callback: js.Function1[/* err */ nodeLib.Error | scala.Null, scala.Unit]): scala.Unit
+  def start(callback: js.Function1[/* err */ (nodeLib.Error with stdLib.Error) | scala.Null, scala.Unit]): scala.Unit
   /**
     * Synchronously starts transaction.
     *

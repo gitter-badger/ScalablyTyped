@@ -27,7 +27,7 @@ class OLEDBConnection protected () extends js.Object {
   var MaxDrillthroughRecords: scala.Double = js.native
   val OLAP: scala.Boolean = js.native
   val Parent: js.Any = js.native
-  val RefreshDate: activexDashInteropLib.VarDate = js.native
+  val RefreshDate: activexDashInteropLib.VarDate with stdLib.VarDate = js.native
   var RefreshOnFileOpen: scala.Boolean = js.native
   var RefreshPeriod: scala.Double = js.native
   val Refreshing: scala.Boolean = js.native

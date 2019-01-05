@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 object maliDashOnerrorMod extends js.Object {
   def apply(
     fn: js.Function2[
-      /* err */ nodeLib.Error, 
+      /* err */ nodeLib.Error with stdLib.Error, 
       /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify Context */ /* ctx */ js.Any, 
       scala.Unit
     ]

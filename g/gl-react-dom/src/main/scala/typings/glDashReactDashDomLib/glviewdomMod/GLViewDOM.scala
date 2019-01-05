@@ -10,9 +10,9 @@ import scala.scalajs.js.annotation._
 class GLViewDOM ()
   extends reactLib.reactMod.Component[GLViewDOMProps, GLViewDOMState, js.Any] {
   var afterDraw: js.UndefOr[js.Function0[scala.Unit]] = js.native
-  var canvas: js.UndefOr[reactLib.HTMLCanvasElement] = js.native
+  var canvas: js.UndefOr[reactLib.HTMLCanvasElement with stdLib.HTMLCanvasElement] = js.native
   var debugError: js.UndefOr[js.Function1[/* error */ stdLib.Error, scala.Unit]] = js.native
-  var gl: js.UndefOr[reactLib.WebGLRenderingContext] = js.native
+  var gl: js.UndefOr[reactLib.WebGLRenderingContext with stdLib.WebGLRenderingContext] = js.native
   var webglContextAttributes: stdLib.WebGLContextAttributes = js.native
   def captureAsBlob(callback: js.Function1[/* data */ stdLib.Blob, scala.Unit]): js.Promise[stdLib.Blob] = js.native
   def captureAsBlob(callback: js.Function1[/* data */ stdLib.Blob, scala.Unit], `type`: SupportedImage): js.Promise[stdLib.Blob] = js.native
@@ -24,6 +24,6 @@ class GLViewDOM ()
   def captureAsDataURL(): java.lang.String = js.native
   def captureAsDataURL(`type`: SupportedImage): java.lang.String = js.native
   def captureAsDataURL(`type`: SupportedImage, quality: ValidQuality): java.lang.String = js.native
-  def onRef(ref: reactLib.HTMLCanvasElement): scala.Unit = js.native
+  def onRef(ref: reactLib.HTMLCanvasElement with stdLib.HTMLCanvasElement): scala.Unit = js.native
 }
 

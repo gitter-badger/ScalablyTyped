@@ -8,6 +8,11 @@ import scala.scalajs.js.annotation._
 trait TagComponentProps extends js.Object {
   var classNames: ClassNames
   var tag: Tag
-  def onDelete(event: reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLButtonElement, reactLib.NativeMouseEvent]): scala.Unit
+  def onDelete(
+    event: reactLib.reactMod.ReactNs.MouseEvent[
+      reactLib.HTMLButtonElement with stdLib.HTMLButtonElement, 
+      reactLib.NativeMouseEvent
+    ]
+  ): scala.Unit
 }
 

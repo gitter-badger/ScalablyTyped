@@ -16,7 +16,7 @@ class BaseSelectedItemsList[T, P /* <: officeDashUiDashFabricDashReactLib.libCom
   override var items: js.UndefOr[js.Array[T]] = js.native
   @JSName("items")
   val items_BaseSelectedItemsList: js.Array[T] = js.native
-  var root: reactLib.HTMLElement = js.native
+  var root: reactLib.HTMLElement with stdLib.HTMLElement = js.native
   var selection: officeDashUiDashFabricDashReactLib.libSelectionMod.Selection = js.native
   /* private */ def _canRemoveItem(item: js.Any): js.Any = js.native
   /* private */ def _onSelectedItemsUpdated(): js.Any = js.native
@@ -35,7 +35,7 @@ class BaseSelectedItemsList[T, P /* <: officeDashUiDashFabricDashReactLib.libCom
   def highlightedItems(): js.Array[T] = js.native
   /* protected */ def onChange(): scala.Unit = js.native
   /* protected */ def onChange(items: js.Array[T]): scala.Unit = js.native
-  def onCopy(ev: reactLib.reactMod.ReactNs.ClipboardEvent[reactLib.HTMLElement]): scala.Unit = js.native
+  def onCopy(ev: reactLib.reactMod.ReactNs.ClipboardEvent[reactLib.HTMLElement with stdLib.HTMLElement]): scala.Unit = js.native
   /* protected */ def onItemChange(changedItem: T, index: scala.Double): scala.Unit = js.native
   /* protected */ def onSelectionChanged(): scala.Unit = js.native
   def removeItem(

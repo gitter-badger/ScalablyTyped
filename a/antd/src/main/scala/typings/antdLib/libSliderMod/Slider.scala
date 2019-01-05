@@ -13,7 +13,7 @@ trait Slider
   var rcSlider: js.Any = js.native
   def blur(): scala.Unit = js.native
   def focus(): scala.Unit = js.native
-  def handleWithTooltip(info: antdLib.Anon_Value): reactLib.reactMod.ReactNs.ReactElement[_] = js.native
+  def handleWithTooltip(info: antdLib.Anon_ValueDragging): reactLib.reactMod.ReactNs.ReactElement[_] = js.native
   def saveSlider(node: js.Any): scala.Unit = js.native
   def toggleTooltipVisible(index: scala.Double, visible: scala.Boolean): scala.Unit = js.native
 }

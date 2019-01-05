@@ -9,12 +9,12 @@ trait ImageCropData extends js.Object {
   /**
     * (Optional) size to scale the cropped image to.
     */
-  var displaySize: js.UndefOr[reactDashNativeLib.Anon_Height] = js.undefined
+  var displaySize: js.UndefOr[reactDashNativeLib.Anon_Width] = js.undefined
   /**
     * The top-left corner of the cropped image, specified in the original
     * image's coordinate space.
     */
-  var offset: reactDashNativeLib.Anon_YX
+  var offset: reactDashNativeLib.Anon_X
   /**
     * (Optional) the resizing mode to use when scaling the image. If the
     * `displaySize` param is not specified, this has no effect.
@@ -26,6 +26,6 @@ trait ImageCropData extends js.Object {
     * The size (dimensions) of the cropped image, specified in the original
     * image's coordinate space.
     */
-  var size: reactDashNativeLib.Anon_Height
+  var size: reactDashNativeLib.Anon_Width
 }
 

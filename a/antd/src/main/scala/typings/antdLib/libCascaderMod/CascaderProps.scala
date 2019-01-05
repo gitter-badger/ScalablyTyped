@@ -31,7 +31,10 @@ trait CascaderProps extends js.Object {
   /** typo props name before antd@3.7.0 */
   var filedNames: js.UndefOr[FieldNamesType] = js.undefined
   var getPopupContainer: js.UndefOr[
-    js.Function1[/* triggerNode */ js.UndefOr[reactLib.HTMLElement], reactLib.HTMLElement]
+    js.Function1[
+      /* triggerNode */ js.UndefOr[reactLib.HTMLElement with stdLib.HTMLElement], 
+      reactLib.HTMLElement with stdLib.HTMLElement
+    ]
   ] = js.undefined
   var inputPrefixCls: js.UndefOr[java.lang.String] = js.undefined
   var loadData: js.UndefOr[

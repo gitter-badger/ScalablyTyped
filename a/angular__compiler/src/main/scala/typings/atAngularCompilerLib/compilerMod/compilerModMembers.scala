@@ -60,12 +60,12 @@ object compilerModMembers extends js.Object {
   def createAotCompiler(
     compilerHost: atAngularCompilerLib.srcAotCompilerUnderscoreHostMod.AotCompilerHost,
     options: atAngularCompilerLib.srcAotCompilerUnderscoreOptionsMod.AotCompilerOptions
-  ): atAngularCompilerLib.Anon_Reflector = js.native
+  ): atAngularCompilerLib.Anon_Compiler = js.native
   def createAotCompiler(
     compilerHost: atAngularCompilerLib.srcAotCompilerUnderscoreHostMod.AotCompilerHost,
     options: atAngularCompilerLib.srcAotCompilerUnderscoreOptionsMod.AotCompilerOptions,
     errorCollector: js.Function2[/* error */ js.Any, /* type */ js.UndefOr[js.Any], scala.Unit]
-  ): atAngularCompilerLib.Anon_Reflector = js.native
+  ): atAngularCompilerLib.Anon_Compiler = js.native
   def createAotUrlResolver(host: atAngularCompilerLib.Anon_ResourceNameToFileName): atAngularCompilerLib.srcUrlUnderscoreResolverMod.UrlResolver = js.native
   def createElementCssSelector(elementName: java.lang.String, attributes: js.Array[js.Tuple2[java.lang.String, java.lang.String]]): atAngularCompilerLib.srcSelectorMod.CssSelector = js.native
   def createLoweredSymbol(id: scala.Double): java.lang.String = js.native
@@ -105,25 +105,25 @@ object compilerModMembers extends js.Object {
   def mergeAnalyzedFiles(analyzedFiles: js.Array[atAngularCompilerLib.srcAotCompilerMod.NgAnalyzedFile]): atAngularCompilerLib.srcAotCompilerMod.NgAnalyzedModules = js.native
   def mergeNsAndName(prefix: java.lang.String, localName: java.lang.String): java.lang.String = js.native
   def ngModuleJitUrl(moduleMeta: atAngularCompilerLib.srcCompileUnderscoreMetadataMod.CompileNgModuleMetadata): java.lang.String = js.native
-  def parseHostBindings(host: org.scalablytyped.runtime.StringDictionary[java.lang.String]): atAngularCompilerLib.Anon_AttributesKey = js.native
+  def parseHostBindings(host: org.scalablytyped.runtime.StringDictionary[java.lang.String]): atAngularCompilerLib.Anon_Attributes = js.native
   def parseTemplate(
     template: java.lang.String,
     templateUrl: java.lang.String,
     options: atAngularCompilerLib.Anon_PreserveWhitespaces,
     relativeContextFilePath: java.lang.String
-  ): atAngularCompilerLib.Anon_RelativeContextFilePath = js.native
+  ): atAngularCompilerLib.Anon_Errors = js.native
   def parseTemplate(
     template: java.lang.String,
     templateUrl: java.lang.String,
     options: js.UndefOr[scala.Nothing],
     relativeContextFilePath: java.lang.String
-  ): atAngularCompilerLib.Anon_RelativeContextFilePath = js.native
+  ): atAngularCompilerLib.Anon_Errors = js.native
   def preserveWhitespacesDefault(): scala.Boolean = js.native
   def preserveWhitespacesDefault(preserveWhitespacesOption: scala.Boolean): scala.Boolean = js.native
   def preserveWhitespacesDefault(preserveWhitespacesOption: scala.Boolean, defaultSetting: scala.Boolean): scala.Boolean = js.native
   def preserveWhitespacesDefault(preserveWhitespacesOption: scala.Null, defaultSetting: scala.Boolean): scala.Boolean = js.native
   def publishFacade(global: js.Any): scala.Unit = js.native
-  def removeSummaryDuplicates[T /* <: atAngularCompilerLib.Anon_Type */](items: js.Array[T]): js.Array[T] = js.native
+  def removeSummaryDuplicates[T /* <: atAngularCompilerLib.Anon_TypeCompileTypeMetadata */](items: js.Array[T]): js.Array[T] = js.native
   def rendererTypeName(compType: js.Any): java.lang.String = js.native
   def sanitizeIdentifier(name: java.lang.String): java.lang.String = js.native
   def sharedStylesheetJitUrl(

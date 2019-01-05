@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait UtilBase extends js.Object {
   /** check browser agent */
-  var browser: juiDashCoreLib.Anon_Mozilla = js.native
+  var browser: juiDashCoreLib.Anon_Webkit = js.native
   var isTouch: scala.Boolean = js.native
   def ajax(data: js.Any): scala.Unit = js.native
   /**

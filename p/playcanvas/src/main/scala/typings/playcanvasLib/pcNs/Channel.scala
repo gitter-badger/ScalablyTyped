@@ -21,7 +21,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Channel protected () extends js.Object {
   def this(manager: SoundManager, sound: Sound) = this()
-  def this(manager: SoundManager, sound: Sound, options: playcanvasLib.Anon_Loop) = this()
+  def this(manager: SoundManager, sound: Sound, options: playcanvasLib.Anon_Volume) = this()
   /**
     * @private
     * @function

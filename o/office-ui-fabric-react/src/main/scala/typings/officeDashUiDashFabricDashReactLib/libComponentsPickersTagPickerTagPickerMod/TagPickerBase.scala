@@ -16,6 +16,6 @@ class TagPickerBase ()
 @JSImport("office-ui-fabric-react/lib/components/pickers/TagPicker/TagPicker", "TagPickerBase")
 @js.native
 object TagPickerBase extends js.Object {
-  var defaultProps: officeDashUiDashFabricDashReactLib.Anon_OnRenderItem = js.native
+  var defaultProps: officeDashUiDashFabricDashReactLib.Anon_OnRenderItemProps = js.native
 }
 

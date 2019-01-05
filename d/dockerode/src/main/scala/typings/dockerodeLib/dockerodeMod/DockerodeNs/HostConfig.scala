@@ -34,7 +34,7 @@ trait HostConfig extends js.Object {
   var Isolation: java.lang.String
   var KernelMemory: scala.Double
   var Links: js.UndefOr[js.Any] = js.undefined
-  var LogConfig: dockerodeLib.Anon_Config
+  var LogConfig: dockerodeLib.Anon_Type
   var Memory: scala.Double
   var MemoryReservation: scala.Double
   var MemorySwap: scala.Double
@@ -48,7 +48,7 @@ trait HostConfig extends js.Object {
   var Privileged: scala.Boolean
   var PublishAllPorts: scala.Boolean
   var ReadonlyRootfs: scala.Boolean
-  var RestartPolicy: dockerodeLib.Anon_MaximumRetryCount
+  var RestartPolicy: dockerodeLib.Anon_NameMaximumRetryCount
   var SecurityOpt: js.UndefOr[js.Any] = js.undefined
   var ShmSize: scala.Double
   var UTSMode: java.lang.String

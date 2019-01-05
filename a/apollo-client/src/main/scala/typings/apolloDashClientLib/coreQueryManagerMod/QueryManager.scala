@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("apollo-client/core/QueryManager", "QueryManager")
 @js.native
 class QueryManager[TStore] protected () extends js.Object {
-  def this(hasLinkQueryDeduplicationStoreOnBroadcastSsrModeClientAwareness: apolloDashClientLib.Anon_ClientAwareness[TStore]) = this()
+  def this(hasLinkQueryDeduplicationStoreOnBroadcastSsrModeClientAwareness: apolloDashClientLib.Anon_Link[TStore]) = this()
   var buildOperationForLink: js.Any = js.native
   var clientAwareness: js.Any = js.native
   var dataStore: apolloDashClientLib.dataStoreMod.DataStore[TStore] = js.native
@@ -66,11 +66,11 @@ class QueryManager[TStore] protected () extends js.Object {
   def generateQueryId(): java.lang.String = js.native
   def getCurrentQueryResult[T](
     observableQuery: apolloDashClientLib.coreObservableQueryMod.ObservableQuery[T, apolloDashClientLib.coreTypesMod.OperationVariables]
-  ): apolloDashClientLib.Anon_Partial = js.native
+  ): apolloDashClientLib.Anon_Data = js.native
   def getCurrentQueryResult[T](
     observableQuery: apolloDashClientLib.coreObservableQueryMod.ObservableQuery[T, apolloDashClientLib.coreTypesMod.OperationVariables],
     optimistic: scala.Boolean
-  ): apolloDashClientLib.Anon_Partial = js.native
+  ): apolloDashClientLib.Anon_Data = js.native
   def getQueryWithPreviousResult[T](
     queryIdOrObservable: apolloDashClientLib.coreObservableQueryMod.ObservableQuery[T, apolloDashClientLib.coreTypesMod.OperationVariables]
   ): apolloDashClientLib.Anon_PreviousResult = js.native

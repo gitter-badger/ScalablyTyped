@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait IMongoData extends js.Object {
   var event: diagnosticDashChannelDashPublishersLib.Anon_CommandName
-  var startedData: diagnosticDashChannelDashPublishersLib.Anon_Command
+  var startedData: diagnosticDashChannelDashPublishersLib.Anon_DatabaseName
   var succeeded: scala.Boolean
 }
 

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class BingMapsImageryProvider protected ()
   extends cesiumLib.cesiumMod.CesiumNs.BingMapsImageryProvider {
-  def this(options: cesiumLib.Anon_MapStyle) = this()
+  def this(options: cesiumLib.Anon_UrlKey) = this()
   /* CompleteClass */
   override var credit: cesiumLib.cesiumMod.CesiumNs.Credit = js.native
   /* CompleteClass */
@@ -77,7 +77,7 @@ class BingMapsImageryProvider protected ()
 @JSImport("cesium", "BingMapsImageryProvider")
 @js.native
 object BingMapsImageryProvider extends js.Object {
-  def quadKeyToTileXY(quadkey: java.lang.String): cesiumLib.Anon_Level = js.native
+  def quadKeyToTileXY(quadkey: java.lang.String): cesiumLib.Anon_X = js.native
   def tileXYToQuadKey(x: scala.Double, y: scala.Double, level: scala.Double): java.lang.String = js.native
 }
 

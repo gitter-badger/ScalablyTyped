@@ -236,7 +236,7 @@ trait CommonSeriesOptions extends js.Object {
   /** Specifies the type of the series to render in chart.
     * @Default {column. See Type}
     */
-  var `type`: js.UndefOr[Type | java.lang.String] = js.undefined
+  var `type`: js.UndefOr[(Type with ejDotWebDotAllLib.ejNs.Type) | java.lang.String] = js.undefined
   /** Enables or disables the visibility of legend item.
     * @Default {visible}
     */

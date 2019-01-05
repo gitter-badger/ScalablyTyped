@@ -9,12 +9,16 @@ trait ScatterplotChartProps extends js.Object {
   /** Whether to show axis labels */
   var axes: js.UndefOr[scala.Boolean] = js.undefined
   /** Labels for each of the axis */
-  var axisLabels: js.UndefOr[reactDashEasyDashChartLib.Anon_Y] = js.undefined
+  var axisLabels: js.UndefOr[reactDashEasyDashChartLib.Anon_XY] = js.undefined
   var clickHandler: js.UndefOr[
-    js.Function2[/* data */ ScatterplotData, /* mouseEvent */ reactLib.MouseEvent, _]
+    js.Function2[
+      /* data */ ScatterplotData, 
+      /* mouseEvent */ reactLib.MouseEvent with stdLib.MouseEvent, 
+      _
+    ]
   ] = js.undefined
   /** Allows styling of individual types of points */
-  var config: js.UndefOr[js.Array[reactDashEasyDashChartLib.Anon_Stroke]] = js.undefined
+  var config: js.UndefOr[js.Array[reactDashEasyDashChartLib.Anon_Type]] = js.undefined
   var data: js.Array[ScatterplotData]
   /** Radius of the dots on the chart */
   var dotRadius: js.UndefOr[scala.Double] = js.undefined
@@ -23,15 +27,27 @@ trait ScatterplotChartProps extends js.Object {
   /** Height of the chart in pixels */
   var height: js.UndefOr[scala.Double] = js.undefined
   /** css margins */
-  var margin: js.UndefOr[reactDashEasyDashChartLib.Anon_Bottom] = js.undefined
+  var margin: js.UndefOr[reactDashEasyDashChartLib.Anon_Top] = js.undefined
   var mouseMoveHandler: js.UndefOr[
-    js.Function2[/* data */ ScatterplotData, /* mouseEvent */ reactLib.MouseEvent, _]
+    js.Function2[
+      /* data */ ScatterplotData, 
+      /* mouseEvent */ reactLib.MouseEvent with stdLib.MouseEvent, 
+      _
+    ]
   ] = js.undefined
   var mouseOutHandler: js.UndefOr[
-    js.Function2[/* data */ ScatterplotData, /* mouseEvent */ reactLib.MouseEvent, _]
+    js.Function2[
+      /* data */ ScatterplotData, 
+      /* mouseEvent */ reactLib.MouseEvent with stdLib.MouseEvent, 
+      _
+    ]
   ] = js.undefined
   var mouseOverHandler: js.UndefOr[
-    js.Function2[/* data */ ScatterplotData, /* mouseEvent */ reactLib.MouseEvent, _]
+    js.Function2[
+      /* data */ ScatterplotData, 
+      /* mouseEvent */ reactLib.MouseEvent with stdLib.MouseEvent, 
+      _
+    ]
   ] = js.undefined
   /** Whether to show vertical grid lines on the chart */
   var verticalGrid: js.UndefOr[scala.Boolean] = js.undefined

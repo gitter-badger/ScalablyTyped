@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait IImageProps
-  extends reactLib.reactMod.ReactNs.ImgHTMLAttributes[reactLib.HTMLImageElement] {
+  extends reactLib.reactMod.ReactNs.ImgHTMLAttributes[reactLib.HTMLImageElement with stdLib.HTMLImageElement] {
   /**
     * Optional callback to access the ICheckbox interface. Use this instead of ref for accessing
     * the public methods and properties of the component.

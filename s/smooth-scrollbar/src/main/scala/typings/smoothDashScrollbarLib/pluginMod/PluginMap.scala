@@ -6,13 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait PluginMap extends js.Object {
-  var constructors: org.scalablytyped.runtime.StringDictionary[
-    org.scalablytyped.runtime.Instantiable2[
-      /* scrollbar */ smoothDashScrollbarLib.scrollbarMod.Scrollbar, 
-      /* options */ js.UndefOr[/* options */ js.Any], 
-      ScrollbarPlugin
-    ]
-  ]
-  var order: nodeLib.Set[java.lang.String]
+  var constructors: org.scalablytyped.runtime.StringDictionary[smoothDashScrollbarLib.Anon_PluginName]
+  var order: nodeLib.Set[java.lang.String] with coreDashJsLib.Set[java.lang.String] with lodashLib.lodashMod.Global.Set[java.lang.String] with stdLib.Set[java.lang.String]
 }
 

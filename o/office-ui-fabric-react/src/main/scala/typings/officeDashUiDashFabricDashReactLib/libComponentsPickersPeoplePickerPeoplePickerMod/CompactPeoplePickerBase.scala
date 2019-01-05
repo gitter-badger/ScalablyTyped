@@ -13,6 +13,6 @@ class CompactPeoplePickerBase () extends BasePeoplePicker
 @js.native
 object CompactPeoplePickerBase extends js.Object {
   /** Default props for CompactPeoplePicker. */
-  var defaultProps: officeDashUiDashFabricDashReactLib.Anon_CreateGenericItem = js.native
+  var defaultProps: officeDashUiDashFabricDashReactLib.Anon_OnRenderItem = js.native
 }
 

@@ -111,7 +111,7 @@ trait ConnectorsLabel extends js.Object {
   /** Defines how to align the text inside the label.
     * @Default {ej.datavisualization.Diagram.TextAlign.Center}
     */
-  var textAlign: js.UndefOr[TextAlign | java.lang.String] = js.undefined
+  var textAlign: js.UndefOr[(TextAlign with ejDotWebDotAllLib.ejNs.TextAlign) | java.lang.String] = js.undefined
   /** Sets how to decorate the label text.
     * @Default {ej.datavisualization.Diagram.TextDecorations.None}
     */

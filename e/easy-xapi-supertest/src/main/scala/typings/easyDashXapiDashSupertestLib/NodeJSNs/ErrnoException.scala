@@ -5,9 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ErrnoException
-  extends nodeLib.Error {
+  extends stdLib.Error {
   var code: js.UndefOr[java.lang.String] = js.undefined
   var errno: js.UndefOr[scala.Double] = js.undefined
   var path: js.UndefOr[java.lang.String] = js.undefined

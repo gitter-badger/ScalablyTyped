@@ -110,7 +110,7 @@ trait RaphaelElement extends js.Object {
   def getBBox(): BoundingBox = js.native
   def getBBox(isWithoutTransform: scala.Boolean): BoundingBox = js.native
   def glow(): RaphaelSet = js.native
-  def glow(glow: Anon_Color): RaphaelSet = js.native
+  def glow(glow: Anon_Width): RaphaelSet = js.native
   def hide(): RaphaelElement = js.native
   def hover(f_in: js.Function, f_out: js.Function): RaphaelElement = js.native
   def hover(f_in: js.Function, f_out: js.Function, icontext: js.Any): RaphaelElement = js.native

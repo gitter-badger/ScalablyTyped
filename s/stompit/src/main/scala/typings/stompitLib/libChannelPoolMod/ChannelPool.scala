@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait ChannelPool extends js.Object {
   def channel(
     callback: js.Function2[
-      /* err */ nodeLib.Error | scala.Null, 
+      /* err */ (nodeLib.Error with stdLib.Error) | scala.Null, 
       /* channel */ stompitLib.libChannelMod.namespaced, 
       scala.Unit
     ]

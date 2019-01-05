@@ -11,8 +11,8 @@ trait V1Resource extends js.Object {
     * duration. Metrics include number of clicks, redirects, installs,
     * app first opens, and app reopens.
     */
-  def getLinkStats(request: gapiDotClientDotFirebasedynamiclinksLib.Anon_AccesstokenPrettyPrint): gapiDotClientLib.gapiNs.clientNs.Request[DynamicLinkStats]
+  def getLinkStats(request: gapiDotClientDotFirebasedynamiclinksLib.Anon_XgafvAccesstoken): gapiDotClientLib.gapiNs.clientNs.Request[DynamicLinkStats]
   /** Get iOS strong/weak-match info for post-install attribution. */
-  def installAttribution(request: gapiDotClientDotFirebasedynamiclinksLib.Anon_Accesstoken): gapiDotClientLib.gapiNs.clientNs.Request[GetIosPostInstallAttributionResponse]
+  def installAttribution(request: gapiDotClientDotFirebasedynamiclinksLib.Anon_Xgafv): gapiDotClientLib.gapiNs.clientNs.Request[GetIosPostInstallAttributionResponse]
 }
 

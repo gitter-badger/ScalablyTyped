@@ -127,7 +127,9 @@ class Chart protected () extends js.Object {
   def Buttons(): js.Any = js.native
   def Buttons(Index: js.Any): js.Any = js.native
   def ChartObjects(): ChartObjects = js.native
-  def ChartObjects(Index: activexDashInteropLib.SafeArray[java.lang.String | scala.Double]): ChartObjects = js.native
+  def ChartObjects(
+    Index: (activexDashInteropLib.SafeArray[java.lang.String | scala.Double]) with (stdLib.SafeArray[java.lang.String | scala.Double])
+  ): ChartObjects = js.native
   def ChartObjects(Index: java.lang.String): ChartObject = js.native
   def ChartObjects(Index: scala.Double): ChartObject = js.native
   def ChartWizard(

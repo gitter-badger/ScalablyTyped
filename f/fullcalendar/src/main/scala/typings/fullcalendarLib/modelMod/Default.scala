@@ -20,7 +20,7 @@ class Default ()
   var stopListeningTo: js.Function2[/* other */ js.Any, /* eventName */ js.UndefOr[js.Any], _] = js.native
   var trigger: js.Function2[/* types */ js.Any, /* repeated */ js.Any, _] = js.native
   var triggerWith: js.Function3[/* types */ js.Any, /* context */ js.Any, /* args */ js.Any, _] = js.native
-  def _watchDeps(depList: js.Any, startFunc: js.Any, stopFunc: js.Any): fullcalendarLib.Anon_Flash = js.native
+  def _watchDeps(depList: js.Any, startFunc: js.Any, stopFunc: js.Any): fullcalendarLib.Anon_Teardown = js.native
   def applyGlobalWatchers(): scala.Unit = js.native
   def constructed(): scala.Unit = js.native
   def flash(name: js.Any): scala.Unit = js.native

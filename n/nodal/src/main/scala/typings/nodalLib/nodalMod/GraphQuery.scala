@@ -15,18 +15,8 @@ class GraphQuery protected () extends js.Object {
     * @param {Nodal.Model} [Model=null] The Model to base your query around (used for testing)
     */
   def this(str: java.lang.String, maxDepth: scala.Double) = this()
-  def this(str: java.lang.String, maxDepth: scala.Double, mModel: org.scalablytyped.runtime.Instantiable3[
-      /* modelData */ js.Object, 
-      /* fromStorage */ js.UndefOr[/* fromStorage */ scala.Boolean], 
-      /* fromSeed */ js.UndefOr[/* fromSeed */ scala.Boolean], 
-      Model
-    ]) = this()
-  var Model: org.scalablytyped.runtime.Instantiable3[
-    /* modelData */ js.Object, 
-    /* fromStorage */ js.UndefOr[/* fromStorage */ scala.Boolean], 
-    /* fromSeed */ js.UndefOr[/* fromSeed */ scala.Boolean], 
-    Model
-  ] = js.native
+  def this(str: java.lang.String, maxDepth: scala.Double, mModel: nodalLib.Anon_RelationshipCache) = this()
+  var Model: nodalLib.Anon_RelationshipCache = js.native
   var constructor: js.Any = js.native
   var identifier: java.lang.String = js.native
   var joins: js.Any = js.native
@@ -50,7 +40,7 @@ object GraphQuery extends js.Object {
   /**
     * Fully parse a GraphQL query, get necessary joins to make in SQL
     */
-  def parse(str: java.lang.String, max: scala.Double): nodalLib.Anon_Joins = js.native
+  def parse(str: java.lang.String, max: scala.Double): nodalLib.Anon_Structure = js.native
   /**
     * Parse syntax tree of a GraphQL query
     */

@@ -17,7 +17,7 @@ trait MasonryProps extends js.Object {
   var loadItems: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   var measurementStore: js.UndefOr[js.Any] = js.undefined
   var minCols: js.UndefOr[scala.Double] = js.undefined
-  var scrollContainer: js.UndefOr[js.Function0[reactLib.HTMLElement]] = js.undefined
+  var scrollContainer: js.UndefOr[js.Function0[reactLib.HTMLElement with stdLib.HTMLElement]] = js.undefined
   var virtualize: js.UndefOr[scala.Boolean] = js.undefined
 }
 

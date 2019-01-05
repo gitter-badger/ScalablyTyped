@@ -16,10 +16,7 @@ class GraphQLExtension[TContext] () extends js.Object {
     js.Function1[/* o */ graphqlDashExtensionsLib.Anon_QueryString, EndHandler | scala.Unit]
   ] = js.native
   var requestDidStart: js.UndefOr[
-    js.Function1[
-      /* o */ graphqlDashExtensionsLib.Anon_ParsedQueryRequest[TContext], 
-      EndHandler | scala.Unit
-    ]
+    js.Function1[/* o */ graphqlDashExtensionsLib.Anon_Request[TContext], EndHandler | scala.Unit]
   ] = js.native
   var validationDidStart: js.UndefOr[js.Function0[EndHandler | scala.Unit]] = js.native
   var willResolveField: js.UndefOr[
@@ -28,7 +25,11 @@ class GraphQLExtension[TContext] () extends js.Object {
       /* args */ org.scalablytyped.runtime.StringDictionary[js.Any], 
       /* context */ TContext, 
       /* info */ graphqlLib.typeDefinitionMod.GraphQLResolveInfo, 
-      (js.Function2[/* error */ nodeLib.Error | scala.Null, /* result */ js.UndefOr[_], scala.Unit]) | scala.Unit
+      (js.Function2[
+        /* error */ (nodeLib.Error with stdLib.Error) | scala.Null, 
+        /* result */ js.UndefOr[_], 
+        scala.Unit
+      ]) | scala.Unit
     ]
   ] = js.native
   var willSendResponse: js.UndefOr[

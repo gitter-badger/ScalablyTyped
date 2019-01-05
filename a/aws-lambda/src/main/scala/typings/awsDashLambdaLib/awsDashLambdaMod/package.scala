@@ -19,7 +19,7 @@ package object awsDashLambdaMod {
   type CloudFormationCustomResourceEvent = CloudFormationCustomResourceCreateEvent | CloudFormationCustomResourceUpdateEvent | CloudFormationCustomResourceDeleteEvent
   type CloudFormationCustomResourceHandler = Handler[CloudFormationCustomResourceEvent, scala.Unit]
   type CloudFormationCustomResourceResponse = CloudFormationCustomResourceSuccessResponse | CloudFormationCustomResourceFailedResponse
-  type CloudFrontOrigin = awsDashLambdaLib.Anon_Custom | awsDashLambdaLib.Anon_CustomS3
+  type CloudFrontOrigin = awsDashLambdaLib.Anon_S3 | awsDashLambdaLib.Anon_Custom
   type CloudFrontRequestCallback = Callback[CloudFrontRequestResult]
   type CloudFrontRequestHandler = Handler[CloudFrontRequestEvent, CloudFrontRequestResult]
   type CloudFrontRequestResult = js.UndefOr[scala.Null | CloudFrontResultResponse | CloudFrontRequest]

@@ -12,19 +12,19 @@ trait SearchBoxProps extends CommonWidgetProps {
   var loadingIndicator: js.UndefOr[reactLib.reactMod.Global.JSXNs.Element] = js.undefined
   var onChange: js.UndefOr[
     js.Function1[
-      /* event */ reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.HTMLInputElement, reactLib.Event], 
+      /* event */ reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.HTMLInputElement with stdLib.HTMLInputElement, reactLib.Event], 
       _
     ]
   ] = js.undefined
   var onReset: js.UndefOr[
     js.Function1[
-      /* event */ reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.HTMLFormElement, reactLib.Event], 
+      /* event */ reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.HTMLFormElement with stdLib.HTMLFormElement, reactLib.Event], 
       _
     ]
   ] = js.undefined
   var onSubmit: js.UndefOr[
     js.Function1[
-      /* event */ reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.HTMLFormElement, reactLib.Event], 
+      /* event */ reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.HTMLFormElement with stdLib.HTMLFormElement, reactLib.Event], 
       _
     ]
   ] = js.undefined

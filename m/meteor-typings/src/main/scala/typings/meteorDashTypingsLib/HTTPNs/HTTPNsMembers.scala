@@ -9,11 +9,11 @@ import scala.scalajs.js.annotation._
 @js.native
 object HTTPNsMembers extends js.Object {
   def call(method: java.lang.String, url: java.lang.String): HTTPResponse = js.native
-  def call(method: java.lang.String, url: java.lang.String, options: meteorDashTypingsLib.Anon_Auth): HTTPResponse = js.native
+  def call(method: java.lang.String, url: java.lang.String, options: meteorDashTypingsLib.Anon_Content): HTTPResponse = js.native
   def call(
     method: java.lang.String,
     url: java.lang.String,
-    options: meteorDashTypingsLib.Anon_Auth,
+    options: meteorDashTypingsLib.Anon_Content,
     asyncCallback: js.Function
   ): HTTPResponse = js.native
   def call(method: java.lang.String, url: java.lang.String, options: HTTPRequest): HTTPResponse = js.native

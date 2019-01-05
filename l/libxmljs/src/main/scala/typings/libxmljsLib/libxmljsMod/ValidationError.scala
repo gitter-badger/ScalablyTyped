@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ValidationError
-  extends nodeLib.Error {
+  extends stdLib.Error {
   var code: scala.Double | scala.Null
   /**
     * 1-based column number, 0 if not applicable/available.

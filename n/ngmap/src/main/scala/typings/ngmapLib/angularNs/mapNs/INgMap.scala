@@ -11,7 +11,7 @@ trait INgMap extends js.Object {
     	 * Add map to pool
     	 * @param {Function | any[]} mapCtrl Map controller
     	 */
-  def addMap(mapCtrl: angularLib.angularMod.Global.Function): scala.Unit = js.native
+  def addMap(mapCtrl: angularLib.angularMod.Global.Function with js.Function): scala.Unit = js.native
   def addMap(mapCtrl: js.Array[_]): scala.Unit = js.native
   /**
   		 * Delete map from pool
@@ -19,7 +19,7 @@ trait INgMap extends js.Object {
   		 * controller in pool
   		 */
   def deleteMap(): scala.Unit = js.native
-  def deleteMap(mapCtrl: angularLib.angularMod.Global.Function): scala.Unit = js.native
+  def deleteMap(mapCtrl: angularLib.angularMod.Global.Function with js.Function): scala.Unit = js.native
   def deleteMap(mapCtrl: js.Array[_]): scala.Unit = js.native
   /**
   		 * Get map coordinates from address.

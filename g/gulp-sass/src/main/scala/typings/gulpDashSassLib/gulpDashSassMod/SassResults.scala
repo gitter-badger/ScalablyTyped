@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 trait SassResults extends js.Object {
   var css: java.lang.String
   var map: java.lang.String
-  var stats: gulpDashSassLib.Anon_Duration
+  var stats: gulpDashSassLib.Anon_Entry
 }
 

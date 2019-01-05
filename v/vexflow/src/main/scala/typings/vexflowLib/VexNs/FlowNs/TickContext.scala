@@ -12,9 +12,9 @@ class TickContext () extends js.Object {
   def getCenterAlignedTickables(): js.Array[Tickable] = js.native
   def getContext(): vexflowLib.VexNs.IRenderContext = js.native
   def getCurrentTick(): Fraction = js.native
-  def getExtraPx(): vexflowLib.Anon_ExtraLeft = js.native
+  def getExtraPx(): vexflowLib.Anon_Left = js.native
   def getMaxTicks(): scala.Double = js.native
-  def getMetrics(): vexflowLib.Anon_ExtraRightPx = js.native
+  def getMetrics(): vexflowLib.Anon_WidthNotePx = js.native
   def getMinTicks(): scala.Double = js.native
   def getPixelsUsed(): scala.Double = js.native
   def getTickables(): js.Array[Tickable] = js.native

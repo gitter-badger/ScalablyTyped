@@ -10,7 +10,7 @@ trait ISelectOptions extends js.Object {
   var allText: js.UndefOr[java.lang.String] = js.undefined
   var animation: js.UndefOr[java.lang.String] = js.undefined
   var container: js.UndefOr[java.lang.String | scala.Boolean] = js.undefined
-  var delay: js.UndefOr[scala.Double | angularDashStrapLib.Anon_Hide] = js.undefined
+  var delay: js.UndefOr[scala.Double | angularDashStrapLib.Anon_Show] = js.undefined
   var html: js.UndefOr[scala.Boolean] = js.undefined
   var iconCheckmark: js.UndefOr[java.lang.String] = js.undefined
   var id: js.UndefOr[java.lang.String] = js.undefined

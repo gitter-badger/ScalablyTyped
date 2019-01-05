@@ -22,7 +22,7 @@ trait IDetailsColumnProps
   var isDropped: js.UndefOr[scala.Boolean] = js.undefined
   var onColumnClick: js.UndefOr[
     js.Function2[
-      /* ev */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent], 
+      /* ev */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement with stdLib.HTMLElement, reactLib.NativeMouseEvent], 
       /* column */ officeDashUiDashFabricDashReactLib.libComponentsDetailsListDetailsListDotTypesMod.IColumn, 
       scala.Unit
     ]
@@ -30,7 +30,7 @@ trait IDetailsColumnProps
   var onColumnContextMenu: js.UndefOr[
     js.Function2[
       /* column */ officeDashUiDashFabricDashReactLib.libComponentsDetailsListDetailsListDotTypesMod.IColumn, 
-      /* ev */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent], 
+      /* ev */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement with stdLib.HTMLElement, reactLib.NativeMouseEvent], 
       scala.Unit
     ]
   ] = js.undefined
@@ -48,7 +48,7 @@ trait IDetailsColumnProps
   var updateDragInfo: js.UndefOr[
     js.Function2[
       /* props */ officeDashUiDashFabricDashReactLib.Anon_ItemIndex, 
-      /* event */ js.UndefOr[reactLib.MouseEvent], 
+      /* event */ js.UndefOr[reactLib.MouseEvent with stdLib.MouseEvent], 
       scala.Unit
     ]
   ] = js.undefined

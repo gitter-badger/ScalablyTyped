@@ -9,7 +9,7 @@ trait Anon_ChildrenInnerRef extends js.Object {
   /** Children to render. */
   var children: reactLib.reactMod.ReactNs.ReactNode
   /** The mouse down event and the innerRef to pass down to the controller element. */
-  var innerProps: Anon_OnMouseDownEvent
+  var innerProps: Anon_OnMouseDown
   var innerRef: reactLib.reactMod.ReactNs.Ref[_]
 }
 

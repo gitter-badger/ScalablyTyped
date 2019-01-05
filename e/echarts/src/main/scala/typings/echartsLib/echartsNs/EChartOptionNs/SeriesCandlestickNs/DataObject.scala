@@ -12,14 +12,14 @@ trait DataObject extends js.Object {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-candlestick.data.emphasis
     */
-  var emphasis: js.UndefOr[echartsLib.Anon_ItemStyleAnonShadowOffsetXShadowBlurBorderWidthColor] = js.undefined
+  var emphasis: js.UndefOr[echartsLib.Anon_ItemStyleAnonColorColor0BorderColor] = js.undefined
   /**
     * Style of a candle box.
     *
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-candlestick.data.itemStyle
     */
-  var itemStyle: js.UndefOr[echartsLib.Anon_ShadowOffsetXShadowBlurBorderWidth] = js.undefined
+  var itemStyle: js.UndefOr[echartsLib.Anon_ColorColor0] = js.undefined
   /**
     * Name of data item.
     *
@@ -33,7 +33,7 @@ trait DataObject extends js.Object {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-candlestick.data.tooltip
     */
-  var tooltip: js.UndefOr[echartsLib.Anon_BackgroundColor] = js.undefined
+  var tooltip: js.UndefOr[echartsLib.Anon_Position] = js.undefined
   /**
     * Value of data item.
     *

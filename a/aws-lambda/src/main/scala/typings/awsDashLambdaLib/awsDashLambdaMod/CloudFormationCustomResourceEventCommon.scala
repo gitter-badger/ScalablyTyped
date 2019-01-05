@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait CloudFormationCustomResourceEventCommon extends js.Object {
   var LogicalResourceId: java.lang.String
   var RequestId: java.lang.String
-  var ResourceProperties: awsDashLambdaLib.Anon_Key
+  var ResourceProperties: awsDashLambdaLib.Anon_ServiceToken
   var ResourceType: java.lang.String
   var ResponseURL: java.lang.String
   var ServiceToken: java.lang.String

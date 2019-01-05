@@ -93,7 +93,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Texture protected () extends js.Object {
   def this(graphicsDevice: GraphicsDevice) = this()
-  def this(graphicsDevice: GraphicsDevice, options: playcanvasLib.Anon_Format) = this()
+  def this(graphicsDevice: GraphicsDevice, options: playcanvasLib.Anon_WidthHeight) = this()
   /**
     * @name pc.Texture#addressU
     * @type Number

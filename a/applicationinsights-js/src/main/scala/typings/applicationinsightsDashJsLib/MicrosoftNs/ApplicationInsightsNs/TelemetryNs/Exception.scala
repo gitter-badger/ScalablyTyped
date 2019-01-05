@@ -25,7 +25,7 @@ class Exception protected ()
   /* CompleteClass */
   override var aiDataContract: js.Any = js.native
   @JSName("aiDataContract")
-  var aiDataContract_Exception: applicationinsightsDashJsLib.Anon_Exceptions = js.native
+  var aiDataContract_Exception: applicationinsightsDashJsLib.Anon_VerHandledAt = js.native
   var crashThreadId: scala.Double = js.native
   var exceptions: js.Array[applicationinsightsDashJsLib.AINs.ExceptionDetails] = js.native
   var handledAt: java.lang.String = js.native

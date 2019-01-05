@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait FacebookLoginProps
-  extends reactLib.reactMod.ReactNs.ButtonHTMLAttributes[reactLib.HTMLButtonElement] {
+  extends reactLib.reactMod.ReactNs.ButtonHTMLAttributes[reactLib.HTMLButtonElement with stdLib.HTMLButtonElement] {
   var buttonText: js.UndefOr[java.lang.String] = js.undefined
   var fields: js.UndefOr[java.lang.String] = js.undefined
   var socialId: java.lang.String

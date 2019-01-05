@@ -5,10 +5,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SwitchChangeEvent
-  extends reactLib.Event {
-  var isInteractive: scala.Boolean
-  var switch: reactLib.HTMLElement
-  var value: scala.Boolean
+  extends stdLib.Event {
+  var isInteractive: scala.Boolean = js.native
+  var switch: reactLib.HTMLElement with stdLib.HTMLElement = js.native
+  var value: scala.Boolean = js.native
 }
 

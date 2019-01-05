@@ -105,7 +105,9 @@ trait CalendarProps
   /**
     * The native onKeyDown event, called preventDefault will prevent any custom behavior, included keyboard shortcuts.
     */
-  var onKeyDown: js.UndefOr[js.Function1[/* event */ reactLib.KeyboardEvent, scala.Unit]] = js.undefined
+  var onKeyDown: js.UndefOr[
+    js.Function1[/* event */ reactLib.KeyboardEvent with stdLib.KeyboardEvent, scala.Unit]
+  ] = js.undefined
   /**
     * Callback fired when the Calendar navigates between views, or forward and backwards in
     * time.

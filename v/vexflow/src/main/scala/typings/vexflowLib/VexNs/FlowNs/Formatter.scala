@@ -12,9 +12,9 @@ class Formatter () extends js.Object {
   def createModifierContexts(voices: js.Array[Voice]): js.Array[ModifierContext] = js.native
   def createTickContexts(voices: js.Array[Voice]): js.Array[TickContext] = js.native
   def format(voices: js.Array[Voice], justifyWidth: scala.Double): Formatter = js.native
-  def format(voices: js.Array[Voice], justifyWidth: scala.Double, options: vexflowLib.Anon_AlignrestsContext): Formatter = js.native
+  def format(voices: js.Array[Voice], justifyWidth: scala.Double, options: vexflowLib.Anon_Alignrests): Formatter = js.native
   def formatToStave(voices: js.Array[Voice], stave: Stave): Formatter = js.native
-  def formatToStave(voices: js.Array[Voice], stave: Stave, options: vexflowLib.Anon_AlignrestsContext): Formatter = js.native
+  def formatToStave(voices: js.Array[Voice], stave: Stave, options: vexflowLib.Anon_Alignrests): Formatter = js.native
   def getMinTotalWidth(): scala.Double = js.native
   def joinVoices(voices: js.Array[Voice]): Formatter = js.native
   def postFormat(): Formatter = js.native
@@ -61,7 +61,7 @@ object Formatter extends js.Object {
     ctx: vexflowLib.VexNs.IRenderContext,
     stave: vexflowLib.VexNs.FlowNs.Stave,
     notes: js.Array[vexflowLib.VexNs.FlowNs.Note],
-    params: vexflowLib.Anon_Alignrests
+    params: vexflowLib.Anon_Autobeam
   ): vexflowLib.VexNs.FlowNs.BoundingBox = js.native
   def FormatAndDrawTab(
     ctx: vexflowLib.VexNs.IRenderContext,
@@ -94,7 +94,7 @@ object Formatter extends js.Object {
     tabnotes: js.Array[vexflowLib.VexNs.FlowNs.TabNote],
     notes: js.Array[vexflowLib.VexNs.FlowNs.Note],
     autobeam: scala.Boolean,
-    params: vexflowLib.Anon_Alignrests
+    params: vexflowLib.Anon_Autobeam
   ): scala.Unit = js.native
 }
 

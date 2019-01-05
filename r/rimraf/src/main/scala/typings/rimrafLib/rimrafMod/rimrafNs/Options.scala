@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Options extends js.Object {
-  var chmod: js.UndefOr[rimrafLib.Anon_PathMode] = js.undefined
-  var chmodSync: js.UndefOr[rimrafLib.Anon_Path] = js.undefined
+  var chmod: js.UndefOr[rimrafLib.Anon_Path] = js.undefined
+  var chmodSync: js.UndefOr[rimrafLib.Anon_PathMode] = js.undefined
   var disableGlob: js.UndefOr[scala.Boolean] = js.undefined
   var emfileWait: js.UndefOr[scala.Boolean] = js.undefined
   var glob: js.UndefOr[globLib.globMod.GNs.IOptions | rimrafLib.rimrafLibNumbers.`false`] = js.undefined

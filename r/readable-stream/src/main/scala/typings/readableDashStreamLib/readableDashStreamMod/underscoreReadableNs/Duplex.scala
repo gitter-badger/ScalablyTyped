@@ -5,13 +5,15 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveMultipleInheritance: Dropped parents List(nodeLib.streamMod.Duplex because Inheritance from two classes, readableDashStreamLib.readableDashStreamMod._Readable because Inheritance from two classes)*/
-@js.native
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- nodeLib.streamMod.Duplex because Inheritance from two classes- readableDashStreamLib.readableDashStreamMod._Readable because Inheritance from two classes */ @js.native
 trait Duplex extends Writable {
   var _readableState: ReadableState = js.native
   var allowHalfOpen: scala.Boolean = js.native
   @JSName(org.scalablytyped.runtime.Symbol.asyncIterator)
-  var asyncIterator: js.Function0[nodeLib.AsyncIterableIterator[java.lang.String | nodeLib.Buffer]] = js.native
+  var asyncIterator: js.Function0[
+    (nodeLib.AsyncIterableIterator[java.lang.String | nodeLib.Buffer]) with (stdLib.AsyncIterableIterator[java.lang.String | nodeLib.Buffer])
+  ] = js.native
   // Readable
   var readable: scala.Boolean = js.native
   val readableHighWaterMark: scala.Double = js.native

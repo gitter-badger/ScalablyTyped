@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait _RetryOptions extends js.Object {
   var backOffBase: scala.Double
   var backOffExponent: scala.Double
-  var `match`: java.lang.String | stdLib.RegExp | nodeLib.Error | (js.Array[java.lang.String | stdLib.RegExp | nodeLib.Error])
+  var `match`: java.lang.String | stdLib.RegExp | (nodeLib.Error with stdLib.Error) | (js.Array[java.lang.String | stdLib.RegExp | (nodeLib.Error with stdLib.Error)])
   var max: scala.Double
   var name: java.lang.String
   var timeout: scala.Double

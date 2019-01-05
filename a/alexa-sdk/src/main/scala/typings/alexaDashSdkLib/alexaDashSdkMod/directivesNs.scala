@@ -16,7 +16,7 @@ object directivesNs extends js.Object {
       * @param speechContent - Contents of the speech directive either in plain text or SSML.
       */
     def this(requestId: java.lang.String, speechContent: java.lang.String) = this()
-    var directive: alexaDashSdkLib.Anon_Speech = js.native
+    var directive: alexaDashSdkLib.Anon_Type = js.native
     var header: alexaDashSdkLib.Anon_RequestId = js.native
   }
   

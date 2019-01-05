@@ -17,7 +17,10 @@ trait Server
     cb: js.Function1[/* client */ uwsLib.uwsMod.WebSocket, scala.Unit]
   ): this.type = js.native
   @JSName("addListener")
-  def addListener_error(event: uwsLib.uwsLibStrings.error, cb: js.Function1[/* err */ nodeLib.Error, scala.Unit]): this.type = js.native
+  def addListener_error(
+    event: uwsLib.uwsLibStrings.error,
+    cb: js.Function1[/* err */ nodeLib.Error with stdLib.Error, scala.Unit]
+  ): this.type = js.native
   @JSName("addListener")
   def addListener_headers(
     event: uwsLib.uwsLibStrings.headers,
@@ -38,7 +41,10 @@ trait Server
   ): this.type = js.native
   // Events
   @JSName("on")
-  def on_error(event: uwsLib.uwsLibStrings.error, cb: js.Function1[/* err */ nodeLib.Error, scala.Unit]): this.type = js.native
+  def on_error(
+    event: uwsLib.uwsLibStrings.error,
+    cb: js.Function1[/* err */ nodeLib.Error with stdLib.Error, scala.Unit]
+  ): this.type = js.native
   @JSName("on")
   def on_headers(
     event: uwsLib.uwsLibStrings.headers,

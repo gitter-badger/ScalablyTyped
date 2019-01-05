@@ -20,7 +20,7 @@ trait ProjectInterface extends js.Object {
     * On error the promise will be rejected with {@link Error} <b>error</b>.
     */
   @JSName("createBranch")
-  var createBranch_Original: webgmeLib.Anon_BranchNameNewHashCallbackName = js.native
+  var createBranch_Original: webgmeLib.Anon_BranchNameNewHashCallback = js.native
   /**
     * Creates a new tag pointing to the provided commit hash.
     * @param {string} tagName - Name of tag to create.
@@ -31,7 +31,7 @@ trait ProjectInterface extends js.Object {
     * On error the promise will be rejected with {@link Error} <b>error</b>.
     */
   @JSName("createTag")
-  var createTag_Original: webgmeLib.Anon_TagNameCommitHashCallback = js.native
+  var createTag_Original: webgmeLib.Anon_TagName = js.native
   /**
     * Deletes the branch.
     * @param {string} branchName - Name of branch to create.
@@ -43,7 +43,7 @@ trait ProjectInterface extends js.Object {
     * On error the promise will be rejected with {@link Error} <b>error</b>.
     */
   @JSName("deleteBranch")
-  var deleteBranch_Original: webgmeLib.Anon_BranchNameOldHashCallback = js.native
+  var deleteBranch_Original: webgmeLib.Anon_BranchNameOldHash = js.native
   /**
     * Deletes the given tag.
     * @param {string} tagName - Name of tag to delete.
@@ -64,7 +64,7 @@ trait ProjectInterface extends js.Object {
     * On error the promise will be rejected with {@link Error} <b>error</b>.
     */
   @JSName("getBranchHash")
-  var getBranchHash_Original: webgmeLib.Anon_BranchNameCallbackName = js.native
+  var getBranchHash_Original: webgmeLib.Anon_BranchNameCallback = js.native
   /**
     * Retrieves all branches and their current heads within the project.
     * @param {function} [callback] - if provided no promise will be returned.
@@ -74,7 +74,7 @@ trait ProjectInterface extends js.Object {
     * On error the promise will be rejected with {@link Error} <b>error</b>.
     */
   @JSName("getBranches")
-  var getBranches_Original: webgmeLib.Anon_CallbackResultCallbackCommitHash = js.native
+  var getBranches_Original: webgmeLib.Anon_CallbackResultCallback = js.native
   /**
     * Retrieves and array of the latest (sorted by timestamp) commits for the project.
     * If timestamp is given it will get <b>number</b> of commits strictly <b>before</b>.
@@ -92,7 +92,7 @@ trait ProjectInterface extends js.Object {
     * On error the promise will be rejected with {@link Error} <b>error</b>.
     */
   @JSName("getCommits")
-  var getCommits_Original: webgmeLib.Anon_BeforeNumber = js.native
+  var getCommits_Original: webgmeLib.Anon_Before = js.native
   /**
     * Retrieves the common ancestor of two commits. If no ancestor exists it will result in an error.
     *
@@ -105,7 +105,7 @@ trait ProjectInterface extends js.Object {
     * On error the promise will be rejected with {@link Error} <b>error</b>.
     */
   @JSName("getCommonAncestorCommit")
-  var getCommonAncestorCommit_Original: webgmeLib.Anon_CommitACommitB = js.native
+  var getCommonAncestorCommit_Original: webgmeLib.Anon_CommitA = js.native
   /**
     * Retrieves an array of commits starting from a branch(es) and/or commitHash(es).
     * <br> The result is ordered by the rules (applied in order)
@@ -120,7 +120,7 @@ trait ProjectInterface extends js.Object {
     * On error the promise will be rejected with {@link Error} <b>error</b>.
     */
   @JSName("getHistory")
-  var getHistory_Original: webgmeLib.Anon_StartNumber = js.native
+  var getHistory_Original: webgmeLib.Anon_Start = js.native
   /**
     * Retrieves all tags and their commits hashes within the project.
     * @param {function} [callback] - if provided no promise will be returned.
@@ -185,7 +185,7 @@ trait ProjectInterface extends js.Object {
     * On error the promise will be rejected with {Error} <b>error</b>.
     */
   @JSName("makeCommit")
-  var makeCommit_Original: webgmeLib.Anon_BranchNameParents = js.native
+  var makeCommit_Original: webgmeLib.Anon_BranchName = js.native
   /**
     * Unique ID of project, built up by the ownerId and projectName.
     * @example
@@ -205,7 +205,7 @@ trait ProjectInterface extends js.Object {
     * On error the promise will be rejected with {@link Error} <b>error</b>.
     */
   @JSName("setBranchHash")
-  var setBranchHash_Original: webgmeLib.Anon_BranchNameNewHashOldHash = js.native
+  var setBranchHash_Original: webgmeLib.Anon_BranchNameNewHash = js.native
   /**
     * Creates a new branch with head pointing to the provided commit hash.
     * @param {string} branchName - Name of branch to create.

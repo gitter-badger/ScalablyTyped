@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveMultipleInheritance: Dropped parents List(atBlueprintjsCoreLib.libEsmCommonPropsMod.IProps because Would inherit conflicting mutable fields List(className))*/
-trait ITextAreaProps
-  extends reactLib.reactMod.ReactNs.TextareaHTMLAttributes[reactLib.HTMLTextAreaElement]
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- atBlueprintjsCoreLib.libEsmCommonPropsMod.IProps because var conflicts: className. Inlined  */ trait ITextAreaProps
+  extends reactLib.reactMod.ReactNs.TextareaHTMLAttributes[reactLib.HTMLTextAreaElement with stdLib.HTMLTextAreaElement]
      with atBlueprintjsCoreLib.libEsmCommonPropsMod.IIntentProps {
   /**
     * Whether the text area should take up the full width of its container.
@@ -16,7 +16,12 @@ trait ITextAreaProps
   /**
     * Ref handler that receives HTML `<textarea>` element backing this component.
     */
-  var inputRef: js.UndefOr[js.Function1[/* ref */ reactLib.HTMLTextAreaElement | scala.Null, _]] = js.undefined
+  var inputRef: js.UndefOr[
+    js.Function1[
+      /* ref */ (reactLib.HTMLTextAreaElement with stdLib.HTMLTextAreaElement) | scala.Null, 
+      _
+    ]
+  ] = js.undefined
   /**
     * Whether the text area should appear with large styling.
     */

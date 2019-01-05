@@ -79,7 +79,9 @@ trait ButtonSettings extends ButtomSettingsCommon {
   /**
     * PDF / PRINT: Extra message
     */
-  var message: js.UndefOr[java.lang.String | Api | datatablesDotNetLib.JQuery | js.Object] = js.undefined
+  var message: js.UndefOr[
+    java.lang.String | Api | (datatablesDotNetLib.JQuery with jqueryLib.JQuery[stdLib.HTMLElement]) | js.Object
+  ] = js.undefined
   /**
     * COPY / EXCEL / PDF / PRINT: field separator
     */

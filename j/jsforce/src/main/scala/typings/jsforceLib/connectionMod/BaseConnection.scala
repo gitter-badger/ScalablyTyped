@@ -10,9 +10,9 @@ import scala.scalajs.js.annotation._
 abstract class BaseConnection ()
   extends nodeLib.eventsMod.EventEmitter {
   @JSName("describe$")
-  var describe$_Original: jsforceLib.Anon_TypeCallback = js.native
+  var describe$_Original: jsforceLib.Anon_Type = js.native
   @JSName("describeGlobal$")
-  var describeGlobal$_Original: jsforceLib.Anon_CallbackErr = js.native
+  var describeGlobal$_Original: jsforceLib.Anon_Callback = js.native
   def _baseUrl(): java.lang.String = js.native
   def create[T](`type`: java.lang.String, records: js.Array[jsforceLib.recordMod.Record[T]]): js.Promise[
     jsforceLib.recordDashResultMod.RecordResult | js.Array[jsforceLib.recordDashResultMod.RecordResult]
@@ -29,7 +29,7 @@ abstract class BaseConnection ()
     records: js.Array[jsforceLib.recordMod.Record[T]],
     options: RestApiOptions,
     callback: js.Function2[
-      /* err */ nodeLib.Error, 
+      /* err */ nodeLib.Error with stdLib.Error, 
       /* result */ jsforceLib.recordDashResultMod.RecordResult | js.Array[jsforceLib.recordDashResultMod.RecordResult], 
       scala.Unit
     ]
@@ -47,7 +47,7 @@ abstract class BaseConnection ()
     records: jsforceLib.recordMod.Record[T],
     options: RestApiOptions,
     callback: js.Function2[
-      /* err */ nodeLib.Error, 
+      /* err */ nodeLib.Error with stdLib.Error, 
       /* result */ jsforceLib.recordDashResultMod.RecordResult | js.Array[jsforceLib.recordDashResultMod.RecordResult], 
       scala.Unit
     ]
@@ -65,7 +65,7 @@ abstract class BaseConnection ()
     ids: java.lang.String,
     options: RestApiOptions,
     callback: js.Function2[
-      /* err */ nodeLib.Error, 
+      /* err */ nodeLib.Error with stdLib.Error, 
       /* result */ jsforceLib.recordDashResultMod.RecordResult | js.Array[jsforceLib.recordDashResultMod.RecordResult], 
       scala.Unit
     ]
@@ -83,7 +83,7 @@ abstract class BaseConnection ()
     ids: js.Array[java.lang.String],
     options: RestApiOptions,
     callback: js.Function2[
-      /* err */ nodeLib.Error, 
+      /* err */ nodeLib.Error with stdLib.Error, 
       /* result */ jsforceLib.recordDashResultMod.RecordResult | js.Array[jsforceLib.recordDashResultMod.RecordResult], 
       scala.Unit
     ]
@@ -101,7 +101,7 @@ abstract class BaseConnection ()
     ids: java.lang.String,
     options: RestApiOptions,
     callback: js.Function2[
-      /* err */ nodeLib.Error, 
+      /* err */ nodeLib.Error with stdLib.Error, 
       /* result */ jsforceLib.recordDashResultMod.RecordResult | js.Array[jsforceLib.recordDashResultMod.RecordResult], 
       scala.Unit
     ]
@@ -119,7 +119,7 @@ abstract class BaseConnection ()
     ids: js.Array[java.lang.String],
     options: RestApiOptions,
     callback: js.Function2[
-      /* err */ nodeLib.Error, 
+      /* err */ nodeLib.Error with stdLib.Error, 
       /* result */ jsforceLib.recordDashResultMod.RecordResult | js.Array[jsforceLib.recordDashResultMod.RecordResult], 
       scala.Unit
     ]
@@ -130,7 +130,7 @@ abstract class BaseConnection ()
   def describe(
     `type`: java.lang.String,
     callback: js.Function2[
-      /* err */ nodeLib.Error, 
+      /* err */ nodeLib.Error with stdLib.Error, 
       /* result */ jsforceLib.describeDashResultMod.DescribeSObjectResult, 
       scala.Unit
     ]
@@ -142,7 +142,7 @@ abstract class BaseConnection ()
   def describe$(
     `type`: java.lang.String,
     callback: js.Function2[
-      /* err */ nodeLib.Error, 
+      /* err */ nodeLib.Error with stdLib.Error, 
       /* result */ jsforceLib.describeDashResultMod.DescribeSObjectResult, 
       scala.Unit
     ]
@@ -150,7 +150,7 @@ abstract class BaseConnection ()
   def describeGlobal[T](): js.Promise[jsforceLib.describeDashResultMod.DescribeGlobalResult] = js.native
   def describeGlobal[T](
     callback: js.Function2[
-      /* err */ nodeLib.Error, 
+      /* err */ nodeLib.Error with stdLib.Error, 
       /* result */ jsforceLib.describeDashResultMod.DescribeGlobalResult, 
       scala.Unit
     ]
@@ -161,7 +161,7 @@ abstract class BaseConnection ()
   @JSName("describeGlobal$")
   def describeGlobal$(
     callback: js.Function2[
-      /* err */ nodeLib.Error, 
+      /* err */ nodeLib.Error with stdLib.Error, 
       /* result */ jsforceLib.describeDashResultMod.DescribeGlobalResult, 
       scala.Unit
     ]
@@ -177,7 +177,7 @@ abstract class BaseConnection ()
     ids: java.lang.String,
     options: RestApiOptions,
     callback: js.Function2[
-      /* err */ nodeLib.Error, 
+      /* err */ nodeLib.Error with stdLib.Error, 
       /* result */ jsforceLib.recordDashResultMod.RecordResult | js.Array[jsforceLib.recordDashResultMod.RecordResult], 
       scala.Unit
     ]
@@ -195,7 +195,7 @@ abstract class BaseConnection ()
     ids: js.Array[java.lang.String],
     options: RestApiOptions,
     callback: js.Function2[
-      /* err */ nodeLib.Error, 
+      /* err */ nodeLib.Error with stdLib.Error, 
       /* result */ jsforceLib.recordDashResultMod.RecordResult | js.Array[jsforceLib.recordDashResultMod.RecordResult], 
       scala.Unit
     ]
@@ -217,7 +217,7 @@ abstract class BaseConnection ()
     records: js.Array[jsforceLib.recordMod.Record[T]],
     options: RestApiOptions,
     callback: js.Function2[
-      /* err */ nodeLib.Error, 
+      /* err */ nodeLib.Error with stdLib.Error, 
       /* result */ jsforceLib.recordDashResultMod.RecordResult | js.Array[jsforceLib.recordDashResultMod.RecordResult], 
       scala.Unit
     ]
@@ -235,7 +235,7 @@ abstract class BaseConnection ()
     records: jsforceLib.recordMod.Record[T],
     options: RestApiOptions,
     callback: js.Function2[
-      /* err */ nodeLib.Error, 
+      /* err */ nodeLib.Error with stdLib.Error, 
       /* result */ jsforceLib.recordDashResultMod.RecordResult | js.Array[jsforceLib.recordDashResultMod.RecordResult], 
       scala.Unit
     ]
@@ -247,28 +247,36 @@ abstract class BaseConnection ()
   def query[T](
     soql: java.lang.String,
     options: jsforceLib.queryMod.ExecuteOptions,
-    callback: js.Function2[/* err */ nodeLib.Error, /* result */ jsforceLib.queryMod.QueryResult[T], scala.Unit]
+    callback: js.Function2[
+      /* err */ nodeLib.Error with stdLib.Error, 
+      /* result */ jsforceLib.queryMod.QueryResult[T], 
+      scala.Unit
+    ]
   ): jsforceLib.queryMod.Query[jsforceLib.queryMod.QueryResult[T]] = js.native
   def queryMore[T](locator: java.lang.String): js.Promise[jsforceLib.queryMod.QueryResult[T]] = js.native
   def queryMore[T](locator: java.lang.String, options: jsforceLib.queryMod.ExecuteOptions): js.Promise[jsforceLib.queryMod.QueryResult[T]] = js.native
   def queryMore[T](
     locator: java.lang.String,
     options: jsforceLib.queryMod.ExecuteOptions,
-    callback: js.Function2[/* err */ nodeLib.Error, /* result */ jsforceLib.queryMod.QueryResult[T], scala.Unit]
+    callback: js.Function2[
+      /* err */ nodeLib.Error with stdLib.Error, 
+      /* result */ jsforceLib.queryMod.QueryResult[T], 
+      scala.Unit
+    ]
   ): js.Promise[jsforceLib.queryMod.QueryResult[T]] = js.native
   def request(info: java.lang.String): js.Promise[js.Object] = js.native
   def request(info: java.lang.String, options: jsforceLib.httpDashApiMod.HttpApiOptions): js.Promise[js.Object] = js.native
   def request(
     info: java.lang.String,
     options: jsforceLib.httpDashApiMod.HttpApiOptions,
-    callback: js.Function2[/* err */ nodeLib.Error, /* Object */ js.Object, scala.Unit]
+    callback: js.Function2[/* err */ nodeLib.Error with stdLib.Error, /* Object */ js.Object, scala.Unit]
   ): js.Promise[js.Object] = js.native
   def request(info: RequestInfo): js.Promise[js.Object] = js.native
   def request(info: RequestInfo, options: jsforceLib.httpDashApiMod.HttpApiOptions): js.Promise[js.Object] = js.native
   def request(
     info: RequestInfo,
     options: jsforceLib.httpDashApiMod.HttpApiOptions,
-    callback: js.Function2[/* err */ nodeLib.Error, /* Object */ js.Object, scala.Unit]
+    callback: js.Function2[/* err */ nodeLib.Error with stdLib.Error, /* Object */ js.Object, scala.Unit]
   ): js.Promise[js.Object] = js.native
   def retrieve[T](`type`: java.lang.String, ids: java.lang.String): js.Promise[jsforceLib.recordMod.Record[T] | js.Array[jsforceLib.recordMod.Record[T]]] = js.native
   def retrieve[T](`type`: java.lang.String, ids: java.lang.String, options: RestApiOptions): js.Promise[jsforceLib.recordMod.Record[T] | js.Array[jsforceLib.recordMod.Record[T]]] = js.native
@@ -277,7 +285,7 @@ abstract class BaseConnection ()
     ids: java.lang.String,
     options: RestApiOptions,
     callback: js.Function2[
-      /* err */ nodeLib.Error, 
+      /* err */ nodeLib.Error with stdLib.Error, 
       /* result */ jsforceLib.recordMod.Record[T] | js.Array[jsforceLib.recordMod.Record[T]], 
       scala.Unit
     ]
@@ -289,7 +297,7 @@ abstract class BaseConnection ()
     ids: js.Array[java.lang.String],
     options: RestApiOptions,
     callback: js.Function2[
-      /* err */ nodeLib.Error, 
+      /* err */ nodeLib.Error with stdLib.Error, 
       /* result */ jsforceLib.recordMod.Record[T] | js.Array[jsforceLib.recordMod.Record[T]], 
       scala.Unit
     ]
@@ -311,7 +319,7 @@ abstract class BaseConnection ()
     records: js.Array[jsforceLib.recordMod.Record[T]],
     options: RestApiOptions,
     callback: js.Function2[
-      /* err */ nodeLib.Error, 
+      /* err */ nodeLib.Error with stdLib.Error, 
       /* result */ jsforceLib.recordDashResultMod.RecordResult | js.Array[jsforceLib.recordMod.Record[T]], 
       scala.Unit
     ]
@@ -329,7 +337,7 @@ abstract class BaseConnection ()
     records: jsforceLib.recordMod.Record[T],
     options: RestApiOptions,
     callback: js.Function2[
-      /* err */ nodeLib.Error, 
+      /* err */ nodeLib.Error with stdLib.Error, 
       /* result */ jsforceLib.recordDashResultMod.RecordResult | js.Array[jsforceLib.recordMod.Record[T]], 
       scala.Unit
     ]
@@ -357,7 +365,7 @@ abstract class BaseConnection ()
     extIdField: java.lang.String,
     options: RestApiOptions,
     callback: js.Function2[
-      /* err */ nodeLib.Error, 
+      /* err */ nodeLib.Error with stdLib.Error, 
       /* result */ jsforceLib.recordDashResultMod.RecordResult | js.Array[jsforceLib.recordDashResultMod.RecordResult], 
       scala.Unit
     ]
@@ -381,7 +389,7 @@ abstract class BaseConnection ()
     extIdField: java.lang.String,
     options: RestApiOptions,
     callback: js.Function2[
-      /* err */ nodeLib.Error, 
+      /* err */ nodeLib.Error with stdLib.Error, 
       /* result */ jsforceLib.recordDashResultMod.RecordResult | js.Array[jsforceLib.recordDashResultMod.RecordResult], 
       scala.Unit
     ]

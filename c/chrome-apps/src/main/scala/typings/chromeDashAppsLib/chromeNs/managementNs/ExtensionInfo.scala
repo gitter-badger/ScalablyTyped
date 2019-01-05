@@ -18,11 +18,11 @@ trait ExtensionInfo extends js.Object {
   var availableLaunchTypes: js.UndefOr[
     js.Array[
       chromeDashAppsLib.chromeNs.ToStringLiteral[
-        chromeDashAppsLib.Anon_OPENASWINDOW, 
+        chromeDashAppsLib.Anon_OPENASREGULARTAB, 
         java.lang.String, 
         stdLib.Exclude[
           java.lang.String, 
-          /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_OPENASWINDOW[keyof chrome-apps.Anon_OPENASWINDOW] */ js.Any
+          /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_OPENASREGULARTAB[keyof chrome-apps.Anon_OPENASREGULARTAB] */ js.Any
         ]
       ]
     ]
@@ -38,11 +38,11 @@ trait ExtensionInfo extends js.Object {
     */
   var disabledReason: js.UndefOr[
     chromeDashAppsLib.chromeNs.ToStringLiteral[
-      chromeDashAppsLib.Anon_PERMISSIONSINCREASE, 
+      chromeDashAppsLib.Anon_UNKNOWN, 
       java.lang.String, 
       stdLib.Exclude[
         java.lang.String, 
-        /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_PERMISSIONSINCREASE[keyof chrome-apps.Anon_PERMISSIONSINCREASE] */ js.Any
+        /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_UNKNOWN[keyof chrome-apps.Anon_UNKNOWN] */ js.Any
       ]
     ]
   ] = js.undefined
@@ -73,11 +73,11 @@ trait ExtensionInfo extends js.Object {
     * @since Chrome 22.
     */
   var installType: chromeDashAppsLib.chromeNs.ToStringLiteral[
-    chromeDashAppsLib.Anon_OTHEROther, 
+    chromeDashAppsLib.Anon_ADMIN, 
     java.lang.String, 
     stdLib.Exclude[
       java.lang.String, 
-      /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_OTHEROther[keyof chrome-apps.Anon_OTHEROther] */ js.Any
+      /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_ADMIN[keyof chrome-apps.Anon_ADMIN] */ js.Any
     ]
   ]
   /**
@@ -91,11 +91,11 @@ trait ExtensionInfo extends js.Object {
     */
   var launchType: js.UndefOr[
     chromeDashAppsLib.chromeNs.ToStringLiteral[
-      chromeDashAppsLib.Anon_OPENASWINDOW, 
+      chromeDashAppsLib.Anon_OPENASREGULARTAB, 
       java.lang.String, 
       stdLib.Exclude[
         java.lang.String, 
-        /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_OPENASWINDOW[keyof chrome-apps.Anon_OPENASWINDOW] */ js.Any
+        /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_OPENASREGULARTAB[keyof chrome-apps.Anon_OPENASREGULARTAB] */ js.Any
       ]
     ]
   ] = js.undefined

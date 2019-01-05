@@ -16,7 +16,7 @@ package object libClientMod {
     scala.Unit
   ]
   type InitializationFailedHandler = js.Function1[
-    /* error */ vscodeDashLanguageserverDashProtocolLib.vscodeDashLanguageserverDashProtocolMod.ResponseError[vscodeDashLanguageserverDashProtocolLib.libProtocolMod.InitializeError] | nodeLib.Error | js.Any, 
+    /* error */ vscodeDashLanguageserverDashProtocolLib.vscodeDashLanguageserverDashProtocolMod.ResponseError[vscodeDashLanguageserverDashProtocolLib.libProtocolMod.InitializeError] | (nodeLib.Error with stdLib.Error) | js.Any, 
     scala.Boolean
   ]
   type Middleware = _Middleware with vscodeDashLanguageclientLib.libTypeDefinitionMod.TypeDefinitionMiddleware with vscodeDashLanguageclientLib.libImplementationMod.ImplementationMiddleware with vscodeDashLanguageclientLib.libColorProviderMod.ColorProviderMiddleware with vscodeDashLanguageclientLib.libFoldingRangeMod.FoldingRangeProviderMiddleware with vscodeDashLanguageclientLib.libDeclarationMod.DeclarationMiddleware
@@ -25,7 +25,7 @@ package object libClientMod {
     /* document */ vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.TextDocument, 
     /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify VPosition */ /* position */ js.Any, 
     /* token */ vscodeDashJsonrpcLib.libCancellationMod.CancellationToken, 
-    /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify ProviderResult<VRange | {   range  :VRange,    placeholder  :string}> */ js.Any
+    /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify ProviderResult<VRange | {  range  :VRange,   placeholder  :string}> */ js.Any
   ]
   type ProvideCodeActionsSignature = js.Function4[
     /* document */ vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.TextDocument, 

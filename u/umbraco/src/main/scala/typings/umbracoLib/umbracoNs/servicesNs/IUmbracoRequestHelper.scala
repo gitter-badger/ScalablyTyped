@@ -78,6 +78,6 @@ trait IUmbracoRequestHelper extends js.Object {
     */
   def resourcePromise[T](httpPromise: angularLib.angularMod.angularNs.IPromise[T], opts: java.lang.String): umbracoLib.umbracoMod.resourcesNs.IResourcePromise | js.Object = js.native
   def resourcePromise[T](httpPromise: angularLib.angularMod.angularNs.IPromise[T], opts: umbracoLib.Anon_Success[T]): umbracoLib.umbracoMod.resourcesNs.IResourcePromise | js.Object = js.native
-  def resourcePromise[T](httpPromise: angularLib.angularMod.angularNs.IPromise[T], opts: umbracoLib.Anon_SuccessError[T]): umbracoLib.umbracoMod.resourcesNs.IResourcePromise | js.Object = js.native
+  def resourcePromise[T](httpPromise: angularLib.angularMod.angularNs.IPromise[T], opts: umbracoLib.Anon_SuccessData[T]): umbracoLib.umbracoMod.resourcesNs.IResourcePromise | js.Object = js.native
 }
 

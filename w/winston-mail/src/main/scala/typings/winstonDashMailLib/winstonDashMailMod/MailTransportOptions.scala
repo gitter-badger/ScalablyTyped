@@ -18,7 +18,7 @@ trait MailTransportOptions extends js.Object {
   var password: js.UndefOr[java.lang.String] = js.undefined
   var port: js.UndefOr[scala.Double] = js.undefined
   var silent: js.UndefOr[scala.Boolean] = js.undefined
-  var ssl: js.UndefOr[scala.Boolean | winstonDashMailLib.Anon_Ca] = js.undefined
+  var ssl: js.UndefOr[scala.Boolean | winstonDashMailLib.Anon_Key] = js.undefined
   var subject: js.UndefOr[java.lang.String] = js.undefined
   var timeout: js.UndefOr[scala.Double] = js.undefined
   var tls: js.UndefOr[scala.Boolean | winstonDashMailLib.Anon_Ciphers] = js.undefined

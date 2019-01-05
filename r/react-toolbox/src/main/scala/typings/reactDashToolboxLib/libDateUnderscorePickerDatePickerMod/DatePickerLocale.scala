@@ -9,22 +9,22 @@ trait DatePickerLocale extends js.Object {
   /**
     * Month names.
     */
-  var months: js.UndefOr[coreDashJsLib.Array[java.lang.String]] = js.undefined
+  var months: js.UndefOr[coreDashJsLib.Array[java.lang.String] with js.Array[java.lang.String]] = js.undefined
   /**
     * Month short names.
     */
-  var monthsShort: js.UndefOr[coreDashJsLib.Array[java.lang.String]] = js.undefined
+  var monthsShort: js.UndefOr[coreDashJsLib.Array[java.lang.String] with js.Array[java.lang.String]] = js.undefined
   /**
     * Day names starting from Sunday.
     */
-  var weekdays: js.UndefOr[coreDashJsLib.Array[java.lang.String]] = js.undefined
+  var weekdays: js.UndefOr[coreDashJsLib.Array[java.lang.String] with js.Array[java.lang.String]] = js.undefined
   /**
     * Day letters starting from Sunday.
     */
-  var weekdaysLetter: js.UndefOr[coreDashJsLib.Array[java.lang.String]] = js.undefined
+  var weekdaysLetter: js.UndefOr[coreDashJsLib.Array[java.lang.String] with js.Array[java.lang.String]] = js.undefined
   /**
     * Day short names starting from Sunday.
     */
-  var weekdaysShort: js.UndefOr[coreDashJsLib.Array[java.lang.String]] = js.undefined
+  var weekdaysShort: js.UndefOr[coreDashJsLib.Array[java.lang.String] with js.Array[java.lang.String]] = js.undefined
 }
 

@@ -6,11 +6,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_Touch extends js.Object {
-  var browser: Anon_Opera
+  var browser: Anon_Edge
   var devicePixelRatio: scala.Double
   var hasHW3D: scala.Boolean
   var hasNativeScrolling: scala.Boolean
-  var mobileOS: Anon_Name
+  var mobileOS: Anon_Device
   var placeholder: scala.Boolean
   var pointers: scala.Boolean
   var touch: scala.Boolean

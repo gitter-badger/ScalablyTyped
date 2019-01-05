@@ -11,16 +11,16 @@ class DefaultLinkWidget protected ()
   extends stormDashReactDashDiagramsLib.distSrcWidgetsBaseWidgetMod.BaseWidget[DefaultLinkProps, DefaultLinkState] {
   def this(props: DefaultLinkProps) = this()
   var pathFinding: stormDashReactDashDiagramsLib.distSrcRoutingPathFindingMod.default = js.native
-  var refLabels: org.scalablytyped.runtime.StringDictionary[reactLib.HTMLElement] = js.native
-  var refPaths: js.Array[reactLib.SVGPathElement] = js.native
-  def addPointToLink(event: reactLib.MouseEvent, index: scala.Double): scala.Unit = js.native
+  var refLabels: org.scalablytyped.runtime.StringDictionary[reactLib.HTMLElement with stdLib.HTMLElement] = js.native
+  var refPaths: js.Array[reactLib.SVGPathElement with stdLib.SVGPathElement] = js.native
+  def addPointToLink(event: reactLib.MouseEvent with stdLib.MouseEvent, index: scala.Double): scala.Unit = js.native
   def calculateAllLabelPosition(): scala.Unit = js.native
   def calculateLabelPosition(label: js.Any, index: scala.Double): scala.Unit = js.native
   @JSName("componentDidMount")
   def componentDidMount_MDefaultLinkWidget(): scala.Unit = js.native
   @JSName("componentDidUpdate")
   def componentDidUpdate_MDefaultLinkWidget(): scala.Unit = js.native
-  def findPathAndRelativePositionToRenderLabel(index: scala.Double): stormDashReactDashDiagramsLib.Anon_Position = js.native
+  def findPathAndRelativePositionToRenderLabel(index: scala.Double): stormDashReactDashDiagramsLib.Anon_Path = js.native
   def generateLabel(label: stormDashReactDashDiagramsLib.distSrcModelsLabelModelMod.LabelModel): reactLib.reactMod.Global.JSXNs.Element = js.native
   def generateLink(path: java.lang.String, extraProps: js.Any, id: java.lang.String): reactLib.reactMod.Global.JSXNs.Element = js.native
   def generateLink(path: java.lang.String, extraProps: js.Any, id: scala.Double): reactLib.reactMod.Global.JSXNs.Element = js.native

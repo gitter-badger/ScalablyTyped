@@ -24,13 +24,22 @@ trait DayPickerInputProps extends js.Object {
   var inputProps: js.UndefOr[js.Object] = js.undefined
   var keepFocus: js.UndefOr[scala.Boolean] = js.undefined
   var onBlur: js.UndefOr[
-    js.Function1[/* e */ reactLib.reactMod.ReactNs.FocusEvent[reactLib.HTMLDivElement], scala.Unit]
+    js.Function1[
+      /* e */ reactLib.reactMod.ReactNs.FocusEvent[reactLib.HTMLDivElement with stdLib.HTMLDivElement], 
+      scala.Unit
+    ]
   ] = js.undefined
   var onChange: js.UndefOr[
-    js.Function1[/* e */ reactLib.reactMod.ReactNs.FocusEvent[reactLib.HTMLDivElement], scala.Unit]
+    js.Function1[
+      /* e */ reactLib.reactMod.ReactNs.FocusEvent[reactLib.HTMLDivElement with stdLib.HTMLDivElement], 
+      scala.Unit
+    ]
   ] = js.undefined
   var onClick: js.UndefOr[
-    js.Function1[/* e */ reactLib.reactMod.ReactNs.FocusEvent[reactLib.HTMLDivElement], scala.Unit]
+    js.Function1[
+      /* e */ reactLib.reactMod.ReactNs.FocusEvent[reactLib.HTMLDivElement with stdLib.HTMLDivElement], 
+      scala.Unit
+    ]
   ] = js.undefined
   var onDayChange: js.UndefOr[
     js.Function3[
@@ -42,10 +51,16 @@ trait DayPickerInputProps extends js.Object {
   ] = js.undefined
   var onDayPickerHide: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   var onFocus: js.UndefOr[
-    js.Function1[/* e */ reactLib.reactMod.ReactNs.FocusEvent[reactLib.HTMLDivElement], scala.Unit]
+    js.Function1[
+      /* e */ reactLib.reactMod.ReactNs.FocusEvent[reactLib.HTMLDivElement with stdLib.HTMLDivElement], 
+      scala.Unit
+    ]
   ] = js.undefined
   var onKeyUp: js.UndefOr[
-    js.Function1[/* e */ reactLib.reactMod.ReactNs.FocusEvent[reactLib.HTMLDivElement], scala.Unit]
+    js.Function1[
+      /* e */ reactLib.reactMod.ReactNs.FocusEvent[reactLib.HTMLDivElement with stdLib.HTMLDivElement], 
+      scala.Unit
+    ]
   ] = js.undefined
   var overlayComponent: js.UndefOr[js.Any] = js.undefined
   var parseDate: js.UndefOr[

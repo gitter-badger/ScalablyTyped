@@ -20,6 +20,6 @@ class PerformanceObserver protected ()
     * Property buffered defaults to false.
     * @param options
     */
-  def observe(options: nodeLib.Anon_Buffered): scala.Unit = js.native
+  def observe(options: nodeLib.Anon_EntryTypes): scala.Unit = js.native
 }
 

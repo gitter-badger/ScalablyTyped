@@ -19,7 +19,7 @@ trait R3DirectiveMetadata extends js.Object {
     * Mappings indicating how the directive interacts with its host element (host bindings,
     * listeners, etc).
     */
-  var host: atAngularCompilerLib.Anon_Attributes
+  var host: atAngularCompilerLib.Anon_AttributesKey
   /**
     * A mapping of input field names to the property names.
     */

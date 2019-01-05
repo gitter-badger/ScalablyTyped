@@ -29,10 +29,10 @@ trait GoogleApiYouTubePlaylistResource extends js.Object {
   /**
     * The snippet object contains basic details about the playlist, such as its title and description.
     */
-  var snippet: Anon_Description
+  var snippet: Anon_PublishedAtChannelIdTitle
   /**
     * The status object contains status information for the playlist.
     */
-  var status: Anon_PrivacyStatus
+  var status: Anon_PrivacyStatusString
 }
 

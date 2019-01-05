@@ -18,8 +18,8 @@ object libVanillaUtilsMod extends js.Object {
     configurationClass: atUirouterCoreLib.Anon_UiRouterIsHtml5
   ): js.Function1[
     /* uiRouter */ atUirouterCoreLib.libRouterMod.UIRouter, 
-    atUirouterCoreLib.Anon_Dispose
+    atUirouterCoreLib.Anon_Name
   ] = js.native
-  def parseUrl(url: java.lang.String): atUirouterCoreLib.Anon_Hash = js.native
+  def parseUrl(url: java.lang.String): atUirouterCoreLib.Anon_Path = js.native
 }
 

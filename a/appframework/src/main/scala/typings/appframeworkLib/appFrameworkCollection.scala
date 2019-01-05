@@ -416,7 +416,7 @@ trait appFrameworkCollection extends js.Object {
     * @return {Object} with left, top, width and height properties
     * @title $().offset()
     */
-  def offset(): Anon_Bottom = js.native
+  def offset(): Anon_Left = js.native
   /**
     * Similar to delegate, but the function parameter order is easier to understand.
     * If selector is undefined or a function, we just call .bind, otherwise we use .delegate

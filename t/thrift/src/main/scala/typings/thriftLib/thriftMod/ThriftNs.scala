@@ -26,14 +26,17 @@ object ThriftNs extends js.Object {
   
   @js.native
   class TException protected ()
-    extends nodeLib.Error {
+    extends stdLib.Error {
     def this(message: java.lang.String) = this()
-    var message: java.lang.String = js.native
-    var name: java.lang.String = js.native
+    /* CompleteClass */
+    override var message: java.lang.String = js.native
+    /* CompleteClass */
+    override var name: java.lang.String = js.native
     def getMessage(): java.lang.String = js.native
   }
   
-  @js.native
+  /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+  - stdLib.Error because var conflicts: stack. Inlined message, name */ @js.native
   class TProtocolException protected ()
     extends nodeLib.Error {
     def this(`type`: TProtocolExceptionType, message: java.lang.String) = this()

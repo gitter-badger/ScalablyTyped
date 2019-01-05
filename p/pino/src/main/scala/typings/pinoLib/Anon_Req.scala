@@ -9,7 +9,7 @@ trait Anon_Req extends js.Object {
   /**
     * Serializes an Error object.
     */
-  def err(err: nodeLib.Error): Anon_Key
+  def err(err: nodeLib.Error with stdLib.Error): Anon_Type
   /**
     * Generates a JSONifiable object from the HTTP `request` object passed to the `createServer` callback of Node's HTTP server.
     */
@@ -17,6 +17,6 @@ trait Anon_Req extends js.Object {
   /**
     * Generates a JSONifiable object from the HTTP `response` object passed to the `createServer` callback of Node's HTTP server.
     */
-  def res(res: nodeLib.httpMod.ServerResponse): Anon_Header
+  def res(res: nodeLib.httpMod.ServerResponse): Anon_StatusCode
 }
 

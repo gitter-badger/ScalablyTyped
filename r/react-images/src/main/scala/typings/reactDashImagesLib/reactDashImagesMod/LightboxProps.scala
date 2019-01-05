@@ -47,7 +47,7 @@ trait LightboxProps extends js.Object {
     */
   var onClickImage: js.UndefOr[
     js.Function1[
-      /* e */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLImageElement, reactLib.NativeMouseEvent], 
+      /* e */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLImageElement with stdLib.HTMLImageElement, reactLib.NativeMouseEvent], 
       scala.Unit
     ]
   ] = js.undefined

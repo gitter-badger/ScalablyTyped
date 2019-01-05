@@ -13,6 +13,6 @@ trait SecureOptions extends js.Object {
     * tls1.3 should be supported from Chrome 67.
     * @see[TLS Info and support table]{@link https://en.wikipedia.org/wiki/Transport_Layer_Security#TLS_1.3}
     */
-  var tlsVersion: js.UndefOr[chromeDashAppsLib.Anon_Max] = js.undefined
+  var tlsVersion: js.UndefOr[chromeDashAppsLib.Anon_Min] = js.undefined
 }
 

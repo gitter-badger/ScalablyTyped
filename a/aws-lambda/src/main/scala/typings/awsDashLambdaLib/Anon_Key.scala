@@ -5,8 +5,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Anon_Key
-  extends /* Key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
-  var ServiceToken: java.lang.String
+trait Anon_Key extends js.Object {
+  var eTag: java.lang.String
+  var key: java.lang.String
+  var sequencer: java.lang.String
+  var size: scala.Double
+  var versionId: java.lang.String
 }
 

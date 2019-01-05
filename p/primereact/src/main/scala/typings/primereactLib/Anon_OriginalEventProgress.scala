@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_OriginalEventProgress extends js.Object {
-  var originalEvent: reactLib.Event
+  var originalEvent: reactLib.Event with stdLib.Event
   var progress: js.Any
 }
 

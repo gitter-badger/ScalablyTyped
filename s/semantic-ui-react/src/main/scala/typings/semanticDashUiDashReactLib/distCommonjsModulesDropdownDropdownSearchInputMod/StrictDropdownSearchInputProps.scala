@@ -13,7 +13,9 @@ trait StrictDropdownSearchInputProps extends js.Object {
   /** Additional classes. */
   var className: js.UndefOr[java.lang.String] = js.undefined
   /** A ref handler for input. */
-  var inputRef: js.UndefOr[reactLib.reactMod.ReactNs.Ref[reactLib.HTMLInputElement]] = js.undefined
+  var inputRef: js.UndefOr[
+    reactLib.reactMod.ReactNs.Ref[reactLib.HTMLInputElement with stdLib.HTMLInputElement]
+  ] = js.undefined
   /** An input can receive focus. */
   var tabIndex: js.UndefOr[scala.Double | java.lang.String] = js.undefined
   /** The HTML input type. */

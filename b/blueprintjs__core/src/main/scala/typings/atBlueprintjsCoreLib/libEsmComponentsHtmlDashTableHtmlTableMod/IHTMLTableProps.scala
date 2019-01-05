@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait IHTMLTableProps
-  extends reactLib.reactMod.ReactNs.TableHTMLAttributes[reactLib.HTMLTableElement]
-     with atBlueprintjsCoreLib.libEsmComponentsHtmlHtmlMod.IElementRefProps[reactLib.HTMLTableElement] {
+  extends reactLib.reactMod.ReactNs.TableHTMLAttributes[reactLib.HTMLTableElement with stdLib.HTMLTableElement]
+     with atBlueprintjsCoreLib.libEsmComponentsHtmlHtmlMod.IElementRefProps[reactLib.HTMLTableElement with stdLib.HTMLTableElement] {
   /** Enables borders between rows and cells. */
   var bordered: js.UndefOr[scala.Boolean] = js.undefined
   /** Use small, condensed appearance. */

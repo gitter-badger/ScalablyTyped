@@ -11,9 +11,9 @@ trait Anon_DcCallbackOpts extends js.Object {
   def apply[TData](callback: consulLib.consulMod.ConsulNs.Callback[TData]): scala.Unit = js.native
   def apply[TData](dc: java.lang.String): consulLib.consulMod.ConsulNs.Thenable[TData] = js.native
   def apply[TData](dc: java.lang.String, callback: consulLib.consulMod.ConsulNs.Callback[TData]): scala.Unit = js.native
-  def apply[TData](opts: consulLib.consulMod.ConsulNs.CatalogNs.ServicesOptions): consulLib.consulMod.ConsulNs.Thenable[TData] = js.native
+  def apply[TData](opts: consulLib.consulMod.ConsulNs.CatalogNs.NodesOptions): consulLib.consulMod.ConsulNs.Thenable[TData] = js.native
   def apply[TData](
-    opts: consulLib.consulMod.ConsulNs.CatalogNs.ServicesOptions,
+    opts: consulLib.consulMod.ConsulNs.CatalogNs.NodesOptions,
     callback: consulLib.consulMod.ConsulNs.Callback[TData]
   ): scala.Unit = js.native
 }

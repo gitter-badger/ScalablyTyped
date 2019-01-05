@@ -194,12 +194,16 @@ trait JQuery extends js.Object {
   def ejBarcode(memberName: js.Any): js.Any = js.native
   def ejBarcode(memberName: js.Any, value: js.Any): js.Any = js.native
   def ejBarcode(memberName: js.Any, value: js.Any, param: js.Any): js.Any = js.native
-  def ejBarcode(options: ejDotWebDotAllLib.ejNs.Model): JQuery = js.native
+  def ejBarcode(
+    options: ejDotWebDotAllLib.ejNs.Model with ejDotWebDotAllLib.ejNs.datavisualizationNs.BarcodeNs.Model
+  ): JQuery = js.native
   def ejBulletGraph(): JQuery = js.native
   def ejBulletGraph(memberName: js.Any): js.Any = js.native
   def ejBulletGraph(memberName: js.Any, value: js.Any): js.Any = js.native
   def ejBulletGraph(memberName: js.Any, value: js.Any, param: js.Any): js.Any = js.native
-  def ejBulletGraph(options: ejDotWebDotAllLib.ejNs.Model): JQuery = js.native
+  def ejBulletGraph(
+    options: ejDotWebDotAllLib.ejNs.Model with ejDotWebDotAllLib.ejNs.datavisualizationNs.BulletGraphNs.Model
+  ): JQuery = js.native
   def ejButton(): JQuery = js.native
   def ejButton(memberName: js.Any): js.Any = js.native
   def ejButton(memberName: js.Any, value: js.Any): js.Any = js.native
@@ -214,7 +218,9 @@ trait JQuery extends js.Object {
   def ejChart(memberName: js.Any): js.Any = js.native
   def ejChart(memberName: js.Any, value: js.Any): js.Any = js.native
   def ejChart(memberName: js.Any, value: js.Any, param: js.Any): js.Any = js.native
-  def ejChart(options: ejDotWebDotAllLib.ejNs.Model): JQuery = js.native
+  def ejChart(
+    options: ejDotWebDotAllLib.ejNs.Model with ejDotWebDotAllLib.ejNs.datavisualizationNs.ChartNs.Model
+  ): JQuery = js.native
   def ejCheckBox(): JQuery = js.native
   def ejCheckBox(memberName: js.Any): js.Any = js.native
   def ejCheckBox(memberName: js.Any, value: js.Any): js.Any = js.native
@@ -224,7 +230,9 @@ trait JQuery extends js.Object {
   def ejCircularGauge(memberName: js.Any): js.Any = js.native
   def ejCircularGauge(memberName: js.Any, value: js.Any): js.Any = js.native
   def ejCircularGauge(memberName: js.Any, value: js.Any, param: js.Any): js.Any = js.native
-  def ejCircularGauge(options: ejDotWebDotAllLib.ejNs.Model): JQuery = js.native
+  def ejCircularGauge(
+    options: ejDotWebDotAllLib.ejNs.Model with ejDotWebDotAllLib.ejNs.datavisualizationNs.CircularGaugeNs.Model
+  ): JQuery = js.native
   def ejColorPicker(): JQuery = js.native
   def ejColorPicker(memberName: js.Any): js.Any = js.native
   def ejColorPicker(memberName: js.Any, value: js.Any): js.Any = js.native
@@ -259,7 +267,9 @@ trait JQuery extends js.Object {
   def ejDiagram(memberName: js.Any): js.Any = js.native
   def ejDiagram(memberName: js.Any, value: js.Any): js.Any = js.native
   def ejDiagram(memberName: js.Any, value: js.Any, param: js.Any): js.Any = js.native
-  def ejDiagram(options: ejDotWebDotAllLib.ejNs.Model): JQuery = js.native
+  def ejDiagram(
+    options: ejDotWebDotAllLib.ejNs.Model with ejDotWebDotAllLib.ejNs.datavisualizationNs.DiagramNs.Model
+  ): JQuery = js.native
   def ejDialog(): JQuery = js.native
   def ejDialog(memberName: js.Any): js.Any = js.native
   def ejDialog(memberName: js.Any, value: js.Any): js.Any = js.native
@@ -269,7 +279,9 @@ trait JQuery extends js.Object {
   def ejDigitalGauge(memberName: js.Any): js.Any = js.native
   def ejDigitalGauge(memberName: js.Any, value: js.Any): js.Any = js.native
   def ejDigitalGauge(memberName: js.Any, value: js.Any, param: js.Any): js.Any = js.native
-  def ejDigitalGauge(options: ejDotWebDotAllLib.ejNs.Model): JQuery = js.native
+  def ejDigitalGauge(
+    options: ejDotWebDotAllLib.ejNs.Model with ejDotWebDotAllLib.ejNs.datavisualizationNs.DigitalGaugeNs.Model
+  ): JQuery = js.native
   def ejDocumentEditor(): JQuery = js.native
   def ejDocumentEditor(memberName: js.Any): js.Any = js.native
   def ejDocumentEditor(memberName: js.Any, value: js.Any): js.Any = js.native
@@ -319,7 +331,9 @@ trait JQuery extends js.Object {
   def ejHeatMap(memberName: js.Any): js.Any = js.native
   def ejHeatMap(memberName: js.Any, value: js.Any): js.Any = js.native
   def ejHeatMap(memberName: js.Any, value: js.Any, param: js.Any): js.Any = js.native
-  def ejHeatMap(options: ejDotWebDotAllLib.ejNs.Model): JQuery = js.native
+  def ejHeatMap(
+    options: ejDotWebDotAllLib.ejNs.Model with ejDotWebDotAllLib.ejNs.datavisualizationNs.HeatMapNs.Model
+  ): JQuery = js.native
   def ejHeatMapLegend(): JQuery = js.native
   def ejHeatMapLegend(memberName: js.Any): js.Any = js.native
   def ejHeatMapLegend(memberName: js.Any, value: js.Any): js.Any = js.native
@@ -334,7 +348,9 @@ trait JQuery extends js.Object {
   def ejLinearGauge(memberName: js.Any): js.Any = js.native
   def ejLinearGauge(memberName: js.Any, value: js.Any): js.Any = js.native
   def ejLinearGauge(memberName: js.Any, value: js.Any, param: js.Any): js.Any = js.native
-  def ejLinearGauge(options: ejDotWebDotAllLib.ejNs.Model): JQuery = js.native
+  def ejLinearGauge(
+    options: ejDotWebDotAllLib.ejNs.Model with ejDotWebDotAllLib.ejNs.datavisualizationNs.LinearGaugeNs.Model
+  ): JQuery = js.native
   def ejListBox(): JQuery = js.native
   def ejListBox(memberName: js.Any): js.Any = js.native
   def ejListBox(memberName: js.Any, value: js.Any): js.Any = js.native
@@ -349,7 +365,7 @@ trait JQuery extends js.Object {
   def ejMap(memberName: js.Any): js.Any = js.native
   def ejMap(memberName: js.Any, value: js.Any): js.Any = js.native
   def ejMap(memberName: js.Any, value: js.Any, param: js.Any): js.Any = js.native
-  def ejMap(options: ejDotWebDotAllLib.ejNs.Model): JQuery = js.native
+  def ejMap(options: ejDotWebDotAllLib.ejNs.Model with ejDotWebDotAllLib.ejNs.datavisualizationNs.MapNs.Model): JQuery = js.native
   def ejMaskEdit(): JQuery = js.native
   def ejMaskEdit(memberName: js.Any): js.Any = js.native
   def ejMaskEdit(memberName: js.Any, value: js.Any): js.Any = js.native
@@ -459,7 +475,9 @@ trait JQuery extends js.Object {
   def ejRangeNavigator(memberName: js.Any): js.Any = js.native
   def ejRangeNavigator(memberName: js.Any, value: js.Any): js.Any = js.native
   def ejRangeNavigator(memberName: js.Any, value: js.Any, param: js.Any): js.Any = js.native
-  def ejRangeNavigator(options: ejDotWebDotAllLib.ejNs.Model): JQuery = js.native
+  def ejRangeNavigator(
+    options: ejDotWebDotAllLib.ejNs.Model with ejDotWebDotAllLib.ejNs.datavisualizationNs.RangeNavigatorNs.Model
+  ): JQuery = js.native
   def ejRating(): JQuery = js.native
   def ejRating(memberName: js.Any): js.Any = js.native
   def ejRating(memberName: js.Any, value: js.Any): js.Any = js.native
@@ -519,7 +537,9 @@ trait JQuery extends js.Object {
   def ejSparkline(memberName: js.Any): js.Any = js.native
   def ejSparkline(memberName: js.Any, value: js.Any): js.Any = js.native
   def ejSparkline(memberName: js.Any, value: js.Any, param: js.Any): js.Any = js.native
-  def ejSparkline(options: ejDotWebDotAllLib.ejNs.SparklineNs.Model): JQuery = js.native
+  def ejSparkline(
+    options: ejDotWebDotAllLib.ejNs.SparklineNs.Model with ejDotWebDotAllLib.ejNs.datavisualizationNs.SparklineNs.Model
+  ): JQuery = js.native
   def ejSpellCheck(): JQuery = js.native
   def ejSpellCheck(memberName: js.Any): js.Any = js.native
   def ejSpellCheck(memberName: js.Any, value: js.Any): js.Any = js.native
@@ -594,7 +614,9 @@ trait JQuery extends js.Object {
   def ejTreeMap(memberName: js.Any): js.Any = js.native
   def ejTreeMap(memberName: js.Any, value: js.Any): js.Any = js.native
   def ejTreeMap(memberName: js.Any, value: js.Any, param: js.Any): js.Any = js.native
-  def ejTreeMap(options: ejDotWebDotAllLib.ejNs.Model): JQuery = js.native
+  def ejTreeMap(
+    options: ejDotWebDotAllLib.ejNs.Model with ejDotWebDotAllLib.ejNs.datavisualizationNs.TreeMapNs.Model
+  ): JQuery = js.native
   def ejTreeView(): JQuery = js.native
   def ejTreeView(memberName: js.Any): js.Any = js.native
   def ejTreeView(memberName: js.Any, value: js.Any): js.Any = js.native

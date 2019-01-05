@@ -48,7 +48,7 @@ object leafletModMembers extends js.Object {
   def map(element: stdLib.HTMLElement, options: MapOptions): Map = js.native
   def marker(latlng: LatLngExpression): Marker[_] = js.native
   def marker(latlng: LatLngExpression, options: MarkerOptions): Marker[_] = js.native
-  def point(coords: leafletLib.Anon_Y): Point = js.native
+  def point(coords: leafletLib.Anon_X): Point = js.native
   def point(coords: PointTuple): Point = js.native
   def point(x: scala.Double, y: scala.Double): Point = js.native
   def point(x: scala.Double, y: scala.Double, round: scala.Boolean): Point = js.native

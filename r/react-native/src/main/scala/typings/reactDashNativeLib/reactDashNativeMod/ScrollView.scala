@@ -5,8 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveDifficultInheritance: 
-- Dropped new Some()Some((args  : ...any))Some(: react-native.react-native.ScrollResponderMixin) */ @JSImport("react-native", "ScrollView")
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
+- Dropped new (args : ...any): react-native.react-native.ScrollResponderMixin */ @JSImport("react-native", "ScrollView")
 @js.native
 class ScrollView () extends js.Object {
   // Deprecated, do not use.
@@ -32,9 +32,9 @@ class ScrollView () extends js.Object {
     * This is deprecated due to ambiguity (y before x), and SHOULD NOT BE USED.
     */
   def scrollTo(): scala.Unit = js.native
-  def scrollTo(y: reactDashNativeLib.Anon_Animated): scala.Unit = js.native
-  def scrollTo(y: reactDashNativeLib.Anon_Animated, x: scala.Double): scala.Unit = js.native
-  def scrollTo(y: reactDashNativeLib.Anon_Animated, x: scala.Double, animated: scala.Boolean): scala.Unit = js.native
+  def scrollTo(y: reactDashNativeLib.Anon_XYAnimated): scala.Unit = js.native
+  def scrollTo(y: reactDashNativeLib.Anon_XYAnimated, x: scala.Double): scala.Unit = js.native
+  def scrollTo(y: reactDashNativeLib.Anon_XYAnimated, x: scala.Double, animated: scala.Boolean): scala.Unit = js.native
   def scrollTo(y: scala.Double): scala.Unit = js.native
   def scrollTo(y: scala.Double, x: scala.Double): scala.Unit = js.native
   def scrollTo(y: scala.Double, x: scala.Double, animated: scala.Boolean): scala.Unit = js.native
@@ -47,6 +47,6 @@ class ScrollView () extends js.Object {
     * The animated prop defaults to true
     */
   def scrollToEnd(): scala.Unit = js.native
-  def scrollToEnd(options: reactDashNativeLib.Anon_AnimatedBoolean_1590081086): scala.Unit = js.native
+  def scrollToEnd(options: reactDashNativeLib.Anon_AnimatedBoolean): scala.Unit = js.native
 }
 

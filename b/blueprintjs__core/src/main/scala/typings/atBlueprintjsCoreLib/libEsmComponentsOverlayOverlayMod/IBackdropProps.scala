@@ -9,7 +9,9 @@ trait IBackdropProps extends js.Object {
   /** CSS class names to apply to backdrop element. */
   var backdropClassName: js.UndefOr[java.lang.String] = js.undefined
   /** HTML props for the backdrop element. */
-  var backdropProps: js.UndefOr[reactLib.reactMod.ReactNs.HTMLProps[reactLib.HTMLDivElement]] = js.undefined
+  var backdropProps: js.UndefOr[
+    reactLib.reactMod.ReactNs.HTMLProps[reactLib.HTMLDivElement with stdLib.HTMLDivElement]
+  ] = js.undefined
   /**
     * Whether clicking outside the overlay element (either on backdrop when present or on document)
     * should invoke `onClose`.

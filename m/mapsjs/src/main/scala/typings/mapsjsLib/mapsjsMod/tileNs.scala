@@ -16,7 +16,7 @@ object tileNs extends js.Object {
   @js.native
   class descriptorMDNRestFeature protected () extends js.Object {
     def this(mapId: java.lang.String, layerId: java.lang.String) = this()
-    def this(mapId: java.lang.String, layerId: java.lang.String, options: mapsjsLib.Anon_FieldNames) = this()
+    def this(mapId: java.lang.String, layerId: java.lang.String, options: mapsjsLib.Anon_VersionBleedRatio) = this()
     /**
     		 * Gets the bleed ratio.
     		 * @returns {number} The current bleed ratio.
@@ -98,7 +98,7 @@ object tileNs extends js.Object {
   @js.native
   class descriptorMDNRestMap protected () extends js.Object {
     def this(mapId: java.lang.String) = this()
-    def this(mapId: java.lang.String, options: mapsjsLib.Anon_MapCacheOption) = this()
+    def this(mapId: java.lang.String, options: mapsjsLib.Anon_Version) = this()
     /**
     		 * Gets map image background color.
     		 * @returns {string} CSS style string for the map image background color.
@@ -329,7 +329,7 @@ object tileNs extends js.Object {
     		 * collection respectively, and ulX and ulY are the offset in pixels
     		 * of the upper left tile from the upper left target extents.
     		 */
-    def compose(extentsMapUnits: mapsjsLib.mapsjsMod.envelope, extentsDeviceUnits: mapsjsLib.mapsjsMod.envelope): mapsjsLib.Anon_IdxMinX = js.native
+    def compose(extentsMapUnits: mapsjsLib.mapsjsMod.envelope, extentsDeviceUnits: mapsjsLib.mapsjsMod.envelope): mapsjsLib.Anon_QuadCollection = js.native
     /**
       * Unbind all associations with this tile layer to facilitate garbage collection
       */
@@ -513,7 +513,7 @@ object tileNs extends js.Object {
   
   @js.native
   class layerOptions protected () extends js.Object {
-    def this(id: java.lang.String, options: mapsjsLib.Anon_Requestor) = this()
+    def this(id: java.lang.String, options: mapsjsLib.Anon_UseBackdrop) = this()
     /**
     		 * Gets ID associated with the underlying tile layer.
     		 * @returns {string} ID of the layer.

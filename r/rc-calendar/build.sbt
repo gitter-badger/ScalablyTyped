@@ -1,18 +1,18 @@
 organization := "org.scalablytyped"
 name := "rc-calendar"
-version := "9.8.2-c88935"
-scalaVersion := "2.12.7"
+version := "9.8.2-e22817"
+scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "classnames" % "2.2-dt-20180721Z-b84a90",
-  "org.scalablytyped" %%% "create-react-class" % "15.6-dt-20180806Z-da0e58",
-  "org.scalablytyped" %%% "csstype" % "2.5.8-a13970",
-  "org.scalablytyped" %%% "moment" % "2.23.0-9a5931",
-  "org.scalablytyped" %%% "prop-types" % "15.5-dt-20181212Z-89199d",
-  "org.scalablytyped" %%% "react" % "16.7-dt-20181220Z-3dff88",
-  "org.scalablytyped" %%% "std" % "3.2.2-9ed5ff")
+  "org.scalablytyped" %%% "classnames" % "2.2-dt-20181230Z-c754c3",
+  "org.scalablytyped" %%% "create-react-class" % "15.6-dt-20180806Z-523c3d",
+  "org.scalablytyped" %%% "csstype" % "2.5.8-c53c8c",
+  "org.scalablytyped" %%% "moment" % "2.23.0-87137f",
+  "org.scalablytyped" %%% "prop-types" % "15.5-dt-20181212Z-8f2b50",
+  "org.scalablytyped" %%% "react" % "16.7-dt-20181220Z-9a2db2",
+  "org.scalablytyped" %%% "std" % "3.2.2-3b2f2a")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

@@ -13,6 +13,6 @@ class default () extends Switch
 @js.native
 object default extends js.Object {
   var defaultProps: antdLib.Anon_PrefixClsString = js.native
-  var propTypes: antdLib.Anon_ClassName = js.native
+  var propTypes: antdLib.Anon_PrefixClsSize = js.native
 }
 

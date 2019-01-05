@@ -78,7 +78,7 @@ trait SMTPServerOptions
   /** optional private keys in PEM format */
   @JSName("key")
   var key_SMTPServerOptions: js.UndefOr[
-    java.lang.String | js.Array[java.lang.String] | nodeLib.Buffer | js.Array[nodeLib.Buffer] | js.Array[smtpDashServerLib.Anon_Passphrase]
+    java.lang.String | js.Array[java.lang.String] | nodeLib.Buffer | js.Array[nodeLib.Buffer] | js.Array[smtpDashServerLib.Anon_Pem]
   ] = js.undefined
   /**
     * boolean, if set to true use LMTP protocol instead of SMTP
@@ -111,7 +111,7 @@ trait SMTPServerOptions
       /* auth */ SMTPServerAuthentication, 
       /* session */ SMTPServerSession, 
       /* callback */ js.Function2[
-        /* err */ js.UndefOr[nodeLib.Error | scala.Null], 
+        /* err */ js.UndefOr[(nodeLib.Error with stdLib.Error) | scala.Null], 
         /* response */ js.UndefOr[SMTPServerAuthenticationResponse], 
         scala.Unit
       ], 
@@ -124,7 +124,7 @@ trait SMTPServerOptions
   var onClose: js.UndefOr[
     js.Function2[
       /* session */ SMTPServerSession, 
-      /* callback */ js.Function1[/* err */ js.UndefOr[nodeLib.Error | scala.Null], scala.Unit], 
+      /* callback */ js.Function1[/* err */ js.UndefOr[(nodeLib.Error with stdLib.Error) | scala.Null], scala.Unit], 
       scala.Unit
     ]
   ] = js.undefined
@@ -134,7 +134,7 @@ trait SMTPServerOptions
   var onConnect: js.UndefOr[
     js.Function2[
       /* session */ SMTPServerSession, 
-      /* callback */ js.Function1[/* err */ js.UndefOr[nodeLib.Error | scala.Null], scala.Unit], 
+      /* callback */ js.Function1[/* err */ js.UndefOr[(nodeLib.Error with stdLib.Error) | scala.Null], scala.Unit], 
       scala.Unit
     ]
   ] = js.undefined
@@ -145,7 +145,7 @@ trait SMTPServerOptions
     js.Function3[
       /* stream */ nodeLib.streamMod.Readable, 
       /* session */ SMTPServerSession, 
-      /* callback */ js.Function1[/* err */ js.UndefOr[nodeLib.Error | scala.Null], scala.Unit], 
+      /* callback */ js.Function1[/* err */ js.UndefOr[(nodeLib.Error with stdLib.Error) | scala.Null], scala.Unit], 
       scala.Unit
     ]
   ] = js.undefined
@@ -156,7 +156,7 @@ trait SMTPServerOptions
     js.Function3[
       /* address */ SMTPServerAddress, 
       /* session */ SMTPServerSession, 
-      /* callback */ js.Function1[/* err */ js.UndefOr[nodeLib.Error | scala.Null], scala.Unit], 
+      /* callback */ js.Function1[/* err */ js.UndefOr[(nodeLib.Error with stdLib.Error) | scala.Null], scala.Unit], 
       scala.Unit
     ]
   ] = js.undefined
@@ -167,7 +167,7 @@ trait SMTPServerOptions
     js.Function3[
       /* address */ SMTPServerAddress, 
       /* session */ SMTPServerSession, 
-      /* callback */ js.Function1[/* err */ js.UndefOr[nodeLib.Error | scala.Null], scala.Unit], 
+      /* callback */ js.Function1[/* err */ js.UndefOr[(nodeLib.Error with stdLib.Error) | scala.Null], scala.Unit], 
       scala.Unit
     ]
   ] = js.undefined

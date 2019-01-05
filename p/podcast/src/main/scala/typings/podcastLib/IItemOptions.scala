@@ -10,7 +10,7 @@ trait IItemOptions extends js.Object {
   var categories: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   var date: stdLib.Date
   var description: java.lang.String
-  var enclosure: js.UndefOr[Anon_File] = js.undefined
+  var enclosure: js.UndefOr[Anon_Url] = js.undefined
   var guid: java.lang.String
   var itunesAuthor: js.UndefOr[java.lang.String] = js.undefined
   var itunesDuration: js.UndefOr[scala.Double] = js.undefined

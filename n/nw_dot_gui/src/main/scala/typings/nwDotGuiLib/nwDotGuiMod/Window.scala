@@ -19,7 +19,7 @@ class Window () extends EventEmitter {
   var zoomLevel: scala.Double = js.native
   def blur(): scala.Unit = js.native
   def capturePage(callback: js.Function): scala.Unit = js.native
-  def capturePage(callback: js.Function, config_object: nwDotGuiLib.Anon_Datatype): scala.Unit = js.native
+  def capturePage(callback: js.Function, config_object: nwDotGuiLib.Anon_Format): scala.Unit = js.native
   def capturePage(callback: js.Function, imageformat: java.lang.String): scala.Unit = js.native
   def close(): scala.Unit = js.native
   def close(force: scala.Boolean): scala.Unit = js.native

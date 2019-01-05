@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class EllipsoidOutlineGeometry ()
   extends cesiumLib.cesiumMod.CesiumNs.EllipsoidOutlineGeometry {
-  def this(options: cesiumLib.Anon_RadiiSlicePartitions) = this()
+  def this(options: cesiumLib.Anon_RadiiStackPartitions) = this()
 }
 
 @JSImport("cesium", "EllipsoidOutlineGeometry")

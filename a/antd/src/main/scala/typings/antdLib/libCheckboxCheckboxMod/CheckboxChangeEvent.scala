@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait CheckboxChangeEvent extends js.Object {
-  var nativeEvent: reactLib.MouseEvent
+  var nativeEvent: reactLib.MouseEvent with stdLib.MouseEvent
   var target: CheckboxChangeEventTarget
   def preventDefault(): scala.Unit
   def stopPropagation(): scala.Unit

@@ -58,6 +58,6 @@ object DOMSerializer extends js.Object {
     * the spec has a hole (zero) in it, `contentDOM` will point at the
     * node with the hole.
     */
-  def renderSpec(doc: stdLib.Document, structure: prosemirrorDashModelLib.prosemirrorDashModelMod.DOMOutputSpec): prosemirrorDashModelLib.Anon_ContentDOM = js.native
+  def renderSpec(doc: stdLib.Document, structure: prosemirrorDashModelLib.prosemirrorDashModelMod.DOMOutputSpec): prosemirrorDashModelLib.Anon_Dom = js.native
 }
 

@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class RuleTester () extends js.Object {
   def this(config: js.Any) = this()
-  def run(name: java.lang.String, rule: eslintLib.eslintMod.RuleNs.RuleModule, tests: eslintLib.Anon_Invalid): scala.Unit = js.native
+  def run(name: java.lang.String, rule: eslintLib.eslintMod.RuleNs.RuleModule, tests: eslintLib.Anon_Valid): scala.Unit = js.native
 }
 

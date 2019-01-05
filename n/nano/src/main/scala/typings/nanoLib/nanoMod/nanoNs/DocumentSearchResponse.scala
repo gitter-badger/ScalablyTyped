@@ -14,7 +14,7 @@ trait DocumentSearchResponse[V] extends js.Object {
   // facet range results
   var ranges: js.UndefOr[js.Object] = js.undefined
   //  Array of search results
-  var rows: js.Array[nanoLib.Anon_Doc[V]]
+  var rows: js.Array[nanoLib.Anon_Id[V]]
   // Number of documents in the search resykts
   var total_rows: scala.Double
 }

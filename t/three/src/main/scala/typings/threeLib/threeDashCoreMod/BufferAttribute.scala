@@ -21,17 +21,17 @@ class BufferAttribute protected () extends js.Object {
   var needsUpdate: scala.Boolean = js.native
   var normalized: scala.Boolean = js.native
   var onUpload: js.Function = js.native
-  var updateRange: threeLib.Anon_Count = js.native
+  var updateRange: threeLib.Anon_Offset = js.native
    // array parameter should be TypedArray.
   var uuid: java.lang.String = js.native
   var version: scala.Double = js.native
   def copy(source: BufferAttribute): this.type = js.native
   def copyArray(array: stdLib.ArrayLike[scala.Double]): BufferAttribute = js.native
   def copyAt(index1: scala.Double, attribute: BufferAttribute, index2: scala.Double): BufferAttribute = js.native
-  def copyColorsArray(colors: js.Array[threeLib.Anon_B]): BufferAttribute = js.native
-  def copyVector2sArray(vectors: js.Array[threeLib.Anon_Y]): BufferAttribute = js.native
-  def copyVector3sArray(vectors: js.Array[threeLib.Anon_Z]): BufferAttribute = js.native
-  def copyVector4sArray(vectors: js.Array[threeLib.Anon_W]): BufferAttribute = js.native
+  def copyColorsArray(colors: js.Array[threeLib.Anon_R]): BufferAttribute = js.native
+  def copyVector2sArray(vectors: js.Array[threeLib.Anon_X]): BufferAttribute = js.native
+  def copyVector3sArray(vectors: js.Array[threeLib.Anon_XY]): BufferAttribute = js.native
+  def copyVector4sArray(vectors: js.Array[threeLib.Anon_XYZ]): BufferAttribute = js.native
   def getW(index: scala.Double): scala.Double = js.native
   def getX(index: scala.Double): scala.Double = js.native
   def getY(index: scala.Double): scala.Double = js.native

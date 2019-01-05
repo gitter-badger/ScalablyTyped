@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 package object maxmindMod {
   type Response = CountryResponse | CityResponse | AnonymousIPResponse | AsnResponse | ConnectionTypeResponse | DomainResponse | IspResponse
-  type openCb[T /* <: Response */] = js.Function2[/* err */ nodeLib.Error, /* cb */ Reader[T], scala.Unit]
+  type openCb[T /* <: Response */] = js.Function2[/* err */ nodeLib.Error with stdLib.Error, /* cb */ Reader[T], scala.Unit]
 }

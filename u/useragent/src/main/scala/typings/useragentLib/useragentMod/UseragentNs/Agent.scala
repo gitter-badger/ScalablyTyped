@@ -20,7 +20,7 @@ trait Agent extends js.Object {
   /**
     * The representation of a parsed Operating System.
     */
-  def toJSON(): useragentLib.Anon_OsPatch
+  def toJSON(): useragentLib.Anon_FamilyMajor
   /**
     * Outputs a compiled veersion number of the user agent.
     */

@@ -29,7 +29,7 @@ class SolidParticleSystem protected () extends IDisposable {
     * @example bSphereRadiusFactor = 1.0 / Math.sqrt(3.0) => the bounding sphere exactly matches a spherical mesh.
     */
   def this(name: java.lang.String, scene: Scene) = this()
-  def this(name: java.lang.String, scene: Scene, options: babylonjsLib.Anon_BSphereRadiusFactor) = this()
+  def this(name: java.lang.String, scene: Scene, options: babylonjsLib.Anon_Updatable) = this()
   var _addParticle: js.Any = js.native
   var _alwaysVisible: js.Any = js.native
   var _axisZ: js.Any = js.native
@@ -290,7 +290,7 @@ class SolidParticleSystem protected () extends IDisposable {
     * @returns the current SPS
     */
   def digest(mesh: Mesh): SolidParticleSystem = js.native
-  def digest(mesh: Mesh, options: babylonjsLib.Anon_Number): SolidParticleSystem = js.native
+  def digest(mesh: Mesh, options: babylonjsLib.Anon_FacetNb): SolidParticleSystem = js.native
   /**
     * Releases all held resources
     */

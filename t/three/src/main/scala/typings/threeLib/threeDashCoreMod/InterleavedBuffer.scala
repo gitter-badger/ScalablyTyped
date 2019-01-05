@@ -15,7 +15,7 @@ class InterleavedBuffer protected () extends js.Object {
   var length: scala.Double = js.native
   var needsUpdate: scala.Boolean = js.native
   var stride: scala.Double = js.native
-  var updateRange: threeLib.Anon_Count = js.native
+  var updateRange: threeLib.Anon_Offset = js.native
   var version: scala.Double = js.native
   def copy(source: InterleavedBuffer): this.type = js.native
   def copyAt(index1: scala.Double, attribute: InterleavedBufferAttribute, index2: scala.Double): InterleavedBuffer = js.native

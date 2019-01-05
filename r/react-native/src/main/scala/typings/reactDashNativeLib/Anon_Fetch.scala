@@ -9,19 +9,11 @@ trait Anon_Fetch extends js.Object {
   /**
     * eventName is expected to be `change`(deprecated) or `connectionChange`
     */
-  var addEventListener: js.Function2[
-    /* eventName */ java.lang.String, 
-    /* listener */ js.Function1[/* result */ scala.Boolean, scala.Unit], 
-    scala.Unit
-  ]
-  var fetch: js.Function0[js.Promise[scala.Boolean]]
+  def addEventListener(eventName: java.lang.String, listener: js.Function1[/* result */ scala.Boolean, scala.Unit]): scala.Unit
+  def fetch(): js.Promise[scala.Boolean]
   /**
     * eventName is expected to be `change`(deprecated) or `connectionChange`
     */
-  var removeEventListener: js.Function2[
-    /* eventName */ java.lang.String, 
-    /* listener */ js.Function1[/* result */ scala.Boolean, scala.Unit], 
-    scala.Unit
-  ]
+  def removeEventListener(eventName: java.lang.String, listener: js.Function1[/* result */ scala.Boolean, scala.Unit]): scala.Unit
 }
 

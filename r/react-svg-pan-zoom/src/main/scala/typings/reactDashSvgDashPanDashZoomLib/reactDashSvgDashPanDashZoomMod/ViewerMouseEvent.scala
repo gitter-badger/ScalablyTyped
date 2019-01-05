@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ViewerMouseEvent[T] extends js.Object {
-  var SVGViewer: reactLib.SVGSVGElement
+  var SVGViewer: reactLib.SVGSVGElement with stdLib.SVGSVGElement
   var originalEvent: reactLib.reactMod.ReactNs.MouseEvent[T, reactLib.NativeMouseEvent]
   var point: Point
   var scaleFactor: scala.Double

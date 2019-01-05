@@ -11,11 +11,11 @@ class Diagram protected ()
   extends ejDotWebDotAllLib.ejNs.Widget {
   def this(element: ejDotWebDotAllLib.JQuery) = this()
   def this(element: stdLib.Element) = this()
-  def this(element: ejDotWebDotAllLib.JQuery, options: ejDotWebDotAllLib.ejNs.Model) = this()
-  def this(element: stdLib.Element, options: ejDotWebDotAllLib.ejNs.Model) = this()
-  var defaults: ejDotWebDotAllLib.ejNs.Model = js.native
+  def this(element: ejDotWebDotAllLib.JQuery, options: ejDotWebDotAllLib.ejNs.Model with ejDotWebDotAllLib.ejNs.datavisualizationNs.DiagramNs.Model) = this()
+  def this(element: stdLib.Element, options: ejDotWebDotAllLib.ejNs.Model with ejDotWebDotAllLib.ejNs.datavisualizationNs.DiagramNs.Model) = this()
+  var defaults: ejDotWebDotAllLib.ejNs.Model with ejDotWebDotAllLib.ejNs.datavisualizationNs.DiagramNs.Model = js.native
   @JSName("model")
-  var model_Diagram: ejDotWebDotAllLib.ejNs.Model = js.native
+  var model_Diagram: ejDotWebDotAllLib.ejNs.Model with ejDotWebDotAllLib.ejNs.datavisualizationNs.DiagramNs.Model = js.native
   /** Add nodes and connectors to diagram at runtime
     * @param {any} a JSON to define a node/connector or an array of nodes and connector
     * @returns {boolean}

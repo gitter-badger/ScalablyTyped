@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 object graphlibNs extends js.Object {
   @js.native
   class Graph () extends js.Object {
-    def this(opt: dagreDashLayoutLib.Anon_Compound) = this()
+    def this(opt: dagreDashLayoutLib.Anon_Directed) = this()
     def edge(id: js.Any): js.Any = js.native
     def edges(): js.Array[dagreDashLayoutLib.dagreDashLayoutMod.Edge] = js.native
     def graph(): dagreDashLayoutLib.dagreDashLayoutMod.GraphLabel = js.native
@@ -21,8 +21,8 @@ object graphlibNs extends js.Object {
     def setDefaultEdgeLabel(callback: js.Function0[java.lang.String | js.Object]): Graph = js.native
     def setDefaultNodeLabel(callback: java.lang.String): Graph = js.native
     def setDefaultNodeLabel(callback: js.Function0[java.lang.String | js.Object]): Graph = js.native
-    def setEdge(params: dagreDashLayoutLib.Anon_W): Graph = js.native
-    def setEdge(params: dagreDashLayoutLib.Anon_W, value: java.lang.String): Graph = js.native
+    def setEdge(params: dagreDashLayoutLib.Anon_V): Graph = js.native
+    def setEdge(params: dagreDashLayoutLib.Anon_V, value: java.lang.String): Graph = js.native
     def setEdge(sourceId: java.lang.String, targetId: java.lang.String): Graph = js.native
     def setEdge(
       sourceId: java.lang.String,

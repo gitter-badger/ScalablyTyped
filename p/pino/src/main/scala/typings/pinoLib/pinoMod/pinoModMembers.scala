@@ -23,7 +23,7 @@ object pinoModMembers extends js.Object {
     * A time function must synchronously return a string that would be a valid component of a JSON string. For example,
     * the default function returns a string like `,"time":1493426328206`.
     */
-  val stdTimeFunctions: pinoLib.Anon_NullTime = js.native
+  val stdTimeFunctions: pinoLib.Anon_EpochTime = js.native
   /**
     * @param [optionsOrStream]: an options object or a writable stream where the logs will be written. It can also receive some log-line metadata, if the
     * relative protocol is enabled. Default: process.stdout
@@ -77,11 +77,15 @@ object pinoModMembers extends js.Object {
   def `final`(
     logger: pinoLib.pinoMod.PNs.Logger,
     handler: js.Function3[
-      /* error */ nodeLib.Error, 
+      /* error */ nodeLib.Error with stdLib.Error, 
       /* finalLogger */ pinoLib.pinoMod.PNs.Logger, 
       /* repeated */ js.Any, 
       scala.Unit
     ]
-  ): js.Function2[/* error */ nodeLib.Error | scala.Null, /* repeated */ js.Any, scala.Unit] = js.native
+  ): js.Function2[
+    /* error */ (nodeLib.Error with stdLib.Error) | scala.Null, 
+    /* repeated */ js.Any, 
+    scala.Unit
+  ] = js.native
 }
 

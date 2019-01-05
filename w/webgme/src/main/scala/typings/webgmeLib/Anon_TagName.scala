@@ -7,8 +7,11 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Anon_TagName extends js.Object {
-  /** Name of tag to delete. */
-  def apply(tagName: java.lang.String, callback: webgmeLib.GmeStorageNs.ErrorOnlyCallback): scala.Unit = js.native
-  def apply(tagname: java.lang.String): js.Promise[scala.Unit] = js.native
+  def apply(tagName: webgmeLib.GmeCommonNs.Name, commitHash: webgmeLib.GmeStorageNs.CommitHash): js.Promise[scala.Unit] = js.native
+  def apply(
+    tagName: webgmeLib.GmeCommonNs.Name,
+    commitHash: webgmeLib.GmeStorageNs.CommitHash,
+    callback: webgmeLib.GmeCommonNs.ResultCallback[scala.Unit]
+  ): scala.Unit = js.native
 }
 

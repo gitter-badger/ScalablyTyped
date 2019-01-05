@@ -9,11 +9,11 @@ trait GoogleApiYouTubeChannelResource extends js.Object {
   /**
     * The brandingSettings object encapsulates information about the branding of the channel.
     */
-  var brandingSettings: Anon_Watch
+  var brandingSettings: Anon_Channel
   /**
     * The contentDetails object encapsulates information about the channels content.
     */
-  var contentDetails: Anon_GooglePlusUserId
+  var contentDetails: Anon_RelatedPlaylists
   /**
     * The ETag for the channel resource.
     */
@@ -25,7 +25,7 @@ trait GoogleApiYouTubeChannelResource extends js.Object {
   /**
     * The invideoPromotion object encapsulates information about a promotional campaign associated with the channel. A channel can use an in-video promotional campaign to display the thumbnail image of a promoted video in the video player during playback of the channels videos
     */
-  var invideoPromotion: Anon_Items
+  var invideoPromotion: Anon_Timing
   /**
     * The type of the API resource. For channel resources, the value will be youtube#channel.
     */
@@ -33,7 +33,7 @@ trait GoogleApiYouTubeChannelResource extends js.Object {
   /**
     * The snippet object contains basic details about the channel, such as its title, description, and thumbnail images.
     */
-  var snippet: Anon_DescriptionThumbnailsPublishedAt
+  var snippet: Anon_Title
   /**
     * The statistics object encapsulates statistics for the channel.
     */
@@ -41,7 +41,7 @@ trait GoogleApiYouTubeChannelResource extends js.Object {
   /**
     * The status object encapsulates information about the privacy status of the channel.
     */
-  var status: Anon_PrivacyStatusIsLinked
+  var status: Anon_PrivacyStatus
   /**
     * The topicDetails object encapsulates information about Freebase topics associated with the channel.
     */

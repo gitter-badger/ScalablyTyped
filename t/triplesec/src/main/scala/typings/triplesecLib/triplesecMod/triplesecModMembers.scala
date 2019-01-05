@@ -11,7 +11,7 @@ object triplesecModMembers extends js.Object {
   def decrypt(
     arg: Arguments,
     cb: js.Function2[
-      /* err */ nodeLib.Error | scala.Null, 
+      /* err */ (nodeLib.Error with stdLib.Error) | scala.Null, 
       /* buff */ nodeLib.Buffer | scala.Null, 
       scala.Unit
     ]
@@ -19,7 +19,7 @@ object triplesecModMembers extends js.Object {
   def encrypt(
     arg: Arguments,
     cb: js.Function2[
-      /* err */ nodeLib.Error | scala.Null, 
+      /* err */ (nodeLib.Error with stdLib.Error) | scala.Null, 
       /* buff */ nodeLib.Buffer | scala.Null, 
       scala.Unit
     ]

@@ -12,34 +12,34 @@ trait Session extends js.Object {
     * Creates a new session
     */
   @JSName("create")
-  var create_Original: consulLib.Anon_Opts = js.native
+  var create_Original: consulLib.Anon_OptsCallbackTDataCreateOptions = js.native
   /**
     * Destroys a given session
     */
   @JSName("destroy")
-  var destroy_Original: consulLib.Anon_IdCallback = js.native
+  var destroy_Original: consulLib.Anon_IdCallbackOptsTDataStringVoidDestroyOptions = js.native
   @JSName("get")
-  var get_Original: consulLib.Anon_IdCallbackOptsTData = js.native
+  var get_Original: consulLib.Anon_IdCallbackOptsTDataStringVoidGetOptions = js.native
   /**
     * Queries a given session
     */
   @JSName("info")
-  var info_Original: consulLib.Anon_Id = js.native
+  var info_Original: consulLib.Anon_IdCallbackOptsTDataStringVoidInfoOptions = js.native
   /**
     * Lists all the active sessions
     */
   @JSName("list")
-  var list_Original: consulLib.Anon_OptsCallback = js.native
+  var list_Original: consulLib.Anon_OptsCallbackTDataListOptionsVoidThenable = js.native
   /**
     * Lists sessions belonging to a node
     */
   @JSName("node")
-  var node_Original: consulLib.Anon_NodeCallback = js.native
+  var node_Original: consulLib.Anon_NodeCallbackOptsTData = js.native
   /**
     * Renews a TTL-based session
     */
   @JSName("renew")
-  var renew_Original: consulLib.Anon_IdCallbackOpts = js.native
+  var renew_Original: consulLib.Anon_IdCallbackOptsTDataStringVoidRenewOptions = js.native
   /**
     * Creates a new session
     */

@@ -20,6 +20,6 @@ trait GridLayoutOptions extends ShapedLayoutOptions {
   // force num of rows in the grid
   var rows: js.UndefOr[scala.Double] = js.undefined
   // returns { row, col } for element
-  def position(nodeid: java.lang.String): cytoscapeLib.Anon_Col
+  def position(nodeid: java.lang.String): cytoscapeLib.Anon_Row
 }
 

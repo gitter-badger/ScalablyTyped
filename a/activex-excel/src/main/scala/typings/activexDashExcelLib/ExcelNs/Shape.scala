@@ -75,7 +75,7 @@ class Shape protected () extends js.Object {
   val TopLeftCell_Original: Range = js.native
   val Type: activexDashOfficeLib.OfficeNs.MsoShapeType = js.native
   val VerticalFlip: activexDashOfficeLib.OfficeNs.MsoTriState = js.native
-  val Vertices: activexDashInteropLib.SafeArray[scala.Double] = js.native
+  val Vertices: activexDashInteropLib.SafeArray[scala.Double] with stdLib.SafeArray[scala.Double] = js.native
   var Visible: activexDashOfficeLib.OfficeNs.MsoTriState = js.native
   var Width: scala.Double = js.native
   val ZOrderPosition: scala.Double = js.native

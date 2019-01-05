@@ -11,7 +11,7 @@ trait IPopoverOptions extends js.Object {
   var container: js.UndefOr[java.lang.String | scala.Boolean] = js.undefined
   var content: js.UndefOr[java.lang.String] = js.undefined
   var contentTemplate: js.UndefOr[java.lang.String] = js.undefined
-  var delay: js.UndefOr[scala.Double | angularDashStrapLib.Anon_Hide] = js.undefined
+  var delay: js.UndefOr[scala.Double | angularDashStrapLib.Anon_Show] = js.undefined
   var html: js.UndefOr[scala.Boolean] = js.undefined
   var id: js.UndefOr[java.lang.String] = js.undefined
   var onBeforeHide: js.UndefOr[js.Function1[/* popover */ IPopover, scala.Unit]] = js.undefined
@@ -26,6 +26,6 @@ trait IPopoverOptions extends js.Object {
   var templateUrl: js.UndefOr[java.lang.String] = js.undefined
   var title: js.UndefOr[java.lang.String] = js.undefined
   var trigger: js.UndefOr[java.lang.String] = js.undefined
-  var viewport: js.UndefOr[java.lang.String | angularDashStrapLib.Anon_Padding] = js.undefined
+  var viewport: js.UndefOr[java.lang.String | angularDashStrapLib.Anon_Selector] = js.undefined
 }
 

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait MulterGfsOptions extends js.Object {
   var file: js.UndefOr[
     js.Function2[
-      /* req */ expressDashServeDashStaticDashCoreLib.expressDashServeDashStaticDashCoreMod.Global.ExpressNs.Request, 
+      /* req */ expressDashServeDashStaticDashCoreLib.expressDashServeDashStaticDashCoreMod.Global.ExpressNs.Request with multerLib.multerMod.Global.ExpressNs.Request, 
       /* file */ multerDashGridfsDashStorageLib.multerDashGridfsDashStorageMod.Global.ExpressNs.MulterNs.File, 
       _
     ]

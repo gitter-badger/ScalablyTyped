@@ -44,8 +44,8 @@ trait ButtonApi extends js.Object {
   /**
     * Get a jQuery object that contains a reference to the node for the selected button.
     */
-  def node(): datatablesDotNetLib.JQuery = js.native
-  def nodes(): datatablesDotNetLib.JQuery = js.native
+  def node(): datatablesDotNetLib.JQuery with jqueryLib.JQuery[stdLib.HTMLElement] = js.native
+  def nodes(): datatablesDotNetLib.JQuery with jqueryLib.JQuery[stdLib.HTMLElement] = js.native
   /**
     * Determine if a button is currently in the processing state or not.
     */

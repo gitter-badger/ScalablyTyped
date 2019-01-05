@@ -26,7 +26,7 @@ trait TabsContainerProps
       /* tabId */ reactDashMdLib.libMod.IdPropType, 
       /* tabControlsId */ scala.Double | java.lang.String, 
       /* tabChildren */ reactLib.reactMod.ReactNs.ReactNode, 
-      /* event */ reactLib.Event, 
+      /* event */ reactLib.Event with stdLib.Event, 
       scala.Unit
     ]
   ] = js.undefined

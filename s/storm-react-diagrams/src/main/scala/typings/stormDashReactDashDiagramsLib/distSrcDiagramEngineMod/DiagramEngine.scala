@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class DiagramEngine ()
   extends stormDashReactDashDiagramsLib.distSrcBaseEntityMod.BaseEntity[DiagramEngineListener] {
-  var canvas: reactLib.Element = js.native
+  var canvas: reactLib.Element with stdLib.Element = js.native
   var canvasMatrix: js.Array[js.Array[scala.Double]] = js.native
   var diagramModel: stormDashReactDashDiagramsLib.distSrcModelsDiagramModelMod.DiagramModel = js.native
   var hAdjustmentFactor: scala.Double = js.native
@@ -37,7 +37,7 @@ class DiagramEngine ()
     * Despite being a long method, we simply iterate over all three collections (nodes, ports and points)
     * to find the highest X and Y dimensions, so we can build the matrix large enough to contain all elements.
     */
-  def calculateMatrixDimensions(): stormDashReactDashDiagramsLib.Anon_HAdjustmentFactor = js.native
+  def calculateMatrixDimensions(): stormDashReactDashDiagramsLib.Anon_WidthHAdjustmentFactor = js.native
   def calculateRoutingMatrix(): scala.Unit = js.native
   def canEntityRepaint(
     baseModel: stormDashReactDashDiagramsLib.distSrcModelsBaseModelMod.BaseModel[
@@ -98,21 +98,21 @@ class DiagramEngine ()
     * Determine the width and height of the node passed in.
     * It currently assumes nodes have a rectangular shape, can be overriden for customised shapes.
     */
-  def getNodeDimensions(node: stormDashReactDashDiagramsLib.distSrcModelsNodeModelMod.NodeModel): stormDashReactDashDiagramsLib.Anon_Height = js.native
-  def getNodeElement(node: stormDashReactDashDiagramsLib.distSrcModelsNodeModelMod.NodeModel): reactLib.Element = js.native
+  def getNodeDimensions(node: stormDashReactDashDiagramsLib.distSrcModelsNodeModelMod.NodeModel): stormDashReactDashDiagramsLib.Anon_Width = js.native
+  def getNodeElement(node: stormDashReactDashDiagramsLib.distSrcModelsNodeModelMod.NodeModel): reactLib.Element with stdLib.Element = js.native
   def getNodeFactories(): org.scalablytyped.runtime.StringDictionary[
     stormDashReactDashDiagramsLib.distSrcFactoriesAbstractNodeFactoryMod.AbstractNodeFactory[stormDashReactDashDiagramsLib.distSrcModelsNodeModelMod.NodeModel]
   ] = js.native
   def getNodeFactory(`type`: java.lang.String): stormDashReactDashDiagramsLib.distSrcFactoriesAbstractNodeFactoryMod.AbstractNodeFactory[stormDashReactDashDiagramsLib.distSrcModelsNodeModelMod.NodeModel] = js.native
   def getNodePortElement(port: stormDashReactDashDiagramsLib.distSrcModelsPortModelMod.PortModel): js.Any = js.native
-  def getPortCenter(port: stormDashReactDashDiagramsLib.distSrcModelsPortModelMod.PortModel): stormDashReactDashDiagramsLib.Anon_Y = js.native
+  def getPortCenter(port: stormDashReactDashDiagramsLib.distSrcModelsPortModelMod.PortModel): stormDashReactDashDiagramsLib.Anon_X = js.native
   /**
     * Calculate rectangular coordinates of the port passed in.
     */
-  def getPortCoords(port: stormDashReactDashDiagramsLib.distSrcModelsPortModelMod.PortModel): stormDashReactDashDiagramsLib.Anon_YX = js.native
+  def getPortCoords(port: stormDashReactDashDiagramsLib.distSrcModelsPortModelMod.PortModel): stormDashReactDashDiagramsLib.Anon_XY = js.native
   def getPortFactory(`type`: java.lang.String): stormDashReactDashDiagramsLib.distSrcFactoriesAbstractPortFactoryMod.AbstractPortFactory[stormDashReactDashDiagramsLib.distSrcModelsPortModelMod.PortModel] = js.native
-  def getRelativeMousePoint(event: js.Any): stormDashReactDashDiagramsLib.Anon_Y = js.native
-  def getRelativePoint(x: js.Any, y: js.Any): stormDashReactDashDiagramsLib.Anon_Y = js.native
+  def getRelativeMousePoint(event: js.Any): stormDashReactDashDiagramsLib.Anon_X = js.native
+  def getRelativePoint(x: js.Any, y: js.Any): stormDashReactDashDiagramsLib.Anon_X = js.native
   /**
     * A representation of the canvas in the following format:
     *
@@ -163,7 +163,7 @@ class DiagramEngine ()
   ): scala.Unit = js.native
   def repaintCanvas(): scala.Unit = js.native
   def setCanvas(): scala.Unit = js.native
-  def setCanvas(canvas: reactLib.Element): scala.Unit = js.native
+  def setCanvas(canvas: reactLib.Element with stdLib.Element): scala.Unit = js.native
   def setDiagramModel(model: stormDashReactDashDiagramsLib.distSrcModelsDiagramModelMod.DiagramModel): scala.Unit = js.native
   def setMaxNumberPointsPerLink(max: scala.Double): scala.Unit = js.native
   def setSmartRoutingStatus(status: scala.Boolean): scala.Unit = js.native

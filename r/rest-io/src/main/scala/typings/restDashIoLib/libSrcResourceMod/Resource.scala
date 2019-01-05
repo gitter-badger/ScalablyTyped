@@ -29,7 +29,7 @@ class Resource protected () extends js.Object {
   def createQuery(query: java.lang.String): js.Any = js.native
   def createRegex(query: java.lang.String): stdLib.RegExp = js.native
   def del(req: expressLib.expressMod.eNs.Request, res: expressLib.expressMod.eNs.Response): scala.Unit = js.native
-  def errorHandler(err: nodeLib.Error, res: expressLib.expressMod.eNs.Response): scala.Unit = js.native
+  def errorHandler(err: nodeLib.Error with stdLib.Error, res: expressLib.expressMod.eNs.Response): scala.Unit = js.native
   def getAll(req: expressLib.expressMod.eNs.Request, res: expressLib.expressMod.eNs.Response): scala.Unit = js.native
   def getById(req: expressLib.expressMod.eNs.Request, res: expressLib.expressMod.eNs.Response): scala.Unit = js.native
   def setupRecursiveRoutes(): scala.Unit = js.native

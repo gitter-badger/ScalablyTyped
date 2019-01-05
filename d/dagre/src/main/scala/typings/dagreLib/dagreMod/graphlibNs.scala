@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 object graphlibNs extends js.Object {
   @js.native
   class Graph () extends js.Object {
-    def this(opt: dagreLib.Anon_Compound) = this()
+    def this(opt: dagreLib.Anon_Directed) = this()
     def children(parentName: java.lang.String): js.UndefOr[java.lang.String] = js.native
     def edge(edgeObj: dagreLib.dagreMod.Edge): dagreLib.dagreMod.GraphEdge = js.native
     def edge(outNodeName: java.lang.String, inNodeName: java.lang.String): dagreLib.dagreMod.GraphEdge = js.native

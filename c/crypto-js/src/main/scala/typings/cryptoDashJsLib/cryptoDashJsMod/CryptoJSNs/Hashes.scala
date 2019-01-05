@@ -15,11 +15,11 @@ trait Hashes extends js.Object {
   var Rabbit: CipherHelper = js.native
   var RabbitLegacy: CipherHelper = js.native
   var TripleDES: CipherHelper = js.native
-  var algo: cryptoDashJsLib.Anon_DES = js.native
-  var enc: cryptoDashJsLib.Anon_Utf8 = js.native
-  var format: cryptoDashJsLib.Anon_Hex = js.native
+  var algo: cryptoDashJsLib.Anon_AES = js.native
+  var enc: cryptoDashJsLib.Anon_Latin1 = js.native
+  var format: cryptoDashJsLib.Anon_OpenSSL = js.native
   var lib: cryptoDashJsLib.Anon_WordArray = js.native
-  var mode: cryptoDashJsLib.Anon_OFB = js.native
+  var mode: cryptoDashJsLib.Anon_CBC = js.native
   var pad: cryptoDashJsLib.Anon_Pkcs7 = js.native
   def HmacMD5(message: LibWordArray): WordArray = js.native
   def HmacMD5(message: LibWordArray, key: WordArray, options: js.Any*): WordArray = js.native

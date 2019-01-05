@@ -15,7 +15,7 @@ object srcSharedModMembers extends js.Object {
     segmentGroup: atAngularRouterLib.srcUrlUnderscoreTreeMod.UrlSegmentGroup,
     route: atAngularRouterLib.srcConfigMod.Route
   ): atAngularRouterLib.srcConfigMod.UrlMatchResult | scala.Null = js.native
-  def isNavigationCancelingError(error: nodeLib.Error): js.Any = js.native
-  def navigationCancelingError(message: java.lang.String): nodeLib.Error = js.native
+  def isNavigationCancelingError(error: nodeLib.Error with stdLib.Error): js.Any = js.native
+  def navigationCancelingError(message: java.lang.String): nodeLib.Error with stdLib.Error = js.native
 }
 

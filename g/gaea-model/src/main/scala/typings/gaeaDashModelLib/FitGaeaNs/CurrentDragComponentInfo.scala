@@ -10,10 +10,10 @@ trait CurrentDragComponentInfo extends js.Object {
   // 开始拖拽在父级中的位置
   var dragStartIndex: scala.Double
   // 开始拖拽父级的 dom
-  var dragStartParentElement: reactLib.HTMLElement
+  var dragStartParentElement: reactLib.HTMLElement with stdLib.HTMLElement
   var newInfo: js.UndefOr[gaeaDashModelLib.Anon_UniqueKey] = js.undefined
   // 类型
   var `type`: gaeaDashModelLib.gaeaDashModelLibStrings.`new` | gaeaDashModelLib.gaeaDashModelLibStrings.combo | gaeaDashModelLib.gaeaDashModelLibStrings.viewport
-  var viewportInfo: js.UndefOr[gaeaDashModelLib.Anon_TargetIndex] = js.undefined
+  var viewportInfo: js.UndefOr[gaeaDashModelLib.Anon_MapUniqueKey] = js.undefined
 }
 

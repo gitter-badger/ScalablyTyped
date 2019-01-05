@@ -13,7 +13,7 @@ trait FilterMenuProps[T] extends js.Object {
   var prefixCls: java.lang.String = js.native
   var selectedKeys: js.Array[java.lang.String] = js.native
   def confirmFilter(column: ColumnProps[T], selectedKeys: js.Array[java.lang.String]): js.Any = js.native
-  def getPopupContainer(): reactLib.HTMLElement = js.native
-  def getPopupContainer(triggerNode: reactLib.Element): reactLib.HTMLElement = js.native
+  def getPopupContainer(): reactLib.HTMLElement with stdLib.HTMLElement = js.native
+  def getPopupContainer(triggerNode: reactLib.Element with stdLib.Element): reactLib.HTMLElement with stdLib.HTMLElement = js.native
 }
 

@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 class RevoluteConstraint protected ()
   extends p2Lib.p2Mod.p2Ns.RevoluteConstraint {
   def this(bodyA: p2Lib.p2Mod.p2Ns.Body, bodyB: p2Lib.p2Mod.p2Ns.Body) = this()
-  def this(bodyA: p2Lib.p2Mod.p2Ns.Body, bodyB: p2Lib.p2Mod.p2Ns.Body, options: p2Lib.Anon_LocalPivotA) = this()
+  def this(bodyA: p2Lib.p2Mod.p2Ns.Body, bodyB: p2Lib.p2Mod.p2Ns.Body, options: p2Lib.Anon_WorldPivot) = this()
   /* CompleteClass */
   override var angle: scala.Double = js.native
   /* CompleteClass */

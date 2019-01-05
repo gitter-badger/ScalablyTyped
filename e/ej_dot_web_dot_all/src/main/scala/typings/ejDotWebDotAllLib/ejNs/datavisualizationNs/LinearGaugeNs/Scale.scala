@@ -25,7 +25,7 @@ trait Scale extends js.Object {
   /** Specifies the scale Direction of the Scale. See
     * @Default {CounterClockwise}
     */
-  var direction: js.UndefOr[Direction | java.lang.String] = js.undefined
+  var direction: js.UndefOr[(Direction with ejDotWebDotAllLib.ejNs.Direction) | java.lang.String] = js.undefined
   /** Specifies the indicator
     * @Default {Array}
     */

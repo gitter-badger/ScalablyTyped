@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 class Map[P /* <: MapProps */, E /* <: leafletLib.leafletMod.Map */] () extends MapComponent[P, E] {
   var className: js.UndefOr[java.lang.String] = js.native
-  var container: reactLib.HTMLDivElement = js.native
-  def bindContainer(container: reactLib.HTMLDivElement): scala.Unit = js.native
+  var container: reactLib.HTMLDivElement with stdLib.HTMLDivElement = js.native
+  def bindContainer(container: reactLib.HTMLDivElement with stdLib.HTMLDivElement): scala.Unit = js.native
   def createLeafletElement(props: P): E = js.native
   def getChildContext(): reactDashLeafletLib.Anon_LayerContainer[E] = js.native
   def shouldUpdateBounds(

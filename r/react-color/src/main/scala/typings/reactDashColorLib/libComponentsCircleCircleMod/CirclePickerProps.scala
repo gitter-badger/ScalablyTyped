@@ -13,7 +13,7 @@ trait CirclePickerProps
   var onSwatchHover: js.UndefOr[
     js.Function2[
       /* colorResult */ reactDashColorLib.reactDashColorMod.ColorResult, 
-      /* event */ reactLib.MouseEvent, 
+      /* event */ reactLib.MouseEvent with stdLib.MouseEvent, 
       scala.Unit
     ]
   ] = js.undefined

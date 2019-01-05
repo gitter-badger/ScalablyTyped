@@ -24,7 +24,7 @@ class Document () extends js.Object {
   def find(xpath: java.lang.String): js.Array[Element] = js.native
   def get(xpath: java.lang.String): Element | scala.Null = js.native
   def get(xpath: java.lang.String, namespaces: StringMap): Element | scala.Null = js.native
-  def getDtd(): libxmljsLib.Anon_ExternalId = js.native
+  def getDtd(): libxmljsLib.Anon_Name = js.native
   def node(name: java.lang.String): Element = js.native
   def node(name: java.lang.String, content: java.lang.String): Element = js.native
   def root(): Element | scala.Null = js.native

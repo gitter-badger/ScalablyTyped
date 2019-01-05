@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveMultipleInheritance: Dropped parents List(atBlueprintjsCoreLib.libEsmCommonPropsMod.IProps because Would inherit conflicting mutable fields List(className))*/
-trait IFileInputProps
-  extends reactLib.reactMod.ReactNs.LabelHTMLAttributes[reactLib.HTMLLabelElement] {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- atBlueprintjsCoreLib.libEsmCommonPropsMod.IProps because var conflicts: className. Inlined  */ trait IFileInputProps
+  extends reactLib.reactMod.ReactNs.LabelHTMLAttributes[reactLib.HTMLLabelElement with stdLib.HTMLLabelElement] {
   /**
     * Whether the file input is non-interactive.
     * Setting this to `true` will automatically disable the child input too.
@@ -23,7 +23,9 @@ trait IFileInputProps
     * `type` will be ignored, because the input _must_ be `type="file"`.
     * Pass `onChange` here to be notified when the user selects a file.
     */
-  var inputProps: js.UndefOr[reactLib.reactMod.ReactNs.HTMLProps[reactLib.HTMLInputElement]] = js.undefined
+  var inputProps: js.UndefOr[
+    reactLib.reactMod.ReactNs.HTMLProps[reactLib.HTMLInputElement with stdLib.HTMLInputElement]
+  ] = js.undefined
   /**
     * Whether the file input should appear with large styling.
     */
@@ -37,7 +39,9 @@ trait IFileInputProps
     * __Note:__ The top-level `onChange` prop is passed to the wrapping
     * `<label>` rather than the `<input>`, which may not be what you expect.
     */
-  var onInputChange: js.UndefOr[reactLib.reactMod.ReactNs.FormEventHandler[reactLib.HTMLInputElement]] = js.undefined
+  var onInputChange: js.UndefOr[
+    reactLib.reactMod.ReactNs.FormEventHandler[reactLib.HTMLInputElement with stdLib.HTMLInputElement]
+  ] = js.undefined
   /**
     * The text to display.
     * @default "Choose file..."

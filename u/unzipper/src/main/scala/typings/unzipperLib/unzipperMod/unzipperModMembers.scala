@@ -14,6 +14,6 @@ object unzipperModMembers extends js.Object {
   def Parse(): ParseStream = js.native
   def Parse(opts: ParseOptions): ParseStream = js.native
   def ParseOne(`match`: stdLib.RegExp, opts: ParseOptions): nodeLib.streamMod.Duplex = js.native
-  def unzip(source: unzipperLib.Anon_Size, offset: scala.Double, _password: java.lang.String): Entry = js.native
+  def unzip(source: unzipperLib.Anon_Stream, offset: scala.Double, _password: java.lang.String): Entry = js.native
 }
 

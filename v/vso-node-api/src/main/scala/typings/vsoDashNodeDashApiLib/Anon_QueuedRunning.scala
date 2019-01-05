@@ -6,8 +6,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_QueuedRunning extends js.Object {
-  var all: scala.Double
+  var approved: scala.Double
+  var broken: scala.Double
+  var notApplicable: scala.Double
   var queued: scala.Double
+  var rejected: scala.Double
   var running: scala.Double
 }
 

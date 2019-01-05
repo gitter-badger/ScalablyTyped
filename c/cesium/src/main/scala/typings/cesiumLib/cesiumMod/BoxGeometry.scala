@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class BoxGeometry protected ()
   extends cesiumLib.cesiumMod.CesiumNs.BoxGeometry {
-  def this(options: cesiumLib.Anon_MaximumCorner) = this()
+  def this(options: cesiumLib.Anon_MinimumCorner) = this()
 }
 
 @JSImport("cesium", "BoxGeometry")

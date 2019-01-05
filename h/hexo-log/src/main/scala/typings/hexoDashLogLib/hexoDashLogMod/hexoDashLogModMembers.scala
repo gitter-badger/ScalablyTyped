@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object hexoDashLogModMembers extends js.Object {
   def apply(): HexoLogger = js.native
-  def apply(options: hexoDashLogLib.Anon_Debug): HexoLogger = js.native
+  def apply(options: hexoDashLogLib.Anon_Name): HexoLogger = js.native
 }
 

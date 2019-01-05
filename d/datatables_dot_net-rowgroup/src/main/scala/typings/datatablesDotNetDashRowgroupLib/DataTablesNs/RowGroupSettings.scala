@@ -32,7 +32,7 @@ trait RowGroupSettings extends js.Object {
     js.Function2[
       /* rows */ Api, 
       /* group */ java.lang.String, 
-      java.lang.String | stdLib.HTMLElement | datatablesDotNetLib.JQuery
+      java.lang.String | stdLib.HTMLElement | (datatablesDotNetLib.JQuery with jqueryLib.JQuery[stdLib.HTMLElement])
     ]
   ] = js.undefined
   /**
@@ -42,7 +42,7 @@ trait RowGroupSettings extends js.Object {
     js.Function2[
       /* rows */ Api, 
       /* group */ java.lang.String, 
-      java.lang.String | stdLib.HTMLElement | datatablesDotNetLib.JQuery
+      java.lang.String | stdLib.HTMLElement | (datatablesDotNetLib.JQuery with jqueryLib.JQuery[stdLib.HTMLElement])
     ]
   ] = js.undefined
 }

@@ -13,7 +13,7 @@ trait OneSignalCordovaPlugin extends js.Object {
   def deleteTags(keys: js.Array[java.lang.String]): scala.Unit
   def enableSound(enable: scala.Boolean): scala.Unit
   def enableVibrate(enable: scala.Boolean): scala.Unit
-  def getIds(callback: js.Function1[/* id */ onesignalDashCordovaDashPluginLib.Anon_PushToken, scala.Unit]): scala.Unit
+  def getIds(callback: js.Function1[/* id */ onesignalDashCordovaDashPluginLib.Anon_UserId, scala.Unit]): scala.Unit
   def getPermissionSubscriptionState(callback: js.Function1[/* status */ OSPermissionSubscriptionState, scala.Unit]): scala.Unit
   def getTags(callback: js.Function1[/* tags */ js.Any, scala.Unit]): scala.Unit
   def postNotification(
@@ -26,7 +26,7 @@ trait OneSignalCordovaPlugin extends js.Object {
   def registerForPushNotifications(): scala.Unit
   def sendTag(key: java.lang.String, value: java.lang.String): scala.Unit
   def sendTags(tags: org.scalablytyped.runtime.StringDictionary[java.lang.String]): scala.Unit
-  def setLogLevel(logLevel: onesignalDashCordovaDashPluginLib.Anon_VisualLevel): scala.Unit
+  def setLogLevel(logLevel: onesignalDashCordovaDashPluginLib.Anon_LogLevel): scala.Unit
   def setSubscription(enable: scala.Boolean): scala.Unit
   def startInit(appId: java.lang.String): OneSignalBuilder
   def syncHashedEmail(email: java.lang.String): scala.Unit

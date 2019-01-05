@@ -5,8 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ExpoWebGLRenderingContext
-  extends reactLib.WebGLRenderingContext {
-  def endFrameEXP(): scala.Unit
+  extends stdLib.WebGLRenderingContextBase {
+  def endFrameEXP(): scala.Unit = js.native
 }
 

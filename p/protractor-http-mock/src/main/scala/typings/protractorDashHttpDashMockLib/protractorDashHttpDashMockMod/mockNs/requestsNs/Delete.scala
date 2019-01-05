@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
   * HTTP Delete request mock.
   */
 trait Delete[TResponse] extends js.Object {
-  var request: protractorDashHttpDashMockLib.Anon_Method
-  var response: protractorDashHttpDashMockLib.Anon_Data[TResponse]
+  var request: protractorDashHttpDashMockLib.Anon_MethodPathRegex
+  var response: protractorDashHttpDashMockLib.Anon_Status[TResponse]
 }
 

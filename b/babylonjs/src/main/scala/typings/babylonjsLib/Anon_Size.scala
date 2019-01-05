@@ -14,7 +14,6 @@ trait Anon_Size extends js.Object {
   var height: js.UndefOr[scala.Double] = js.undefined
   var sideOrientation: js.UndefOr[scala.Double] = js.undefined
   var size: js.UndefOr[scala.Double] = js.undefined
-  var updatable: js.UndefOr[scala.Boolean] = js.undefined
   var width: js.UndefOr[scala.Double] = js.undefined
 }
 

@@ -15,7 +15,7 @@ trait CallbackArgs extends js.Object {
     * The native scroll event that triggered the callback.
     * May be missing if the callback wasn't triggered as the result of a scroll
     */
-  var event: js.UndefOr[reactLib.Event] = js.undefined
+  var event: js.UndefOr[reactLib.Event with stdLib.Event] = js.undefined
   /*
     * The position that the waypoint had before.
     * One of Waypoint.below, Waypoint.above, Waypoint.inside, and Waypoint.invisible.

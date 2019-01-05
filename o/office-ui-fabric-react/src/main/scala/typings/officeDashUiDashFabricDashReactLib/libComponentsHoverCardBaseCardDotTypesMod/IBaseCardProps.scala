@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait IBaseCardProps[TComponent, TStyles, TStyleProps]
-  extends reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLDivElement] {
+  extends reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLDivElement with stdLib.HTMLDivElement] {
   /**
     * Optional callback to access the TComponent interface. Use this instead of ref for accessing
     * the public methods and properties of the component.
@@ -55,7 +55,7 @@ trait IBaseCardProps[TComponent, TStyles, TStyleProps]
   /**
     * Element to anchor the card to.
     */
-  var targetElement: js.UndefOr[reactLib.HTMLElement] = js.undefined
+  var targetElement: js.UndefOr[reactLib.HTMLElement with stdLib.HTMLElement] = js.undefined
   /**
     * Theme provided by HOC.
     */

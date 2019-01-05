@@ -1,15 +1,15 @@
 organization := "org.scalablytyped"
 name := "imagemin-svgo"
-version := "7.0-dt-20180825Z-dd9feb"
-scalaVersion := "2.12.7"
+version := "7.0-dt-20180825Z-493574"
+scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "imagemin" % "6.0-dt-20180823Z-6b3e1d",
-  "org.scalablytyped" %%% "node" % "10.12-dt-20181219Z-77ce7e",
-  "org.scalablytyped" %%% "std" % "3.2.2-9ed5ff",
-  "org.scalablytyped" %%% "svgo" % "1.0-dt-20180507Z-c5d82f")
+  "org.scalablytyped" %%% "imagemin" % "6.0-dt-20180823Z-f96646",
+  "org.scalablytyped" %%% "node" % "10.12-dt-20181219Z-d5e59c",
+  "org.scalablytyped" %%% "std" % "3.2.2-3b2f2a",
+  "org.scalablytyped" %%% "svgo" % "1.0-dt-20180507Z-06a099")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

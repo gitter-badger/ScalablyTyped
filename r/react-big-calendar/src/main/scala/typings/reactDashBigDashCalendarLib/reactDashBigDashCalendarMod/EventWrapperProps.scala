@@ -6,12 +6,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait EventWrapperProps[T /* <: Event */] extends js.Object {
-  var accessors: reactDashBigDashCalendarLib.Anon_Tooltip[T]
+  var accessors: reactDashBigDashCalendarLib.Anon_Title[T]
   var className: java.lang.String
   var continuesEarlier: scala.Boolean
   var continuesLater: scala.Boolean
   var event: T
-  var getters: reactDashBigDashCalendarLib.Anon_SlotProp[T]
+  var getters: reactDashBigDashCalendarLib.Anon_EventProp[T]
   var isRtl: scala.Boolean
   var label: java.lang.String
   var selected: scala.Boolean
@@ -19,7 +19,11 @@ trait EventWrapperProps[T /* <: Event */] extends js.Object {
   var style: js.UndefOr[
     reactLib.reactMod.ReactNs.CSSProperties with reactDashBigDashCalendarLib.Anon_XOffset
   ] = js.undefined
-  def onClick(e: reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent]): scala.Unit
-  def onDoubleClick(e: reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent]): scala.Unit
+  def onClick(
+    e: reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement with stdLib.HTMLElement, reactLib.NativeMouseEvent]
+  ): scala.Unit
+  def onDoubleClick(
+    e: reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement with stdLib.HTMLElement, reactLib.NativeMouseEvent]
+  ): scala.Unit
 }
 

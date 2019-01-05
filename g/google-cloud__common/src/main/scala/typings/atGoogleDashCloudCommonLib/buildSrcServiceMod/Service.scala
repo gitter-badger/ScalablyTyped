@@ -37,11 +37,11 @@ class Service protected () extends js.Object {
   var projectId: java.lang.String = js.native
   var projectIdRequired: js.Any = js.native
   @JSName("requestModule")
-  var requestModule_Original: requestLib.requestMod.requestNs.RequestAPI[
+  var requestModule_Original: atGoogleDashCloudCommonLib.Anon_Request with (requestLib.requestMod.requestNs.RequestAPI[
     requestLib.requestMod.requestNs.Request, 
     requestLib.requestMod.requestNs.CoreOptions, 
     requestLib.requestMod.requestNs.RequiredUriUrl
-  ] = js.native
+  ]) = js.native
   /**
     * Get and update the Service's project ID.
     *
@@ -50,7 +50,7 @@ class Service protected () extends js.Object {
   def getProjectId(): js.Promise[java.lang.String] = js.native
   def getProjectId(
     callback: js.Function2[
-      /* err */ nodeLib.Error | scala.Null, 
+      /* err */ (nodeLib.Error with stdLib.Error) | scala.Null, 
       /* projectId */ js.UndefOr[java.lang.String], 
       scala.Unit
     ]

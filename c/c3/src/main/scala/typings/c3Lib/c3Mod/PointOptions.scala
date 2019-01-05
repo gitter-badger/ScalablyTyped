@@ -11,7 +11,7 @@ trait PointOptions extends js.Object {
     * The radius size of each point.
     */
   var r: js.UndefOr[scala.Double | (js.Function1[/* d */ js.Any, scala.Double])] = js.undefined
-  var select: js.UndefOr[c3Lib.Anon_RNumber] = js.undefined
+  var select: js.UndefOr[c3Lib.Anon_R] = js.undefined
   /**
     * Whether to show each point in line.
     */

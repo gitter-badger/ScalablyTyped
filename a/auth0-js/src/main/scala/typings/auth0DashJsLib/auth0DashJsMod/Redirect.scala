@@ -19,6 +19,6 @@ class Redirect protected () extends js.Object {
   /**
     * Signs up a new user and automatically logs the user in after the signup.
     */
-  def signupAndLogin(options: auth0DashJsLib.Anon_Connection, callback: Auth0Callback[_, Auth0Error]): scala.Unit = js.native
+  def signupAndLogin(options: auth0DashJsLib.Anon_Email, callback: Auth0Callback[_, Auth0Error]): scala.Unit = js.native
 }
 

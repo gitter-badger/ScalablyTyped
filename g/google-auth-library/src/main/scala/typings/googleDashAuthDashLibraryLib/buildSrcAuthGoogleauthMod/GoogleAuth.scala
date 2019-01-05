@@ -124,7 +124,7 @@ class GoogleAuth () extends js.Object {
     * the request options.
     * @param opts Axios or Request options on which to attach the headers
     */
-  def authorizeRequest(opts: googleDashAuthDashLibraryLib.Anon_Uri): js.Promise[googleDashAuthDashLibraryLib.Anon_UriUrl] = js.native
+  def authorizeRequest(opts: googleDashAuthDashLibraryLib.Anon_Url): js.Promise[googleDashAuthDashLibraryLib.Anon_UrlUri] = js.native
   /**
     * Create a credentials instance using the given API key string.
     * @param apiKey The API key string
@@ -207,7 +207,7 @@ class GoogleAuth () extends js.Object {
   def getCredentials(): js.Promise[googleDashAuthDashLibraryLib.buildSrcAuthCredentialsMod.CredentialBody] = js.native
   def getCredentials(
     callback: js.Function2[
-      /* err */ nodeLib.Error | scala.Null, 
+      /* err */ (nodeLib.Error with stdLib.Error) | scala.Null, 
       /* credentials */ js.UndefOr[googleDashAuthDashLibraryLib.buildSrcAuthCredentialsMod.CredentialBody], 
       scala.Unit
     ]
@@ -261,6 +261,6 @@ object GoogleAuth extends js.Object {
   /**
     * Export DefaultTransporter as a static property of the class.
     */
-  var DefaultTransporter: org.scalablytyped.runtime.Instantiable0[googleDashAuthDashLibraryLib.buildSrcTransportersMod.DefaultTransporter] = js.native
+  var DefaultTransporter: googleDashAuthDashLibraryLib.Anon_USERAGENT = js.native
 }
 

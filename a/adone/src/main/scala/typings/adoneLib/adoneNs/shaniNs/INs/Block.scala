@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 class Block protected () extends js.Object {
   def this(name: java.lang.String, parent: Block, options: DescribeOptions) = this()
   var children: js.Array[Block | Test] = js.native
-  var hooks: adoneLib.Anon_After = js.native
+  var hooks: adoneLib.Anon_Before = js.native
   var name: java.lang.String = js.native
   /**
     * Adds a new child into this block
@@ -20,19 +20,19 @@ class Block protected () extends js.Object {
   /**
     * After each hooks iterator
     */
-  def afterEachHooks(): nodeLib.IterableIterator[Hook] = js.native
+  def afterEachHooks(): nodeLib.IterableIterator[Hook] with stdLib.IterableIterator[Hook] = js.native
   /**
     * After hooks iterator
     */
-  def afterHooks(): nodeLib.IterableIterator[Hook] = js.native
+  def afterHooks(): nodeLib.IterableIterator[Hook] with stdLib.IterableIterator[Hook] = js.native
   /**
     * Before each hooks iterator
     */
-  def beforeEachHooks(): nodeLib.IterableIterator[Hook] = js.native
+  def beforeEachHooks(): nodeLib.IterableIterator[Hook] with stdLib.IterableIterator[Hook] = js.native
   /**
     * Before hooks iterator
     */
-  def beforeHooks(): nodeLib.IterableIterator[Hook] = js.native
+  def beforeHooks(): nodeLib.IterableIterator[Hook] with stdLib.IterableIterator[Hook] = js.native
   /**
     * Returns a chain of blocks from the root to this block
     */

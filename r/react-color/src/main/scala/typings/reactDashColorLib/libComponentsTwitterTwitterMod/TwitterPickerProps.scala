@@ -11,7 +11,7 @@ trait TwitterPickerProps
   var onSwatchHover: js.UndefOr[
     js.Function2[
       /* color */ reactDashColorLib.reactDashColorMod.Color, 
-      /* event */ reactLib.MouseEvent, 
+      /* event */ reactLib.MouseEvent with stdLib.MouseEvent, 
       scala.Unit
     ]
   ] = js.undefined

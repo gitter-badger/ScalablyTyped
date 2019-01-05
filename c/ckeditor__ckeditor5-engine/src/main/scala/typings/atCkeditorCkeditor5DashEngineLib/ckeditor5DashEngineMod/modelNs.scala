@@ -173,12 +173,12 @@ object modelNs extends js.Object {
     val previousSibling: Node | scala.Null = js.native
     val root: Node | DocumentFragment = js.native
     val startOffset: scala.Double | scala.Null = js.native
-    def getAncestors(options: atCkeditorCkeditor5DashEngineLib.Anon_ParentFirst): js.Array[Node] = js.native
+    def getAncestors(options: atCkeditorCkeditor5DashEngineLib.Anon_IncludeSelf): js.Array[Node] = js.native
     def getAttribute(key: java.lang.String): js.Any = js.native
     def getAttributeKeys(): stdLib.Iterable[java.lang.String] = js.native
     def getAttributes(): stdLib.Iterable[_] = js.native
     def getCommonAncestor(node: Node): Element | DocumentFragment | scala.Null = js.native
-    def getCommonAncestor(node: Node, options: atCkeditorCkeditor5DashEngineLib.Anon_IncludeSelf): Element | DocumentFragment | scala.Null = js.native
+    def getCommonAncestor(node: Node, options: atCkeditorCkeditor5DashEngineLib.Anon_IncludeSelfBoolean): Element | DocumentFragment | scala.Null = js.native
     def getPath(): js.Array[scala.Double] = js.native
     def hasAttribute(key: java.lang.String): scala.Boolean = js.native
     def is(`type`: java.lang.String, name: java.lang.String): scala.Boolean = js.native
@@ -277,7 +277,7 @@ object modelNs extends js.Object {
           atCkeditorCkeditor5DashEngineLib.ckeditor5DashEngineMod.modelNs.operationNs.Operation
         ]
     ): js.Array[Range] = js.native
-    def getWalker(options: atCkeditorCkeditor5DashEngineLib.Anon_IgnoreElementEnd): scala.Unit = js.native
+    def getWalker(options: atCkeditorCkeditor5DashEngineLib.Anon_StartPosition): scala.Unit = js.native
     def isEqual(otherRange: Range): scala.Boolean = js.native
     def isIntersecting(otherRange: Range): scala.Boolean = js.native
     def toJSON(): js.Object = js.native
@@ -355,7 +355,7 @@ object modelNs extends js.Object {
     val root: Node | DocumentFragment = js.native
     val startOffset: scala.Double = js.native
     val textNode: Text = js.native
-    def getAncestors(options: atCkeditorCkeditor5DashEngineLib.Anon_ParentFirstIncludeSelf): js.Array[TextProxy | Element | DocumentFragment] = js.native
+    def getAncestors(options: atCkeditorCkeditor5DashEngineLib.Anon_IncludeSelfParentFirst): js.Array[TextProxy | Element | DocumentFragment] = js.native
     def getAttribute(key: java.lang.String): js.Any = js.native
     def getAttributeKeys(): stdLib.Iterable[java.lang.String] = js.native
     def getAttributes(): stdLib.Iterable[_] = js.native
@@ -370,7 +370,7 @@ object modelNs extends js.Object {
   @js.native
   class TreeWalker ()
     extends stdLib.Iterable[TreeWalkerValue] {
-    def this(options: atCkeditorCkeditor5DashEngineLib.Anon_SingleCharacters) = this()
+    def this(options: atCkeditorCkeditor5DashEngineLib.Anon_DirectionForward) = this()
     val boundaries: Range = js.native
     val direction: atCkeditorCkeditor5DashEngineLib.atCkeditorCkeditor5DashEngineLibStrings.backward | atCkeditorCkeditor5DashEngineLib.atCkeditorCkeditor5DashEngineLibStrings.forward = js.native
     val ignoreElementEnd: scala.Boolean = js.native
@@ -531,7 +531,7 @@ object modelNs extends js.Object {
     def transformSets(
       operationsA: js.Array[Operation],
       operationsB: js.Array[Operation],
-      options: atCkeditorCkeditor5DashEngineLib.Anon_UseRelations
+      options: atCkeditorCkeditor5DashEngineLib.Anon_Document
     ): js.Object = js.native
   }
   

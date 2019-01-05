@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class HashedModuleIdsPlugin ()
   extends webpackLib.webpackMod.webpackNs.HashedModuleIdsPlugin {
-  def this(options: webpackLib.Anon_HashDigest) = this()
+  def this(options: webpackLib.Anon_HashFunction) = this()
   /* CompleteClass */
   @JSName("apply")
   override def apply(args: js.Any*): scala.Unit = js.native

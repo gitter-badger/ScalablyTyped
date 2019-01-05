@@ -207,7 +207,11 @@ object Model extends js.Object {
     modelId: js.Any,
     sharedMethod: js.Any,
     ctx: js.Any,
-    callback: js.Function2[/* err */ java.lang.String | nodeLib.Error, /* allowed */ scala.Boolean, scala.Unit]
+    callback: js.Function2[
+      /* err */ java.lang.String | (nodeLib.Error with stdLib.Error), 
+      /* allowed */ scala.Boolean, 
+      scala.Unit
+    ]
   ): scala.Unit = js.native
   /**
     * Disable remote invocation for the method with the given name
@@ -232,7 +236,7 @@ object Model extends js.Object {
     */
   def getApp(
     callback: js.Function2[
-      /* err */ nodeLib.Error, 
+      /* err */ nodeLib.Error with stdLib.Error, 
       /* app */ loopbackLib.loopbackMod.lNs.Application, 
       scala.Unit
     ]

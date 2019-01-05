@@ -17,7 +17,7 @@ trait Page extends js.Object {
   var page_type: PagePageType
   // Properties that are specific for each page type. Masters do not require
   // any additional properties.
-  var properties: googleDashAppsDashScriptLib.Anon_Layoutproperties
+  var properties: googleDashAppsDashScriptLib.Anon_Slideproperties
   // The revision ID of the presentation containing this page. Can be used in
   // update requests to assert that the presentation revision hasn't changed
   // since the last read operation. Only populated if the user has edit access

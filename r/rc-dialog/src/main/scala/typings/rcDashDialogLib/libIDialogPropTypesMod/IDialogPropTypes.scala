@@ -16,7 +16,7 @@ trait IDialogPropTypes extends js.Object {
   var closeIcon: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
   var destroyOnClose: js.UndefOr[scala.Boolean] = js.undefined
   var footer: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
-  var getContainer: js.UndefOr[js.Function0[reactLib.HTMLElement]] = js.undefined
+  var getContainer: js.UndefOr[js.Function0[reactLib.HTMLElement with stdLib.HTMLElement]] = js.undefined
   var height: js.UndefOr[scala.Double] = js.undefined
   var keyboard: js.UndefOr[scala.Boolean] = js.undefined
   var mask: js.UndefOr[scala.Boolean] = js.undefined
@@ -25,10 +25,10 @@ trait IDialogPropTypes extends js.Object {
   var maskProps: js.UndefOr[js.Any] = js.undefined
   var maskStyle: js.UndefOr[js.Object] = js.undefined
   var maskTransitionName: js.UndefOr[java.lang.String] = js.undefined
-  var mousePosition: js.UndefOr[rcDashDialogLib.Anon_Y] = js.undefined
+  var mousePosition: js.UndefOr[rcDashDialogLib.Anon_X] = js.undefined
   var onClose: js.UndefOr[
     js.Function1[
-      /* e */ reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.HTMLDivElement, reactLib.Event], 
+      /* e */ reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.HTMLDivElement with stdLib.HTMLDivElement, reactLib.Event], 
       _
     ]
   ] = js.undefined

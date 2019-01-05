@@ -5,11 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Anon_Name[K, V] extends js.Object {
-  var name: K
-  var newValue: V
-  var `object`: mobxLib.libTypesObservablemapMod.ObservableMap[K, V]
-  var oldValue: V
-  var `type`: mobxLib.mobxLibStrings.update
+trait Anon_Name extends js.Object {
+  var name: java.lang.String
+  var newValue: js.Any
+  var `object`: js.Any
+  var `type`: mobxLib.mobxLibStrings.add
 }
 

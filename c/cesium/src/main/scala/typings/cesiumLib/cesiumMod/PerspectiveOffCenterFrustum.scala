@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class PerspectiveOffCenterFrustum ()
   extends cesiumLib.cesiumMod.CesiumNs.PerspectiveOffCenterFrustum {
-  def this(options: cesiumLib.Anon_Bottom) = this()
+  def this(options: cesiumLib.Anon_Left) = this()
   /* CompleteClass */
   override var far: scala.Double = js.native
   /* CompleteClass */

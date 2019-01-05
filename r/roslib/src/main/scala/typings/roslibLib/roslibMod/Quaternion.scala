@@ -19,7 +19,7 @@ import scala.scalajs.js.annotation._
   */
 class Quaternion ()
   extends roslibLib.roslibMod.ROSLIBNs.Quaternion {
-  def this(options: roslibLib.Anon_W) = this()
+  def this(options: roslibLib.Anon_XY) = this()
   /* CompleteClass */
   override var w: scala.Double = js.native
   // getters

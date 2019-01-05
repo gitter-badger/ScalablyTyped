@@ -41,8 +41,8 @@ object MeteorNs extends js.Object {
   /** Login **/
   /** Event **/
   trait Event extends js.Object {
-    var currentTarget: reactLib.HTMLElement
-    var target: reactLib.HTMLElement
+    var currentTarget: reactLib.HTMLElement with stdLib.HTMLElement
+    var target: reactLib.HTMLElement with stdLib.HTMLElement
     var `type`: java.lang.String
     var which: scala.Double
     def isDefaultPrevented(): scala.Boolean
@@ -83,7 +83,7 @@ object MeteorNs extends js.Object {
   /** Settings **/
   trait Settings
     extends /* id */ org.scalablytyped.runtime.StringDictionary[js.Any] {
-    var public: /* import warning: ImportType.apply Failed type conversion: {indexed, indexed} */ js.Any
+    var public: /* import warning: ImportType.apply Failed type conversion: {[id: string] : any, [id: string] : any} */ js.Any
   }
   
   /** utils **/
@@ -128,20 +128,16 @@ object MeteorNs extends js.Object {
   /** Url **/
   def absoluteUrl(): java.lang.String = js.native
   def absoluteUrl(path: java.lang.String): java.lang.String = js.native
-  def absoluteUrl(path: java.lang.String, options: meteorLib.Anon_RootUrl): java.lang.String = js.native
+  def absoluteUrl(path: java.lang.String, options: meteorLib.Anon_Secure): java.lang.String = js.native
   @JSName("apply")
   def apply(name: java.lang.String, args: js.Array[meteorLib.EJSONable]): js.Any = js.native
   @JSName("apply")
-  def apply(
-    name: java.lang.String,
-    args: js.Array[meteorLib.EJSONable],
-    options: meteorLib.Anon_OnResultReceived
-  ): js.Any = js.native
+  def apply(name: java.lang.String, args: js.Array[meteorLib.EJSONable], options: meteorLib.Anon_Wait): js.Any = js.native
   @JSName("apply")
   def apply(
     name: java.lang.String,
     args: js.Array[meteorLib.EJSONable],
-    options: meteorLib.Anon_OnResultReceived,
+    options: meteorLib.Anon_Wait,
     asyncCallback: js.Function
   ): js.Any = js.native
   def bindEnvironment(func: js.Function): js.Any = js.native
@@ -152,8 +148,8 @@ object MeteorNs extends js.Object {
   def disconnect(): scala.Unit = js.native
   def loggingIn(): scala.Boolean = js.native
   def loginWith[ExternalService](): scala.Unit = js.native
-  def loginWith[ExternalService](options: meteorLib.Anon_RedirectUrl): scala.Unit = js.native
-  def loginWith[ExternalService](options: meteorLib.Anon_RedirectUrl, callback: js.Function): scala.Unit = js.native
+  def loginWith[ExternalService](options: meteorLib.Anon_RequestPermissionsRequestOfflineToken): scala.Unit = js.native
+  def loginWith[ExternalService](options: meteorLib.Anon_RequestPermissionsRequestOfflineToken, callback: js.Function): scala.Unit = js.native
   def loginWithFacebook(): scala.Unit = js.native
   def loginWithFacebook(options: LoginWithExternalServiceOptions): scala.Unit = js.native
   def loginWithFacebook(options: LoginWithExternalServiceOptions, callback: js.Function): scala.Unit = js.native

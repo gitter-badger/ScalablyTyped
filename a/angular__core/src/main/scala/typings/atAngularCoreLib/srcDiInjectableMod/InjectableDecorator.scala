@@ -7,7 +7,10 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait InjectableDecorator
-  extends org.scalablytyped.runtime.Instantiable1[/* options */ atAngularCoreLib.Anon_ProvidedIn with InjectableProvider, Injectable]
+  extends org.scalablytyped.runtime.Instantiable1[
+      /* options */ atAngularCoreLib.Anon_ProvidedInRootType with InjectableProvider, 
+      Injectable
+    ]
      with org.scalablytyped.runtime.Instantiable0[Injectable] {
   /**
     * A marker metadata that marks a class as available to `Injector` for creation.
@@ -26,6 +29,6 @@ trait InjectableDecorator
     *
     */
   def apply(): js.Any = js.native
-  def apply(options: atAngularCoreLib.Anon_ProvidedIn with InjectableProvider): js.Any = js.native
+  def apply(options: atAngularCoreLib.Anon_ProvidedInRootType with InjectableProvider): js.Any = js.native
 }
 

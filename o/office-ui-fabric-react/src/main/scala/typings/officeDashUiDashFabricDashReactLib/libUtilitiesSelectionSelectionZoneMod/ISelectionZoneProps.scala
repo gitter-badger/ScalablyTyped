@@ -19,7 +19,7 @@ trait ISelectionZoneProps
     js.Function3[
       /* item */ js.UndefOr[js.Any], 
       /* index */ js.UndefOr[scala.Double], 
-      /* ev */ js.UndefOr[reactLib.Event], 
+      /* ev */ js.UndefOr[reactLib.Event with stdLib.Event], 
       scala.Unit | scala.Boolean
     ]
   ] = js.undefined
@@ -29,7 +29,7 @@ trait ISelectionZoneProps
         officeDashUiDashFabricDashReactLib.libUtilitiesSelectionInterfacesMod.IObjectWithKey
       ], 
       /* index */ js.UndefOr[scala.Double], 
-      /* ev */ js.UndefOr[reactLib.Event], 
+      /* ev */ js.UndefOr[reactLib.Event with stdLib.Event], 
       scala.Unit
     ]
   ] = js.undefined

@@ -27,7 +27,7 @@ trait SelectionControlProps extends BaseSelectionControlProps {
   var onChange: js.UndefOr[
     js.Function2[
       /* result */ scala.Boolean | scala.Double | java.lang.String, 
-      /* event */ reactLib.Event, 
+      /* event */ reactLib.Event with stdLib.Event, 
       scala.Unit
     ]
   ] = js.undefined

@@ -36,11 +36,11 @@ trait CheckboxProps
   /**
     * Callback called when the checkbox is blurred.
     */
-  var onBlur: js.UndefOr[coreDashJsLib.Function] = js.undefined
+  var onBlur: js.UndefOr[coreDashJsLib.Function with js.Function] = js.undefined
   /**
     * Callback called when the checkbox value is changed.
     */
-  var onChange: js.UndefOr[coreDashJsLib.Function] = js.undefined
+  var onChange: js.UndefOr[coreDashJsLib.Function with js.Function] = js.undefined
   /**
     * Classnames object defining the component style.
     */

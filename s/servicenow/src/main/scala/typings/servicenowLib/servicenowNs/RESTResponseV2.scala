@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait RESTResponseV2 extends js.Object {
   def getBody(): java.lang.String
-  def getCookies(): servicenowLib.Anon_Get
+  def getCookies(): servicenowLib.Anon_Size
   def getErrorCode(): scala.Double
   def getErrorMessage(): java.lang.String
   def getHeader(name: java.lang.String): java.lang.String

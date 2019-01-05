@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("react-onsenui", "Dialog")
 @js.native
 class Dialog ()
-  extends Component[reactDashOnsenuiLib.Anon_OnPostShow, js.Any]
+  extends Component[reactDashOnsenuiLib.Anon_OnCancel, js.Any]
 

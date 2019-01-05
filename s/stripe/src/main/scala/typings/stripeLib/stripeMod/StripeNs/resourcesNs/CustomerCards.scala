@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait CustomerCards
   extends stripeLib.stripeMod.StripeNs.StripeResource {
-  def create(data: stripeLib.Anon_Card): js.Promise[stripeLib.stripeMod.StripeNs.cardsNs.ICard] = js.native
+  def create(data: stripeLib.Anon_CardISourceCreationOptionsExtended): js.Promise[stripeLib.stripeMod.StripeNs.cardsNs.ICard] = js.native
   /**
     * When you create a new credit card, you must specify a customer or recipient to create it on. If the card's owner has no default card,
     * then the new card will become the default. However, if the owner already has a default then it will not change. To change the default,
@@ -16,14 +16,17 @@ trait CustomerCards
     *
     * @returns Returns the card object.
     */
-  def create(data: stripeLib.Anon_Card, options: stripeLib.stripeMod.StripeNs.HeaderOptions): js.Promise[stripeLib.stripeMod.StripeNs.cardsNs.ICard] = js.native
   def create(
-    data: stripeLib.Anon_Card,
+    data: stripeLib.Anon_CardISourceCreationOptionsExtended,
+    options: stripeLib.stripeMod.StripeNs.HeaderOptions
+  ): js.Promise[stripeLib.stripeMod.StripeNs.cardsNs.ICard] = js.native
+  def create(
+    data: stripeLib.Anon_CardISourceCreationOptionsExtended,
     options: stripeLib.stripeMod.StripeNs.HeaderOptions,
     response: stripeLib.stripeMod.StripeNs.IResponseFn[stripeLib.stripeMod.StripeNs.cardsNs.ICard]
   ): js.Promise[stripeLib.stripeMod.StripeNs.cardsNs.ICard] = js.native
   def create(
-    data: stripeLib.Anon_Card,
+    data: stripeLib.Anon_CardISourceCreationOptionsExtended,
     response: stripeLib.stripeMod.StripeNs.IResponseFn[stripeLib.stripeMod.StripeNs.cardsNs.ICard]
   ): js.Promise[stripeLib.stripeMod.StripeNs.cardsNs.ICard] = js.native
   def del(cardId: java.lang.String): js.Promise[stripeLib.stripeMod.StripeNs.IDeleteConfirmation] = js.native

@@ -13,7 +13,7 @@ trait Anon_Silent extends js.Object {
     *
     * @default
     * "true"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-candlestick.markArea.animation
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.markLine.animation
     */
   var animation: js.UndefOr[scala.Boolean] = js.native
   /**
@@ -23,14 +23,14 @@ trait Anon_Silent extends js.Object {
     *
     * For example:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-candlestick.candlestick.markArea)
+    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.scatter.markLine)
     *
     * See
     * [this example](https://ecomfe.github.io/echarts-examples/public/editor.html?c=bar-animation-delay)
     * for more information.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-candlestick.markArea.animationDelay
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.markLine.animationDelay
     */
   var animationDelay: js.UndefOr[js.Function | scala.Double] = js.native
   /**
@@ -39,38 +39,38 @@ trait Anon_Silent extends js.Object {
     *
     * For example:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-candlestick.candlestick.markArea)
+    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.scatter.markLine)
     *
     * See
     * [this example](https://ecomfe.github.io/echarts-examples/public/editor.html?c=bar-animation-delay)
     * for more information.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-candlestick.markArea.animationDelayUpdate
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.markLine.animationDelayUpdate
     */
   var animationDelayUpdate: js.UndefOr[js.Function | scala.Double] = js.native
   /**
     * Duration of the first animation, which supports callback
     * function for different data to have different animation effect:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-candlestick.candlestick.markArea)
+    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.scatter.markLine)
     *
     *
     * @default
     * 1000
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-candlestick.markArea.animationDuration
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.markLine.animationDuration
     */
   var animationDuration: js.UndefOr[js.Function | scala.Double] = js.native
   /**
     * Time for animation to complete, which supports callback function
     * for different data to have different animation effect:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-candlestick.candlestick.markArea)
+    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.scatter.markLine)
     *
     *
     * @default
     * 300
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-candlestick.markArea.animationDurationUpdate
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.markLine.animationDurationUpdate
     */
   var animationDurationUpdate: js.UndefOr[js.Function | scala.Double] = js.native
   /**
@@ -82,7 +82,7 @@ trait Anon_Silent extends js.Object {
     *
     * @default
     * "cubicOut"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-candlestick.markArea.animationEasing
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.markLine.animationEasing
     */
   var animationEasing: js.UndefOr[java.lang.String] = js.native
   /**
@@ -91,7 +91,7 @@ trait Anon_Silent extends js.Object {
     *
     * @default
     * "cubicOut"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-candlestick.markArea.animationEasingUpdate
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.markLine.animationEasingUpdate
     */
   var animationEasingUpdate: js.UndefOr[java.lang.String] = js.native
   /**
@@ -102,78 +102,111 @@ trait Anon_Silent extends js.Object {
     *
     * @default
     * 2000
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-candlestick.markArea.animationThreshold
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.markLine.animationThreshold
     */
   var animationThreshold: js.UndefOr[scala.Double] = js.native
   /**
-    * The scope of the area is defined by `data`, which is an array
-    * with two item, representing the left-top point and the right-bottom
-    * point of rectangle area.
-    * Each item can be defined as follows:
+    * Data array of marking line.
+    * Every array item can be an array of one or two values, representing
+    * starting and ending point of the line, and every item is
+    * an object.
+    * Here are several ways to assign the positions of starting
+    * and ending point.
     *
-    * 1.
-    * Specify the coordinate in screen coordinate system using
-    * [x](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-candlestick.markArea.data.0.x)
+    * 1. Assign coordinate according to container with
+    * [x](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.markLine.data.0.x)
     * ,
-    * [y](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-candlestick.markArea.data.0.y)
-    * , where the unit is pixel (e.g.,
-    * the value is `5`), or percent (e.g.,
-    * the value is `'35%'`).
+    * [y](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.markLine.data.0.y)
+    * attribute, in which pixel values and percentage are supported.
     *
-    * 2.
-    * Specify the coordinate in data coordinate system (i.e.,
-    * cartesian) using
-    * [coord](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-candlestick.markArea.data.0.coord)
-    * , which can be also set as `'min'`, `'max'`, `'average'`
-    * (e.g,
-    * `coord: [23, 'min']`, or `coord: ['average', 'max']`)。
+    * 2. Assign coordinate position with
+    * [coord](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.markLine.data.0.coord)
+    * attribute, in which `'min'`, `'max'`, `'average'` are supported
+    * for each dimension.
     *
-    * 1.
-    * Locate the point on the min value or max value of `series.data`
-    * using
-    * [type](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-candlestick.markArea.data.0.type)
-    * , where
-    * [valueIndex](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-candlestick.markArea.data.0.valueIndex)
+    * 3. Use
+    * [type](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.markLine.data.0.type)
+    * attribute to mark the maximum and minimum values in the series,
+    * in which
+    * [valueIndex](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.markLine.data.0.valueIndex)
     * or
-    * [valueDim](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-candlestick.markPoint.data.0.valueDim)
-    * can be used to specify the dimension on which the min, max
-    * or average are calculated.
-    * 2.
-    * If in cartesian, you can only specify `xAxis` or `yAxis`
-    * to define a mark area based on only X or Y axis, see sample
+    * [valueDim](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.markLine.data.0.valueDim)
+    * can be used to assign the dimension.
+    *
+    * 4.
+    * You may also create a mark line in Cartesian coordinate at
+    * a specific position in X or Y axis by assigning `xAxis` or
+    * `yAxis`. See
     * [scatter-weight](https://ecomfe.github.io/echarts-examples/public/editor.html?c=scatter-weight)
+    * for example.
     *
-    * The priority follows as above if more than one above definition
-    * used.
+    * When multiple attributes exist, priority is as the above
+    * order.
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-candlestick.candlestick.markArea)
+    * You may also set the type of mark line through `type`, stating
+    * whether it is for the maximum value or average value.
+    * Likewise, dimensions can be assigned through `valueIndex`.
+    *
+    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.scatter.markLine)
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-candlestick.markArea.data
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.markLine.data
     */
-  var data: js.UndefOr[Anon_1] = js.native
+  var data: js.UndefOr[Anon_0] = js.native
   /**
-    * Style of the mark area.
+    * Mark line text.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-candlestick.markArea.itemStyle
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.markLine.label
     */
-  var itemStyle: js.UndefOr[Anon_ShadowOffsetXBorderTypeShadowBlur] = js.native
+  var label: js.UndefOr[Anon_ShowPositionFormatterEmphasis] = js.native
   /**
-    * Label in mark area.
+    * Mark line style.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-candlestick.markArea.label
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.markLine.lineStyle
     */
-  var label: js.UndefOr[Anon_ShadowOffsetXBackgroundColorShow] = js.native
+  var lineStyle: js.UndefOr[Anon_ColorWidthTypeShadowBlur] = js.native
+  /**
+    * Precison of marking line value, which is useful when displaying
+    * average value mark line.
+    *
+    *
+    * @default
+    * 2
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.markLine.precision
+    */
+  var precision: js.UndefOr[scala.Double] = js.native
   /**
     * Whether to ignore mouse events.
     * Default value is false, for triggering and responding to
     * mouse events.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-candlestick.markArea.silent
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.markLine.silent
     */
   var silent: js.UndefOr[scala.Boolean] = js.native
+  /**
+    * Symbol type at the two ends of the mark line.
+    * It can be an array for two ends, or assigned seperately.
+    * See
+    * [data.symbol](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.markLine.data.0.symbol)
+    * for more format information.
+    *
+    *
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.markLine.symbol
+    */
+  var symbol: js.UndefOr[js.Array[_] | java.lang.String] = js.native
+  /**
+    * Symbol size at the two ends of the mark line.
+    * It can be an array for two ends, or assigned seperately.
+    *
+    * **Attention:** You cannot assgin width and height seperately
+    * as normal `symbolSize`.
+    *
+    *
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.markLine.symbolSize
+    */
+  var symbolSize: js.UndefOr[js.Array[_] | scala.Double] = js.native
 }
 

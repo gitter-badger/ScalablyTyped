@@ -18,6 +18,8 @@ trait AffixProps extends js.Object {
   var prefixCls: js.UndefOr[java.lang.String] = js.undefined
   var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
   /** 设置 Affix 需要监听其滚动事件的元素，值为一个返回对应 DOM 元素的函数 */
-  var target: js.UndefOr[js.Function0[stdLib.Window | reactLib.HTMLElement | scala.Null]] = js.undefined
+  var target: js.UndefOr[
+    js.Function0[stdLib.Window | (reactLib.HTMLElement with stdLib.HTMLElement) | scala.Null]
+  ] = js.undefined
 }
 

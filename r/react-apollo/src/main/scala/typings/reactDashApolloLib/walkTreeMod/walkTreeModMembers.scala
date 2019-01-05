@@ -14,7 +14,7 @@ object walkTreeModMembers extends js.Object {
     visitor: js.Function5[
       /* element */ reactLib.reactMod.ReactNs.ReactNode, 
       /* instance */ (reactLib.reactMod.Component[_, js.Object, _]) | scala.Null, 
-      /* newContextMap */ lodashLib.lodashMod.Global.Map[_, _], 
+      /* newContextMap */ (lodashLib.lodashMod.Global.Map[_, _]) with (stdLib.Map[_, _]), 
       /* context */ Context, 
       /* childContext */ js.UndefOr[Context], 
       scala.Boolean | scala.Unit
@@ -26,12 +26,12 @@ object walkTreeModMembers extends js.Object {
     visitor: js.Function5[
       /* element */ reactLib.reactMod.ReactNs.ReactNode, 
       /* instance */ (reactLib.reactMod.Component[_, js.Object, _]) | scala.Null, 
-      /* newContextMap */ lodashLib.lodashMod.Global.Map[_, _], 
+      /* newContextMap */ (lodashLib.lodashMod.Global.Map[_, _]) with (stdLib.Map[_, _]), 
       /* context */ Context, 
       /* childContext */ js.UndefOr[Context], 
       scala.Boolean | scala.Unit
     ],
-    newContext: lodashLib.lodashMod.Global.Map[_, _]
+    newContext: (lodashLib.lodashMod.Global.Map[_, _]) with (stdLib.Map[_, _])
   ): scala.Unit = js.native
 }
 

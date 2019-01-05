@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait MissingEnvVarsError
-  extends nodeLib.Error {
+  extends stdLib.Error {
   /**
     * Variables which existing in the sample file, but not in the loaded file.
     */

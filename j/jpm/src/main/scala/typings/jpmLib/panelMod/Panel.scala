@@ -44,6 +44,6 @@ trait Panel extends js.Object {
   def removeListener(event: java.lang.String, listener: js.Function): scala.Unit = js.native
   def resize(width: scala.Double, height: scala.Double): scala.Unit = js.native
   def show(): scala.Unit = js.native
-  def show(options: jpmLib.Anon_Position): scala.Unit = js.native
+  def show(options: jpmLib.Anon_Width): scala.Unit = js.native
 }
 

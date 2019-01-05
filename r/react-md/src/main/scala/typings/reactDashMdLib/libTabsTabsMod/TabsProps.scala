@@ -38,7 +38,7 @@ trait TabsProps
       /* tabId */ reactDashMdLib.libMod.IdPropType, 
       /* tabControlsId */ reactDashMdLib.libMod.IdPropType, 
       /* tabChildren */ reactLib.reactMod.ReactNs.ReactNode, 
-      /* event */ reactLib.Event, 
+      /* event */ reactLib.Event with stdLib.Event, 
       scala.Unit
     ]
   ] = js.undefined

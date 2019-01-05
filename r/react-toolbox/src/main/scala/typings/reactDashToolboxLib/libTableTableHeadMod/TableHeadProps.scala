@@ -20,7 +20,7 @@ trait TableHeadProps
   /**
     * Handle the select state change of the checkbox in the header row.
     */
-  var onSelect: js.UndefOr[coreDashJsLib.Function] = js.undefined
+  var onSelect: js.UndefOr[coreDashJsLib.Function with js.Function] = js.undefined
   /**
     * If true, each row will display a checkbox to allow the user to select that one row.
     * @default true

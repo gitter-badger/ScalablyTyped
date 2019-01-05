@@ -27,10 +27,10 @@ class ScrollablePaneBase protected ()
   var _stickyAboveRef: js.Any = js.native
   var _stickyBelowRef: js.Any = js.native
   var _subscribers: js.Any = js.native
-  val contentContainer: reactLib.HTMLDivElement | scala.Null = js.native
-  val root: reactLib.HTMLDivElement | scala.Null = js.native
-  val stickyAbove: reactLib.HTMLDivElement | scala.Null = js.native
-  val stickyBelow: reactLib.HTMLDivElement | scala.Null = js.native
+  val contentContainer: (reactLib.HTMLDivElement with stdLib.HTMLDivElement) | scala.Null = js.native
+  val root: (reactLib.HTMLDivElement with stdLib.HTMLDivElement) | scala.Null = js.native
+  val stickyAbove: (reactLib.HTMLDivElement with stdLib.HTMLDivElement) | scala.Null = js.native
+  val stickyBelow: (reactLib.HTMLDivElement with stdLib.HTMLDivElement) | scala.Null = js.native
   /* private */ def _checkStickyStatus(sticky: js.Any): js.Any = js.native
   /* private */ def _getScrollbarHeight(): js.Any = js.native
   /* private */ def _getScrollbarWidth(): js.Any = js.native

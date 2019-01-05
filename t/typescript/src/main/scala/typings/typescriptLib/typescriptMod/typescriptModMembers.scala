@@ -80,8 +80,8 @@ object typescriptModMembers extends js.Object {
     * Vn.
     */
   def collapseTextChangeRangesAcrossMultipleVersions(changes: js.Array[typescriptLib.typescriptMod.tsNs.TextChangeRange]): typescriptLib.typescriptMod.tsNs.TextChangeRange = js.native
-  def convertCompilerOptionsFromJson(jsonOptions: js.Any, basePath: java.lang.String): typescriptLib.Anon_OptionsErrors = js.native
-  def convertCompilerOptionsFromJson(jsonOptions: js.Any, basePath: java.lang.String, configFileName: java.lang.String): typescriptLib.Anon_OptionsErrors = js.native
+  def convertCompilerOptionsFromJson(jsonOptions: js.Any, basePath: java.lang.String): typescriptLib.Anon_Options = js.native
+  def convertCompilerOptionsFromJson(jsonOptions: js.Any, basePath: java.lang.String, configFileName: java.lang.String): typescriptLib.Anon_Options = js.native
   /**
     * Convert the json syntax tree into the json value
     */
@@ -89,8 +89,8 @@ object typescriptModMembers extends js.Object {
     sourceFile: typescriptLib.typescriptMod.tsNs.JsonSourceFile,
     errors: typescriptLib.typescriptMod.tsNs.Push[typescriptLib.typescriptMod.tsNs.Diagnostic]
   ): js.Any = js.native
-  def convertTypeAcquisitionFromJson(jsonOptions: js.Any, basePath: java.lang.String): typescriptLib.Anon_Options = js.native
-  def convertTypeAcquisitionFromJson(jsonOptions: js.Any, basePath: java.lang.String, configFileName: java.lang.String): typescriptLib.Anon_Options = js.native
+  def convertTypeAcquisitionFromJson(jsonOptions: js.Any, basePath: java.lang.String): typescriptLib.Anon_OptionsErrors = js.native
+  def convertTypeAcquisitionFromJson(jsonOptions: js.Any, basePath: java.lang.String, configFileName: java.lang.String): typescriptLib.Anon_OptionsErrors = js.native
   def couldStartTrivia(text: java.lang.String, pos: scala.Double): scala.Boolean = js.native
   def createAbstractBuilder(): typescriptLib.typescriptMod.tsNs.BuilderProgram = js.native
   /**
@@ -1680,7 +1680,7 @@ object typescriptModMembers extends js.Object {
     name: typescriptLib.typescriptMod.tsNs.PropertyName,
     questionToken: typescriptLib.typescriptMod.tsNs.QuestionToken
   ): typescriptLib.typescriptMod.tsNs.MethodSignature = js.native
-  def createModifier[T /* <: js.Any */](kind: T): typescriptLib.typescriptMod.tsNs.Token[T] = js.native
+  def createModifier[T /* <: js.UndefOr[typescriptLib.typescriptMod.tsNs.SyntaxKind] */](kind: T): typescriptLib.typescriptMod.tsNs.Token[T] = js.native
   def createModifiersFromModifierFlags(flags: typescriptLib.typescriptMod.tsNs.ModifierFlags): js.Array[typescriptLib.typescriptMod.tsNs.Modifier] = js.native
   def createModuleBlock(statements: js.Array[typescriptLib.typescriptMod.tsNs.Statement]): typescriptLib.typescriptMod.tsNs.ModuleBlock = js.native
   def createModuleDeclaration(

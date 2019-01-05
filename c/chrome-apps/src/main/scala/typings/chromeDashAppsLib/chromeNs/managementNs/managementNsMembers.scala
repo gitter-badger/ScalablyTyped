@@ -8,10 +8,10 @@ import scala.scalajs.js.annotation._
 @JSGlobal("chrome.management")
 @js.native
 object managementNsMembers extends js.Object {
-  val ExtensionDisabledReason: chromeDashAppsLib.Anon_PERMISSIONSINCREASE = js.native
-  val ExtensionInstallType: chromeDashAppsLib.Anon_OTHEROther = js.native
-  val ExtensionType: chromeDashAppsLib.Anon_PACKAGEDAPP = js.native
-  val LaunchType: chromeDashAppsLib.Anon_OPENASWINDOW = js.native
+  val ExtensionDisabledReason: chromeDashAppsLib.Anon_UNKNOWN = js.native
+  val ExtensionInstallType: chromeDashAppsLib.Anon_ADMIN = js.native
+  val ExtensionType: chromeDashAppsLib.Anon_EXTENSION = js.native
+  val LaunchType: chromeDashAppsLib.Anon_OPENASREGULARTAB = js.native
   /**
     * Returns a list of permission warnings for the given extension manifest string.
     * @param manifestStr Extension manifest JSON string. See example

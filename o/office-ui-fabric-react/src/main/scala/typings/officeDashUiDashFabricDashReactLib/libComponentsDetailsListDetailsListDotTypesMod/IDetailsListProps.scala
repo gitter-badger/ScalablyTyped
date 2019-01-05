@@ -126,7 +126,9 @@ trait IDetailsListProps
     js.Function3[
       /* item */ js.UndefOr[js.Any], 
       /* index */ js.UndefOr[scala.Double], 
-      /* ev */ js.UndefOr[reactLib.reactMod.ReactNs.FocusEvent[reactLib.HTMLElement]], 
+      /* ev */ js.UndefOr[
+        reactLib.reactMod.ReactNs.FocusEvent[reactLib.HTMLElement with stdLib.HTMLElement]
+      ], 
       scala.Unit
     ]
   ] = js.undefined
@@ -134,7 +136,7 @@ trait IDetailsListProps
   var onColumnHeaderClick: js.UndefOr[
     js.Function2[
       /* ev */ js.UndefOr[
-        reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent]
+        reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement with stdLib.HTMLElement, reactLib.NativeMouseEvent]
       ], 
       /* column */ js.UndefOr[IColumn], 
       scala.Unit
@@ -145,7 +147,7 @@ trait IDetailsListProps
     js.Function2[
       /* column */ js.UndefOr[IColumn], 
       /* ev */ js.UndefOr[
-        reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent]
+        reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement with stdLib.HTMLElement, reactLib.NativeMouseEvent]
       ], 
       scala.Unit
     ]
@@ -176,7 +178,7 @@ trait IDetailsListProps
     js.Function3[
       /* item */ js.UndefOr[js.Any], 
       /* index */ js.UndefOr[scala.Double], 
-      /* ev */ js.UndefOr[reactLib.Event], 
+      /* ev */ js.UndefOr[reactLib.Event with stdLib.Event], 
       scala.Unit | scala.Boolean
     ]
   ] = js.undefined
@@ -185,7 +187,7 @@ trait IDetailsListProps
     js.Function3[
       /* item */ js.UndefOr[js.Any], 
       /* index */ js.UndefOr[scala.Double], 
-      /* ev */ js.UndefOr[reactLib.Event], 
+      /* ev */ js.UndefOr[reactLib.Event with stdLib.Event], 
       scala.Unit
     ]
   ] = js.undefined
@@ -256,7 +258,7 @@ trait IDetailsListProps
     ]
   ] = js.undefined
   /** Event names and corresponding callbacks that will be registered to rendered row elements. */
-  var rowElementEventMap: js.UndefOr[js.Array[officeDashUiDashFabricDashReactLib.Anon_EventNameCallback]] = js.undefined
+  var rowElementEventMap: js.UndefOr[js.Array[officeDashUiDashFabricDashReactLib.Anon_EventName]] = js.undefined
   /** Optional selection model to track selection state.  */
   var selection: js.UndefOr[officeDashUiDashFabricDashReactLib.libUtilitiesSelectionInterfacesMod.ISelection] = js.undefined
   /** Controls how/if the details list manages selection. Options include none, single, multiple */

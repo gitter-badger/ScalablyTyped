@@ -13,7 +13,7 @@ trait SearchProps
     js.Function2[
       /* value */ java.lang.String, 
       /* event */ js.UndefOr[
-        (reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent]) | reactLib.reactMod.ReactNs.KeyboardEvent[reactLib.HTMLInputElement]
+        (reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement with stdLib.HTMLElement, reactLib.NativeMouseEvent]) | (reactLib.reactMod.ReactNs.KeyboardEvent[reactLib.HTMLInputElement with stdLib.HTMLInputElement])
       ], 
       _
     ]

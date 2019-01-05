@@ -10,13 +10,13 @@ trait Anon_ArrLimitIterator extends js.Object {
   def apply[T, E](
     arr: i2cDashBusLib.asyncMod.IterableCollection[T],
     limit: scala.Double,
-    iterator: i2cDashBusLib.asyncMod.AsyncIterator[T, E]
+    iterator: i2cDashBusLib.asyncMod.AsyncBooleanIterator[T, E]
   ): scala.Unit = js.native
   def apply[T, E](
     arr: i2cDashBusLib.asyncMod.IterableCollection[T],
     limit: scala.Double,
-    iterator: i2cDashBusLib.asyncMod.AsyncIterator[T, E],
-    callback: i2cDashBusLib.asyncMod.ErrorCallback[E]
+    iterator: i2cDashBusLib.asyncMod.AsyncBooleanIterator[T, E],
+    callback: i2cDashBusLib.asyncMod.AsyncResultArrayCallback[T, E]
   ): scala.Unit = js.native
 }
 

@@ -36,13 +36,13 @@ trait Client extends js.Object {
   @JSName("setEncryptionMode")
   def `setEncryptionMode_aes-256-xts`(encryptionMode: agoraDashRtcDashSdkLib.agoraDashRtcDashSdkLibStrings.`aes-256-xts`): scala.Unit = js.native
   def setEncryptionSecret(password: java.lang.String): scala.Unit = js.native
-  def setLowStreamParameter(param: agoraDashRtcDashSdkLib.Anon_Birate): scala.Unit = js.native
+  def setLowStreamParameter(param: agoraDashRtcDashSdkLib.Anon_Width): scala.Unit = js.native
   def setProxyServer(): scala.Unit = js.native
   def setProxyServer(proxyServer: java.lang.String): scala.Unit = js.native
   def setRemoteVideoStreamType(stream: Stream, streamType: agoraDashRtcDashSdkLib.agoraDashRtcDashSdkLibNumbers.`0`): scala.Unit = js.native
   def setRemoteVideoStreamType(stream: Stream, streamType: agoraDashRtcDashSdkLib.agoraDashRtcDashSdkLibNumbers.`1`): scala.Unit = js.native
   def setTurnServer(): scala.Unit = js.native
-  def setTurnServer(turnServer: agoraDashRtcDashSdkLib.Anon_Username): scala.Unit = js.native
+  def setTurnServer(turnServer: agoraDashRtcDashSdkLib.Anon_TurnServerURL): scala.Unit = js.native
   def subscribe(stream: Stream, onFailure: js.Function1[/* err */ js.Any, scala.Unit]): scala.Unit = js.native
   def unpublish(stream: Stream, onFailure: js.Function1[/* err */ js.Any, scala.Unit]): scala.Unit = js.native
   def unsubscribe(stream: Stream, onFailure: js.Function1[/* err */ js.Any, scala.Unit]): scala.Unit = js.native

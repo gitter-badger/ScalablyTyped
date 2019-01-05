@@ -10,11 +10,15 @@ trait InnerProps extends js.Object {
   var id: java.lang.String = js.native
   var key: java.lang.String = js.native
   @JSName("onClick")
-  var onClick_Original: reactLib.reactMod.ReactNs.MouseEventHandler[reactLib.HTMLDivElement] = js.native
+  var onClick_Original: reactLib.reactMod.ReactNs.MouseEventHandler[reactLib.HTMLDivElement with stdLib.HTMLDivElement] = js.native
   @JSName("onMouseOver")
-  var onMouseOver_Original: reactLib.reactMod.ReactNs.MouseEventHandler[reactLib.HTMLDivElement] = js.native
+  var onMouseOver_Original: reactLib.reactMod.ReactNs.MouseEventHandler[reactLib.HTMLDivElement with stdLib.HTMLDivElement] = js.native
   var tabIndex: scala.Double = js.native
-  def onClick(event: reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLDivElement, reactLib.NativeMouseEvent]): scala.Unit = js.native
-  def onMouseOver(event: reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLDivElement, reactLib.NativeMouseEvent]): scala.Unit = js.native
+  def onClick(
+    event: reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLDivElement with stdLib.HTMLDivElement, reactLib.NativeMouseEvent]
+  ): scala.Unit = js.native
+  def onMouseOver(
+    event: reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLDivElement with stdLib.HTMLDivElement, reactLib.NativeMouseEvent]
+  ): scala.Unit = js.native
 }
 

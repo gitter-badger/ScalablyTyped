@@ -9,7 +9,7 @@ trait FastifyRequest[HttpRequest] extends js.Object {
   def isMultipart(): scala.Boolean
   def multipart(
     handler: fastifyDashMultipartLib.fastifyDashMultipartMod.fastifyMultipartNs.MultipartHandler,
-    next: js.Function1[/* err */ nodeLib.Error, scala.Unit]
+    next: js.Function1[/* err */ nodeLib.Error with stdLib.Error, scala.Unit]
   ): busboyLib.busboyNs.Busboy
 }
 

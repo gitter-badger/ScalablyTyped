@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait SelectMenu extends BaseMixin[SelectMenu] {
   @JSName("filterDisplayed")
   var filterDisplayed_Original: IGetSet[
-    js.Function2[/* a */ dcLib.Anon_Key, /* index */ scala.Double, scala.Boolean], 
+    js.Function2[/* a */ dcLib.Anon_Value, /* index */ scala.Double, scala.Boolean], 
     SelectMenu
   ] = js.native
   @JSName("multiple")
@@ -22,8 +22,8 @@ trait SelectMenu extends BaseMixin[SelectMenu] {
   var promptText_Original: IGetSet[java.lang.String, SelectMenu] = js.native
   @JSName("promptValue")
   var promptValue_Original: IGetSet[_, SelectMenu] = js.native
-  def filterDisplayed(): js.Function2[/* a */ dcLib.Anon_Key, /* index */ scala.Double, scala.Boolean] = js.native
-  def filterDisplayed(t: js.Function2[/* a */ dcLib.Anon_Key, /* index */ scala.Double, scala.Boolean]): SelectMenu = js.native
+  def filterDisplayed(): js.Function2[/* a */ dcLib.Anon_Value, /* index */ scala.Double, scala.Boolean] = js.native
+  def filterDisplayed(t: js.Function2[/* a */ dcLib.Anon_Value, /* index */ scala.Double, scala.Boolean]): SelectMenu = js.native
   def multiple(): scala.Boolean = js.native
   def multiple(t: scala.Boolean): SelectMenu = js.native
   def numberVisible(): scala.Double = js.native

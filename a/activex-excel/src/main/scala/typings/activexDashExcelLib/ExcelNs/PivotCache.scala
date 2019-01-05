@@ -30,14 +30,14 @@ class PivotCache protected () extends js.Object {
   val RecordCount: scala.Double = js.native
   @JSName("Recordset")
   var Recordset_Original: activexDashAdodbLib.ADODBNs.Recordset = js.native
-  val RefreshDate: activexDashInteropLib.VarDate = js.native
+  val RefreshDate: activexDashInteropLib.VarDate with stdLib.VarDate = js.native
   val RefreshName: java.lang.String = js.native
   var RefreshOnFileOpen: scala.Boolean = js.native
   var RefreshPeriod: scala.Double = js.native
   var RobustConnect: XlRobustConnect = js.native
   var SavePassword: scala.Boolean = js.native
   var SourceConnectionFile: java.lang.String = js.native
-  var SourceData: java.lang.String | activexDashInteropLib.SafeArray[java.lang.String] | PivotTable = js.native
+  var SourceData: java.lang.String | (activexDashInteropLib.SafeArray[java.lang.String] with stdLib.SafeArray[java.lang.String]) | PivotTable = js.native
   val SourceDataFile: java.lang.String = js.native
   val SourceType: XlPivotTableSourceType = js.native
   var Sql: js.Any = js.native

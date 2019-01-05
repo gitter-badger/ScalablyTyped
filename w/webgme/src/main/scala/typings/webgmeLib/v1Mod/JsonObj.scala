@@ -13,6 +13,6 @@ trait JsonObj extends js.Object {
    //
   var nodes: js.Any
   var relids: js.Array[webgmeLib.GmeCommonNs.RelId]
-  var root: webgmeLib.Anon_Guid
+  var root: webgmeLib.Anon_PathGuid
 }
 

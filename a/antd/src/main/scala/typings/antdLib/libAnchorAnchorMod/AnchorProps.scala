@@ -14,8 +14,8 @@ trait AnchorProps extends js.Object {
   var offsetTop: js.UndefOr[scala.Double] = js.undefined
   var onClick: js.UndefOr[
     js.Function2[
-      /* e */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent], 
-      /* link */ antdLib.Anon_Href, 
+      /* e */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement with stdLib.HTMLElement, reactLib.NativeMouseEvent], 
+      /* link */ antdLib.Anon_Title, 
       scala.Unit
     ]
   ] = js.undefined

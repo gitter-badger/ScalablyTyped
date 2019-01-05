@@ -16,7 +16,9 @@ trait IInputGroupProps
     */
   var disabled: js.UndefOr[scala.Boolean] = js.undefined
   /** Ref handler that receives HTML `<input>` element backing this component. */
-  var inputRef: js.UndefOr[js.Function1[/* ref */ reactLib.HTMLInputElement | scala.Null, _]] = js.undefined
+  var inputRef: js.UndefOr[
+    js.Function1[/* ref */ (reactLib.HTMLInputElement with stdLib.HTMLInputElement) | scala.Null, _]
+  ] = js.undefined
   /** Whether this input should use large styles. */
   var large: js.UndefOr[scala.Boolean] = js.undefined
   /**

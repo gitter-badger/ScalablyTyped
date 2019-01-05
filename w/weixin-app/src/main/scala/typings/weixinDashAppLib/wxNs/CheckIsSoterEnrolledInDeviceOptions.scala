@@ -10,6 +10,6 @@ trait CheckIsSoterEnrolledInDeviceOptions
   var checkAuthMode: AuthModes
    // 认证方式
   @JSName("success")
-  var success_CheckIsSoterEnrolledInDeviceOptions: js.UndefOr[js.Function1[/* res */ weixinDashAppLib.Anon_ErrMsgIsEnrolled, scala.Unit]] = js.undefined
+  var success_CheckIsSoterEnrolledInDeviceOptions: js.UndefOr[js.Function1[/* res */ weixinDashAppLib.Anon_IsEnrolled, scala.Unit]] = js.undefined
 }
 

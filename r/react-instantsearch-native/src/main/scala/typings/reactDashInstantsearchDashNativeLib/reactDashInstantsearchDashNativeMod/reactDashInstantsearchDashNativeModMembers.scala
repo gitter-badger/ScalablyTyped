@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("react-instantsearch-native", JSImport.Namespace)
 @js.native
 object reactDashInstantsearchDashNativeModMembers extends js.Object {
-  val HIGHLIGHT_TAGS: reactDashInstantsearchDashCoreLib.Anon_HighlightPostTag = js.native
+  val HIGHLIGHT_TAGS: reactDashInstantsearchDashCoreLib.Anon_HighlightPreTag = js.native
   def connectAutoComplete(Composed: reactLib.reactMod.ReactNs.ComponentType[_]): reactLib.reactMod.ReactNs.ComponentClass[_, reactLib.reactMod.ReactNs.ComponentState] = js.native
   def connectBreadcrumb(Composed: reactLib.reactMod.ReactNs.ComponentType[_]): reactLib.reactMod.ReactNs.ComponentClass[_, reactLib.reactMod.ReactNs.ComponentState] = js.native
   def connectConfigure(Composed: reactLib.reactMod.ReactNs.ComponentType[_]): reactLib.reactMod.ReactNs.ComponentClass[_, reactLib.reactMod.ReactNs.ComponentState] = js.native

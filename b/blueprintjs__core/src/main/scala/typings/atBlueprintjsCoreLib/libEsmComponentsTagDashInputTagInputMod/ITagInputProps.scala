@@ -40,7 +40,12 @@ trait ITagInputProps
     */
   var inputProps: js.UndefOr[atBlueprintjsCoreLib.libEsmCommonPropsMod.HTMLInputProps] = js.undefined
   /** Ref handler for the `<input>` element. */
-  var inputRef: js.UndefOr[js.Function1[/* input */ reactLib.HTMLInputElement | scala.Null, scala.Unit]] = js.undefined
+  var inputRef: js.UndefOr[
+    js.Function1[
+      /* input */ (reactLib.HTMLInputElement with stdLib.HTMLInputElement) | scala.Null, 
+      scala.Unit
+    ]
+  ] = js.undefined
   /** Controlled value of the `<input>` element. This is shorthand for `inputProps={{ value }}`. */
   var inputValue: js.UndefOr[java.lang.String] = js.undefined
   /** Whether the tag input should use a large size. */
@@ -90,7 +95,9 @@ trait ITagInputProps
     * Callback invoked when the value of `<input>` element is changed.
     * This is shorthand for `inputProps={{ onChange }}`.
     */
-  var onInputChange: js.UndefOr[reactLib.reactMod.ReactNs.FormEventHandler[reactLib.HTMLInputElement]] = js.undefined
+  var onInputChange: js.UndefOr[
+    reactLib.reactMod.ReactNs.FormEventHandler[reactLib.HTMLInputElement with stdLib.HTMLInputElement]
+  ] = js.undefined
   /**
     * Callback invoked when the user depresses a keyboard key.
     * Receives the event and the index of the active tag (or `undefined` if
@@ -98,7 +105,7 @@ trait ITagInputProps
     */
   var onKeyDown: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.KeyboardEvent[reactLib.HTMLElement], 
+      /* event */ reactLib.reactMod.ReactNs.KeyboardEvent[reactLib.HTMLElement with stdLib.HTMLElement], 
       /* index */ js.UndefOr[scala.Double], 
       scala.Unit
     ]
@@ -110,7 +117,7 @@ trait ITagInputProps
     */
   var onKeyUp: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.ReactNs.KeyboardEvent[reactLib.HTMLElement], 
+      /* event */ reactLib.reactMod.ReactNs.KeyboardEvent[reactLib.HTMLElement with stdLib.HTMLElement], 
       /* index */ js.UndefOr[scala.Double], 
       scala.Unit
     ]

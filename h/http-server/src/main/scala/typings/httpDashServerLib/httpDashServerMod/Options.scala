@@ -21,7 +21,7 @@ trait Options extends js.Object {
     js.Function3[
       /* req */ nodeLib.httpMod.IncomingMessage, 
       /* res */ nodeLib.httpMod.ServerResponse, 
-      /* err */ nodeLib.Error, 
+      /* err */ nodeLib.Error with stdLib.Error, 
       scala.Unit
     ]
   ] = js.undefined

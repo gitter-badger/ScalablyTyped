@@ -55,9 +55,9 @@ object PriorityQueue extends js.Object {
   /**
     * Creates a queue object from the given iterable
     */
-  def from[T](iterable: nodeLib.Iterable[T]): adoneLib.adoneNs.collectionNs.PriorityQueue[T] = js.native
+  def from[T](iterable: nodeLib.Iterable[T] with stdLib.Iterable[T]): adoneLib.adoneNs.collectionNs.PriorityQueue[T] = js.native
   def from[T](
-    iterable: nodeLib.Iterable[T],
+    iterable: nodeLib.Iterable[T] with stdLib.Iterable[T],
     options: adoneLib.adoneNs.collectionNs.INs.PriorityQueueNs.ConstructorOptions[T]
   ): adoneLib.adoneNs.collectionNs.PriorityQueue[T] = js.native
 }

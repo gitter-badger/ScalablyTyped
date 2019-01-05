@@ -7,38 +7,32 @@ import scala.scalajs.js.annotation._
 
 trait Anon_Duration extends js.Object {
   /**
-    * Optional. A valid Angular scope object. The scope of the template will be created by calling $new() on this scope.
-    */
-  @JSName("$scope")
-  var $scope: js.UndefOr[angularLib.angularMod.angularNs.IScope] = js.undefined
-  /**
-    * Optional. A list of custom CSS classes to apply to the message element.
-    */
-  var classes: js.UndefOr[java.lang.String] = js.undefined
-  /**
-    * Optional. Element that contains each notification. Defaults to document.body.
+    * The default element that contains each notification. Defaults to document.body.
     */
   var container: js.UndefOr[js.Any] = js.undefined
   /**
-    * Optional. The duration (in milliseconds) of the message. A duration of 0 will prevent the message from closing automatically.
+    * The default duration (in milliseconds) of each message. A duration of 0 will prevent messages from closing automatically.
     */
   var duration: js.UndefOr[scala.Double] = js.undefined
   /**
-    * Required. The message to show.
+    * The maximum number of total notifications that can be visible at one time. Older notifications will be closed when the maximum is reached.
     */
-  var message: java.lang.String
+  var maximumOpen: js.UndefOr[scala.Double] = js.undefined
   /**
-    * Optional. A string containing any valid Angular HTML which will be shown instead of the regular message text.
-    * The string must contain one root element like all valid Angular HTML templates (so wrap everything in a <span>).
-    */
-  var messageTemplate: js.UndefOr[java.lang.String] = js.undefined
-  /**
-    * Optional. Currently center and right are the only acceptable values.
+    * The default position of each message. Currently only center and right are the supported values.
     */
   var position: js.UndefOr[java.lang.String] = js.undefined
   /**
-    * Optional. A custom template for the UI of the message.
+    * The Y pixel value where messages will be shown.
+    */
+  var startTop: js.UndefOr[scala.Double] = js.undefined
+  /**
+    * The default message template.
     */
   var templateUrl: js.UndefOr[java.lang.String] = js.undefined
+  /**
+    * The number of pixels that should be reserved between messages vertically.
+    */
+  var verticalSpacing: js.UndefOr[scala.Double] = js.undefined
 }
 

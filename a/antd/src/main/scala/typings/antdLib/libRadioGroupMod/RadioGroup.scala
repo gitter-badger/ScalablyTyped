@@ -12,7 +12,7 @@ trait RadioGroup
       antdLib.libRadioInterfaceMod.RadioGroupState, 
       js.Any
     ] {
-  def getChildContext(): antdLib.Anon_RadioGroupAnonValueOnChange = js.native
+  def getChildContext(): antdLib.Anon_RadioGroupAnonOnChange = js.native
   def onRadioChange(ev: antdLib.libRadioInterfaceMod.RadioChangeEvent): scala.Unit = js.native
   @JSName("shouldComponentUpdate")
   def shouldComponentUpdate_MRadioGroup(

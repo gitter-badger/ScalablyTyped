@@ -10,7 +10,7 @@ trait SpanContextLike extends js.Object {
   var parentId: js.UndefOr[scala.Double | scala.Null] = js.undefined
   var sampled: js.UndefOr[scala.Boolean] = js.undefined
   var spanId: scala.Double
-  var trace: js.UndefOr[ddDashTraceLib.Anon_Finished] = js.undefined
+  var trace: js.UndefOr[ddDashTraceLib.Anon_Started] = js.undefined
   var traceId: scala.Double
 }
 

@@ -31,7 +31,7 @@ trait IContextualMenuItemProps
     * This prop will get set by the wrapping component and will return the element that wraps this ContextualMenuItem.
     * Used for openSubMenu.
     */
-  var getSubmenuTarget: js.UndefOr[js.Function0[js.UndefOr[reactLib.HTMLElement]]] = js.undefined
+  var getSubmenuTarget: js.UndefOr[js.Function0[js.UndefOr[reactLib.HTMLElement with stdLib.HTMLElement]]] = js.undefined
   /**
     * If this item has icons
     */
@@ -50,14 +50,20 @@ trait IContextualMenuItemProps
   var onCheckmarkClick: js.UndefOr[
     js.Function2[
       /* item */ officeDashUiDashFabricDashReactLib.libComponentsContextualMenuContextualMenuDotTypesMod.IContextualMenuItem, 
-      /* ev */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent], 
+      /* ev */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement with stdLib.HTMLElement, reactLib.NativeMouseEvent], 
       scala.Unit
     ]
   ] = js.undefined
   /**
     * This prop will get set by ContextualMenu and can be called to open this item's subMenu, if present.
     */
-  var openSubMenu: js.UndefOr[js.Function2[/* item */ js.Any, /* target */ reactLib.HTMLElement, scala.Unit]] = js.undefined
+  var openSubMenu: js.UndefOr[
+    js.Function2[
+      /* item */ js.Any, 
+      /* target */ reactLib.HTMLElement with stdLib.HTMLElement, 
+      scala.Unit
+    ]
+  ] = js.undefined
   /**
     * Call to provide customized styling that will layer on top of the variant rules.
     */

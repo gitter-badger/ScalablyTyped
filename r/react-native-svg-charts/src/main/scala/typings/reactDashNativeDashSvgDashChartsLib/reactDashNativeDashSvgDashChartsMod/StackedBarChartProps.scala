@@ -15,7 +15,7 @@ trait StackedBarChartProps[T] extends ChartProps[T] {
   var order: js.UndefOr[OrderFunction] = js.undefined
   var renderGradient: js.UndefOr[
     js.Function1[
-      /* props */ reactDashNativeDashSvgDashChartsLib.Anon_Id, 
+      /* props */ reactDashNativeDashSvgDashChartsLib.Anon_IdString, 
       reactLib.reactMod.Component[
         reactDashNativeDashSvgLib.reactDashNativeDashSvgMod.LinearGradientProps | reactDashNativeDashSvgLib.reactDashNativeDashSvgMod.RadialGradientProps, 
         js.Object, 

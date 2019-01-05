@@ -14,7 +14,7 @@ object fillDashPdfModMembers extends js.Object {
     data: FormData,
     templatePath: java.lang.String,
     extendArgs: js.Array[java.lang.String],
-    callback: js.Function2[/* err */ nodeLib.Error, /* output */ nodeLib.Buffer, scala.Unit]
+    callback: js.Function2[/* err */ nodeLib.Error with stdLib.Error, /* output */ nodeLib.Buffer, scala.Unit]
   ): scala.Unit = js.native
 }
 

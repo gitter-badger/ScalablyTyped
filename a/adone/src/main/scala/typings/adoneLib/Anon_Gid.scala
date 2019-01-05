@@ -5,8 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Anon_Gid extends js.Object {
-  var gid: scala.Double
-  var uid: scala.Double
+  var gid: js.UndefOr[scala.Double] = js.native
+  var uid: js.UndefOr[scala.Double] = js.native
 }
 

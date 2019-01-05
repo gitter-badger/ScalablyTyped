@@ -5,8 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveDifficultInheritance: 
-- Lifted 3 members from Set(std.Pick<react.react.HTMLAttributes<react.HTMLElement> & std.Partial<std.Record<@material-ui/core.@material-ui/core/styles/createBreakpoints.Breakpoint, boolean | @material-ui/core.@material-ui/core/Grid/Grid.GridSize>>, std.Exclude<keyof react.react.HTMLAttributes<react.HTMLElement> & std.Partial<std.Record<@material-ui/core.@material-ui/core/styles/createBreakpoints.Breakpoint, boolean | @material-ui/core.@material-ui/core/Grid/Grid.GridSize>>, 'classes' | 'hidden'>>, @material-ui/core.@material-ui/core.StandardProps<react.react.HTMLAttributes<react.HTMLElement> & std.Partial<std.Record<@material-ui/core.@material-ui/core/styles/createBreakpoints.Breakpoint, boolean | @material-ui/core.@material-ui/core/Grid/Grid.GridSize>>, @material-ui/core.@material-ui/core/Grid/Grid.GridClassKey, 'hidden'>) */ trait GridProps
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
+- Dropped {[ P in std.Exclude<keyof react.react.HTMLAttributes<react.HTMLElement & std.HTMLElement> & std.Partial<std.Record<@material-ui/core.@material-ui/core/styles/createBreakpoints.Breakpoint, boolean | @material-ui/core.@material-ui/core/Grid/Grid.GridSize>>, 'classes' | 'hidden'> ]: react.react.HTMLAttributes<react.HTMLElement & std.HTMLElement> & std.Partial<std.Record<@material-ui/core.@material-ui/core/styles/createBreakpoints.Breakpoint, boolean | @material-ui/core.@material-ui/core/Grid/Grid.GridSize>>[P]}
+- Lifted 2 members from Set(@material-ui/core.@material-ui/core.StandardProps<react.react.HTMLAttributes<react.HTMLElement & std.HTMLElement> & std.Partial<std.Record<@material-ui/core.@material-ui/core/styles/createBreakpoints.Breakpoint, boolean | @material-ui/core.@material-ui/core/Grid/Grid.GridSize>>, @material-ui/core.@material-ui/core/Grid/Grid.GridClassKey, 'hidden'>) */ trait GridProps
   extends atMaterialDashUiCoreLib.stylesWithStylesMod.StyledComponentProps[GridClassKey] {
   var alignContent: js.UndefOr[GridContentAlignment] = js.undefined
   var alignItems: js.UndefOr[GridItemsAlignment] = js.undefined

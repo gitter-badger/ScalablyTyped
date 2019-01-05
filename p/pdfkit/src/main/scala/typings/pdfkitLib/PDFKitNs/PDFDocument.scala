@@ -41,7 +41,7 @@ trait PDFDocument
   def addContent(data: js.Any): PDFDocument = js.native
   def addPage(): PDFDocument = js.native
   def addPage(options: PDFDocumentOptions): PDFDocument = js.native
-  def bufferedPageRange(): pdfkitLib.Anon_Count = js.native
+  def bufferedPageRange(): pdfkitLib.Anon_Start = js.native
   def end(): scala.Unit = js.native
   def flushPages(): scala.Unit = js.native
   /**

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("stream-json/Emitter", "make")
 @js.native
 object makeNs extends js.Object {
-  val Constructor: streamDashJsonLib.Anon_Emitter with (org.scalablytyped.runtime.Instantiable1[
+  val Constructor: streamDashJsonLib.Anon_Make with (org.scalablytyped.runtime.Instantiable1[
     /* options */ js.UndefOr[/* options */ nodeLib.streamMod.internalNs.WritableOptions], 
     streamDashJsonLib.emitterMod.Emitter
   ]) = js.native

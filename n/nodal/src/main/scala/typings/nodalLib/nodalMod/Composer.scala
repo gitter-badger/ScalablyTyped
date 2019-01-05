@@ -13,18 +13,8 @@ class Composer[T /* <: Model */] protected () extends js.Object {
     * @param {Nodal.Model} Model The model class the composer is querying from
     * @param {Nodal.Composer} [parent=null] The composer's parent (another composer instance)
     */
-  def this(modelConstructor: org.scalablytyped.runtime.Instantiable3[
-      /* modelData */ js.Object, 
-      /* fromStorage */ js.UndefOr[/* fromStorage */ scala.Boolean], 
-      /* fromSeed */ js.UndefOr[/* fromSeed */ scala.Boolean], 
-      Model
-    ]) = this()
-  def this(modelConstructor: org.scalablytyped.runtime.Instantiable3[
-      /* modelData */ js.Object, 
-      /* fromStorage */ js.UndefOr[/* fromStorage */ scala.Boolean], 
-      /* fromSeed */ js.UndefOr[/* fromSeed */ scala.Boolean], 
-      Model
-    ], parent: Composer[_]) = this()
+  def this(modelConstructor: nodalLib.Anon_RelationshipCache) = this()
+  def this(modelConstructor: nodalLib.Anon_RelationshipCache, parent: Composer[_]) = this()
   var Model: T = js.native
   var _command: js.Any = js.native
   var _parent: js.Any = js.native
@@ -136,17 +126,25 @@ class Composer[T /* <: Model */] protected () extends js.Object {
     * Counts the results in the query
     * @param {function} callback Supplied with an error and the integer value of the count
     */
-  def count(callback: js.Function2[/* err */ nodeLib.Error, /* count */ scala.Double, scala.Unit]): scala.Unit = js.native
+  def count(
+    callback: js.Function2[/* err */ nodeLib.Error with stdLib.Error, /* count */ scala.Double, scala.Unit]
+  ): scala.Unit = js.native
   /**
     * Execute the query you've been composing.
     * @param {function({Error}, {Nodal.ModelArray})} callback The method to execute when the query is complete
     */
-  def end(callback: js.Function2[/* err */ nodeLib.Error, /* modelArray */ ModelArray[T], scala.Unit]): scala.Unit = js.native
+  def end(
+    callback: js.Function2[
+      /* err */ nodeLib.Error with stdLib.Error, 
+      /* modelArray */ ModelArray[T], 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
   /**
     * Shortcut for .limit(1).end(callback) that only returns a model object or error if not found
     * @param {Function} callback Callback to execute, provides an error and model parameter
     */
-  def first(callback: js.Function2[/* err */ nodeLib.Error, /* model */ Model, scala.Unit]): scala.Unit = js.native
+  def first(callback: js.Function2[/* err */ nodeLib.Error with stdLib.Error, /* model */ Model, scala.Unit]): scala.Unit = js.native
   /**
     * Groups by a specific field, or a transformation on a field
     * @param {String} column The column to group by
@@ -279,7 +277,11 @@ class Composer[T /* <: Model */] protected () extends js.Object {
     */
   def update(
     fields: IAnyObject,
-    callback: js.Function2[/* err */ nodeLib.Error, /* modelArray */ ModelArray[T], scala.Unit]
+    callback: js.Function2[
+      /* err */ nodeLib.Error with stdLib.Error, 
+      /* modelArray */ ModelArray[T], 
+      scala.Unit
+    ]
   ): scala.Unit = js.native
   /**
     * Add comparisons to SQL WHERE clause.

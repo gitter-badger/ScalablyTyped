@@ -12,7 +12,7 @@ package object angularMod {
   ///////////////////////////////////////////////////////////////////////////
   type IComponentControllerService = js.Function4[
     /* componentName */ java.lang.String, 
-    /* locals */ angularDashMocksLib.Anon_Key, 
+    /* locals */ angularDashMocksLib.Anon_Scope, 
     /* bindings */ js.UndefOr[js.Any], 
     /* ident */ js.UndefOr[java.lang.String], 
     js.Any

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait Anon_OptionsFromObjectObjectIGradientTransparencyFilter
   extends org.scalablytyped.runtime.Instantiable0[fabricLib.fabricDashImplMod.IGradientTransparencyFilter]
      with org.scalablytyped.runtime.Instantiable1[
-      /* options */ Anon_ThresholdNumber, 
+      /* options */ Anon_Threshold, 
       fabricLib.fabricDashImplMod.IGradientTransparencyFilter
     ] {
   /**

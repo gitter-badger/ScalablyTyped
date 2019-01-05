@@ -30,6 +30,6 @@ class SolidParticleSystem protected ()
     * @example bSphereRadiusFactor = 1.0 / Math.sqrt(3.0) => the bounding sphere exactly matches a spherical mesh.
     */
   def this(name: java.lang.String, scene: babylonjsLib.BABYLONNs.Scene) = this()
-  def this(name: java.lang.String, scene: babylonjsLib.BABYLONNs.Scene, options: babylonjsLib.Anon_BSphereRadiusFactor) = this()
+  def this(name: java.lang.String, scene: babylonjsLib.BABYLONNs.Scene, options: babylonjsLib.Anon_Updatable) = this()
 }
 

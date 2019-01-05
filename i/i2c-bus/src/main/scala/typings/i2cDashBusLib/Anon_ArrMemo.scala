@@ -7,20 +7,20 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Anon_ArrMemo extends js.Object {
-  def apply[T, R, E](arr: js.Array[T], memo: R, iterator: i2cDashBusLib.asyncMod.AsyncMemoIterator[T, R, E]): scala.Unit = js.native
   def apply[T, R, E](
-    arr: js.Array[T],
-    memo: R,
-    iterator: i2cDashBusLib.asyncMod.AsyncMemoIterator[T, R, E],
-    callback: i2cDashBusLib.asyncMod.AsyncResultCallback[R, E]
-  ): scala.Unit = js.native
-  def apply[T, R, E](
-    arr: nodeLib.IterableIterator[T],
+    arr: nodeLib.IterableIterator[T] with stdLib.IterableIterator[T],
     memo: R,
     iterator: i2cDashBusLib.asyncMod.AsyncMemoIterator[T, R, E]
   ): scala.Unit = js.native
   def apply[T, R, E](
-    arr: nodeLib.IterableIterator[T],
+    arr: nodeLib.IterableIterator[T] with stdLib.IterableIterator[T],
+    memo: R,
+    iterator: i2cDashBusLib.asyncMod.AsyncMemoIterator[T, R, E],
+    callback: i2cDashBusLib.asyncMod.AsyncResultCallback[R, E]
+  ): scala.Unit = js.native
+  def apply[T, R, E](arr: js.Array[T], memo: R, iterator: i2cDashBusLib.asyncMod.AsyncMemoIterator[T, R, E]): scala.Unit = js.native
+  def apply[T, R, E](
+    arr: js.Array[T],
     memo: R,
     iterator: i2cDashBusLib.asyncMod.AsyncMemoIterator[T, R, E],
     callback: i2cDashBusLib.asyncMod.AsyncResultCallback[R, E]

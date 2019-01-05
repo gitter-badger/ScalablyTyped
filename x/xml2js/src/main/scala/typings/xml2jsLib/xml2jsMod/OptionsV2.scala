@@ -13,6 +13,6 @@ trait OptionsV2 extends Options {
   var preserveChildrenOrder: js.UndefOr[scala.Boolean] = js.undefined
   var renderOpts: js.UndefOr[xml2jsLib.Anon_Pretty] = js.undefined
   var rootName: js.UndefOr[java.lang.String] = js.undefined
-  var xmldec: js.UndefOr[xml2jsLib.Anon_Standalone] = js.undefined
+  var xmldec: js.UndefOr[xml2jsLib.Anon_Version] = js.undefined
 }
 

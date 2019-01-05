@@ -60,7 +60,7 @@ object invoiceNs extends js.Object {
     var logo_url: js.UndefOr[java.lang.String] = js.undefined
     var merchant_info: js.UndefOr[Merchant] = js.undefined
     var merchant_memo: js.UndefOr[java.lang.String] = js.undefined
-    val metadata: js.UndefOr[paypalDashRestDashSdkLib.Anon_Createdby] = js.undefined
+    val metadata: js.UndefOr[paypalDashRestDashSdkLib.Anon_Createddate] = js.undefined
     var minimum_amount_due: js.UndefOr[paypalDashRestDashSdkLib.paypalDashRestDashSdkMod.Currency] = js.undefined
     var note: js.UndefOr[java.lang.String] = js.undefined
     var number: js.UndefOr[java.lang.String] = js.undefined
@@ -73,7 +73,7 @@ object invoiceNs extends js.Object {
     val refunded_amount: js.UndefOr[paypalDashRestDashSdkLib.Anon_Paypal] = js.undefined
     val refunds: js.UndefOr[js.Array[Detail]] = js.undefined
     var shipping_cost: js.UndefOr[ShippingCost] = js.undefined
-    var shipping_info: js.UndefOr[paypalDashRestDashSdkLib.Anon_Firstname] = js.undefined
+    var shipping_info: js.UndefOr[paypalDashRestDashSdkLib.Anon_Address] = js.undefined
     val status: js.UndefOr[java.lang.String] = js.undefined
     var tax_calculated_after_discount: js.UndefOr[scala.Boolean] = js.undefined
     var tax_inclusive: js.UndefOr[scala.Boolean] = js.undefined

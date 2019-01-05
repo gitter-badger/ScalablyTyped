@@ -27,7 +27,7 @@ class PNG ()
   @JSName("on")
   def on_error(
     event: pngjsLib.pngjsLibStrings.error,
-    callback: js.Function1[/* error */ nodeLib.Error, scala.Unit]
+    callback: js.Function1[/* error */ nodeLib.Error with stdLib.Error, scala.Unit]
   ): this.type = js.native
   @JSName("on")
   def on_metadata(
@@ -43,19 +43,19 @@ class PNG ()
   def parse(data: java.lang.String): PNG = js.native
   def parse(
     data: java.lang.String,
-    callback: js.Function2[/* error */ nodeLib.Error, /* data */ this.type, scala.Unit]
+    callback: js.Function2[/* error */ nodeLib.Error with stdLib.Error, /* data */ this.type, scala.Unit]
   ): PNG = js.native
   def parse(data: nodeLib.Buffer): PNG = js.native
   def parse(
     data: nodeLib.Buffer,
-    callback: js.Function2[/* error */ nodeLib.Error, /* data */ this.type, scala.Unit]
+    callback: js.Function2[/* error */ nodeLib.Error with stdLib.Error, /* data */ this.type, scala.Unit]
   ): PNG = js.native
 }
 
 @JSImport("pngjs", "PNG")
 @js.native
 object PNG extends js.Object {
-  var sync: pngjsLib.Anon_Write = js.native
+  var sync: pngjsLib.Anon_Read = js.native
   def adjustGamma(src: pngjsLib.pngjsMod.PNG): scala.Unit = js.native
   def bitblt(
     src: pngjsLib.pngjsMod.PNG,

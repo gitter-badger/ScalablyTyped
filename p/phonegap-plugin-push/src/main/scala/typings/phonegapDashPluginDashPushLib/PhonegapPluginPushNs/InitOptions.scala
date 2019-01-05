@@ -12,11 +12,11 @@ trait InitOptions extends js.Object {
   /**
   		 * Android specific initialization options.
   		 */
-  var android: js.UndefOr[phonegapDashPluginDashPushLib.Anon_TopicsIcon] = js.undefined
+  var android: js.UndefOr[phonegapDashPluginDashPushLib.Anon_SenderID] = js.undefined
   /**
   		 * iOS specific initialization options.
   		 */
-  var ios: js.UndefOr[phonegapDashPluginDashPushLib.Anon_Topics] = js.undefined
+  var ios: js.UndefOr[phonegapDashPluginDashPushLib.Anon_Badge] = js.undefined
   /**
   		 * Windows specific initialization options.
   		 */

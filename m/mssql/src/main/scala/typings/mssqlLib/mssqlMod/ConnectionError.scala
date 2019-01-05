@@ -5,7 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("mssql", "ConnectionError")
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- stdLib.Error because var conflicts: stack. Inlined message, name */ @JSImport("mssql", "ConnectionError")
 @js.native
 class ConnectionError protected ()
   extends nodeLib.Error {

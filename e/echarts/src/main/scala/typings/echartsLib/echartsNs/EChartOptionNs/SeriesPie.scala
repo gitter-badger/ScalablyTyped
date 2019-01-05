@@ -244,9 +244,7 @@ trait SeriesPie extends js.Object {
   /**
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.emphasis
     */
-  var emphasis: js.UndefOr[
-    echartsLib.Anon_ItemStyleLabelAnonShadowOffsetXBorderTypeAnonShadowOffsetXBackgroundColorShowAlignTextBorderWidthVerticalAlignShadowBlurHeightBorderWidthFontStyleRich
-  ] = js.undefined
+  var emphasis: js.UndefOr[echartsLib.Anon_LabelItemStyleAnonShowFormatter] = js.undefined
   /**
     * Whether to enable the zoom animation effects when hovering sectors.
     *
@@ -281,7 +279,7 @@ trait SeriesPie extends js.Object {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.itemStyle
     */
-  var itemStyle: js.UndefOr[echartsLib.Anon_UnknownProperty] = js.undefined
+  var itemStyle: js.UndefOr[echartsLib.Anon_UnknownPropertyColorBorderColor] = js.undefined
   /**
     * Text label of pie chart, to explain some data information about
     * graphic item like value, name and so on.
@@ -293,7 +291,7 @@ trait SeriesPie extends js.Object {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.label
     */
-  var label: js.UndefOr[echartsLib.Anon_UnknownPropertyShadowOffsetX] = js.undefined
+  var label: js.UndefOr[echartsLib.Anon_UnknownPropertyShow] = js.undefined
   /**
     * The style of visual guide line. Will show when
     * [label position](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.label.position)
@@ -304,7 +302,7 @@ trait SeriesPie extends js.Object {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.labelLine
     */
-  var labelLine: js.UndefOr[echartsLib.Anon_UnknownPropertyShow] = js.undefined
+  var labelLine: js.UndefOr[echartsLib.Anon_UnknownPropertyShowLength] = js.undefined
   /**
     * Whether to enable highlighting chart when
     * [legend](https://ecomfe.github.io/echarts-doc/public/en/option.html#legend)
@@ -323,21 +321,21 @@ trait SeriesPie extends js.Object {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.markArea
     */
-  var markArea: js.UndefOr[echartsLib.Anon_SilentDataLabel] = js.undefined
+  var markArea: js.UndefOr[echartsLib.Anon_SilentLabelItemStyle] = js.undefined
   /**
     * Use a line in the chart to illustrate.
     *
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.markLine
     */
-  var markLine: js.UndefOr[echartsLib.Anon_PrecisionSilent] = js.undefined
+  var markLine: js.UndefOr[echartsLib.Anon_SilentSymbol] = js.undefined
   /**
     * Mark point in a chart.
     *
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.markPoint
     */
-  var markPoint: js.UndefOr[echartsLib.Anon_SilentDataLabelAnimationEasingUpdate] = js.undefined
+  var markPoint: js.UndefOr[echartsLib.Anon_SymbolSymbolSize] = js.undefined
   /**
     * The minimum angle of sector (0 ~ 360).
     * It prevents some sector from being too small when value is small,
@@ -467,7 +465,7 @@ trait SeriesPie extends js.Object {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.tooltip
     */
-  var tooltip: js.UndefOr[echartsLib.Anon_BackgroundColor] = js.undefined
+  var tooltip: js.UndefOr[echartsLib.Anon_Position] = js.undefined
   /**
     * @default
     * "pie"

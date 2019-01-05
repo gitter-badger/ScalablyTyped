@@ -10,6 +10,7 @@ trait Anon_PlotSeries extends js.Object {
   def apply(
     plot: flotLib.jqueryNs.flotNs.plot,
     series: flotLib.jqueryNs.flotNs.dataSeries,
+    data: js.Array[_],
     datapoints: flotLib.jqueryNs.flotNs.datapoints
   ): scala.Unit = js.native
 }

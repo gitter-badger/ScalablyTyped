@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 trait DialogOptions extends js.Object {
   var animation: js.UndefOr[java.lang.String] = js.undefined
-  var callback: js.UndefOr[coreDashJsLib.Function] = js.undefined
+  var callback: js.UndefOr[coreDashJsLib.Function with js.Function] = js.undefined
 }
 

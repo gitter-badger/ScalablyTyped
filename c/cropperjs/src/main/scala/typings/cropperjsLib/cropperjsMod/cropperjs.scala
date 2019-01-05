@@ -30,7 +30,7 @@ trait cropperjs extends js.Object {
   /**
     * Output the canvas (image wrapper) position and size data.
     */
-  def getCanvasData(): cropperjsLib.cropperjsMod.cropperjsNs.CanvasData with cropperjsLib.Anon_NaturalHeight = js.native
+  def getCanvasData(): cropperjsLib.cropperjsMod.cropperjsNs.CanvasData with cropperjsLib.Anon_NaturalWidth = js.native
   /**
     * Output the container size data.
     */

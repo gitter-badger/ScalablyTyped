@@ -55,7 +55,7 @@ trait NiceScrollOptions extends js.Object {
   ] = js.undefined
   var railhoffset: js.UndefOr[scala.Boolean | jqueryDotNicescrollLib.Anon_Top] = js.undefined
   var railoffset: js.UndefOr[scala.Boolean | jqueryDotNicescrollLib.Anon_Top] = js.undefined
-  var railpadding: js.UndefOr[jqueryDotNicescrollLib.Anon_Bottom] = js.undefined
+  var railpadding: js.UndefOr[jqueryDotNicescrollLib.Anon_TopRight] = js.undefined
   var railvalign: js.UndefOr[
     jqueryDotNicescrollLib.jqueryDotNicescrollLibStrings.right | jqueryDotNicescrollLib.jqueryDotNicescrollLibStrings.left | jqueryDotNicescrollLib.jqueryDotNicescrollLibStrings.top | jqueryDotNicescrollLib.jqueryDotNicescrollLibStrings.bottom
   ] = js.undefined

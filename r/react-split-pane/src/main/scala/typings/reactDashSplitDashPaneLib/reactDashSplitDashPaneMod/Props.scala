@@ -14,8 +14,8 @@ trait Props extends js.Object {
   var onChange: js.UndefOr[js.Function1[/* newSize */ scala.Double, scala.Unit]] = js.undefined
   var onDragFinished: js.UndefOr[js.Function1[/* newSize */ scala.Double, scala.Unit]] = js.undefined
   var onDragStarted: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
-  var onResizerClick: js.UndefOr[js.Function1[/* event */ reactLib.MouseEvent, scala.Unit]] = js.undefined
-  var onResizerDoubleClick: js.UndefOr[js.Function1[/* event */ reactLib.MouseEvent, scala.Unit]] = js.undefined
+  var onResizerClick: js.UndefOr[js.Function1[/* event */ reactLib.MouseEvent with stdLib.MouseEvent, scala.Unit]] = js.undefined
+  var onResizerDoubleClick: js.UndefOr[js.Function1[/* event */ reactLib.MouseEvent with stdLib.MouseEvent, scala.Unit]] = js.undefined
   var pane1Style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
   var pane2Style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
   var paneStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined

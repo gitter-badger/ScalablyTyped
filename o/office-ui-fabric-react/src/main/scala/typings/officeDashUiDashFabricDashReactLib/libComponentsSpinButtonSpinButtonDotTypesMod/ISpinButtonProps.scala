@@ -121,7 +121,9 @@ trait ISpinButtonProps extends js.Object {
   /**
     * A callback for when the user moves the focus away from the picker
     */
-  var onBlur: js.UndefOr[reactLib.reactMod.ReactNs.FocusEventHandler[reactLib.HTMLInputElement]] = js.undefined
+  var onBlur: js.UndefOr[
+    reactLib.reactMod.ReactNs.FocusEventHandler[reactLib.HTMLInputElement with stdLib.HTMLInputElement]
+  ] = js.undefined
   /**
     * This callback is triggered when the decrement button is pressed or if the user presses down arrow
     * with focus on the input of the spinButton
@@ -131,7 +133,9 @@ trait ISpinButtonProps extends js.Object {
   /**
     * A callback for when the user put focus on the picker
     */
-  var onFocus: js.UndefOr[reactLib.reactMod.ReactNs.FocusEventHandler[reactLib.HTMLInputElement]] = js.undefined
+  var onFocus: js.UndefOr[
+    reactLib.reactMod.ReactNs.FocusEventHandler[reactLib.HTMLInputElement with stdLib.HTMLInputElement]
+  ] = js.undefined
   /**
     * This callback is triggered when the increment button is pressed or if the user presses up arrow
     * with focus on the input of the spinButton
@@ -147,7 +151,9 @@ trait ISpinButtonProps extends js.Object {
   var onValidate: js.UndefOr[
     js.Function2[
       /* value */ java.lang.String, 
-      /* event */ js.UndefOr[reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.HTMLElement, reactLib.Event]], 
+      /* event */ js.UndefOr[
+        reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.HTMLElement with stdLib.HTMLElement, reactLib.Event]
+      ], 
       java.lang.String | scala.Unit
     ]
   ] = js.undefined

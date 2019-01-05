@@ -20,13 +20,13 @@ class Scenario protected () extends js.Object {
   var Name: java.lang.String = js.native
   val Parent: js.Any = js.native
   def ChangeScenario(ChangingCells: Range): js.Any = js.native
-  def ChangeScenario(ChangingCells: Range, Values: activexDashInteropLib.SafeArray[_]): js.Any = js.native
+  def ChangeScenario(ChangingCells: Range, Values: activexDashInteropLib.SafeArray[_] with stdLib.SafeArray[_]): js.Any = js.native
   def ChangingCells(Address: java.lang.String): Range = js.native
   def ChangingCells(RowIndex: scala.Double): Range = js.native
   def ChangingCells(RowIndex: scala.Double, ColumnIndex: scala.Double): Range = js.native
   def Delete(): js.Any = js.native
   def Show(): js.Any = js.native
-  def Values(): activexDashInteropLib.SafeArray[_] = js.native
+  def Values(): activexDashInteropLib.SafeArray[_] with stdLib.SafeArray[_] = js.native
   def Values(Index: scala.Double): js.Any = js.native
 }
 

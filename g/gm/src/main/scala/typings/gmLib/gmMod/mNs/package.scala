@@ -10,7 +10,7 @@ package object mNs {
   type ChannelType = gmLib.gmLibStrings.All | gmLib.gmLibStrings.Intensity | gmLib.gmLibStrings.Red | gmLib.gmLibStrings.Green | gmLib.gmLibStrings.Blue | gmLib.gmLibStrings.Cyan | gmLib.gmLibStrings.Magenta | gmLib.gmLibStrings.Yellow | gmLib.gmLibStrings.Black | gmLib.gmLibStrings.Opacity
   type ColorSpace = gmLib.gmLibStrings.CineonLog | gmLib.gmLibStrings.CMYK | gmLib.gmLibStrings.GRAY | gmLib.gmLibStrings.HSL | gmLib.gmLibStrings.HSB | gmLib.gmLibStrings.OHTA | gmLib.gmLibStrings.RGB | gmLib.gmLibStrings.Rec601Luma | gmLib.gmLibStrings.Rec709Luma | gmLib.gmLibStrings.Rec601YCbCr | gmLib.gmLibStrings.Rec709YCbCr | gmLib.gmLibStrings.Transparent | gmLib.gmLibStrings.XYZ | gmLib.gmLibStrings.YCbCr | gmLib.gmLibStrings.YIQ | gmLib.gmLibStrings.YPbPr | gmLib.gmLibStrings.YUV
   type CompareCallback = js.Function4[
-    /* err */ nodeLib.Error, 
+    /* err */ nodeLib.Error with stdLib.Error, 
     /* isEqual */ scala.Boolean, 
     /* equality */ scala.Double, 
     /* raw */ scala.Double, 
@@ -22,7 +22,7 @@ package object mNs {
   type Encoding = gmLib.gmLibStrings.AdobeCustom | gmLib.gmLibStrings.AdobeExpert | gmLib.gmLibStrings.AdobeStandard | gmLib.gmLibStrings.AppleRoman | gmLib.gmLibStrings.BIG5 | gmLib.gmLibStrings.GB2312 | (gmLib.gmLibStrings.`Latin 2`) | gmLib.gmLibStrings.None | gmLib.gmLibStrings.SJIScode | gmLib.gmLibStrings.Symbol | gmLib.gmLibStrings.Unicode | gmLib.gmLibStrings.Wansung
   type EndianType = gmLib.gmLibStrings.MSB | gmLib.gmLibStrings.LSB | gmLib.gmLibStrings.Native
   type FilterType = gmLib.gmLibStrings.Point | gmLib.gmLibStrings.Box | gmLib.gmLibStrings.Triangle | gmLib.gmLibStrings.Hermite | gmLib.gmLibStrings.Hanning | gmLib.gmLibStrings.Hamming | gmLib.gmLibStrings.Blackman | gmLib.gmLibStrings.Gaussian | gmLib.gmLibStrings.Quadratic | gmLib.gmLibStrings.Cubic | gmLib.gmLibStrings.Catrom | gmLib.gmLibStrings.Mitchell | gmLib.gmLibStrings.Lanczos | gmLib.gmLibStrings.Bessel | gmLib.gmLibStrings.Sinc
-  type GetterCallback[T] = js.Function2[/* err */ nodeLib.Error, /* value */ T, js.Any]
+  type GetterCallback[T] = js.Function2[/* err */ nodeLib.Error with stdLib.Error, /* value */ T, js.Any]
   type GravityDirection = gmLib.gmLibStrings.NorthWest | gmLib.gmLibStrings.North | gmLib.gmLibStrings.NorthEast | gmLib.gmLibStrings.West | gmLib.gmLibStrings.Center | gmLib.gmLibStrings.East | gmLib.gmLibStrings.SouthWest | gmLib.gmLibStrings.South | gmLib.gmLibStrings.SouthEast
   type HighlightStyle = gmLib.gmLibStrings.Assign | gmLib.gmLibStrings.Threshold | gmLib.gmLibStrings.Tint | gmLib.gmLibStrings.XOR
   type ImageType = gmLib.gmLibStrings.Bilevel | gmLib.gmLibStrings.Grayscale | gmLib.gmLibStrings.Palette | gmLib.gmLibStrings.PaletteMatte | gmLib.gmLibStrings.TrueColor | gmLib.gmLibStrings.TrueColorMatte | gmLib.gmLibStrings.ColorSeparation | gmLib.gmLibStrings.ColorSeparationMatte | gmLib.gmLibStrings.Optimize
@@ -41,7 +41,7 @@ package object mNs {
   type VirtualPixelMethod = gmLib.gmLibStrings.Constant | gmLib.gmLibStrings.Edge | gmLib.gmLibStrings.Mirror | gmLib.gmLibStrings.Tile
   type VisualType = gmLib.gmLibStrings.StaticGray | gmLib.gmLibStrings.GrayScale | gmLib.gmLibStrings.StaticColor | gmLib.gmLibStrings.PseudoColor | gmLib.gmLibStrings.TrueColor | gmLib.gmLibStrings.DirectColor | gmLib.gmLibStrings.default
   type WriteCallback = js.Function4[
-    /* err */ nodeLib.Error, 
+    /* err */ nodeLib.Error with stdLib.Error, 
     /* stdout */ java.lang.String, 
     /* stderr */ java.lang.String, 
     /* cmd */ java.lang.String, 

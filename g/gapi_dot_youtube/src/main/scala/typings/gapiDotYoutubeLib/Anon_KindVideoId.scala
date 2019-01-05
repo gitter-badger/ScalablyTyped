@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait Anon_KindVideoId extends js.Object {
   /**
-    * If the id.type propertys value is youtube#channel, then this property will be present and its value will contain the ID that YouTube uses to uniquely identify a channel that matches the search query.
+    * The ID that YouTube uses to uniquely identify the channel, if the recommended resource is a channel. This property is only present if the resourceId.kind is youtube#channel.
     */
   var channelId: java.lang.String
   /**
@@ -15,11 +15,7 @@ trait Anon_KindVideoId extends js.Object {
     */
   var kind: java.lang.String
   /**
-    * If the id.type propertys value is youtube#playlist, then this property will be present and its value will contain the ID that YouTube uses to uniquely identify a playlist that matches the search query.
-    */
-  var playlistId: java.lang.String
-  /**
-    * If the id.type propertys value is youtube#video, then this property will be present and its value will contain the ID that YouTube uses to uniquely identify a video that matches the search query.
+    * The ID that YouTube uses to uniquely identify the video, if the recommended resource is a video. This property is only present if the resourceId.kind is youtube#video.
     */
   var videoId: java.lang.String
 }

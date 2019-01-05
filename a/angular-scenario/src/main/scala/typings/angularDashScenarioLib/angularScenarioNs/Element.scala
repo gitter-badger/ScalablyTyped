@@ -37,7 +37,7 @@ trait Element extends js.Object {
   def prop(key: js.Any, value: js.Any): scala.Unit = js.native
   def query(
     callback: js.Function2[
-      /* selectedDOMElements */ angularLib.JQuery, 
+      /* selectedDOMElements */ angularLib.JQuery with jqueryLib.JQuery[stdLib.HTMLElement], 
       /* callbackWhenDone */ js.Function2[/* objNull */ js.Any, /* futureValue */ js.Any, _], 
       _
     ]

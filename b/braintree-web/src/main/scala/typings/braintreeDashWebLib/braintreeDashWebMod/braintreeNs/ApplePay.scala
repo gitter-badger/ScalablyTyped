@@ -19,7 +19,7 @@ trait ApplePay extends js.Object {
     * @param {callback} callback The second argument, `data`, is the {@link ApplePay} instance.
     * @returns {void}
     */
-  def create(options: braintreeDashWebLib.Anon_Client_64751587, callback: callback): scala.Unit
+  def create(options: braintreeDashWebLib.Anon_Client, callback: callback): scala.Unit
   /**
     * Merges a payment request with Braintree defaults
     * The following properties are assigned to `paymentRequest` if not already defined

@@ -9,7 +9,7 @@ trait Anon_Location extends js.Object {
   /**
     * The geolocation information associated with the video.
     */
-  var location: Anon_Elevation
+  var location: Anon_Latitude
   /**
     * The text description of the location where the video was recorded.
     */

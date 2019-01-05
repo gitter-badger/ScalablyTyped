@@ -11,6 +11,6 @@ trait ExpandIconProps[T] extends js.Object {
   var needIndentSpaced: scala.Boolean
   var prefixCls: java.lang.String
   var record: T
-  def onExpand(record: T, event: reactLib.MouseEvent): scala.Unit
+  def onExpand(record: T, event: reactLib.MouseEvent with stdLib.MouseEvent): scala.Unit
 }
 

@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait IMarqueeSelectionProps
-  extends reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLDivElement] {
+  extends reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLDivElement with stdLib.HTMLDivElement] {
   /**
     * Optional callback to access the IMarqueeSelection interface. Use this instead of ref for accessing
     * the public methods and properties of the component.
@@ -30,11 +30,13 @@ trait IMarqueeSelectionProps
     * if we should start a marquee selection. If true is returned, we will cancel the mousedown
     * event to prevent upstream mousedown handlers from executing.
     */
-  var onShouldStartSelection: js.UndefOr[js.Function1[/* ev */ reactLib.MouseEvent, scala.Boolean]] = js.undefined
+  var onShouldStartSelection: js.UndefOr[js.Function1[/* ev */ reactLib.MouseEvent with stdLib.MouseEvent, scala.Boolean]] = js.undefined
   /**
     * Optional props to mix into the root DIV element.
     */
-  var rootProps: js.UndefOr[reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLDivElement]] = js.undefined
+  var rootProps: js.UndefOr[
+    reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLDivElement with stdLib.HTMLDivElement]
+  ] = js.undefined
   /**
     * The selection object to interact with when updating selection changes.
     */

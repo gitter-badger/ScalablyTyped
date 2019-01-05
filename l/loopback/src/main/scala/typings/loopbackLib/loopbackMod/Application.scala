@@ -143,7 +143,11 @@ object Application extends js.Object {
   def authenticate(
     appId: js.Any,
     key: java.lang.String,
-    callback: js.Function2[/* err */ nodeLib.Error, /* matched */ java.lang.String, scala.Unit]
+    callback: js.Function2[
+      /* err */ nodeLib.Error with stdLib.Error, 
+      /* matched */ java.lang.String, 
+      scala.Unit
+    ]
   ): scala.Unit = js.native
   /**
     * Register a new application
@@ -163,6 +167,6 @@ object Application extends js.Object {
     * @callback {() => void} callback
     * @param {Error} err
     */
-  def resetKeys(callback: js.Function1[/* err */ nodeLib.Error, scala.Unit]): scala.Unit = js.native
+  def resetKeys(callback: js.Function1[/* err */ nodeLib.Error with stdLib.Error, scala.Unit]): scala.Unit = js.native
 }
 

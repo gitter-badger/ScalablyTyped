@@ -62,7 +62,7 @@ trait ComposeView extends js.Object {
   @JSName("on")
   def on_destroy(
     name: inboxsdkLib.inboxsdkLibStrings.destroy,
-    cb: js.Function1[/* event */ inboxsdkLib.Anon_ClosedByInboxSDK, scala.Unit]
+    cb: js.Function1[/* event */ inboxsdkLib.Anon_MessageID, scala.Unit]
   ): scala.Unit = js.native
   @JSName("on")
   def on_discard(name: inboxsdkLib.inboxsdkLibStrings.discard, cb: js.Function0[scala.Unit]): scala.Unit = js.native

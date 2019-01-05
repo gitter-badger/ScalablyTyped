@@ -14,17 +14,17 @@ package object buildSrcServiceDashObjectMod {
   ]
   type CreateResponse[T] = js.Array[T | js.Any]
   type DeleteCallback = js.Function2[
-    /* err */ nodeLib.Error | scala.Null, 
+    /* err */ (nodeLib.Error with stdLib.Error) | scala.Null, 
     /* apiResponse */ js.UndefOr[requestLib.requestMod.requestNs.Response], 
     scala.Unit
   ]
   type ExistsCallback = js.Function2[
-    /* err */ nodeLib.Error | scala.Null, 
+    /* err */ (nodeLib.Error with stdLib.Error) | scala.Null, 
     /* exists */ js.UndefOr[scala.Boolean], 
     scala.Unit
   ]
   type GetMetadataCallback = js.Function3[
-    /* err */ nodeLib.Error | scala.Null, 
+    /* err */ (nodeLib.Error with stdLib.Error) | scala.Null, 
     /* metadata */ js.UndefOr[Metadata | scala.Null], 
     /* apiResponse */ js.UndefOr[requestLib.requestMod.requestNs.Response], 
     scala.Unit
@@ -38,7 +38,7 @@ package object buildSrcServiceDashObjectMod {
   ]
   type Metadata = js.Any
   type ResponseCallback = js.Function2[
-    /* err */ js.UndefOr[nodeLib.Error | scala.Null], 
+    /* err */ js.UndefOr[(nodeLib.Error with stdLib.Error) | scala.Null], 
     /* apiResponse */ js.UndefOr[requestLib.requestMod.requestNs.Response], 
     scala.Unit
   ]

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait JsftpOpts extends js.Object {
   var createSocket: js.UndefOr[
     js.Function2[
-      /* hasPortHost */ jsftpLib.Anon_Host, 
+      /* hasPortHost */ jsftpLib.Anon_Port, 
       /* firstAction */ js.Function0[js.Object], 
       nodeLib.netMod.Socket
     ]

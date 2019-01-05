@@ -12,7 +12,7 @@ trait Vue extends js.Object {
   @JSName("$createObservableMethod")
   def $createObservableMethod(methodName: java.lang.String): rxjsLib.rxjsMod.Observable[_] = js.native
   @JSName("$eventToObservable")
-  def $eventToObservable(event: java.lang.String): rxjsLib.rxjsMod.Observable[vueDashRxLib.Anon_Msg] = js.native
+  def $eventToObservable(event: java.lang.String): rxjsLib.rxjsMod.Observable[vueDashRxLib.Anon_Name] = js.native
   @JSName("$fromDOMEvent")
   def $fromDOMEvent(selector: java.lang.String, event: java.lang.String): rxjsLib.rxjsMod.Observable[stdLib.Event] = js.native
   @JSName("$fromDOMEvent")

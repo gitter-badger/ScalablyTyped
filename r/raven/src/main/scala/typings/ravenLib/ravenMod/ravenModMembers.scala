@@ -10,10 +10,10 @@ import scala.scalajs.js.annotation._
 object ravenModMembers extends js.Object {
   val version: java.lang.String = js.native
   def captureBreadcrumb(breadcrumb: js.Any): scala.Unit = js.native
-  def captureException(e: nodeLib.Error): java.lang.String = js.native
-  def captureException(e: nodeLib.Error, cb: CaptureCallback): java.lang.String = js.native
-  def captureException(e: nodeLib.Error, options: CaptureOptions): java.lang.String = js.native
-  def captureException(e: nodeLib.Error, options: CaptureOptions, cb: CaptureCallback): java.lang.String = js.native
+  def captureException(e: nodeLib.Error with stdLib.Error): java.lang.String = js.native
+  def captureException(e: nodeLib.Error with stdLib.Error, cb: CaptureCallback): java.lang.String = js.native
+  def captureException(e: nodeLib.Error with stdLib.Error, options: CaptureOptions): java.lang.String = js.native
+  def captureException(e: nodeLib.Error with stdLib.Error, options: CaptureOptions, cb: CaptureCallback): java.lang.String = js.native
   def captureMessage(message: java.lang.String): java.lang.String = js.native
   def captureMessage(message: java.lang.String, cb: CaptureCallback): java.lang.String = js.native
   def captureMessage(message: java.lang.String, options: CaptureOptions): java.lang.String = js.native
@@ -28,7 +28,7 @@ object ravenModMembers extends js.Object {
   def context[T](func: js.Function0[T]): T = js.native
   def disableConsoleAlerts(): scala.Unit = js.native
   def errorHandler(): js.Function4[
-    /* e */ nodeLib.Error, 
+    /* e */ nodeLib.Error with stdLib.Error, 
     /* req */ nodeLib.httpMod.IncomingMessage, 
     /* res */ nodeLib.httpMod.ServerResponse, 
     /* next */ js.Function0[scala.Unit], 

@@ -18,7 +18,7 @@ trait SESTransport
   var options: nodemailerLib.libSesDashTransportMod.SESTransportNs.Options = js.native
   var pending: js.Array[nodemailerLib.Anon_Mail] = js.native
   var rateInterval: scala.Double = js.native
-  var rateMessages: js.Array[nodemailerLib.Anon_Pending] = js.native
+  var rateMessages: js.Array[nodemailerLib.Anon_Ts] = js.native
   var sendingRate: scala.Double = js.native
   var sendingRateTTL: scala.Double | scala.Null = js.native
   var ses: js.Any = js.native
@@ -44,7 +44,7 @@ trait SESTransport
   @JSName("verify")
   def verify_MSESTransport(
     callback: js.Function2[
-      /* err */ nodeLib.Error | scala.Null, 
+      /* err */ (nodeLib.Error with stdLib.Error) | scala.Null, 
       nodemailerLib.nodemailerLibNumbers.`true`, 
       scala.Unit
     ]

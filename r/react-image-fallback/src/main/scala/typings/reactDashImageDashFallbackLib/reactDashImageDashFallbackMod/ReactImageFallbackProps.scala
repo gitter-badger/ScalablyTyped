@@ -11,13 +11,13 @@ trait ReactImageFallbackProps extends js.Object {
   var initialTimeout: js.UndefOr[scala.Double] = js.undefined
   var onError: js.UndefOr[
     js.Function1[
-      /* event */ reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.HTMLImageElement, reactLib.Event], 
+      /* event */ reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.HTMLImageElement with stdLib.HTMLImageElement, reactLib.Event], 
       scala.Unit
     ]
   ] = js.undefined
   var onLoad: js.UndefOr[
     js.Function1[
-      /* event */ reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.HTMLImageElement, reactLib.Event], 
+      /* event */ reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.HTMLImageElement with stdLib.HTMLImageElement, reactLib.Event], 
       scala.Unit
     ]
   ] = js.undefined

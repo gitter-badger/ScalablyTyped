@@ -102,8 +102,8 @@ trait Instance[TAttributes] extends js.Object {
     * @param options.plain If set to true, included instances will be returned as plain objects
     */
   def get(key: java.lang.String): js.Any = js.native
-  def get(key: java.lang.String, options: sequelizeLib.Anon_Clone): js.Any = js.native
-  def get(options: sequelizeLib.Anon_Clone): TAttributes = js.native
+  def get(key: java.lang.String, options: sequelizeLib.Anon_Plain): js.Any = js.native
+  def get(options: sequelizeLib.Anon_Plain): TAttributes = js.native
   /**
     * Get the value of the underlying data value
     */

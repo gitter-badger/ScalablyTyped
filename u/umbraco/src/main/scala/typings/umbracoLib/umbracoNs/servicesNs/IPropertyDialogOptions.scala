@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
   */
 trait IPropertyDialogOptions extends js.Object {
   /*callback function*/
-  var callback: angularLib.angularMod.Global.Function
+  var callback: angularLib.angularMod.Global.Function with js.Function
   /*editor to use to edit a given value and return on callback*/
   var editor: java.lang.String
   /*value sent to the property editor*/

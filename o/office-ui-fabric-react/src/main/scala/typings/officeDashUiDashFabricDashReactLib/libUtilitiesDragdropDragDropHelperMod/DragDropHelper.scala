@@ -50,11 +50,11 @@ class DragDropHelper protected ()
   override def dispose(): scala.Unit = js.native
   /* CompleteClass */
   override def subscribe(
-    root: reactLib.HTMLElement,
+    root: reactLib.HTMLElement with stdLib.HTMLElement,
     events: officeDashUiDashFabricDashReactLib.libUtilitiesMod.EventGroup,
     options: officeDashUiDashFabricDashReactLib.libUtilitiesDragdropInterfacesMod.IDragDropOptions
-  ): officeDashUiDashFabricDashReactLib.Anon_KeyDisposeString = js.native
+  ): officeDashUiDashFabricDashReactLib.Anon_KeyDispose = js.native
   /* CompleteClass */
-  override def unsubscribe(root: reactLib.HTMLElement, key: java.lang.String): scala.Unit = js.native
+  override def unsubscribe(root: reactLib.HTMLElement with stdLib.HTMLElement, key: java.lang.String): scala.Unit = js.native
 }
 

@@ -20,11 +20,11 @@ class BaseExtendedPicker[T, P /* <: officeDashUiDashFabricDashReactLib.libCompon
   var floatingPickerProps: officeDashUiDashFabricDashReactLib.libComponentsFloatingPickerBaseFloatingPickerDotTypesMod.IBaseFloatingPickerProps[T] = js.native
   val highlightedItems: js.Array[T] = js.native
   var input: reactLib.reactMod.ReactNs.RefObject[officeDashUiDashFabricDashReactLib.libAutofillMod.Autofill] = js.native
-  val inputElement: reactLib.HTMLInputElement | scala.Null = js.native
+  val inputElement: (reactLib.HTMLInputElement with stdLib.HTMLInputElement) | scala.Null = js.native
   /** Gets the current value of the input. */
   /* CompleteClass */
   override var items: js.UndefOr[js.Array[T]] = js.native
-  var root: reactLib.reactMod.ReactNs.RefObject[reactLib.HTMLDivElement] = js.native
+  var root: reactLib.reactMod.ReactNs.RefObject[reactLib.HTMLDivElement with stdLib.HTMLDivElement] = js.native
   var selectedItemsList: reactLib.reactMod.ReactNs.RefObject[
     officeDashUiDashFabricDashReactLib.libSelectedItemsListMod.BaseSelectedItemsList[
       T, 
@@ -45,23 +45,23 @@ class BaseExtendedPicker[T, P /* <: officeDashUiDashFabricDashReactLib.libCompon
   /** Sets focus to the input. */
   /* CompleteClass */
   override def focus(): scala.Unit = js.native
-  /* protected */ def onBackspace(ev: reactLib.reactMod.ReactNs.KeyboardEvent[reactLib.HTMLElement]): scala.Unit = js.native
-  /* protected */ def onCopy(ev: reactLib.reactMod.ReactNs.ClipboardEvent[reactLib.HTMLElement]): scala.Unit = js.native
+  /* protected */ def onBackspace(ev: reactLib.reactMod.ReactNs.KeyboardEvent[reactLib.HTMLElement with stdLib.HTMLElement]): scala.Unit = js.native
+  /* protected */ def onCopy(ev: reactLib.reactMod.ReactNs.ClipboardEvent[reactLib.HTMLElement with stdLib.HTMLElement]): scala.Unit = js.native
   /* protected */ def onInputChange(value: java.lang.String): scala.Unit = js.native
   /* protected */ def onInputClick(
     ev: reactLib.reactMod.ReactNs.MouseEvent[
-      reactLib.HTMLInputElement | officeDashUiDashFabricDashReactLib.libAutofillMod.Autofill, 
+      (reactLib.HTMLInputElement with stdLib.HTMLInputElement) | officeDashUiDashFabricDashReactLib.libAutofillMod.Autofill, 
       reactLib.NativeMouseEvent
     ]
   ): scala.Unit = js.native
   /* protected */ def onInputFocus(
     ev: reactLib.reactMod.ReactNs.FocusEvent[
-      reactLib.HTMLInputElement | officeDashUiDashFabricDashReactLib.libAutofillMod.Autofill
+      (reactLib.HTMLInputElement with stdLib.HTMLInputElement) | officeDashUiDashFabricDashReactLib.libAutofillMod.Autofill
     ]
   ): scala.Unit = js.native
   /* protected */ def onPaste(
     ev: reactLib.reactMod.ReactNs.ClipboardEvent[
-      reactLib.HTMLInputElement | officeDashUiDashFabricDashReactLib.libAutofillMod.Autofill
+      (reactLib.HTMLInputElement with stdLib.HTMLInputElement) | officeDashUiDashFabricDashReactLib.libAutofillMod.Autofill
     ]
   ): scala.Unit = js.native
   /* protected */ def onSelectionChange(): scala.Unit = js.native

@@ -25,9 +25,9 @@ class InfoWindow protected () extends Overlay {
   def isOpen(): scala.Boolean = js.native
   def maximize(): scala.Unit = js.native
   def onclickclose(event: baidumapDashWebDashSdkLib.Anon_TypeTarget): scala.Unit = js.native
-  def onclose(event: baidumapDashWebDashSdkLib.Anon_Type): scala.Unit = js.native
+  def onclose(event: baidumapDashWebDashSdkLib.Anon_TypeTargetPointString): scala.Unit = js.native
   def onmaximize(event: baidumapDashWebDashSdkLib.Anon_TypeTarget): scala.Unit = js.native
-  def onopen(event: baidumapDashWebDashSdkLib.Anon_Type): scala.Unit = js.native
+  def onopen(event: baidumapDashWebDashSdkLib.Anon_TypeTargetPointString): scala.Unit = js.native
   def onrestore(event: baidumapDashWebDashSdkLib.Anon_TypeTarget): scala.Unit = js.native
   def redraw(): scala.Unit = js.native
   def removeEventListener(event: java.lang.String, handler: js.Function): scala.Unit = js.native

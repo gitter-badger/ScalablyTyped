@@ -6,6 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_Rev extends js.Object {
-  var rev: js.UndefOr[pouchdbDashCoreLib.PouchDBNs.CoreNs.RevisionId] = js.undefined
+  var deleted: js.UndefOr[scala.Boolean] = js.undefined
+  var rev: pouchdbDashCoreLib.PouchDBNs.CoreNs.RevisionId
 }
 

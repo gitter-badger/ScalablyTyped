@@ -40,7 +40,7 @@ object Decoration extends js.Object {
     from: scala.Double,
     to: scala.Double,
     attrs: prosemirrorDashViewLib.prosemirrorDashViewMod.DecorationAttrs,
-    spec: prosemirrorDashViewLib.Anon_InclusiveEnd
+    spec: prosemirrorDashViewLib.Anon_InclusiveStart
   ): prosemirrorDashViewLib.prosemirrorDashViewMod.Decoration = js.native
   /**
     * Creates a node decoration. `from` and `to` should point precisely
@@ -109,9 +109,9 @@ object Decoration extends js.Object {
       /* getPos */ js.Function0[scala.Double], 
       stdLib.Node
     ],
-    spec: prosemirrorDashViewLib.Anon_Marks
+    spec: prosemirrorDashViewLib.Anon_Side
   ): prosemirrorDashViewLib.prosemirrorDashViewMod.Decoration = js.native
   def widget(pos: scala.Double, toDOM: stdLib.Node): prosemirrorDashViewLib.prosemirrorDashViewMod.Decoration = js.native
-  def widget(pos: scala.Double, toDOM: stdLib.Node, spec: prosemirrorDashViewLib.Anon_Marks): prosemirrorDashViewLib.prosemirrorDashViewMod.Decoration = js.native
+  def widget(pos: scala.Double, toDOM: stdLib.Node, spec: prosemirrorDashViewLib.Anon_Side): prosemirrorDashViewLib.prosemirrorDashViewMod.Decoration = js.native
 }
 

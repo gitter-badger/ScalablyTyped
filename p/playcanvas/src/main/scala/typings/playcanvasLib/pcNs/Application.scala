@@ -466,9 +466,9 @@ class Application protected () extends js.Object {
     * @param {Number} [height] The height of the canvas, only used in NONE mode
     * @returns {Object} A object containing the values calculated to use as width and height
     */
-  def resizeCanvas(): playcanvasLib.Anon_Height = js.native
-  def resizeCanvas(width: scala.Double): playcanvasLib.Anon_Height = js.native
-  def resizeCanvas(width: scala.Double, height: scala.Double): playcanvasLib.Anon_Height = js.native
+  def resizeCanvas(): playcanvasLib.Anon_Width = js.native
+  def resizeCanvas(width: scala.Double): playcanvasLib.Anon_Width = js.native
+  def resizeCanvas(width: scala.Double, height: scala.Double): playcanvasLib.Anon_Width = js.native
   /**
     * @function
     * @name pc.Application#setCanvasFillMode

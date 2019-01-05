@@ -11,7 +11,7 @@ trait RequestAuth extends js.Object {
   /** the credential object received during the authentication process. The presence of an object does not mean successful authentication. */
   var credentials: AuthCredentials
   /** the authentication error is failed and mode set to 'try'. */
-  var error: nodeLib.Error
+  var error: nodeLib.Error with stdLib.Error
   /** true if the request has been successfully authenticated, otherwise false. */
   var isAuthenticated: scala.Boolean
   /**

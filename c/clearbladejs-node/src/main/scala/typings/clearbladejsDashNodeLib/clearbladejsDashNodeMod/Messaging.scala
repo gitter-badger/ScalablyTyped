@@ -18,7 +18,11 @@ trait Messaging extends js.Object {
   def unsubscribe(topic: java.lang.String): scala.Unit = js.native
   def unsubscribe(
     topic: java.lang.String,
-    callback: js.Function2[/* error */ js.UndefOr[nodeLib.Error], /* packet */ js.UndefOr[js.Object], _]
+    callback: js.Function2[
+      /* error */ js.UndefOr[nodeLib.Error with stdLib.Error], 
+      /* packet */ js.UndefOr[js.Object], 
+      _
+    ]
   ): scala.Unit = js.native
 }
 

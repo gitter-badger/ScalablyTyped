@@ -19,7 +19,7 @@ class PaperScope () extends js.Object {
   /**
     * Gives access to paper's configurable settings.
     */
-  var settings: paperLib.Anon_HandleSize = js.native
+  var settings: paperLib.Anon_ApplyMatrix = js.native
   /**
     * The reference to the active tool.
     */

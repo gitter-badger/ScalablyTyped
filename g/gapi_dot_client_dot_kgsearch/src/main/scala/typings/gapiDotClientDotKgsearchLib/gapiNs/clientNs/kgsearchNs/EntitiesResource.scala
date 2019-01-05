@@ -11,6 +11,6 @@ trait EntitiesResource extends js.Object {
     * A list of matched entities will be returned in response, which will be in
     * JSON-LD format and compatible with http://schema.org
     */
-  def search(request: gapiDotClientDotKgsearchLib.Anon_Accesstoken): gapiDotClientLib.gapiNs.clientNs.Request[SearchResponse]
+  def search(request: gapiDotClientDotKgsearchLib.Anon_Xgafv): gapiDotClientLib.gapiNs.clientNs.Request[SearchResponse]
 }
 

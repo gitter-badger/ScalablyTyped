@@ -45,8 +45,8 @@ trait EventContext
   def render(location: java.lang.String, data: js.Any, callback: js.Function): RenderContext = js.native
   def render(location: java.lang.String, data: js.Any, callback: js.Function, partials: js.Any): RenderContext = js.native
   def renderEach(location: js.Any): RenderContext = js.native
-  def renderEach(location: js.Any, data: js.Array[sammyLib.Anon_Data]): RenderContext = js.native
-  def renderEach(location: js.Any, data: js.Array[sammyLib.Anon_Data], callback: js.Function): RenderContext = js.native
+  def renderEach(location: js.Any, data: js.Array[sammyLib.Anon_Name]): RenderContext = js.native
+  def renderEach(location: js.Any, data: js.Array[sammyLib.Anon_Name], callback: js.Function): RenderContext = js.native
   def send(params: js.Any*): RenderContext = js.native
   def swap(contents: js.Any, callback: js.Function): java.lang.String = js.native
   def trigger(name: java.lang.String): EventContext = js.native

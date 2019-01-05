@@ -105,7 +105,7 @@ class SweepContext protected () extends js.Object {
     *
     * @returns object with 'min' and 'max' Point
     */
-  def getBoundingBox(): poly2triLib.Anon_Max = js.native
+  def getBoundingBox(): poly2triLib.Anon_Min = js.native
   /**
     * Get result of triangulation.
     * The output triangles have vertices which are references

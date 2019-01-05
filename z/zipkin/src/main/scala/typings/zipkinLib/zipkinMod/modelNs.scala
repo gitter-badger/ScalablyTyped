@@ -11,7 +11,7 @@ object modelNs extends js.Object {
   @js.native
   class Endpoint protected ()
     extends zipkinLib.zipkinMod.zipkinNs.modelNs.Endpoint {
-    def this(args: zipkinLib.Anon_Ipv4) = this()
+    def this(args: zipkinLib.Anon_ServiceName) = this()
     /* CompleteClass */
     override def isEmpty(): scala.Boolean = js.native
     /* CompleteClass */
